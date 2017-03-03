@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Testing With CORS](testing-with-cors.md)
+* [Testing with CORS](testing-with-cors.md)
 
