@@ -7,11 +7,10 @@ The following example code shows exactly how do it for an [Express.js](http://ex
 ```js
 var app = require("express")();
 
-// ...
-
+// This part goes before your own handlers:
 app.use(function (req, res, next) {
-    const origin = req.header("Origin");
-    const requestMethod = req.header("Access-Control-Request-Method");
+    var origin = req.header("Origin");
+    var requestMethod = req.header("Access-Control-Request-Method");
 
     if (origin === "http://www.loadmill.com"
         || origin === "https://www.loadmill.com") {
@@ -20,13 +19,13 @@ app.use(function (req, res, next) {
 
         if (req.method === 'OPTIONS' && origin && requestMethod) {
             // It's a pre-flight request:
-            const requestHeaders = req.header("Access-Control-Request-Headers");
+            var requestHeaders = req.header("Access-Control-Request-Headers");
             setPreFlightHeaders(res, requestMethod || "", requestHeaders || "");
 
             return res.sendStatus(204);
         }
         else {
-            const exposedHeaders = req.header("Loadmill-Request-Expose-Headers") || "";
+            var exposedHeaders = req.header("Loadmill-Request-Expose-Headers") || "";
             res.header("Access-Control-Expose-Headers", exposedHeaders);
         }
     }
