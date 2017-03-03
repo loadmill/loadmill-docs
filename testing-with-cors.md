@@ -1,8 +1,8 @@
 # Testing With CORS
-Loadmill uses real browser sessions to test your application/web server. 
-This means that you need to allow CORS in your server.
-If you are using [Express](http://expressjs.com/) then you can simply 
-copy and paste this code to where your express app is defined:
+
+Loadmill uses real browser sessions to test your application/web server. This means you must allow CORS in your server code. 
+
+The following example code shows exactly how do it for an [Express.js](http://expressjs.com/) application.
 
 ```js
 var app = require("express")();
@@ -42,3 +42,6 @@ function setPreFlightHeaders(res, allowedMethod, allowedHeaders) {
     });
 }
 ```
+
+
+
