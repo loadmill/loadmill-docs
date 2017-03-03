@@ -36,7 +36,8 @@ app.use(function (req, res, next) {
 
 function setPreFlightHeaders(res, allowedMethod, allowedHeaders) {
     res.header({
-        // This header asks the browser not to pre-flight the same request URL again for the next 24 hours 
+        // This header asks the browser not to pre-flight 
+        // the same request URL again for the next 24 hours:
         "Access-Control-Max-Age": "86400",
         "Access-Control-Allow-Methods": allowedMethod,
         "Access-Control-Allow-Headers": allowedHeaders
