@@ -1,6 +1,6 @@
 # Testing With CORS
 
-Loadmill uses real browser sessions to test your application/web server. This means you must allow [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) in your server code (just for us - no third parties need to be allowed).
+Loadmill uses real browser sessions to test your application/web server. This means you must allow [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) in your server code \(just for us - no third parties need to be allowed\).
 
 The following example code shows exactly how do it for an [Express.js](http://expressjs.com/) application - feel free to copy & paste ;\)
 
