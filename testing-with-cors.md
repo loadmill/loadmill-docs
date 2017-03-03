@@ -28,9 +28,9 @@ app.use(function (req, res, next) {
         else {
             const exposedHeaders = req.header("Loadmill-Request-Expose-Headers") || "";
             res.header("Access-Control-Expose-Headers", exposedHeaders);
-            return next();
         }
     }
+    return next();
 });
 
 function setPreFlightHeaders(res, allowedMethod, allowedHeaders) {
