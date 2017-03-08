@@ -31,7 +31,7 @@ If you’re one of our closed beta users (or want to be) we can perhaps get you 
 
 ## I am getting an error like “Request has been terminated Possible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.” WTF?
 
-Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow these instructions.
+Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](testing-with-cors).
 
 ## How to report bugs?
 
