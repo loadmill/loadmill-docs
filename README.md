@@ -29,7 +29,7 @@ There are two sides to our platform, the one we haven’t mentioned yet is our [
 ## How can I get more credit to run tests?
 If you’re one of our closed beta users (or want to be) we can perhaps get you some more credit. Please contact [admin@loadmill.com](mailto:admin@loadmill.com).
 
-## I am getting an error like “Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin ... etc.”, WTF?
+## I am getting an error like “Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin”, WTF?
 
 Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](testing-with-cors.html).
 
