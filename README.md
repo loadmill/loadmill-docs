@@ -1,4 +1,3 @@
-![](/assets/email_title_blue_black.png)
 
 # FAQ
 
