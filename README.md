@@ -30,8 +30,7 @@ There are two sides to our platform, the one we haven’t mentioned yet is our [
 If you’re one of our closed beta users (or want to be) we can perhaps get you some more credit. Please contact [admin@loadmill.com](mailto:admin@loadmill.com).
 
 ## I am getting an error like “Request has been terminated Possible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.” WTF?
-
-Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](testing-with-cors).
+Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](#testing-with-cors).
 
 ## How to report bugs?
 
