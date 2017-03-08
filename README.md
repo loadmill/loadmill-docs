@@ -1,11 +1,6 @@
 
 # FAQ
 
-## What is a load/performance test?
-
-According to [Wikipedia](https://en.wikipedia.org/wiki/Load_testing):
-> Load testing is the process of putting demand on a application and measuring its response. Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.
-
 ## What is Loadmill and what can it do for me?
 
 Loadmill is an online platform in which you can create and execute load tests for your application. It differs from other services due to its usage of real web traffic to generate the load on the tested server. This allows us to test your application from countless geographic locations and computers - simulating real usage patterns more authentically.
@@ -15,6 +10,11 @@ Since we use existing user sessions rather than virtual machines, we are able to
 ## What can’t it do?
 
 Loadmill does not simulate browser/client side activity in any way - we test your server from the network layer and provide advanced parameterization capabilities to let you define the flow of information from one request to the next.
+
+## What is a load/performance test?
+
+According to [Wikipedia](https://en.wikipedia.org/wiki/Load_testing):
+> Load testing is the process of putting demand on a application and measuring its response. Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.
 
 ## I don’t have an application or website to test, what can I do?
 
