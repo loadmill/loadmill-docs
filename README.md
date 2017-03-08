@@ -20,7 +20,7 @@ Loadmill does not simulate browser/client side activity in any way - we test you
 
 You can use the app from this [GitHub repository](https://github.com/idoco/ghost-test-app#deploying-on-heroku).
 
-The simplest why to get going is to create a [Heroku](https://www.heroku.com) account and then click the “Deploy to Heroku” button in the link above. Ido made a [demo video](https://www.youtube.com/watch?v=xls52YFvUno) in which he is running a test on this app.
+The simplest way to get going is to create a [Heroku](https://www.heroku.com) account and then click the “Deploy to Heroku” button in the link above. Ido made a [demo video](https://www.youtube.com/watch?v=xls52YFvUno) in which he is running a test on this app.
 
 ## But I don’t want an app, cause… I’m not a programmer!
 
