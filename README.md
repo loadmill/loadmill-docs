@@ -6,7 +6,7 @@ Loadmill is an online platform in which you can create and execute load tests fo
 
 Since we use existing user sessions rather than virtual machines, we are able to offer this service with a much simpler and more affordable pay-as-you-go pricing model.
 
-If you'd like to learn more, have a look at [This video](https://www.youtube.com/watch?v=6Effnw38oog) - it explains the general idea using an older prototype of our service.
+If you'd like to learn more, have a look at [This video](https://youtu.be/d9DpWolfapE) - it explains the general idea.
 
 ## What can’t it do?
 
@@ -22,7 +22,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Load_testing):
 
 You can use the app from this [GitHub repository](https://github.com/idoco/ghost-test-app#deploying-on-heroku).
 
-The simplest way to get going is to create a [Heroku](https://www.heroku.com) account and then click the “Deploy to Heroku” button in the link above. Ido made a [demo video](https://www.youtube.com/watch?v=xls52YFvUno) in which he is running a test on this app.
+The simplest way to get going is to create a [Heroku](https://www.heroku.com) account and then click the “Deploy to Heroku” button in the link above. Ido made a [demo video](https://youtu.be/qZd38HhQqiU) in which he is running a test on this app.
 
 ## But I don’t want an app, cause… I’m not a programmer!
 
