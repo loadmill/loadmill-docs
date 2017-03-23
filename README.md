@@ -26,7 +26,7 @@ The simplest way to get going is to create a [Heroku](https://www.heroku.com) ac
 
 ## But I don’t want an app, cause… I’m not a programmer!
 
-There are two sides to our platform, the one we haven’t mentioned yet is our [Affiliate Program](https://www.loadmill.com/join-affiliate). If you own or represent any kind of web site then it might interest you. [This video](https://www.youtube.com/watch?v=6Effnw38oog) is less technical and demonstrates how becoming a Loadmill Affiliate can help make you money!
+There are two sides to our platform, the one we haven’t mentioned yet is our [Affiliate Program](https://www.loadmill.com/join-affiliate). If you own or represent any kind of web site then it might interest you. [This video](https://youtu.be/d9DpWolfapE) is less technical and demonstrates how becoming a Loadmill Affiliate can help make you money!
 
 ## How can I get more credit to run tests?
 
