@@ -29,7 +29,7 @@ app.use(function (req, res, next) {
         if (req.method === 'OPTIONS' && origin && requestMethod) {
             // It's a pre-flight request:
             
-            // This request header contains the request headers of the request:
+            // This request header contains the request headers of the pre-flighted request:
             var requestHeaders = req.header("Access-Control-Request-Headers");
             
             setPreFlightHeaders(res, requestMethod || "", requestHeaders || "");
