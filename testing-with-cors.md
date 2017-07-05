@@ -11,26 +11,36 @@ var app = require("express")();
 
 // This part goes before your own handlers:
 app.use(function (req, res, next) {
+    // This request header contains the host of the CORS client:
     var origin = req.header("Origin");
+    
+    // This request header contains the HTTP request method: 
     var requestMethod = req.header("Access-Control-Request-Method");
 
     if (origin === "http://www.loadmill.com"
         || origin === "https://www.loadmill.com") {
 
+        // This response header allows CORS from loadmill.com:
         res.header("Access-Control-Allow-Origin", origin);
         
-        // This header is required only if use cookies in your tests:
+        // This response header is required only if use cookies in your tests:
         res.header("Access-Control-Allow-Credentials", 'true');
         
         if (req.method === 'OPTIONS' && origin && requestMethod) {
             // It's a pre-flight request:
+            
+            // This request header contains the request headers of the request:
             var requestHeaders = req.header("Access-Control-Request-Headers");
+            
             setPreFlightHeaders(res, requestMethod || "", requestHeaders || "");
-
             return res.sendStatus(204);
         }
         else {
+            // If your test scenario involves reading response headers, 
+            // we automatically include them in this request header:
             var exposedHeaders = req.header("Loadmill-Request-Expose-Headers") || "";
+            
+            // This response header allows the test client to read the requested headers:
             res.header("Access-Control-Expose-Headers", exposedHeaders);
         }
     }
@@ -39,9 +49,11 @@ app.use(function (req, res, next) {
 
 function setPreFlightHeaders(res, allowedMethod, allowedHeaders) {
     res.header({
-        // This header asks the browser not to pre-flight 
+        // This response header asks the browser not to pre-flight 
         // the same request URL again for the next 24 hours:
         "Access-Control-Max-Age": "86400",
+        
+        // These 
         "Access-Control-Allow-Methods": allowedMethod,
         "Access-Control-Allow-Headers": allowedHeaders
     });
