@@ -11,7 +11,7 @@ The way this problem is solved is by using **domain verification**, a simple pro
 3. You will be promped and asked to host a small text file on your server in order to prove you own your domain, E.g.  `myapp.com/loadmill-challenge/aSnd5K8L86Pggg1rGLPgLlf6guK.txt`.
 4. Once the file is hosted on your server, click **Verify** to complete the process.
 
-# Express MIddleware
+# Express Middleware
 
 If you are using [node.js](https://nodejs.org) and [express](https://expressjs.com) it could be helpfull to use our npm module: [express-loadmill](https://www.npmjs.com/package/express-loadmill).
 
