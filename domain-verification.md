@@ -13,7 +13,9 @@ The way this problem is solved is by using **domain verification**, a simple pro
 
 # Express MIddleware
 
-If you are using \[node.js\]\(https://nodejs.org\) and \[express
+If you are using [node.js](https://nodejs.org) and [express](https://expressjs.com) it could be helpfull to use our npm module: [express-loadmill](https://www.npmjs.com/package/express-loadmill).
+
+It may be used to enable [crowsourced load testing](testing-with-cors.html) as well, for high volume load tests.
 
 
 
