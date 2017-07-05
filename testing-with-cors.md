@@ -4,6 +4,8 @@ For high volume load tests, [Loadmill](https://www.loadmill.com) uses real brows
 
 [Enabling CORS](https://enable-cors.org/server.html) mainly involves reading request headers and writing reponse headers accordingly on your server. The following example code shows exactly how to enable CORS for Loadmill tests in an [express.js](http://expressjs.com) application.
 
+Express users need **not copy this example**, simply our npm module: [express-loadmill](https://www.npmjs.com/package/express-loadmill) 
+
 ```js
 var app = require("express")();
 
