@@ -2,7 +2,7 @@
 
 **Domain verification** is the process of verifying that your domain actually belongs to you, so we can load-test it.
 
-For example, if you have an app hosted on `myapp.com` you would like test requests from [Loadmill](https://www.loadmill.com) to be sent to it during a load test. However, if we allow _**anyone**_ to send requests to `myapp.com` it could be abused by malicious user to attack your servers by flooding it with requests.
+For example, if you have an app hosted on `myapp.com` you would like test requests from [Loadmill](https://www.loadmill.com) to be sent to it during a load test. However, if we allow _**anyone**_ to send requests to `myapp.com` it could be abused by a malicious user to attack your servers by flooding it with requests.
 
 The way this problem is solved is by using **domain verification**, a simple process in which you are asked to:
 
