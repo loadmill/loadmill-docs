@@ -9,7 +9,7 @@ Express users need **not copy this example**, simply our npm module: [express-lo
 ```js
 var app = require("express")();
 
-// This part goes before your own handlers:
+// Handle CORS before processing requests:
 app.use(function (req, res, next) {
     // This request header contains the host of the CORS client:
     var origin = req.header("Origin");
