@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
         // This response header allows CORS from loadmill.com:
         res.header("Access-Control-Allow-Origin", origin);
         
-        // This response header is required only if use cookies in your tests:
+        // This response header is required only if you use cookies in your tests:
         res.header("Access-Control-Allow-Credentials", 'true');
         
         if (req.method === 'OPTIONS' && origin && requestMethod) {
@@ -40,7 +40,7 @@ app.use(function (req, res, next) {
             // we automatically include them in this request header:
             var exposedHeaders = req.header("Loadmill-Request-Expose-Headers") || "";
             
-            // This response header allows the test client to read the requested headers:
+            // This response header allows the test client to read the desired headers from the response:
             res.header("Access-Control-Expose-Headers", exposedHeaders);
         }
     }
@@ -53,7 +53,7 @@ function setPreFlightHeaders(res, allowedMethod, allowedHeaders) {
         // the same request URL again for the next 24 hours:
         "Access-Control-Max-Age": "86400",
         
-        // These 
+        // These response headers approve the request method and headers specified:
         "Access-Control-Allow-Methods": allowedMethod,
         "Access-Control-Allow-Headers": allowedHeaders
     });
