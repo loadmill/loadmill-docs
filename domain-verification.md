@@ -13,9 +13,9 @@ The way this problem is solved is by using **domain verification**, a simple pro
 
 # Express Middleware
 
-If you are using [node.js](https://nodejs.org) and [express](https://expressjs.com) it could be helpfull to use our npm module: [express-loadmill](https://www.npmjs.com/package/express-loadmill).
+If you are using [node.js](https://nodejs.org) and [express](https://expressjs.com), you can easily serve the verification file using our npm module: [express-loadmill](https://www.npmjs.com/package/express-loadmill).
 
-It may be used to enable [crowsourced load testing](testing-with-cors.html) as well, for high volume load tests.
+It may also be used to enable [crowsourced load testing](testing-with-cors.html), for high volume load tests.
 
 
 
