@@ -18,19 +18,13 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Load_testing):
 
 > Load testing is the process of putting demand on a application and measuring its response. Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.
 
-## I don’t have an application or website to test, what can I do?
+## But I don't want to test anything, what can Loadmill do for me?
 
-You can use the app from this [GitHub repository](https://github.com/idoco/ghost-test-app#deploying-on-heroku).
-
-The simplest way to get going is to create a [Heroku](https://www.heroku.com) account and then click the “Deploy to Heroku” button in the link above. Ido made a [demo video](https://youtu.be/qZd38HhQqiU) in which he is running a test on this app.
-
-## But I don’t want an app, cause… I’m not a programmer!
-
-There are two sides to our platform, the one we haven’t mentioned yet is our [Affiliate Program](https://www.loadmill.com/join-affiliate). If you own or represent any kind of web site then it might interest you. [This video](https://youtu.be/d9DpWolfapE) is less technical and demonstrates how becoming a Loadmill Affiliate can help make you money!
+There are two sides to our platform, the one we haven’t mentioned yet is our [Affiliate Program](https://www.loadmill.com/join-affiliate). If you own or represent any kind of web site then it might interest you. [This video](https://youtu.be/d9DpWolfapE) is less technical and demonstrates how becoming a Loadmill Affiliate can help make you money! Read more about our [Affiliate Program here](/affiliate-program.html).
 
 ## How can I get more credit to run tests?
 
-If you’re one of our closed beta users \(or want to be\) we can perhaps get you some more credit. Please contact [admin@loadmill.com](mailto:admin@loadmill.com).
+Soon we will add a self-service payment system for billing and buying credit. Until then, if you need more credit to evaluate or use the product we can probably give you some. Please contact [admin@loadmill.com](mailto:admin@loadmill.com).
 
 ## I'm getting an error like “Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin”, WTF?
 
