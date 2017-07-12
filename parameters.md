@@ -18,6 +18,8 @@ The `123` part is the identifier of the blog post created by the user - it canno
 
 You may embed parameters with the `${}` syntax in the request URL as well as the request body, request headers, [extractions](#parameter-extraction), [assertions]() and more.
 
+Note that any parametrized expression such as `Some ${param}` will remain as-is if no such parameter is defined or extracted before the expression is evaluated.
+
 ## Default Parameters
 
 Another common use case for parametrization is when you want to **reuse test scenarios** on different environments or with small adjustments.
@@ -32,9 +34,7 @@ If you would like to use different credentials for every test run, you may repla
 1. `https://${user}:${pass}@www.myblog.com/posts`
 2. `https://${user}:${pass}@www.myblog.com/posts/${postId}/like`
 
-Using parameter defaults is especially useful for automated testing and CI where you may be testing a different server every time you run a test. 
-
-Please refer to the [Loadmill CLI and node module](https://www.npmjs.com/package/loadmill#parameters) for more information about how to inject parameters dynamically.
+Using parameter defaults is especially useful for automated testing and CI where you may be testing a different server every time you run a test. Please refer to the [Loadmill CLI and node module](https://www.npmjs.com/package/loadmill#parameters) for more information about how to inject parameters dynamically.
 
 ## Built-in Parameters
 
