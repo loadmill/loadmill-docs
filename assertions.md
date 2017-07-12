@@ -38,4 +38,4 @@ This is important in order to avoid confusion when using parameter extractors su
 ```
 2. Assert `books` is **Not Empty**.
 
-You may expect this assertion to fail but, in fact, it will succeedd. This is because the parameter `books` is evaluated to `[]` and therefore constitues a non-empty string. One possible way to correct this is to use a **RegExp** assertion instead: `\[[^\s]+\]`.
+You may expect this assertion to fail but, in fact, it will succeedd. This is because the parameter `books` is evaluated to `[]` and therefore constitues a non-empty string. One possible way to correct this is to use a **RegExp** assertion on the `books` parameter instead: `\[[^\s]+\]`.
