@@ -55,7 +55,6 @@ You may specify a different length to each of the random parameters by appending
 Parameters can be defined and populated with values dynamically after each request in your test scenario. There are several **extraction query  types** that may be used:
 
 1. **JSONPath** - used for extarcting values from a JSON response. For example, the query `post.id` will extract the value `123` from this JSON response:
-
 ```json
 {
     "post": {
@@ -65,6 +64,8 @@ Parameters can be defined and populated with values dynamically after each reque
 }
 ```
 2. **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org).
+
+3. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`. 
 
 
 
