@@ -24,7 +24,7 @@ You may embed parameters in any assertion expression. These parameters will be e
 
 ## Caveats
 
-Keep in mind the all parameter values are **textual**, i.e. a parameter has **no type** such as `Number` or `Array` that we know from common programming languages.
+Keep in mind that all parameter values are **textual**, i.e. a parameter has **no type** such as `Number` or `Array` that we know from common programming languages.
 
 This is important in order to avoid confusion when using parameter extractors such as **JSONPath**. For example, consider the following scenario:
 
