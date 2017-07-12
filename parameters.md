@@ -48,7 +48,7 @@ There are several **built-in** parameter constructs that you can use in your tes
 - `random_uppers` 10 random uppercase letters.
 - `random_lowers` 10 random lowercase letters.
 
-You may specify a different length to each of the random parameters by appending it the parameter name with a preceding underscore, e.g. `random_chars_5` may evaluate to `gK2x9`.
+You may specify a different length to each of the random parameters by appending it to the parameter name with a preceding underscore, e.g. `random_chars_5` may evaluate to `gK2x9`.
 
 ## Parameter Extraction
 
