@@ -11,4 +11,5 @@
   * [Parameters](parameters.md)
   * [Assertions](assertions.md)
   * [Configuration Files](test-configurations.md)
+* [REST API](rest-api.md)
 
