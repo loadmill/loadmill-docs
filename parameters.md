@@ -40,15 +40,18 @@ Using parameter defaults is especially useful for automated testing and CI where
 
 There are several **built-in** parameter constructs that you can use in your test scenario. They are:
 
-- `status` The status code of the last HTTP response
-- `statusText` The status text of the last HTTP response
-- `random_chars` A random string of 10 (alpha-numeric) characters. 
-- `random_digits` 10 random digits. 
-- `random_letters` 10 random letters.
-- `random_uppers` 10 random uppercase letters.
-- `random_lowers` 10 random lowercase letters.
+- `__status` The status code of the last HTTP response
+- `__statusText` The status text of the last HTTP response
+- `__random_uuid` A random v4 UUID string.
+- `__random_chars` A random string of 10 (alpha-numeric) characters. 
+- `__random_digits` 10 random digits. 
+- `__random_letters` 10 random letters.
+- `__random_uppers` 10 random uppercase letters.
+- `__random_lowers` 10 random lowercase letters.
+- `__random_hex` 10 random (lowercase) hexadecimal characters.
+- `__random_<ANY_CHARACTERS>` 10 random characters chosen from the given suffix, e.g. you may generate a random **uppercase** hexadecimal string using a parameter named `__random_0123456789ABCDEF`.
 
-You may specify a different length to each of the random parameters by appending it to the parameter name with a preceding underscore, e.g. `random_chars_5` may evaluate to `gK2x9`.
+You may specify a different length to each of the random parameters (except `__random_uuid`) by appending it to the parameter name with a preceding underscore, e.g. `__random_chars_5` may evaluate to `gK2x9`.
 
 ## Parameter Extraction
 
@@ -69,7 +72,7 @@ Parameters can be defined and populated with values dynamically after each reque
 
 4. **Header** - used for extracting response header values via header names.
 
-5. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `${protocol}://${host}:${port}` or `give me a ${random_uppers_1}!`.
+5. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `${protocol}://${host}:${port}` or `give me a ${__random_uppers_1}!`.
 
 Previously defined or built-in parameters may be embedded within **any kind of extraction query**. These parameters will be evaluated right before the query itself is evaluated.
 
