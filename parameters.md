@@ -65,8 +65,13 @@ Parameters can be defined and populated with values dynamically after each reque
 ```
 2. **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org).
 
-3. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`. 
+3. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
 
+4. **Header** - used for extracting response header values via header names.
+
+5. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `${protocol}://${host}:${port}` or `give me a ${random_uppers_1}!`.
+
+Previously defined or built-in parameters may be embedded within **any kind of extraction query**. These parameters will be evaluated right before the query itself is evaluated.
 
 
 
