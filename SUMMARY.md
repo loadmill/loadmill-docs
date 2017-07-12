@@ -3,7 +3,7 @@
 * [FAQ](README.md)
 * [Terms of Service](terms-of-service.md)
 * [Affiliate Program](affiliate-program.md)
-* [Setup](setup.md)
+* Setup
   * [API Tokens](api-tokens.md)
   * [Domain Verification](domain-verification.md)
   * [Testing with CORS](testing-with-cors.md)
