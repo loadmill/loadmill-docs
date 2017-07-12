@@ -7,7 +7,7 @@
   * [API Tokens](api-tokens.md)
   * [Domain Verification](domain-verification.md)
   * [Testing with CORS](testing-with-cors.md)
-* [Test Scenarios](test-scenarios.md)
+* Test Scenarios
   * [Parameters](parameters.md)
   * [Assertions](assertions.md)
   * [Configuration Files](test-configurations.md)
