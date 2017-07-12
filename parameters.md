@@ -24,7 +24,31 @@ Another common use case for parametrization is when you want to **reuse test sce
 
 Let's extend our first example by requiring that the user provide credentials via **basic authentication**. This means our new URLs could look like this:
 
-1. `https://user:password@www.myblog.com/posts`
-2. `https://user:password@www.myblog.com/posts/${postId}/like`
+1. `https://testUser:testPassword@www.myblog.com/posts`
+2. `https://testUser:testPassword@www.myblog.com/posts/${postId}/like`
 
-If you would like to use different credentials for every test run, you may replace the user  
+If you would like to use different credentials for every test run, you may replace the username and password with parameters and set their values in the **parameter defaults** section in your test scenario whenever you reuse the test. So now the URLs will look like:
+
+1. `https://${user}:${pass}@www.myblog.com/posts`
+2. `https://${user}:${pass}@www.myblog.com/posts/${postId}/like`
+
+Using parameter defaults is especially useful for automated testing and CI where you may be testing a different server every time you run a test. 
+
+Please refer to the [Loadmill CLI and node module](https://www.npmjs.com/package/loadmill#parameters) for more information about how to inject parameters dynamically.
+
+## Built-in Parameters
+
+There are several **built-in** parameter constructs that you can use in your test scenario. They are:
+
+- `status` The status code of the last HTTP response
+- `statusText` The status text of the last HTTP response
+- `random_chars` A random string of 10 (alpha-numeric) characters. 
+- `random_digits` 10 random digits. 
+- `random_letters` 10 random letters.
+- `random_uppers` 10 random uppercase letters.
+- `random_lowers` 10 random lowercase letters.
+
+You may specify a different length to each of the random parameters by appending it the parameter name with a preceding underscore, e.g. `random_chars_5` may evaluate to `gK2x9`.
+
+
+
