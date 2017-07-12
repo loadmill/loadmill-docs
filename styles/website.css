@@ -8,3 +8,28 @@
 .divider {
     display: none !important;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-footer {
+    text-align: center; 
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgb(33, 33, 33); 
+    color: rgba(255, 255, 255, 0.54);
+}
+
+.book-footer a {
+    color: #00BCD4;
+}
+
+@media screen and (max-width: 900px) {
+    .book-footer {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
