@@ -16,7 +16,7 @@ The `123` part is the identifier of the blog post created by the user - it canno
 1. [Extract](#parameter-extraction) the ID from the first response into a parameter: `postId`
 2. Embed the parameter in the second request URL: `https://www.myblog.com/posts/${postId}/like`
 
-You may embed parameters with the `${}` syntax in the request URL as well as the request body, request headers, [extractions](#parameter-extraction), [assertions]() and more.
+You may embed parameters with the `${}` syntax in the request URL as well as the request body, request headers, [extractions](#parameter-extraction), [assertions](assertions.html) and more.
 
 Note that any parametrized expression such as `Some ${param}` will remain as-is if no such parameter is defined or extracted before the expression is evaluated.
 
