@@ -30,11 +30,11 @@ This is important in order to avoid confusion when using parameter extractors su
 
 1. Extract the value for `books` via the JSONPath query `student.books` on 
 ```json
-{
-    "student": {
-        "books": []
+    {
+        "student": {
+            "books": []
+        }
     }
-}
 ```
 2. Assert `books` is **Not Empty**.
 

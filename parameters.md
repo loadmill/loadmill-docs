@@ -56,12 +56,12 @@ Parameters can be defined and populated with values dynamically after each reque
 
 1. **JSONPath** - used for extarcting values from a JSON response. For example, the query `post.id` will extract the value `123` from this JSON response:
 ```json
-{
-    "post": {
-        "id": 123,
-        "text": "Hello World!"
+    {
+        "post": {
+            "id": 123,
+            "text": "Hello World!"
+        }
     }
-}
 ```
 2. **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org).
 
