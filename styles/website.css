@@ -16,4 +16,14 @@
 .book-footer {
     height: 11%;
     min-height: 80px;
+    text-align: center; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    font-size: 18px;
+    background-color: rgb(33, 33, 33); 
+    color: rgba(255, 255, 255, 0.54);
+}
+
+.book-footer a {
+    color: #00BCD4;
 }
