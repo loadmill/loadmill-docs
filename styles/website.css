@@ -9,8 +9,9 @@
     display: none !important;
 }
 
-.book {
-
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .book-footer {
