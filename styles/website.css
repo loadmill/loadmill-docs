@@ -8,3 +8,11 @@
 .divider {
     display: none !important;
 }
+
+.book {
+    height: 89%;
+}
+
+.book-footer {
+    height: 11%;
+}
