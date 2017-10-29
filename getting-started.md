@@ -35,6 +35,7 @@
   * And paste this as the request body - `grant_type=password&username=a@b.com&password=Test1234&client_id=ghost-admin&client_secret=b91601629baf`
 
   * Expand the “Set Parameters” card and set a value to a parameter named `access_token` using a `JSONPath` extractor querying for `access_token`
+
   * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor works by expanding the ‘Verify Response’ card and creating an assertion that states that the `access_token` parameter `Is Not Empty`
   * Click the “TRY IT” and execute a trial run to make sure it is working.
 
@@ -63,6 +64,12 @@
   * Run a trial of the whole scenario and go to `https://loadmill-test-blog.herokuapp.com/` to see that our blog posts are getting published.
 
 * Now that we know that our full scenario is working we can run it as a load test. Click the "LOAD TEST" button at the bottom of the test and run the test 🎉
+
+## Recoding a user scenario
+
+{% youtube src="https://www.youtube.com/watch?v=qZd38HhQqiU" %}{% endyoutube %}
+
+
 
 
 

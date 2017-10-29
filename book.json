@@ -1,6 +1,6 @@
 {
   "plugins": [
-    "footer"
+    "footer", "youtube"
   ],
   "pluginsConfig": {
     "layout": {
