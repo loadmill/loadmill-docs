@@ -44,16 +44,17 @@
   * Expand the advance section and set its description to `Publish Blog Post`
   * Set the Content-Type to `application/json` and the body to this JSON - 
 
-  ```json
-  {
-       "posts":[{
-            "title":"Title ${__random_chars}",
-            "slug":"${__random_chars}",
-            "markdown":"Text ${__random_chars}",
-            "status":"published"
-       }]
-  }
-  ```
+```json
+{
+	"posts": [{
+			"title": "Title ${__random_chars}",
+			"slug": "${__random_chars}",
+      		"markdown": "Text ${__random_chars}",
+			"status": "published"
+		}
+	]
+}
+```
 
   * This JSON body defines the post that we are going to publish. Notice that we have used one of Loadmill's built-in parameters to make it a little more interesting - `${__random_chars}`. The `__random_chars` parameter will change to a 10 random characters during test/trial execution.
 
