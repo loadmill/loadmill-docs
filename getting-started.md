@@ -46,13 +46,13 @@
 
 ```json
 {
-	"posts": [{
-			"title": "Title ${__random_chars}",
-			"slug": "${__random_chars}",
-      		"markdown": "Text ${__random_chars}",
-			"status": "published"
-		}
-	]
+   "posts": [{
+         "title": "Title ${__random_chars}",
+         "slug": "${__random_chars}",
+         "markdown": "Text ${__random_chars}",
+         "status": "published"
+      }
+   ]
 }
 ```
 
