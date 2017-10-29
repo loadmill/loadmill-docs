@@ -36,7 +36,7 @@
 
   * Expand the “Set Parameters” card and set a value to a parameter named `access_token` using a `JSONPath` extractor querying for `access_token`
 
-  * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor works by expanding the ‘Verify Response’ card and creating an assertion that states that the `access_token` parameter `Is Not Empty`
+  * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is Not Empty`.
   * Click the “TRY IT” and execute a trial run to make sure it is working.
 
 * Now that we have the authentication token stored in `access_token` we can use it to publish on our blog
