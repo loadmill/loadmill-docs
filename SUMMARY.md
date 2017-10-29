@@ -1,6 +1,7 @@
 # Summary
 
 * [FAQ](README.md)
+* [Getting Started](getting-started.md)
 * [Terms of Service](terms-of-service.md)
 * [Affiliate Program](affiliate-program.md)
 * Setup
