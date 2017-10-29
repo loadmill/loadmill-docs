@@ -67,9 +67,6 @@
 
 ## Recoding a user scenario
 
-{% youtube src="https://www.youtube.com/watch?v=qZd38HhQqiU" %}{% endyoutube %}
-
-
-
-
-
+{% youtube %}
+https://www.youtube.com/watch?v=qZd38HhQqiU
+{% endyoutube %}
