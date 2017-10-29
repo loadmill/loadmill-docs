@@ -42,21 +42,21 @@
   * Create a new request by clicking the "+ ADD REQUEST" button below the first request.
   * Set it as a `POST` request to `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/posts/`
   * Expand the advance section and set its description to `Publish Blog Post`
-  * Set the Content-Type to `application/json` and the body to this JSON - 
-
+  * Set the Content-Type to `application/json` and the body to this JSON- 
 ```json
 {
-   "posts": [{
-         "title": "Title ${__random_chars}",
-         "slug": "${__random_chars}",
-         "markdown": "Text ${__random_chars}",
-         "status": "published"
-      }
-   ]
+       "posts":[
+          {
+             "title":"Title ${__random_chars}",
+             "slug":"${__random_chars}",
+             "markdown":"Text ${__random_chars}",
+             "status":"published"
+          }
+       ]
 }
 ```
 
-  * This JSON body defines the post that we are going to publish. Notice that we have used one of Loadmill's built-in parameters to make it a little more interesting - `${__random_chars}`. The `__random_chars` parameter will change to a 10 random characters during test/trial execution.
+  * This JSON body defines the blog post that we are going to publish. Notice that we have used one of Loadmill's built-in parameters to make it a little more interesting - `${__random_chars}`. The `__random_chars` parameter will change to a 10 random characters during test/trial execution.
 
   * Now, lets use the `access_token` parameter value we extracted from the login response to authenticate this request. Expand the header card of publish request and add a header with the name `Authorization` and the value `Bearer  ${access_token}`
 
