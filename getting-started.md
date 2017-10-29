@@ -65,7 +65,7 @@
 
 * Now that we know that our full scenario is working we can run it as a load test. Click the "LOAD TEST" button at the bottom of the test and run the test 🎉
 
-## Recoding a user scenario
+## Recoding a user session and running it as a load test
 
 {% youtube %}
 https://www.youtube.com/watch?v=qZd38HhQqiU
