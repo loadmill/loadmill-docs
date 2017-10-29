@@ -45,12 +45,12 @@
   * Set the Content-Type to `application/json` and the body to this JSON- 
 ```json
 {
-       "posts":[
+       "posts": [
           {
-             "title":"Title ${__random_chars}",
-             "slug":"${__random_chars}",
-             "markdown":"Text ${__random_chars}",
-             "status":"published"
+             "title": "Title ${__random_chars}",
+             "slug": "${__random_chars}",
+             "markdown": "Text ${__random_chars}",
+             "status": "published"
           }
        ]
 }
