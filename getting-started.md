@@ -7,7 +7,7 @@
 * Give your new test a short description `My First Test`
 
 * Set the value of the URL for Request \#1 to be - `https://loadmill-test-blog.herokuapp.com`. This is a ghost blogging server we are using for testing and demos, so can use it for your test. 
-You might see the tested domain showing up in a red chip at the bottom of the page, this is OK for now (This happens because we you haven't proved ownership of this tested domain yet, we can do that later)
+You might see the tested domain showing up in a _red_ chip at the bottom of the page, this is OK for now (This is because we haven't proved ownership of this tested domain yet, we can fix that later)
 
 * Let’s run a trial run to make sure that our test scenario is configured correctly. Click the “TRY IT” button at the bottom of the page, this will open the “TRY IT” dialog. Make sure the first option \(Run Remotely\) is selected and click the “RUN” button.
 
