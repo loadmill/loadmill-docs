@@ -38,6 +38,7 @@ You might see the tested domain showing up in a red chip at the bottom of the pa
   * Expand the “Set Parameters” card and set a value to a parameter named `access_token` using a `JSONPath` extractor querying for `access_token`. This will create a value extractor that will execute a [JSONPath query](http://goessner.net/articles/JsonPath/) against the JSON response of the request and extract the authentication token into a parameter named `access_token`.
 
   * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is Not Empty`.
+  ![](/assets/Screen Shot 2017-11-02 at 13.59.02.png)
   
   * Click the “TRY IT” and execute a trial run to make sure it is working.
 
