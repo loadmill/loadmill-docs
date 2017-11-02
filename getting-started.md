@@ -2,13 +2,16 @@
 
 ## Running your first simple test in 5 minutes
 
-* Create a new empty test by opening the side menu and clicking “New Test”
+* Create a new empty test by opening the side menu and clicking “New Test” (If you just signed-up you might be already in the new test page)
 
 * Give your new test a short description `My First Test`
 
-* Set the value of the URL for Request \#1 to be - `https://loadmill-test-blog.herokuapp.com` \(This is a ghost blogging server we are using for testing and demos\).
+* Set the value of the URL for Request \#1 to be - `https://loadmill-test-blog.herokuapp.com`. This is a ghost blogging server we are using for testing and demos, so can use it for your test. 
+You might see the tested domain showing up in a red chip at the bottom of the page, this is OK for now (This happens because we you haven't proved ownership of this tested domain yet)
 
-* Let’s run a trial run to make sure that our test scenario is configured correctly. Click the “TRY IT” button at the bottom of the page and open the “TRY IT” dialog. Make sure the first option \(Run Remotely\) is selected and click the “RUN” button.
+* Let’s run a trial run to make sure that our test scenario is configured correctly. Click the “TRY IT” button at the bottom of the page, this will open the “TRY IT” dialog. Make sure the first option \(Run Remotely\) is selected and click the “RUN” button.
+
+![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
 
 * Wait for the trial run to finish successfully and click Request \#1 to expand it and view its response \(There should be no errors\).
 
@@ -35,6 +38,7 @@
   * Expand the “Set Parameters” card and set a value to a parameter named `access_token` using a `JSONPath` extractor querying for `access_token`. This will create a value extractor that will execute a [JSONPath query](http://goessner.net/articles/JsonPath/) against the JSON response of the request and extract the authentication token into a parameter named `access_token`.
 
   * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is Not Empty`.
+  
   * Click the “TRY IT” and execute a trial run to make sure it is working.
 
 * Now that we have the authentication token stored in `access_token` we can use it to publish on our blog
