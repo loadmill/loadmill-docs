@@ -1,6 +1,7 @@
-# Getting Started
+# Working With The Test Editor
+Learn how to create a new Load test using Loadmill.
 
-## Running your first simple test in 5 minutes
+## Starting From Scratch
 
 * Create a new empty test by opening the side menu and clicking “New Test” (If you just signed-up you might be already in the new test page)
 
@@ -11,7 +12,7 @@ You might see the tested domain showing up in a _red_ chip at the bottom of the 
 
 * Let’s run a trial run to make sure that our test scenario is configured correctly. Click the “TRY IT” button at the bottom of the page, this will open the “TRY IT” dialog. Make sure the first option \(Run Remotely\) is selected and click the “RUN” button.
 
-![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
+![](/assets/try-it.png)
 
 * Wait for the trial run to finish successfully and click Request \#1 to expand it and view its response \(There should be no errors\).
 
@@ -69,9 +70,3 @@ You might see the tested domain showing up in a _red_ chip at the bottom of the 
   * Run a trial of the whole scenario and go to `https://loadmill-test-blog.herokuapp.com/` to see that our blog posts are getting published.
 
 * Now that we know that our full scenario is working we can run it as a load test. Click the "LOAD TEST" button at the bottom of the test and run the test 🎉
-
-## Recoding a user session and running it as a load test
-
-{% youtube %}
-https://www.youtube.com/watch?v=qZd38HhQqiU
-{% endyoutube %}
