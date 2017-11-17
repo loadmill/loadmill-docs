@@ -1,4 +1,7 @@
 # Getting Started
+{% youtube %}
+https://www.youtube.com/watch?v=qZd38HhQqiU
+{% endyoutube %}
 
 ## Running your first simple test in 5 minutes
 
