@@ -1,9 +1,6 @@
 # Summary
 
-* [FAQ](README.md)
 * [Getting Started](getting-started.md)
-* [Terms of Service](terms-of-service.md)
-* [Affiliate Program](affiliate-program.md)
 * Setup
   * [API Tokens](api-tokens.md)
   * [Domain Verification](domain-verification.md)
@@ -12,5 +9,8 @@
   * [Parameters](parameters.md)
   * [Assertions](assertions.md)
   * [Configuration Files](test-configurations.md)
+* [Terms of Service](terms-of-service.md)
+* [Affiliate Program](affiliate-program.md)
 * [REST API](rest-api.md)
+* [FAQ](faq.md)
 

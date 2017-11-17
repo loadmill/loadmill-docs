@@ -6,5 +6,8 @@
     "layout": {
       "footerPath" : "layouts/footer.html"
     }
+  },
+  "structure": {
+    "readme": "getting-started.md"
   }
 }
