@@ -1,9 +1,10 @@
 # Getting Started
+How to run your first Loadmill test in 5 minutes:
 {% youtube %}
 https://www.youtube.com/watch?v=qZd38HhQqiU
 {% endyoutube %}
 
-## Running your first simple test in 5 minutes
+## Step by step
 
 * Create a new empty test by opening the side menu and clicking “New Test” (If you just signed-up you might be already in the new test page)
 

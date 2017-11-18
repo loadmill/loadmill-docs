@@ -1,6 +1,6 @@
 # Summary
 
-* [Getting Started](getting-started.md)
+* [Getting Started](README.md)
 * Setup
   * [API Tokens](api-tokens.md)
   * [Domain Verification](domain-verification.md)
