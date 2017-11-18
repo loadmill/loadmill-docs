@@ -4,6 +4,41 @@ How to run your first Loadmill test in 5 minutes:
 https://www.youtube.com/watch?v=qZd38HhQqiU
 {% endyoutube %}
 
+## Loadmill in 5 minutes
+In this short introduction to Loadmill we will learn how to:
+
+1. Create and run a very simple load test in just a few seconds.
+2. Record a user session with a browser and import it to Loadmill.
+3. Transform the recorded session into an advanced test scenario.
+4. Run the advanced load test and analyze the results.
+
+We are going to be testing a [Ghost](https://ghost.org/developers/) publishing service hosted on Heroku that you can actually download/fork and play with yourself if you so desire.
+
+Everything described here is demonstrated in the video above so be sure to check it out.
+
+## Free Account
+Before you can start running free tests, you will need to create a Loadmill account. We do not ask for any credit card or personal information other your name and email so it only takes about five seconds. You can also login using your Google or GitHub account.
+
+## Hello World
+The simplest load test you can create is an HTTP GET request to your web server. All you need to do is:
+
+1. Click on **NEW TEST** on the top navigation menu. This will get you to our test editor.
+2. Copy and paste the website URL into the **URL** text box. In our case, it's going to be `https://loadmill-test-blog.herokuapp.com`.
+3. Click the **LOAD TEST** button and confirm the config by clicking **RUN**.
+
+**Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can ignore it for now and learn how to do that later [here](domain-verification.html) \(it's actually pretty easy\).
+
+That's it! You have just created and ran your first load test in under a minute 🎉
+
+## Record A Session
+Any modern browser that has **Developer Tools** such as Chrome, Firefox, Edge or Safari, has a **Network Tab** in which you can view and **record HTTP requests** of your session. If your tested application has a web interface, recording a browser session is a pretty fast and straight forward way to create advanced tests for common user scenarios.
+
+The user story we want to record is the following:
+
+1. A blogger logs in to the Ghost platform using a username and password.
+2. The blogger creates a blog post.
+3. The blogger publishes the blog post.
+
 ## Step by step
 
 * Create a new empty test by opening the side menu and clicking “New Test” (If you just signed-up you might be already in the new test page)
