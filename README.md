@@ -44,6 +44,7 @@ So here's what we're going to do:
 Let's assume you're using Chrome to record your session. If you have any other browser with develper tools, the flow will be very similar.
 
 Start by opening the network tab:
+
 ![](/assets/net-tab.gif)
 
 ## Step by step
