@@ -43,7 +43,6 @@ So here's what we're going to do:
 ### Setup a recording
 Let's assume you're using Chrome to record your session. If you have any other browser with develper tools, the flow will be very similar.
 
-We start by entering the URL for the login page, `https://loadmill-test-blog.herokuapp.com/ghost/signin` in the address bar
 Start by opening the network tab:
 
 ![](/assets/net-tab.gif)
