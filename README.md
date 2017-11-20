@@ -95,102 +95,26 @@ To start a trial run, click the **TRY IT** button at the bottom of the editor. Y
 
 ![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
 
+### Generalizing the test scenario
 At this point the trial test should succeed, but our work is not yet done. There are two problems with this scenario, that would be clear to the person who designed the API, but to us may not be appearant at first glance:
 
-1. The access token used in the POST and PUT requests is the one generated in the original session, and will expire within a few minutes. We need to use the authentication token provided in the response JSON to the login request instead.
+1. The access token used in Request #2 and Request #3 is the one generated in the original session, and will expire within a few minutes. We need to use the authentication token provided in the response JSON to the login request instead.
 2. Instead of publishing the blog post created by our scenario, it is the same one from the recorded session that will be published every time we run the test scenario.
 
-This is to be expected, since 
-
-This can be done easily using [Parameters](parameters.html). 
+This is to be expected, since the requests are executed exactly as they were recorded by the browser. However, with small modifications to our test scenario, we can **generalize** it so that it can be executed correctly multiple times and in parallel. We do that by using [Parametrization](parameters.html).
 
 We start by fixing the login - we are going to create a **Parameter** named `access_token`, extract its value from the login response using [JSONPath](http://goessner.net/articles/JsonPath/) and use it to authenticate the other two requests. Let's do it step by step:
  
-1. Click the **ADVANCED** button in the bottom-left corner of the login request card.
-2. Expand the **Set Parameters** card by clicking it. 
-3. Define a parameter named `access_token` and set the **JSONPath** query to: `access_token`. 
+1. Click the **ADVANCED** button in the bottom-left corner of Request #1.
+2. Expand the **Set Parameters** section by clicking it. 
+3. Define a parameter named `access_token` and set the **JSONPath** query to  `$.access_token` or simply `access_token`. This parameter can now be used in subsequent requests.
+![](/assets/Screen Shot 2017-11-02 at 13.59.02.png)
 
-  * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is Not Empty`.
-  
-  ![](/assets/Screen Shot 2017-11-02 at 13.59.02.png)
-  
-  * Click the “TRY IT” and execute a trial run to make sure it is working.
+4. In the **Headers** section of Request #2, we find the **Authorization** header taken from the recording. It contains the access token from the recorded session - we replace it with the value of the parameter we have just created: `Bearer ${access_token}`. 
+![](/assets/auth-header.png)
 
-* Now that we have the authentication token stored in `access_token` we can use it to publish on our blog
+5. We do the same for Request #3.
 
+Now every time we run the test scenario, the correct token is stored in our parameter and used in subsequent requests. We can run the trial again to verify this is indeed the case.
 
-## Step by step
-
-* Create a new empty test by opening the side menu and clicking “New Test” (If you just signed-up you might be already in the new test page)
-
-* Give your new test a short description `My First Test`
-
-* Set the value of the URL for Request \#1 to be - `https://loadmill-test-blog.herokuapp.com`. This is a ghost blogging server we are using for testing and demos, so can use it for your test. 
-You might see the tested domain showing up in a _red_ chip at the bottom of the page, this is OK for now (This is because we haven't proved ownership of this tested domain yet, we can fix that later)
-
-* Let’s run a trial run to make sure that our test scenario is configured correctly. Click the “TRY IT” button at the bottom of the page, this will open the “TRY IT” dialog. Make sure the first option \(Run Remotely\) is selected and click the “RUN” button.
-
-![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
-
-* Wait for the trial run to finish successfully and click Request \#1 to expand it and view its response \(There should be no errors\).
-
-* Now that we know that our scenario is configured correctly we can run it as a load test with multiple users. Click the “LOAD TEST” button to open the “Run a load test” dialog. Set the test duration to 2 minutes and the number of maximum test users to 5 and click the “RUN” button. \(note: Until you have verified ownership over all the tested domains included in the test scenario you won’t be able to run a load test with more than 5 concurrent users\)
-
-* You are now running your first load test, it simulates 5 concurrent users loading our blog homepage by sending HTTP GET requests to `https://loadmill-test-blog.herokuapp.com` repeatedly. Hover your mouse over the graph to inspect average performance over time.
-
-## Using parameters and extracting response values
-
-* In our first simple test we have simulated users loading the homepage our blog, our second test is going to simulate several users publishing new entries to the blog.
-* First create a new empty test.
-* Only logged in users can post to our blog, so let's start by executing a login request and store the authentication token returned by it into a parameter for later use.
-
-  * Set the Request \#1 method to `POST` and its URL to - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token/`
-
-  * Click the ‘ADVANCED’ button to expand the advanced section of the request
-
-  * Update the request description to `Blog Login`
-
-  * Set the Content-Type to `application/x-www-form-urlencoded` \(last in the list\).
-
-  * And paste this as the request body - `grant_type=password&username=a@b.com&password=Test1234&client_id=ghost-admin&client_secret=b91601629baf`
-
-  * Expand the “Set Parameters” card and set a value to a parameter named `access_token` using a `JSONPath` extractor querying for `access_token`. This will create a value extractor that will execute a [JSONPath query](http://goessner.net/articles/JsonPath/) against the JSON response of the request and extract the authentication token into a parameter named `access_token`.
-
-  * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is Not Empty`.
-  
-  ![](/assets/Screen Shot 2017-11-02 at 13.59.02.png)
-  
-  * Click the “TRY IT” and execute a trial run to make sure it is working.
-
-* Now that we have the authentication token stored in `access_token` we can use it to publish on our blog
-
-  * Create a new request by clicking the "+ ADD REQUEST" button below the first request.
-  * Set it as a `POST` request to `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/posts/`
-  * Expand the advance section and set its description to `Publish Blog Post`
-  * Set the Content-Type to `application/json` and the body to this JSON- 
-```json
-{
-       "posts": [
-          {
-             "title": "Title ${__random_chars}",
-             "slug": "${__random_chars}",
-             "markdown": "Text ${__random_chars}",
-             "status": "published"
-          }
-       ]
-}
-```
-
-  * This JSON body defines the blog post that we are going to publish. Notice that we have used one of Loadmill's built-in parameters to make it a little more interesting - `${__random_chars}`. The `__random_chars` parameter will change to a 10 random characters during test/trial execution.
-
-  * Now, lets use the `access_token` parameter value we extracted from the login response to authenticate this request. Expand the header card of publish request and add a header with the name `Authorization` and the value `Bearer  ${access_token}`
-
-  * Run a trial of the whole scenario and go to `https://loadmill-test-blog.herokuapp.com/` to see that our blog posts are getting published.
-
-* Now that we know that our full scenario is working we can run it as a load test. Click the "LOAD TEST" button at the bottom of the test and run the test 🎉
-
-## Recoding a user session and running it as a load test
-
-{% youtube %}
-https://www.youtube.com/watch?v=qZd38HhQqiU
-{% endyoutube %}
+The second issue is solved similarly - we define parameters for the server-generated `postId` and `slug` from Request #2 and use them in Request #3.
