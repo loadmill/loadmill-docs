@@ -22,7 +22,7 @@ Before you can start running free tests, you will need to create a Loadmill acco
 ## Hello World
 The simplest load test you can create is an HTTP GET request to your web server. All you need to do is:
 
-1. Click on **NEW TEST** on the top navigation menu. This will get you to our test editor.
+1. Click the **NEW TEST** link on the top navigation menu. This will get you to our test editor.
 2. Copy and paste the website URL into the **URL** text box. In our case, it's going to be `https://loadmill-test-blog.herokuapp.com`.
 3. Click the **LOAD TEST** button and confirm the config by clicking **RUN**.
 
@@ -65,7 +65,7 @@ And that is the end of our user story for today.
 ### Save
 The last step is to go back to the network tab, right-click any request and click on **Save as HAR with content**. This will save all the recorded requests into a [HAR file](https://en.wikipedia.org/wiki/.har) which we can now import into Loadmill.
 
-## Import And Generalize
+## Import & Generalize
 Once we have a recording of a user session, we are going to:
 
  1. **Import** the recording into Loadmill.
@@ -73,6 +73,12 @@ Once we have a recording of a user session, we are going to:
  3. Perform a **Trial Run** and examine the output.
  4. Add **Parameters** to the test in order to use a data from previous requests in subsequent requests.
  5. **Repeat** The last two steps until we are satisfied with the result.
+ 
+We start with going back to [Loadmill](https://www.loadmill.com) and opening a new test editor by clicking the **NEW TEST** link on the top navigation menu. We click the **IMPORT** button, select our HAR file and confirm.
+
+**Note:** At this point you will be presented with a list of domains/hostnames used in the recording. In real life you will often see third party domains that are irrelevant to your test such as google analytics, Intercom, etc. If that happens, simply click the remove icon on the domains you want to filter out.
+
+
 
 ## Step by step
 
