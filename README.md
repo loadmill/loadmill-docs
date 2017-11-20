@@ -60,7 +60,19 @@ The next step is to simply do what the user in our scenario is supposed to do. I
 3. Choose a title for the blog post and add some content.
 4. Click on the little arrow by the **SAVE DRAFT** button, choose **Publish Now** and click on **PUBLISH NOW** to confirm.
 
-And that is the end of our user story for today. 
+And that is the end of our user story for today.
+
+### Save
+The last step is to go back to the network tab, right-click any request and click on **Save as HAR with content**. This will save all the recorded requests into a [HAR file](https://en.wikipedia.org/wiki/.har) which we can now import into Loadmill.
+
+## Import And Generalize
+Once we have a recording of a user session, we are going to:
+
+ 1. **Import** the recording into Loadmill.
+ 2. **Remove** less interesting requests from the scenario.
+ 3. Perform a **Trial Run** and examine the output.
+ 4. Add **Parameters** to the test in order to use a data from previous requests in subsequent requests.
+ 5. **Repeat** The last two steps until we are satisfied with the result.
 
 ## Step by step
 
