@@ -1,11 +1,8 @@
-# Getting Started
-
-How to run your first Loadmill test in 5 minutes:
+# Loadmill In 5 Minutes
 {% youtube %}
 https://www.youtube.com/watch?v=qZd38HhQqiU
 {% endyoutube %}
 
-## Loadmill In 5 Minutes
 In this short introduction to Loadmill we will learn how to:
 
 1. Create and run a very simple load test in just a few seconds.
