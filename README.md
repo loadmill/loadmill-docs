@@ -86,10 +86,38 @@ In order to keep things nice and simple we remove everything except the login, c
 
 ![](/assets/del-reqs.gif)
 
-### Running a trial
+### Running a trial test
+Before we run a massive load test, we usually want to run just a single iteration of the scenario, to make sure everything works as expected. This is what we call a **Trial Run** or **Trial Test** (some like the term "dry run").
 
+When we are creating a new test or extending/maintaining an old one, we like to iterate several times - modifying the test and trying it out - until we get the result we want.
+
+To start a trial run, click the **TRY IT** button at the bottom of the editor. You will be promped to choose between running **remotely** (the default) or **locally**. There several good reasons to want to run locally, but for now we leave it on remote. 
 
 ![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
+
+At this point the trial test should succeed, but our work is not yet done. There are two problems with this scenario, that would be clear to the person who designed the API, but to us may not be appearant at first glance:
+
+1. The access token used in the POST and PUT requests is the one generated in the original session, and will expire within a few minutes. We need to use the authentication token provided in the response JSON to the login request instead.
+2. Instead of publishing the blog post created by our scenario, it is the same one from the recorded session that will be published every time we run the test scenario.
+
+This is to be expected, since 
+
+This can be done easily using [Parameters](parameters.html). 
+
+We start by fixing the login - we are going to create a **Parameter** named `access_token`, extract its value from the login response using [JSONPath](http://goessner.net/articles/JsonPath/) and use it to authenticate the other two requests. Let's do it step by step:
+ 
+1. Click the **ADVANCED** button in the bottom-left corner of the login request card.
+2. Expand the **Set Parameters** card by clicking it. 
+3. Define a parameter named `access_token` and set the **JSONPath** query to: `access_token`. 
+
+  * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is Not Empty`.
+  
+  ![](/assets/Screen Shot 2017-11-02 at 13.59.02.png)
+  
+  * Click the “TRY IT” and execute a trial run to make sure it is working.
+
+* Now that we have the authentication token stored in `access_token` we can use it to publish on our blog
+
 
 ## Step by step
 
