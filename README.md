@@ -4,7 +4,7 @@ How to run your first Loadmill test in 5 minutes:
 https://www.youtube.com/watch?v=qZd38HhQqiU
 {% endyoutube %}
 
-## Loadmill in 5 minutes
+## Loadmill In 5 Minutes
 In this short introduction to Loadmill we will learn how to:
 
 1. Create and run a very simple load test in just a few seconds.
@@ -78,7 +78,18 @@ We start with going back to [Loadmill](https://www.loadmill.com) and opening a n
 
 **Note:** At this point you will be presented with a list of domains/hostnames used in the recording. In real life you will often see third party domains that are irrelevant to your test such as google analytics, Intercom, etc. If that happens, simply click the remove icon on the domains you want to filter out.
 
+Once the import is complete, we see a list of all the requests made in the recorded user session - these requests will be played back in our test scenario.
 
+The first is **POST** request for the login, followed by several **GET** requests for various resources, a **POST** request for creating the blog post, several **PUT** requests for adding the content and a final **PUT** request for publishing it.
+
+In order to keep things nice and simple we remove everything except the login, creation and publish request (which contains the content as well).
+
+![](/assets/del-reqs.gif)
+
+### Running a trial
+
+
+![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
 
 ## Step by step
 

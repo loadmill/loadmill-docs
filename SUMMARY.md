@@ -1,6 +1,7 @@
 # Summary
 
 * [Getting Started](README.md)
+* [Working With The Test Editor](getting-started.md)
 * Setup
   * [API Tokens](api-tokens.md)
   * [Domain Verification](domain-verification.md)
