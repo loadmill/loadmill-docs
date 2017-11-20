@@ -35,11 +35,12 @@ Any modern browser that has **Developer Tools** such as Chrome, Firefox, Edge or
 
 The user story we would like to record is the following:
 
-1. A blogger logs in to the Ghost platform using a username and password.
+1. A blogger logs in to the Ghost platform using an email and password.
 2. The blogger creates a blog post.
 3. The blogger publishes the blog post.
 
-So here's what we're going to do:
+So let's dive right in:
+
 ### Setup a recording
 Let's assume you're using Chrome to record your session. If you have any other browser with develper tools, the flow will be very similar.
 
@@ -48,6 +49,18 @@ Start by opening the network tab:
 ![](/assets/net-tab.gif)
 
 Now we shall enter the URL for the login page in the address bar: `https://loadmill-test-blog.herokuapp.com/ghost/signin`. We can already see the network tab below starting to fill up with HTTP requests sent by the browser to our web server. We would like the first request to be the login, so just click on the clear button on the top left corner of the network tab to get rid of these.
+
+We are ready to start recording.
+
+### Do stuff
+The next step is to simply do what the user in our scenario is supposed to do. In our case it is:
+
+1. Enter the mock user email `a@b.com` and password `Test1234` and click on the **SIGN IN** button.
+2. Click on the **NEW POST** button.
+3. Choose a title for the blog post and add some content.
+4. Click on the little arrow by the **SAVE DRAFT** button, choose **Publish Now** and click on **PUBLISH NOW** to confirm.
+
+And that is the end of our user story for today. 
 
 ## Step by step
 
