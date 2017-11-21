@@ -3,7 +3,7 @@
 https://www.youtube.com/watch?v=qZd38HhQqiU
 {% endyoutube %}
 
-In this short introduction to Loadmill we will learn how to:
+In this quick guide to Loadmill we will learn how to:
 
 1. Create and run a very simple load test in just a few seconds.
 2. Record a user session with a browser and import it to Loadmill.
@@ -115,4 +115,11 @@ We start by fixing the login - we are going to create a **Parameter** named `acc
 
 Now every time we run the test scenario, the correct token is stored in our parameter and used in subsequent requests. We can run the trial again to verify this is indeed the case.
 
-The second issue is solved similarly - we define parameters for the server-generated `postId` and `slug` from Request #2 and use them in Request #3.
+The second issue is solved similarly - we define parameters for the server-generated `postId` and `slug` from Request #2 and use them in Request #3. Let's do this step by step:
+
+1. Set the parameter values for `postId` and `slug` with the JSONPath queries `posts[0].id` and `posts[0].slug`, respectively.
+![](/assets/queries.png) 
+
+2. This time we need to use our parametrs in the URL and request body of Request #3. This is done with the same syntax as before - we set the new URL to `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/posts/${postId}/?include=tags` and set the values for the `id` and `slug` properties of the JSON request body to `"${postId}"` and `"${slug}"`, respectively.
+
+![](/assets/params.gif) 
