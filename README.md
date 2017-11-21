@@ -115,11 +115,19 @@ We start by fixing the login - we are going to create a **Parameter** named `acc
 
 Now every time we run the test scenario, the correct token is stored in our parameter and used in subsequent requests. We can run the trial again to verify this is indeed the case.
 
-The second issue is solved similarly - we define parameters for the server-generated `postId` and `slug` from Request #2 and use them in Request #3. Let's do this step by step:
+The second issue is solved similarly - we define a parameter for the server-generated `postId` from Request #2 and use it in Request #3. We also need to provide a unique identifier called a **slug**, which we are going to randomly generate, and use it for creating and publishing the blog post. It's actually pretty simple, but let's go over it step by step:
 
-1. Set the parameter values for `postId` and `slug` with the JSONPath queries `posts[0].id` and `posts[0].slug`, respectively.
-![](/assets/queries.png) 
+1. We start by defining the `slug` parameter and giving it a random value of 10 alpha-numeric characters at the start of every scenario. In order to do that we click on **Advanced Settings** at the bottom of the page, scroll to the **Parameter Defaults** section and define the value for the `slug` parameter to be `${__random_chars}` - using the `${}` syntax here means the same things as it did before, i.e. assining a value from a parameter. The only difference is that, this time, we are using a **built-in  parameter** that resolves a different random value each time it is evaluates.
+![](/assets/random-param.png)
+ 
+2. Open Request #2 and set the value for the `slug` property of the JSON request body to `"${slug}"`. In the same request, we define the `postId` parameter with the JSONPath query `posts[0].id`.
+![](/assets/req-2.png) 
 
-2. This time we need to use our parametrs in the URL and request body of Request #3. This is done with the same syntax as before - we set the new URL to `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/posts/${postId}/?include=tags` and set the values for the `id` and `slug` properties of the JSON request body to `"${postId}"` and `"${slug}"`, respectively.
+4. The last step is to use both parametrs in the URL and request body of Request #3. This is done with the same syntax as before - we set the new URL to `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/posts/${postId}/?include=tags` and set the values for the `id` and `slug` properties of the JSON request body to `"${postId}"` and `"${slug}"`, respectively.
 
-![](/assets/params.gif) 
+![](/assets/params.gif)
+
+Now our test scenario is ready for load testing.
+
+## Load Testing
+Now that we have a truely robust test, we would like to see how our Ghost server handles multiple concurrent users signing in, creating blog posts and publishing them.
