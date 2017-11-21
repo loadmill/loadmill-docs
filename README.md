@@ -124,10 +124,9 @@ The second issue is solved similarly - we define a parameter for the server-gene
 ![](/assets/req-2.png) 
 
 4. The last step is to use both parametrs in the URL and request body of Request #3. This is done with the same syntax as before - we set the new URL to `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/posts/${postId}/?include=tags` and set the values for the `id` and `slug` properties of the JSON request body to `"${postId}"` and `"${slug}"`, respectively.
-
 ![](/assets/params.gif)
 
-Now our test scenario is ready for load testing.
+Our test scenario is ready for load testing.
 
 ## Load Testing
 Now that we have a truely robust test, we would like to see how our Ghost server handles multiple concurrent users signing in, creating blog posts and publishing them.
