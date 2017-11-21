@@ -14,6 +14,15 @@ We are going to be testing a [Ghost](https://ghost.org/developers/) publishing s
 
 Everything described here is demonstrated in the video above so be sure to check it out.
 
+## Learn More
+Here's some more guides on how to do great things with Loadmill:
+
+- [Starting From Scratch](getting-started.html) - Create an advanced load test from scratch using the test editor, without recording a session.
+- [Using Parameters](parameters.html) - How to do cool stuff using **Parameters**.
+- [Verifying Responses](assertions.html) - How to use  **Assertions** to ensure correctness.
+- [CI/CD Integration](api-tokens.html) - Run tests (Load and API / Functional) via REST, CLI or JavaScript. 
+- [Domain / Hostname Verification](domain-verification.html) - How to quickly enable verification for your app or website so you can run bigger load tests.
+
 ## Free Account
 Before you can start running free tests, you will need to create a Loadmill account. We do not ask for any credit card or personal information other your name and email so it only takes about five seconds. You can also login using your Google or GitHub account.
 
@@ -139,7 +148,4 @@ As the test progresses we can see the amount of concurrent sessions **ramping up
 
 We keep track of the request **error rate** and fail the test if it passes a certain threshold (%50 by default). We can see the response time for each request along with the error statistics for each one.
 
-Stay tuned for more guides on how to analyze load test results
-
-## Learn More
-
+Stay tuned for more guides on how to analyze load test results, set thresholds and more.
