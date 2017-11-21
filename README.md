@@ -130,3 +130,6 @@ Our test scenario is ready for load testing.
 
 ## Load Testing
 Now that we have a truely robust test, we would like to see how our Ghost server handles multiple concurrent users signing in, creating blog posts and publishing them.
+
+In order to launch the test we simply click the **LOAD TEST** button at the bottom of the test editor. We can then set the duration and number of concurrent sessions for the test - in our example we chose 1 minute and 100 concurrent sessions. We click **RUN** and the load test begins.
+
