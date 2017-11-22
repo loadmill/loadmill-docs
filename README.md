@@ -1,3 +1,11 @@
+# Changes
+
+- [ ] enable cors
+- [ ] desire
+- [ ] steps
+- [ ] start gif
+- [ ] snaps of problemsspace snaps
+
 # Loadmill In 5 Minutes
 {% youtube %}
 https://www.youtube.com/watch?v=qZd38HhQqiU
