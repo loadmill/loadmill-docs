@@ -12,7 +12,7 @@ You might see the tested domain showing up in a _red_ chip at the bottom of the 
 
 * Let’s run a trial run to make sure that our test scenario is configured correctly. Click the “TRY IT” button at the bottom of the page, this will open the “TRY IT” dialog. Make sure the first option \(Run Remotely\) is selected and click the “RUN” button.
 
-![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
+![](/assets/try-it.png)
 
 * Wait for the trial run to finish successfully and click Request \#1 to expand it and view its response \(There should be no errors\).
 
