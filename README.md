@@ -49,7 +49,7 @@ The user story we would like to record is the following:
 2. The blogger creates a blog post.
 3. The blogger publishes the blog post.
 
-So let's dive right in:
+We begin by setting up the recording.
 
 ### Step 1: Setup a recording
 Let's assume you're using Chrome to record your session. If you have any other browser with develper tools, the flow will be very similar.
