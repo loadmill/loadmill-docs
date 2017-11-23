@@ -7,7 +7,7 @@ In this quick guide to Loadmill we will learn how to:
 
 1. Create and run a very simple load test in just a few seconds.
 2. Record a user session with a browser and import it to Loadmill.
-3. Transform the recorded session into an advanced test scenario.
+3. Transform the recorded session into a robust test scenario.
 4. Run the advanced load test and analyze the results.
 
 We are going to be testing a [Ghost](https://ghost.org/developers/) publishing service hosted on Heroku that you can actually download/fork and play with yourself if you like.
