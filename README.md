@@ -40,6 +40,8 @@ The simplest load test you can create is an HTTP GET request to your web server.
 2. Copy and paste the website URL into the **URL** text box. In our case, it's going to be `https://loadmill-test-blog.herokuapp.com`.
 3. Click the **LOAD TEST** button and confirm the config by clicking **RUN**.
 
+![](/assets/start.gif)
+
 **Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can ignore it for now and learn how to do that later [here](domain-verification.html) \(it's actually pretty easy\).
 
 That's it! You have just created and ran your first load test in under a minute 🎉
