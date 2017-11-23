@@ -104,7 +104,7 @@ When we are creating a new test or extending/maintaining an old one, we like to 
 
 To start a trial run, click the **TRY IT** button at the bottom of the editor. You will be promped to choose between running **remotely** (the default) or **locally**. There are several good reasons you may want to run locally, but for now we leave it on remote. 
 
-![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
+![](/assets/try-it.png)
 
 ### Generalizing the test scenario
 At this point the trial test should succeed, but our work is not yet done. There are two problems with this scenario, that would be clear to the person who designed the API, but to us may not be appearant at first glance:
