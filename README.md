@@ -70,7 +70,7 @@ The next step is to simply do what the user in our scenario is supposed to do. I
 3. Choose a title for the blog post and add some content.
 4. Click on the little arrow by the **SAVE DRAFT** button, choose **Publish Now** and click on **PUBLISH NOW** to confirm.
 
-And that is the end of our user story for today.
+Once the post is published, our user story is complete.
 
 ### Step 3: Save
 The last step is to go back to the network tab, right-click any request and click on **Save as HAR with content**. This will save all the recorded requests into a [HAR file](https://en.wikipedia.org/wiki/.har) which we can now import into Loadmill.
