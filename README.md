@@ -1,9 +1,3 @@
-# Changes
-
-- [ ] start gif
-- [ ] snaps of problems
-- [ ] space snaps
-
 # Loadmill In 5 Minutes
 {% youtube %}
 https://www.youtube.com/watch?v=qZd38HhQqiU
@@ -117,7 +111,9 @@ At this point the trial test should succeed, but our work is not yet done. There
 1. The access token used in Request #2 and Request #3 is the one generated in the original session, and will expire within a few minutes. We need to use the authentication token provided in the response JSON to the login request instead.
 2. Instead of publishing the blog post created by our scenario, it is the same one from the recorded session that will be published every time we run the test scenario.
 
-This is to be expected, since the requests are executed exactly as they were recorded by the browser. However, with small modifications to our test scenario, we can **generalize** it so that it can be executed correctly multiple times and in parallel. We do that by using [Parametrization](parameters.html).
+![](/assets/problems.png)
+
+This is to be expected, since the requests are executed **exactly** as they were recorded by the browser - the values are essentially **hard-coded**. However, with small modifications to our test scenario, we can **generalize** it so that it can be executed correctly multiple times and in parallel. We do that by using [Parametrization](parameters.html).
 
 We start by fixing the login - we are going to create a **Parameter** named `access_token`, extract its value from the login response using [JSONPath](http://goessner.net/articles/JsonPath/) and use it to authenticate the other two requests. Let's do it step by step:
  
