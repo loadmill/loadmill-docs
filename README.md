@@ -98,7 +98,7 @@ In order to keep things nice and simple we remove everything except the login, c
 ![](/assets/del-reqs.gif)
 
 ### Running a trial test
-Before we run a massive load test, we usually want to run just a single iteration of the scenario, to make sure everything works as expected. This is what we call a **Trial Run** or **Trial Test** (some like the term "dry run").
+Before we run a massive load test, we usually want to run just a single iteration of the scenario, to make sure everything works as expected. This is what we call a **Trial Run** or **Trial Test** (some like the term "dry run"). It's also a very easy way to test your API and can be exported to a **Functional Test** which you can later [use in your CI](api-tokens.html).
 
 When we are creating a new test or extending/maintaining an old one, we like to iterate several times - modifying the test and trying it out - until we get the result we want.
 
