@@ -102,7 +102,7 @@ Before we run a massive load test, we usually want to run just a single iteratio
 
 When we are creating a new test or extending/maintaining an old one, we like to iterate several times - modifying the test and trying it out - until we get the result we want.
 
-To start a trial run, click the **TRY IT** button at the bottom of the editor. You will be promped to choose between running **remotely** (the default) or **locally**. There several good reasons to want to run locally, but for now we leave it on remote. 
+To start a trial run, click the **TRY IT** button at the bottom of the editor. You will be promped to choose between running **remotely** (the default) or **locally**. There are several good reasons you may want to run locally, but for now we leave it on remote. 
 
 ![](/assets/Screen Shot 2017-11-02 at 10.37.16.png)
 
