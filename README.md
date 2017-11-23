@@ -91,9 +91,9 @@ We start with going back to [Loadmill](https://www.loadmill.com) and opening a n
 
 Once the import is complete, we see a list of all the requests made in the recorded user session - these requests will be played back in our test scenario.
 
-The first is **POST** request for the login, followed by several **GET** requests for various resources, a **POST** request for creating the blog post, several **PUT** requests for adding the content and a final **PUT** request for publishing it.
+The first is a **POST** request for the login, followed by several **GET** requests for various resources, a **POST** request for creating the blog post, several **PUT** requests for adding the content and a final **PUT** request for publishing it.
 
-In order to keep things nice and simple we remove everything except the login, creation and publish request (which contains the content as well).
+In order to keep things nice and simple we remove everything except the login, creation and publish request (which contains the content as well) - shall henceforth be known as **Request #1**, **Request #2** and **Request #3**, respectively.
 
 ![](/assets/del-reqs.gif)
 
