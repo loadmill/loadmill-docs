@@ -70,6 +70,8 @@ The next step is to simply do what the user in our scenario is supposed to do. I
 3. Choose a title for the blog post and add some content.
 4. Click on the little arrow by the **SAVE DRAFT** button, choose **Publish Now** and click on **PUBLISH NOW** to confirm.
 
+![](/assets/publish.png)
+
 Once the post is published, our user story is complete.
 
 ### Step 3: Save
