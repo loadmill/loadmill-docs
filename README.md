@@ -83,8 +83,7 @@ Once we have a recording of a user session, we are going to:
  1. **Import** the recording into Loadmill.
  2. **Remove** less interesting requests from the scenario.
  3. Perform a **Trial Run** and examine the output.
- 4. Add **Parameters** to the test in order to use a data from previous requests in subsequent requests.
- 5. **Repeat** The last two steps until we are satisfied with the result.
+ 4. Add **Parameters** to the test in order to make it generic and reusable.
  
 We start with going back to [Loadmill](https://www.loadmill.com) and opening a new test editor by clicking the **NEW TEST** link on the top navigation menu. We click the **IMPORT** button, select our HAR file and confirm.
 
