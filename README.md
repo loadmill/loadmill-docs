@@ -110,7 +110,7 @@ To start a trial run, click the **TRY IT** button at the bottom of the editor. Y
 At this point the trial test should succeed, but our work is not yet done. There are two problems with this scenario, that would be clear to the person who designed the API, but to us may not be appearant at first glance:
 
 1. The access token used in Request #2 and Request #3 is the one generated in the original session, and will expire within a few minutes. We need to use the authentication token provided in the response JSON to the login request instead.
-2. Instead of publishing the blog post created by our scenario, it is the same one from the recorded session that will be published every time we run the test scenario.
+2. Instead of publishing the blog post created by our scenario, we actually publish the same post from the recorded session every time.
 
 ![](/assets/problems.png)
 
