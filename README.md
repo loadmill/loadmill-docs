@@ -1,10 +1,8 @@
 # Changes
 
-- [ ] enable cors
-- [ ] desire
-- [ ] steps
 - [ ] start gif
-- [ ] snaps of problemsspace snaps
+- [ ] snaps of problems
+- [ ] space snaps
 
 # Loadmill In 5 Minutes
 {% youtube %}
@@ -18,7 +16,7 @@ In this quick guide to Loadmill we will learn how to:
 3. Transform the recorded session into an advanced test scenario.
 4. Run the advanced load test and analyze the results.
 
-We are going to be testing a [Ghost](https://ghost.org/developers/) publishing service hosted on Heroku that you can actually download/fork and play with yourself if you so desire.
+We are going to be testing a [Ghost](https://ghost.org/developers/) publishing service hosted on Heroku that you can actually download/fork and play with yourself if you like.
 
 Everything described here is demonstrated in the video above so be sure to check it out.
 
@@ -30,6 +28,7 @@ Here's some more guides on how to do great things with Loadmill:
 - [Verifying Responses](assertions.html) - How to use  **Assertions** to ensure correctness.
 - [CI/CD Integration](api-tokens.html) - Run tests (Load and API / Functional) via REST, CLI or JavaScript. 
 - [Domain / Hostname Verification](domain-verification.html) - How to quickly enable verification for your app or website so you can run bigger load tests.
+- [Testing with CORS](testing-with-cors.html) - Quickly setup CORS so you can test from anywhere in the world. 
 
 ## Free Account
 Before you can start running free tests, you will need to create a Loadmill account. We do not ask for any credit card or personal information other your name and email so it only takes about five seconds. You can also login using your Google or GitHub account.
@@ -56,7 +55,7 @@ The user story we would like to record is the following:
 
 So let's dive right in:
 
-### Setup a recording
+### Step 1: Setup a recording
 Let's assume you're using Chrome to record your session. If you have any other browser with develper tools, the flow will be very similar.
 
 Start by opening the network tab:
@@ -67,7 +66,7 @@ Now we shall enter the URL for the login page in the address bar: `https://loadm
 
 We are ready to start recording.
 
-### Do stuff
+### Step 2: Do stuff
 The next step is to simply do what the user in our scenario is supposed to do. In our case it is:
 
 1. Enter the mock user email `a@b.com` and password `Test1234` and click on the **SIGN IN** button.
@@ -77,7 +76,7 @@ The next step is to simply do what the user in our scenario is supposed to do. I
 
 And that is the end of our user story for today.
 
-### Save
+### Step 3: Save
 The last step is to go back to the network tab, right-click any request and click on **Save as HAR with content**. This will save all the recorded requests into a [HAR file](https://en.wikipedia.org/wiki/.har) which we can now import into Loadmill.
 
 ## Import & Generalize
