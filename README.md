@@ -152,6 +152,6 @@ As the test progresses we can see the amount of concurrent sessions **ramping up
 
 ![](/assets/results.png)
 
-We keep track of the request **error rate** and fail the test if it passes a certain threshold (%50 by default). We can see the response time for each request along with the error statistics for each one.
+Loadmill keeps track of the request **error rate** and fails the test if it passes a certain threshold (%50 by default). We can see the response time for each request along with the error statistics for each one.
 
 Stay tuned for more guides on how to analyze load test results, set thresholds and more.
