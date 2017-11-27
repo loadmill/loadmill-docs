@@ -3,7 +3,7 @@
 https://www.youtube.com/watch?v=qZd38HhQqiU
 {% endyoutube %}
 
-In this quick guide to Loadmill we will learn how to:
+In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
 
 1. Create and run a very simple load test in just a few seconds.
 2. Record a user session with a browser and import it to Loadmill.
@@ -25,7 +25,7 @@ Here's some more guides on how to do great things with Loadmill:
 - [Testing with CORS](testing-with-cors.html) - Quickly setup CORS so you can test from anywhere in the world. 
 
 ## Free Account
-Before you can start running free tests, you will need to create a Loadmill account. We do not ask for any credit card or personal information other your name and email so it only takes about five seconds. You can also login using your Google or GitHub account.
+Before you can start running free tests, you will need to [create a Loadmill account](https://loadmill.com/app/signup). We do not ask for any credit card or personal information other your name and email so it only takes about five seconds. You can also login using your Google or GitHub account.
 
 ## Hello World
 The simplest load test you can create is an HTTP GET request to your web server. All you need to do is:
