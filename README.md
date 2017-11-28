@@ -1,7 +1,4 @@
 # Loadmill In 5 Minutes
-{% youtube %}
-https://www.youtube.com/watch?v=qZd38HhQqiU
-{% endyoutube %}
 
 In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
 
