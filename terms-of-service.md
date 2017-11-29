@@ -1,5 +1,4 @@
 # Terms of Service
-{% pdf src="/assets/website-terms.pdf", width="100%", height="850" %}{% endpdf %}
 
 Terms of Service \("Terms"\)
 
