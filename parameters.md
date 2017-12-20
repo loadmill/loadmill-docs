@@ -40,9 +40,15 @@ Using parameter defaults is especially useful for automated testing and CI where
 
 There are several **built-in** parameter constructs that you can use in your test scenario. They are:
 
-- `__status` The status code of the last HTTP response
-- `__statusText` The status text of the last HTTP response
+- `__status` The status code of the last HTTP response.
+- `__statusText` The status text of the last HTTP response.
+- `__responseTime` The total response time (in milliseconds) of the last HTTP response.
 - `__random_uuid` A random v4 UUID string.
+- `__random_boolean` A random boolen value (either `true` or `false` with %50 probability). By suffixing the name with an integer between 0 and 100, you can set the probability of getting `true`, e.g. the parameter `__random_boolean_75` will resolve to `true` with %75 probability.
+- `__random_number` A random integer between 0 and 2<sup>32</sup>. By suffixing the name with a positive integer you can set a lower maximum, e.g. `__random_number_30` will resolve to a number between 0 and 30, inclusive. You can also set the minimum, e.g. `__random_number_10_30` will be between 10 and 30, inclusive.
+
+You may specify a different length to each of the following random parameters by appending it to the parameter name with a preceding underscore, e.g. `__random_chars_5` may resolve to `gK2x9`.
+
 - `__random_chars` A random string of 10 (alpha-numeric) characters. 
 - `__random_digits` 10 random digits. 
 - `__random_letters` 10 random letters.
@@ -50,8 +56,6 @@ There are several **built-in** parameter constructs that you can use in your tes
 - `__random_lowers` 10 random lowercase letters.
 - `__random_hex` 10 random (lowercase) hexadecimal characters.
 - `__random_<ANY_CHARACTERS>` 10 random characters chosen from the given suffix, e.g. you may generate a random **uppercase** hexadecimal string using a parameter named `__random_0123456789ABCDEF`.
-
-You may specify a different length to each of the random parameters (except `__random_uuid`) by appending it to the parameter name with a preceding underscore, e.g. `__random_chars_5` may evaluate to `gK2x9`.
 
 ## Parameter Extraction
 
