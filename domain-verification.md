@@ -7,7 +7,7 @@ For example, if you have an app hosted on `myapp.com` you would like test reques
 The way this problem is solved is by using **domain verification**, a simple process in which you are asked to:
 
 1. Go to **User Settings &gt; Domains**.
-2. Enter your domain hostname \(including subdomains\) in the text area at the top of the page and click **Verify**.
+2. Enter your the hostname or sub-domain you would like to test in the text area at the top of the page and click **Verify**.
 3. You will be promped and asked to host a small text file, containing a **Verification Token**, on your server in order to prove you own your domain, e.g.  `myapp.com/loadmill-challenge/aSnd5K8L86Pggg1rGLPgLlf6guK.txt`.
 4. Once the file is hosted on your server, click **Verify** to complete the process.
 
