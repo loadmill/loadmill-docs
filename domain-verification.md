@@ -29,7 +29,7 @@ According to the documentation of your hosting service or DNS provider, add a DN
 
 - **Type:** `TXT`
 - **Name:** The sub-domain you would like to test, e.g. `www` or `myapp.com`
-- **Value:** `loadmill-challenge=<VERIFY_TOKEN>` where `<VERIFY_TOKEN>` stands for the **Verification Token** you were asked to serve in a text file. E.g. `loadmill-challenge=aSnd5K8L86Pggg1rGLPgLlf6guK`.
+- **Value:** `loadmill-challenge=<VERIFY_TOKEN>` where `<VERIFY_TOKEN>` stands for the **Verification Token** you were asked to serve in a text file. E.g. `loadmill-challenge=aSnd5K8L86Pggg1rGLPgLlf6guK`
 
 Once the DNS record is set, click **Verify** to complete the process.
 
