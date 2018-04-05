@@ -10,7 +10,6 @@
   * [Parameters](parameters.md)
   * [Assertions](assertions.md)
   * [Configuration Files](test-configurations.md)
-* [Terms of Service](terms-of-service.md)
 * [Affiliate Program](affiliate-program.md)
 * [REST API](rest-api.md)
 * [FAQ](faq.md)
