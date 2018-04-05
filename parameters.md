@@ -36,6 +36,52 @@ If you would like to use different credentials for every test run, you may repla
 
 Using parameter defaults is especially useful for automated testing and CI where you may be testing a different server every time you run a test. Please refer to the [Loadmill CLI and node module](https://www.npmjs.com/package/loadmill#parameters) for more information about how to inject parameters dynamically.
 
+## Advanced Usage: Operators
+
+So far, we've only seen how to inject a simple parameter value into an arbitrary expression, e.g. `Hello ${name}`. However, it is also possible to inject a **_computed value_** using parameter operators, e.g. `The total price is ${price + price * tax}`. You may use operators anywhere parameters may be used.
+
+Computed values can be extreamly useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be acomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${price <= budget}`.
+
+The currently supported operators are:
+### Textual Operators
+- `=` Strict equals operator. Aliases: `==` and `===`.
+- `!=` Strict not-equals operator. Alias: `!==`.
+
+May be applied to any two parameters which have values. If either parameter has no value, the expression is left as-is.
+
+### Boolean Operators
+- `|` Logical OR operator. Alias: `||`.
+- `&` Logical AND operator. Alias: `&&`.
+
+May be applied to any two parameters which have values. A parameter translates to boolean `true` if and only if
+- It has a value **_and_**
+- The value is not an empty string **_and_**
+- The value is not equal to `false`, `FALSE`, `FaLsE` or any other combination of upper-case and lower-case letters that forms the word `false`.
+
+The computed value of a valid boolean operation is either exactly `true` or exactly `false`. If either parameter has no value, the expression is left as-is.
+
+### Numeric Operators
+- `+` Addition operator.
+- `-` Subtraction operator.
+- `*` Multiplication operator.
+- `/` Division operator.
+- `<` Less-then operator.
+- `<=` Less-then-or-equals operator.
+- `>` Greater-then operator.
+- `>=` Greater-then-or-equals operator.
+
+May be applied to any two parameters which have values that translate to **_finite numbers_**. If either parameter has no such value, the expression is left as-is.
+
+If the operation itself is invalid (e.g. division by zero) the expression is left as-is as well. Computed values are **_not_** rounded to integers.
+
+### Operator Limitations
+Current syntax has some limitations:
+- Operators and parameters **_must_** be separated by spaces, e.g. `${x + y}` is fine but `${x+y}` will not be computed.
+- You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses - so `${(x * y) + z}` will not be computed.
+- All operators have the **_same precedence_** - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
+- Unary operators, e.g. `${-x}` are **_not_** supported.
+- Literal values are **_not_** permitted. E.g. `${x > 0}` is not computed. If you need to use a literal value, simply store it in a parameter first or use one of the [built-in values](#built-in-parameters), e.g. `${b == __false}` can be used as a replacement for logical NOT but `${b == false}` will not be computed.
+
 ## Built-in Parameters
 
 There are several **built-in** parameter constructs that you can use in your test scenario. They are:
@@ -43,6 +89,12 @@ There are several **built-in** parameter constructs that you can use in your tes
 - `__status` The status code of the last HTTP response.
 - `__statusText` The status text of the last HTTP response.
 - `__responseTime` The total response time (in milliseconds) of the last HTTP response.
+- `__now` or `_now_ms` The current time (of evaluation) given as UTC milliseconds.
+- `__now_iso` The same as `__now` but given in ISO-8601 format.
+- `__0` The constant value `0`.
+- `__1` The constant value `1`.
+- `__true` The constant value `true`.
+- `__false` The constant value `false`.
 - `__random_uuid` A random v4 UUID string.
 - `__random_boolean` A random boolen value (either `true` or `false` with %50 probability). By suffixing the name with an integer between 0 and 100, you can set the probability of getting `true`, e.g. the parameter `__random_boolean_75` will resolve to `true` with %75 probability.
 - `__random_number` A random integer between 0 and 2<sup>32</sup>. By suffixing the name with a positive integer you can set a lower maximum, e.g. `__random_number_30` will resolve to a number between 0 and 30, inclusive. You can also set the minimum, e.g. `__random_number_10_30` will be between 10 and 30, inclusive.
@@ -70,7 +122,7 @@ Parameters can be defined and populated with values dynamically after each reque
         }
     }
 ```
-2. **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org).
+2. **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional (but very useful) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
 
 3. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
 
