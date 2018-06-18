@@ -70,7 +70,7 @@ Parameters can be defined and populated with values dynamically after each reque
         }
     }
 ```
-2. **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional (but very useful) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. When not present, the query will simply output the inner content of the same element.
+2. **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional (but very useful) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
 
 3. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
 
