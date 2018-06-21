@@ -43,6 +43,12 @@ There are several **built-in** parameter constructs that you can use in your tes
 - `__status` The status code of the last HTTP response.
 - `__statusText` The status text of the last HTTP response.
 - `__responseTime` The total response time (in milliseconds) of the last HTTP response.
+- `__now` or `_now_ms` The current time (of evaluation) given as UTC milliseconds.
+- `__now_iso` The same as `__now` but given in ISO-8601 format.
+- `__0` The constant value `0`.
+- `__1` The constant value `1`.
+- `__true` The constant value `true`.
+- `__false` The constant value `false`.
 - `__random_uuid` A random v4 UUID string.
 - `__random_boolean` A random boolen value (either `true` or `false` with %50 probability). By suffixing the name with an integer between 0 and 100, you can set the probability of getting `true`, e.g. the parameter `__random_boolean_75` will resolve to `true` with %75 probability.
 - `__random_number` A random integer between 0 and 2<sup>32</sup>. By suffixing the name with a positive integer you can set a lower maximum, e.g. `__random_number_30` will resolve to a number between 0 and 30, inclusive. You can also set the minimum, e.g. `__random_number_10_30` will be between 10 and 30, inclusive.
