@@ -36,6 +36,40 @@ If you would like to use different credentials for every test run, you may repla
 
 Using parameter defaults is especially useful for automated testing and CI where you may be testing a different server every time you run a test. Please refer to the [Loadmill CLI and node module](https://www.npmjs.com/package/loadmill#parameters) for more information about how to inject parameters dynamically.
 
+## Advanced Usage: Operators
+
+So far, we've only seen how to inject a simple parameter value into an arbitrary expression, e.g. `Hello ${name}`. However, it is also possible to inject a **_computed value_** using parameter operators, e.g. `The total price is ${price + price * tax}`. You may use operators anywhere parameters may be used.
+
+Computed values can be extreamly useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be acomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${price <= budget}`.
+
+The currently supported operators are:
+### Textual Operators
+- `=` Strict equals operator. Aliases: `==` and `===`.
+- `!=` Strict not-equals operator. Alias: `!==`.
+
+May be applied to any two parameters which have values. If either parameter has no value, the expression is left as-is.
+
+### Boolean Operators
+- `|` Logical OR operator. Alias: `||`.
+- `&` Logical AND operator. Alias: `&&`.
+
+May be applied to any two parameters which have values. A parameter translates to boolean `true` if and only if
+- It has a value **_and_**
+- The value is not an empty string **_and_**
+- The value is not equal to `false`, `FALSE`, `FaLsE` or any other combination of upper-case and lower-case letters that forms the word `false`.
+
+The computed value of a valid boolean operation is either exactly `true` or exactly `false`. If either parameter has no value, the expression is left as-is.
+
+### Numeric Operators
+- `+` Addition operator.
+- `-` Subtraction operator.
+- `*` Multiplication operator.
+- `/` Division operator.
+- `<` Less-then operator.
+- `<=` Less-then-or-equals operator.
+- `>` Greater-then operator.
+- `>=` Greater-then-or-equals operator.
+
 ## Built-in Parameters
 
 There are several **built-in** parameter constructs that you can use in your test scenario. They are:
