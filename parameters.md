@@ -70,6 +70,15 @@ The computed value of a valid boolean operation is either exactly `true` or exac
 - `>` Greater-then operator.
 - `>=` Greater-then-or-equals operator.
 
+May be applied to any two parameters which have values that translate to **_finite numbers_**. If either parameter has no such value, the expression is left as-is.
+
+If the operation itself is invalid (e.g. division by zero) the expression is left as-is as well. Computed values are **_not_** rounded to integers.
+
+### Operator Limitations
+Current syntax has some limitations:
+- Operators and parameters **_must_** be separated by spaces, e.g. `${x + y}` is fine but `${x+y}` will not be computed.
+- You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses - so `${(x * y) + z}` will not be computed.
+
 ## Built-in Parameters
 
 There are several **built-in** parameter constructs that you can use in your test scenario. They are:
