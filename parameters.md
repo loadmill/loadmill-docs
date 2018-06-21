@@ -80,7 +80,7 @@ Current syntax has some limitations:
 - You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses - so `${(x * y) + z}` will not be computed.
 - All operators have the **_same precedence_** - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
 - Unary operators, e.g. `${-x}` are **_not_** supported.
-- Literal values are **_not_** permitted. E.g. `${x > 0}` is not computed. If you need to use a literal value, simply store in a parameter first or use one of the [built-in values](#built-in-parameters), e.g. `${b == __false}` can be used as a replacement for logical NOT but `${b == false}` will not be computed.
+- Literal values are **_not_** permitted. E.g. `${x > 0}` is not computed. If you need to use a literal value, simply store it in a parameter first or use one of the [built-in values](#built-in-parameters), e.g. `${b == __false}` can be used as a replacement for logical NOT but `${b == false}` will not be computed.
 
 ## Built-in Parameters
 
