@@ -36,7 +36,7 @@ If you would like to use different credentials for every test run, you may repla
 
 Using parameter defaults is especially useful for automated testing and CI where you may be testing a different server every time you run a test. Please refer to the [Loadmill CLI and node module](https://www.npmjs.com/package/loadmill#parameters) for more information about how to inject parameters dynamically.
 
-## Advanced Usage: Operators
+## Advanced Usage - Operators
 
 So far, we've only seen how to inject a simple parameter value into an arbitrary expression, e.g. `Hello ${name}`. However, it is also possible to inject a **_computed value_** using parameter operators, e.g. `The total price is ${price + price * tax}`. You may use operators anywhere parameters may be used.
 
