@@ -72,7 +72,23 @@ There are several **built-in** parameters that you can use in your test scenario
 **Note:** some previous built-in parameters are now defined as no-argument [parameter functions](#functions) and can still be used in the same way.
 
 ## Advanced Usage
+So far, we've only seen how to inject a simple parameter value into an arbitrary expression, e.g. `Hello ${name}`. However, it is also possible to inject a **_computed value_** using [Parameter Operators](#operators) or [Parameter Functions](#functions), e.g. `The total price is ${price + __mult(price,tax)}`. You may use operators or functions anywhere parameters may be used.
 
+Computed values can be extreamly useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be acomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${price <= budget}`.
+
+You may also use **_literal values_** within expressions, e.g. `${__if_then_else(is_good,'Success!',':_(')}` - but be aware there are some [syntactic limitations](#syntactic-limitations).
+
+See below the full list of supported [operators](#operators) and [functions](#functions).
+
+### Syntactic Limitations
+Current syntax has some limitations. Syntax errors are easy to spot in GUI - a malformed `${}` expression will simply not be highlighted.
+
+Current limitations are:
+- Operators and parameters **_must_** be separated by spaces, e.g. `${x + y}` is fine but `${x+y}` will not be computed.
+- You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses - so `${(x * y) + z}` will not be computed.
+- All operators have the **_same precedence_** - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
+- Unary operators, e.g. `${-x}` are **_not_** supported.
+- Literal values are **_not_** permitted. E.g. `${x > 0}` is not computed. If you need to use a literal value, simply store it in a parameter first or use one of the [built-in values](#built-in-parameters), e.g. `${b == __false}` can be used as a replacement for logical NOT but `${b == false}` will not be computed.
 
 ### Functions
 Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
@@ -94,10 +110,6 @@ You may specify a different length to each of the following random parameters by
 - `__random_<ANY_CHARACTERS>` 10 random characters chosen from the given suffix, e.g. you may generate a random **uppercase** hexadecimal string using a parameter named `__random_0123456789ABCDEF`.
 
 ### Operators
-
-So far, we've only seen how to inject a simple parameter value into an arbitrary expression, e.g. `Hello ${name}`. However, it is also possible to inject a **_computed value_** using parameter operators, e.g. `The total price is ${price + price * tax}`. You may use operators anywhere parameters may be used.
-
-Computed values can be extreamly useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be acomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${price <= budget}`.
 
 The currently supported operators are:
 #### Textual Operators
@@ -130,14 +142,6 @@ The computed value of a valid boolean operation is either exactly `true` or exac
 May be applied to any two parameters which have values that translate to **_finite numbers_**. If either parameter has no such value, the expression is left as-is.
 
 If the operation itself is invalid (e.g. division by zero) the expression is left as-is as well. Computed values are **_not_** rounded to integers.
-
-#### Operator Limitations
-Current syntax has some limitations:
-- Operators and parameters **_must_** be separated by spaces, e.g. `${x + y}` is fine but `${x+y}` will not be computed.
-- You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses - so `${(x * y) + z}` will not be computed.
-- All operators have the **_same precedence_** - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
-- Unary operators, e.g. `${-x}` are **_not_** supported.
-- Literal values are **_not_** permitted. E.g. `${x > 0}` is not computed. If you need to use a literal value, simply store it in a parameter first or use one of the [built-in values](#built-in-parameters), e.g. `${b == __false}` can be used as a replacement for logical NOT but `${b == false}` will not be computed.
 
 
 
