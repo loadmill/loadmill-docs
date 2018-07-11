@@ -76,16 +76,20 @@ So far, we've only seen how to inject a simple parameter value into an arbitrary
 
 Computed values can be extreamly useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be acomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${price <= budget}`.
 
-You may also use **_literal values_** within expressions, e.g. `${__if_then_else(is_good,'Success!',':_(')}` - but be aware there are some [syntactic limitations](#syntactic-limitations).
+You may also use **_literal values_** within expressions, e.g. `${__if_then_else(is_good,'Success!',':_(')}` - but be aware there are some [syntactic limitations](#notes-and-limitations).
 
 See below the full list of supported [operators](#operators) and [functions](#functions).
 
-### Syntactic Limitations
-Current syntax has some limitations. Syntax errors are easy to spot in GUI - a malformed `${}` expression will simply not be highlighted.
+### Notes And Limitations
 
-Current limitations are:
-- Operators and parameters **_must_** be separated by spaces, e.g. `${x + y}` is fine but `${x+y}` will not be computed.
-- You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses - so `${(x * y) + z}` will not be computed.
+Current syntax has some limitations. Syntax errors are easy to spot in the GUI - a malformed expression will simply not be highlighted.
+
+If an expression is invalid due to its syntax or because either one of the parameters or functions within it is not defined it will simply remain as-is and will not be replaced at runtime.
+
+Current syntax limitations are:
+- Operators **_must_** be separated from their arguments by spaces, e.g. `${x + y}` is fine but `${x+y}` will not be computed.
+- Spaces are **_not allowed_** anywhere else within an expression, e.g. both `${__add(x, y)}` and `${fullName == 'John Doe'}` will not be computed.
+- You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses - so `${(x * y) + z}` will not be computed. This can usually be worked around using functions though, e.g. `${__mult(x,y) + z}`
 - All operators have the **_same precedence_** - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
 - Unary operators, e.g. `${-x}` are **_not_** supported.
 - Literal values are **_not_** permitted. E.g. `${x > 0}` is not computed. If you need to use a literal value, simply store it in a parameter first or use one of the [built-in values](#built-in-parameters), e.g. `${b == __false}` can be used as a replacement for logical NOT but `${b == false}` will not be computed.
