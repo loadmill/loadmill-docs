@@ -182,7 +182,7 @@ Returns `value1` if `target` equals `case1`, otherwise returns `value2` if `targ
 If no match is made, the returned value will be an empty string - a default value may be given as the last argument.
 
 #### `__switchi(p1,p2)`
-Same as the `=` operator.
+Same as `__switch` but case-insensitive.
 
 #### `__pick(p1,p2)`
 Same as the `=` operator.
