@@ -96,28 +96,10 @@ Current syntax limitations are:
 - Unary operators, e.g. `${-x}` are **_not_** supported. This can be overcome using functions such as [__neg](#__neg) or 
  [__not](#__not).
 
-### Functions
-Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
-
-- `__now` or `_now_ms` The current time (of evaluation) given as UTC milliseconds.
-- `__now_iso` The same as `__now` but given in ISO-8601 format.
-- `__random_uuid` A random v4 UUID string.
-- `__random_boolean` A random boolen value (either `true` or `false` with %50 probability). By suffixing the name with an integer between 0 and 100, you can set the probability of getting `true`, e.g. the parameter `__random_boolean_75` will resolve to `true` with %75 probability.
-- `__random_number` A random integer between 0 and 2<sup>32</sup>. By suffixing the name with a positive integer you can set a lower maximum, e.g. `__random_number_30` will resolve to a number between 0 and 30, inclusive. You can also set the minimum, e.g. `__random_number_10_30` will be between 10 and 30, inclusive.
-
-You may specify a different length to each of the following random parameters by appending it to the parameter name with a preceding underscore, e.g. `__random_chars_5` may resolve to `gK2x9`.
-
-- `__random_chars` A random string of 10 (alpha-numeric) characters. 
-- `__random_digits` 10 random digits. 
-- `__random_letters` 10 random letters.
-- `__random_uppers` 10 random uppercase letters.
-- `__random_lowers` 10 random lowercase letters.
-- `__random_hex` 10 random (lowercase) hexadecimal characters.
-- `__random_<ANY_CHARACTERS>` 10 random characters chosen from the given suffix, e.g. you may generate a random **uppercase** hexadecimal string using a parameter named `__random_0123456789ABCDEF`.
-
 ### Operators
 
 The currently supported operators are:
+
 #### Textual Operators
 - `=` Strict equals operator. Aliases: `==` and `===`.
 - `!=` Strict not-equals operator. Alias: `!==`.
@@ -128,7 +110,10 @@ May be applied to any two parameters which have values. If either parameter has 
 - `|` Logical OR operator. Alias: `||`.
 - `&` Logical AND operator. Alias: `&&`.
 
-May be applied to any two parameters which have values. A parameter translates to boolean `true` if and only if
+May be applied to any two parameters which have values.
+
+##### True Semantics
+A parameter translates to boolean `true` if and only if
 - It has a value **_and_**
 - The value is not an empty string **_and_**
 - The value is not equal to `false`, `FALSE`, `FaLsE` or any other combination of upper-case and lower-case letters that forms the word `false`.
@@ -148,6 +133,96 @@ The computed value of a valid boolean operation is either exactly `true` or exac
 May be applied to any two parameters which have values that translate to **_finite numbers_**. If either parameter has no such value, the expression is left as-is.
 
 If the operation itself is invalid (e.g. division by zero) the expression is left as-is as well. Computed values are **_not_** rounded to integers.
+
+### Functions
+The supported built-in functions are:
+
+#### `__eq(p1,p2)`
+Same as the `=` operator.
+
+#### `__neq(p1,p2)`
+Same as the `!=` operator.
+
+#### `__eqi(p1,p2)`
+Same as `__eq` but case-insensitive.
+
+#### `__neqi(p1,p2)`
+Same as `__neq` but case-insensitive.
+
+#### `__matches(target,regex)`
+Returns `true` if and only if the `target` matches the `regex`.
+
+#### `__contains(target,search)`
+Returns `true` if and only if the `target` contains the string `search`.
+
+#### `__containsi(target,search)`
+Same as `__contains` but case-insensitive.
+
+#### `__length(p1)`
+Counts the number of characters in `p1`.
+
+#### `__escape_regexp(p1)`
+Returns the value of `p1` after escaping special RegExp characters.
+
+#### `__encode_url(p1)`
+Returns the value of `p1` after [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) special characters.
+
+#### `__lower(p1)`
+Returns the value of `p1` after converting all characters to lower case.
+
+#### `__upper(p1)`
+Returns the value of `p1` after converting all characters to upper case.
+
+#### `__if_then_else(condition,then,else)`
+Returns `then` if `condition` is [semantically true](#true-semantics), otherwise returns `else`.
+
+#### `__switch(target,case1,value1,[case2,value2,...],[default])`
+Returns `value1` if `target` equals `case1`, otherwise returns `value2` if `target` equals `case2` so on.
+
+If no match is made, the returned value will be an empty string - a default value may be given as the last argument.
+
+#### `__switchi(p1,p2)`
+Same as the `=` operator.
+
+#### `__pick(p1,p2)`
+Same as the `=` operator.
+
+#### `__pick_random(p1,p2)`
+Same as the `=` operator.
+
+#### `__split_pick(p1,p2)`
+Same as the `=` operator.
+
+#### `__slice(p1,p2)`
+Same as the `=` operator.
+
+#### `__regexp(p1,p2)`
+Same as the `=` operator.
+
+#### `__jsonpath(p1,p2)`
+Same as the `=` operator.
+
+#### `__jquery(p1,p2)`
+Same as the `=` operator.
+
+Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
+
+- `__now` or `_now_ms` The current time (of evaluation) given as UTC milliseconds.
+- `__now_iso` The same as `__now` but given in ISO-8601 format.
+- `__random_uuid` A random v4 UUID string.
+- `__random_boolean` A random boolen value (either `true` or `false` with %50 probability). By suffixing the name with an integer between 0 and 100, you can set the probability of getting `true`, e.g. the parameter `__random_boolean_75` will resolve to `true` with %75 probability.
+- `__random_number` A random integer between 0 and 2<sup>32</sup>. By suffixing the name with a positive integer you can set a lower maximum, e.g. `__random_number_30` will resolve to a number between 0 and 30, inclusive. You can also set the minimum, e.g. `__random_number_10_30` will be between 10 and 30, inclusive.
+
+You may specify a different length to each of the following random parameters by appending it to the parameter name with a preceding underscore, e.g. `__random_chars_5` may resolve to `gK2x9`.
+
+- `__random_chars` A random string of 10 (alpha-numeric) characters. 
+- `__random_digits` 10 random digits. 
+- `__random_letters` 10 random letters.
+- `__random_uppers` 10 random uppercase letters.
+- `__random_lowers` 10 random lowercase letters.
+- `__random_hex` 10 random (lowercase) hexadecimal characters.
+- `__random_<ANY_CHARACTERS>` 10 random characters chosen from the given suffix, e.g. you may generate a random **uppercase** hexadecimal string using a parameter named `__random_0123456789ABCDEF`.
+
 
 
 
