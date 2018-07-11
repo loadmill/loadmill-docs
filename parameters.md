@@ -84,15 +84,17 @@ See below the full list of supported [operators](#operators) and [functions](#fu
 
 Current syntax has some limitations. Syntax errors are easy to spot in the GUI - a malformed expression will simply not be highlighted.
 
-If an expression is invalid due to its syntax or because either one of the parameters or functions within it is not defined it will simply remain as-is and will not be replaced at runtime.
+If an expression is invalid due to its syntax or because either one of the parameters or functions within it is not defined it will simply remain as-is and will not be computed nor replaced at runtime.
 
 Current syntax limitations are:
 - Operators **_must_** be separated from their arguments by spaces, e.g. `${x + y}` is fine but `${x+y}` will not be computed.
 - Spaces are **_not allowed_** anywhere else within an expression, e.g. both `${__add(x, y)}` and `${fullName == 'John Doe'}` will not be computed.
-- You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses - so `${(x * y) + z}` will not be computed. This can usually be worked around using functions though, e.g. `${__mult(x,y) + z}`
+- **Literal values** may not contain whitespace characters, commas (`,`) or single quotes (`'`). These cannot be escaped - simply define a previous parameter with the desired value when the need arises. Note that numeric literal values need to be quoted the same as any other value, e.g. `${x > '0'}` is OK but `${x > 0}` will not be computed.
+- You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses to set precedence, e.g. `${(x * y) + z}` will not be computed. This can usually be worked around using functions though, e.g. `${__mult(x,y) + z}`
 - All operators have the **_same precedence_** - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
-- Unary operators, e.g. `${-x}` are **_not_** supported.
-- Literal values are **_not_** permitted. E.g. `${x > 0}` is not computed. If you need to use a literal value, simply store it in a parameter first or use one of the [built-in values](#built-in-parameters), e.g. `${b == __false}` can be used as a replacement for logical NOT but `${b == false}` will not be computed.
+- Computations may **_not be nested_**, i.e. you may not pass a computed value as an argument to function, e.g. `${__mult(x,y) + z}` is OK but neither `${__mult(x + y,z)}` nor `${__mult(__add(x,y),z)}` will be computed.
+- Unary operators, e.g. `${-x}` are **_not_** supported. This can be overcome using functions such as [__neg](#__neg) or 
+ [__not](#__not).
 
 ### Functions
 Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
