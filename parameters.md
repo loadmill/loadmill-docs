@@ -181,11 +181,11 @@ Returns `value1` if `target` equals `case1`, otherwise returns `value2` if `targ
 
 If no match is made, the returned value will be an empty string - a default value may be given as the last argument.
 
-#### `__switchi(p1,p2)`
+#### `__switchi(target,case1,value1,[case2,value2,...],[default])`
 Same as `__switch` but case-insensitive.
 
-#### `__pick(p1,p2)`
-Same as the `=` operator.
+#### `__pick(selection,p1,[p2,...])`
+Returns one of `p1` or `p2` or `p3`, etc. according to the `selection` - either a zero-based index (e.g. `2` picks `p3`) or the word `random` in order to pick a random value.
 
 #### `__pick_random(p1,p2)`
 Same as the `=` operator.
