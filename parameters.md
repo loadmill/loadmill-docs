@@ -55,13 +55,13 @@ Parameters can be defined and populated with values dynamically after each reque
 
 4. **Header** - used for extracting response header values via header names.
 
-5. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `${protocol}://${host}:${port}` or `give me a ${__random_uppers_1}!`.
+5. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
 
 Previously defined or built-in parameters may be embedded within **any kind of extraction query**. These parameters will be evaluated right before the query itself is evaluated.
 
 ## Built-in Parameters
 
-There are several **built-in** parameter constructs that you can use in your test scenario. They are:
+There are several **built-in** parameters that you can use in your test scenario. They are:
 
 - `__status` The status code of the last HTTP response.
 - `__statusText` The status text of the last HTTP response.
@@ -69,7 +69,10 @@ There are several **built-in** parameter constructs that you can use in your tes
 - `__true` The constant value `true`.
 - `__false` The constant value `false`.
 
+**Note:** some previous built-in parameters are now defined as no-argument [parameter functions](#functions) and can still be used in the same way.
+
 ## Advanced Usage
+
 
 ### Functions
 Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
