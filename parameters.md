@@ -260,23 +260,28 @@ Returns a random v4 UUID string.
 Returns a random boolean value. You may pass an integer between 0 and 100 as the `probability` to get `true` - defaults to 50%.
 
 #### `__random_number([max],[min=0,max=2^32])`
-Returns a random boolean value. You may pass an integer between 0 and 100 as the `probability` to get `true` - defaults to 50%.
+Returns a random integer between 0 and 2<sup>32</sup>. By passing a positive integer you can set a lower maximum, e.g. `__random_number('30')` will resolve to a number between 0 and 30, inclusive. You can also set the minimum, e.g. `__random_number('10','30')` will be between 10 and 30, inclusive.
 
+#### `__random_chars([length=10])`
+Returns a random string of `length` alpha-numeric characters.
 
-- `__random_number` A random integer between 0 and 2<sup>32</sup>. By suffixing the name with a positive integer you can set a lower maximum, e.g. `__random_number_30` will resolve to a number between 0 and 30, inclusive. You can also set the minimum, e.g. `__random_number_10_30` will be between 10 and 30, inclusive.
+#### `__random_digits([length=10])`
+Returns a random string of `length` decimal digits.
 
-You may specify a different length to each of the following random parameters by appending it to the parameter name with a preceding underscore, e.g. `__random_chars_5` may resolve to `gK2x9`.
+#### `__random_letters([length=10])`
+Returns a random string of `length` english letters.
 
-- `__random_chars` A random string of 10 (alpha-numeric) characters. 
-- `__random_digits` 10 random digits. 
-- `__random_letters` 10 random letters.
-- `__random_uppers` 10 random uppercase letters.
-- `__random_lowers` 10 random lowercase letters.
-- `__random_hex` 10 random (lowercase) hexadecimal characters.
-- `__random_<ANY_CHARACTERS>` 10 random characters chosen from the given suffix, e.g. you may generate a random **uppercase** hexadecimal string using a parameter named `__random_0123456789ABCDEF`.
+#### `__random_uppers([length=10])`
+Returns a random string of `length` upper-case english letters.
 
+#### `__random_lowers([length=10])`
+Returns a random string of `length` lower-case english letters.
 
+#### `__random_hex([length=10])`
+Returns a random string of `length` hexadecimal digits.
 
+#### `__random_from(chars,[length=10])`
+Returns a random string of `length` characters present in `chars`. For example, you may generate a random **uppercase** hexadecimal string using  `__random_from('0123456789ABCDEF')`.
 
 
 
