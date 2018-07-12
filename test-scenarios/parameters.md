@@ -112,7 +112,7 @@ May be applied to any two parameters which have values. If either parameter has 
 
 May be applied to any two parameters which have values.
 
-**True Semantics**
+#### **True Semantics**
 
 A parameter translates to boolean `true` if and only if
 
