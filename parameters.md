@@ -196,14 +196,20 @@ Splits the value of `target` into multiple strings separated by `delim` and retu
 #### `__slice(target,[begin],[end])`
 Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based. 
 
-#### `__regexp(p1,p2)`
-Same as the `=` operator.
+#### `__regexp(target,regexp)`
+Extracts a value from `target` using `regexp` as a JS RegExp. See also [Parameter Extractions](#parameter-extraction).
 
-#### `__jsonpath(p1,p2)`
-Same as the `=` operator.
+#### `__jsonpath(target,jsonpath)`
+Extracts a value from `target` using `jsonpath` as a JSONPath query. See also [Parameter Extractions](#parameter-extraction).
 
-#### `__jquery(p1,p2)`
-Same as the `=` operator.
+#### `__jquery(target,jquery,[selection],[attribute],[default])`
+Extracts a value from `target` using `jquery` as a jQuery selector. See also [Parameter Extractions](#parameter-extraction).
+
+If multiple elements are matched, `selection` is applied as in `__pick` with the first element being selected by default.
+
+If a non-empty `attribute` is given, the returned value will be the attribute value of the selected element, otherwise, the inner content of the element will be returned.
+
+If there is no match, the given `default` value will be returned.
 
 Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
 
