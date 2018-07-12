@@ -137,6 +137,27 @@ If the operation itself is invalid (e.g. division by zero) the expression is lef
 ### Functions
 The supported built-in functions are:
 
+#### `__and(p1,[p2,...])`
+Logical AND (same as the `&` operator), applied to any number of arguments.
+
+#### `__or(p1,[p2,...])`
+Logical OR (same as the `|` operator), applied to any number of arguments.
+
+#### `__not(p1)`
+Logical NOT. See also [True Semantics](#true-semantics).
+
+#### `__lt(p1,p2)`
+Same as the `<` operator.
+
+#### `__lte(p1,p2)`
+Same as the `<=` operator.
+
+#### `__gt(p1,p2)`
+Same as the `>` operator.
+
+#### `__gte(p1,p2)`
+Same as the `>=` operator.
+
 #### `__eq(p1,p2)`
 Same as the `=` operator.
 
