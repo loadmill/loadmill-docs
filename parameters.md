@@ -78,6 +78,8 @@ Computed values can be extreamly useful when you need to introduce conditional b
 
 You may also use **_literal values_** within expressions, e.g. `${__if_then_else(is_good,'Success!',':_(')}` - but be aware there are some [syntactic limitations](#notes-and-limitations).
 
+Function calls without arguments can be used with or without parentheses, e.g.  `__random_uuid` can be used instead of `__random_uuid()`.
+
 See below the full list of supported [operators](#operators) and [functions](#functions).
 
 ### Notes And Limitations
@@ -135,8 +137,6 @@ May be applied to any two parameters which have values that translate to **_fini
 If the operation itself is invalid (e.g. division by zero) the expression is left as-is as well. Computed values are **_not_** rounded to integers.
 
 ### Functions
-
-Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
 
 The supported built-in functions are:
 
