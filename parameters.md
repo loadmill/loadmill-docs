@@ -162,7 +162,7 @@ Same as the `/` operator.
 #### `__eq(p1,p2)` {#__eq}
 Same as the `=` operator.
 
-#### `__neq(p1,p2)`
+#### `__neq(p1,p2)` {#__neq}
 Same as the `!=` operator.
 
 #### `__eqi(p1,p2)`
