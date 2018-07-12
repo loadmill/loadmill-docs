@@ -158,6 +158,18 @@ Same as the `>` operator.
 #### `__gte(p1,p2)`
 Same as the `>=` operator.
 
+#### `__add(p1,[p2,...])`
+Same as the `+` operator, applied to any number of arguments.
+
+#### `__sub(p1,p2)`
+Same as the `-` operator.
+
+#### `__mult(p1,[p2,...])`
+Same as the `*` operator, applied to any number of arguments.
+
+#### `__div(p1,p2)`
+Same as the `/` operator.
+
 #### `__eq(p1,p2)`
 Same as the `=` operator.
 
