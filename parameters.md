@@ -135,12 +135,15 @@ May be applied to any two parameters which have values that translate to **_fini
 If the operation itself is invalid (e.g. division by zero) the expression is left as-is as well. Computed values are **_not_** rounded to integers.
 
 ### Functions
+
+Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
+
 The supported built-in functions are:
 
-#### `__and(p1,[p2,...])`
+#### `__and(p1,[p2,[...]])`
 Logical AND (same as the `&` operator), applied to any number of arguments.
 
-#### `__or(p1,[p2,...])`
+#### `__or(p1,[p2,[...]])`
 Logical OR (same as the `|` operator), applied to any number of arguments.
 
 #### `__not(p1)`
@@ -158,13 +161,13 @@ Same as the `>` operator.
 #### `__gte(p1,p2)`
 Same as the `>=` operator.
 
-#### `__add(p1,[p2,...])`
+#### `__add(p1,[p2,[...]])`
 Same as the `+` operator, applied to any number of arguments.
 
 #### `__sub(p1,p2)`
 Same as the `-` operator.
 
-#### `__mult(p1,[p2,...])`
+#### `__mult(p1,[p2,[...]])`
 Same as the `*` operator, applied to any number of arguments.
 
 #### `__div(p1,p2)`
@@ -209,24 +212,24 @@ Returns the value of `p1` after converting all characters to upper case.
 #### `__if_then_else(condition,then,else)`
 Returns `then` if `condition` is [semantically true](#true-semantics), otherwise returns `else`.
 
-#### `__switch(target,case1,value1,[case2,value2,...],[default])`
+#### `__switch(target,case1,value1,[case2,value2,[...],[default]])`
 Returns `value1` if `target` equals `case1`, otherwise returns `value2` if `target` equals `case2` so on.
 
 If no match is made, the returned value will be an empty string - a default value may be given as the last argument.
 
-#### `__switchi(target,case1,value1,[case2,value2,...],[default])`
+#### `__switchi(target,case1,value1,[case2,value2,[...],[default]])`
 Same as `__switch` but case-insensitive.
 
-#### `__pick(selection,p1,[p2,...])`
+#### `__pick(selection,p1,[p2,[...]])`
 Returns one of `p1` or `p2` or `p3`, etc. according to the `selection` - either a zero-based index (e.g. `2` picks `p3`) or the word `random` in order to pick a random value.
 
-#### `__pick_random(p1,[p2,...])`
-Same as the `__pick('random',p1,[p2,...])`.
+#### `__pick_random(p1,[p2,[...]])`
+Same as `__pick('random',p1,[p2,[...]])`.
 
-#### `__split_pick(target,delim,[selection])`
+#### `__split_pick(target,delim,[selection=0])`
 Splits the value of `target` into multiple strings separated by `delim` and returns one of them according to the `selection` as defined by the `__pick` function. If a `selection` argument is not provided, the first value will be returned.
 
-#### `__slice(target,[begin],[end])`
+#### `__slice(target,[begin=0,[end]])`
 Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based. 
 
 #### `__regexp(target,regexp)`
@@ -235,7 +238,7 @@ Extracts a value from `target` using `regexp` as a JS RegExp. See also [Paramete
 #### `__jsonpath(target,jsonpath)`
 Extracts a value from `target` using `jsonpath` as a JSONPath query. See also [Parameter Extractions](#parameter-extraction).
 
-#### `__jquery(target,jquery,[selection],[attribute],[default])`
+#### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
 Extracts a value from `target` using `jquery` as a jQuery selector. See also [Parameter Extractions](#parameter-extraction).
 
 If multiple elements are matched, `selection` is applied as in `__pick` with the first element being selected by default.
@@ -244,12 +247,22 @@ If a non-empty `attribute` is given, the returned value will be the attribute va
 
 If there is no match, the given `default` value will be returned.
 
-Function calls without arguments can be used with or without parentheses, e.g. using `__random_boolean` is the same as using `__random_boolean()`.
+#### `__now()`
+Returns the current time (of evaluation) given as UTC milliseconds. Alias: `_now_ms`.
 
-- `__now` or `_now_ms` The current time (of evaluation) given as UTC milliseconds.
-- `__now_iso` The same as `__now` but given in ISO-8601 format.
-- `__random_uuid` A random v4 UUID string.
-- `__random_boolean` A random boolen value (either `true` or `false` with %50 probability). By suffixing the name with an integer between 0 and 100, you can set the probability of getting `true`, e.g. the parameter `__random_boolean_75` will resolve to `true` with %75 probability.
+#### `__now_iso()`
+The same as `__now` but given in ISO-8601 format.
+
+#### `__random_uuid()`
+Returns a random v4 UUID string.
+
+#### `__random_boolean([probability=50])`
+Returns a random boolean value. You may pass an integer between 0 and 100 as the `probability` to get `true` - defaults to 50%.
+
+#### `__random_number([max],[min=0,max=2^32])`
+Returns a random boolean value. You may pass an integer between 0 and 100 as the `probability` to get `true` - defaults to 50%.
+
+
 - `__random_number` A random integer between 0 and 2<sup>32</sup>. By suffixing the name with a positive integer you can set a lower maximum, e.g. `__random_number_30` will resolve to a number between 0 and 30, inclusive. You can also set the minimum, e.g. `__random_number_10_30` will be between 10 and 30, inclusive.
 
 You may specify a different length to each of the following random parameters by appending it to the parameter name with a preceding underscore, e.g. `__random_chars_5` may resolve to `gK2x9`.
