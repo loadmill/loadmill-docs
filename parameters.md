@@ -187,14 +187,14 @@ Same as `__switch` but case-insensitive.
 #### `__pick(selection,p1,[p2,...])`
 Returns one of `p1` or `p2` or `p3`, etc. according to the `selection` - either a zero-based index (e.g. `2` picks `p3`) or the word `random` in order to pick a random value.
 
-#### `__pick_random(p1,p2)`
-Same as the `=` operator.
+#### `__pick_random(p1,[p2,...])`
+Same as the `__pick('random',p1,[p2,...])`.
 
-#### `__split_pick(p1,p2)`
-Same as the `=` operator.
+#### `__split_pick(target,delim,[selection])`
+Splits the value of `target` into multiple strings separated by `delim` and returns one of them according to the `selection` as defined by the `__pick` function. If a `selection` argument is not provided, the first value will be returned.
 
-#### `__slice(p1,p2)`
-Same as the `=` operator.
+#### `__slice(target,[begin],[end])`
+Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based. 
 
 #### `__regexp(p1,p2)`
 Same as the `=` operator.
