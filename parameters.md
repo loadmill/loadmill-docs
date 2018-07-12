@@ -154,7 +154,7 @@ Same as the `*` operator, applied to any number of arguments.
 #### `__div(p1,p2)`
 Same as the `/` operator.
 
-#### Textual Functions
+#### Conditional Functions
 
 #### `__eq(p1,p2)`
 Same as the `=` operator.
@@ -167,26 +167,6 @@ Same as `__eq` but case-insensitive.
 
 #### `__neqi(p1,p2)`
 Same as `__neq` but case-insensitive.
-
-#### `__length(p1)`
-Counts the number of characters in `p1`.
-
-#### `__escape_regexp(p1)`
-Returns the value of `p1` after escaping special RegExp characters.
-
-#### `__encode_url(p1)`
-Returns the value of `p1` after [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) special characters.
-
-#### `__lower(p1)`
-Returns the value of `p1` after converting all characters to lower case.
-
-#### `__upper(p1)`
-Returns the value of `p1` after converting all characters to upper case.
-
-#### `__slice(target,[begin=0,[end]])`
-Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based.
-
-#### Conditional Functions
 
 #### `__and(p1,[p2,[...]])`
 Logical AND (same as the `&` operator), applied to any number of arguments.
@@ -238,14 +218,37 @@ Same as `__pick('random',p1,[p2,[...]])`.
 #### `__split_pick(target,delim,[selection=0])`
 Splits the value of `target` into multiple strings separated by `delim` and returns one of them according to the `selection` as defined by the `__pick` function. If a `selection` argument is not provided, the first value will be returned.
 
+#### Textual Functions
+
+#### `__length(p1)`
+Counts the number of characters in `p1`.
+
+#### `__escape_regexp(p1)`
+Returns the value of `p1` after escaping special RegExp characters.
+
+#### `__encode_url(p1)`
+Returns the value of `p1` after [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) special characters.
+
+#### `__lower(p1)`
+Returns the value of `p1` after converting all characters to lower case.
+
+#### `__upper(p1)`
+Returns the value of `p1` after converting all characters to upper case.
+
+#### `__slice(target,[begin=0,[end]])`
+Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based.
+
+#### Extraction Functions
+See also [Parameter Extractions](#parameter-extraction).
+
 #### `__regexp(target,regexp)`
-Extracts a value from `target` using `regexp` as a JS RegExp. See also [Parameter Extractions](#parameter-extraction).
+Extracts a value from `target` using `regexp` as a JS RegExp.
 
 #### `__jsonpath(target,jsonpath)`
-Extracts a value from `target` using `jsonpath` as a JSONPath query. See also [Parameter Extractions](#parameter-extraction).
+Extracts a value from `target` using `jsonpath` as a JSONPath query.
 
 #### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
-Extracts a value from `target` using `jquery` as a jQuery selector. See also [Parameter Extractions](#parameter-extraction).
+Extracts a value from `target` using `jquery` as a jQuery selector.
 
 If multiple elements are matched, `selection` is applied as in `__pick` with the first element being selected by default.
 
@@ -253,11 +256,7 @@ If a non-empty `attribute` is given, the returned value will be the attribute va
 
 If there is no match, the given `default` value will be returned.
 
-#### `__now()`
-Returns the current time (of evaluation) given as UTC milliseconds. Alias: `_now_ms`.
-
-#### `__now_iso()`
-The same as `__now` but given in ISO-8601 format.
+#### Randomization Functions
 
 #### `__random_uuid()`
 Returns a random v4 UUID string.
@@ -288,6 +287,14 @@ Returns a random string of `length` hexadecimal digits.
 
 #### `__random_from(chars,[length=10])`
 Returns a random string of `length` characters present in `chars`. For example, you may generate a random **uppercase** hexadecimal string using  `__random_from('0123456789ABCDEF')`.
+
+#### Time Functions
+
+#### `__now()`
+Returns the current time (of evaluation) given as UTC milliseconds. Alias: `_now_ms`.
+
+#### `__now_iso()`
+The same as `__now` but given in ISO-8601 format.
 
 
 
