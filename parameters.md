@@ -95,8 +95,8 @@ Current syntax limitations are:
 - You may chain multiple operations together, e.g. `${x * y + z}` but you may **_not_** use parentheses to set precedence, e.g. `${(x * y) + z}` will not be computed. This can usually be worked around using functions though, e.g. `${__mult(x,y) + z}`
 - All operators have the **_same precedence_** - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
 - Computations may **_not be nested_**, i.e. you may not pass a computed value as an argument to function, e.g. `${__mult(x,y) + z}` is OK but neither `${__mult(x + y,z)}` nor `${__mult(__add(x,y),z)}` will be computed.
-- Unary operators, e.g. `${-x}` are **_not_** supported. This can be overcome using functions such as [__neg](#__neg) or 
- [__not](#__not).
+- Unary operators, e.g. `${-x}` are **_not_** supported. This can be overcome using functions such as [__neg](#__neg()) or 
+ [__not](#__not()).
 
 ### Operators
 
