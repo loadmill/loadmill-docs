@@ -145,16 +145,16 @@ The supported built-in functions are:
 #### `__add(p1,[p2,[...]])` {#__add}
 Same as the `+` operator, applied to any number of arguments.
 
-#### `__sub(p1,p2)`
+#### `__sub(p1,p2)` {#__sub}
 Same as the `-` operator.
 
 #### `__neg(p1)` {#__neg}
 Unary minus, equivalent to `__sub('0',p1)`.
 
-#### `__mult(p1,[p2,[...]])`
+#### `__mult(p1,[p2,[...]])` {#__mult}
 Same as the `*` operator, applied to any number of arguments.
 
-#### `__div(p1,p2)`
+#### `__div(p1,p2)` {#__div}
 Same as the `/` operator.
 
 #### Conditional Functions
