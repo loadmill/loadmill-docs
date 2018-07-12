@@ -1,7 +1,7 @@
 # Table of contents
 
-* [Getting Started](README.md)
 * [Working With The Test Editor](working-with-the-test-editor.md)
+* [Getting Started](README.md)
 * [Setup](setup/README.md)
   * [API Tokens](setup/api-tokens.md)
   * [Domain Verification](setup/domain-verification.md)
