@@ -159,7 +159,7 @@ Same as the `/` operator.
 
 #### Conditional Functions
 
-#### `__eq(p1,p2)`
+#### `__eq(p1,p2)` {#__eq}
 Same as the `=` operator.
 
 #### `__neq(p1,p2)`
