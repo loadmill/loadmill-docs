@@ -220,20 +220,20 @@ Splits the value of `target` into multiple strings separated by `delim` and retu
 
 #### Textual Functions
 
-#### `__length(p1)`
-Counts the number of characters in `p1`.
+#### `__length(target)`
+Counts the number of characters in `target`.
 
-#### `__escape_regexp(p1)`
-Returns the value of `p1` after escaping special RegExp characters.
+#### `__escape_regexp(target)`
+Returns the value of `target` after escaping special RegExp characters.
 
-#### `__encode_url(p1)`
-Returns the value of `p1` after [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) special characters.
+#### `__encode_url(target)`
+Returns the value of `target` after [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) special characters.
 
-#### `__lower(p1)`
-Returns the value of `p1` after converting all characters to lower case.
+#### `__lower(target)`
+Returns the value of `target` after converting all characters to lower case.
 
-#### `__upper(p1)`
-Returns the value of `p1` after converting all characters to upper case.
+#### `__upper(target)`
+Returns the value of `target` after converting all characters to upper case.
 
 #### `__slice(target,[begin=0,[end]])`
 Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based.
