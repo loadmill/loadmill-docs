@@ -140,6 +140,54 @@ If the operation itself is invalid (e.g. division by zero) the expression is lef
 
 The supported built-in functions are:
 
+#### Numeric Functions
+
+#### `__add(p1,[p2,[...]])`
+Same as the `+` operator, applied to any number of arguments.
+
+#### `__sub(p1,p2)`
+Same as the `-` operator.
+
+#### `__mult(p1,[p2,[...]])`
+Same as the `*` operator, applied to any number of arguments.
+
+#### `__div(p1,p2)`
+Same as the `/` operator.
+
+#### Textual Functions
+
+#### `__eq(p1,p2)`
+Same as the `=` operator.
+
+#### `__neq(p1,p2)`
+Same as the `!=` operator.
+
+#### `__eqi(p1,p2)`
+Same as `__eq` but case-insensitive.
+
+#### `__neqi(p1,p2)`
+Same as `__neq` but case-insensitive.
+
+#### `__length(p1)`
+Counts the number of characters in `p1`.
+
+#### `__escape_regexp(p1)`
+Returns the value of `p1` after escaping special RegExp characters.
+
+#### `__encode_url(p1)`
+Returns the value of `p1` after [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) special characters.
+
+#### `__lower(p1)`
+Returns the value of `p1` after converting all characters to lower case.
+
+#### `__upper(p1)`
+Returns the value of `p1` after converting all characters to upper case.
+
+#### `__slice(target,[begin=0,[end]])`
+Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based.
+
+#### Conditional Functions
+
 #### `__and(p1,[p2,[...]])`
 Logical AND (same as the `&` operator), applied to any number of arguments.
 
@@ -161,30 +209,6 @@ Same as the `>` operator.
 #### `__gte(p1,p2)`
 Same as the `>=` operator.
 
-#### `__add(p1,[p2,[...]])`
-Same as the `+` operator, applied to any number of arguments.
-
-#### `__sub(p1,p2)`
-Same as the `-` operator.
-
-#### `__mult(p1,[p2,[...]])`
-Same as the `*` operator, applied to any number of arguments.
-
-#### `__div(p1,p2)`
-Same as the `/` operator.
-
-#### `__eq(p1,p2)`
-Same as the `=` operator.
-
-#### `__neq(p1,p2)`
-Same as the `!=` operator.
-
-#### `__eqi(p1,p2)`
-Same as `__eq` but case-insensitive.
-
-#### `__neqi(p1,p2)`
-Same as `__neq` but case-insensitive.
-
 #### `__matches(target,regex)`
 Returns `true` if and only if the `target` matches the `regex`.
 
@@ -193,21 +217,6 @@ Returns `true` if and only if the `target` contains the string `search`.
 
 #### `__containsi(target,search)`
 Same as `__contains` but case-insensitive.
-
-#### `__length(p1)`
-Counts the number of characters in `p1`.
-
-#### `__escape_regexp(p1)`
-Returns the value of `p1` after escaping special RegExp characters.
-
-#### `__encode_url(p1)`
-Returns the value of `p1` after [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) special characters.
-
-#### `__lower(p1)`
-Returns the value of `p1` after converting all characters to lower case.
-
-#### `__upper(p1)`
-Returns the value of `p1` after converting all characters to upper case.
 
 #### `__if_then_else(condition,then,else)`
 Returns `then` if `condition` is [semantically true](#true-semantics), otherwise returns `else`.
@@ -228,9 +237,6 @@ Same as `__pick('random',p1,[p2,[...]])`.
 
 #### `__split_pick(target,delim,[selection=0])`
 Splits the value of `target` into multiple strings separated by `delim` and returns one of them according to the `selection` as defined by the `__pick` function. If a `selection` argument is not provided, the first value will be returned.
-
-#### `__slice(target,[begin=0,[end]])`
-Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based. 
 
 #### `__regexp(target,regexp)`
 Extracts a value from `target` using `regexp` as a JS RegExp. See also [Parameter Extractions](#parameter-extraction).
