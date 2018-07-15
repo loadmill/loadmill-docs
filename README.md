@@ -1,4 +1,4 @@
-# Introduction
+# Getting Started
 
 {% embed data="{\"url\":\"https://www.youtube.com/watch?v=7Y13BkbNLpo\",\"type\":\"video\",\"title\":\"\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.youtube.com/yts/img/favicon\_144-vfliLAfaB.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://i.ytimg.com/vi/7Y13BkbNLpo/maxresdefault.jpg\",\"width\":1280,\"height\":720,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"player\",\"url\":\"https://www.youtube.com/embed/7Y13BkbNLpo?rel=0&showinfo=0\",\"html\":\"<div style=\\\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;\\\"><iframe src=\\\"https://www.youtube.com/embed/7Y13BkbNLpo?rel=0&amp;showinfo=0\\\" style=\\\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\\\" allowfullscreen scrolling=\\\"no\\\"></iframe></div>\",\"aspectRatio\":1.7778}}" %}
 
@@ -17,12 +17,12 @@ Everything described here is demonstrated in the video above so be sure to check
 
 Here's some more guides on how to do great things with Loadmill:
 
-* [Starting From Scratch](https://github.com/loadmill/loadmill-docs/tree/3e931a821f924329fb64dc6a9731c33a85183f04/working-with-the-test-editor/README.md) - Create an advanced load test from scratch using the test editor, without recording a session.
-* [Using Parameters](https://github.com/loadmill/loadmill-docs/tree/3e931a821f924329fb64dc6a9731c33a85183f04/test-scenarios/parameters/README.md) - How to do cool stuff using **Parameters**.
-* [Verifying Responses](https://github.com/loadmill/loadmill-docs/tree/3e931a821f924329fb64dc6a9731c33a85183f04/test-scenarios/assertions/README.md) - How to use  **Assertions** to ensure correctness.
-* [CI/CD Integration](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/api-tokens.html) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
-* [Domain Verification](https://github.com/loadmill/loadmill-docs/tree/3e931a821f924329fb64dc6a9731c33a85183f04/setup/domain-verification/README.md) - How to quickly enable verification for your app or website so you can run bigger load tests.
-* [Testing with CORS](https://github.com/loadmill/loadmill-docs/tree/3e931a821f924329fb64dc6a9731c33a85183f04/setup/testing-with-cors.html) - Quickly setup CORS so you can test from anywhere in the world. 
+* [Starting From Scratch](working-with-the-test-editor.md) - Create an advanced load test from scratch using the test editor, without recording a session.
+* [Using Parameters](test-scenarios/parameters.md) - How to do cool stuff using **Parameters**.
+* [Verifying Responses](test-scenarios/assertions.md) - How to use  **Assertions** to ensure correctness.
+* [CI/CD Integration](setup/api-tokens.md) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
+* [Domain Verification](setup/domain-verification.md) - How to quickly enable verification for your app or website so you can run bigger load tests.
+* [Testing with CORS](setup/testing-with-cors.md) - Quickly setup CORS so you can test from anywhere in the world. 
 
 ## Free Account
 
