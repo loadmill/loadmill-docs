@@ -19,7 +19,7 @@ If you have access to your site's **DNS configuration**, you can [prove ownershi
 
 If you are using [node.js](https://nodejs.org) and [express](https://expressjs.com), you can easily serve the verification file using our npm module: [express-loadmill](https://www.npmjs.com/package/express-loadmill).
 
-It may also be used to enable [crowsourced load testing](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/testing-with-cors.html), for high volume load tests.
+It may also be used to enable [crowsourced load testing](testing-with-cors.md), for high volume load tests.
 
 ## DNS Verification
 
