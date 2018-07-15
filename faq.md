@@ -20,7 +20,7 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Load_testing):
 
 ## But I don't want to test anything, what can Loadmill do for me?
 
-There are two sides to our platform, the one we haven’t mentioned yet is our [Affiliate Program](https://www.loadmill.com/join-affiliate). If you own or represent any kind of web site then it might interest you. [This video](https://youtu.be/d9DpWolfapE) is less technical and demonstrates how becoming a Loadmill Affiliate can help make you money! Read more about our [Affiliate Program here](/affiliate-program.html).
+There are two sides to our platform, the one we haven’t mentioned yet is our [Affiliate Program](https://www.loadmill.com/join-affiliate). If you own or represent any kind of web site then it might interest you. [This video](https://youtu.be/d9DpWolfapE) is less technical and demonstrates how becoming a Loadmill Affiliate can help make you money! Read more about our [Affiliate Program here](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/affiliate-program.html).
 
 ## How can I get more credit to run tests?
 
@@ -28,7 +28,7 @@ Soon we will add a self-service payment system for billing and buying credit. Un
 
 ## I'm getting an error like “Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin”, WTF?
 
-Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](testing-with-cors.html).
+Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/testing-with-cors.html).
 
 ## How to report bugs?
 

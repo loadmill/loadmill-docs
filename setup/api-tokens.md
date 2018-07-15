@@ -1,10 +1,10 @@
 # API Tokens
 
-In order to use the [Loadmill](https://www.loadmill.com) [REST API](rest-api.html) or our [node module and CLI](https://www.npmjs.com/package/loadmill), you will need to generate an **API Token**.
+In order to use the [Loadmill](https://www.loadmill.com) [REST API](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/rest-api.html) or our [node module and CLI](https://www.npmjs.com/package/loadmill), you will need to generate an **API Token**.
 
 ## Generate a Token
 
-API tokens can be generated via **Account Settings** > **Security**: enter a description for the token's intended usage and click **generate**.
+API tokens can be generated via **Account Settings** &gt; **Security**: enter a description for the token's intended usage and click **generate**.
 
 You will be given an arbitrary string of characters that will be shown to you **only once** - this is your API token.
 
@@ -20,4 +20,5 @@ Tokens may be used in one of three ways:
 
 An API token enables its bearer to create and run load tests with your account. You can do almost anything you can do in our web interface using tokens, except changing your password, making payments and generating more tokens.
 
-Therefore, you should keep your token as safe as you can from untrusted third parties. If you suspect it may have been compromised, you may revoke the token via **Account Settings** > **Security** and generate a new one. 
+Therefore, you should keep your token as safe as you can from untrusted third parties. If you suspect it may have been compromised, you may revoke the token via **Account Settings** &gt; **Security** and generate a new one.
+
