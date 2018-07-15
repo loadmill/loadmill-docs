@@ -61,8 +61,6 @@ There are several **built-in** parameters that you can use in your test scenario
 * `__status` The status code of the last HTTP response.
 * `__statusText` The status text of the last HTTP response.
 * `__responseTime` The total response time \(in milliseconds\) of the last HTTP response.
-* `__true` The constant value `true`.
-* `__false` The constant value `false`.
 
 **Note:** some previous built-in parameters are now defined as no-argument [parameter functions](parameters.md#functions) and can still be used in the same way.
 
@@ -165,6 +163,26 @@ Same as the `/` operator.
 
 #### Conditional Functions
 
+#### `__true()`
+
+Always returns `true`.
+
+#### `__false()`
+
+Always returns `false`.
+
+#### `__and(p1,[p2,[...]])`
+
+Logical AND \(same as the `&` operator\), applied to any number of arguments.
+
+#### `__or(p1,[p2,[...]])`
+
+Logical OR \(same as the `|` operator\), applied to any number of arguments.
+
+#### `__not(p1)` {#__neg}
+
+Logical NOT. See also [True Semantics](parameters.md#true-semantics).
+
 #### `__eq(p1,p2)`
 
 Same as the `=` operator.
@@ -180,18 +198,6 @@ Same as `__eq` but case-insensitive.
 #### `__neqi(p1,p2)`
 
 Same as `__neq` but case-insensitive.
-
-#### `__and(p1,[p2,[...]])`
-
-Logical AND \(same as the `&` operator\), applied to any number of arguments.
-
-#### `__or(p1,[p2,[...]])`
-
-Logical OR \(same as the `|` operator\), applied to any number of arguments.
-
-#### `__not(p1)` {#__neg}
-
-Logical NOT. See also [True Semantics](parameters.md#true-semantics).
 
 #### `__lt(p1,p2)`
 
