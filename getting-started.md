@@ -20,8 +20,8 @@ Here's some more guides on how to do great things with Loadmill:
 * [Starting From Scratch](working-with-the-test-editor.md) - Create an advanced load test from scratch using the test editor, without recording a session.
 * [Using Parameters](test-scenarios/parameters.md) - How to do cool stuff using **Parameters**.
 * [Verifying Responses](test-scenarios/assertions.md) - How to use  **Assertions** to ensure correctness.
-* [CI/CD Integration](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/api-tokens.html) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
-* [Domain / Hostname Verification](setup/domain-verification.md) - How to quickly enable verification for your app or website so you can run bigger load tests.
+* [CI/CD Integration](setup/api-tokens.md) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
+* [Domain Verification](setup/domain-verification.md) - How to quickly enable verification for your app or website so you can run bigger load tests.
 * [Testing with CORS](setup/testing-with-cors.md) - Quickly setup CORS so you can test from anywhere in the world. 
 
 ## Free Account
