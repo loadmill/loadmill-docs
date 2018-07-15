@@ -227,7 +227,7 @@ Returns `then` if `condition` is [semantically true](parameters.md#true-semantic
 
 #### `__switch(target,case1,value1,[case2,value2,[...],[default]])`
 
-Returns `value1` if `target` equals `case1`, otherwise returns `value2` if `target` equals `case2` so on.
+Returns `value1` if `target` equals `case1`, otherwise returns `value2` if `target` equals `case2` and so on.
 
 If no match is made, the returned value will be an empty string - a default value may be given as the last argument.
 
