@@ -17,12 +17,12 @@ Everything described here is demonstrated in the video above so be sure to check
 
 Here's some more guides on how to do great things with Loadmill:
 
-* [Starting From Scratch](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/getting-started.html) - Create an advanced load test from scratch using the test editor, without recording a session.
-* [Using Parameters](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/parameters.html) - How to do cool stuff using **Parameters**.
-* [Verifying Responses](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/assertions.html) - How to use  **Assertions** to ensure correctness.
+* [Starting From Scratch](../working-with-the-test-editor) - Create an advanced load test from scratch using the test editor, without recording a session.
+* [Using Parameters](../test-scenarios/parameters) - How to do cool stuff using **Parameters**.
+* [Verifying Responses](../test-scenarios/assertions) - How to use  **Assertions** to ensure correctness.
 * [CI/CD Integration](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/api-tokens.html) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
-* [Domain / Hostname Verification](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/domain-verification.html) - How to quickly enable verification for your app or website so you can run bigger load tests.
-* [Testing with CORS](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/testing-with-cors.html) - Quickly setup CORS so you can test from anywhere in the world. 
+* [Domain Verification](../setup/domain-verification) - How to quickly enable verification for your app or website so you can run bigger load tests.
+* [Testing with CORS](../setup/testing-with-cors.html) - Quickly setup CORS so you can test from anywhere in the world. 
 
 ## Free Account
 
