@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Loadmill Docs](README.md)
 * [Getting Started](getting-started.md)
 * [Working With The Test Editor](working-with-the-test-editor.md)
 * [Setup](setup/README.md)
