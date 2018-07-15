@@ -68,5 +68,5 @@ If you are not sure how to enable CORS in your application or would like to see 
 
 If you _are_ using [node.js](https://nodejs.org) and [express](https://expressjs.com) you can simply use our npm module: [express-loadmill](https://www.npmjs.com/package/express-loadmill).
 
-It may also be used for quick and easy [domain verification](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/domain-verification.html).
+It may also be used for quick and easy [domain verification](domain-verification.md).
 
