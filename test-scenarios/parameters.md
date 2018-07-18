@@ -283,13 +283,13 @@ Returns a sub-string of `target` which starts at `begin` index \(inclusive\) and
 
 See also [Parameter Extractions](parameters.md#parameter-extraction).
 
-#### `__regexp(target,regexp)`
+#### `__regexp(target,regexp,[default])`
 
-Extracts a value from `target` using `regexp` as a JS RegExp.
+Extracts a value from `target` using `regexp` as a JS RegExp. If there is no match, an empty string will be returned or, if present, the given `default` value.
 
-#### `__jsonpath(target,jsonpath)`
+#### `__jsonpath(target,jsonpath,[default])`
 
-Extracts a value from `target` using `jsonpath` as a JSONPath query.
+Extracts a value from `target` using `jsonpath` as a JSONPath query. If there is no match, an empty string will be returned or, if present, the given `default` value.
 
 #### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
 
@@ -299,7 +299,7 @@ If multiple elements are matched, `selection` is applied as in `__pick` with the
 
 If a non-empty `attribute` is given, the returned value will be the attribute value of the selected element, otherwise, the inner content of the element will be returned.
 
-If there is no match, the given `default` value will be returned.
+If there is no match, an empty string will be returned or, if present, the given `default` value.
 
 #### Randomization Functions
 
