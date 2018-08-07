@@ -80,7 +80,9 @@ See below the full list of supported [operators](parameters.md#operators) and [f
 
 Current syntax has some limitations. Syntax errors are easy to spot in the GUI - a malformed expression will simply not be highlighted.
 
-If an expression is invalid due to its syntax or because either one of the parameters or functions within it is not defined it will simply remain as-is and will not be computed nor replaced at runtime.
+If an expression is invalid due to its syntax it will simply remain as-is and will not be computed nor replaced at run-time. If, however, an operator or a function receives invalid input \(e.g. division by zero or any of the parameter arguments not having a value\) the test will fail with an error.
+
+Note that predefined parameter values \(AKA [Parameter Defaults](parameters.md#default-parameters)\) are computed whenever a test configuration is validated - thus computation related errors will render the test configuration invalid.
 
 Current syntax limitations are:
 
@@ -101,7 +103,7 @@ The currently supported operators are:
 * `=` Strict equals operator. Aliases: `==` and `===`.
 * `!=` Strict not-equals operator. Alias: `!==`.
 
-May be applied to any two parameters which have values. If either parameter has no value, the expression is left as-is.
+May be applied to any two parameters which have values.
 
 #### Boolean Operators
 
@@ -118,7 +120,7 @@ A parameter translates to boolean `true` if and only if
 * The value is not an empty string _**and**_
 * The value is not equal to `false`, `FALSE`, `FaLsE` or any other combination of upper-case and lower-case letters that forms the word `false`.
 
-The computed value of a valid boolean operation is either exactly `true` or exactly `false`. If either parameter has no value, the expression is left as-is.
+The computed value of a valid boolean operation is either exactly `true` or exactly `false`.
 
 #### Numeric Operators
 
@@ -131,9 +133,7 @@ The computed value of a valid boolean operation is either exactly `true` or exac
 * `>` Greater-then operator.
 * `>=` Greater-then-or-equals operator.
 
-May be applied to any two parameters which have values that translate to _**finite numbers**_. If either parameter has no such value, the expression is left as-is.
-
-If the operation itself is invalid \(e.g. division by zero\) the expression is left as-is as well. Computed values are _**not**_ rounded to integers.
+May be applied to any two parameters which have values that translate to _**finite numbers**_. Computed values are _**not**_ rounded to integers.
 
 ### Functions
 
@@ -254,6 +254,10 @@ Same as `__pick('random',p1,[p2,[...]])`.
 Splits the value of `target` into multiple strings separated by `delim` and returns one of them according to the `selection` as defined by the `__pick` function. If a `selection` argument is not provided, the first value will be returned.
 
 #### Textual Functions
+
+#### `__usd()`
+
+Returns the `$` character.
 
 #### `__length(target)`
 
