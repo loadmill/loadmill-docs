@@ -179,7 +179,7 @@ Logical AND \(same as the `&` operator\), applied to any number of arguments.
 
 Logical OR \(same as the `|` operator\), applied to any number of arguments.
 
-#### `__not(p1)` {#__neg}
+#### `__not(p1)` <a id="__neg"></a>
 
 Logical NOT. See also [True Semantics](parameters.md#true-semantics).
 
