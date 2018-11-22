@@ -1,4 +1,4 @@
-# Affiliate Program
+# Affiliate Program \(Beta\)
 
 Loadmill powers application performance tests by generating simple HTTP requests from affiliate website visitors to the tested applications. You accumulate credit for helping our users test their applications - we count every second each of your visitors actively participates in a test.
 

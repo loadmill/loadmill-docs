@@ -11,7 +11,9 @@
   * [Parameters](test-scenarios/parameters.md)
   * [Assertions](test-scenarios/assertions.md)
   * [Configuration Files](test-scenarios/configuration-files.md)
-* [Affiliate Program](affiliate-program.md)
-* [REST API](rest-api.md)
+* [Integrations](integrations/README.md)
+  * [npm Module](integrations/npm-modal.md)
+  * [REST API](integrations/rest-api.md)
+* [Affiliate Program \(Beta\)](affiliate-program.md)
 * [FAQ](faq.md)
 
