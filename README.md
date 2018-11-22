@@ -5,8 +5,8 @@ Loadmill helps companies avoid expensive downtime by replicating production traf
 {% embed url="https://www.youtube.com/watch?v=7Y13BkbNLpo" %}
 
 * First things first, let's set up your Loadmill account, [sign up](https://www.loadmill.com/app/signup)!
-* Ready to start your first load test? Just check out our [Getting started guide.](https://docs.loadmill.com/getting-started)
-* Deep dive into Loadmill's [test editor](https://docs.loadmill.com/working-with-the-test-editor) and get your tests up and running !
+* Ready to start your first load test? Just check out our [Getting started guide.](getting-started.md)
+* Deep dive into Loadmill's [test editor](working-with-the-test-editor.md) and get your tests up and running !
 * Our team will be happy to help you with your questions at [support@loadmill.com](mailto:support@loadmill.com)   
 
 
