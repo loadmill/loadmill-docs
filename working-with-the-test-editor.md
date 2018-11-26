@@ -25,7 +25,7 @@
   * Set the Content-Type to `application/x-www-form-urlencoded` \(last in the list\).
   * And paste this as the request body - `grant_type=password&username=a@b.com&password=Test1234&client_id=ghost-admin&client_secret=b91601629baf`
   * Expand the “Set Parameters” card and set a value to a parameter named `access_token` using a `JSONPath` extractor querying for `access_token`. This will create a value extractor that will execute a [JSONPath query](http://goessner.net/articles/JsonPath/) against the JSON response of the request and extract the authentication token into a parameter named `access_token`.
-  * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is Not Empty`.
+  * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is True` \(In Js non-empty strings are considered "truthy" values\).
 
   ![](.gitbook/assets/screen-shot-2017-11-02-at-13.59.02.png)
 
