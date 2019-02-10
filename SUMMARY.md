@@ -10,6 +10,7 @@
 * [Test Scenarios](test-scenarios/README.md)
   * [Parameters](test-scenarios/parameters.md)
   * [Assertions](test-scenarios/assertions.md)
+  * [Data from CSV files](test-scenarios/data-from-csv-files.md)
   * [Configuration Files](test-scenarios/configuration-files.md)
 * [Integrations](integrations/README.md)
   * [npm Module](integrations/npm-modal.md)
