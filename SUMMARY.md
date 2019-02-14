@@ -10,6 +10,7 @@
 * [Test Scenarios](test-scenarios/README.md)
   * [Parameters](test-scenarios/parameters.md)
   * [Assertions](test-scenarios/assertions.md)
+  * [Quick Parameter Editing](test-scenarios/quick-parameter-editing.md)
   * [Data from CSV files](test-scenarios/data-from-csv-files.md)
   * [Configuration Files](test-scenarios/configuration-files.md)
 * [Integrations](integrations/README.md)
