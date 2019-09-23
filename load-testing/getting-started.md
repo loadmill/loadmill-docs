@@ -17,10 +17,10 @@ Everything described here is demonstrated in the video above so be sure to check
 
 Here's some more guides on how to do great things with Loadmill:
 
-* [Starting From Scratch](working-with-the-test-editor.md) - Create an advanced load test from scratch using the test editor, without recording a session.
-* [Using Parameters](test-scenarios/parameters.md) - How to do cool stuff using **Parameters**.
-* [Verifying Responses](test-scenarios/assertions.md) - How to use  **Assertions** to ensure correctness.
-* [CI/CD Integration](setup/api-tokens.md) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
+* [Starting From Scratch](working-with-the-test-editor/) - Create an advanced load test from scratch using the test editor, without recording a session.
+* [Using Parameters](../api-testing/test-suite-editor/parameters.md) - How to do cool stuff using **Parameters**.
+* [Verifying Responses](../api-testing/test-suite-editor/assertions.md) - How to use  **Assertions** to ensure correctness.
+* [CI/CD Integration](../integrations/api-tokens.md) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
 * [Domain Verification](setup/domain-verification.md) - How to quickly enable verification for your app or website so you can run bigger load tests.
 * [Testing with CORS](setup/testing-with-cors.md) - Quickly setup CORS so you can test from anywhere in the world. 
 
@@ -36,7 +36,7 @@ The simplest load test you can create is an HTTP GET request to your web server.
 2. Copy and paste the website URL into the **URL** text box. In our case, it's going to be `https://loadmill-test-blog.herokuapp.com`.
 3. Click the **LOAD TEST** button and confirm the config by clicking **RUN**.
 
-![](.gitbook/assets/start.gif)
+![](../.gitbook/assets/start.gif)
 
 **Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can ignore it for now and learn how to do that later [here](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/domain-verification.html) \(it's actually pretty easy\).
 
@@ -60,7 +60,7 @@ Let's assume you're using Chrome to record your session. If you have any other b
 
 Start by opening the network tab:
 
-![](.gitbook/assets/net-tab.gif)
+![](../.gitbook/assets/net-tab.gif)
 
 Now we shall enter the URL for the login page in the address bar: `https://loadmill-test-blog.herokuapp.com/ghost/signin`. We can already see the network tab below starting to fill up with HTTP requests sent by the browser to our web server. We would like the first request to be the login, so just click on the clear button on the top left corner of the network tab to get rid of these.
 
@@ -75,7 +75,7 @@ The next step is to simply do what the user in our scenario is supposed to do. I
 3. Choose a title for the blog post and add some content.
 4. Click on the little arrow by the **SAVE DRAFT** button, choose **Publish Now** and click on **PUBLISH NOW** to confirm.
 
-![](.gitbook/assets/publish.png)
+![](../.gitbook/assets/publish.png)
 
 Once the post is published, our user story is complete.
 
@@ -102,7 +102,7 @@ The first is a **POST** request for the login, followed by several **GET** reque
 
 In order to keep things nice and simple we remove everything except the login, creation and publish request \(which contains the content as well\) - shall henceforth be known as **Request \#1**, **Request \#2** and **Request \#3**, respectively.
 
-![](.gitbook/assets/del-reqs.gif)
+![](../.gitbook/assets/del-reqs.gif)
 
 ### Running a trial test
 
@@ -112,7 +112,7 @@ When we are creating a new test or extending/maintaining an old one, we like to 
 
 To start a trial run, click the **TRY IT** button at the bottom of the editor. You will be promped to choose between running **remotely** \(the default\) or **locally**. There are several good reasons you may want to run locally, but for now we leave it on remote.
 
-![](.gitbook/assets/try-it.png)
+![](../.gitbook/assets/try-it.png)
 
 ### Generalizing the test scenario
 
@@ -121,7 +121,7 @@ At this point the trial test should succeed, but our work is not yet done. There
 1. The access token used in Request \#2 and Request \#3 is the one generated in the recorded session, and will expire within a few minutes. We need to use the authentication token provided in the response JSON to the login request instead.
 2. Instead of publishing the blog post created by our scenario, we actually publish the same post from the recorded session every time.
 
-![](.gitbook/assets/problems.png)
+![](../.gitbook/assets/problems.png)
 
 This is to be expected, since the requests are executed **exactly** as they were recorded by the browser - the values are essentially **hard-coded**. However, with small modifications to our test scenario, we can **generalize** it so that it can be executed correctly multiple times and in parallel. We do that by using [Parametrization](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/parameters.html).
 
@@ -129,17 +129,17 @@ We start by fixing the login - we are going to create a **Parameter** named `acc
 
 1. Click the **ADVANCED** button in the bottom-left corner of Request \#1.
 2. Expand the **Set Parameters** section by clicking it. 
-3. Define a parameter named `access_token` and set the **JSONPath** query to `$.access_token` or simply `access_token`. This parameter can now be used in subsequent requests. ![](.gitbook/assets/screen-shot-2017-11-02-at-13.59.02.png)
-4. In the **Headers** section of Request \#2, we find the **Authorization** header taken from the recording. It contains the access token from the recorded session - we replace it with the value of the parameter we have just created: `Bearer ${access_token}`. ![](.gitbook/assets/auth-header.png)
+3. Define a parameter named `access_token` and set the **JSONPath** query to `$.access_token` or simply `access_token`. This parameter can now be used in subsequent requests. ![](../.gitbook/assets/screen-shot-2017-11-02-at-13.59.02.png)
+4. In the **Headers** section of Request \#2, we find the **Authorization** header taken from the recording. It contains the access token from the recorded session - we replace it with the value of the parameter we have just created: `Bearer ${access_token}`. ![](../.gitbook/assets/auth-header.png)
 5. We do the same for Request \#3.
 
 Now every time we run the test scenario, the correct token is stored in our parameter and used in subsequent requests. We can run the trial again to verify this is indeed the case.
 
 The second issue is solved similarly - we define a parameter for the server-generated `postId` from Request \#2 and use it in Request \#3. We also need to provide a unique identifier called a **slug**, which we are going to randomly generate, and use it for creating and publishing the blog post. It's actually pretty simple, but let's go over it step by step:
 
-1. We start by defining the `slug` parameter and giving it a random value of 10 alpha-numeric characters at the start of every scenario iteration. In order to do that we click on **Advanced Settings** at the bottom of the page, scroll down to the **Parameter Defaults** section and define the value for the `slug` parameter to be `${__random_chars}`. Using the `${}` syntax here works the same as before, i.e. it instructs the Loadmill interpreter to use a value stored in a parameter. The only difference is that, this time, we are using a **built-in parameter** that resolves to a different random value each time it is evaluates. ![](.gitbook/assets/random-param.png)
-2. Open Request \#2 and set the value for the `slug` property of the JSON request body to `"${slug}"`. In the same request, we define the `postId` parameter with the JSONPath query `posts[0].id`. ![](.gitbook/assets/req-2.png)
-3. The last step is to use both parametrs in the URL and request body of Request \#3. This is done with the same syntax as before - we set the new URL to `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/posts/${postId}/?include=tags` and set the values for the `id` and `slug` properties of the JSON request body to `"${postId}"` and `"${slug}"`, respectively. ![](.gitbook/assets/params.gif)
+1. We start by defining the `slug` parameter and giving it a random value of 10 alpha-numeric characters at the start of every scenario iteration. In order to do that we click on **Advanced Settings** at the bottom of the page, scroll down to the **Parameter Defaults** section and define the value for the `slug` parameter to be `${__random_chars}`. Using the `${}` syntax here works the same as before, i.e. it instructs the Loadmill interpreter to use a value stored in a parameter. The only difference is that, this time, we are using a **built-in parameter** that resolves to a different random value each time it is evaluates. ![](../.gitbook/assets/random-param.png)
+2. Open Request \#2 and set the value for the `slug` property of the JSON request body to `"${slug}"`. In the same request, we define the `postId` parameter with the JSONPath query `posts[0].id`. ![](../.gitbook/assets/req-2.png)
+3. The last step is to use both parametrs in the URL and request body of Request \#3. This is done with the same syntax as before - we set the new URL to `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/posts/${postId}/?include=tags` and set the values for the `id` and `slug` properties of the JSON request body to `"${postId}"` and `"${slug}"`, respectively. ![](../.gitbook/assets/params.gif)
 
 Our test scenario is ready for load testing.
 
@@ -151,7 +151,7 @@ In order to launch the test we simply click the **LOAD TEST** button at the bott
 
 As the test progresses we can see the amount of concurrent sessions **ramping up** linearly and see how **response time metrics** change over time.
 
-![](.gitbook/assets/results.png)
+![](../.gitbook/assets/results.png)
 
 Loadmill keeps track of the request **error rate** and fails the test if it passes a certain threshold \(%50 by default\). We can see the response time for each request and are able to drill down and see the error statistics for each one.
 

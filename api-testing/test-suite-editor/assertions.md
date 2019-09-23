@@ -4,7 +4,7 @@ When testing an API, it is usually not enough to verify that all our HTTP reques
 
 With [Loadmill](https://www.loadmill.com), this is made easy by using **Assertions**. Assertions are used in conjunction with [parameters](parameters.md) to do just that: examine the server's response and assert its correctness.
 
-You may have an arbitrary number of assertions executed after each successful request. If an assertion fails, the next request will **not be executed** and the test scenario will be marked as **failed**, but the subsequent assertions for the current request **will be executed** nontheless.
+You may have an arbitrary number of assertions executed after each successful request. If an assertion fails, the next request will **not be executed** and the test scenario will be marked as **failed**, but the subsequent assertions for the current request **will be executed** nonetheless.
 
 ## Assertion Types
 

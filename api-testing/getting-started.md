@@ -1,0 +1,22 @@
+---
+description: These are the main key definitions that you might help you getting started.
+---
+
+# Getting Started
+
+## Test Flow
+
+A Test Flow is a set of HTTP requests & assertions running sequentially. A Test Flow run fails if one of its requests or assertion fails.
+
+## Test Suite
+
+A Test Suite is a set of test flows with shared configuration and parameters. A Test Suite run fails if one of its flows fails.
+
+## Static Parameter
+
+A static parameter is a value used in a flow which is relevant to its execution context. I.e. target host, login credentials, and user input.
+
+## **Correlation**
+
+A correlation between requests is a dynamic value which is the result of one request and is used in one or more of the following requests. I.e. a created entity ID used in the next request to update it. 
+
