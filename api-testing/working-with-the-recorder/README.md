@@ -8,5 +8,5 @@ The traffic is split to different sessions by its source \(different IPs\) and i
 
 In order to record traffic in a specific environment you first need to install the Loadmill recorder as detailed in the next section.
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
