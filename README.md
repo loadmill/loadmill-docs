@@ -1,8 +1,12 @@
 # Welcome
 
-Loadmill helps companies avoid expensive downtime by replicating production traffic in test environments. Using real Internet traffic, Loadmill enables developers to capture real-world complexities in their test environments, while helping prevent the issues and bottlenecks that are usually only detected in production.
+Loadmill helps companies move faster by keeping R&D teams focused on what matters. 
 
-{% embed url="https://www.youtube.com/watch?v=7Y13BkbNLpo" %}
+Regression testing is a bottleneck. Developers should spend less time testing and more time on solving meaningful problems.
+
+Loadmill automates backend regression testing by replaying real user behavior. Using smart recordings, Loadmill can create and replay thousands of API tests based on actual user flows within minutes. 
+
+![](.gitbook/assets/image%20%281%29.png)
 
 * First things first, let's set up your Loadmill account, [sign up](https://www.loadmill.com/app/signup)!
 * Ready to start your first load test? Just check out our [Getting started guide.](load-testing/getting-started.md)
