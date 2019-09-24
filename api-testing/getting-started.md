@@ -4,17 +4,23 @@ description: These are the main key definitions that you might help you getting 
 
 # Getting Started
 
-## Test Flow
-
-A Test Flow is a set of HTTP requests & assertions running sequentially. A Test Flow run fails if one of its requests or assertion fails.
-
 ## Test Suite
 
 A Test Suite is a set of test flows with shared configuration and parameters. A Test Suite run fails if one of its flows fails.
 
+## Test Flow
+
+A Test Flow is a set of HTTP requests & assertions running sequentially. A Test Flow run fails if one of its requests or assertion fails.
+
+## Test Request
+
+A Test Request is the most basic building block of our tests. It represents a single API call or a user action. Requests can use parameters in their URL, body and headers fields.
+
 ## Static Parameter
 
-A static parameter is a value used in a flow which is relevant to its execution context. I.e. target host, login credentials, and user input.
+A static parameter is a value used in a flow which is relevant to its execution context. I.e. target host, login credentials, and user input. 
+
+Static parameters can be defined in the Test Suite parameters section and used in requests using the template strings notation: `${parameter_name}`.
 
 ## **Correlation**
 
