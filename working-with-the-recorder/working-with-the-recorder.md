@@ -13,7 +13,7 @@ After you're all set with your application, it's time to start recording your us
 
 ## Awesome! I've recorded my application, now what?
 
-![](../../.gitbook/assets/recording-generate.gif)
+![](../.gitbook/assets/recording-generate.gif)
 
 When you end the recording process, you can review its list of tracked API's \(method, path, Avg response time & Throughput\).
 

@@ -1,0 +1,25 @@
+# Embedding the recording service worker
+
+### What is a service worker <a id="what_is_a_service_worker"></a>
+
+A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction.
+
+Service workers essentially act as proxy servers that sit between web applications, the browser, and the network. They are intended, among other things, to capture and inspect network requests.
+
+### Recording website traffic using Loadmill
+
+![Loadmill service-worker architecture](../.gitbook/assets/image%20%2810%29.png)
+
+As shown in the diagram above, to record a website using the Loadmill service worker, you will have to embed the Loadmill SW on your page. However, due to security concerns, service workers can **not** be loaded from another domain. This means that you will have to host and serve the service worker file from your recorded server.
+
+Another thing to consider is that service workers will only listen to events triggered in the same scope you have served the service worker from. For example — if you registered your Service Worker from _my-website.com/aaa_ the Service Worker will intercept all the _my-website.com/aaa/\*_ requests. Requests for _my-website.com/bbb/\*_ won’t be recorded!
+
+To summarise:
+
+* The service worker script has to be loaded from the recorded application domain
+* It is best to load the service worker from the root path of the recorded application, i.e. _my-website.com/loadmill-worker.js_
+
+\_\_
+
+
+

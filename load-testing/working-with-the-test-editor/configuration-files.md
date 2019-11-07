@@ -6,8 +6,8 @@ description: Learn how to work with test configuration files
 
 Loadmill test configuration files are an extension of the [HAR file format](https://en.wikipedia.org/wiki/.har). This test configuration example demonstrates some of the key elements such as - extractors, [assertions](../../api-testing/test-suite-editor/assertions.md) and parameter defaults.
 
-{% code-tabs %}
-{% code-tabs-item title="example.json" %}
+{% tabs %}
+{% tab title="example.json" %}
 ```javascript
 {
     "duration": 600000,
@@ -90,6 +90,6 @@ Loadmill test configuration files are an extension of the [HAR file format](http
     "rampUp": 120000
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 

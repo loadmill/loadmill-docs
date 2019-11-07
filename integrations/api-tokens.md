@@ -1,6 +1,6 @@
 # API Tokens
 
-In order to use the [Loadmill](https://www.loadmill.com) [REST API]() or our [node module and CLI](https://www.npmjs.com/package/loadmill), you will need to generate an **API Token**.
+In order to use the [Loadmill REST API](rest-api.md) or our [node module and CLI](https://www.npmjs.com/package/loadmill), you will need to generate an **API Token**.
 
 ## Generate a Token
 

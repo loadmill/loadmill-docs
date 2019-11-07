@@ -11,7 +11,7 @@ description: >-
 
 Before you'll start recording users flows, you'll need to set up an application to record from:
 
-![Adding a new application dialog](../../.gitbook/assets/screen-shot-2019-09-23-at-11.41.12-am.png)
+![Adding a new application dialog](../.gitbook/assets/screen-shot-2019-09-23-at-11.41.12-am.png)
 
 1. Go to "Recordings" tab, located in the main navigation area, and click on the "Setup" tab.
 2. In the "Setup" tab, click on + "ADD APPLICATION" button.
@@ -19,7 +19,7 @@ Before you'll start recording users flows, you'll need to set up an application 
 4. Click on "GET TRACKING ID" button.
 5. In the Application dialog, setup the following: 
 
-![](../../.gitbook/assets/screen-shot-2019-09-23-at-11.41.32-am.png)
+![](../.gitbook/assets/screen-shot-2019-09-23-at-11.41.32-am.png)
 
 1. **Serve Loadmill worker.js from your domain:**  The Loadmill service worker has to be served from your domain in order to record it. Upload this [loadmill-worker.js](https://echo.loadmill.com/loadmill-worker.js) file to your static resources folder, and make sure it is available at &lt;your-domain&gt;/loadmill-worker.js 
 2. **Install the JavaScript code:**
@@ -28,7 +28,7 @@ Before you'll start recording users flows, you'll need to set up an application 
 
 3. Right after your'e done - the application will appear in the applications table.
 
-![](../../.gitbook/assets/screen-shot-2019-09-23-at-11.41.48-am.png)
+![](../.gitbook/assets/screen-shot-2019-09-23-at-11.41.48-am.png)
 
 ## 
 
