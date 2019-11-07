@@ -14,10 +14,12 @@ As shown in the diagram above, to record a website using the Loadmill service wo
 
 Another thing to consider is that service workers will only listen to events triggered in the same scope you have served the service worker from. For example — if you registered your Service Worker from _my-website.com/aaa_ the Service Worker will intercept all the _my-website.com/aaa/\*_ requests. Requests for _my-website.com/bbb/\*_ won’t be recorded!
 
-To summarise:
+### The TL;DR
 
-* The service worker script has to be loaded from the recorded application domain
-* It is best to load the service worker from the root path of the recorded application, i.e. _my-website.com/loadmill-worker.js_
+* Make sure that your service worker registration script is embedded in every page your users might visit.
+* A good place to embed the recorder script is usually where you injected your google analytics script tag.
+* The service worker script file has to be loaded from the recorded application domain. \(usually hosted on your server\)
+* It is best to load the service worker from the root path of the recorded application, i.e. _my-website.com/loadmill-worker.js **and not** from my-website.com/wubba/lubba/dub/dub/loadmill-worker.js_
 
 \_\_
 
