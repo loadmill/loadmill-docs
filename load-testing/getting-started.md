@@ -1,3 +1,7 @@
+---
+description: Running your first load test
+---
+
 # Getting Started
 
 {% embed url="https://www.youtube.com/watch?v=7Y13BkbNLpo" %}
