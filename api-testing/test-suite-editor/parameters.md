@@ -271,6 +271,14 @@ Returns the value of `target` after escaping special RegExp characters.
 
 Returns the value of `target` after [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding) special characters.
 
+#### `__decode_url(target)`
+
+Returns the value of `target` after [URL decoding](https://en.wikipedia.org/wiki/Percent-encoding).
+
+#### `__escape_quotes(target)`
+
+Returns the value of `target` after escaping special characters. This functions like escape quotes in JavaScript and will escape characters like \n \r \t and \".
+
 #### `__lower(target)`
 
 Returns the value of `target` after converting all characters to lower case.
