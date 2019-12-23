@@ -17,6 +17,7 @@
     * [Quick Parameter Editing](load-testing/working-with-the-test-editor/quick-parameter-editing.md)
     * [Data from CSV files](load-testing/working-with-the-test-editor/data-from-csv-files.md)
     * [Configuration Files](load-testing/working-with-the-test-editor/configuration-files.md)
+  * [Analyzing load test results](load-testing/analyzing-load-test-results.md)
   * [Setup](load-testing/setup/README.md)
     * [Domain Verification](load-testing/setup/domain-verification.md)
     * [Testing with CORS](load-testing/setup/testing-with-cors.md)
