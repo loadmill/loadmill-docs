@@ -16,6 +16,7 @@ In order to record traffic in a specific environment you first need to install t
 
 ### How to use Chrome dev tools to record a Loadmill API test:
 
+* Download the [Loadmill recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd)
 * Open the Chrome Developer Tools and switch to the Loadmill Rec tab.
 * If you are not logged in to Loadmill, you will be prompted to the login page
 * Create a Test suite in Loadmill that will hold our recorded flows, and select it in the extension. 
