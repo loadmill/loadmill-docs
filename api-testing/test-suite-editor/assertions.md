@@ -12,10 +12,11 @@ The target of an assertion is always a parameter value. You may use built-in par
 
 There are several types of assertions:
 
-1. **Not Empty** - the target is a non-empty string.
-2. **Equals** - the target is equal to the given expression. The equality check is **case sensitive**.
-3. **Contains** - the target contains the given expression. The containment check is **case sensitive**.
-4. **Matches JS RegExp** - the target matches the given regular expression.
+1. **Is True \(Not Empty\)** - the target is a JavaScript truthy value. This includes non-empty strings and numbers.
+2. **Is False \(Empty\)** - the target is the JavaScript falsy value or empty.
+3. **Equals** - the target is equal to the given expression. The equality check is **case sensitive**.
+4. **Contains** - the target contains the given expression. The containment check is **case sensitive**.
+5. **Matches JS RegExp** - the target matches the given regular expression.
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
