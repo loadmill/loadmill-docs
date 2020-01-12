@@ -6,7 +6,7 @@ Regression testing is a bottleneck. Developers should spend less time testing an
 
 Loadmill automates backend regression testing by replaying real user behavior. Using smart recordings, Loadmill can create and replay thousands of API tests based on actual user flows within minutes. 
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/shacharlands855.png)
 
 * First things first, let's set up your Loadmill account, [sign up](https://www.loadmill.com/app/signup)!
 * Want to record some API tests yourself? Start recording using the [Loadmill Chrome extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
