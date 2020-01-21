@@ -56,7 +56,7 @@ Test suite has launched successfully.
 
 {% api-method method="get" host="https://loadmill/com" path="/api/v1/test-suites-runs/:id" %}
 {% api-method-summary %}
-Get Test suite Run \(Test Suite results\)
+Get Test Suite Run \(Test Suite results\)
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -70,6 +70,12 @@ Get a launched Test Suite results
 The running uuid. You get this ID in the response when launching a Test Suite
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Authentication token - you can generate it in the settings tab
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -106,7 +112,7 @@ The running uuid. You get this ID in the response when launching a Test Suite
   "progress": "1/1", // flows progress
   "successRate": "100%", // flows success rate
   "avgResTime": "422 ms"
-}
+} 
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -115,7 +121,7 @@ The running uuid. You get this ID in the response when launching a Test Suite
 
 {% api-method method="get" host="https://loadmill.com" path="/api/v1/test-suites-runs/flows/:id" %}
 {% api-method-summary %}
-
+Get Test Suite Flow Run
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -129,6 +135,12 @@ Get Test Suite Flow results
 The flow running uuid. You get this ID when fetching the Test Suite Run entity
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Authentication token - you can generate it in the settings tab
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -147,6 +159,82 @@ The flow running uuid. You get this ID when fetching the Test Suite Run entity
   "testSuiteFlowId": "origin test suite flow uuid" | null (if deleted),
   "testSuiteId": "origin test suite uuid" | null (if deleted)
 }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://loadmill.com" path="/api/v1/tests" %}
+{% api-method-summary %}
+Create Load Test
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Create a load test from load test configuration
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Authentication token - you can generate it in the settings tab 
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="config" type="object" required=true %}
+A load test configuration. You can see a conf example here
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{ testId: "load test id" }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="put" host="https://loadmill.com" path="/api/v1/tests/:id/load" %}
+{% api-method-summary %}
+Run Load Test
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Run an existing load test. Be aware that a given load test can be run only once. In order to rerun it you will have to recreate it.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Load test ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Authentication token - you can generate it in the settings tab 
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
