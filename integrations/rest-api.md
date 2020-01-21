@@ -92,10 +92,10 @@ The running uuid. You get this ID in the response when launching a Test Suite
   "testSuiteId": "origin test suite uuid" | null (if deleted),
   "testSuiteFlowRuns": [
     {
-      "id": "93cf5150-7619-4481-b698-137af0c3b6c3",
+      "id": "test suite flow run uuid",
       "startTime": timestamp,
       "endTime": timestamp | null,
-      "conf": {}, // executed conf 
+      "conf": {}, // executed flow conf 
       "description": "Flow description",
       "status": "PASSED" | "FAILED" | "RUNNING",
       "numOfRequests": number of requests in this flow conf,
@@ -106,6 +106,46 @@ The running uuid. You get this ID in the response when launching a Test Suite
   "progress": "1/1", // flows progress
   "successRate": "100%", // flows success rate
   "avgResTime": "422 ms"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://loadmill.com" path="/api/v1/test-suites-runs/flows/:id" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Get Test Suite Flow results
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+The flow running uuid. You get this ID when fetching the Test Suite Run entity
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "id": "test suite flow run uuid",
+  "description": "Flow description",
+  "conf": {...}, // the executed flow conf
+  "status": "PASSED" | "FAILED" | "RUNNING",
+  "startTime": timestamp,
+  "testSuiteFlowId": "origin test suite flow uuid" | null (if deleted),
+  "testSuiteId": "origin test suite uuid" | null (if deleted)
 }
 ```
 {% endapi-method-response-example %}
