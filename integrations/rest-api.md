@@ -1,6 +1,115 @@
----
-description: Coming soon
----
-
 # REST API
+
+{% api-method method="post" host="https://loadmill.com/api" path="/v1/test-suites/:id/run" %}
+{% api-method-summary %}
+Run Test Suite
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Run a predefined test suite
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+UUID of the Test Suite to run. 
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Authentication token - you can generate it in the settings tab.
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="forceAllFlows" type="boolean" %}
+Default = false - running only flows marked for execution with CI toggle. If true - executing all flows.
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="additionalDescription" type="string" required=false %}
+Add an additional description at the end of the current suite's description
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="overrideParameters" type="object" required=false %}
+`name: value` pairs to override the default parameters values of this specific run. i.e. `{{"paramName1":"paramVal1"}, ...}`
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Test suite has launched successfully.
+{% endapi-method-response-example-description %}
+
+```
+{testSuiteRunId: "running-uuid"}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://loadmill/com" path="/api/v1/test-suites-runs/:id" %}
+{% api-method-summary %}
+Get Test suite Run \(Test Suite results\)
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Get a launched Test Suite results 
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+The running uuid. You get this ID in the response when launching a Test Suite
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "id": "test suite run uuid,
+  "description": "test suite run description",
+  "startTime": timestamp,
+  "endTime": timestamp | null,
+  "conf": {
+    "useCookies": true
+  },
+  "status": "PASSED" | "FAILED" | "RUNNING",
+  "displayName": "Display name of the executing user",
+  "testSuiteId": "origin test suite uuid" | null (if deleted),
+  "testSuiteFlowRuns": [
+    {
+      "id": "93cf5150-7619-4481-b698-137af0c3b6c3",
+      "startTime": timestamp,
+      "endTime": timestamp | null,
+      "conf": {}, // executed conf 
+      "description": "Flow description",
+      "status": "PASSED" | "FAILED" | "RUNNING",
+      "numOfRequests": number of requests in this flow conf,
+      "avgResTime": 199, // in ms
+      "duration": "422 ms"
+    }
+  ],
+  "progress": "1/1", // flows progress
+  "successRate": "100%", // flows success rate
+  "avgResTime": "422 ms"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
