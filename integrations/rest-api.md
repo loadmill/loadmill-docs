@@ -1,11 +1,12 @@
 ---
 description: >-
-  Loadmill API is an interface for interacting with Loadmill’s servers. You can
-  use it for creating and launching tests. Before you get started you’ll need to
-  generate an API token in our App
+  Loadmill's API is an interface for interacting with Loadmill’s servers. Use it
+  to create and launch your tests.
 ---
 
 # REST API
+
+Before getting started you’ll need to generate an API token, take a look how to generate it  [here](https://docs.loadmill.com/integrations/api-tokens)
 
 {% api-method method="post" host="https://loadmill.com/api" path="/v1/test-suites/:id/run" %}
 {% api-method-summary %}
