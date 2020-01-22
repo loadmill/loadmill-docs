@@ -247,7 +247,7 @@ Get Load Test
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns the Load's data. If the load has ended it would contain load result.
+Returns the Load Test data. If the Load Test has ended it would contain its result.
 {% endapi-method-description %}
 
 {% api-method-spec %}
