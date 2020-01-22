@@ -19,7 +19,7 @@ UUID of the Test Suite to run.
 
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token - you can generate it in the settings tab.
+Authentication token -  you can generate it in the "User menu"&gt; "Settings" &gt; "Security".
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
@@ -73,7 +73,7 @@ The running uuid. You get this ID in the response when launching a Test Suite
 
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token - you can generate it in the settings tab
+Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
@@ -138,7 +138,7 @@ The flow running uuid. You get this ID when fetching the Test Suite Run entity
 
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token - you can generate it in the settings tab
+Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
@@ -178,13 +178,13 @@ Create a load test from load test configuration
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token - you can generate it in the settings tab 
+Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security" 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="config" type="object" required=true %}
-A load test configuration. You can see a conf example here
+A load test configuration. You can see a conf example -&gt; https://docs.loadmill.com/api-testing/test-suite-editor/parameters  
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -222,7 +222,7 @@ Load test ID
 
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token - you can generate it in the settings tab 
+Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security" 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
@@ -260,7 +260,7 @@ Load test ID
 
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token - you can generate it in the settings tab
+Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
