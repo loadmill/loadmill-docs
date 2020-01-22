@@ -241,3 +241,51 @@ Authentication token - you can generate it in the settings tab
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://loadmill.com" path="/api/v1/tests/:id" %}
+{% api-method-summary %}
+Get Load Test
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns the Load's data. If the load has ended it would contain load result.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Load test ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Authentication token - you can generate it in the settings tab
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "id": "load test id",
+  "startTime": timestamp,
+  "endTime": timestamp,
+  "usedSeconds": "total seconds used by all sessions",
+  "description": "load description",
+  "conf": {}, // load test configuraion
+  "result": "aborted" | "done" | "failed",
+  "failedIterations": number,
+  "successfulIterations": number
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
