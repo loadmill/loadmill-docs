@@ -184,7 +184,7 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="config" type="object" required=true %}
-A load test configuration. You can see a conf example -&gt; https://docs.loadmill.com/api-testing/test-suite-editor/parameters  
+A load test configuration. You can see a conf example here -&gt; https://docs.loadmill.com/api-testing/test-suite-editor/parameters  
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
