@@ -20,5 +20,13 @@ When a the test is using a CSV file, there will be an indication in the UI - "Us
 
 ![](../../.gitbook/assets/screen-shot-2019-02-10-at-3.21.14-pm.png)
 
+### Execution Order
 
+When running a test with a loaded CSV file, a random values set will be picked each iteration. When using a parameter defined in CSV file you shouldn't define the parameter in the "Default Parameters" section as it will override the value given from the CSV file. 
+
+The order of parameter value assignment is: 
+
+1. Value as in CSV file
+2. Value as in "Default Parameters"
+3. Value as defined in a specific request
 
