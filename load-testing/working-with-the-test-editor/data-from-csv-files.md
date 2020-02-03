@@ -22,11 +22,11 @@ When a the test is using a CSV file, there will be an indication in the UI - "Us
 
 ### Execution Order
 
-When running a test with a loaded CSV file, a random values set will be picked each iteration. When using a parameter defined in CSV file you shouldn't define the parameter in the "Default Parameters" section as it will override the value given from the CSV file. 
+When running a test using a CSV file, a random set of values will be picked each iteration from one of the CSV lines. When using a parameter defined in CSV file, you shouldn't define the parameter in the "Default Parameters" section as it will override the value given from the CSV file. 
 
 The order of parameter value assignment is: 
 
-1. Value as in CSV file
-2. Value as in "Default Parameters"
-3. Value as defined in a specific request
+1. Value as they appear in CSV file
+2. Value as in "Default Parameters" section
+3. Value as defined in the set parameter section of specific request \(These will override all of the above\)
 
