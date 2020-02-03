@@ -61,6 +61,9 @@ There are several **built-in** parameters that you can use in your test scenario
 * `__status` The status code of the last HTTP response.
 * `__statusText` The status text of the last HTTP response.
 * `__responseTime` The total response time \(in milliseconds\) of the last HTTP response.
+* `__testRunId` - The test run id: \(Suite / Flow / Load\)
+* `__testStartTime` - The test run start time \(UTC in milliseconds\)
+* `__launchedBy` - The name of the user running the test.
 
 **Note:** some previous built-in parameters are now defined as no-argument [parameter functions](parameters.md#functions) and can still be used in the same way.
 
