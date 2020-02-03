@@ -30,5 +30,8 @@
   * [API Tokens](integrations/api-tokens.md)
   * [npm Module](integrations/npm-modal.md)
   * [REST API](integrations/rest-api.md)
+* [Account Settings](account-settings/README.md)
+  * [Billing](account-settings/billing/README.md)
+    * [Usage report](account-settings/billing/usage-report.md)
 * [FAQ](faq.md)
 

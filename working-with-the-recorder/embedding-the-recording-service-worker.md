@@ -8,7 +8,7 @@ Service workers essentially act as proxy servers that sit between web applicatio
 
 ### Recording website traffic using Loadmill
 
-![Loadmill service-worker architecture](../.gitbook/assets/image%20%2816%29.png)
+![Loadmill service-worker architecture](../.gitbook/assets/image%20%2817%29.png)
 
 As shown in the diagram above, to record a website using the Loadmill service worker, you will have to embed the Loadmill SW on your page. However, due to security concerns, service workers can **not** be loaded from another domain. This means that you will have to host and serve the service worker file from your recorded server.
 
@@ -22,5 +22,5 @@ Another thing to consider is that service workers will only listen to events tri
 * It is best to load the service worker from the root path of the recorded application, i.e. _my-website.com/loadmill-worker.js **and not** from my-website.com/wubba/lubba/dub/dub/loadmill-worker.js_
 * If your website is using a strict [Content Security Policy \(CSP\)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP), you should add these two domains to the list of allowed domains `https://sdk.amazonaws.com` and `https://*.loadmill.com`. In case the Loadmill recorder fails to load because of a CSP problem, you should see the following error message in the console logs-
 
-![CAP console error](../.gitbook/assets/image%20%2814%29.png)
+![CAP console error](../.gitbook/assets/image%20%2815%29.png)
 
