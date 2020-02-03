@@ -36,7 +36,7 @@ Using parameter defaults is especially useful for automated testing and CI where
 
 Parameters can be defined and populated with values dynamically after each request in your test scenario. There are several **extraction query types** that may be used:
 
-1. **JSONPath** - used for extarcting values from a JSON response. For example, the query `post.id` will extract the value `123` from this JSON response:
+1. **JSONPath** - used for extracting values from a JSON response. For example, the query `post.id` will extract the value `123` from this JSON response:
 
    ```javascript
     {
@@ -51,6 +51,12 @@ Parameters can be defined and populated with values dynamically after each reque
 3. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
 4. **Header** - used for extracting response header values via header names.
 5. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
+6. **Clojure** - used for extracting values from Clojure \(EDN content type\) responses. Querying the data is done using JSONPath. For example, the query `$[":user"][":id"]` will extract the value `56` from this EDN response: 
+
+   ```
+    {:user {:role :viewer, :name "Rivi", :teams nil, :id "56"}}
+ 
+   ```
 
 Previously defined or built-in parameters may be embedded within **any kind of extraction query**. These parameters will be evaluated right before the query itself is evaluated.
 
@@ -61,6 +67,9 @@ There are several **built-in** parameters that you can use in your test scenario
 * `__status` The status code of the last HTTP response.
 * `__statusText` The status text of the last HTTP response.
 * `__responseTime` The total response time \(in milliseconds\) of the last HTTP response.
+* `__testRunId` - The test run id: \(Suite / Flow / Load\)
+* `__testStartTime` - The test run start time \(UTC in milliseconds\)
+* `__launchedBy` - The name of the user running the test.
 
 **Note:** some previous built-in parameters are now defined as no-argument [parameter functions](parameters.md#functions) and can still be used in the same way.
 

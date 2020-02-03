@@ -34,7 +34,7 @@ Add new requests to a flow. Once added you can drag a request to change its orde
 
 Easily convert an API flow to Load test by clicking on the Flow options menu ![](../../.gitbook/assets/screen-shot-2020-02-03-at-12.12.19-pm.png) located on the top right and select " "Convert to Load Test". Once you've selected "Convert to Load Test", a new Load test will open containing all the requests and properties taken from the original API test.
 
-![Select &quot;Convert To Load Test&quot; in the flow&apos;s options menu ](../../.gitbook/assets/screen-shot-2020-02-03-at-12.16.25-pm.png)
+![Select &quot;Convert To Load Test&quot; in the flow&apos;s options menu](../../.gitbook/assets/assets_-lhdbundi3wpd9vsolzu_-m-9ve8pnpzqxg6k-l5h_-m-9yr0z6kwxn_zozw4h_screen-shot-2020-02-03-at-12.1.png)
 
 ![The newly created Load Test from the API flow](../../.gitbook/assets/screen-shot-2020-02-03-at-12.16.40-pm.png)
 
