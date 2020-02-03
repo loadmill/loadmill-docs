@@ -30,5 +30,11 @@ Toggle this switch to enable the flow to run when executed from your continuous 
 
 Add new requests to a flow. Once added you can drag a request to change its order by grabbing it at the top right corner. 
 
+**Converting an API flow to a Load test**
 
+Easily convert an API flow to Load test by clicking on the Flow options menu ![](../../.gitbook/assets/screen-shot-2020-02-03-at-12.12.19-pm.png) located on the top right and select " "Convert to Load Test". Once you've selected "Convert to Load Test", a new Load test will open containing all the requests and properties taken from the original API test.
+
+![Select &quot;Convert To Load Test&quot; in the flow&apos;s options menu ](../../.gitbook/assets/screen-shot-2020-02-03-at-12.16.25-pm.png)
+
+![The newly created Load Test from the API flow](../../.gitbook/assets/screen-shot-2020-02-03-at-12.16.40-pm.png)
 
