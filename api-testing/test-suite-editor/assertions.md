@@ -1,4 +1,4 @@
-# Assertions
+# Verify Response - Assertions
 
 When testing an API, it is usually not enough to verify that all our HTTP requests completed successfully. Often, it is necessary to make sure that we got the correct response from the server by examining the **response status, body or headers**.
 

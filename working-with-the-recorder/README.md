@@ -1,10 +1,10 @@
 # Recordings
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 
 Loadmill recordings allow you to capture traffic in your QA or Production environment and replay it as API tests.
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 There are several way to record user sessions:
 
@@ -27,11 +27,11 @@ There are several way to record user sessions:
 * Create a new recorded application in the [recording setup page](https://www.loadmill.com/app/recordings/setup)
 * Follow the installation instructions in the application setup dialog
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2825%29.png)
 
 * After embedding the Loadmill worker recording script, reload the recored app and make sure the worker is loaded. In Chrome, open the browser developer tools and go to the Application tab and click ⚙️ Service Workers tab. See that there are no errors.
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 * Create a new recording from the [recordings page in Loadmill.](https://www.loadmill.com/app/recordings/my-recordings) 
 * Play your test scenarios in the recorded app. By default, the traffic is split to different sessions by its source \(different IPs\) and intermissions between user actions. \(If you with to manually split a recorded session in you test environment you can use the [Loadmill session splitter](https://chrome.google.com/webstore/detail/loadmill-session-splitter/beknfelcpakgnojjfcdpjddhnckekhni)\)

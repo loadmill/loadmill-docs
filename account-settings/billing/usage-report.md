@@ -12,7 +12,7 @@ The report contains the following data per date:
 
 Go to Account Settings =&gt; Billing. In this page, on your selected plan, click on the "Download Usage Report" button:
 
-![Download Usage Report](../../.gitbook/assets/image%20%2820%29.png)
+![Download Usage Report](../../.gitbook/assets/image%20%2824%29.png)
 
 
 
