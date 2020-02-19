@@ -27,6 +27,7 @@
   * [Setting up the Recorder](working-with-the-recorder/setting-up-the-recorder.md)
   * [Working with the Recorder](working-with-the-recorder/working-with-the-recorder.md)
   * [Embedding the recording service worker](working-with-the-recorder/embedding-the-recording-service-worker.md)
+  * [Recorder settings](working-with-the-recorder/recorder-settings.md)
 * [Integrations](integrations/README.md)
   * [API Tokens](integrations/api-tokens.md)
   * [npm Module](integrations/npm-modal.md)
