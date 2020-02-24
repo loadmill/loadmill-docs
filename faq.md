@@ -28,7 +28,7 @@ Soon we will add a self-service payment system for billing and buying credit. Un
 
 ## I'm getting an error like “Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin”, WTF?
 
-Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/testing-with-cors.html).
+Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](https://docs.loadmill.com/load-testing/setup/testing-with-cors).
 
 ## How to report bugs?
 
