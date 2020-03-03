@@ -374,3 +374,7 @@ Returns the current time \(of evaluation\) given as UTC milliseconds. Alias: `_n
 
 The same as `__now` but given in ISO-8601 format.
 
+#### **`__date_iso()`**
+
+The same as `__now_iso` but given in a "date only" format - i.e. `2020-03-03` 
+
