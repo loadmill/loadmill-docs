@@ -2,6 +2,7 @@
 
 * [Welcome](README.md)
 * [API Testing](api-testing/README.md)
+  * [Testing localhost application](api-testing/testing-localhost-application.md)
   * [Getting Started](api-testing/getting-started.md)
   * [Test Suite editor](api-testing/test-suite-editor/README.md)
     * [Test Flow editor](api-testing/test-suite-editor/test-flow-editor.md)
