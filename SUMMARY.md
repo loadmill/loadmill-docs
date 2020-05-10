@@ -2,7 +2,6 @@
 
 * [Welcome](README.md)
 * [API Testing](api-testing/README.md)
-  * [Testing localhost application](api-testing/testing-localhost-application.md)
   * [Getting Started](api-testing/getting-started.md)
   * [Test Suite editor](api-testing/test-suite-editor/README.md)
     * [Test Flow editor](api-testing/test-suite-editor/test-flow-editor.md)
@@ -13,6 +12,7 @@
     * [Test Suite Parameters](api-testing/test-suite-editor/test-suite-parameters.md)
     * [Global Login flow](api-testing/test-suite-editor/global-login-flow.md)
   * [Running a Test Suite](api-testing/analyzing-an-api-test-results.md)
+  * [Testing localhost application](api-testing/testing-localhost-application.md)
 * [Load Testing](load-testing/README.md)
   * [Getting Started](load-testing/getting-started.md)
   * [Load Test Editor](load-testing/working-with-the-test-editor/README.md)
