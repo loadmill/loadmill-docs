@@ -8,5 +8,5 @@ Using real Internet traffic, Loadmill enables developers to capture real-world c
 
 By leveraging real user recordings, and replaying them on different devices around the world, Loadmill can predict exactly what is going to happen every time you release to production.
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 

@@ -2,17 +2,17 @@
 
 Request is the most basic building block of our tests. It represents a single API call or a user action.
 
-![](../../.gitbook/assets/image%20%282%29.png)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 #### Advanced request options
 
 When we expand the request editor by clicking the ADVANCED button, we can see that a test request is made of two main sections - The **request section** \(In orange\) and the **response processing section** \(In blue\).  
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 
 #### The Request section
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 * The Method and URL fields are the most basic requirement for a valid request.
 * Black input fields are fields in which you can use parameters and functions \(usage of parameters and functions is explained in the next section\)
@@ -21,11 +21,11 @@ When we expand the request editor by clicking the ADVANCED button, we can see th
 
 #### Response Processing section
 
-![](../../.gitbook/assets/image%20%2829%29.png)
+![](../../.gitbook/assets/image%20%2833%29.png)
 
 The response processing section enables to you extract values from the request's response and validate them.
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 * You can extract values from the response body into an existing or a new parameter using JSONPath, jQuery, RegExp.
 * You can extract an HTTP header value into a parameter using the Header extractor.

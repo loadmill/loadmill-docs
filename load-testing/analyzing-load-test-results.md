@@ -2,7 +2,7 @@
 
 Load tests results  display several type of data series over the duration of the test. The data is divided into two graphs:
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 ### Performance over time
 
