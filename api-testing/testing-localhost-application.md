@@ -4,7 +4,7 @@ Testing your local environment before publishing the changes helps identifying b
 
 ## The problem
 
-sending a request from [Loadmill.com](http://loadmill.com/) to my localhost server is blocked.
+Sending a request from [Loadmill.com](http://loadmill.com/) to my localhost server is blocked.
 
 When you try to reach localhost on your browser,  you are actually trying to connect to your local computer’s ip address, 127.0.0.1. This local IP address is the same for every computer. 
 
