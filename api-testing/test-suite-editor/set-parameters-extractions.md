@@ -28,7 +28,7 @@ Use this extractor to extract values from HTML or XML responses. jQuery extracti
 
 #### RegExp
 
-Use this extractor to extract values from any type of response using RegExp. The first value captured by the regex \(in parentheses\) will be set to the parameter. You can test your regex expressions using this useful online tool - [link](https://regex101.com/)
+Use this extractor to extract values from any type of response using RegExp. The first value captured by the regex \(in parentheses\) will be set as  the parameter's value. You can test your regex expressions using this useful online tool - [link](https://regex101.com/)
 
 ![](../../.gitbook/assets/image%20%2818%29.png)
 
