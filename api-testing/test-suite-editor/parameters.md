@@ -370,9 +370,9 @@ Returns a random string of `length` characters present in `chars`. For example, 
 
 Returns the current time \(of evaluation\) given as UTC milliseconds. Alias: `_now_ms`.
 
-#### `__now_iso()`
+#### `__now_iso([addedMinutes=0])`
 
-The same as `__now` but given in ISO-8601 format.
+The same as `__now` but given in ISO-8601 format while adding `addedMinutes` . For example,  you may generate the current time + 15 minutes using `__now_iso('15')`.
 
 #### **`__date_iso()`**
 
