@@ -150,6 +150,10 @@ The supported built-in functions are:
 
 #### Numeric Functions
 
+#### `__abs(p1)`
+
+Returns the absolute value of `p1`.
+
 #### `__add(p1,[p2,[...]])`
 
 Same as the `+` operator, applied to any number of arguments.
@@ -271,6 +275,10 @@ Returns the `$` character.
 #### `__length(target)`
 
 Counts the number of characters in `target`.
+
+#### `__array_length(target)`
+
+Counts the number of elements in `target` array.
 
 #### `__escape_regexp(target)`
 
