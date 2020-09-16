@@ -244,6 +244,14 @@ Same as `__contains` but case-insensitive.
 
 Returns `then` if `condition` is [semantically true](parameters.md#true-semantics), otherwise returns `else`.
 
+#### `__is_number(target)`
+
+Returns true if target is not empty and not a NAN.
+
+#### `__is_uuid(target)`
+
+Returns true if target is in the format of UUID.
+
 #### `__switch(target,case1,value1,[case2,value2,[...],[default]])`
 
 Returns `value1` if `target` equals `case1`, otherwise returns `value2` if `target` equals `case2` and so on.
