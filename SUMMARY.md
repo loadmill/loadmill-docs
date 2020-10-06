@@ -10,7 +10,7 @@
     * [Set Parameters - Extractions](api-testing/test-suite-editor/set-parameters-extractions.md)
     * [Verify Response - Assertions](api-testing/test-suite-editor/assertions.md)
     * [Test Suite Parameters](api-testing/test-suite-editor/test-suite-parameters.md)
-    * [Global Login flow](api-testing/test-suite-editor/global-login-flow.md)
+    * [Global Login flow and authentication headers](api-testing/test-suite-editor/global-login-flow.md)
     * [API Tests - Data from CSV files](api-testing/test-suite-editor/api-tests-data-from-csv-files.md)
   * [Running a Test Suite](api-testing/analyzing-an-api-test-results.md)
   * [Testing localhost application](api-testing/testing-localhost-application.md)
