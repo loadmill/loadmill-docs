@@ -297,3 +297,46 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://loadmill.com/api" path="/v1/labels" %}
+{% api-method-summary %}
+Team's labels
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Returns all user's team's labels
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+  "teamLabels": [
+    {
+      "id": "123e4567-e89b-12d3-a456-426614174001",
+      "description": "my label",
+    },
+    {
+      "id": "123e4567-e89b-12d3-a456-426614174002",
+      "description": "another label",
+    }
+  ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
