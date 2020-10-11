@@ -26,7 +26,7 @@ UUID of the Test Suite to run.
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Authentication token -  you can generate it in the "User menu"&gt; "Settings" &gt; "Security".
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -80,7 +80,7 @@ The running uuid. You get this ID in the response when launching a Test Suite
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -145,7 +145,7 @@ The flow running uuid. You get this ID when fetching the Test Suite Run entity
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -185,7 +185,7 @@ Create a load test from load test configuration
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security" 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -229,7 +229,7 @@ Load test ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security" 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -267,7 +267,7 @@ Load test ID
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -308,6 +308,12 @@ Returns all user's team's labels
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security".
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
