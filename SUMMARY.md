@@ -7,6 +7,7 @@
     * [Test Flow editor](api-testing/test-suite-editor/test-flow-editor.md)
     * [Request editor](api-testing/test-suite-editor/request-editor.md)
     * [Parameters](api-testing/test-suite-editor/parameters.md)
+    * [Functions](api-testing/test-suite-editor/functions.md)
     * [Set Parameters - Extractions](api-testing/test-suite-editor/set-parameters-extractions.md)
     * [Verify Response - Assertions](api-testing/test-suite-editor/assertions.md)
     * [Test Suite Parameters](api-testing/test-suite-editor/test-suite-parameters.md)
