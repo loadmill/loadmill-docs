@@ -291,7 +291,7 @@ Returns the value of `target` after [URL decoding](https://en.wikipedia.org/wiki
 Returns the value of `target` after escaping special characters. This functions like escape quotes in JavaScript and will escape characters like \n \r \t and \".
 
 * `${__escape_quotes('"escapeMe"')} // returns \"escapeMe\"`
-* `${__escape_quotes(P1)} // returns \"escapeMe\", assuming p is 'escapeMe'`
+* `${__escape_quotes(P1)} // returns \"escapeMe\", assuming p is "escapeMe"`
 
 ### `__lower(target)`
 
