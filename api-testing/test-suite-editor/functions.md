@@ -332,7 +332,7 @@ Extracts a value from `target` using `regexp` as a JS RegExp. If there is no mat
 Extracts a value from `target` using `jsonpath` as a JSONPath query. If there is no match, an empty string will be returned or, if present, the given `default` value.
 
 * `${__jsonpath('{"key":"val"}','$.key')} // returns 'val'`
-* `${__jsonpath(p1,jsonpath)} // returns 'val' assuming p1 is  and jsonpath is '$.key'`
+* `${__jsonpath(target,jsonpath)} // returns 'val' assuming target is '{"key":"val"}' and jsonpath is '$.key'`
 * `${__jsonpath('{"key":"val"}','$.notHere','none')} // returns 'none'`
 
 #### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
