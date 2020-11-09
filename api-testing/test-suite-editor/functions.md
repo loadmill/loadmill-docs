@@ -376,7 +376,7 @@ Returns a random string of `length` alpha-numeric characters.
 
 * `${__random_chars('5')} // returns g2Niu`
 * `${__random_chars()} // returns YIeT6JXgbJ`
-* `${__random_chars(p1)} // returns YXgbT, assuminp1 is 5`
+* `${__random_chars(p1)} // returns YXgbT, assuming p1 is 5`
 
 ### `__random_digits([length=10])`
 
@@ -406,9 +406,9 @@ Returns a random string of `length` upper-case english letters.
 
 Returns a random string of `length` lower-case english letters.
 
-* `${__random_uppers()} // returns osmcjtudhe`
-* `${__random_uppers('5')} // returns alrmv`
-* `${__random_uppers(p1)} // returns alrmv, assuming p1 is5`
+* `${__random_lowers()} // returns osmcjtudhe`
+* `${__random_lowers('5')} // returns alrmv`
+* `${__random_lowers(p1)} // returns alrmv, assuming p1 is5`
 
 ### `__random_hex([length=10])`
 
@@ -416,7 +416,7 @@ Returns a random string of `length` hexadecimal digits.
 
 * `${__random_hex()} // returns d8c3f7ce22`
 * `${__random_hex('5')} // returns e5a4b`
-* `${__random_hex(p1)} // returns e5a4b, assumin p1 is 5`
+* `${__random_hex(p1)} // returns e5a4b, assuming p1 is 5`
 
 ### `__random_from(chars,[length=10])`
 
