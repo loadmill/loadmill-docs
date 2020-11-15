@@ -14,7 +14,7 @@ Run the edited flow as a "Dry run" to debug and validate it.
 
 #### **Export Flow**
 
-Save the flow to a `.JSON` file. You can then import the flow into anther test suite or as a load test.
+Save the flow to a `.JSON` file. You can then import the flow into another test suite or as a load test.
 
 #### **Replace parameter**
 
