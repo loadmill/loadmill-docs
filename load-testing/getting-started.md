@@ -1,5 +1,5 @@
 ---
-description: Running your first load test
+description: Running your first load test.
 ---
 
 # Getting Started
