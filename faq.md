@@ -1,4 +1,4 @@
-# FAQ
+# General FAQs
 
 ## What is Loadmill and what can it do for me?
 
@@ -26,11 +26,16 @@ There are two sides to our platform, the one we haven’t mentioned yet is our [
 
 Soon we will add a self-service payment system for billing and buying credit. Until then, if you need more credit to evaluate or use the product we can probably give you some. Please contact [admin@loadmill.com](mailto:admin@loadmill.com).
 
-## I'm getting an error like “Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin”, WTF?
+## I'm getting an error like **'**Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin', WTF?
 
 Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](https://docs.loadmill.com/load-testing/setup/testing-with-cors).
 
-## How to report bugs?
+## **I’m getting an error ‘Request has been terminated Possible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.’ when trying to run a test.** 
+
+In general such errors occur in case your network is unstable and the web socket between your browser and our server is disconnecting. Please check your network settings and verify whether other team members experience the issue.   
+****
+
+##  ****How to report bugs?
 
 You can send bug reports to [support@loadmill.com](mailto:support@loadmill.com)
 

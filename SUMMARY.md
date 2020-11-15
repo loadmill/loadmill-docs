@@ -41,5 +41,5 @@
 * [Account Settings](account-settings/README.md)
   * [Billing](account-settings/billing/README.md)
     * [Usage report](account-settings/billing/usage-report.md)
-* [FAQ](faq.md)
+* [General FAQs](faq.md)
 
