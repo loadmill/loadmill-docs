@@ -1,12 +1,12 @@
 ---
-description: These are the main key definitions that you might help you getting started.
+description: These are the main key definitions that might help you get started.
 ---
 
 # Getting Started
 
 ## Test Suite
 
-A Test Suite is a set of test flows with shared configuration and parameters. A Test Suite run fails if one of its flows fails.
+A Test Suite is a set of test flows with shared configuration and [parameters](https://docs.loadmill.com/api-testing/test-suite-editor/parameters). A Test Suite run fails if one of its flows fails.
 
 ## Test Flow
 
