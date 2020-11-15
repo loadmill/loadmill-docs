@@ -22,8 +22,8 @@ Everything described here is demonstrated in the video above so be sure to check
 Here's some more guides on how to do great things with Loadmill:
 
 * [Starting From Scratch](working-with-the-test-editor/) - Create an advanced load test from scratch using the test editor, without recording a session.
-* [Using Parameters](../api-testing/test-suite-editor/parameters.md) - How to do cool stuff using **Parameters**.
-* [Verifying Responses](../api-testing/test-suite-editor/assertions.md) - How to use  **Assertions** to ensure correctness.
+* [Using Parameters](../api-testing/test-suite-editor/parameters/) - How to do cool stuff using **Parameters**.
+* [Verifying Responses](../api-testing/test-suite-editor/parameters/assertions.md) - How to use  **Assertions** to ensure correctness.
 * [CI/CD Integration](../integrations/api-tokens.md) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
 * [Domain Verification](setup/domain-verification.md) - How to quickly enable verification for your app or website so you can run bigger load tests.
 * [Testing with CORS](setup/testing-with-cors.md) - Quickly setup CORS so you can test from anywhere in the world. 
