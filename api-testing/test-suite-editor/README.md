@@ -4,7 +4,7 @@ A Test suite is a collection of Test Flows intended to run together. When execut
 
 Let's take a look at the Test Suite page.
 
-![The Test Suite editor layout](../../.gitbook/assets/screen-shot-2019-09-23-at-11.49.43-am.png)
+![The Test Suite editor layout](../../.gitbook/assets/testsuite_editor_layout.png)
 
 
 
