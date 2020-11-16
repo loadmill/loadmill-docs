@@ -1,8 +1,4 @@
----
-description: Running your first API test.
----
-
-# Getting Started
+# Core definitions
 
 ## These are the key definitions that might help you get started:
 
@@ -27,16 +23,4 @@ Static parameters can be defined in the Test Suite parameters section and used i
 **Correlation**
 
 A correlation between requests is a dynamic value which is the result of one request and is used in one or more of the following requests. I.e. a created entity ID used in the next request to update it. 
-
-
-
-
-
-
-
-
-
-
-
-
 

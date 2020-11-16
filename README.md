@@ -1,4 +1,4 @@
-# Welcome
+# What is Loadmill?
 
 Loadmill helps companies move faster by keeping R&D teams focused on what matters. 
 

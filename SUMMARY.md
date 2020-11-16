@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [What is Loadmill?](README.md)
+* [Core definitions](core-definitions.md)
 * [API Testing](api-testing/README.md)
   * [Getting Started](api-testing/getting-started.md)
   * [Test Suite editor](api-testing/test-suite-editor/README.md)
@@ -26,6 +27,7 @@
   * [Setup](load-testing/setup/README.md)
     * [Domain Verification](load-testing/setup/domain-verification.md)
     * [Testing with CORS](load-testing/setup/testing-with-cors.md)
+  * [Load Testing FAQs](load-testing/load-testing-faqs-1.md)
   * [Load Testing troubleshooting](load-testing/load-testing-faqs.md)
 * [Recordings](working-with-the-recorder/README.md)
   * [Setting up the Recorder](working-with-the-recorder/setting-up-the-recorder.md)
