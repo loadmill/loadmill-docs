@@ -211,6 +211,64 @@ A load test configuration. You can see a conf example here -&gt; https://docs.lo
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="patch" host="https://www.loadmill.com" path="/api/v1/test-suites/:suiteId/flows/:flowId/pools" %}
+{% api-method-summary %}
+Set Flow's Parameter Pool
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Create a parameter pool and attach it to a flow
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="suiteId" type="string" required=true %}
+The suite UUID in which the flow resides 
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="flowId" type="string" required=true %}
+The flow UUID. The parameter pool will be attached to this flow
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="content-type" type="string" required=true %}
+must be text/csv
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="name" type="string" required=false %}
+name of the parameter pool data
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="body" type="string" required=true %}
+The CSV data in CSV format. 
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 {% api-method method="put" host="https://www.loadmill.com" path="/api/v1/tests/:id/load" %}
 {% api-method-summary %}
 Run Load Test
