@@ -6,23 +6,51 @@ API Test flow is a series of API calls \(HTTP requests\) that represent a single
 
 ### The Test Flow toolbar
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/the_test_flow_toolbar.png)
 
 #### **Run Flow button** \(▶\)
 
 Run the edited flow as a "Dry run" to debug and validate it.
 
+#### Login toggle
+
+Toggle this switch to enable the flow to use [the Global Login](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) settings.
+
+#### **CI toggle**
+
+Toggle this switch to enable the flow to run when executed from your continuous integration pipeline. You can use our NPM module to execute a Test Suite to test every build in CI, this will be explained lated in [the Integrations section](https://docs.loadmill.com/integrations/npm-modal).
+
+#### Import CSV
+
+Easily re-run your test flows by using different parameters values by uploading a [CSV file](https://docs.loadmill.com/api-testing/test-suite-editor/api-tests-data-from-csv-files) containing a list of the values.
+
 #### **Export Flow**
 
 Save the flow to a `.JSON` file. You can then import the flow into another test suite or as a load test.
 
-#### **Replace parameter**
+#### Duplicate Flow
 
-Replace the usage of a parameter in this flow with another parameter \(Parameters will be discussed later in depth\) 
+Create a copy of the original flow within the Test Suite.
 
-#### **CI toggle**
+#### Delete Flow
 
-Toggle this switch to enable the flow to run when executed from your continuous integration pipeline. You can use our NPM module to execute a Test Suite to test every build in CI, this will be explained lated in the Integrations section.
+Delete the flow.
+
+#### Set As Login Flow
+
+Copy the entire flow to [the Login tab](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow). 
+
+#### **Replace Parameter**
+
+Replace the usage of a parameter in this flow with another parameter. \(Find more information about parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters)\).
+
+#### Extract Parameter
+
+Extract a value to a parameter from all across the test requests.
+
+**Copy flow to suite**
+
+Copy the flow into another Test Suite.
 
 ### Other flow controllers
 
@@ -34,7 +62,15 @@ Add new requests to a flow. Once added you can drag a request to change its orde
 
 Easily convert an API flow to Load test by clicking on the Flow options menu ![](../../.gitbook/assets/screen-shot-2020-02-03-at-12.12.19-pm.png) located on the top right and select " "Convert to Load Test". Once you've selected "Convert to Load Test", a new Load test will open containing all the requests and properties taken from the original API test.
 
-![Select &quot;Convert To Load Test&quot; in the flow&apos;s options menu](../../.gitbook/assets/assets_-lhdbundi3wpd9vsolzu_-m-9ve8pnpzqxg6k-l5h_-m-9yr0z6kwxn_zozw4h_screen-shot-2020-02-03-at-12.16.25-pm.png)
+![](../../.gitbook/assets/convert_to_load.png)
 
-![The newly created Load Test from the API flow](../../.gitbook/assets/screen-shot-2020-02-03-at-12.16.40-pm.png)
+![](../../.gitbook/assets/converted_from_api_test.png)
+
+#### Skip and Stop Condition
+
+Set a skip or stop condition between requests. Let's say you would like to skip "Purchase" Request if the preceding "Get Price" Request response returns a price above the current budget. This could be accomplished by extracting the price to a parameter and setting the Purchase Request skip condition to ${budget &lt;= price}.
+
+![Setting up a skip condition](../../.gitbook/assets/price_budget.png)
+
+
 

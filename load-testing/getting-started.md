@@ -17,20 +17,11 @@ We are going to be testing a [Ghost](https://ghost.org/developers/) publishing s
 
 Everything described here is demonstrated in the video above so be sure to check it out.
 
-## Learn More
+## **Before you start**
 
-Here's some more guides on how to do great things with Loadmill:
+**Signup to Loadmill** at this [link](https://www.loadmill.com/app/signup). If you need a demo application for testing you can use [this one](https://loadmill-test-blog.herokuapp.com). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account. ****
 
-* [Starting From Scratch](working-with-the-test-editor/) - Create an advanced load test from scratch using the test editor, without recording a session.
-* [Using Parameters](../api-testing/test-suite-editor/parameters/) - How to do cool stuff using **Parameters**.
-* [Verifying Responses](../api-testing/test-suite-editor/parameters/assertions.md) - How to use  **Assertions** to ensure correctness.
-* [CI/CD Integration](../integrations/api-tokens.md) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
-* [Domain Verification](setup/domain-verification.md) - How to quickly enable verification for your app or website so you can run bigger load tests.
-* [Testing with CORS](setup/testing-with-cors.md) - Quickly setup CORS so you can test from anywhere in the world. 
-
-## Free Account
-
-Before you can start running free tests, you will need to [create a Loadmill account](https://loadmill.com/app/signup). We do not ask for any credit card or personal information other your name and email so it only takes about five seconds. You can also login using your Google or GitHub account.
+In order to use Loadmill effectively, we highly recommend to read [Core definitions](https://docs.loadmill.com/core-definitions), don't worry, it is only a 2 min read. 😉 
 
 ## Hello World
 
@@ -42,7 +33,7 @@ The simplest load test you can create is an HTTP GET request to your web server.
 
 ![](../.gitbook/assets/start.gif)
 
-**Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can ignore it for now and learn how to do that later [here](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/domain-verification.html) \(it's actually pretty easy\).
+**Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can ignore it for now and learn how to do that later [here](https://docs.loadmill.com/load-testing/setup/domain-verification) \(it's actually pretty easy\).
 
 That's it! You have just created and ran your first load test in under a minute 🎉
 
@@ -110,7 +101,7 @@ In order to keep things nice and simple we remove everything except the login, c
 
 ### Running a trial test
 
-Before we run a massive load test, we usually want to run just a single iteration of the scenario, to make sure everything works as expected. This is what we call a **Trial Run** or **Trial Test** \(some like the term "dry run"\). It's also a very easy way to test your API and can be exported to a **Functional Test** which you can later [use in your CI](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/api-tokens.html).
+Before we run a massive load test, we usually want to run just a single iteration of the scenario, to make sure everything works as expected. This is what we call a **Trial Run** or **Trial Test** \(some like the term "dry run"\). It's also a very easy way to test your API and can be exported to a **Functional Test** which you can later [use in your CI](https://docs.loadmill.com/integrations/npm-modal).
 
 When we are creating a new test or extending/maintaining an old one, we like to iterate several times - modifying the test and trying it out - until we get the result we want.
 
@@ -127,7 +118,7 @@ At this point the trial test should succeed, but our work is not yet done. There
 
 ![](../.gitbook/assets/problems.png)
 
-This is to be expected, since the requests are executed **exactly** as they were recorded by the browser - the values are essentially **hard-coded**. However, with small modifications to our test scenario, we can **generalize** it so that it can be executed correctly multiple times and in parallel. We do that by using [Parametrization](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/parameters.html).
+This is to be expected, since the requests are executed **exactly** as they were recorded by the browser - the values are essentially **hard-coded**. However, with small modifications to our test scenario, we can **generalize** it so that it can be executed correctly multiple times and in parallel. We do that by using [Parameterization](https://docs.loadmill.com/api-testing/test-suite-editor/parameters).
 
 We start by fixing the login - we are going to create a **Parameter** named `access_token`, extract its value from the login response using [JSONPath](http://goessner.net/articles/JsonPath/) and use it to authenticate the other two requests. Let's do it step by step:
 
@@ -160,4 +151,17 @@ As the test progresses we can see the amount of concurrent sessions **ramping up
 Loadmill keeps track of the request **error rate** and fails the test if it passes a certain threshold \(%50 by default\). We can see the response time for each request and are able to drill down and see the error statistics for each one.
 
 Stay tuned for more guides on how to analyze load test results, set thresholds and more.
+
+
+
+## Learn More
+
+Here's some more guides on how to do great things with Loadmill:
+
+* [Starting From Scratch](working-with-the-test-editor/) - Create an advanced load test from scratch using the test editor, without recording a session.
+* [Using Parameters](../api-testing/test-suite-editor/parameters/) - How to do cool stuff using **Parameters**.
+* [Verifying Responses](../api-testing/test-suite-editor/parameters/assertions.md) - How to use  **Assertions** to ensure correctness.
+* [CI/CD Integration](../integrations/api-tokens.md) - Run tests \(Load and API / Functional\) via REST, CLI or JavaScript. 
+* [Domain Verification](setup/domain-verification.md) - How to quickly enable verification for your app or website so you can run bigger load tests.
+* [Testing with CORS](setup/testing-with-cors.md) - Quickly setup CORS so you can test from anywhere in the world. 
 

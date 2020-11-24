@@ -12,7 +12,7 @@ The `123` part is the identifier of the blog post created by the user - it canno
 1. [Extract](./#parameter-extraction) the ID from the first response into a parameter, e.g. `postId`
 2. Embed the parameter in the second request URL: `https://www.myblog.com/posts/${postId}/like`
 
-You may embed parameters with the `${}` syntax in the request URL as well as the request body, request headers, [extractions](./#parameter-extraction), [assertions](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/assertions.html) and more.
+You may embed parameters with the `${}` syntax in the request URL as well as the request body, request headers, [extractions](./#parameter-extraction), [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/assertions) and more.
 
 Note that any parametrized expression such as `posts/${postId}` will remain as-is if no such parameter is defined or extracted before the expression is evaluated.
 

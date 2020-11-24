@@ -16,26 +16,15 @@ Loadmill does not simulate browser/client side activity in any way - we test you
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Load_testing):
 
-> Load testing is the process of putting demand on a application and measuring its response. Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.
+> Load testing is the process of putting demand on an application and measuring its response. Load testing is performed to determine a system's behavior under both normal and anticipated peak load conditions.
 
-## But I don't want to test anything, what can Loadmill do for me?
+## How can I get more credits to run tests?
 
-There are two sides to our platform, the one we haven’t mentioned yet is our [Affiliate Program](https://www.loadmill.com/join-affiliate). If you own or represent any kind of web site then it might interest you. [This video](https://youtu.be/d9DpWolfapE) is less technical and demonstrates how becoming a Loadmill Affiliate can help make you money! Read more about our [Affiliate Program here](https://github.com/loadmill/loadmill-docs/tree/75b2138469fd07320dae2a78a4f6a2518591d128/affiliate-program.html).
+Soon we will add a self-service payment system for billing and buying credits. Until then, if you need more credit to evaluate or use the product we can probably give you some. 
 
-## How can I get more credit to run tests?
+Please contact support by clicking on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).
 
-Soon we will add a self-service payment system for billing and buying credit. Until then, if you need more credit to evaluate or use the product we can probably give you some. Please contact [admin@loadmill.com](mailto:admin@loadmill.com).
-
-## I'm getting an error like **'**Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin', WTF?
-
-Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](https://docs.loadmill.com/load-testing/setup/testing-with-cors).
-
-## **I’m getting an error ‘Request has been terminated Possible causes: the network is offline, Origin is not allowed by Access-Control-Allow-Origin, the page is being unloaded, etc.’ when trying to run a test.** 
-
-In general such errors occur in case your network is unstable and the web socket between your browser and our server is disconnecting. Please check your network settings and verify whether other team members experience the issue.   
-****
-
-##  ****How to report bugs?
+## How to report bugs?
 
 You can send bug reports to [support@loadmill.com](mailto:support@loadmill.com)
 
