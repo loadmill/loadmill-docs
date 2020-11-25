@@ -1,6 +1,6 @@
 # Parameters
 
-Working with [Loadmill](https://www.loadmill.com) makes it very easy to convert recorded browser/network sessions \(via HAR files\) into test scenarios. But once a scenario has been created, it often needs to be **parametrized** in order to denote the dynamic parts of your API.
+Working with [Loadmill](https://www.loadmill.com) makes it very easy to convert recorded browser/network sessions \(via HAR files\) into test scenarios. But once a scenario has been created, it often needs to be **parameterized** in order to denote the dynamic parts of your API.
 
 This is best explained by example, so let's have a look at the following test scenario:
 
