@@ -1,6 +1,6 @@
 # Test Flow editor
 
-API Test flow is a series of API calls \(HTTP requests\) that represent a single "user" flow we would like to test. These requests will be executed sequentially until completion or until the first failure.
+API Test flow is a series of API calls \(HTTP requests\) that represent **a single "user" flow we would like to test**. These requests will be executed sequentially until completion or until the first failure.
 
 ![Test Flow editor section](../../.gitbook/assets/testsute_flow.png)
 
