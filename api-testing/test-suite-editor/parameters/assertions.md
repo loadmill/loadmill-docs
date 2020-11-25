@@ -14,8 +14,8 @@ The target of an assertion is always a parameter value. You may use built-in par
 
 There are several types of assertions:
 
-1. **Is True \(Not Empty\)** - the target is a JavaScript truthy value. This includes non-empty strings and numbers.
-2. **Is False \(Empty\)** - the target is the JavaScript falsy value or empty.
+1. **Exists** - the target exists.
+2. **Doesn't exist** - the target doesn't exist.
 3. **Equals** - the target is equal to the given expression. The equality check is **case sensitive**.
 4. **Doesn't equal** - the target is NOT equal to the given expression. The equality check is case sensitive.
 5. **Contains** - the target contains the given expression. The containment check is **case sensitive**.
