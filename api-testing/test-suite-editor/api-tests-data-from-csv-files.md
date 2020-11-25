@@ -34,18 +34,17 @@ When using a parameter defined in a CSV file, any parameter defined in the "Test
 
 The order of parameter value assignment is:
 
-1. Value as in **Test Suite Parameters tab**. For example:  
+1. Value as in **Test Suite Parameters tab**. For example:
+
+![](../../.gitbook/assets/pasted-image-0.png)
+
+   2. Value as they appear in the **CSV** file. For example:
+
+![](../../.gitbook/assets/pasted-image-0-1-.png)
+
+     3. Value as defined in the **Extractions - Set Parameters** section of specific request \(This will override all of the above\). For example:
+
+![](../../.gitbook/assets/pasted-image-0-2-.png)
 
 
-   ![](https://lh6.googleusercontent.com/ELJn3Fp20I7qhVnAdI9AJmbUfbNyH3_Lqv8-6ecpi3-_ewPLwQ3mAGhgcjqjfAVOAwnjiMOrYewWgkD8iul7khd_Gvp0vsbFY1NqRbacMF0ldhpQu_SuggkOUNh0bDfZRqPozxvv)
-
-2. Value as they appear in the **CSV** file. For example:  
-
-
-   ![](https://lh4.googleusercontent.com/WpgRhs4TzSe3Tf0LQrm8YC4x6QlfjZwPHp891iW__ASk8EEy0lVZ7u9wW_RiK6eMd0oP4Aqy0olsd4PR_orzmnSMPTmhcBBjrvBt66dfRCgqi20ryZ-sy7znCjDj3U6CrqHnB3CH)
-
-3. Value as defined in the **Extractions - Set Parameters** section of specific request \(These will override all of the above\). For example:  
-
-
-   ![](https://lh6.googleusercontent.com/clyvxvJHm15KuFYx2BXDHXfiKEtdzAswSofZa24xTreUsLAp6mURs4tUoD4Li2nBBpHGZHk8mMCDL6byMIgOFPxPoJdFZiaUS90AcfghQM4uLsci4-OgTSY4feVte-UF2ob9aEUf)
 
