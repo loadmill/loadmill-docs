@@ -4,34 +4,38 @@ Request is the most basic building block of our tests. It represents a single AP
 
 ![](../../.gitbook/assets/image%20%283%29.png)
 
-#### Advanced request options
+### Request sections
 
-When we expand the request editor by clicking the ADVANCED button, we can see that a test request is made of two main sections - The **request section** \(In orange\) and the **response processing section** \(In blue\).  
+When we expand the request editor by clicking the ADVANCED button, we can see that a test request includes two sections - The **request main section** \(In yellow\) and the **response handling section** \(In blue\).  
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/request_main.png)
 
-#### The Request section
+#### The Request main section
 
-![](../../.gitbook/assets/image%20%2825%29.png)
+![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.13.51.png)
 
-* The Method and URL fields are the most basic requirement for a valid request.
-* Black input fields are fields in which you can use parameters and functions \(usage of parameters and functions is explained in the next section\)
-* It is recommended to set the request description in a way that describes its action. This will make it easier for you to debug your tests later if this request fails.
-* Some requests requires a body. Selecting the right content-type for your request body will help us highlight the syntax of your request body \(i.e. JSON or XML\)
+* The **Method** and **URL** fields are the most basic requirements for a valid request.
+* Black input fields are fields in which you can use [parameters](https://docs.loadmill.com/api-testing/test-suite-editor/parameters) and [functions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions).
+* It is recommended to set the **Request description** in a way that describes its action. This will make it easier for you to debug your tests later if this request fails.
+* Some requests requires a **body**. Selecting the right **content-type** for your request body will help us highlight the syntax of your request body \(i.e. JSON or XML\)
 
-#### Response Processing section
+#### The Response Handling section
 
 ![](../../.gitbook/assets/image%20%2833%29.png)
 
-The response processing section enables to you extract values from the request's response and validate them.
+The response handling section enables to you extract values from the request's response and validate them.
 
-![](../../.gitbook/assets/image%20%2816%29.png)
+![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.26.15.png)
 
-* You can extract values from the response body into an existing or a new parameter using JSONPath, jQuery, RegExp.
-* You can extract an HTTP header value into a parameter using the Header extractor.
-* You assign a static value or apply a function on anther parameter using Assign option
+The **Extractions - Set Parameters** sub-section allows you:
 
-Assertions have their own section in the next pages.
+* To extract values from the response body into an existing or a new parameter using JSONPath, Closure, jQuery, RegExp.
+* To extract an HTTP header value into a parameter using the Header extractor.
+* To assign a static value or apply a function on anther parameter using the "Assign" option.
 
+Find more information about the **Assertions - Verify Response** sub-section [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/assertions). 
 
+The **Loops** sub-section allows to repeat the request until the parameter's value will meet the requirement or number of iteration reached:
+
+![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.40.55.png)
 
