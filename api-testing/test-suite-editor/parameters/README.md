@@ -25,7 +25,7 @@ Let's extend our first example by requiring that the user provide credentials vi
 1. `https://testUser:testPassword@www.myblog.com/posts`
 2. `https://testUser:testPassword@www.myblog.com/posts/${postId}/like`
 
-If you would like to use different credentials for every test run, you may replace the username and password with parameters and set their values in the **parameter defaults** section in your test scenario whenever you reuse the test. So now the URLs will look like:
+If you would like to use different credentials for every test run, you may replace the username and password with parameters and set their values in the [Test Suite Parameters](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters) tab whenever you reuse the test. So now the URLs will look like:
 
 1. `https://${user}:${pass}@www.myblog.com/posts`
 2. `https://${user}:${pass}@www.myblog.com/posts/${postId}/like`
