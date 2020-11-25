@@ -24,13 +24,13 @@ In order to remove a CSV file from the test, simply click on the "Using CSV" but
 
 **Iteration for each CSV value**
 
-When running a test suite using a CSV file, the flow using the CSV will run for a number of iterations as the number of values in the CSV, each iteration with the next values defined in the CSV file.
+When running a test suite using a CSV file, the flow using the CSV will run for a number of iterations as the number of values in the CSV, **each iteration with the next values defined in the CSV file**.
 
 ![](https://lh4.googleusercontent.com/8SJI1rHES86UJzwsJ9m3l2ck71TPi-HaxFCEQ4n5ohOCndnxdm8YHmvHa5tFHxyBtkttCguAV0mAdr9rDGwOxCrsuCpJ8LsVYuezE46YfhIqsLG4o0FzS9dOr2sftDS7AqaixDzu)
 
 ### Execution Order
 
-When using a parameter defined in a CSV file, any parameter defined in the "Test Suite Parameters" section will be overridden by the value given from the CSV file.
+When using a parameter defined in a CSV file, any parameter defined in the "Test Suite Parameters" section **will be overridden by the value given from the CSV file**.
 
 The order of parameter value assignment is:
 
