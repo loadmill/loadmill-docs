@@ -1,8 +1,8 @@
-# Set Parameters - Extractions
+# Extractions - Set Parameters
 
-Use the set parameters section of the request card to extract values from the responses. These extracted values can be use in any of the following requests or to assert and verify your success criteria. 
+Use the **Extractions - Set Parameters** section of the request to extract values from the responses. These extracted values can be use in any of the following requests or to assert and verify your success criteria. 
 
-![Set parameters section](../../../.gitbook/assets/image%20%2830%29.png)
+![](../../../.gitbook/assets/screenshot-27-.png)
 
 ### Extraction Types
 

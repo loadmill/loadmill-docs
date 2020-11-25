@@ -9,7 +9,7 @@
     * [Request editor](api-testing/test-suite-editor/request-editor.md)
     * [Parameters](api-testing/test-suite-editor/parameters/README.md)
       * [Functions](api-testing/test-suite-editor/parameters/functions.md)
-      * [Set Parameters - Extractions](api-testing/test-suite-editor/parameters/set-parameters-extractions.md)
+      * [Extractions - Set Parameters](api-testing/test-suite-editor/parameters/set-parameters-extractions.md)
       * [Verify Response - Assertions](api-testing/test-suite-editor/parameters/assertions.md)
     * [Global Login flow and authentication headers](api-testing/test-suite-editor/global-login-flow.md)
     * [Test Suite Parameters](api-testing/test-suite-editor/test-suite-parameters.md)
