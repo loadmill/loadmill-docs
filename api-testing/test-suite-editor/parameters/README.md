@@ -36,22 +36,24 @@ Using parameter defaults is especially useful for automated testing and CI where
 
 Parameters can be defined and populated with values dynamically after each request in your test scenario. There are several **extraction query types** that may be used:
 
-1. **JSONPath** - used for extracting values from a JSON response. For example, the query `post.id` will extract the value `123` from this JSON response:
+* **JSONPath** - used for extracting values from a JSON response. For example, the query `post.id` will extract the value `123` from this JSON response:
 
-   ```javascript
-    {
-        "post": {
-            "id": 123,
-            "text": "Hello World!"
-        }
-    }
-   ```
+```javascript
+ {
+     "post": {
+         "id": 123,
+         "text": "Hello World!"
+     }
+ }
+```
 
-2. **JQuery \(Cheerio\)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional \(but very useful\) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
-3. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
-4. **Header** - used for extracting response header values via header names.
-5. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
-6. **Clojure** - used for extracting values from Clojure \(EDN content type\) responses. Querying the data is done using JSONPath. For example, the query `$[":user"][":id"]` will extract the value `56` from this EDN response: 
+![Parameter Extraction in a test request](../../../.gitbook/assets/screen-shot-2020-11-25-at-15.30.09.png)
+
+1. **JQuery \(Cheerio\)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional \(but very useful\) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
+2. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
+3. **Header** - used for extracting response header values via header names.
+4. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
+5. **Clojure** - used for extracting values from Clojure \(EDN content type\) responses. Querying the data is done using JSONPath. For example, the query `$[":user"][":id"]` will extract the value `56` from this EDN response: 
 
    ```
     {:user {:role :viewer, :name "Rivi", :teams nil, :id "56"}}
