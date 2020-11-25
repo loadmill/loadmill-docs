@@ -36,6 +36,8 @@ Using parameter defaults is especially useful for automated testing and CI where
 
 Parameters can be defined and populated with values dynamically after each request in your test scenario. There are several **extraction query types** that may be used:
 
+![Extraction query types](../../../.gitbook/assets/screen-shot-2020-11-25-at-11.26.15.png)
+
 * **JSONPath** - used for extracting values from a JSON response. For example, the query `post.id` will extract the value `123` from this JSON response:
 
 ```javascript
@@ -49,16 +51,16 @@ Parameters can be defined and populated with values dynamically after each reque
 
 ![Parameter Extraction in a test request](../../../.gitbook/assets/screen-shot-2020-11-25-at-15.30.09.png)
 
-1. **JQuery \(Cheerio\)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional \(but very useful\) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
-2. **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
-3. **Header** - used for extracting response header values via header names.
-4. **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
-5. **Clojure** - used for extracting values from Clojure \(EDN content type\) responses. Querying the data is done using JSONPath. For example, the query `$[":user"][":id"]` will extract the value `56` from this EDN response: 
+* **JQuery \(Cheerio\)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional \(but very useful\) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
+* **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
+* **Header** - used for extracting response header values via header names.
+* **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
+* **Clojure** - used for extracting values from Clojure \(EDN content type\) responses. Querying the data is done using JSONPath. For example, the query `$[":user"][":id"]` will extract the value `56` from this EDN response: 
 
-   ```
-    {:user {:role :viewer, :name "Rivi", :teams nil, :id "56"}}
+```
+ {:user {:role :viewer, :name "Rivi", :teams nil, :id "56"}}
  
-   ```
+```
 
 Previously defined or built-in parameters may be embedded within **any kind of extraction query**. These parameters will be evaluated right before the query itself is evaluated.
 
@@ -73,13 +75,15 @@ There are several **built-in** parameters that you can use in your test scenario
 * `__testStartTime` - The test run start time \(UTC in milliseconds\)
 * `__launchedBy` - The name of the user running the test.
 
-**Note:** some previous built-in parameters are now defined as no-argument [parameter functions](./#functions) and can still be used in the same way.
+**Note:** some previous built-in parameters are now defined as no-argument [parameter functions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions) and can still be used in the same way.
 
 ## Advanced Usage
 
 So far, we've only seen how to inject a simple parameter value into an arbitrary expression, e.g. `Hello ${name}`. However, it is also possible to inject a _**computed value**_ using [Parameter Operators](./#operators) or [Parameter Functions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions), e.g. `The total price is ${price + __mult(price,tax)}`. You may use operators or functions anywhere parameters may be used.
 
-Computed values can be extreamly useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be acomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${price <= budget}`.
+Computed values can be extremely useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be accomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${budget <= price}`.
+
+![](../../../.gitbook/assets/screen-shot-2020-11-25-at-15.39.08.png)
 
 You may also use _**literal values**_ within expressions, e.g. `${__if_then_else(is_good,'Success!',':_(')}` - but be aware there are some [syntactic limitations](./#notes-and-limitations).
 
