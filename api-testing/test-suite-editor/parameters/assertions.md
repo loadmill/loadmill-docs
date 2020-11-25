@@ -10,13 +10,20 @@ You may have an arbitrary number of assertions executed after each successful re
 
 The target of an assertion is always a parameter value. You may use built-in parameters, default parameters or any parameter extracted from the current or previous requests in the **current scenario** as the target.
 
+![](../../../.gitbook/assets/screen-shot-2020-11-25-at-16.51.09.png)
+
 There are several types of assertions:
 
 1. **Is True \(Not Empty\)** - the target is a JavaScript truthy value. This includes non-empty strings and numbers.
 2. **Is False \(Empty\)** - the target is the JavaScript falsy value or empty.
 3. **Equals** - the target is equal to the given expression. The equality check is **case sensitive**.
-4. **Contains** - the target contains the given expression. The containment check is **case sensitive**.
-5. **Matches JS RegExp** - the target matches the given regular expression.
+4. **Doesn't equal** - the target is NOT equal to the given expression. The equality check is case sensitive.
+5. **Contains** - the target contains the given expression. The containment check is **case sensitive**.
+6. **Doesn't contain** - the target DOESN'T contain the given expression. The containment check is case sensitive.
+7. **Matches** - the target matches the given regular expression.
+8. **Greater than** - the target is greater than the given expression.
+9. **Less than** - the target is less than the given expression.
+10. **JSON Schema** - 
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
@@ -38,5 +45,5 @@ This is important in order to avoid confusion when using parameter extractors su
 
 2. Assert `books` is **Not Empty**.
 
-You may expect this assertion to fail but, in fact, it will succeedd. This is because the parameter `books` is evaluated to `[]` and therefore constitues a non-empty string. One possible way to correct this is to use a **RegExp** assertion on the `books` parameter instead: `\[[^\s]+\]`.
+You may expect this assertion to fail but, in fact, it will succeed. This is because the parameter `books` is evaluated to `[]` and therefore is considered as a non-empty string. One possible way to correct this is to use a **RegExp** assertion on the `books` parameter instead: `\[[^\s]+\]`.
 
