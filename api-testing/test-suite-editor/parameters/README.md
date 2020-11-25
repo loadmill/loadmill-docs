@@ -83,7 +83,7 @@ So far, we've only seen how to inject a simple parameter value into an arbitrary
 
 Computed values can be extremely useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be accomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${budget <= price}`.
 
-![](../../../.gitbook/assets/screen-shot-2020-11-25-at-15.39.08.png)
+![](../../../.gitbook/assets/screenshot-26-.png)
 
 You may also use _**literal values**_ within expressions, e.g. `${__if_then_else(is_good,'Success!',':_(')}` - but be aware there are some [syntactic limitations](./#notes-and-limitations).
 
