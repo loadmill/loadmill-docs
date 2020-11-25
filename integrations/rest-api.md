@@ -371,6 +371,12 @@ Returns all user's team's labels
 Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security".
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="filter=CI\_enabled" type="string" required=false %}
+Using this filer option the user can get only the labels who are attached to flows with the CI toggle on
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
