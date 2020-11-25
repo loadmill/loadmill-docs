@@ -2,7 +2,7 @@
 
 ## Test Suite Run report
 
-Once running your API Test Suite you will  be directed to the Test Suite Run  page. The Test Suite Run report page shows the list of executed flows as defined in the editor. The Test Flows table shows each flow's description, number of its requests, duration and status. Use the table filter to filter the flows by their status.
+Once running your API Test Suite you will be directed to the Test Suite Run  page. The Test Suite Run report page shows the list of executed flows as defined in the editor. The Test Flows table shows each flow's description, number of its requests, duration and status. Use the table filter to filter the flows by their status.
 
 In order to better analyze the results of the tests, the configuration of the Test Suite can be found right above the Test Flows table.
 
