@@ -12,6 +12,10 @@ API Test flow is a series of API calls \(HTTP requests\) that represent **a sing
 
 Run the edited flow as a "Dry run" to debug and validate it.
 
+#### Import CSV
+
+Easily re-run your test flows by using different parameters values by uploading a [CSV file](https://docs.loadmill.com/api-testing/test-suite-editor/api-tests-data-from-csv-files) containing a list of the values.
+
 #### Login toggle
 
 Toggle this switch to enable the flow to use [the Global Login](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) settings.
@@ -20,11 +24,11 @@ Toggle this switch to enable the flow to use [the Global Login](https://docs.loa
 
 Toggle this switch to enable the flow to run when executed from your continuous integration pipeline. You can use our NPM module to execute a Test Suite to test every build in CI, this will be explained lated in [the Integrations section](https://docs.loadmill.com/integrations/npm-modal).
 
-#### Import CSV
+**AutoSave** \( ![](../../.gitbook/assets/screen-shot-2020-11-26-at-14.20.04.png)\)
 
-Easily re-run your test flows by using different parameters values by uploading a [CSV file](https://docs.loadmill.com/api-testing/test-suite-editor/api-tests-data-from-csv-files) containing a list of the values.
+Auto saves the test flow unless its configuration is invalid.
 
-#### **Export Flow**
+**Export Flow**
 
 Save the flow to a `.JSON` file. You can then import the flow into another test suite or as a load test.
 

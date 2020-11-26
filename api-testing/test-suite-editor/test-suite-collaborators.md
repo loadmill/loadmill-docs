@@ -1,6 +1,6 @@
 # Test Suite Collaborators
 
-The **Collaborators** tab within a Test Suite allows users to protect the Test Suite so that **only** team members who are set as collaborators and team admins will be able to edit it. 
+The **Collaborators** tab within the Test Suite allows users to protect the Test Suite so that **only** team members who are set as collaborators and team admins will be able to edit it. 
 
 ![The Test Suite Collaborators tab](../../.gitbook/assets/screenshot-29-.png)
 
