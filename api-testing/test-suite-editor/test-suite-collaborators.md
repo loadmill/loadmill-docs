@@ -4,7 +4,7 @@ The **Collaborators** tab within the Test Suite allows users to protect the Test
 
 ![The Test Suite Collaborators tab](../../.gitbook/assets/screenshot-29-.png)
 
-The meaning behind this feature is to make sure only relevant team members are able to modify a Test Suite and prevent working on the same Test Suite and running over each-other's work.
+The meaning behind this feature is to make sure only relevant team members are able to modify the Test Suite and prevent working on the same Test Suite and running over each-other's work.
 
 **Important notes:**
 
