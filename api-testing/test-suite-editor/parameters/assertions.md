@@ -23,7 +23,7 @@ There are several types of assertions:
 7. **Matches** - the target matches the given regular expression.
 8. **Greater than** - the target is greater than the given expression.
 9. **Less than** - the target is less than the given expression.
-10. **JSON Schema** - 
+10. **JSON Schema** - the target matches the JSON Schema.
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
