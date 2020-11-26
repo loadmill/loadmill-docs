@@ -17,9 +17,9 @@ There are several types of assertions:
 1. **Exists** - the target exists.
 2. **Doesn't exist** - the target doesn't exist.
 3. **Equals** - the target is equal to the given expression. The equality check is **case sensitive**.
-4. **Doesn't equal** - the target is NOT equal to the given expression. The equality check is case sensitive.
+4. **Doesn't equal** - the target is NOT equal to the given expression. The equality check is **case sensitive**.
 5. **Contains** - the target contains the given expression. The containment check is **case sensitive**.
-6. **Doesn't contain** - the target DOESN'T contain the given expression. The containment check is case sensitive.
+6. **Doesn't contain** - the target DOESN'T contain the given expression. The containment check is **case sensitive**.
 7. **Matches** - the target matches the given regular expression.
 8. **Greater than** - the target is greater than the given expression.
 9. **Less than** - the target is less than the given expression.
