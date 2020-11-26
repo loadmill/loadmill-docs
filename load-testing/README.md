@@ -1,6 +1,6 @@
 # Load Testing
 
-After validating your APIs for regression bugs, it is important to make sure that they perform well under load.
+After validating your APIs for regression bugs, it is important to make sure that they perform well **under load**.
 
 Loadmill helps companies avoid expensive downtime by replicating production traffic in test environments.
 

@@ -84,10 +84,13 @@ const stop = start({
   // loadsCapacity: 80,
   // api: false
 });
-// Stop the agent at a later time using 'ctrl+c'
+// Stop the agent by calling the stop function
+stop();
 ```
 
-That's it! 🎉 From now on, tests you are running in Loadmill will run locally or on your server \(depends on where you configured them to be run\) as long as our Loadmill Agent is running. See agent/s running within the **Private Agents** section in Loadmill:
+That's it! 🎉 From now on, tests you are running in Loadmill will run locally or on your server \(depends on where you configured them to be run\) as long as our Loadmill Agent is running. 
+
+See agent/s running within the **Private Agents** section in Loadmill:
 
 ![The Private Agents section](../.gitbook/assets/screen-shot-2020-11-24-at-15.25.07.png)
 
