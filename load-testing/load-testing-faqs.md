@@ -6,10 +6,9 @@ description: Debugging some common issues with load tests
 
 #### Load test does not start
 
-If your test is stuck at "Pending" state, it is possible that some of its  requirements are not being met. For example, if your test is using crowdsourced traffic from a specific country, but there not enough simulation devices are available from this location, your tests will wait in "Pending" state until those will becomes available. 
+If your test is stuck at "Pending" state, it is possible that some of its requirements are not being met. For example, if your test is using crowdsourced traffic from a specific country, but there not enough simulation devices are available from this location, your tests will wait in "Pending" state until those will become available. 
 
-**I’m getting an error ‘Unverified domains are already under test’ but our domain has been verified. What do I miss here?**  
-
+**I’m getting an error ‘Unverified domains are already under test’ but our domain has been verified. What do I miss here?**
 
 Please make sure your tests are not using other domains like facebook, salesforce etc. Contact support at [support@loadmill.com](mailto:support@loadmill.com) if you need [an additional domain to get verified](https://docs.loadmill.com/load-testing/setup/domain-verification) or any other assistance is required.
 
