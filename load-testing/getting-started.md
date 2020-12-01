@@ -81,7 +81,7 @@ In addition, we can **adjust concurrency** **during a test run**. This is a very
 Loadmill keeps track of the request **error rate** and fails the test if it passes a certain threshold \(%50 by default\). We can see the response time for each request and are able to drill down and see the error statistics for each one.
 
 {% hint style="info" %}
-🧠 You can easily run your API Test Suites as load tests by clicking on the drop-down icon within the "RUN SUITE" button - "Run as load test".
+🧠 You can easily run your API Test Suites as load tests by clicking on the drop-down icon within the **RUN SUITE** button - **Run as load test**.
 {% endhint %}
 
 ![Running the Test Suite as load tests ](../.gitbook/assets/ezgif.com-gif-maker-2-.gif)
