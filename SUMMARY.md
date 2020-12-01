@@ -37,7 +37,6 @@
   * [Embedding the recording service worker](working-with-the-recorder/embedding-the-recording-service-worker.md)
   * [Recorder settings](working-with-the-recorder/recorder-settings.md)
 * [Integrations](integrations/README.md)
-  * [Integrations FAQs](integrations/integrations-faqs.md)
   * [API Tokens](integrations/api-tokens.md)
   * [npm Module](integrations/npm-modal.md)
   * [REST API](integrations/rest-api.md)
