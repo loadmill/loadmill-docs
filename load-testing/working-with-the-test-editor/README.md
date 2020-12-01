@@ -1,6 +1,6 @@
 # Load Test Editor
 
-Let's look at the Load Test Editor.
+Let's take a look at the Load Test Editor.
 
 ![](../../.gitbook/assets/screenshot-34-.png)
 
