@@ -27,15 +27,15 @@ The response handling section enables to you extract values from the request's r
 
 ![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.26.15.png)
 
-The **Extractions - Set Parameters** sub-section allows you:
+The **Extractions - Set Parameters** card allows you:
 
 * To extract values from the response body into an existing or a new parameter using JSONPath, Closure, jQuery, RegExp.
 * To extract an HTTP header value into a parameter using the Header extractor.
 * To assign a static value or apply a function on anther parameter using the "Assign" option.
 
-Find more information about the **Assertions - Verify Response** sub-section [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/assertions). 
+Find more information about the **Assertions - Verify Response** card [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/assertions). 
 
-The **Loops** sub-section allows to repeat the request until the parameter's value will meet the requirement or number of iteration reached:
+The **Loops** card allows to repeat the request until the parameter's value will meet the requirement or number of iteration reached:
 
 ![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.40.55.png)
 

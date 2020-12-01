@@ -6,7 +6,7 @@ Let's take a look at the Test Suite page.
 
 ![](../../.gitbook/assets/test_suite_main_1.png)
 
-The Test Suite's navigation panel includes 5 tabs: **Flows, Login, Parameters, CI and Schedule.**
+The Test Suite's navigation panel includes 6 tabs: **Flows, Login, Parameters, CI, Schedule and Collaborators.**
 
 #### Flows
 

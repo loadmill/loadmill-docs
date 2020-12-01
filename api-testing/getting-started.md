@@ -49,12 +49,12 @@ There are two ways to do that:
 {% endhint %}
 
 1. Go to the API Tests tab.
-2. Press the "NEW TEST SUITE" button, give it a name. ****
+2. Click the "NEW TEST SUITE" button, give it a name. ****
 3. You can notice that there is one [Test flow](https://docs.loadmill.com/core-definitions) already created in it and you just need to fill it out. The first request will be to get our login page, enter its name, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/signin/`  
 
 ![Load login page request](../.gitbook/assets/login_get_1.png)
 
-4. Press the "ADD REQUEST" button. This will be an authentication request that will dynamically extract an access token and will allow user to log in to the app by using his username and password. Find more information about dynamic parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters). 
+4. Click the "ADD REQUEST" button. This will be an authentication request that will dynamically extract an access token and will allow user to log in to the app by using his username and password. Find more information about dynamic parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters). 
 
 5. Enter name - "Authentication request - extract token using JSONPath from the response", select "POST" as Method, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token`    
 
