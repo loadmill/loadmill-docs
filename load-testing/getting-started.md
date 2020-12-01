@@ -63,7 +63,7 @@ To start a trial run, click the **DRY RUN** button at the bottom of the editor. 
 
 ![](../.gitbook/assets/screenshot-32-.png)
 
-Let's say our test got Passed and now **we can run it at scale**. To do that:
+Now that we know that our test is configured correctly, **we can run it at scale**. To do that:
 
 1. Click the **RUN TEST** button at the bottom of the test editor.
 2. Set test duration \(minutes\) and maximum concurrent sessions you would like this test flow to run.
