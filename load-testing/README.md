@@ -6,7 +6,7 @@ Loadmill helps companies avoid expensive downtime by replicating production traf
 
 Using real Internet traffic, Loadmill enables developers to capture real-world complexities in their test environments, while helping prevent issues and bottlenecks that are usually only detected in production.
 
-By leveraging real user recordings, and replaying them on different devices around the world, Loadmill can predict exactly what is going to happen every time you release to production.
+By leveraging real user recordings, and replaying them on different devices around the world, Loadmill can predict exactly what is going to happen **every time you release to production**.
 
 ![](../.gitbook/assets/image%20%2810%29.png)
 

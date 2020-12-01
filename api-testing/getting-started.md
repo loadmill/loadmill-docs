@@ -6,7 +6,12 @@ description: Running your first API test.
 
 The Loadmill's API testing module allows users to easily create automated API tests taken from real user sessions.
 
-![](../.gitbook/assets/api_tests_main.png)
+![The API Tests tab](../.gitbook/assets/api_tests_main.png)
+
+In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
+
+1. Create and run a very simple API test by using our [Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
+2. Create and run an API test from scratch in Loadmill \(that is super easy and takes a few minutes\).
 
 \*\*\*\*
 
