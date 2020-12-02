@@ -18,7 +18,7 @@ When a flow is using a CSV file, there will be an indication "Using CSV".
 
 ![Import CSV button](https://lh4.googleusercontent.com/ifbiZuH0JsNIb5aN6HRoBD1jY5IcyLAMc1Ji5vAK86hVCmkwnHnx-iHWd3vCX-kP2ZJOgxBAtTK94zZKjRz6YPCQ6o3jtDbsAO0YwldrnSpuxcJ03kKrDdfvxZpKyDEMC-jNlgeJ)
 
-In order to remove a CSV file from the test, simply click on the "Using CSV" button, and click on the "Delete" button, located on the right button of the CSV window.
+In order to remove a CSV file from the test, simply click on the "Using CSV" button, and click on the "Delete" button.
 
 ![](https://lh6.googleusercontent.com/r6nNQ0ReXJEtZ6M7yzVm1p0wCOXflhs68gni7r0phAfLe7KpXEQKJ8QMgzmbBSAxcUM4inb5LrnwCZa6FR4jxhf2vErU_suQt3i39HdRSn_RJ0M24QnWV3XMpuTJuA6oVPc-w4DH)
 
@@ -30,7 +30,7 @@ When running a test suite using a CSV file, the flow using the CSV will run for 
 
 ### Execution Order
 
-When using a parameter defined in a CSV file, any parameter defined in the "Test Suite Parameters" section **will be overridden by the value given from the CSV file**.
+When using a parameter defined in a CSV file, any parameter defined in the "Test Suite Parameters" tab **will be overridden by the value given from the CSV file**.
 
 The order of parameter value assignment is:
 
