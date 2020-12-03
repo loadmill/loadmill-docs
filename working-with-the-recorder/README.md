@@ -1,25 +1,18 @@
 # Recordings
 
-![The Recordings tab](../.gitbook/assets/screenshot-35-.png)
+We've developed **a smart recorder** that allows users to capture traffic in the QA or Production environment within [express.js](https://expressjs.com/) apps and replay it as API tests. 
 
-Loadmill Recordings allow you to capture traffic in your QA or Production environment and replay it as API tests.
+![The Recordings tab](../.gitbook/assets/screenshot-36-.png)
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
-### Record multiple users by embedding a JavaScript recorder in your app
+### How it works
 
-* Create a new recorded application in the [recording setup page](https://www.loadmill.com/app/recordings/setup)
-* Follow the installation instructions in the application setup dialog
+* Create a new recording from the [Recordings tab in Loadmill.](https://www.loadmill.com/app/recordings/my-recordings) 
+* Play your test scenarios in the recorded app. By default, the traffic is split to different sessions by its source \(different IPs\) and intermissions between user actions. \(If you with to manually split a recorded session in your test environment you can use the [Loadmill session splitter](https://chrome.google.com/webstore/detail/loadmill-session-splitter/beknfelcpakgnojjfcdpjddhnckekhni), else you can use our [advanced Recordings settings](https://app.gitbook.com/@loadmill/s/docs/~/drafts/-MNYgtUZoEcRuSmuiHya/working-with-the-recorder/recorder-settings)\)
+* When you're ready, stop the recording and [generate a Test Suite from it](https://app.gitbook.com/@loadmill/s/docs/~/drafts/-MNYgtUZoEcRuSmuiHya/working-with-the-recorder/working-with-the-recorder). 
 
-![](../.gitbook/assets/image%20%2828%29.png)
-
-* After embedding the Loadmill worker recording script, reload the recored app and make sure the worker is loaded. In Chrome, open the browser developer tools and go to the Application tab and click ⚙️ Service Workers tab. See that there are no errors.
-
-![](../.gitbook/assets/image%20%289%29.png)
-
-* Create a new recording from the [recordings page in Loadmill.](https://www.loadmill.com/app/recordings/my-recordings) 
-* Play your test scenarios in the recorded app. By default, the traffic is split to different sessions by its source \(different IPs\) and intermissions between user actions. \(If you with to manually split a recorded session in you test environment you can use the [Loadmill session splitter](https://chrome.google.com/webstore/detail/loadmill-session-splitter/beknfelcpakgnojjfcdpjddhnckekhni)\)
-* When you're ready, stop the recording and generate a test suite from it. 
+See how to set the recorder up in [the next guide](https://docs.loadmill.com/working-with-the-recorder/setting-up-the-recorder). 
 
 ### 
 

@@ -1,4 +1,4 @@
-# Working with the Recorder
+# How to work with the Recorder
 
 ## Start Recording 
 
@@ -6,8 +6,8 @@ After you're all set with your application, it's time to start recording your us
 
 1. Go to the "Recordings" tab and click on + NEW RECORDING.
 2. In the dialog, select the wanted application from the list.
-3. Click START RECORDINGS.
-4. Once the recording starts, you'll be able to see its progress in the recordings table.
+3. Click START RECORDING.
+4. Once the recording starts, you'll be able to see its progress in the recordings table. **Note:** you can have 1 active recording per app.
 5. Click on the running recording in order to review its progress.
 6. In order to stop a recording, click on the STOP button.
 
@@ -15,9 +15,11 @@ After you're all set with your application, it's time to start recording your us
 
 ![](../.gitbook/assets/recording-generate.gif)
 
-When you end the recording process, you can review its list of tracked API's \(method, path, Avg response time & Throughput\).
+When you stop the recording process, you can review its list of tracked API's \(method, path, Avg response time & Throughput\).
 
-The next step will be Generating those flows into a repayable Test Suite:
+The next step will be Generating a repayable Test Suite containing your test flows:
 
-Click "GENERATE TEST SUITE".
+Click "GENERATE TEST SUITE". 
+
+Check out more cool things you can do with recordings in [the next guide](https://docs.loadmill.com/working-with-the-recorder/recorder-settings).
 

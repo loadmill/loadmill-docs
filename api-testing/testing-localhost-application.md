@@ -90,7 +90,7 @@ stop();
 
 That's it! 🎉 From now on, tests you are running in Loadmill will run locally or on your server \(depends on where you configured them to be run\) as long as our Loadmill Agent is running. 
 
-See agent/s running within the **Private Agents** section in Loadmill:
+See agent/s running within the **Private Agents** tab in Loadmill:
 
 ![The Private Agents section](../.gitbook/assets/screen-shot-2020-11-24-at-15.25.07.png)
 
