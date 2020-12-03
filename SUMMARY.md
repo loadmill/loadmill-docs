@@ -41,7 +41,7 @@
   * [npm Module](integrations/npm-modal.md)
   * [REST API](integrations/rest-api.md)
   * [Integrations FAQs](integrations/integrations-faqs-1.md)
-* [Account Settings](account-settings/README.md)
+* [Settings](account-settings/README.md)
   * [Billing](account-settings/billing/README.md)
     * [Usage report](account-settings/billing/usage-report.md)
 * [General FAQs](faq.md)
