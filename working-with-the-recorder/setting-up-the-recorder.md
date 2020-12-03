@@ -23,9 +23,9 @@ Before you'll start recording users flows, you'll need to set up an application 
 
   5. There are three options how to install the recorder:
 
-* Option 1: [Server side](https://www.npmjs.com/package/@loadmill/node-recorder)
-* Option 2: Client side
-* Option 3: Testing in Developer Tools
+* Option 1: [Server side](https://www.npmjs.com/package/@loadmill/node-recorder) aka Node
+* Option 2: Client side aka HTML
+* Option 3: Testing in Developer Tools aka DEVTOOLS
 
 Choose a relevant option for you and right after you've installed the recorder - the application will appear in the applications table.
 
