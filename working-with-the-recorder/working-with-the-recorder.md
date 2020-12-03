@@ -1,4 +1,4 @@
-# How to work with the Recorder
+# How to work with Recordings
 
 ## Start Recording 
 
