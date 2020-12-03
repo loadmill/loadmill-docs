@@ -2,8 +2,8 @@
 
 Up to now, we've reviewed the following recording methods:
 
-* [The Loadmill Recorder ](https://docs.loadmill.com/working-with-the-recorder)
-* [The Loadmill Chrome recorder extension](https://docs.loadmill.com/api-testing/getting-started#creating-and-running-an-api-test-by-using-our-chrome-recorder-extension)
+* The [Loadmill Recorder](https://docs.loadmill.com/working-with-the-recorder) 
+* The [Loadmill Chrome recorder extension](https://docs.loadmill.com/api-testing/getting-started#creating-and-running-an-api-test-by-using-our-chrome-recorder-extension)
 
 In case you're already using a recording solution and would like Loadmill to generate an API Test Suite from it, the following recording methods can be imported to Loadmill :
 

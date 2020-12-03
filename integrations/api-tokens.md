@@ -4,9 +4,9 @@ In order to use the [Loadmill REST API](rest-api.md) or our [node module and CLI
 
 ## Generate a Token
 
-API tokens can be generated via **Account Settings** &gt; **Security**: enter a description for the token's intended usage and click **generate**.
+API tokens can be generated via **Settings** &gt; **Security**: enter a description for the token's intended usage and click **GENERATE**.
 
-You will be given an arbitrary string of characters that will be shown to you **only once** - this is your API token.
+You will be given an arbitrary string of characters that will be shown to you ONLY ONCE - this is your API token, make sure to copy and store in a safe place.
 
 ## Use a Token
 
