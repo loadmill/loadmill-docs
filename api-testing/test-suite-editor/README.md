@@ -4,7 +4,7 @@ A Test Suite is a collection of Test Flows that belong to specific tasks or feat
 
 Let's take a look at the Test Suite page.
 
-![](../../.gitbook/assets/test_suite_main_1.png)
+![](../../.gitbook/assets/screenshot-38-.png)
 
 The Test Suite's navigation panel includes 6 tabs: **Flows, Login, Parameters, CI, Schedule and Collaborators.**
 
