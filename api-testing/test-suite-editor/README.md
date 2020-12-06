@@ -28,7 +28,7 @@ Integrate a Test Suite into your CI/CD process and run API tests via REST, CLI o
 
 Schedule the Test Suite to be run periodically to constantly validate your application status.
 
-#### Collaborators
+#### [Collaborators](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-collaborators)
 
 Set team members who will be able to edit the Test Suite.
 

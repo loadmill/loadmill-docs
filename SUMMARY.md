@@ -42,8 +42,8 @@
   * [REST API](integrations/rest-api.md)
   * [Integrations FAQs](integrations/integrations-faqs-1.md)
 * [Settings](account-settings/README.md)
-  * [Billing](account-settings/billing/README.md)
-    * [Usage report](account-settings/billing/usage-report.md)
+  * [Account](account-settings/account.md)
+  * [Usage report](account-settings/usage-report.md)
 * [General FAQs](faq.md)
 * [General troubleshooting](general-troubleshooting.md)
 

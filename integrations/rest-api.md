@@ -6,7 +6,7 @@ description: >-
 
 # REST API
 
-Before getting started you’ll need to generate an API token, take a look how to generate it  [here](https://docs.loadmill.com/integrations/api-tokens)
+Before getting started you’ll need to generate an API token, take a look how to generate it [here](https://docs.loadmill.com/integrations/api-tokens).
 
 {% api-method method="post" host="https://www.loadmill.com/api" path="/v1/test-suites/:id/run" %}
 {% api-method-summary %}
