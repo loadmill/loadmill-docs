@@ -8,7 +8,7 @@ The report contains the following data per date:
 * Load test runs
 * Load test minutes consumed
 
-### How to download
+## How to download
 
 Go to **Settings =&gt; Billing**. In this page, on your selected plan, click on the **Download Usage Report** button:
 
