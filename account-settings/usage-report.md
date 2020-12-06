@@ -1,6 +1,6 @@
 # Usage report
 
-You can download a report of how much you've used the system.
+**Team admins** can download a usage report.
 
 The report contains the following data per date:
 
