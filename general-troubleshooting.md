@@ -1,6 +1,6 @@
 # General troubleshooting
 
-## I'm getting an error like **'**Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin', WTF?
+## I'm getting an error like **'**Request has been terminated ... Origin is not allowed by Access-Control-Allow-Origin'.
 
 Well, odds are you haven’t enabled CORS for our domain in your app’s server. Please follow [these instructions](https://docs.loadmill.com/load-testing/setup/testing-with-cors).
 
