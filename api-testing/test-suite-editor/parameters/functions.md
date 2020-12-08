@@ -9,7 +9,7 @@ Loadmill has builtin functions available to use while creating a test. These fun
 Returns the absolute value of `p1`.
 
 * `${__abs('-42')} // returns 42`
-* `${__abs(p1)} // returns 42, assuming parameter p1 equals 42`
+* `${__abs(p1)} // returns 42, assuming parameter p1 equlas 42`
 
 ### `__add(p1,[p2,[...]])`
 
@@ -94,7 +94,7 @@ Logical NOT. See also [True Semantics](./#true-semantics).
 
 ### `__eq(p1,p2)`
 
-Same as the `==` operator.
+Same as the `=` operator.
 
 * `${__eq('42','3')} //returns false`
 * `${__eq('false','false')} //returns true`
