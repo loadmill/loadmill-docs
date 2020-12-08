@@ -38,5 +38,9 @@ Use this extractor to extract values from any of the response headers.
 
 ![](../../../.gitbook/assets/image%20%2814%29.png)
 
+{% hint style="info" %}
+🧙♂ Use the autocomplete option to see a list of existing parameters. To see it, press Shift + Cmd \(Ctrl for Windows\) + Space. See how it works below.
+{% endhint %}
 
+![The Autocomplete option](../../../.gitbook/assets/ezgif.com-gif-maker-4-.gif)
 
