@@ -42,5 +42,5 @@ Use this extractor to extract values from any of the response headers.
 🧙♂ Use the autocomplete option to see a list of existing parameters. To see it, press Shift + Cmd \(Ctrl for Windows\) + Space. See how it works below.
 {% endhint %}
 
-![The Autocomplete option](../../../.gitbook/assets/ezgif.com-gif-maker-4-.gif)
+![The Autocomplete option](../../../.gitbook/assets/ezgif.com-gif-maker-5-.gif)
 
