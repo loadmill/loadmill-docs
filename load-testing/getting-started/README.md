@@ -66,7 +66,7 @@ To start a trial run, click the **DRY RUN** button at the bottom of the editor. 
 Now that we know that our test is configured correctly, **we can run it at scale**. To do that:
 
 1. Click the **RUN TEST** button at the bottom of the test editor.
-2. Set test duration \(minutes\) and maximum concurrent sessions you would like this test flow to run.
+2. Set test duration \(minutes\) and maximum concurrent sessions/you would like this test flow to run.
 3. Click on "Advanced" to set additional parameters. For example, you can set **Ramp-up** **Duration \(1 minute by default\)** hence a number of concurrent sessions will increase linearly during the ramp-up. 
 4. Click **RUN**.
 
