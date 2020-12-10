@@ -10,7 +10,7 @@ API Test flow is a series of API calls \(HTTP requests\) that represent **a sing
 
 | Option | Description |
 | :--- | :--- |
-| Run Flow button\(▶\) | Run the edited flow as a "Trial run" to debug and validate it. |
+| Run Flow button \(▶\) | Run the edited flow as a "Trial run" to debug and validate it. |
 | Import CSV                | Easily re-run your test flows by using different parameters values by uploading a [CSV file](https://docs.loadmill.com/api-testing/test-suite-editor/api-tests-data-from-csv-files) containing a list of the values. |
 | Login toggle | Toggle this switch to enable the flow to use [the Global Login](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) settings. |
 | CI toggle            | Toggle this switch to enable the flow to run when executed from your continuous integration pipeline. You can use [our npm module](https://docs.loadmill.com/integrations/npm-modal) to execute a Test Suite to test every build in CI. |
