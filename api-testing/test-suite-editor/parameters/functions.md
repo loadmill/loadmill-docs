@@ -268,6 +268,20 @@ Counts the number of elements in `target` array.
 * `${__array_length('[]')} // returns 0`
 * `${__array_length(p1)} // returns 4, assuming p1 is [1,"str",true,null]`
 
+### `__array_matches(target,regex)`
+
+Returns a boolean string of whether the all the element in the target array match the given regex.
+
+* `${__array_matches(array,'.*a.*')} // returns true, assuming array is ["apple","banana","orange"]`
+* `${__array_matches(array,'.*Z.*')} // returns false, assuming array is ["apple","banana","orange"]`
+
+### `__array_includes(src,target)`
+
+Returns a boolean string of whether each element in target array is in src array
+
+* `${__array_includes(srcArray,targetArray)} // returns true, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana"]`
+* `${__array_includes(srcArray,targetArray)} // returns false, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana","lemon"]`
+
 ### `__escape_regexp(target)`
 
 Returns the value of `target` after escaping special RegExp characters.
@@ -335,7 +349,11 @@ Extracts a value from `target` using `jsonpath` as a JSONPath query. If there is
 * `${__jsonpath(target,jsonpath)} // returns 'val' assuming target is '{"key":"val"}' and jsonpath is '$.key'`
 * `${__jsonpath('{"key":"val"}','$.notHere','none')} // returns 'none'`
 
-#### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
+### `__jsonpath_all(target,jsonpath,[default])`
+
+The same as `__jsonpath` only that when using filtering \(i.e. @\) in the JSONPath all of the results will returned and not just the first one \(as in `__jsonpath`\)
+
+### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
 
 Extracts a value from `target` using `jquery` as a jQuery selector.
 
