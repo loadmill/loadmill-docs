@@ -270,14 +270,14 @@ Counts the number of elements in `target` array.
 
 ### `__array_matches(target,regex)`
 
-Returns a boolean string of whether the all the element in the target array match the given regex.
+Returns a boolean string of whether all the elements in the target array matches the given regex.
 
 * `${__array_matches(array,'.*a.*')} // returns true, assuming array is ["apple","banana","orange"]`
 * `${__array_matches(array,'.*Z.*')} // returns false, assuming array is ["apple","banana","orange"]`
 
 ### `__array_includes(src,target)`
 
-Returns a boolean string of whether each element in target array is in src array
+Returns a boolean string of whether each element in the target array is also in the src array
 
 * `${__array_includes(srcArray,targetArray)} // returns true, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana"]`
 * `${__array_includes(srcArray,targetArray)} // returns false, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana","lemon"]`
