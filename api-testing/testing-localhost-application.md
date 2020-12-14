@@ -31,18 +31,6 @@ In order to use the Loadmill Agent you will need to generate an [API Token](http
 
 ### Installation
 
-#### Locally
-
-Using npm:
-
-`npm i @loadmill/agent --save`
-
-Using yarn:
-
-`yarn add @loadmill/agent`
-
-#### Globally
-
 Using npm:
 
 `npm i @loadmill/agent -g`
