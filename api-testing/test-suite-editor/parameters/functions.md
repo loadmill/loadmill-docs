@@ -365,7 +365,7 @@ The same as `__jsonpath` only that when using filtering \(i.e. @\) in the JSONPa
 Returns the keys of the extracted value from `target` queried by `jsonpath` in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). If `target` is empty, an empty array will be returned or, if present, the given `default` value.
 
 * `${__jsonpath_keys('{"key1":"val1"}','$')}// returns ["key1"]`
-* `${__json_keys(target)} // returns ["key1","key2"] assuming target is {"data": {"key1":"val1","key2":"val2"}}`
+* `${__jsonpath_keys(target)} // returns ["key1","key2"] assuming target is {"data": {"key1":"val1","key2":"val2"}}`
 
 ### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
 
