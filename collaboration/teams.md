@@ -1,6 +1,6 @@
 # Teams
 
-The **Teams** feature in Loadmill allows all the team members to share the account credit, see each other's tests and run them on the same domains.
+The **Teams** functionality in Loadmill allows all the team members to share the account credit, see each other's tests and run them on the same domains.
 
 Navigate to **Settings =&gt; Account =&gt; Teams** to create a new team. 
 
