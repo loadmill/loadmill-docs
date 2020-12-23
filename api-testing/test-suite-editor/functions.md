@@ -84,7 +84,7 @@ Logical OR \(same as the `|` operator\), applied to any number of arguments.
 
 ### `__not(p1)`
 
-Logical NOT. See also [True Semantics](./#true-semantics).
+Logical NOT. See also [True Semantics](parameters.md#true-semantics).
 
 * `${__not('false')} // returns true`
 * `${__not('true')} // returns false`
@@ -192,7 +192,7 @@ Same as `__contains` but case-insensitive.
 
 ### `__if_then_else(condition,then,else)`
 
-Returns `then` if `condition` is [semantically true](./#true-semantics), otherwise returns `else`.
+Returns `then` if `condition` is [semantically true](parameters.md#true-semantics), otherwise returns `else`.
 
 * `${__if_then_else(p1,'good','bad')} // returns 'good', assuming p1 is true or has a value`
 * `${__if_then_else(p1,'good','bad')} // returns 'bad', assuming p1 is false or  ''`
@@ -331,7 +331,7 @@ Returns a sub-string of `target` which starts at `begin` index \(inclusive\) and
 
 ## Extraction Functions
 
-See also [Parameter Extractions](./#parameter-extraction).
+See also [Parameter Extractions](parameters.md#parameter-extraction).
 
 ### `__regexp(target,regexp,[default])`
 

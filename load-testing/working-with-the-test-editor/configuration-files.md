@@ -4,7 +4,7 @@ description: Learn how to work with test configuration files
 
 # Configuration Files
 
-Loadmill test configuration files are an extension of the [HAR file format](https://en.wikipedia.org/wiki/.har). This test configuration example demonstrates some of the key elements such as - extractors, [assertions](../../api-testing/test-suite-editor/parameters/assertions.md) and parameter defaults.
+Loadmill test configuration files are an extension of the [HAR file format](https://en.wikipedia.org/wiki/.har). This test configuration example demonstrates some of the key elements such as - extractors, [assertions](../../api-testing/test-suite-editor/assertions.md) and parameter defaults.
 
 {% code title="example.json" %}
 ```javascript
