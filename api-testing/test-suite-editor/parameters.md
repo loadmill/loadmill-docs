@@ -81,7 +81,7 @@ There are several **built-in** parameters that you can use in your test scenario
 
 ## Advanced Usage
 
-So far, we've only seen how to inject a simple parameter value into an arbitrary expression, e.g. `Hello ${name}`. However, it is also possible to inject a _**computed value**_ using [Parameter Operators](parameters.md#operators) or [Parameter Functions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions), e.g. `The total price is ${price + __mult(price,tax)}`. You may use operators or functions anywhere parameters may be used.
+So far, we've only seen how to inject a simple parameter value into an arbitrary expression, e.g. `Hello ${name}`. However, it is also possible to inject a _**computed value**_ using [Parameter Operators](parameters.md#operators) or [Parameter Functions](https://docs.loadmill.com/api-testing/test-suite-editor/functions), e.g. `The total price is ${price + __mult(price,tax)}`. You may use operators or functions anywhere parameters may be used.
 
 Computed values can be extremely useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be accomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${budget <= price}`.
 
@@ -91,7 +91,7 @@ You may also use _**literal values**_ within expressions, e.g. `${__if_then_else
 
 Function calls without arguments can be used with or without parentheses, e.g. `__random_uuid` can be used instead of `__random_uuid()`.
 
-See below the full list of supported [operators](parameters.md#operators) and [functions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions).
+See below the full list of supported [operators](parameters.md#operators) and [functions](https://docs.loadmill.com/api-testing/test-suite-editor/functions).
 
 ### Notes And Limitations
 
