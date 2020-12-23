@@ -1,7 +1,7 @@
 ---
 description: >-
-  Rerun the test suite’s flow for a number of iterations while using each of the
-  CSV rows as parameter values.
+  Re-run the Test Suite’s flow for a number of iterations while using each of
+  the CSV rows as parameter values.
 ---
 
 # API Tests - Data from CSV files
