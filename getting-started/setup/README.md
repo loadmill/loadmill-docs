@@ -1,5 +1,5 @@
 ---
-description: Verify your domains to load-test them.
+description: Verifying your domains to load-test them.
 ---
 
 # Load Testing Setup
