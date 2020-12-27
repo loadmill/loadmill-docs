@@ -27,7 +27,7 @@
   * [Load Test Editor](load-testing/working-with-the-test-editor/README.md)
     * [Quick Parameter Editing](load-testing/working-with-the-test-editor/quick-parameter-editing.md)
     * [Data from CSV files](load-testing/working-with-the-test-editor/data-from-csv-files.md)
-    * [Configuration Files](load-testing/working-with-the-test-editor/configuration-files.md)
+  * [Configuration Files](load-testing/configuration-files.md)
   * [Analyzing load test results](load-testing/analyzing-load-test-results.md)
   * [Load Testing FAQs](load-testing/load-testing-faqs-1.md)
   * [Load Testing troubleshooting](load-testing/load-testing-faqs.md)
