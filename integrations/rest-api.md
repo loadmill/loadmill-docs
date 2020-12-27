@@ -192,7 +192,7 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="config" type="object" required=true %}
-A load test configuration. The JSON test configuration may be exported from the Loadmill test editor or from an old test run. See a config example here - https://docs.loadmill.com/load-testing/working-with-the-test-editor/configuration-files
+A load test configuration. The JSON test configuration may be exported from the Loadmill test editor or from an old test run. See a config example here - https://docs.loadmill.com/load-testing/configuration-files
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
