@@ -8,29 +8,40 @@ Let's take a look at the Test Suite page.
 
 The Test Suite's navigation panel includes 6 tabs: **Flows, Login, Parameters, CI, Schedule and Collaborators.**
 
-#### Flows
+| Tab | Description |
+| :--- | :--- |
+| Flows | The first and the most important tab where you can find your flows.  |
+| Login | Easily configure [the global login flow](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) that will run before each test flow of the Test Suite. |
+| Parameters | Set [default parameters](https://docs.loadmill.com/api-testing/test-suite-editor/parameters) and their values that will be used in the Test Suite.  |
+| CI | Integrate a Test Suite into your CI/CD process and run API tests via REST, CLI or JavaScript. |
+| Schedule | Schedule the Test Suite to be run periodically to constantly validate your application status. |
+| [Collaborators](https://docs.loadmill.com/collaboration/test-suite-collaborators-1) | Set team members who will be able to edit the Test Suite. |
 
-The first and the most important tab where your test flows reside. 
+#### 
 
-#### Login
+#### 
 
-Easily configure [the global login flow](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) that will run before each test flow of the Test Suite.
 
-#### Parameters
 
-Set [default parameters](https://docs.loadmill.com/api-testing/test-suite-editor/parameters) and their values that will be used in the Test Suite. 
+#### 
 
-#### CI
 
-Integrate a Test Suite into your CI/CD process and run API tests via REST, CLI or JavaScript.
 
-#### Schedule
+#### 
 
-Schedule the Test Suite to be run periodically to constantly validate your application status.
 
-#### [Collaborators](https://docs.loadmill.com/collaboration/test-suite-collaborators-1)
 
-Set team members who will be able to edit the Test Suite.
+#### 
+
+
+
+#### 
+
+
+
+#### 
+
+
 
 
 
