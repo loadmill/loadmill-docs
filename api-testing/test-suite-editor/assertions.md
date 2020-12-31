@@ -27,7 +27,7 @@ There are several types of assertions:
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
-See **an example of the assertion** that validates the generated id is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#__is_uuid-target) below:
+See **an example of the assertion** that validates the generated ID is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#__is_uuid-target) below:
 
 ![The Assertion example](../../.gitbook/assets/ezgif.com-gif-maker-9-.gif)
 
