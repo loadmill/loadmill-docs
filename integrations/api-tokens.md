@@ -2,13 +2,13 @@
 
 In order to use the [Loadmill npm module](https://www.npmjs.com/package/loadmill) or the [Loadmill REST API](rest-api.md), you will need to generate an **API Token**.
 
-## Generate a Token
+## Generating a Token
 
 API tokens can be generated via **Settings** &gt; **Security**: enter a description for the token's intended usage and click **GENERATE**.
 
 You will be given an arbitrary string of characters that will be shown to you ONLY ONCE - this is your API token, make sure to copy and store it in a safe place.
 
-## Use a Token
+## Using a Token
 
 Tokens may be used in one of three ways:
 
