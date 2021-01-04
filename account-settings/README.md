@@ -6,11 +6,9 @@ description: Control numerous options through the Settings page.
 
 You may find the Settings page by clicking on the user's Avatar on the top right corner of the page:
 
-![](../.gitbook/assets/screenshot-40-.png)
+![The Settings page](../.gitbook/assets/ezgif.com-gif-maker-13-.gif)
 
 In the Settings, you can find tabs: [Domains](https://docs.loadmill.com/load-testing/setup/domain-verification), [Recordings](https://docs.loadmill.com/working-with-the-recorder/recorder-settings), [Security](https://docs.loadmill.com/integrations/api-tokens), Billing, [Account](https://docs.loadmill.com/collaboration/teams), Notifications, Integrations, [Private Agents](https://docs.loadmill.com/api-testing/testing-localhost-application). 
-
-![](../.gitbook/assets/screen-shot-2020-12-03-at-15.20.08.png)
 
 | Tab | Description |
 | :--- | :--- |

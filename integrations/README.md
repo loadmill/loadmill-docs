@@ -1,6 +1,6 @@
 # Integrations
 
-After you have built your first few meaningful tests, it's a good idea to integrate them into your continuous delivery pipeline and start shipping faster. 
+After you have built your first few meaningful tests, it's a good idea to integrate them into your Continuous Delivery pipeline and start shipping faster. 
 
 The best way to run API and Load tests automatically is through an external continuous integration system such as Jenkins, GitLab CI, CircleCI.
 
