@@ -20,8 +20,7 @@ If you'd like to learn more, have a look at [this video](https://www.youtube.com
 
 Loadmill does not simulate browser/client side activity in any way - we test your server from the network layer and provide advanced parameterization capabilities to let you define the flow of information from one request to the next.
 
-**First things first**, let's set up your Loadmill account, [sign up](https://www.loadmill.com/app/signup)!
-
+* First things first, let's set up your Loadmill account, [sign up](https://www.loadmill.com/app/signup)!
 * Want to record some API tests yourself? Start recording using the [Loadmill Chrome extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
 * We are always here if you need any help! Click on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).
 
