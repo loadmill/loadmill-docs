@@ -31,7 +31,13 @@ There are two ways to do that:
 
 {% embed url="https://www.youtube.com/embed/7Y13BkbNLpo" caption="" %}
 
-The simplest load test you can create is an HTTP GET request to your web server. All you need to do is:
+The simplest load test you can create is an HTTP GET request to your web server. 
+
+{% hint style="warning" %}
+🧠 Load test may include **100 requests maximum**.
+{% endhint %}
+
+All you need to do is:
 
 1. Click the **NEW TEST** button on the top navigation menu. This will get you to our test editor.
 2. Give your new test a short description `My First Test`

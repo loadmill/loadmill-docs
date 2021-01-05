@@ -46,6 +46,8 @@ There are two ways to do that:
 
 {% hint style="info" %}
 🧙♂  Let's create an API test that validates user login to our [demo app](https://loadmill-test-blog.herokuapp.com/). 
+
+Note: API test may include **200 requests maximum**.
 {% endhint %}
 
 1. Go to the API Tests tab.
