@@ -461,7 +461,7 @@ Returns a random string of `length` characters present in `chars`. For example, 
 
 ### `__random_seeded_number([seed='',length=10])`
 
-Returns a random string of up to `length` \(bit no more than 10\) decimal digits based on a given seed. Same seed will return the same number.
+Returns a random string of up to `length` \(but no more than 10\) decimal digits based on a given seed. Same seed will return the same number.
 
 * `__random_seeded_number() // returns 994027583`
 * `__random_seeded_number('0123456789ABCDEF') // returns 2082602645`
