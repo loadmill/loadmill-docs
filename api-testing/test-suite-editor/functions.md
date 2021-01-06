@@ -459,6 +459,14 @@ Returns a random string of `length` characters present in `chars`. For example, 
 * `__random_from(p1) // returns lilodaaLod, assuming p1 is 'Loadmill'`
 * `__random_from('Loadmill','3') // returns ido`
 
+### `__random_seeded_number([seed='',length=10])`
+
+Returns a random string of up to `length` \(bit no more than 10\) decimal digits based on a given seed. Same seed will return the same number.
+
+* `__random_seeded_number() // returns 994027583`
+* `__random_seeded_number('0123456789ABCDEF') // returns 2082602645`
+* `__random_seeded_number('0123456789ABCDEF','5') // returns 20826`
+
 ## Time Functions
 
 ### `__now()`
