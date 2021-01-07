@@ -1,6 +1,6 @@
 # Billing
 
-The account admins can navigate to **Settings =&gt; Billing** to manage the account subscription plan, payment method and download Usage Report. 
+Team admins can navigate to **Settings =&gt; Billing** to manage the account subscription plan, payment method and download Usage Report. 
 
 Subscription Plan shows your current plan, what your maximum allowed concurrency is and how many test minutes you have used this month. See an example below:
 
