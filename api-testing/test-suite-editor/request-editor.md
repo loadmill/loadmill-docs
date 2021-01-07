@@ -1,6 +1,6 @@
 # Request editor
 
-Request is the most basic building block of our tests. It represents a single API call or a user action.
+Request is the most basic building block of tests. It represents a single API call or a user action.
 
 ![](../../.gitbook/assets/image%20%283%29.png)
 
