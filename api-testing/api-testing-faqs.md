@@ -20,7 +20,7 @@ You can easily do that by creating a new parameter that contains the extracted i
 
 Yep. First, export the collection from Postman by clicking on three dots within the collection and choosing Collection v2.1 \(recommended\). 
 
-![Exporting a Postman collection](../.gitbook/assets/ezgif.com-gif-maker-14-.gif)
+![](../.gitbook/assets/ezgif.com-gif-maker-15-.gif)
 
 Then, go to Loadmill and import the collection as a Test Suite.
 
