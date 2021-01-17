@@ -8,11 +8,14 @@ Subscription Plan shows your current plan, what your maximum allowed concurrency
 
 ![](../../.gitbook/assets/screen-shot-2021-01-06-at-9.14.07.png)
 
-It shows that you can run tests with 50 concurrent user sessions maximum. You also have 60 test minutes for Load tests and can run up to 100 API test flows this month. 
+It shows that:
+
+* You can run tests with 50 concurrent user sessions maximum.
+* You have used 0 out of 60 test minutes for Load tests and 0 out of 100 API Test Flow runs this month.
 
 {% hint style="info" %}
 🧙♂ API Test Flow Runs: we count only test flow runs that were run as a part of the Test Suite \(via the Run Suite button\) and don’t count single test flow runs with regards to billing.
 {% endhint %}
 
-In case you need more credit, you can easily upgrade your subscription plan by clicking on **Change Plan**. Keep track of your monthly usage by using [this report](https://docs.loadmill.com/account-settings/billing/usage-report).
+Keep track of your monthly usage by using [this report](https://docs.loadmill.com/account-settings/billing/usage-report) and if you need more credit, easily upgrade your subscription plan by clicking on **Change Plan**. 
 
