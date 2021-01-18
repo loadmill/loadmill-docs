@@ -12,7 +12,7 @@ Loadmill's platform can help your team move faster by creating user flows from r
 
 Creating and maintaining tests require endless iterations from release to release. Every small change can break your automation and increase your regression cycles.  
 
-## What is the benefit of recording real user flows in production?
+### What is the benefit of recording real user flows in production?
 
 Save precious time scripting your tests and focus it on what users really care about. 
 

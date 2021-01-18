@@ -12,7 +12,7 @@ For example, you can use this option to import a collection from Postman. First,
 
 ![](.gitbook/assets/ezgif.com-gif-maker-15-.gif)
 
-Then, go to Loadmill and import the collection as a Test Suite. Loadmill will automatically recognize Postman data and will create a new Test Suite with test flows and parameters.
+Then, go to Loadmill and import the collection as a Test Suite. Loadmill will automatically recognize Postman data and create a new Test Suite with test flows and parameters.
 
 ### Importing Test Flows and CSV files
 
