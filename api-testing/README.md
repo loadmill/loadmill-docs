@@ -6,7 +6,7 @@ description: Boost velocity and automate manual testing by replaying real user b
 
 Loadmill's platform can help your team move faster by creating user flows from real user session in your application. Use Loadmill's smart recorder of users flows, generate these recordings to Test Suites and run it within minutes. 
 
-![API Test Suite Run](../.gitbook/assets/api_tests_run.png)
+![API Test Suite Run](../.gitbook/assets/screen-shot-2021-01-18-at-14.56.04.png)
 
 ## How can Loadmill's API testing help me and my team?
 
