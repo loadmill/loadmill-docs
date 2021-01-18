@@ -13,8 +13,6 @@ In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn
 1. Create and run a very simple API test by using our [Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
 2. Create and run an API test from scratch in Loadmill \(that is super easy and takes a few minutes\).
 
-\*\*\*\*
-
 ## **Before you start**
 
 **Signup to Loadmill** at this [link](https://www.loadmill.com/app/signup). If you need a demo application for testing you can use [this one](https://loadmill-test-blog.herokuapp.com). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account. ****
