@@ -44,7 +44,7 @@ You can also import CSV files into load tests, see how to do that [here](https:/
 
 ### Importing Recordings
 
-In case you are using [GoReplay](https://goreplay.org/) and would like Loadmill to generate an API Test Suite from it, you can import Gor file on the recording page by clicking "IMPORT RECORDING". 
+In case you are using [GoReplay](https://goreplay.org/) and would like Loadmill to generate an API Test Suite from it, you can import Gor file on the Recordings page by clicking "IMPORT RECORDING". 
 
 ![](.gitbook/assets/screenshot-77-.png)
 
