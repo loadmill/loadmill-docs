@@ -14,19 +14,9 @@ You can easily do that by creating a new parameter that contains the extracted i
 
 ![assertion for the extracted parameter](../.gitbook/assets/assertion_extracted_id.png)
 
-### **Import**
+### \*\*\*\*
 
-**Can I import a Postman collection to Loadmill?**
-
-Yep. First, export the collection from Postman by clicking on three dots within the collection and choosing Collection v2.1 \(recommended\). 
-
-![](../.gitbook/assets/ezgif.com-gif-maker-15-.gif)
-
-Then, go to Loadmill and import the collection as a Test Suite.
-
-**Is there a way to import HAR files?**
-
-Sure. Go to the relevant Test Suite - press "IMPORT FLOW" - select your HAR file - choose domains and a new flow will be created.  
+  
 
 
   
