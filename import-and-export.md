@@ -52,7 +52,7 @@ Once it's done, you can click on the "GENERATE TEST SUITE" button within the rec
 
 ### Exporting data 
 
-You can export Test Suites, Test Flows, Load Tests, Load Test Run CSV Report and Usage Reports \(team admins only\).
+You can export Test Suites, Test Flows, Load Tests, Load Test Run CSV Reports and [Usage Reports](https://docs.loadmill.com/account-settings/billing/usage-report) \(team admins only\).
 
 Let's say you have run a test and one of the requests got failed and now you would like to run it separately in the Command Line. To do that, just click on "Copy as cURL" within the failed request.
 
