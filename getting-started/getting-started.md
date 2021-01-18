@@ -13,6 +13,8 @@ In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn
 1. Create and run a very simple API test by using our [Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
 2. Create and run an API test from scratch in Loadmill \(that is super easy and takes a few minutes\).
 
+\*\*\*\*
+
 ## **Before you start**
 
 **Signup to Loadmill** at this [link](https://www.loadmill.com/app/signup). If you need a demo application for testing you can use [this one](https://loadmill-test-blog.herokuapp.com). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account. ****
@@ -66,13 +68,7 @@ Note: API test may include **200 requests maximum**.
 
 ![The Test Suite Parameters](../.gitbook/assets/test_suite_params.png)
 
-8. Now go back to the "Flows" tab and run your first API Test Suite by pressing the "RUN SUITE" button. That's it, you can see your results live in Loadmill.
-
-{% hint style="info" %}
-🧙♂ You can set this test flow [**as Login Flow**](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) so that it will run before each flow within the Test Suite. To do that, click on three dots within the test flow \(next to the run icon\) and press "Set As Login Flow".
-{% endhint %}
-
- 🎉 This is only the beginning, continue exploring the guide to master your **Loadmill skills**!
+8. Now go back to the "Flows" tab and run your first API Test Suite by pressing the "RUN SUITE" button. That's it, you can see your results live in Loadmill. 🎉 This is only the beginning, continue exploring the guide to master your **Loadmill skills**!
 
 ### Support
 
