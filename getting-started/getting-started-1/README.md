@@ -42,15 +42,11 @@ All you need to do is:
 1. Click the **NEW TEST** button on the top navigation menu. This will get you to our test editor.
 2. Give your new test a short description `My First Test`
 3. Copy and paste the website URL into the **URL** text box. In our case, it's going to be `https://loadmill-test-blog.herokuapp.com`. This is a ghost blogging server we are using for testing and demos, so you can use it for tests.
-4. Click the **RUN TEST** button and confirm the configuration by clicking **RUN**.
+4. Click the **DRY RUN** button as we recommend running your load test for the first time as a [trial test](https://docs.loadmill.com/getting-started/getting-started-1#running-a-trial-test). 
 
-![](../../.gitbook/assets/ezgif.com-gif-maker-1-.gif)
+![Running a Load Test as Dry Run](../../.gitbook/assets/ezgif.com-gif-maker-18-.gif)
 
-{% hint style="info" %}
-🧙♂ **Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can ignore it for now and learn how to do that later [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) \(it's actually pretty easy\).
-{% endhint %}
-
-That's it! You have just created and run your first load test in under a minute 🎉
+     That's it! You have just created and run your first load test in under a minute 🎉   See how to run it at scale [here](https://docs.loadmill.com/getting-started/getting-started-1#running-a-load-test-at-scale). 
 
 ### Recording an API test by using [our Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en) and running it as a load test in Loadmill:
 
@@ -74,15 +70,21 @@ To start a trial run, click the **DRY RUN** button at the bottom of the editor. 
 Now that we know that our test is configured correctly, we can run it at scale. To do that:
 
 1. Click the **RUN TEST** button at the bottom of the test editor.
-2. Set Test Duration \(minutes\) and Maximum Concurrent Sessions/ Maximum Requests Per Second you would like this test flow to run.
-3. Click on "Advanced" to set additional parameters. For example, you can set **Ramp-up** **Duration** \(1 minute by default\) hence a number of concurrent sessions will increase linearly during the ramp-up. 
+2. Set Test Duration \(minutes\) and **Maximum Concurrent Sessions/ Maximum Requests Per Second** you would like this test flow to run.
+3. Click on "Advanced" to set additional parameters. For example, you can set **Ramp-up** **Duration** \(1 minute by default\) hence a number of concurrent sessions will increase linearly during the ramp-up.  
 4. Click **RUN**.
+
+![](../../.gitbook/assets/ezgif.com-gif-maker-19-.gif)
+
+{% hint style="info" %}
+🧙♂ **Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can learn how to do that [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) \(it's actually pretty easy\).
+{% endhint %}
 
 As the test progresses we can see the amount of concurrent sessions **ramping up** linearly and see how **response time metrics** change over time.
 
 ![](../../.gitbook/assets/image%20%2838%29.png)
 
-In addition, we can **adjust concurrency** **during a test run**. This is a very powerful feature that allows users to see how their test performs with dynamic concurrency changes in real time.
+In addition, you can **adjust concurrency** **during a test run**. This is a very powerful feature that allows to see how the test performs with dynamic concurrency changes in real time.
 
 ![](../../.gitbook/assets/screenshot-33-.png)
 
