@@ -66,7 +66,13 @@ Note: API test may include **200 requests maximum**.
 
 ![The Test Suite Parameters](../.gitbook/assets/test_suite_params.png)
 
-8. Now go back to the "Flows" tab and run your first API Test Suite by pressing the "RUN SUITE" button. That's it, you can see your results live in Loadmill. 🎉 This is only the beginning, continue exploring the guide to master your **Loadmill skills**!
+8. Now go back to the "Flows" tab and run your first API Test Suite by pressing the "RUN SUITE" button. That's it, you can see your results live in Loadmill.
+
+{% hint style="info" %}
+🧙♂ You can set this test flow [**as Login Flow**](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) so that it will run before each flow within the Test Suite and save a lot of your time.
+{% endhint %}
+
+ 🎉 This is only the beginning, continue exploring the guide to master your **Loadmill skills**!
 
 ### Support
 
