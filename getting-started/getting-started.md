@@ -6,7 +6,7 @@ description: Running your first API test.
 
 The Loadmill's API testing module allows users to easily create automated API tests taken from real user sessions.
 
-![The API Tests tab](../.gitbook/assets/api_tests_main.png)
+![](../.gitbook/assets/screenshot-78-.png)
 
 In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
 
