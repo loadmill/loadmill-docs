@@ -282,6 +282,14 @@ Returns a boolean string of whether each element in the target array is also in 
 * `${__array_includes(srcArray,targetArray)} // returns true, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana"]`
 * `${__array_includes(srcArray,targetArray)} // returns false, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana","lemon"]`
 
+### `__array_sum(target)`
+
+Returns the sum of all the elements in the target array 
+
+* `${__array_sum(targetArray)} // returns 401, assuming targetArray is ["400","0","1"]`
+* `${__array_sum(targetArray)} // returns 188, assuming targetArray is [100,80,8]`
+* `${__array_sum(targetArray)} // returns NaN, assuming targetArray is [100,"some-word",8]`
+
 ### `__escape_regexp(target)`
 
 Returns the value of `target` after escaping special RegExp characters.
