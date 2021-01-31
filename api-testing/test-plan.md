@@ -20,7 +20,7 @@ Let's create and run your first Test Plan together:
    3. Click on "MANAGE SUITES" to add Test Suites to the Test Plan. You can select all Test Suites or specific ones by clicking "SELECT SUITES MANUALLY". Once the Test Suites are selected, click "Save".
 
 {% hint style="warning" %}
-🧠 Make sure that the Test Suites you would like to run within the Test Plan have test flows with CI toggle on. Otherwise, the Test Suites will be shown as grayed out and won't run. 
+🧠 Make sure the Test Suites you would like to run within the Test Plan have test flows with CI toggle on. Otherwise, the Test Suites will be shown as grayed out and won't run. 
 {% endhint %}
 
 ![The Manage Test Suites modal](../.gitbook/assets/screenshot-86-.png)
