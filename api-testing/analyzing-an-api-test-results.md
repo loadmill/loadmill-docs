@@ -6,7 +6,7 @@ Once running your API Test Suite you will be directed to the Test Suite Run page
 
 In order to better analyze the results of the tests, the configuration of the Test Suite can be found right above the Test Flows table.
 
-![](../.gitbook/assets/screen-shot-2021-01-18-at-14.56.04.png)
+![](../.gitbook/assets/screen-shot-2021-02-01-at-13.26.03.png)
 
 Once you've run the Test Suite, you can re-run it by pressing the "RE-RUN" button as many times as you wish.
 

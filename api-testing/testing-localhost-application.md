@@ -12,14 +12,11 @@ I want to test my app locally but getting a warning when trying to create a requ
 
 ![API test flow that should run locally](../.gitbook/assets/screenshot-23-.png)
 
-
-
 When you try to reach localhost on your browser,  you are actually trying to connect to your local computer’s ip address, 127.0.0.1. This local IP address is the same for every computer. 
 
 However, Loadmill is a SaaS \(software as a service\) company. That means that Loadmill’s web server runs on another computer somewhere in the world. Therefore, Loadmill.com will send an HTTP request to its own machine’s localhost ip address and not to your server, resulting in an error response. 
 
-You can think of it this way: imagine you are on a vacation abroad, and you want to write a letter to your relatives back home. After you finished writing the letter, you would write on the envelope, “my home” as the target address. The mailman will not understand where to send the letter, of course. The mailman has his own idea of “my home”, but it is not your home, but rather, it’s his home. He will need your public home address in order to send the letter to your relatives. This scenario is equivalent to asking Loadmill \(the mailman\) to send an HTTP request \(the letter\) to localhost \(“my home”\).  
-
+You can think of it this way: imagine you are on a vacation abroad, and you want to write a letter to your relatives back home. After you finished writing the letter, you would write on the envelope, “my home” as the target address. The mailman will not understand where to send the letter, of course. The mailman has his own idea of “my home”, but it is not your home, but rather, it’s his home. He will need your public home address in order to send the letter to your relatives. This scenario is equivalent to asking Loadmill \(the mailman\) to send an HTTP request \(the letter\) to localhost \(“my home”\).
 
 ## The solution
 

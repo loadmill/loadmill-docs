@@ -6,7 +6,7 @@ Loadmill users can import Test Suites, Test Flows, CSV files, Requests, Load Tes
 
 Navigate to API Tests and click "IMPORT SUITE". Make sure your Test Suite in the JSON file format. 
 
-![](.gitbook/assets/screenshot-73-.png)
+![](.gitbook/assets/screenshot-90-.png)
 
 For example, you can use this option to import a collection from Postman. First, export the collection by clicking on three dots within the collection and choosing Collection v2.1 \(recommended\). 
 
