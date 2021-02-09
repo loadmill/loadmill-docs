@@ -336,8 +336,9 @@ Returns a sub-string of `target` which starts at `begin` index \(inclusive\) and
 * `${__slice('Loadmill','2')} // returns 'admill'`
 * `${__slice('Loadmill','2','4')} // returns 'ad'`
 * `${__slice('Loadmill',p1,p2)} // returns 'mill', assuming p1 is 4 and p2 is 8`
+* `${__slice(p1,'0','2')} // returns 'Lo', assuming p1 is Loadmill`
 
-## Extraction Functions
+## **Extraction Functions**
 
 See also [Parameter Extractions](parameters.md#parameter-extraction).
 
