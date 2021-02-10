@@ -12,12 +12,13 @@ When we expand the request editor by clicking the ADVANCED button, we can see th
 
 #### The Request main section
 
-![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.13.51.png)
+![](../../.gitbook/assets/screenshot-97-.png)
 
 * The **Method** and **URL** fields are the most basic requirements for a valid request.
 * Black input fields are fields in which you can use [parameters](https://docs.loadmill.com/api-testing/test-suite-editor/parameters) and [functions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions).
 * It is recommended to set the **Request description** in a way that describes its action. This will make it easier for you to debug your tests later if this request fails.
-* Some requests requires a **body**. Selecting the right **content-type** for your request body will help us highlight the syntax of your request body \(i.e. JSON or XML\)
+* Some requests requires a **body**. Selecting the right **content-type** for your request body will help us highlight the syntax of your request body \(i.e. JSON or XML\).
+* The **Headers** card allows to see and set the request headers. You can add a header to all requests or as a Global Header so that it will appear in [the Global Login tab](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow).
 
 #### The Response Handling section
 
