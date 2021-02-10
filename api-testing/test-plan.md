@@ -32,6 +32,14 @@ Let's create and run your first Test Plan together:
 
 ![](../.gitbook/assets/ezgif.com-gif-maker-21-.gif)
 
+To integrate Test Plans into your Continuous Delivery pipeline, you need to use our npm module. See an example of how to launch a Test Plan below:
+
+```text
+loadmill --test-plan <test-plan-id> -w -v -t <token> --report --colors
+```
+
+Find more examples and supported CLI options [here](https://www.npmjs.com/package/loadmill).
+
 ### Analyzing Test Plan results
 
 After running the Test Plan, you will be redirected to the Test Plan Run page. The Test Plan Run report page shows the list of executed Test Suites as defined in the Test Plan. The Test Suites table shows **each suite's description, the number of its flows, duration, and status**. Use the table filter to filter the Test Suites by their status.
