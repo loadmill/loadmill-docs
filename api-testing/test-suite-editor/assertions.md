@@ -29,7 +29,7 @@ You may embed parameters in any assertion expression. These parameters will be e
 
 See **an example of the assertion** that validates the generated ID is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#__is_uuid-target) below:
 
-![the Assertion example](../../.gitbook/assets/ezgif.com-gif-maker-12-.gif)
+![The Assertion example](../../.gitbook/assets/ezgif.com-gif-maker-24-.gif)
 
 ## Caveats
 
