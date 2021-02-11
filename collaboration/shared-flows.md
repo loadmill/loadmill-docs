@@ -24,7 +24,7 @@ Thus, the shared flow will run before each test flow of the Test Suite. You can 
 
 By the way, you can always track which Test Suites using your Shared Flows. 
 
-![](../.gitbook/assets/screenshot-54-.png)
+![](../.gitbook/assets/screenshot-2021-02-11t152411.061.png)
 
 
 
