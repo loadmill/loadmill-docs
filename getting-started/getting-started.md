@@ -40,17 +40,10 @@ There are two ways to do that:
 8. Go to Loadmill and open the recorded test in your Test Suite.
 9. Run the Test Suite by pressing the "RUN SUITE" button and see your results. 🥳 
 
-{% hint style="warning" %}
-🧠 Loadmill creates **two automatic assertion types** for you:
-
-1. Default assertions - for any extraction we find in the recorded test, we add a default assertion to it.
-2. Specific assertions - for any parameter with given user key \(for example, "success"\) we extract it and assign to it an assertion \(example: "success" equals "true"\).
-{% endhint %}
-
 ### Creating and running an API test from scratch in Loadmill:
 
 {% hint style="info" %}
-🧙♂ Let's create an API test that validates user login to our [demo app](https://loadmill-test-blog.herokuapp.com/). 
+🧙♂  Let's create an API test that validates user login to our [demo app](https://loadmill-test-blog.herokuapp.com/). 
 
 Note: API test may include **200 requests maximum**.
 {% endhint %}

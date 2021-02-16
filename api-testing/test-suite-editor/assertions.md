@@ -31,6 +31,13 @@ See **an example of the assertion** that validates the generated ID is in [the f
 
 ![The Assertion example](../../.gitbook/assets/ezgif.com-gif-maker-24-.gif)
 
+{% hint style="info" %}
+🧙♂ When creating tests via [our Chrome recorder extension](https://docs.loadmill.com/getting-started/getting-started#creating-and-running-an-api-test-by-using-our-chrome-recorder-extension), Loadmill creates **two automatic assertion types** for you: 
+
+1. Default assertions - for any extraction we find in the recorded test, we add a default assertion to it.
+2. Specific assertions - for any parameter with given user key \(for example, "success"\) we extract it and assign to it an assertion \(example: "success" equals "true"\).
+{% endhint %}
+
 ## Caveats
 
 Keep in mind that all parameter values are **textual**, i.e. a parameter has **no type** such as `Number` or `Array` that we know from common programming languages.
