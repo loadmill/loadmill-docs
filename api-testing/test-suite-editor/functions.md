@@ -308,6 +308,12 @@ Returns the value of `target` after [URL decoding](https://en.wikipedia.org/wiki
 
 * `${__decode_url(p1)} // returns 'this is url' assuming p1 is 'this%20is%20url'`
 
+### `__decode_base64(target)`
+
+Returns the value of `target` after decoding.
+
+* `${__decode_base64(p1)} // returns 'exa�����' assuming p1 is 'ZXhhhbXBsZQ=='`
+
 ### `__escape_quotes(target)`
 
 Returns the value of `target` after escaping special characters. This function is like escape quotes in JavaScript and will escape characters like \n \r \t and \".
