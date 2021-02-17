@@ -310,7 +310,7 @@ Returns the value of `target` after [URL decoding](https://en.wikipedia.org/wiki
 
 ### `__decode_base64(target)`
 
-Returns the value of `target` after decoding.
+Returns the value of `target` after [Base64](https://en.wikipedia.org/wiki/Base64) decoding.
 
 * `${__decode_base64(p1)} // returns 'exa�����' assuming p1 is 'ZXhhhbXBsZQ=='`
 
