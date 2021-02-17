@@ -312,7 +312,7 @@ Returns the value of `target` after [URL decoding](https://en.wikipedia.org/wiki
 
 Returns the value of `target` after [Base64](https://en.wikipedia.org/wiki/Base64) decoding.
 
-* `${__decode_base64(p1)} // returns 'exa�����' assuming p1 is 'ZXhhhbXBsZQ=='`
+* `${__decode_base64(p1)} // returns 'example' assuming p1 is 'ZXhhbXBsZQ=='`
 
 ### `__escape_quotes(target)`
 
