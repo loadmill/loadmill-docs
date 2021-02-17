@@ -32,9 +32,11 @@ Let's create and run your first Test Plan together:
 
 ![](../.gitbook/assets/ezgif.com-gif-maker-21-.gif)
 
-Note: you can set Test Suites to run in parallel within RUN SETTINGS.
+You can set Test Suites to run in parallel within RUN SETTINGS.
 
 ![](../.gitbook/assets/screenshot-2021-02-17t105222.512.png)
+
+Thus you will be able to significantly save running time.
 
 To integrate Test Plans into your Continuous Delivery pipeline, you need to use our npm module. See an example of how to launch a Test Plan below:
 
