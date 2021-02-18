@@ -4,13 +4,13 @@ Request is the most basic building block of tests. It represents a single API ca
 
 ![](../../.gitbook/assets/image%20%283%29.png)
 
-### Request sections
+## Request sections
 
 When we expand the request editor by clicking the ADVANCED button, we can see that a test request includes two sections - The **request main section** \(In yellow\) and the **response handling section** \(In blue\).  
 
 ![](../../.gitbook/assets/request_main.png)
 
-#### The Request main section
+### The Request main section
 
 ![](../../.gitbook/assets/screenshot-97-.png)
 
@@ -18,9 +18,9 @@ When we expand the request editor by clicking the ADVANCED button, we can see th
 * Black input fields are fields in which you can use [parameters](https://docs.loadmill.com/api-testing/test-suite-editor/parameters) and [functions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions).
 * It is recommended to set the **Request description** in a way that describes its action. This will make it easier for you to debug your tests later if this request fails.
 * Some requests requires a **body**. Selecting the right **content-type** for your request body will help us highlight the syntax of your request body \(i.e. JSON or XML\).
-* The **Headers** card allows to see and set the request headers. You can add a header to all requests or as a Global Header so that it will appear in [the Global Login tab](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow).
+* The **Headers** card allows to see and set the request headers. You can add a header to all requests or as a Global Header so that it will be added to all of the test flow requests and appear in [the Global Login tab](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow).
 
-#### The Response Handling section
+### The Response Handling section
 
 ![](../../.gitbook/assets/image%20%2833%29.png)
 
@@ -28,11 +28,11 @@ The response handling section enables to you extract values from the request's r
 
 ![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.26.15.png)
 
-The **Extractions - Set Parameters** card allows you:
+#### The **Extractions - Set Parameters** card allows you:
 
 * To extract values from the response body into an existing or a new parameter using JSONPath, Closure, jQuery, RegExp.
 * To extract an HTTP header value into a parameter using the Header extractor.
-* To assign a static value or apply a function on anther parameter using the "Assign" option.
+* To assign a static value or [**apply a function on another parameter**](https://docs.loadmill.com/api-testing/test-suite-editor/functions) using the "Assign" option.
 
 Find more information about the **Assertions - Verify Response** card [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/assertions). 
 
