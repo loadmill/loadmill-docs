@@ -56,7 +56,7 @@ There are several **extraction query types** that may be used:
 * **JQuery \(Cheerio\)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional \(but very useful\) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
 * **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
 * **Header** - used for extracting response header values via header names.
-* **Assignment** - used for assigning an explicit value to a parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
+* **Assignment** - used for assigning an explicit value to a parameter or [a function](https://docs.loadmill.com/api-testing/test-suite-editor/functions) to an existing parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
 * **Clojure** - used for extracting values from Clojure \(EDN content type\) responses. Querying the data is done using JSONPath. For example, the query `$[":user"][":id"]` will extract the value `56` from this EDN response: 
 
 ```
