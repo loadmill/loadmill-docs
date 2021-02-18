@@ -23,13 +23,13 @@ API Test flow is a series of API calls \(HTTP requests\) that represent **a sing
 | Extract Parameter | Extract a value to a parameter from all across the test requests. |
 | Copy flow to suite | Copy the flow into another Test Suite. |
 
-### Other flow controllers
+## Other flow controllers
 
-#### **Add Request button**
+### **Add Request button**
 
 Add new requests to a flow. Once added you can drag a request to change its order by grabbing it at the top right corner. 
 
-**Converting an API flow to a Load test**
+### **Converting an API flow to a Load test**
 
 Easily convert an API flow to Load test by clicking on the Flow options menu ![](../../.gitbook/assets/screen-shot-2020-02-03-at-12.12.19-pm.png) located on the top right and select " "Convert to Load Test". Once you've selected "Convert to Load Test", a new Load test will open containing all the requests and properties taken from the original API test.
 
@@ -37,7 +37,7 @@ Easily convert an API flow to Load test by clicking on the Flow options menu ![]
 
 ![](../../.gitbook/assets/converted_from_api_test.png)
 
-#### Skip and Stop Condition
+### Skip and Stop Condition
 
 Set a skip or stop condition between requests. Let's say you would like to skip "Purchase" Request if the preceding "Get Price" Request response returns a price above the current budget. This could be accomplished by extracting the price to a parameter and setting the Purchase Request skip condition to ${budget &lt;= price}.
 
