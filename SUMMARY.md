@@ -46,6 +46,7 @@
   * [API Tokens](integrations/api-tokens.md)
   * [npm Module](integrations/npm-modal.md)
   * [REST API](integrations/rest-api.md)
+  * [Loadmill DB relay service](integrations/loadmill-db-relay-service.md)
   * [Integrations FAQs](integrations/integrations-faqs-1.md)
 * [Settings](account-settings/README.md)
   * [Billing](account-settings/billing/README.md)
