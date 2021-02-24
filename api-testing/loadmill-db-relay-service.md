@@ -12,7 +12,7 @@ Execute queries directly to Postgres:
 
 ```text
 body: {
-  connectionString: 'postgres://...'
+  connectionString: 'postgres://...',
   query: 'SELECT NOW()'
 }
 ```
@@ -23,7 +23,7 @@ Execute queries directly to MongoDB:
 
 ```text
 body: {
-  connectionString: 'mongodb://...'
+  connectionString: 'mongodb://...',
   collection: 'bios',
   command: 'find',
   query: { "awards.award": "Turing Award" }
@@ -38,7 +38,7 @@ Execute queries directly to Redis:
 body: {
   {
     connectionString: "redis://...", 
-    command:"get | hget | hgetall"
+    command:"get | hget | hgetall",
     key:"any-key",
     field: "any-field"
    }
