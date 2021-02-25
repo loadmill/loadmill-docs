@@ -38,6 +38,7 @@
   * [How to work with Recordings](working-with-the-recorder/working-with-the-recorder.md)
   * [Recordings settings](working-with-the-recorder/recorder-settings.md)
   * [Additional recording methods](working-with-the-recorder/additional-recording-methods.md)
+* [🎥 Loadmill Chrome recorder extension](loadmill-chrome-recorder-extension.md)
 * [Collaboration](collaboration/README.md)
   * [Teams](collaboration/teams.md)
   * [Test Suite Collaborators](collaboration/test-suite-collaborators-1.md)
