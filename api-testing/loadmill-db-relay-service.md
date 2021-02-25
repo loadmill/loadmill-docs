@@ -21,6 +21,8 @@ See a request example below:
 
 ![](../.gitbook/assets/screen-shot-2021-02-25-at-16.17.02.png)
 
+### Other types
+
 Execute queries directly to MongoDB:
 
 [https://db-relay-service.loadmill.com/api/mongo](https://db-relay-service.loadmill.com/api/mongo)
