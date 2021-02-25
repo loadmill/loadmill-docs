@@ -22,7 +22,7 @@ Loadmill does not simulate browser/client side activity in any way - we test you
 
 **First things first**, let's set up your Loadmill account, [sign up](https://www.loadmill.com/app/signup)!
 
-* Want to record some API tests yourself? Start recording using the [Loadmill Chrome extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
+* Want to record some API tests yourself? Start recording using the [Loadmill Chrome extension](https://docs.loadmill.com/loadmill-chrome-recorder-extension).
 * We are always here if you need any help! Click on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).
 
 
