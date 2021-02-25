@@ -1,14 +1,14 @@
----
-description: Enable customers to execute queries directly to their DB
----
-
 # Loadmill DB relay service
 
-### Usage
+Loadmill allows users to execute queries directly to their DB in order to validate data.
+
+### How it works
 
 Execute queries directly to Postgres:
 
-[https://db-relay-service.loadmill.com/api/postgres](https://db-relay-service.loadmill.com/api/postgres)
+1. Go to a relevant test flow within a Test Suite.
+2. Select "POST" as Method, put URL - [https://db-relay-service.loadmill.com/api/postgres](https://db-relay-service.loadmill.com/api/postgres)
+3. Put the request body with a structure:
 
 ```text
 body: {
@@ -16,6 +16,10 @@ body: {
   query: 'SELECT NOW()'
 }
 ```
+
+See a request example below:
+
+![](../.gitbook/assets/screen-shot-2021-02-25-at-16.17.02.png)
 
 Execute queries directly to MongoDB:
 
@@ -45,24 +49,5 @@ body: {
 }
 ```
 
-### Usage
-
-Build docker image:
-
-```text
-docker build -t db-relay-service .
-```
-
-Build docker container:
-
-```text
-docker run -it -p 8080:8080 db-relay-service
-```
-
-Stop docker container:
-
-```text
-docker ps 
-docker stop ${CONTAINER ID}
-```
+### 
 
