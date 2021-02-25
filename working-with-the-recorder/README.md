@@ -1,4 +1,4 @@
-# Recordings
+# 🎥Recordings
 
 We've developed **a smart recorder** that allows users to capture traffic in the QA or Production environment and replay it as API tests. 
 

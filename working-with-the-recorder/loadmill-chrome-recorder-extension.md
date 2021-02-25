@@ -1,4 +1,4 @@
-# 🎥 Loadmill Chrome recorder extension
+# Loadmill Chrome recorder extension
 
 Loadmill users can easily record real user sessions as Loadmill test flows by using our Chrome recorder extension. Then integrate the flows into their Continuous Delivery pipeline and run them per each code-change. 
 
@@ -8,7 +8,7 @@ Loadmill users can easily record real user sessions as Loadmill test flows by us
 2. Navigate to API Tests in Loadmill and create a [Test Suite](https://docs.loadmill.com/api-testing/test-suite-editor) that will hold recorded test flows.
 3. Open the Chrome Developer Tools, switch to the Loadmill Rec tab and select name of the created Test Suite in the extension. 
 
-![The Test Suite field ](.gitbook/assets/screen-shot-2021-02-25-at-11.43.56.png)
+![The Test Suite field ](../.gitbook/assets/screen-shot-2021-02-25-at-11.43.56.png)
 
 {% hint style="warning" %}
 🧠 If you are not logged in to Loadmill, you will be prompted to the login page. Please note that sometimes other installed extensions like Adblock may cause issues, thus we recommend switching them off while recording.
@@ -18,7 +18,7 @@ Loadmill users can easily record real user sessions as Loadmill test flows by us
 
    5. There are several filtering options: you can delete irrelevant requests by clicking on the "Delete" icon or remove irrelevant domains by clicking on the "Add to filter" icon thus all future recordings will disregard requests from these domains.
 
-![Filtering options](.gitbook/assets/screen-shot-2021-02-25-at-11.48.38.png)
+![Filtering options](../.gitbook/assets/screen-shot-2021-02-25-at-11.48.38.png)
 
 Note you can also configure URL Filters within [the Recordings Settings](https://docs.loadmill.com/working-with-the-recorder/recorder-settings#url-filters) so that the entire team will have the same filters. 
 
