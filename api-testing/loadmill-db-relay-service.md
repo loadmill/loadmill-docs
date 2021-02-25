@@ -1,8 +1,8 @@
 # Loadmill DB relay service
 
-Loadmill allows users to execute queries directly to their DB in order to validate data.
+Loadmill implemented a service that allows users to execute queries directly to their DB in order to validate data.
 
-## How it works
+## Usage
 
 ### Postgres
 
@@ -10,7 +10,7 @@ Execute queries directly to Postgres:
 
 1. Go to a relevant test flow within a Test Suite.
 2. Select "POST" as Method, put URL - [https://db-relay-service.loadmill.com/api/postgres](https://db-relay-service.loadmill.com/api/postgres)
-3. Put the request body with a structure:
+3. Put the request body with structure:
 
 ```text
 body: {
