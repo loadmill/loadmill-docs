@@ -2,7 +2,9 @@
 
 Loadmill allows users to execute queries directly to their DB in order to validate data.
 
-### How it works
+## How it works
+
+### Postgres
 
 Execute queries directly to Postgres:
 
@@ -21,7 +23,7 @@ See a request example below:
 
 ![](../.gitbook/assets/screen-shot-2021-02-25-at-16.17.02.png)
 
-### Other types
+### MongoDB
 
 Execute queries directly to MongoDB:
 
@@ -35,6 +37,8 @@ body: {
   query: { "awards.award": "Turing Award" }
 }
 ```
+
+### Redis
 
 Execute queries directly to Redis:
 
