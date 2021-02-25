@@ -10,7 +10,7 @@ The Loadmill's API testing module allows users to easily create automated API te
 
 In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
 
-1. Create and run a very simple API test by using our [Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
+1. Create and run a very simple API test by using our [Chrome recorder extension](https://docs.loadmill.com/loadmill-chrome-recorder-extension).
 2. Create and run an API test from scratch in Loadmill \(that is super easy and takes a few minutes\).
 
 ## **Before you start**
@@ -23,7 +23,7 @@ In order to use Loadmill effectively, we highly recommend to read [Core definiti
 
 There are two ways to do that: 
 
-* Recording an API test by using [our Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en) and running it in Loadmill.
+* Recording an API test by using our [Chrome recorder extension](https://docs.loadmill.com/loadmill-chrome-recorder-extension) and running it in Loadmill.
 * Creating and running an API test from scratch in Loadmill. 
 
 ### **Creating and running an API test by using our Chrome recorder extension:**

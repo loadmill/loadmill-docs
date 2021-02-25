@@ -37,3 +37,7 @@ Note you can also configure URL Filters within [the Recordings Settings](https:/
 
      9. Run the Test Suite by pressing the "RUN SUITE" button and see [your results](https://docs.loadmill.com/api-testing/analyzing-an-api-test-results). 
 
+### Support
+
+We are always here if you need any help! Click on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).  
+
