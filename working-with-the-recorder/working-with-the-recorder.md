@@ -21,5 +21,5 @@ The next step will be Generating a repayable Test Suite containing your test flo
 
 Click "GENERATE TEST SUITE". 
 
-Check out more cool things you can do with recordings in [the next guide](https://docs.loadmill.com/working-with-the-recorder/recorder-settings).
+Check out more cool things you can do with recordings in the [Recordings Settings](https://docs.loadmill.com/working-with-the-recorder/recorder-settings) guide.
 

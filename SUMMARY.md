@@ -37,7 +37,6 @@
   * [Setup](working-with-the-recorder/setting-up-the-recorder.md)
   * [How to work with Recordings](working-with-the-recorder/working-with-the-recorder.md)
   * [Recordings settings](working-with-the-recorder/recorder-settings.md)
-  * [Loadmill Chrome recorder extension](working-with-the-recorder/loadmill-chrome-recorder-extension.md)
   * [Additional recording methods](working-with-the-recorder/additional-recording-methods.md)
 * [Collaboration](collaboration/README.md)
   * [Teams](collaboration/teams.md)

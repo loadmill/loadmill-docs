@@ -3,7 +3,7 @@
 Use the advanced Recordings settings to create meaningful replay-able tests that are easy to configure. Team Admins can control these settings [on this page](https://www.loadmill.com/app/user/settings/recordings). 
 
 {% hint style="info" %}
-👇 You can configure the settings below for our [recorder](https://docs.loadmill.com/working-with-the-recorder) & [Chrome recorder extension](https://docs.loadmill.com/api-testing/getting-started#creating-and-running-an-api-test-by-using-our-chrome-recorder-extension). 
+👇 You can configure the settings below for our [recorder](https://docs.loadmill.com/working-with-the-recorder) & [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder). 
 {% endhint %}
 
 ### Split sessions by URLs \(for the Recorder use only\)
