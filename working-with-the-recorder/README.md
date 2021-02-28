@@ -10,7 +10,7 @@ Loadmill provides two main options to record real user sessions: **Loadmill Chro
 2. Navigate to API Tests in Loadmill and create a [Test Suite](https://docs.loadmill.com/api-testing/test-suite-editor) that will hold recorded test flows.
 3. Open the Chrome Developer Tools, switch to the Loadmill Rec tab and select name of the created Test Suite in the extension. 
 
-![The Test Suite field ](../.gitbook/assets/screen-shot-2021-02-25-at-11.43.56.png)
+![The Test Suite field within the extension ](../.gitbook/assets/screen-shot-2021-02-25-at-11.43.56.png)
 
 {% hint style="warning" %}
 🧠 If you are not logged in to Loadmill, you will be prompted to the login page. Please note that sometimes other installed extensions like Adblock may cause issues, thus we recommend switching them off while recording.
