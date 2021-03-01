@@ -52,3 +52,7 @@ Keys and paths to identify non-secret values are given in a JSONPath-like syntax
 
 Regex replacers will be used to identify any strings that match the regex and extract them as a parameter.
 
+### Strict Response Validation
+
+When enabled, this option will add JSON Schema assertion to every recorded 'application/json' response.
+
