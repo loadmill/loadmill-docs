@@ -186,7 +186,7 @@ Stop a launched Test Suite
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-The Test Suite Run uuid. You can get this ID in the response when getting the Test Suite Run  
+The Test Suite Run uuid. You can get this ID in the response when getting the Test Suite Run \(https://docs.loadmill.com/integrations/rest-api\#get-test-suite-run-test-suite-results\).  
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
