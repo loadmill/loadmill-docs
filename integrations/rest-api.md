@@ -173,6 +173,50 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="put" host="https://www.loadmill/com" path="/api/v1/test-suites-runs/:id" %}
+{% api-method-summary %}
+Stop Test Suite Run
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Stop a launched Test Suite  
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+The Test Suite Run uuid. You can get this ID in the response when getting the Test Suite Run  
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="forceFail=true" type="string" required=false %}
+Using this filter option the user can stop the Test Suite Run and put its status to FAILED
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Test Suite Run has been successfully stopped.
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 {% api-method method="post" host="https://www.loadmill.com" path="/api/v1/tests" %}
 {% api-method-summary %}
 Create Load Test
@@ -374,7 +418,7 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="filter=CI\_enabled" type="string" required=false %}
-Using this filer option the user can get only the labels who are attached to flows with the CI toggle on
+Using this filter option the user can get only the labels who are attached to flows with the CI toggle on
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
