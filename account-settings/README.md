@@ -20,6 +20,7 @@ In the Settings, you can find tabs: [Domains](https://docs.loadmill.com/load-tes
 | Notifications | Set e-mail notifications upon test run completion.  |
 | Integrations | Team admins can set and edit integrations preferences. |
 | [Private Agents](https://docs.loadmill.com/api-testing/testing-localhost-application)              | See running Loadmill's agent/s. |
+| Suggestions | Team admins can set a repository of extractions and suggestions.  |
 
 
 

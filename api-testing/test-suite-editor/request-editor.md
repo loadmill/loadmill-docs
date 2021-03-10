@@ -22,19 +22,22 @@ When we expand the request editor by clicking the ADVANCED button, we can see th
 
 ### The Response Handling section
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![Response Handling section](../../.gitbook/assets/screen-shot-2021-03-10-at-11.39.25.png)
 
-The response handling section enables to you extract values from the request's response and validate them.
-
-![](../../.gitbook/assets/screen-shot-2020-11-25-at-11.26.15.png)
+The response handling section includes 3 cards: **Extractions - Set Parameters, Assertions - Verify Response and Loops.** It ****allows you to extract values from the request's response and validate them.
 
 #### The **Extractions - Set Parameters** card allows you:
 
 * To extract values from the response body into an existing or a new parameter using JSONPath, Closure, jQuery, RegExp.
 * To extract an HTTP header value into a parameter using the Header extractor.
 * To assign a static value or [**apply a function on another parameter**](https://docs.loadmill.com/api-testing/test-suite-editor/functions) using the "Assign" option.
+* To add an extraction from the Suggestions repository. Team admins configure the repository within Settings - Suggestions.
 
-Find more information about the **Assertions - Verify Response** card [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/assertions). 
+![](../../.gitbook/assets/screenshot-2021-03-10t114346.226.png)
+
+The **Assertions - Verify Response** card allows you to validate the request response, find more information [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/assertions). 
+
+![](../../.gitbook/assets/screenshot-2021-03-10t114556.848.png)
 
 The **Loops** card allows to repeat the request until the parameter's value will meet the requirement or number of iteration reached:
 
