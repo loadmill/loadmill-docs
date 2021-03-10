@@ -48,5 +48,7 @@ Find more examples and supported CLI options [here](https://www.npmjs.com/packag
 
 After running the Test Plan, you will be redirected to the Test Plan Run page. The Test Plan Run report page shows the list of executed Test Suites as defined in the Test Plan. The Test Suites table shows **each suite's description, the number of its flows, duration, and status**. Use the table filter to filter the Test Suites by their status.
 
-![](../.gitbook/assets/screenshot-84-.png)
+![](../.gitbook/assets/screenshot-2021-03-10t095854.448.png)
+
+You can easily re-run the Test Plan by clicking **RE-RUN** or **Run only Failed Suites**. 
 
