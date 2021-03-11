@@ -51,7 +51,7 @@ There are several **extraction query types** that may be used:
  }
 ```
 
-![Parameter Extraction in a test request](../../.gitbook/assets/screen-shot-2020-11-25-at-15.30.09.png)
+![Parameter extraction in a test request](../../.gitbook/assets/screen-shot-2021-03-11-at-12.06.04.png)
 
 * **JQuery \(Cheerio\)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional \(but very useful\) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
 * **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
