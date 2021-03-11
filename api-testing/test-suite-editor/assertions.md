@@ -10,7 +10,7 @@ You may have an arbitrary number of assertions executed after each successful re
 
 The target of an assertion is always a parameter value. You may use built-in parameters, default parameters or any parameter extracted from the current or previous requests in the **current scenario** as the target.
 
-![](../../.gitbook/assets/screen-shot-2020-11-25-at-16.51.09.png)
+![](../../.gitbook/assets/screen-shot-2021-03-10-at-16.35.47.png)
 
 There are several types of assertions:
 
@@ -37,6 +37,16 @@ See **an example of the assertion** that validates the generated ID is in [the f
 1. Default assertions - for any extraction we find in the recorded test, we add a default assertion to it \(example: "id" exists\).
 2. Specific assertions - for any parameter with given user key \(for example, "success"\) we extract it and assign to it an assertion \(example: "success" equals "true"\).
 {% endhint %}
+
+## Suggestions
+
+Team admins can configure a repository of extractions and assertions within Settings - Suggestions. By default, there are a few common extraction and assertion examples in the repository. All users can add the assertions from the repository by clicking on **+ SUGGESTIONS**.
+
+![](../../.gitbook/assets/screenshot-2021-03-10t164707.818.png)
+
+Team admins can navigate to the Suggestions repository settings directly from within the suggestion dialog window.
+
+![](../../.gitbook/assets/screenshot-2021-03-10t174142.662.png)
 
 ## Caveats
 
