@@ -22,7 +22,7 @@ You can test your JSONPath expressions using this useful online tool - [link](ht
 
 ### Clojure
 
-Use this extractor to extract values from EDN responses. Enter JSONPath Query, Clojure queried as JSON.
+Use this extractor to extract values from Clojure \(EDN content type\) responses. You need to enter JSONPath Query, Clojure queried as JSON.
 
 ![](../../.gitbook/assets/screen-shot-2021-03-10-at-16.05.16.png)
 
