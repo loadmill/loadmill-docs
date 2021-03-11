@@ -46,11 +46,11 @@ Use this extractor to extract values from any of the response headers.
 
 ### Suggestions
 
-Team admins can configure a repository of extractions and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions) within Settings - Suggestions. By default, there are a few common extraction and assertion examples in the repository. All users can add the extractions from the repository by clicking on **+ SUGGESTIONS**.
+In many cases Loadmill users are using the same extractions and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). We've implemented the Suggestions feature that allows team admins to configure a repository of extractions and assertions within Settings - Suggestions. Then, all users can add the extractions from the repository by clicking on **+ SUGGESTIONS**.
 
 ![](../../.gitbook/assets/screenshot-2021-03-10t161839.713.png)
 
-Team admins can navigate to the Suggestions repository settings directly from within the suggestion dialog window.
+By default, there are a few common extraction and assertion examples in the repository. Team admins can also navigate to the Suggestions Settings directly from within the suggestion dialog window.
 
 ![](../../.gitbook/assets/screenshot-2021-03-10t163055.050.png)
 
