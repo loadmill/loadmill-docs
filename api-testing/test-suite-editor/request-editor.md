@@ -31,7 +31,7 @@ The response handling section includes 3 cards: **Extractions - Set Parameters, 
 * To extract values from the response body into an existing or a new parameter using JSONPath, Closure, jQuery, RegExp.
 * To extract an HTTP header value into a parameter using the Header extractor.
 * To assign a static value or [**apply a function on another parameter**](https://docs.loadmill.com/api-testing/test-suite-editor/functions) using the "Assign" option.
-* To add an extraction from the Suggestions repository. Team admins configure the repository within Settings - Suggestions.
+* To add an extraction from [the Suggestions repository](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions#suggestions). Team admins configure the repository within Settings - Suggestions.
 
 ![](../../.gitbook/assets/screenshot-2021-03-10t114346.226.png)
 
