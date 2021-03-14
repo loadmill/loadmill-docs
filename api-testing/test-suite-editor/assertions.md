@@ -36,6 +36,8 @@ See **an example of the assertion** that validates the generated ID is in [the f
 
 1. Default assertions - for any extraction we find in the recorded test, we add a default assertion to it \(example: "id" exists\).
 2. Specific assertions - for any parameter with given user key \(for example, "success"\) we extract it and assign to it an assertion \(example: "success" equals "true"\).
+
+Optional automatic JSON Schema assertion: you can enable [this assertion](https://docs.loadmill.com/working-with-the-recorder/recorder-settings#strict-response-validation) within Settings - Recordings.
 {% endhint %}
 
 ## Suggestions

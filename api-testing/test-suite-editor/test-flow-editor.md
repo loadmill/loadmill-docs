@@ -39,7 +39,7 @@ Easily convert an API flow to Load test by clicking on the Flow options menu ![]
 
 ### Skip and Stop Condition
 
-Set a skip or stop condition between requests. Let's say you would like to skip "Purchase" Request if the preceding "Get Price" Request response returns a price above the current budget. This could be accomplished by extracting price and budget to parameters and setting the Purchase Request skip condition to ${budget &lt;= price}.
+Set a skip or stop condition between requests. Let's say you would like to skip "Purchase" Request if the preceding "Get Price" Request response returns a price above the current budget. This could be accomplished by extracting the price to a parameter and setting the Purchase Request skip condition to ${budget &lt;= price}.
 
 ![Setting up a skip condition](../../.gitbook/assets/price_budget.png)
 
