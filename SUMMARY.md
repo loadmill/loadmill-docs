@@ -14,7 +14,7 @@
     * [Test Flow editor](api-testing/test-suite-editor/test-flow-editor.md)
     * [Request editor](api-testing/test-suite-editor/request-editor.md)
     * [Parameters](api-testing/test-suite-editor/parameters.md)
-    * [Functions](api-testing/test-suite-editor/functions.md)
+    * [FUNCTIONS](api-testing/test-suite-editor/functions.md)
     * [Extractions - Set Parameters](api-testing/test-suite-editor/set-parameters-extractions.md)
     * [Assertions - Verify Response](api-testing/test-suite-editor/assertions.md)
     * [Global Login flow and authentication headers](api-testing/test-suite-editor/global-login-flow.md)

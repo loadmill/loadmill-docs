@@ -79,3 +79,5 @@ See agent/s running within the **Private Agents** tab in Loadmill:
 
 ![The Private Agents section](../.gitbook/assets/screen-shot-2020-11-24-at-15.25.07.png)
 
+You can also use the Loadmill agent docker wrapper, find more information [here](https://hub.docker.com/r/loadmill/agent).
+
