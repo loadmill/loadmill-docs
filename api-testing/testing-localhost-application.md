@@ -2,7 +2,7 @@
 description: Running API and Load tests locally or on your servers.
 ---
 
-# Loadmill Agent
+# 🕵🏻‍♂️ Loadmill Agent
 
 Testing your local environment before publishing the changes helps identifying bugs earlier and speeds up development cycle.
 
