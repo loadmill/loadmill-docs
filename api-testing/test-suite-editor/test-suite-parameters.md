@@ -14,7 +14,15 @@ By default, Test Suite parameters have the **Single Flow Run** execution scope. 
 
 ![](../../.gitbook/assets/screen-shot-2021-03-16-at-13.35.09.png)
 
-Look at the example below to better understand what the execution scope means. Let's say, I have a test flow where I test creating and editing a blog post. I've extracted ID of the post that has been created and now I want to use it in the following requests. This is a classic example of a self-contained test and It will work regardless of the execution scope selected. But in case I would like to use the post ID parameter in another flow of the Test Suite I should choose the "Entire Test Suite Run" scope.
+Look at the example below to better understand what the execution scope means.
+
+Let's say, I have a test flow where I test creating and editing a blog post. I've extracted ID of the post that has been created and now I want to use it in the following requests. This is a classic example of a self-contained test and It will work regardless of the execution scope selected. But in case I would like to use the post ID parameter in another flow of the Test Suite I should choose the "Entire Test Suite Run" scope.
+
+### Support
+
+We are always here if you need any help! Click on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).  
+
+
 
 
 
