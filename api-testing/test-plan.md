@@ -15,7 +15,7 @@ Let's create and run your first Test Plan together:
 1. Navigate to the Test Plans tab and click on the "NEW TEST PLAN" button.
 2. Let's look at the Test Plan editor page.
 
-![](../.gitbook/assets/screenshot-2021-02-17t134240.689.png)
+![](../.gitbook/assets/screenshot-2021-03-17t105226.732.png)
 
    3. Click on "MANAGE SUITES" to add Test Suites to the Test Plan. You can select all Test Suites or specific ones by clicking "SELECT SUITES MANUALLY". Once the Test Suites are selected, click "Save".
 
@@ -32,9 +32,9 @@ Let's create and run your first Test Plan together:
 
 ![](../.gitbook/assets/ezgif.com-gif-maker-21-.gif)
 
-You can set Test Suites to run in parallel within RUN SETTINGS. Thus you will be able to significantly save running time.
+You can set Test Suites to run in parallel within RUN SETTINGS. Thus you will be able to significantly save running time. In addition, you can configure the Test Plan e-mail notifications there. 
 
-![](../.gitbook/assets/screenshot-2021-02-18t115223.772.png)
+![](../.gitbook/assets/screenshot-2021-03-17t105720.390.png)
 
 To integrate Test Plans into your Continuous Delivery pipeline, you need to use our npm module. See an example of how to launch a Test Plan below:
 
