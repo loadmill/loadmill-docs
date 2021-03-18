@@ -1,4 +1,4 @@
-# Collaboration
+# 🤝  Collaboration
 
 We understand how crucial collaboration is for our customers. Loadmill allows distributed teams, located all over the world, to be in constant sync with each other through several features.
 

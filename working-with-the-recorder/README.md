@@ -1,4 +1,4 @@
-# 🎥Recordings
+# 🎥  Recordings
 
 Loadmill users can easily record real user sessions as Loadmill test flows, then integrate the flows into their Continuous Delivery pipeline and run them per each code-change. 
 
