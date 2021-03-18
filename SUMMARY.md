@@ -51,7 +51,7 @@
     * [CI integration](integrations/github-integration/ci-integration.md)
     * [Data sync connection to GitHub](integrations/github-integration/data-sync-connection-to-github.md)
   * [Integrations FAQs](integrations/integrations-faqs-1.md)
-* [Settings](account-settings/README.md)
+* [⚙️  Settings](account-settings/README.md)
   * [Billing](account-settings/billing/README.md)
     * [Usage report](account-settings/billing/usage-report.md)
 * [Import & Export](import-and-export.md)

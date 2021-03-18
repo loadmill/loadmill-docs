@@ -2,7 +2,7 @@
 description: Control numerous options through the Settings page.
 ---
 
-# Settings
+# ⚙️  Settings
 
 You may find the Settings page by clicking on the user's Avatar on the top right corner of the page:
 
