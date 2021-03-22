@@ -9,7 +9,7 @@ Loadmill provides a service that allows users to execute various queries directl
 To execute a query:
 
 1. Go to a relevant test flow within a Test Suite.
-2. Select "POST" as request Method, put URL - [https://db-relay-service.loadmill.com/api/postgres](https://db-relay-service.loadmill.com/api/postgres)
+2. Select "POST" as request Method, put URL - `https://db-relay-service.loadmill.com/api/postgres`
 3. Choose "application/json" as Content-type.
 4. Put the request body with the following structure:
 
@@ -30,7 +30,7 @@ By running the request, you will get a response in JSON format.
 
 Execute queries directly to MongoDB:
 
-[https://db-relay-service.loadmill.com/api/mongo](https://db-relay-service.loadmill.com/api/mongo)
+`https://db-relay-service.loadmill.com/api/mongo`
 
 ```text
 body: {
@@ -45,7 +45,7 @@ body: {
 
 Execute queries directly to Redis:
 
-[https://db-relay-service.loadmill.com/api/redis](https://db-relay-service.loadmill.com/api/redis)
+`https://db-relay-service.loadmill.com/api/redis`
 
 ```text
 body: {
