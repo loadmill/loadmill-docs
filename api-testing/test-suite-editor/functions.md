@@ -484,11 +484,12 @@ Returns a random string of up to `length` \(but no more than 10\) decimal digits
 
 ## Time Functions
 
-### `__now()`
+### `__now([length=10])`
 
-Returns the current time \(of evaluation\) given as UTC milliseconds. Alias: `_now_ms`.
+Returns the current time \(of evaluation\) given as UTC milliseconds  of `length` digits. Alias: `_now_ms`.
 
 * `${__now()} // returns 1604422320167`
+* `${__now('5')} // returns 16044`
 * `${'Yo'} ${__now()} // returns 'Yo 1604422320167'`
 
 ### `__now_iso([addedMinutes=0])`
