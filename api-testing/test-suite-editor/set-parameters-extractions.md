@@ -44,7 +44,7 @@ Use this extractor to extract values from any of the response headers.
 
 ![](../../.gitbook/assets/screen-shot-2021-03-10-at-16.10.35.png)
 
-### Suggestions
+## Suggestions
 
 In many cases Loadmill users are using the same extractions and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). We've implemented the Suggestions feature that allows team admins to configure a repository of extractions and assertions within Settings - Suggestions. Then, all users can add the extractions from the repository by clicking on **+ SUGGESTIONS**.
 
@@ -54,11 +54,11 @@ By default, there are a few common extraction and assertion examples in the repo
 
 ![](../../.gitbook/assets/screenshot-2021-03-10t163055.050.png)
 
-### Autocomplete
+## Autocomplete
 
 {% hint style="info" %}
 🧙♂ Use the autocomplete option to see a list of existing parameters. To see it, press Shift + Cmd \(Ctrl for Windows\) + Space. See how it works below.
 {% endhint %}
 
-![The Autocomplete option](../../.gitbook/assets/ezgif.com-gif-maker-5-.gif)
+![The Autocomplete feature](../../.gitbook/assets/ezgif.com-gif-maker-5-.gif)
 
