@@ -22,7 +22,7 @@
     * [API Tests - Data from CSV files](api-testing/test-suite-editor/api-tests-data-from-csv-files.md)
   * [Running a Test Suite](api-testing/analyzing-an-api-test-results.md)
   * [Test Plan](api-testing/test-plan.md)
-  * [🕵🏻 Loadmill Agent](api-testing/testing-localhost-application.md)
+  * [🕵🏻  Loadmill Agent](api-testing/testing-localhost-application.md)
   * [Loadmill DB relay service](api-testing/loadmill-db-relay-service.md)
   * [API Testing FAQs](api-testing/api-testing-faqs.md)
 * [Load Testing](load-testing/README.md)
