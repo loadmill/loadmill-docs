@@ -2,11 +2,11 @@
 
 API Test flow is a series of API calls \(HTTP requests\) that represent **a single "user" flow we would like to test**. These requests will be executed sequentially until completion or until the first failure.
 
-![Test Flow editor section](../../.gitbook/assets/testsute_flow.png)
+![](../../.gitbook/assets/screenshot-2021-04-01t151932.863.png)
 
 ## The Test Flow toolbar
 
-![](../../.gitbook/assets/the_test_flow_toolbar.png)
+![](../../.gitbook/assets/screen-shot-2021-04-01-at-15.22.55.png)
 
 | Option | Description |
 | :--- | :--- |
