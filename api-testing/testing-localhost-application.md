@@ -75,9 +75,15 @@ stop();
 
 That's it! 🎉 From now on, tests you are running in Loadmill will run locally or on your server \(depends on where you configured them to be run\) as long as our Loadmill Agent is running. 
 
+You can also use the Loadmill agent docker wrapper, find more information [here](https://hub.docker.com/r/loadmill/agent).
+
 See agent/s running within the **Private Agents** tab in Loadmill:
 
 ![The Private Agents section](../.gitbook/assets/screen-shot-2020-11-24-at-15.25.07.png)
 
-You can also use the Loadmill agent docker wrapper, find more information [here](https://hub.docker.com/r/loadmill/agent).
+#### Working with insecure certificates
+
+In case you are testing a system that uses https but has a self-signed or invalid SSL certificate, you need to set env var - `NODE_TLS_REJECT_UNAUTHORIZED=0`  at the beginning of the start command to run your tests via the Loadmill Agent. **IMPORTANT:** The Loadmill agent won’t be able to verify that it is talking to the right website in this case.
+
+
 
