@@ -33,11 +33,11 @@ The response handling section includes 3 cards: **Extractions - Set Parameters, 
 * To assign a static value or [**apply a function on another parameter**](https://docs.loadmill.com/api-testing/test-suite-editor/functions) using the "Assign" option.
 * To add an extraction from [the Suggestions repository](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions#suggestions). Team admins configure the repository within Settings - Suggestions.
 
-![](../../.gitbook/assets/screenshot-2021-03-10t114346.226.png)
+![](../../.gitbook/assets/screenshot-2021-04-01t152837.231.png)
 
 The **Assertions - Verify Response** card allows you to validate the request response, find more information [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/assertions). 
 
-![](../../.gitbook/assets/screenshot-2021-03-10t114556.848.png)
+![](../../.gitbook/assets/screenshot-2021-04-01t153010.585.png)
 
 The **Loops** card allows to repeat the request until the parameter's value will meet the requirement or number of iteration reached:
 
