@@ -10,7 +10,11 @@ In general such errors occur in case your network is unstable and the web socket
 
 ## It seems like I can't paste requests within a flow...
 
-It means that you haven’t given permission to the browser to copy and paste text and images to the clipboard. Just click on an icon next to the URL to enable it. In case you are using Chrome, you may also go to Settings - look for "Clipboard' and allow Loadmill to use it.   
+It means that you haven’t given permission to the browser to copy and paste text and images to the clipboard. Just click on the icon next to the URL to enable it. 
+
+![](.gitbook/assets/screen-shot-2021-04-04-at-17.11.32.png)
+
+In case you are using Chrome, you may also go to Settings - look for "Clipboard' and allow Loadmill to use it.   
 
 
 
