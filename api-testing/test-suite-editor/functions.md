@@ -484,7 +484,7 @@ Returns a random string of up to `length` \(but no more than 10\) decimal digits
 
 ## Time Functions
 
-### `__now([length=10])`
+### `__now([length=13])`
 
 Returns the current time \(of evaluation\) given as UTC milliseconds  of `length` digits. Alias: `_now_ms`.
 
