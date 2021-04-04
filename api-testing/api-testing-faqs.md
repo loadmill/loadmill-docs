@@ -4,7 +4,7 @@
 
 **I'm testing entity creation where entity Name should be unique. Can I assign a set of random letters to it?**
 
-Sure, you can use the `__random_letters([length=10])` function for that:
+Sure, create a parameter with using the `__random_letters([length=10])` function for that:
 
 ![](../.gitbook/assets/screenshot-2021-04-01t155426.154.png)
 
