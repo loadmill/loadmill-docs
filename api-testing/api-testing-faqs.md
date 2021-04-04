@@ -10,11 +10,16 @@ Sure, create a parameter with using the `__random_letters([length=10])` function
 
 Find more great functions on [this page](https://docs.loadmill.com/api-testing/test-suite-editor/functions#randomization-functions) and more information about default parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters). 
 
-**I’m getting id of my resource and I want to make sure it is in the format of UUID. How can I do that?**
+**I’m getting ID of my resource and I want to make sure it is in the format of UUID. How can I do that?**
 
-You can easily do that by creating a new parameter that contains the extracted id and assigning to it value - [${\_\_is\_uuid\(extracted\_id\)}](https://docs.loadmill.com/api-testing/test-suite-editor/functions#__is_uuid-target). Then you can create an assertion that checks that the parameter exists. See an example below:
+You can easily achieve that:
 
-![extracted parameter](../.gitbook/assets/extracted_id.png)
+1. Extract the ID into a parameter by using JSONPath.
+2. Create another parameter by using the extracted ID and [function `__random_uuid()`](https://docs.loadmill.com/api-testing/test-suite-editor/functions#__random_uuid). The output would be "true" if the ID is in the format of UUID. Else, it would be "false".
+
+![](../.gitbook/assets/extracted_id.png)
+
+   3. Now, assert the second parameter you've created earlier.
 
 ![assertion for the extracted parameter](../.gitbook/assets/assertion_extracted_id.png)
 
