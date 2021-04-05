@@ -49,11 +49,14 @@ The start command accepts the following options:
 * `--token` - \(REQUIRED\) can be retrieved [through the UI](https://docs.loadmill.com/integrations/api-tokens).
 * `--loads-capacity` - \(default = 50\). Optionally you can supply the number of users this agent can simulate. It can be 0 in order not to run load tests.
 * `--no-api` - can be supplied in order to run [Load tests](https://docs.loadmill.com/load-testing/getting-started) only, [API tests](https://docs.loadmill.com/api-testing/getting-started) will run on Loadmill servers.
+* `--pool` - can be supplied in order to set the agent pool.
 * `--config` - alternatively, you can supply a path to a yaml file that will contain all the options above.
 
 **Extended Example**
 
 `loadmill-agent start -t INSERT_TOKEN_HERE --no-api --loads-capacity 80`
+
+`loadmill-agent start -t INSERT_TOKEN_HERE --pool myPoolID`
 
 `loadmill-agent start --config /path/to/config.yml`
 
