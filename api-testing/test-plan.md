@@ -15,28 +15,28 @@ Let's create and run your first Test Plan together:
 1. Navigate to the Test Plans tab and click on the "NEW TEST PLAN" button.
 2. Let's look at the Test Plan editor page.
 
-![](../.gitbook/assets/screenshot-2021-03-17t105226.732.png)
+![](../.gitbook/assets/screenshot-2021-04-05t111620.613.png)
 
-   3. Click on "MANAGE SUITES" to add Test Suites to the Test Plan. You can select all Test Suites or specific ones by clicking "SELECT SUITES MANUALLY". Once the Test Suites are selected, click "Save".
+   3. Click on "MANAGE SUITES" to add Test Suites to the Test Plan. You can pick specific Test Suites or all ones by clicking "ALL SUITES". Once the Test Suites are selected, click "CLOSE".
 
 {% hint style="warning" %}
-🧠 Make sure the Test Suites you would like to run within the Test Plan have test flows with CI toggle on. Otherwise, the Test Suites will be shown as grayed out and won't run. 
+🧠 Make sure the Test Suites you would like to run within the Test Plan have test flows with CI toggle on. Otherwise, the Test Suites will be grayed out and won't run. 
 {% endhint %}
 
-![The Manage Test Suites modal](../.gitbook/assets/screenshot-86-.png)
+![](../.gitbook/assets/screenshot-2021-04-05t112455.593.png)
 
  4. Now you have two options:
 
 * Run the Test Plan by clicking “RUN TEST PLAN”  
 * Use the "RUN BY LABELS" option to select relevant labels and then click “RUN TEST PLAN” so that only Test Suites whose test flows have specific labels will run.
 
-![](../.gitbook/assets/ezgif.com-gif-maker-21-.gif)
+![](../.gitbook/assets/ezgif.com-gif-maker-26-.gif)
 
-You can set Test Suites to run in parallel within RUN SETTINGS. Thus you will be able to significantly save running time. In addition, you can configure the Test Plan e-mail notifications there. 
+The Test Plan navigation panel allows you to configure Test Suites to run in parallel so that you will be able to significantly save running time. In addition, you can configure the Test Plan e-mail notifications there. 
 
-![](../.gitbook/assets/screenshot-2021-03-17t105720.390.png)
+![](../.gitbook/assets/screenshot-2021-04-05t114200.664.png)
 
-To integrate Test Plans into your Continuous Delivery pipeline, you need to use our npm module. See an example of how to launch a Test Plan below:
+To integrate Test Plans into your Continuous Delivery pipeline, use our npm module. See an example of how to launch a Test Plan below:
 
 ```text
 loadmill --test-plan <test-plan-id> -w -v -t <token> --report --colors
@@ -50,5 +50,5 @@ After running the Test Plan, you will be redirected to the Test Plan Run page. T
 
 ![](../.gitbook/assets/screenshot-2021-03-10t095854.448.png)
 
-You can easily re-run the Test Plan by clicking **RE-RUN** or **Run only Failed Suites**. 
+You can easily re-run Test Plan by clicking **RE-RUN** or **Run only Failed Suites**. 
 
