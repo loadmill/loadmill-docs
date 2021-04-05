@@ -36,7 +36,7 @@ There are two ways to do that:
 4. Create a Test Suite in Loadmill that will hold recorded flows, and select it in the extension. 
 5. Clear the captured requests list and navigate to the tested website. 
 6. Use the filter and the request's delete buttons to filter out irrelevant requests. You can also see the request and response body by clicking on the expanding arrow within requests.
-7. When you are done recording your session click the "Upload" button at the bottom.
+7. When you are done recording your session, click the "Upload" button at the bottom.
 8. Go to Loadmill and open the recorded test in your Test Suite.
 9. Run the Test Suite by pressing the "RUN SUITE" button and see your results. 🥳 Visit [this page](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) to learn more about the Loadmill Chrome recorder extension. 
 
