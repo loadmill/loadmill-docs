@@ -18,7 +18,7 @@ Loadmill provides two main options to record real user sessions: **Loadmill Chro
 
    4. Click on the "Clear" button within the extension to clear the captured requests list and navigate to the tested website. 
 
-   5. Start recording your test. There are several filtering options: you can delete irrelevant requests by clicking on the "Delete" icon or remove irrelevant domains by clicking on the "Add to filter" icon. Thus all future recordings won't include requests from these domains.
+   5. Start recording your test. There are several filtering options: you can filter irrelevant domains by clicking on the "Add to filter" icon. That will automatically remove the domain requests and won't include them in future recordings. You can also delete single requests by clicking on the "Delete" icon.
 
 ![Filtering options](../.gitbook/assets/screen-shot-2021-02-25-at-11.48.38.png)
 
