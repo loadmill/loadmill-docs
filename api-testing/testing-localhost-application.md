@@ -82,7 +82,7 @@ You can also use the Loadmill agent docker wrapper, find more information [here]
 
 See agent/s running within the **Private Agents** tab in Loadmill:
 
-![The Private Agents section](../.gitbook/assets/screen-shot-2020-11-24-at-15.25.07.png)
+![The Private Agents tab](../.gitbook/assets/screenshot-2021-04-05t145804.644.png)
 
 #### Working with insecure certificates
 
