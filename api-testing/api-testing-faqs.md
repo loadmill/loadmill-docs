@@ -1,8 +1,6 @@
 # API Testing FAQs
 
-### **Functions**
-
-**I'm testing entity creation where entity Name should be unique. Can I assign a set of random letters to it?**
+### **I'm testing entity creation where entity Name should be unique. Can I assign a set of random letters to it?**
 
 Sure, create a parameter with using the `__random_letters([length=10])` function for that:
 
@@ -10,7 +8,7 @@ Sure, create a parameter with using the `__random_letters([length=10])` function
 
 Find more great functions on [this page](https://docs.loadmill.com/api-testing/test-suite-editor/functions#randomization-functions) and more information about default parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters). 
 
-**I'm getting ID of my resource and I want to make sure it is in the format of UUID. How can I do that?**
+### **I'm getting ID of my resource and I want to make sure it is in the format of UUID. How can I do that?**
 
 You can easily achieve that:
 
