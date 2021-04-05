@@ -8,9 +8,9 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Load_testing):
 
 ## How can I get more credit to run tests?
 
-Soon we will add a self-service payment system for billing and buying credit. Until then, if you need more credit to evaluate or use the product we can probably give you some. 
+You can get more credit by upgrading your subscription plan within **Settings - Billing - Change Plan**.
 
-Please contact support by clicking on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).
+In case, you are looking for a custom plan or having other questions, please contact support by clicking on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).
 
 ## How to report bugs?
 
