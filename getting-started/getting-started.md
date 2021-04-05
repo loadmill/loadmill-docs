@@ -56,16 +56,16 @@ Note: API test may include **200 requests maximum**.
 {% endhint %}
 
 1. Go to the API Tests tab.
-2. Click the "NEW TEST SUITE" button, give it a name. ****
+2. Click **NEW TEST SUITE**, give it a name. ****
 3. You can notice that there is one [Test flow](https://docs.loadmill.com/core-definitions) already created in it and you just need to fill it out. The first request will be to get our login page, enter its name, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/signin/`  
 
 ![Load login page request](../.gitbook/assets/login_get_1.png)
 
-4. Click the "ADD REQUEST" button. This will be an authentication request that will dynamically extract an access token and will allow user to log in to the app by using his username and password. Find more information about dynamic parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters). 
+4. Click **ADD REQUEST**. This will be an authentication request that will dynamically extract an access token and will allow user to log in to the app by using his username and password. Find more information about dynamic parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters). 
 
-5. Enter name - "Authentication request - extract token using JSONPath from the response", select "POST" as Method, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token`    
+5. Enter name - **Authentication request - extract token using JSONPath from the response**, select "POST" as Method, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token`    
 
-6. Press "Advanced". This is a place where we set different [parameters](https://docs.loadmill.com/api-testing/test-suite-editor/parameters) taken from the response. Content type will be `application/x-www-form-urlencoded`  , body - `grant_type=password&username=${username}&password=${password}&client_id=ghost-admin&client_secret=${client_secret}`              
+6. Press **Advanced**. This is a place where we set the request body, headers, [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). Enter Content type - `application/x-www-form-urlencoded`  , body - `grant_type=password&username=${username}&password=${password}&client_id=ghost-admin&client_secret=${client_secret}`              
 
 ![](../.gitbook/assets/params_set_2.png)
 
@@ -79,7 +79,7 @@ Note: API test may include **200 requests maximum**.
 🧙♂ You can set this test flow [**as Login Flow**](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) so that it will run before each flow within the Test Suite. To do that, click on three dots within the test flow \(next to the run icon\) and press "Set As Login Flow".
 {% endhint %}
 
- 🎉 This is only the beginning, continue exploring the guide to master your **Loadmill skills**!
+ 🎉 This is only the beginning, continue exploring our guides to master your **Loadmill skills**!
 
 ### Support
 
