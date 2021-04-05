@@ -86,7 +86,7 @@ See agent/s running within the **Private Agents** tab in Loadmill:
 
 #### Working with insecure certificates
 
-In case you are testing a system that uses https but has a self-signed or invalid SSL certificate, you need to set env var - `NODE_TLS_REJECT_UNAUTHORIZED=0`  at the beginning of the start command to run your tests via the Loadmill Agent. **IMPORTANT:** The Loadmill agent won’t be able to verify that it is talking to the right website in this case.
+In case you are testing a system that uses https but has a self-signed or invalid SSL certificate, you need to set env var - `NODE_TLS_REJECT_UNAUTHORIZED=0`  at the beginning of the start command to run your tests via the Loadmill Agent. It should look like this: `NODE_TLS_REJECT_UNAUTHORIZED=0 loadmill-agent start -t INSERT_TOKEN_HERE` **IMPORTANT:** The Loadmill agent won’t be able to verify that it is talking to the right website in this case.
 
 
 
