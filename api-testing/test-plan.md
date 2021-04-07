@@ -36,8 +36,8 @@ Let's create and run your first Test Plan together:
 
 The panel allows:
 
-1. To configure Test Plan parameters values so that they will be assigned to all the Test Suites using the parameters.
-2. To set Test Suites to run in parallel \(up to 12\) so that you will be able to significantly save running time.
+1. To configure Test Plan parameters values so that the Test Plan run will include these values in all the Test Suites using the parameters.
+2. To set Test Suites to run in parallel \(up to 12\) hence you will be able to significantly save running time.
 
 ![Test Plan Run Settings](../.gitbook/assets/screenshot-2021-04-07t162822.272.png)
 
