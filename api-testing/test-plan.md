@@ -32,9 +32,18 @@ Let's create and run your first Test Plan together:
 
 ![](../.gitbook/assets/ezgif.com-gif-maker-26-.gif)
 
-The Test Plan navigation panel allows you to configure Test Suites to run in parallel so that you will be able to significantly save running time. In addition, you can configure the Test Plan e-mail notifications there. 
+### The Test Plan navigation panel 
 
-![](../.gitbook/assets/screenshot-2021-04-05t114200.664.png)
+The panel allows:
+
+1. To configure Test Plan parameters values so that they will be assigned to all the Test Suites using the parameters.
+2. To set Test Suites to run in parallel \(up to 12\) so that you will be able to significantly save running time.
+
+![Test Plan Run Settings](../.gitbook/assets/screenshot-2021-04-07t162822.272.png)
+
+    3. To configure the Test Plan e-mail notifications so that you will get one email with all the Test Suites' information.
+
+![](../.gitbook/assets/screenshot-2021-04-07t163156.840.png)
 
 To integrate Test Plans into your Continuous Delivery pipeline, use our npm module. See an example of how to launch a Test Plan below:
 
