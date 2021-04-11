@@ -26,7 +26,7 @@ Use this setting to manage important Special Keys located in your POST requests 
 
 ### Entities Synonyms
 
-Entities Synonyms help us to detect same entities with different names like a 'Jet' and an 'Airplane'.
+Entities Synonyms help us detect same entities with different names like a 'Jet' and an 'Airplane'.
 
 Here you can add and manage entities synonyms. This way, we can make sure they won’t be missed during the recording processing phase. Synonyms must be entered in a list and separated by commas. i.e. Plane, Aircraft, Jet.
 
@@ -55,4 +55,16 @@ Regex replacers will be used to identify any strings that match the regex and ex
 ### Strict Response Validation
 
 When enabled, this option will add JSON Schema assertion to every recorded 'application/json' response.
+
+### Automatic extractions and assertions
+
+Configure which JSON keys should be extracted into parameters and which assertions should be created for them. For example, I've recorded a test flow that includes the "total\_score" JSON key and it should be equal to 100 at the beginning of the test flow, so I can add an automatic extraction and assertion for it:
+
+![Setting automatic extraction &amp; assertion](../.gitbook/assets/screen-shot-2021-04-11-at-17.46.00.png)
+
+Thus, when uploading the recording, Loadmill will automatically create the extraction and assertion in the test flow.
+
+![The automatic extraction and assertion in the test flow](../.gitbook/assets/screenshot-2021-04-11t174906.956.png)
+
+
 
