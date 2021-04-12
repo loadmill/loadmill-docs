@@ -270,12 +270,19 @@ Counts the number of elements in `target` array.
 
 ### `__array_matches(target,regex)`
 
-Returns a boolean string of whether all the elements in the target array matches the given regex.
+Returns a boolean string of whether all the elements in the target array match the given regex.
 
 * `${__array_matches(array,'.*a.*')} // returns true, assuming array is ["apple","banana","orange"]`
 * `${__array_matches(array,'.*Z.*')} // returns false, assuming array is ["apple","banana","orange"]`
 
-### `__array_includes(src,target)`
+### `__array_in_range(target,[min=0,max=2^32])`
+
+Returns a boolean string of whether all the elements in the target array match the given range.
+
+* `${__array_in_range(array,'0','100')} // returns true, assuming array is ["100","99","1"]`
+* `${__array_in_range(array,'0','100')} // returns true, assuming array is [100,99,1]`
+
+### **`__array_includes(src,target)`**
 
 Returns a boolean string of whether each element in the target array is also in the src array
 
