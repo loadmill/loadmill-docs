@@ -284,18 +284,25 @@ Returns a boolean string of whether all the elements in the target array match t
 
 ### **`__array_includes(src,target)`**
 
-Returns a boolean string of whether each element in the target array is also in the src array
+Returns a boolean string of whether each element in the target array is also in the src array.
 
 * `${__array_includes(srcArray,targetArray)} // returns true, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana"]`
 * `${__array_includes(srcArray,targetArray)} // returns false, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana","lemon"]`
 
 ### `__array_sum(target)`
 
-Returns the sum of all the elements in the target array 
+Returns the sum of all the elements in the target array.
 
 * `${__array_sum(targetArray)} // returns 401, assuming targetArray is ["400","0","1"]`
 * `${__array_sum(targetArray)} // returns 188, assuming targetArray is [100,80,8]`
 * `${__array_sum(targetArray)} // returns NaN, assuming targetArray is [100,"some-word",8]`
+
+### `__array_pluck(target,'key1','key2','key3:newKeyName',['key4',[...]])`
+
+Returns an array of objects with specified JSON keys with an option to rename JSON keys.
+
+* `${__array_pluck(array,'author','book')} // returns [{"author":"Bulgakov","book":"The Master and Margarita"},{"author":"Bulgakov","book":"The Fatal Eggs"}], assuming array is [{"author":"Bulgakov","book":"The Master and Margarita","year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","year":"1925"}]`
+* `${__array_pluck(array,'author','book','year:publishment_year')} // returns [{"author":"Bulgakov","book":"The Master and Margarita","publishment_year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","publishment_year":"1925"}], assuming array is [{"author":"Bulgakov","book":"The Master and Margarita","year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","year":"1925"}]`
 
 ### `__escape_regexp(target)`
 
