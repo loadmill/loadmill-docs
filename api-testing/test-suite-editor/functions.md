@@ -396,6 +396,12 @@ Returns the keys of the extracted value from `target` queried by `jsonpath` in a
 * `${__jsonpath_keys('{"key1":"val1"}','$')}// returns ["key1"]`
 * `${__jsonpath_keys(target,jsonpath)} // returns ["key1","key2"] assuming target is {"data": {"key1":"val1","key2":"val2"}} and jsonpath is '$.data'`
 
+### `__jsonpath_apply(target,jsonpath,new_value)`
+
+Returns an object or an array of objects with the updated key value as set in `new_value` on specific key as set in `jsonpath`.
+
+* `${__jsonpath_apply(target,jsonpath,'USD')} // returns '[{"country":"Japan","currency":"USD"},{"country":"China","currency":"Yuan"}]' assuming target is '[{"country":"Japan","currency":"Yen"},{"country":"China","currency":"Yuan"}]', jsonpath is '$[0].currency'`
+
 ### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
 
 Extracts a value from `target` using `jquery` as a jQuery selector.
