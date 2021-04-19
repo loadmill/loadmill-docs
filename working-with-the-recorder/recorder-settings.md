@@ -1,9 +1,11 @@
-# Recordings settings
+# Recording settings
 
-Use the advanced Recordings settings to create meaningful replay-able tests that are easy to configure. Team Admins can control these settings [on this page](https://www.loadmill.com/app/user/settings/recordings). 
+Use the advanced Recording Settings to create meaningful replay-able tests that are easy to configure. Team Admins can control these settings [on this page](https://www.loadmill.com/app/user/settings/recordings). 
+
+![](../.gitbook/assets/screenshot-2021-04-19t121902.035.png)
 
 {% hint style="info" %}
-👇 You can configure the settings below for our [recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-node-recorder) & [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension). 
+👇 These are recording rules you can add & configure for our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) & [recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-node-recorder).
 {% endhint %}
 
 ### Split sessions by URLs \(for the Recorder use only\)
@@ -54,7 +56,7 @@ Regex replacers will be used to identify any strings that match the regex and ex
 
 ### Strict Response Validation
 
-When enabled, this option will add JSON Schema assertion to every recorded 'application/json' response.
+When enabled, this option will add JSON Schema assertion to every recorded JSON response.
 
 ### Automatic extractions and assertions
 

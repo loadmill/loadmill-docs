@@ -36,7 +36,7 @@
 * [🎥  Recordings](working-with-the-recorder/README.md)
   * [Setup](working-with-the-recorder/setting-up-the-recorder.md)
   * [How to work with Recordings](working-with-the-recorder/working-with-the-recorder.md)
-  * [Recordings settings](working-with-the-recorder/recorder-settings.md)
+  * [Recording settings](working-with-the-recorder/recorder-settings.md)
   * [Additional recording methods](working-with-the-recorder/additional-recording-methods.md)
 * [🤝  Collaboration](collaboration/README.md)
   * [Teams](collaboration/teams.md)
