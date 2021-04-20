@@ -299,7 +299,7 @@ Returns the sum of all the elements in the target array.
 
 ### `__array_pluck(target,'key1','key2','key3:newKeyName',['key4',[...]])`
 
-Returns an array of objects with specified JSON keys with an option to rename JSON keys.
+Returns an array of objects with specified JSON keys with an option to rename JSON keys. Returns an empty array in case the target array is undefined.
 
 * `${__array_pluck(array,'author','book')} // returns [{"author":"Bulgakov","book":"The Master and Margarita"},{"author":"Bulgakov","book":"The Fatal Eggs"}], assuming array is [{"author":"Bulgakov","book":"The Master and Margarita","year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","year":"1925"}]`
 * `${__array_pluck(array,'author','book','year:publishment_year')} // returns [{"author":"Bulgakov","book":"The Master and Margarita","publishment_year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","publishment_year":"1925"}], assuming array is [{"author":"Bulgakov","book":"The Master and Margarita","year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","year":"1925"}]`
