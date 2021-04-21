@@ -14,8 +14,10 @@ The easiest way **to integrate your API tests into your CI/CD pipeline is by usi
 4. Initiate execution of the Test Plan by running command: 
 
    ```text
-   loadmill  <test-plan-id> --test-plan -w -v -t <token> --report --colors --labels "label1,label2"
+   loadmill  <test-plan-id> --test-plan -w -v -t <token> --report --colors 
    ```
 
-        Other supported options can be found [here](https://www.npmjs.com/package/loadmill). 
+        Take the test-plan-id parameter from its URL going after /api-tests/test-plans/. 
+
+Other supported options can be found [here](https://www.npmjs.com/package/loadmill). 
 
