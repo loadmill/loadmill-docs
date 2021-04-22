@@ -22,11 +22,13 @@ To sync your Test Suite data with your GitHub repository, follow the steps below
 
 ![The Sync to Git button](../../.gitbook/assets/screenshot-2021-03-03t132730.064.png)
 
-  2. Enter an initial ****commit message and click **COMMIT** to sync the Test Suite data. 
+  2. Choose or create a branch where you would like to sync the Test Suite data to. Then, enter an initial ****commit message and click **COMMIT** to sync the Test Suite data. 
 
-![Entering a commit message in Loadmill](../../.gitbook/assets/screen-shot-2021-03-04-at-12.08.36.png)
+![](../../.gitbook/assets/screen-shot-2021-04-22-at-16.16.01.png)
 
-**What happens next?** Loadmill creates the **loadmill-sync** branch and the **loadmill-suites** folder in the repository. ****In addition, a new file with the Test Suite data is created in the **loadmill-suites** folder. Its name matches the Test Suite ID. 
+\*\*\*\*
+
+**What happens next?** Loadmill creates the **loadmill-suites** folder in the branch you have selected/created. ****In addition, a new file with the Test Suite data is created in the **loadmill-suites** folder. Its name matches the Test Suite ID. 
 
 Easily navigate to the commit by clicking on **GO TO COMMIT** at the bottom left corner of the screen.
 
@@ -34,11 +36,11 @@ Easily navigate to the commit by clicking on **GO TO COMMIT** at the bottom left
 
 The commit message in GitHub includes your Loadmill username and the commit message you entered in Loadmill. 
 
-![Test Suite data file in GitHub](../../.gitbook/assets/screenshot-2021-03-04t121904.550.png)
+![](../../.gitbook/assets/screenshot-2021-04-22t162124.802.png)
 
 **Another great thing about this feature** is that, over time, you can always track changes made to Test Suites. Just remember to enter commit messages to sync the Test Suite changes to GitHub.
 
-![Showing changes made to the Test Suite ](../../.gitbook/assets/screenshot-2021-03-03t140700.969.png)
+![](../../.gitbook/assets/screenshot-2021-04-22t162420.410.png)
 
 To reset the integration, click on **DISCONNECT** within Settings - Integrations - Setup data sync connection to Github.
 
