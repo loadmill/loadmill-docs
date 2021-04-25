@@ -58,7 +58,11 @@ body: {
 }
 ```
 
-### DB relay service static IPs:
+## DB relay service static IPs:
 
 Sometimes, executing queries to your env DB may require VPN. You can easily avoid this by whitelisting the DB relay service static IPs: \[52.42.51.230, 54.190.108.53\] in your firewall.
+
+## Docker image:
+
+You can also use a docker image for DB relay service to deploy it in a specific environment of yours, find more information [here](https://hub.docker.com/r/loadmill/db-relay-service).
 
