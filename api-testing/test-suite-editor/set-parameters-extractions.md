@@ -16,9 +16,15 @@ Use this to assign any combination of existing parameter or response values to a
 
 Use this extractor to extract values from JSON responses. JSONPath is a query language for JSON objects, much like XPath for XMLs.
 
-You can test your JSONPath expressions using this useful online tool - [link](https://jsonpath.com/) and see some great examples on this page - [link](https://goessner.net/articles/JsonPath/index.html#e2).
-
 ![](../../.gitbook/assets/screen-shot-2021-03-10-at-11.53.21.png)
+
+You can easily find a relevant JSON Path expression by using our JSON Path Finder feature. To use it, just run your test flow, go to the Response body section, click on JSONPATH and copy the JSON Path expression you need.
+
+![](../../.gitbook/assets/screenshot-2021-04-27t100829.297.png)
+
+![Copying a JSON Path expression from the finder](../../.gitbook/assets/screenshot-2021-04-27t101046.687.png)
+
+Also see helpful JSON Path expressions [here](https://goessner.net/articles/JsonPath/index.html#e2). 
 
 ### Clojure
 
