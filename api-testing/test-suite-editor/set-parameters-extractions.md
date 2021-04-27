@@ -24,7 +24,7 @@ You can easily find a relevant JSON Path expression by using our JSON Path Finde
 
 ![Copying a JSON Path expression from the finder](../../.gitbook/assets/screenshot-2021-04-27t101046.687.png)
 
-Also see helpful JSON Path expressions [here](https://goessner.net/articles/JsonPath/index.html#e2). 
+Also find helpful JSON Path expressions [here](https://goessner.net/articles/JsonPath/index.html#e2). 
 
 ### Clojure
 
