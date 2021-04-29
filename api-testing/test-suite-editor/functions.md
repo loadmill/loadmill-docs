@@ -84,7 +84,7 @@ Logical OR \(same as the `|` operator\), applied to any number of arguments.
 
 ### `__not(p1)`
 
-Logical NOT. See also [True Semantics](parameters.md#true-semantics).
+Logical NOT. See also [True Semantics](parameters/#true-semantics).
 
 * `${__not('false')} // returns true`
 * `${__not('true')} // returns false`
@@ -192,7 +192,7 @@ Same as `__contains` but case-insensitive.
 
 ### `__if_then_else(condition,then,else)`
 
-Returns `then` if `condition` is [semantically true](parameters.md#true-semantics), otherwise returns `else`.
+Returns `then` if `condition` is [semantically true](parameters/#true-semantics), otherwise returns `else`.
 
 * `${__if_then_else(p1,'good','bad')} // returns 'good', assuming p1 is true or has a value`
 * `${__if_then_else(p1,'good','bad')} // returns 'bad', assuming p1 is false or  ''`
@@ -261,49 +261,6 @@ Counts the number of characters in `target`.
 * `${__length('loadmill')} // returns 8`
 * `${__length('')} // returns 0`
 
-### `__array_length(target)`
-
-Counts the number of elements in `target` array.
-
-* `${__array_length('[]')} // returns 0`
-* `${__array_length(p1)} // returns 4, assuming p1 is [1,"str",true,null]`
-
-### `__array_matches(target,regex)`
-
-Returns a boolean string of whether all the elements in the target array match the given regex.
-
-* `${__array_matches(array,'.*a.*')} // returns true, assuming array is ["apple","banana","orange"]`
-* `${__array_matches(array,'.*Z.*')} // returns false, assuming array is ["apple","banana","orange"]`
-
-### `__array_in_range(target,[min=0,max=2^32])`
-
-Returns a boolean string of whether all the elements in the target array match the given range.
-
-* `${__array_in_range(array,'0','100')} // returns true, assuming array is ["100","99","1"]`
-* `${__array_in_range(array,'0','100')} // returns true, assuming array is [100,99,1]`
-
-### **`__array_includes(src,target)`**
-
-Returns a boolean string of whether each element in the target array is also in the src array.
-
-* `${__array_includes(srcArray,targetArray)} // returns true, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana"]`
-* `${__array_includes(srcArray,targetArray)} // returns false, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana","lemon"]`
-
-### `__array_sum(target)`
-
-Returns the sum of all the elements in the target array.
-
-* `${__array_sum(targetArray)} // returns 401, assuming targetArray is ["400","0","1"]`
-* `${__array_sum(targetArray)} // returns 188, assuming targetArray is [100,80,8]`
-* `${__array_sum(targetArray)} // returns NaN, assuming targetArray is [100,"some-word",8]`
-
-### `__array_pluck(target,'key1','key2','key3:newKeyName',['key4',[...]])`
-
-Returns an array of objects with specified JSON keys with an option to rename JSON keys. Returns an empty array in case the target array is undefined.
-
-* `${__array_pluck(array,'author','book')} // returns [{"author":"Bulgakov","book":"The Master and Margarita"},{"author":"Bulgakov","book":"The Fatal Eggs"}], assuming array is [{"author":"Bulgakov","book":"The Master and Margarita","year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","year":"1925"}]`
-* `${__array_pluck(array,'author','book','year:publishment_year')} // returns [{"author":"Bulgakov","book":"The Master and Margarita","publishment_year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","publishment_year":"1925"}], assuming array is [{"author":"Bulgakov","book":"The Master and Margarita","year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","year":"1925"}]`
-
 ### `__escape_regexp(target)`
 
 Returns the value of `target` after escaping special RegExp characters.
@@ -358,9 +315,66 @@ Returns a sub-string of `target` which starts at `begin` index \(inclusive\) and
 * `${__slice('Loadmill',p1,p2)} // returns 'mill', assuming p1 is 4 and p2 is 8`
 * `${__slice(p1,'0','2')} // returns 'Lo', assuming p1 is Loadmill`
 
+## Array functions
+
+### `__array_length(target)`
+
+Counts the number of elements in `target` array.
+
+* `${__array_length('[]')} // returns 0`
+* `${__array_length(p1)} // returns 4, assuming p1 is [1,"str",true,null]`
+
+### `__array_matches(target,regex)`
+
+Returns a boolean string of whether all the elements in the target array match the given regex.
+
+* `${__array_matches(array,'.*a.*')} // returns true, assuming array is ["apple","banana","orange"]`
+* `${__array_matches(array,'.*Z.*')} // returns false, assuming array is ["apple","banana","orange"]`
+
+### `__array_in_range(target,[min=0,max=2^32])`
+
+Returns a boolean string of whether all the elements in the target array match the given range.
+
+* `${__array_in_range(array,'0','100')} // returns true, assuming array is ["100","99","1"]`
+* `${__array_in_range(array,'0','100')} // returns true, assuming array is [100,99,1]`
+
+### **`__array_includes(src,target)`**
+
+Returns a boolean string of whether each element in the target array is also in the src array.
+
+* `${__array_includes(srcArray,targetArray)} // returns true, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana"]`
+* `${__array_includes(srcArray,targetArray)} // returns false, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana","lemon"]`
+
+### `__array_sum(target)`
+
+Returns the sum of all the elements in the target array.
+
+* `${__array_sum(targetArray)} // returns 401, assuming targetArray is ["400","0","1"]`
+* `${__array_sum(targetArray)} // returns 188, assuming targetArray is [100,80,8]`
+* `${__array_sum(targetArray)} // returns NaN, assuming targetArray is [100,"some-word",8]`
+
+### `__array_sort(target)`
+
+Returns the sorted array in the ascending order.
+
+* `${__array_sort(targetArray) // returns ["apple","banana","orange"], assuming targetArray is ["banana","apple","orange"]`
+
+### `__array_sort_numbers(target)`
+
+Returns the sorted array of numbers in the ascending order.
+
+* `${__array_sort_numbers(targetArray) // returns [2,19,34,55,90,109,136,156,188,190], assuming targetArray is [109, 136, 156, 188, 19, 190, 2, 34, 55, 90]`
+
+### `__array_pluck(target,'key1','key2','key3:newKeyName',['key4',[...]])`
+
+Returns an array of objects with specified JSON keys with an option to rename JSON keys. Returns an empty array in case the target array is undefined.
+
+* `${__array_pluck(array,'author','book')} // returns [{"author":"Bulgakov","book":"The Master and Margarita"},{"author":"Bulgakov","book":"The Fatal Eggs"}], assuming array is [{"author":"Bulgakov","book":"The Master and Margarita","year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","year":"1925"}]`
+* `${__array_pluck(array,'author','book','year:publishment_year')} // returns [{"author":"Bulgakov","book":"The Master and Margarita","publishment_year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","publishment_year":"1925"}], assuming array is [{"author":"Bulgakov","book":"The Master and Margarita","year":"1967"},{"author":"Bulgakov","book":"The Fatal Eggs","year":"1925"}]`
+
 ## **Extraction Functions**
 
-See also [Parameter Extractions](parameters.md#parameter-extraction).
+See also [Parameter Extractions](parameters/#parameter-extraction).
 
 ### `__regexp(target,regexp,[default])`
 
