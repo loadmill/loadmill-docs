@@ -14,11 +14,11 @@ The "base\_url" parameter is used to store URLs and choose them depending on whi
 
 ![](../../../.gitbook/assets/screenshot-2021-04-27t150218.403.png)
 
-    2. **Test Plan parameter value** - once the user has a few Test Suites, he groups them into a higher level called [Test Plan](https://docs.loadmill.com/api-testing/test-plan) per a specific task or feature they belong to. Then, the user can configure **the "base\_url" parameter value that will be sent to all Test Suites of the Test Plan during the Test Plan run. This value will override the value from the Test Suite Parameters tab**. 
+    2. **Test Plan parameter value** - once the user has a few Test Suites, he groups them into a higher level called [Test Plan](https://docs.loadmill.com/api-testing/test-plan) per a specific task or feature they belong to. Then, the user can configure **the "base\_url" parameter value that will be sent to all Test Suites during the Test Plan run. This value will override the value from the Test Suite Parameters tab \(if there is any\)**. 
 
 ![](../../../.gitbook/assets/screenshot-2021-04-27t163511.594.png)
 
-    3. **npm module parameter value** - when running tests in CI/CD, the user initiates their execution by using [our npm module](https://www.npmjs.com/package/loadmill) hence he can add a relevant "base\_url" parameter value to the command and **this value will be taken for the run and override parameter values set in \#2 and \#1 above \(if there is any\).**
+    3. **npm module parameter value** - when running tests in CI/CD, the user initiates their execution by using [our npm module](https://www.npmjs.com/package/loadmill) hence he can add a relevant "base\_url" parameter value to the command and **this value will be taken for the run and override the parameter value set in \#2 and \#1 above \(if there is any\).**
 
 ```text
 loadmill  <test-plan-id> --test-plan -w -v -t <token> --report base_url=your_current_url
@@ -28,9 +28,9 @@ loadmill  <test-plan-id> --test-plan -w -v -t <token> --report base_url=your_cur
 
 ![](../../../.gitbook/assets/screen-shot-2021-04-27-at-15.24.26.png)
 
-**The value from the CSV file will be taken during the test run and override the parameter value from sections above.**
+**The value from the CSV file will be taken during the test run and override the parameter value from sections above \(if there is any\).**
 
-     5. **Extraction parameter value** - when the user extracts value into a parameter within the request [Extractions - Set parameters](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) section, **this value will override all sections above during the test run**. 
+     5. **Extraction parameter value** - when the user extracts value into a parameter within the request's [Extractions - Set parameters](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) section, **this value will override the parameter value from all sections above during the test run**. 
 
      
 
