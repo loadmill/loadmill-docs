@@ -62,7 +62,7 @@ When enabled, this option will add JSON Schema assertion to every recorded JSON 
 
 Configure which JSON keys should be extracted into parameters and which assertions should be created for them. For example, I've recorded a test flow that includes the "total\_score" JSON key and it should be equal to 100 at the beginning of the test flow, so I can add an automatic extraction and assertion for it:
 
-![Setting automatic extraction &amp; assertion](../.gitbook/assets/screen-shot-2021-04-11-at-17.46.00.png)
+![](../.gitbook/assets/screen-shot-2021-05-05-at-16.26.27.png)
 
 Thus, when uploading the recording, Loadmill will automatically create the extraction and assertion in the test flow.
 
