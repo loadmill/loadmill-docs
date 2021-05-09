@@ -42,13 +42,15 @@ Optional automatic JSON Schema assertion: you can enable [this assertion](https:
 
 ## Suggestions
 
-In many cases Loadmill users are using the same extractions and assertions. We've implemented the Suggestions feature that allows team admins to configure a repository of extractions and assertions within Settings - Suggestions. Then, all users can add the assertions from the repository by clicking on **+ SUGGESTIONS**.
+In many cases Loadmill users use the same or similar extractions and assertions. We've implemented the Suggestions feature that allows team admins to configure a repository of [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and assertions within **Settings - Suggestions**. 
+
+Then, each user can add the assertions from the repository by clicking on **+ SUGGESTIONS**.
 
 ![](../../.gitbook/assets/screenshot-2021-03-10t164707.818.png)
 
 By default, there are a few common extraction and assertion examples in the repository. Team admins can also navigate to the Suggestions Settings directly from within the suggestion dialog window.
 
-![](../../.gitbook/assets/screenshot-2021-03-10t174142.662.png)
+![](../../.gitbook/assets/screen-shot-2021-05-09-at-15.40.18.png)
 
 ## Caveats
 
