@@ -365,6 +365,13 @@ Returns the sorted array of numbers in the ascending order.
 
 * `${__array_sort_numbers(targetArray) // returns [2,19,34,55,90,109,136,156,188,190], assuming targetArray is [109, 136, 156, 188, 19, 190, 2, 34, 55, 90]`
 
+### `__array_is_unique(target)`
+
+Returns a boolean string of whether all elements in the array are unique.
+
+* `${__array_is_unique(targetArray) // returns true, assuming targetArray is ["cat","dog","bird"]`
+* `${__array_is_unique(targetArray) // returns false, assuming targetArray is ["cat","cat","dog"]`
+
 ### `__array_pluck(target,'key1','key2','key3:newKeyName',['key4',[...]])`
 
 Returns an array of objects with specified JSON keys with an option to rename JSON keys. Returns an empty array in case the target array is undefined.
