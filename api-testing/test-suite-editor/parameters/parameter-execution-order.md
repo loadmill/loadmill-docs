@@ -1,4 +1,4 @@
-# Parameter Execution Order
+# Parameter Order of Execution
 
 When using parameters in Loadmill tests, it is important to understand their hierarchy. To figure it out, let's look at a basic example below:
 
