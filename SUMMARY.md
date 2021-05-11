@@ -26,6 +26,7 @@
   * [🕵🏻  Loadmill Agent](api-testing/testing-localhost-application.md)
   * [Loadmill DB relay service](api-testing/loadmill-db-relay-service.md)
   * [API Testing FAQs](api-testing/api-testing-faqs.md)
+  * [API Testing troubleshooting](api-testing/api-testing-troubleshooting.md)
 * [Load Testing](load-testing/README.md)
   * [Load Test Editor](load-testing/working-with-the-test-editor/README.md)
     * [Quick Parameter Editing](load-testing/working-with-the-test-editor/quick-parameter-editing.md)
