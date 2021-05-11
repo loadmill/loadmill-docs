@@ -10,14 +10,16 @@ The Loadmill's API testing module allows users to easily create automated API te
 
 In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
 
-1. Create and run a very simple API test by using our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder).
-2. Create and run an API test from scratch in Loadmill \(that is super easy and takes a few minutes\).
+1. Create and run a simple API test by using our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder).
+2. Create and run an API test from scratch in Loadmill. 
 
 ## **Before you start**
 
-**Signup to Loadmill** at this [link](https://www.loadmill.com/app/signup). If you need a demo application for testing you can use [this one](https://loadmill-test-blog.herokuapp.com). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account. ****
+**Signup to Loadmill** at this [link](https://www.loadmill.com/app/signup). If you need a demo application for testing you can use [this one](https://loadmill-test-blog.herokuapp.com). 
 
-In order to use Loadmill effectively, we highly recommend to read [Core definitions](https://docs.loadmill.com/core-definitions), don't worry, it is only a 2 min read. 😉 
+We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account. ****
+
+In order to use Loadmill effectively, we highly recommend to read [Core definitions](https://docs.loadmill.com/core-definitions). Don't worry, it is only a 2 min read. 😉 
 
 ## Let's create and run your first API test together. 
 
@@ -50,9 +52,7 @@ There are two ways to do that:
 ### Creating and running an API test from scratch in Loadmill:
 
 {% hint style="info" %}
-🧙♂ Let's create an API test that validates user login to our [demo app](https://loadmill-test-blog.herokuapp.com/). 
-
-Note: API test may include **200 requests maximum**.
+🧙♂ Let's create an API test that validates user login to our [demo testing app](https://loadmill-test-blog.herokuapp.com/). API test may include **200 requests maximum**.
 {% endhint %}
 
 1. Go to the API Tests tab.
@@ -61,15 +61,15 @@ Note: API test may include **200 requests maximum**.
 
 ![Load login page request](../.gitbook/assets/login_get_1.png)
 
-4. Click **ADD REQUEST**. This will be an authentication request that will dynamically extract an access token and will allow user to log in to the app by using his username and password. Find more information about dynamic parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters). 
+4. Click **ADD REQUEST**. This will be an authentication request that will dynamically extract an access token and will allow the user to log in to the app by using his username and password. Find more information about dynamic parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters). 
 
-5. Enter name - **Authentication request - extract token using JSONPath from the response**, select "POST" as Method, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token`    
+5. Enter request name - **Authentication request - extract token using JSONPath from the response**, select "POST" as Method, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token`    
 
 6. Press **Advanced**. This is a place where we set the request body, headers, [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). Enter Content type - `application/x-www-form-urlencoded`  , body - `grant_type=password&username=${username}&password=${password}&client_id=ghost-admin&client_secret=${client_secret}`              
 
 ![](../.gitbook/assets/params_set_2.png)
 
-7. The warning you've got means that the parameters we set in the body as **username, password, client\_secret** are not defined yet. In order to define them, go to [the Parameters tab](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters) and add them as shown below:
+7. The warning you've got means that the parameters we set in the body as **username, password, client\_secret** are not defined yet. Go to [the Parameters tab](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters) and add them as shown below:
 
 ![The Test Suite Parameters](../.gitbook/assets/test_suite_params.png)
 
