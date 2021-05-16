@@ -14,7 +14,7 @@ The way this problem is solved is by using **domain verification**, a simple pro
 If you have access to your site's **DNS configuration**, you can [prove ownership without changing code on your server](domain-verification.md#dns-verification).
 
 {% hint style="warning" %}
-🧠 **Note:** There is no need to prove ownership of a sub-domain once its parent is verified. For example, if you have already completed the verification process for `myapp.com` you can load-test `www.myapp.com` or `blog.myapp.com` as well.
+🧠 **Note:** There is no need to prove ownership of a sub-domain once its parent is verified. For instance, if you have already completed the verification process for `myapp.com` you may load-test `www.myapp.com` or `blog.myapp.com` as well.
 {% endhint %}
 
 ## Express Middleware
