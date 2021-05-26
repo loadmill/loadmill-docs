@@ -62,7 +62,7 @@ Test suite has launched successfully.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.loadmill/com" path="/api/v1/test-suites-runs/:id" %}
+{% api-method method="get" host="https://www.loadmill.com" path="/api/v1/test-suites-runs/:id" %}
 {% api-method-summary %}
 Get Test Suite Run \(Test Suite results\)
 {% endapi-method-summary %}
@@ -173,7 +173,7 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="https://www.loadmill/com" path="/api/v1/test-suites-runs/:id" %}
+{% api-method method="put" host="https://www.loadmill.com" path="/api/v1/test-suites-runs/:id" %}
 {% api-method-summary %}
 Stop Test Suite Run
 {% endapi-method-summary %}
