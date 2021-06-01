@@ -38,5 +38,5 @@ Note: when using the extracted `${link}`parameter as the base URL for the follow
 
 ### Suggested workflow
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2848%29.png)
 
