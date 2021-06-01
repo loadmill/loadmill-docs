@@ -57,7 +57,7 @@
 * [⚙️  Settings](account-settings/README.md)
   * [Billing](account-settings/billing/README.md)
     * [Usage report](account-settings/billing/usage-report.md)
-* [Import & Export](import-and-export.md)
+* [🧳 Import & Export](import-and-export.md)
 * [General FAQs](faq.md)
 * [General troubleshooting](general-troubleshooting.md)
 
