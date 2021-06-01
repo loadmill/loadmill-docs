@@ -1,4 +1,4 @@
-# Integrations
+# 🔌 Integrations
 
 After you have built your first few meaningful tests, it's a good idea to integrate them into your Continuous Delivery pipeline and start shipping faster. 
 

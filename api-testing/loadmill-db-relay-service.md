@@ -1,4 +1,4 @@
-# Loadmill DB relay service
+# 🗄 Loadmill DB relay service
 
 Loadmill provides a service that allows users to execute various queries directly to their DB in order to validate data.
 
