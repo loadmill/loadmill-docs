@@ -33,7 +33,7 @@ Use the jQuery extractor to extract values from the email content. This extracto
 ![](../.gitbook/assets/image%20%2842%29.png)
 
 {% hint style="info" %}
-Note: when using the extracted `${link}`parameter as the base URL for the following request, give it a default value in the parameters section, for cases that no valid URL will be extracted from the email.
+Note: when using the extracted `${link}`parameter as the base URL for the following request, give it a default value in the parameters section, in case that no valid URL will be extracted from the email.
 {% endhint %}
 
 ### Suggested workflow
