@@ -25,6 +25,7 @@
   * [Test Plan](api-testing/test-plan.md)
   * [🕵🏻  Loadmill Agent](api-testing/testing-localhost-application.md)
   * [Loadmill DB relay service](api-testing/loadmill-db-relay-service.md)
+  * [✉️ Automated Email Testing](api-testing/testing-emails.md)
   * [API Testing FAQs](api-testing/api-testing-faqs.md)
   * [API Testing troubleshooting](api-testing/api-testing-troubleshooting.md)
 * [Load Testing](load-testing/README.md)
