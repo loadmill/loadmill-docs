@@ -20,6 +20,7 @@
     * [Assertions - Verify Response](api-testing/test-suite-editor/assertions.md)
     * [Global Login flow and authentication headers](api-testing/test-suite-editor/global-login-flow.md)
     * [Test Suite Parameters](api-testing/test-suite-editor/test-suite-parameters.md)
+    * [Before & After Hooks](api-testing/test-suite-editor/before-and-after-hooks.md)
     * [API Tests - Data from CSV files](api-testing/test-suite-editor/api-tests-data-from-csv-files.md)
   * [Running a Test Suite](api-testing/analyzing-an-api-test-results.md)
   * [Test Plan](api-testing/test-plan.md)
