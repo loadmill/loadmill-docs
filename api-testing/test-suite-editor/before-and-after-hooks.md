@@ -4,7 +4,7 @@ description: Configure tests to run before and after each/all Test Suite flows.
 
 # Before & After Hooks
 
-Often while writing tests, you have some setup work that needs to happen before tests run, and you have some teardown work that needs to happen after tests run. From now on, you can do that and even more by using our before & after hooks.
+Often while writing tests, you have some setup work that needs to happen before tests run, and you have some teardown work that needs to happen after tests run. From now on, you can do it and even more by using our before & after hooks.
 
 There are **4 optional hook types** that can be configured:
 
@@ -33,11 +33,11 @@ On this page, you can create before & after hooks from scratch or use pre-define
 
 In our case, we will create the "Before All" flow that will include requests to create a new user. Then, we will use our well-known [Login tab](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) to create a login flow. The "Before Each" flow will include a request to get the user data. After that, our test flow/s run and eventually, we delete the created user within the "After All" flow. Let's run the test flow and see results.
 
-![](../../.gitbook/assets/screenshot-2021-06-07t142513.907.png)
+![](../../.gitbook/assets/screenshot-2021-06-08t114153.914.png)
 
 If we enter the test flow itself, we will see our Login and Before Each flows as well.
 
-![](../../.gitbook/assets/screenshot-2021-06-07t142651.250.png)
+![](../../.gitbook/assets/screenshot-2021-06-08t114412.807.png)
 
 
 
