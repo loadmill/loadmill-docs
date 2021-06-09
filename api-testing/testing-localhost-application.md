@@ -10,7 +10,7 @@ Testing your local environment before publishing the changes helps identifying b
 
 I want to test my app locally but getting a warning when trying to create a request:
 
-![API test flow that should run locally](../.gitbook/assets/screenshot-23-.png)
+![](../.gitbook/assets/screen-shot-2021-06-09-at-15.39.14.png)
 
 When you try to reach localhost on your browser,  you are actually trying to connect to your local computer’s ip address, 127.0.0.1. This local IP address is the same for every computer. 
 
