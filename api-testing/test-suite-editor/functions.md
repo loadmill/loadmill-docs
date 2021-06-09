@@ -421,7 +421,7 @@ Returns the keys of the extracted value from `target` queried by `jsonpath` in a
 
 Returns an object or an array of objects with the updated key value as set in `new_value` on specific key as set in `jsonpath`.
 
-* `${__jsonpath_apply(target,jsonpath,'USD')} // returns '[{"country":"Japan","currency":"USD"},{"country":"China","currency":"Yuan"}]' assuming target is '[{"country":"Japan","currency":"Yen"},{"country":"China","currency":"Yuan"}]', jsonpath is '$[0].currency'`
+* `${__jsonpath_apply(target,jsonpath,'USD')} // returns '[{"country":"Japan","currency":"USD"},{"country":"China","currency":"Yuan"}]' assuming target is '[{"country":"Japan","currency":"Yen"},{"country":"China","currency":"Yuan"}]', jsonpath is '$[0].currency' and new_value is 'USD'.`
 
 ### `__jquery(target,jquery,[selection=0,[attribute,[default]]])`
 
