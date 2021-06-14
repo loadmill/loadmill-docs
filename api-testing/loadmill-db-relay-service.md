@@ -15,8 +15,8 @@ To execute a query:
 
 ```text
 body: {
-  connectionString: 'postgres://...',
-  query: 'SELECT NOW()'
+  "connectionString": "postgres://...",
+  "query": "SELECT * FROM USERS"
 }
 ```
 
@@ -24,7 +24,7 @@ See a request example below:
 
 ![](../.gitbook/assets/screen-shot-2021-02-25-at-16.17.02.png)
 
-By running the request, you will get a response in JSON format. 
+By running the request, you will get a response in JSON format and be able to operate the data.
 
 ### MongoDB
 
