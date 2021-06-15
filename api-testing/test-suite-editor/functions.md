@@ -408,7 +408,7 @@ Extracts a value from `target` using `jsonpath` as a JSONPath query. If there is
 
 ### `__jsonpath_all(target,jsonpath,[default])`
 
-The same as `__jsonpath` only that when using filtering \(i.e. @\) in the JSONPath all of the results will returned and not just the first one \(as in `__jsonpath`\)
+Similar to `__jsonpath` but returns **all results from the JSONPath** and not only the first one as happens when using `__jsonpath.`
 
 ### `__jsonpath_keys(target,jsonpath,[default])`
 
