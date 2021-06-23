@@ -7,10 +7,10 @@ Loadmill provides two main options to record real user sessions: **Loadmill Chro
 ## Loadmill Chrome recorder extension
 
 1. Download the extension [here](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
-2. Go to API Tests in Loadmill and create a [Test Suite](https://docs.loadmill.com/api-testing/test-suite-editor) that will hold recorded test flows.
-3. Navigate to the testing app =&gt; open the Chrome Developer Tools =&gt; switch to the **Loadmill Rec** tab and select name of the created Test Suite in the extension. 
+2. Go to [API Tests](https://www.loadmill.com/app/api-tests/test-suites) in Loadmill and create a Test Suite.
+3. Open the Chrome Developer Tools =&gt; switch to the **Loadmill Rec** tab and select name of the created Test Suite in the extension. 
 
-![The Test Suite fields within the extension](../.gitbook/assets/screen-shot-2021-06-23-at-15.40.55.png)
+![The Test Suite field within the extension](../.gitbook/assets/screen-shot-2021-06-23-at-15.40.55.png)
 
 {% hint style="warning" %}
 🧠 If you are not logged in to Loadmill, you will be prompted to the login page. Please note that sometimes other installed extensions like Adblock may cause issues, thus we recommend switching them off while recording.
@@ -37,7 +37,7 @@ Note, you can also configure URL Filters within [the Recordings Settings](https:
 2. Specific assertions - for any parameter with given user key \(for example, "success"\) we extract it and assign to it an assertion \(example: "success" equals "true"\).
 {% endhint %}
 
-     9. Run the Test Suite by pressing the "RUN SUITE" button and see [your results](https://docs.loadmill.com/api-testing/analyzing-an-api-test-results). 
+     9. Run the Test Suite by pressing the "RUN SUITE" button and see [your results](https://docs.loadmill.com/api-testing/analyzing-an-api-test-results). 🥳
 
 ## Loadmill node recorder 
 
