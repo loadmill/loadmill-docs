@@ -7,10 +7,10 @@ Loadmill provides two main options to record real user sessions: **Loadmill Chro
 ## Loadmill Chrome recorder extension
 
 1. Download the extension [here](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
-2. Navigate to API Tests in Loadmill and create a [Test Suite](https://docs.loadmill.com/api-testing/test-suite-editor) that will hold recorded test flows.
-3. Open the Chrome Developer Tools, switch to the Loadmill Rec tab and select name of the created Test Suite in the extension. 
+2. Go to API Tests in Loadmill and create a [Test Suite](https://docs.loadmill.com/api-testing/test-suite-editor) that will hold recorded test flows.
+3. Navigate to the testing app =&gt; open the Chrome Developer Tools =&gt; switch to the **Loadmill Rec** tab and select name of the created Test Suite in the extension. 
 
-![The Test Suite field  ](../.gitbook/assets/screen-shot-2021-02-25-at-11.43.56.png)
+![The Test Suite fields within the extension](../.gitbook/assets/screen-shot-2021-06-23-at-15.40.55.png)
 
 {% hint style="warning" %}
 🧠 If you are not logged in to Loadmill, you will be prompted to the login page. Please note that sometimes other installed extensions like Adblock may cause issues, thus we recommend switching them off while recording.
@@ -20,7 +20,7 @@ Loadmill provides two main options to record real user sessions: **Loadmill Chro
 
    5. Start recording your test. There are several filtering options: you can filter irrelevant domains by clicking on the "Add to filter" icon. That will automatically remove the domain requests and won't include them in future recordings. You can also delete single requests by clicking on the "Delete" icon.
 
-![Filtering options](../.gitbook/assets/screen-shot-2021-02-25-at-11.48.38.png)
+![](../.gitbook/assets/screen-shot-2021-06-23-at-15.44.00.png)
 
 Note, you can also configure URL Filters within [the Recordings Settings](https://docs.loadmill.com/working-with-the-recorder/recorder-settings#url-filters) so that the entire team will have the same filters. 
 
