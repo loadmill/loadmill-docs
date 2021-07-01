@@ -42,7 +42,7 @@ The commit message in GitHub includes your Loadmill username and the commit mess
 
 
 
-Moreover, **you can always revert the Test Suite data to any commit you wish**. Just select it within the Branch history section and click **CHECKOUT**.
+Moreover, **you can always revert the Test Suite data to the state of any commit you wish**. Just select it within the Branch history section and click **CHECKOUT**.
 
 ![](../../.gitbook/assets/screenshot-2021-07-01t114156.102.png)
 
