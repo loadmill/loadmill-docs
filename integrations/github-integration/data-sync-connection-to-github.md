@@ -1,6 +1,6 @@
 # Data sync connection to GitHub
 
-## Data sync connection to GitHub
+## Data sync connection GitHub
 
 Loadmill provides the ability to store the Test Suite data in your GitHub repository so you always have a backup when needed. In addition, the data sync connection to GitHub enables you to always track changes made to Test Suites.
 
@@ -42,7 +42,7 @@ The commit message in GitHub includes your Loadmill username and the commit mess
 
 
 
-Moreover, you can always revert the Test Suite data to any commit you wish. Just select it within the Branch history section and click **CHECKOUT**.
+Moreover, **you can always revert the Test Suite data to any commit you wish**. Just select it within the Branch history section and click **CHECKOUT**.
 
 ![](../../.gitbook/assets/screenshot-2021-07-01t114156.102.png)
 
