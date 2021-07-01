@@ -18,15 +18,13 @@ Loadmill provides the ability to store the Test Suite data in your GitHub reposi
 
 To sync your Test Suite data with your GitHub repository, follow the steps below:
 
-1. Navigate to a relevant Test Suite and click on the **SYNC TO GIT** button. 
+1. Navigate to a relevant Test Suite and click on the **Github sync** tab. 
 
-![The Sync to Git button](../../.gitbook/assets/screenshot-2021-03-03t132730.064.png)
+![](../../.gitbook/assets/screenshot-2021-07-01t105219.234.png)
 
   2. Choose or create a branch where you would like to sync the Test Suite data to. Then, enter an initial ****commit message and click **COMMIT** to sync the Test Suite data. 
 
-![](../../.gitbook/assets/screen-shot-2021-04-22-at-16.16.01.png)
-
-\*\*\*\*
+![](../../.gitbook/assets/screen-shot-2021-07-01-at-11.27.37.png)
 
 **What happens next?** Loadmill creates the **loadmill-suites** folder in the branch you have selected/created. ****In addition, a new file with the Test Suite data is created in the **loadmill-suites** folder. Its name matches the Test Suite ID. 
 
@@ -41,6 +39,12 @@ The commit message in GitHub includes your Loadmill username and the commit mess
 **Another great thing about this feature** is that, over time, you can always track changes made to Test Suites. Just remember to enter commit messages to sync the Test Suite changes to GitHub.
 
 ![](../../.gitbook/assets/screenshot-2021-04-22t162420.410.png)
+
+
+
+Moreover, you can always revert the Test Suite data to any commit you wish. Just select it within the Branch history section and click **CHECKOUT**.
+
+![](../../.gitbook/assets/screenshot-2021-07-01t114156.102.png)
 
 To reset the integration, click on **DISCONNECT** within Settings - Integrations - Setup data sync connection to Github.
 
