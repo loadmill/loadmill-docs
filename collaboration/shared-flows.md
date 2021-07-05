@@ -10,7 +10,7 @@ The common use case for Shared Flows is when you have one or several login test 
 
 * Click on the "+ NEW SHARED FLOW" button if you would like to create a login flow from scratch OR "IMPORT SHARED FLOW" in case you already have it in JSON format.
 * We recommend using the "DRY RUN" option first to test your flow and then Publish it. 
-* Now you can go to the Test Suite where you would like to use it - the Login tab - click "CHANGE LOGIN FLOW SOURCE" and select your shared flow. 
+* Now you can go to the Test Suite where you would like to use it =&gt; the Login tab =&gt; click CHANGE LOGIN FLOW SOURCE and select your shared flow. 
 
 ![](../.gitbook/assets/screenshot-50-.png)
 
