@@ -2,12 +2,6 @@
 
 The **Shared Flows** feature allows users to re-use test flows in different Test Suites. 
 
-{% hint style="info" %}
-This feature can be enabled per request. Just click on the bubble chat button in the lower-right corner of the screen or drop us a line at support@loadmill.com.
-
-Once enabled, team admins can utilize it. 
-{% endhint %}
-
 The common use case for Shared Flows is when you have several login test flows. For example, the email/password login that should be used in some Test Suites and the login via a social media platform that should be used in others. To configure this in Loadmill:
 
 * Navigate to **API TESTS =&gt; Shared Flows**
