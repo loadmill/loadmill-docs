@@ -1,12 +1,12 @@
 # Test Flow editor
 
-API Test flow is a series of API calls \(HTTP requests\) that represent **a single "user" flow we would like to test**. These requests will be executed sequentially until completion or until the first failure.
+API Test flow is a series of API calls \(HTTP requests\) that represent **a single "user" flow you would like to test**. These requests will be executed sequentially until completion or until the first failure.
 
-![](../../.gitbook/assets/screenshot-2021-04-01t151932.863.png)
+![](../../.gitbook/assets/screenshot-2021-07-05t104211.315.png)
 
 ## The Test Flow toolbar
 
-![](../../.gitbook/assets/screen-shot-2021-04-01-at-15.22.55.png)
+![](../../.gitbook/assets/screenshot-2021-07-05t104625.174.png)
 
 | Option | Description |
 | :--- | :--- |
@@ -14,7 +14,7 @@ API Test flow is a series of API calls \(HTTP requests\) that represent **a sing
 | Import CSV                | Easily re-run your test flows by using different parameters values by uploading a [CSV file](https://docs.loadmill.com/api-testing/test-suite-editor/api-tests-data-from-csv-files) containing a list of the values. |
 | Login toggle | Toggle this switch to enable the flow to use [the Global Login](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) settings. |
 | CI toggle            | Toggle this switch to enable the flow to run when executed from your continuous integration pipeline. You can use [our npm module](https://docs.loadmill.com/integrations/npm-modal) to execute a Test Suite to test every build in CI. |
-| AutoSave                                             \( ![](../../.gitbook/assets/screen-shot-2020-11-26-at-14.20.04.png)\) | Auto saves the test flow unless its configuration is invalid. |
+| AutoSave                         ![](../../.gitbook/assets/screen-shot-2020-11-26-at-14.20.04.png) | Auto saves the test flow unless its configuration is invalid. |
 | Export Flow | Save the flow to a `.JSON` file. You can then import the flow into another test suite or as a load test. |
 | Duplicate Flow | Create a copy of the original flow within the Test Suite. |
 | Delete Flow | Delete the flow. |
@@ -33,9 +33,9 @@ Add new requests to a flow. Once added you can drag a request to change its orde
 
 Easily convert an API flow to Load test by clicking on the Flow options menu ![](../../.gitbook/assets/screen-shot-2020-02-03-at-12.12.19-pm.png) located on the top right and select "Convert to Load Test". Once you've selected "Convert to Load Test", a new Load test will open containing all the requests and properties taken from the original API test.
 
-![](../../.gitbook/assets/convert_to_load.png)
+![](../../.gitbook/assets/screenshot-2021-07-05t104357.068.png)
 
-![](../../.gitbook/assets/converted_from_api_test.png)
+![](../../.gitbook/assets/screenshot-2021-07-05t104522.112.png)
 
 ### Skip and Stop Condition
 
