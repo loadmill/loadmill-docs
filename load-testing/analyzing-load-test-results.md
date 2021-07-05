@@ -18,5 +18,5 @@ The difference between average, 50th percentile and 95th percentile, also known 
 
 ### Throughput 
 
-This graph represents the number of successful requests per second. As the number of active session increases, the number of attempted requests will go higher. When the number of active sessions is constant for some time, changes in throughput will indicate changes in your applications ability to respond fast to requests.
+This graph represents the number of successful requests per second. As the number of active sessions increases, the number of attempted requests will go higher. When the number of active sessions is constant for some time, changes in throughput will indicate changes in your applications ability to respond fast to requests.
 
