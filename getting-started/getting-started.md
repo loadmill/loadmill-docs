@@ -25,10 +25,10 @@ In order to use Loadmill effectively, we highly recommend to read [Core definiti
 
 There are two ways to do that: 
 
-* Recording an API test by using our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder) and running it in Loadmill.
+* Recording an API test by using our [API Test recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) and running it in Loadmill.
 * Creating and running an API test from scratch in Loadmill. 
 
-### **Creating and running an API test by using our Chrome recorder extension:**
+### **Creating and running an API test by using our API Test recorder:**
 
 {% embed url="https://youtu.be/XhaFuC\_mY8A" caption="Recording and running an API Test " %}
 
@@ -57,7 +57,7 @@ There are two ways to do that:
 
 1. Go to the API Tests tab.
 2. Click **NEW TEST SUITE**, give it a name. ****
-3. You can notice that there is one [Test flow](https://docs.loadmill.com/core-definitions) already created in it and you just need to fill it out. The first request will be to get our login page, enter its name, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/signin/`  
+3. You can notice that there is one test flow already created in it and you just need to fill it out. The first request will be to get our login page, enter its name, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/signin/`  
 
 ![Load login page request](../.gitbook/assets/login_get_1.png)
 
