@@ -26,9 +26,9 @@ When running a test using a CSV file, **a random set of values** will be picked 
 
 The order of parameter value assignment is: 
 
-1. Value as in the "Parameter Defaults" section
+1. Value as in the Parameters tab
 2. Value as they appear in the CSV file
-3. Value as defined in the "Extractions - Set Parameters" section of specific request \(This will override all of the above\)
+3. Value as defined in the "Extractions - Set Parameters" section of a specific request \(This will override all of the above\). Find more information about parameter execution order [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/parameter-execution-order). 
 
 
 
