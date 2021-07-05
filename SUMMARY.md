@@ -14,7 +14,7 @@
     * [Test Flow editor](api-testing/test-suite-editor/test-flow-editor.md)
     * [Request editor](api-testing/test-suite-editor/request-editor.md)
     * [Parameters](api-testing/test-suite-editor/parameters/README.md)
-      * [Parameter Order of Execution](api-testing/test-suite-editor/parameters/parameter-execution-order.md)
+      * [Parameter Execution Order](api-testing/test-suite-editor/parameters/parameter-execution-order.md)
     * [⨍\(⨯\) FUNCTIONS](api-testing/test-suite-editor/functions.md)
     * [Extractions - Set Parameters](api-testing/test-suite-editor/set-parameters-extractions.md)
     * [Assertions - Verify Response](api-testing/test-suite-editor/assertions.md)
