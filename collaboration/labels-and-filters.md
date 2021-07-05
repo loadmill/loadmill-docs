@@ -2,11 +2,11 @@
 
 Labels is a great feature that allows to easily organize tests and then include them in your CI/CD process.
 
-You can add multiple labels to each test flow by clicking "Labels" or select a few test flows and click the labels icon. 
+You can add multiple labels to each test flow by clicking on **Labels** or select a few test flows and click the labels icon. 
 
 ![](../.gitbook/assets/ezgif.com-gif-maker-23-.gif)
 
-When running [the CLI](https://docs.loadmill.com/integrations/npm-modal), you can select to run flows that are assigned to a specific label by using the --labels command line option:
+When running a test suite or test plan via [the CLI](https://docs.loadmill.com/integrations/npm-modal), you can select to run flows that are assigned to a specific label by using the --labels command line option:
 
 ```text
 // Note, you can provide multiple labels separated by commas.
