@@ -15,9 +15,9 @@ Let's create and run your first Test Plan together:
 1. Navigate to the Test Plans tab and click on the "NEW TEST PLAN" button.
 2. Let's look at the Test Plan editor page.
 
-![](../.gitbook/assets/screenshot-2021-04-12t151124.203.png)
+![](../.gitbook/assets/screenshot-2021-07-05t134642.591.png)
 
-   3. Click on "MANAGE SUITES" to add Test Suites to the Test Plan. You can pick specific Test Suites or all ones by clicking "ALL SUITES". Once the Test Suites are selected, click "CLOSE".
+   3. Click on "MANAGE SUITES" to add Test Suites to the Test Plan. You can pick specific Test Suites or all by clicking "ALL SUITES". Once the Test Suites are selected, click "CLOSE".
 
 {% hint style="warning" %}
 🧠 Make sure the Test Suites you would like to run within the Test Plan have test flows with CI toggle on. Otherwise, the Test Suites will be grayed out and won't run. 
