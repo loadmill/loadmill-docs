@@ -6,9 +6,11 @@ Sure, click the arrow next to **Max Concurrent Sessions**, select **Max Requests
 
 ![](../.gitbook/assets/screenshot-2021-04-05t121815.973.png)
 
+### \*\*\*\*
+
 ### **I've got an error message below... what should I do?**
 
 ![Unable to run load test](../.gitbook/assets/image-1-.png)
 
-The message you've got means that you've reached your plan's maximum credit. Please contact your team admin who will be able to buy more credit.
+The message you've got means that you've reached your plan's maximum credit. Please go to **Settings -&gt; Billing -&gt; Change Plan** and upgrade. If you don't have access to the Billing tab, contact your team admin who will be able to buy more credit.
 
