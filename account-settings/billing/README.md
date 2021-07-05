@@ -4,7 +4,7 @@ Team admins can navigate to **Settings =&gt; Billing** to manage the account sub
 
 ![The Billing tab](../../.gitbook/assets/screenshot-70-.png)
 
-Subscription Plan shows your current plan, what your maximum allowed concurrency is and how many test minutes you have used this month. See an example below:
+Subscription Plan shows your current plan, what your maximum allowed concurrency is, how many test minutes you have used this month and how many test flows you've run. See an example below:
 
 ![](../../.gitbook/assets/screen-shot-2021-01-06-at-9.14.07.png)
 
@@ -17,5 +17,5 @@ It shows that:
 🧙♂ API Test Flow Runs: we count only test flow runs that were run as a part of the Test Suite \(via the Run Suite button\) and don’t count single test flow runs with regards to billing.
 {% endhint %}
 
-Keep track of your monthly usage by using [this report](https://docs.loadmill.com/account-settings/billing/usage-report) and if you need more credit, easily upgrade your subscription plan by clicking on **Change Plan**. 
+Keep track of your monthly usage by using [this report](https://docs.loadmill.com/account-settings/billing/usage-report) and if you need more credit, easily upgrade your subscription plan by clicking **Change Plan**. 
 
