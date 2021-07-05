@@ -61,7 +61,7 @@ Before we run a massive load test, we usually want to run just a single iteratio
 
 When we are creating a new test or extending/maintaining an old one, we like to iterate several times - modifying the test and trying it out - until we get the result we want.
 
-To start a trial run, click the **DRY RUN** button at the bottom of the editor. You will be prompted to choose between running **remotely** \(the default\) or **locally**. There are several good reasons you may want to run locally, but for now we leave it on remote.
+To start a trial run, click the **DRY RUN** button at the bottom of the editor. 
 
 ![](../../.gitbook/assets/screenshot-32-.png)
 
@@ -70,8 +70,8 @@ To start a trial run, click the **DRY RUN** button at the bottom of the editor. 
 Now that we know that our test is configured correctly, we can run it at scale. To do that:
 
 1. Click the **RUN TEST** button at the bottom of the test editor.
-2. Set Test Duration \(minutes\) and **Maximum Concurrent Sessions OR Maximum Requests Per Second** you would like this test flow to run.
-3. Click on "Advanced" to set additional parameters. For example, you can set **Ramp-up** **Duration** \(1 minute by default\) hence a number of concurrent sessions will increase linearly during the ramp-up.  
+2. Set Test Duration \(minutes\) and **Maximum Concurrent Sessions** OR **Maximum Requests Per Second** you would like this test flow to run.
+3. Click on **Advanced** to set additional parameters. For example, you can set **Ramp-up** **Duration** \(1 minute by default\) hence a number of concurrent sessions will increase linearly during the ramp-up.  
 4. Click **RUN**.
 
 ![](../../.gitbook/assets/ezgif.com-gif-maker-19-.gif)
@@ -91,7 +91,7 @@ In addition, you can **adjust concurrency** **during a test run**. This is a ver
 Loadmill keeps track of the request **error rate** and fails the test if it passes a certain threshold \(%50 by default\). We can see the response time for each request and are able to drill down and see the error statistics for each one.
 
 {% hint style="info" %}
-🧠 You can easily run your API Test Suites as load tests by clicking on the drop-down icon within the **RUN SUITE** button - **Run as load test**.
+🧠 You can easily run your API Test Suite as load tests by clicking on the drop-down icon within the **RUN SUITE** button - **Run as load test**.
 {% endhint %}
 
 ![Running the Test Suite as load tests ](../../.gitbook/assets/ezgif.com-gif-maker-2-.gif)
