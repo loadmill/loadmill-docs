@@ -51,6 +51,7 @@
   * [API Tokens](integrations/api-tokens.md)
   * [npm Module](integrations/npm-modal.md)
   * [REST API](integrations/rest-api.md)
+  * [Slack integration](integrations/slack-integration.md)
   * [GitHub integration](integrations/github-integration/README.md)
     * [CI integration](integrations/github-integration/ci-integration.md)
     * [Data sync connection to GitHub](integrations/github-integration/data-sync-connection-to-github.md)

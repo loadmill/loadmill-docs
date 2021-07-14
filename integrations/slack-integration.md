@@ -1,0 +1,34 @@
+---
+description: >-
+  Configure real-time notifications to reach any Slack channel/s you wish in
+  just a few clicks.
+---
+
+# Slack integration
+
+Slack has more than 12 million daily active users and 156,000 organizations subscribe to the app so it's essential to get notified about important events via Slack. We introduced our **Loadmill app on Slack** that allows you to configure sending notifications per API Test, Load Test, Test Plan run to a Slack channel/s you wish, see **how to configure the integration** **below**:
+
+1. Navigate to your user avatar in Loadmill =&gt; Settings =&gt; Integrations. Scroll down to Slack and click CONNECT TO SLACK.
+
+![Connect Loadmill to your Slack workspace](../.gitbook/assets/screenshot-2021-07-14t115720.407.png)
+
+     2. Then, you will be redirected to the page where you need to click Allow to give relevant permissions to the Loadmill app.
+
+    3. You are almost set, the only thing is left to do is to choose what notifications you would like to get and in which channel. To do that, go to Notifications \(the tab above Integrations\) =&gt; ADD NOTIFICATION =&gt; Notification type: slack =&gt; choose channel =&gt; select relevant test type and status. 🧠 Tip: the most popular notifications are about Failed Test Plan Runs :\)
+
+![](../.gitbook/assets/screen-shot-2021-07-14-at-12.10.10.png)
+
+That's it, you did it! 🎉 From now on, you won't miss any important event from Loadmill
+
+![Loadmill notification in Slack](../.gitbook/assets/screen-shot-2021-07-14-at-12.16.21.png)
+
+
+
+
+
+
+
+
+
+
+
