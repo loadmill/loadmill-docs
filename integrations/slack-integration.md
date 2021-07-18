@@ -6,7 +6,7 @@ description: >-
 
 # Slack integration
 
-Slack has more than 12 million daily active users and 156,000 organizations subscribe to the app so it's become essential to get notified about important events via Slack. We introduced our **Loadmill app on Slack** that allows to configure sending notifications per API Test, Load Test, Test Plan run to a Slack channel/s you wish, see **how to configure the integration** **below**:
+Slack has more than 12 million daily active users and 156,000 organizations subscribe to the app so it's become essential to get notified about important events via Slack. We introduce our **Loadmill app on Slack** that allows to send notifications per API Test, Load Test, Test Plan run to the Slack channel you wish. Follow the steps below to configure the integration.
 
 1. Navigate to your user avatar in Loadmill =&gt; Settings =&gt; Integrations. Scroll down to Slack and click CONNECT TO SLACK.
 
@@ -18,7 +18,7 @@ Slack has more than 12 million daily active users and 156,000 organizations subs
 
 ![](../.gitbook/assets/screen-shot-2021-07-14-at-12.10.10.png)
 
-That's it, you did it! 🎉 From now on, you won't miss any important Loadmill event.
+That's it, you did it! 🎉  From now on, you won't miss any important Loadmill event.
 
 ![Loadmill notification in Slack](../.gitbook/assets/screen-shot-2021-07-14-at-12.16.21.png)
 
