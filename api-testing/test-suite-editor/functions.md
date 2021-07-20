@@ -279,6 +279,12 @@ Returns the value of `target` after [URL decoding](https://en.wikipedia.org/wiki
 
 * `${__decode_url(p1)} // returns 'this is url' assuming p1 is 'this%20is%20url'`
 
+### `__encode_base64(target)`
+
+Returns the value of `target` after [Base64](https://en.wikipedia.org/wiki/Base64) encoding.
+
+* `${__encode_base64(p1)} // returns 'ZXhhbXBsZQ==' assuming p1 is 'example'`
+
 ### `__decode_base64(target)`
 
 Returns the value of `target` after [Base64](https://en.wikipedia.org/wiki/Base64) decoding.
