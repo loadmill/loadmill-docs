@@ -12,7 +12,7 @@ Slack has more than 12 million daily active users and 156,000 organizations subs
 
 ![Connect Loadmill to your Slack workspace](../.gitbook/assets/screenshot-2021-07-14t115720.407.png)
 
-     2. Then, you will be redirected to the page where you need to click **Allow** in order to give relevant permissions to the Loadmill app.
+     2. You will be redirected to the page where you need to click **Allow** in order to give relevant permissions to the Loadmill app.
 
     3. You are almost set, the only thing is left to do is to choose what notifications you would like to get and in which channel. To do that, go to Notifications \(the tab above Integrations\) =&gt; ADD NOTIFICATION =&gt; Notification type: slack =&gt; choose channel =&gt; select relevant test type and status. 🧠 Tip: the most popular notifications are about Failed Test Plan Runs :\)
 

@@ -8,7 +8,7 @@ Use the advanced Recording Settings to create meaningful replay-able tests that 
 👇 These are recording rules you can add & configure for our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) & [recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-node-recorder).
 {% endhint %}
 
-### Split sessions by URLs \(for the [Recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-node-recorder) use only\)
+### Split sessions by URLs \(for the Recorder use only\)
 
 In general we want the test cases created based on recorded data, to be short and focused as possible. By default, Loadmill will split a recorded user session into two separate Loadmill test flow, if the user hasn't been active for 5 minutes. 
 
@@ -41,7 +41,7 @@ Keys in this list will never be extracted to a parameter in the created tests.
 
 Default values are a list of keys that once detected will be assigned with a default value. This value may be overridden on runtime.
 
-### Non-Secret Keys \(for the [Recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-node-recorder) use only\)
+### Non-Secret Keys \(for the Recorder use only\)
 
 Non-secret keys will be used to identify and record values even when recording in secure mode.  
 Keys and paths to identify non-secret values are given in a JSONPath-like syntax.
