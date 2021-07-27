@@ -1,5 +1,11 @@
 # API Testing FAQs
 
+### I've got a JSON response where I want to extract all book titles from the array by using JSON Path expression - $.store.book\[\*\].title but I'm getting only the first title. WHY?
+
+Loadmill uses a framework where only the first value gets retrieved in case you are using the \* sign. Use the [`__jsonpath_all`](https://docs.loadmill.com/api-testing/test-suite-editor/functions#__jsonpath_all-target-jsonpath-default) function instead so your extractions will look this way:
+
+![](../.gitbook/assets/screenshot-2021-07-27t120345.171.png)
+
 ### **I'm testing entity creation where entity Name should be unique. Can I assign a set of random letters to it?**
 
 Sure, create a parameter with using the `__random_letters([length=10])` function for that:
