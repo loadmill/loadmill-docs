@@ -412,9 +412,9 @@ Extracts a value from `target` using `jsonpath` as a JSONPath query. If there is
 * `${__jsonpath(target,jsonpath)} // returns 'val' assuming target is '{"key":"val"}' and jsonpath is '$.key'`
 * `${__jsonpath('{"key":"val"}','$.notHere','none')} // returns 'none'`
 
-### `__jsonpath_all(target,jsonpath,[default])`
+### `__jsonpath_all(target,jsonpath)`
 
-Similar to `__jsonpath` but returns **all results from the JSONPath** and not only the first one as happens when using `__jsonpath.`
+Similar to `__jsonpath` but returns **all results from the JSONPath** and not only one as happens when using `__jsonpath.`
 
 ### `__jsonpath_keys(target,jsonpath,[default])`
 
