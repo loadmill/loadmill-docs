@@ -5,7 +5,9 @@ Use the advanced Recording Settings to create meaningful replay-able tests that 
 ![](../.gitbook/assets/screenshot-2021-04-19t121902.035.png)
 
 {% hint style="info" %}
-👇 These are recording rules you can add & configure for our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) & [recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-node-recorder).
+**Reduce Global Parameters** is the only setting enabled by default that makes sure only relevant parameters will be created during the recording import.
+
+👇 These are recording rules you can add & configure for our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) & [recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-node-recorder). 
 {% endhint %}
 
 ### Split sessions by URLs \(for the [Recorder](https://docs.loadmill.com/working-with-the-recorder#loadmill-node-recorder) use only\)
