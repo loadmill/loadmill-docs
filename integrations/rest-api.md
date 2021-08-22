@@ -8,7 +8,7 @@ description: >-
 
 Before getting started you’ll need to generate an API token, take a look how to generate it [here](https://docs.loadmill.com/integrations/api-tokens).
 
-{% api-method method="post" host="https://www.loadmill.com/api" path="/v1/test-suites/:id/run" %}
+{% api-method method="post" host="https://app.loadmill.com/api" path="/v1/test-suites/:id/run" %}
 {% api-method-summary %}
 Run Test Suite
 {% endapi-method-summary %}
@@ -62,7 +62,7 @@ Test suite has launched successfully.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.loadmill.com" path="/api/v1/test-suites-runs/:id" %}
+{% api-method method="get" host="https://app.loadmill.com" path="/api/v1/test-suites-runs/:id" %}
 {% api-method-summary %}
 Get Test Suite Run \(Test Suite results\)
 {% endapi-method-summary %}
@@ -127,7 +127,7 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.loadmill.com" path="/api/v1/test-suites-runs/flows/:id" %}
+{% api-method method="get" host="https://app.loadmill.com" path="/api/v1/test-suites-runs/flows/:id" %}
 {% api-method-summary %}
 Get Test Suite Flow Run
 {% endapi-method-summary %}
@@ -173,7 +173,7 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="https://www.loadmill.com" path="/api/v1/test-suites-runs/:id" %}
+{% api-method method="put" host="https://app.loadmill.com" path="/api/v1/test-suites-runs/:id" %}
 {% api-method-summary %}
 Stop Test Suite Run
 {% endapi-method-summary %}
@@ -217,7 +217,7 @@ Test Suite Run has been successfully stopped.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://www.loadmill.com" path="/api/v1/tests" %}
+{% api-method method="post" host="https://app.loadmill.com" path="/api/v1/tests" %}
 {% api-method-summary %}
 Create Load Test
 {% endapi-method-summary %}
@@ -255,7 +255,7 @@ A load test configuration. The JSON test configuration may be exported from the 
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="https://www.loadmill.com" path="/api/v1/test-suites/:suiteId/flows/:flowId/pools" %}
+{% api-method method="patch" host="https://app.loadmill.com" path="/api/v1/test-suites/:suiteId/flows/:flowId/pools" %}
 {% api-method-summary %}
 Set Flow's Parameter Pool
 {% endapi-method-summary %}
@@ -313,7 +313,7 @@ The CSV data in CSV format.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="https://www.loadmill.com" path="/api/v1/tests/:id/load" %}
+{% api-method method="put" host="https://app.loadmill.com" path="/api/v1/tests/:id/load" %}
 {% api-method-summary %}
 Run Load Test
 {% endapi-method-summary %}
@@ -351,7 +351,7 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.loadmill.com" path="/api/v1/tests/:id" %}
+{% api-method method="get" host="https://app.loadmill.com" path="/api/v1/tests/:id" %}
 {% api-method-summary %}
 Get Load Test
 {% endapi-method-summary %}
@@ -399,7 +399,7 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://www.loadmill.com/api" path="/v1/labels" %}
+{% api-method method="get" host="https://app.loadmill.com/api" path="/v1/labels" %}
 {% api-method-summary %}
 Team's labels
 {% endapi-method-summary %}
