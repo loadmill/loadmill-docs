@@ -17,7 +17,7 @@ In the Settings, you can find tabs: [Domains](https://docs.loadmill.com/load-tes
 | [Security](https://docs.loadmill.com/integrations/api-tokens) | Generate and revoke personal API Tokens. |
 | [Billing](https://docs.loadmill.com/account-settings/billing) | Team admins can manage credit cards, switch plans, download [a CSV usage report](https://docs.loadmill.com/account-settings/usage-report).  |
 | [Account](https://docs.loadmill.com/collaboration/teams) | Admins can manage teams. All users can edit their display names. |
-| Notifications | Set e-mail notifications upon test run completion.  |
+| Notifications | Set e-mail/[Slack](https://docs.loadmill.com/integrations/slack-integration) notifications upon various test events.  |
 | Integrations | Team admins can set and edit integrations preferences. |
 | [Private Agents](https://docs.loadmill.com/api-testing/testing-localhost-application)              | See running Loadmill's agent/s. |
 | Suggestions | Team admins can set a repository of [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions#suggestions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions#suggestions).  |
