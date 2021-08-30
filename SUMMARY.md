@@ -18,6 +18,7 @@
     * [⨍\(⨯\) FUNCTIONS](api-testing/test-suite-editor/functions.md)
     * [Extractions - Set Parameters](api-testing/test-suite-editor/set-parameters-extractions.md)
     * [Assertions - Verify Response](api-testing/test-suite-editor/assertions.md)
+    * [🧑‍💻 Postscript - run code](api-testing/test-suite-editor/postscript-run-code.md)
     * [Global Login flow and authentication headers](api-testing/test-suite-editor/global-login-flow.md)
     * [Test Suite Parameters](api-testing/test-suite-editor/test-suite-parameters.md)
     * [Before & After Hooks](api-testing/test-suite-editor/before-and-after-hooks.md)
