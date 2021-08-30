@@ -36,13 +36,13 @@ In the example above, we have the response body that is an object {“fruit”:�
 
 ## Test Flow example
 
-Below is an example of a similar scenario we've talked about above. Go ahead, copy & paste it to your suite and see live how Postscript works!  🎉 
+Below is an example of a similar scenario that we covered above. Go ahead, copy & paste it to your suite and see live how Postscript works!  🎉 
 
 ```text
 { "url": "httpbin.org/anything", "delay": "", "stopBefore": "", "description": "My awesome request", "method": "POST", "expectedStatus": "SUCCESS", "postScript": "const my_fruit = $.json.fruit; // Extracting the response body value and assigning my_fruit with the \"fruit\" property.\n\nassert.equal(my_fruit,'banana'); // Asserting that the \"my_fruit\" value equals 'banana'.", "timeout": 60000, "postData": { "text": "{\"fruit\":\"banana\"}", "mimeType": "application/json" }, "headers": {}, "extract": [], "assert": [], "parameters": null }
 ```
 
-![Pasting &amp; running test flow example](../../.gitbook/assets/zoom-0-online-video-cuttercom-on.gif)
+![Pasting &amp; running the test flow example](../../.gitbook/assets/zoom-0-online-video-cuttercom-on.gif)
 
 ## Important notes when using Postscript ‌ 
 
@@ -52,7 +52,7 @@ Below is an example of a similar scenario we've talked about above. Go ahead, co
 
 ![](https://lh6.googleusercontent.com/DlWImjRmBlRIoi6M3TyX_moUe4aWi5GPm1M9dEybYrl3_0VA8S_dL2Bv3rVUrq1QyaqXR2m8RsUJVeIZfKUKGyskXIgZjYAFfJtndO6grfDzZufFH17bGxbpKKuGS6NMYRMHng17=s0)
 
-   4. Loadmill [built-in functions support](https://docs.loadmill.com/api-testing/test-suite-editor/functions): coming soon, stay tuned 😉 
+   4. Loadmill [built-in functions support](https://docs.loadmill.com/api-testing/test-suite-editor/functions): coming soon, stay tuned. 😉 
 
-   5. Remember with great power comes great responsibility so use it wisely 🕷
+   5. Remember with great power comes great responsibility so use it wisely. 🕷
 
