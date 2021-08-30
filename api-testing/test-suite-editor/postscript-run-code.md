@@ -30,7 +30,7 @@ In the example above, we have the response body that is an object {“fruit”:�
 
 `const my_fruit = $.fruit;` - here we access the response body value by using JSONPath expression - $.fruit and assigning “my\_fruit” with the fruit property.
 
-`assert.equal(my_fruit,'banana');` - then, we add the assertion validating that “my\_fruit” equals ‘banana’. Let’s say we have a bug and API returns my\_fruit equals ‘apple’ for some reason, so the test will fail and we’ll get a pretty error message like this:
+`assert.equal(my_fruit,'banana');` - then, we add the assertion validating that “my\_fruit” equals ‘banana’. Let’s say we have a bug and API returned my\_fruit equals ‘apple’ for some reason, so the test will fail and we’ll get a pretty error message like this:
 
 ![](https://lh4.googleusercontent.com/5YBmZMHNZzksAHzDsp_EVCyC6mYmx36lX5Jv1ILxUpETyAtnUR5DzHqeoB-fGTVS0M0SCbqFTIR9MKmF5eHYV_-q7HFWllRVm2DuWw4gJgKiKq55qrx2BwnbT6nxKPYT7DFJj-sS=s0)
 
