@@ -42,7 +42,7 @@ Below is an example of a similar scenario we've talked about above. Go ahead, co
 { "url": "httpbin.org/anything", "delay": "", "stopBefore": "", "description": "My awesome request", "method": "POST", "expectedStatus": "SUCCESS", "postScript": "const my_fruit = $.json.fruit; // Extracting the response body value and assigning my_fruit with the \"fruit\" property.\n\nassert.equal(my_fruit,'banana'); // Asserting that the \"my_fruit\" value equals 'banana'.", "timeout": 60000, "postData": { "text": "{\"fruit\":\"banana\"}", "mimeType": "application/json" }, "headers": {}, "extract": [], "assert": [], "parameters": null }
 ```
 
-
+![Pasting &amp; running test flow example ](../../.gitbook/assets/ezgif.com-gif-maker-41-.gif)
 
 ## Important notes when using Postscript ‌ 
 
