@@ -9,7 +9,7 @@ Loadmill provides a wide range of features that you may use in your tests. Havin
 ![](https://lh5.googleusercontent.com/qcowbEw9nw5WRcTLS5QzqP8GEajDzuq6yUFEEWgmrncusOg7KbjAstMTmxENHVTIgHmuwvXOBfmQ9GcngXgNNYxAU6x2ALwDyBsvz6MmiDytC22Ifa69A-x4DQ1240zsExdHxX2-=s0)
 
 {% hint style="info" %}
-The Postscript section is disabled by default but we are happy to enable it for you. Just drop us a line at support@loadmill.com or use ![](../../.gitbook/assets/screen-shot-2021-08-29-at-11.46.36.png) in the lower-right corner of the screen. ‌
+The Postscript section is disabled by default but we are happy to enable it for you. Just drop us a line at support@loadmill.com or chat with us by clicking ![](../../.gitbook/assets/screen-shot-2021-08-29-at-11.46.36.png) in the lower-right corner of the screen. ‌
 {% endhint %}
 
 The Postscript section within requests allows inserting Javascript \(JS\) code that may contain parameter extractions, custom assertions \(validations\), and much more. ‌
