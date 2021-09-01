@@ -45,9 +45,9 @@ The panel allows:
 
 ![](../.gitbook/assets/screenshot-2021-08-25t164426.809.png)
 
-    4. To set Test Plan e-mail notifications so that you will get one email with all the Test Suites' information.
+    4. Set Test Plan E-mail or Slack notifications so that you will get one email/slack notification with all the Test Suites' information.
 
-![](../.gitbook/assets/screenshot-2021-08-25t165050.169.png)
+![](../.gitbook/assets/screenshot-2021-09-01t123447.655.png)
 
     5. To schedule the Test Plan to run periodically to constantly validate your application status.
 
