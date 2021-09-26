@@ -44,6 +44,16 @@ Moreover, **you can always revert the Test Suite data to the state of any commit
 
 ![](../../.gitbook/assets/screenshot-2021-07-01t114156.102.png)
 
+### Running Test Plan with the data committed to GitHub
+
+Once you have Test Suite data committed to your GitHub repository, you can select it when running your Test Plan. 
+
+Navigate to the **Test Plan - Run Settings - Versioned Test Configuration \(Recommended\)** and select the branch where you committed test suite changes to. 
+
+![](../../.gitbook/assets/screenshot-2021-09-26t161339.565.png)
+
+Selecting the branch means that the latest version of it with committed changes will be taken as the Test Plan configuration and any other uncommitted test suite changes won't be taken into account.
+
 To reset the integration, click on **DISCONNECT** within Settings - Integrations - Setup data sync connection to Github.
 
 
