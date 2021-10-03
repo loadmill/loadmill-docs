@@ -10,20 +10,20 @@ You may have an arbitrary number of assertions executed after each successful re
 
 The target of an assertion is always a parameter value. You may use built-in parameters, default parameters or any parameter extracted from the current or previous requests in the **current scenario** as the target.
 
-![](../../.gitbook/assets/screen-shot-2021-03-10-at-16.35.47.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t144851.572.png)
 
 There are several types of assertions:
 
-1. **Exists** - the target exists.
-2. **Doesn't exist** - the target doesn't exist.
-3. **Equals** - the target is equal to the given expression. The equality check is **case sensitive**.
-4. **Doesn't equal** - the target is NOT equal to the given expression. The equality check is **case sensitive**.
-5. **Contains** - the target contains the given expression. The containment check is **case sensitive**.
-6. **Doesn't contain** - the target DOESN'T contain the given expression. The containment check is **case sensitive**.
-7. **Matches** - the target matches the given regular expression.
-8. **Greater than** - the target is greater than the given expression.
-9. **Less than** - the target is less than the given expression.
-10. **JSON Schema** - the target matches the JSON Schema.
+1. **Exists** - the parameter exists.
+2. **Doesn't exist** - the parameter doesn't exist.
+3. **Equals** - the parameter is equal to the given expression. The equality check is **case sensitive.**
+4. **Doesn't equal** - the parameter is NOT equal to the given expression. The equality check is **case sensitive**.
+5. **Contains** - the parameter contains the given expression. The containment check is **case sensitive**.
+6. **Doesn't contain** - the parameter DOESN'T contain the given expression. The containment check is **case sensitive**.
+7. **Matches** - the parameter matches the given regular expression.
+8. **Greater than** - the parameter is greater than the given expression.
+9. **Less than** - the parameter is less than the given expression.
+10. **JSON Schema** - the parameter matches the JSON Schema.
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
@@ -46,7 +46,7 @@ In many cases Loadmill users use the same or similar extractions and assertions.
 
 Then, each user can add the assertions from the repository by clicking on **+ SUGGESTIONS**.
 
-![](../../.gitbook/assets/screenshot-2021-03-10t164707.818.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t145350.482.png)
 
 By default, there are a few common extraction and assertion examples in the repository. Team admins can also navigate to the Suggestions Settings directly from within the suggestion dialog window.
 
