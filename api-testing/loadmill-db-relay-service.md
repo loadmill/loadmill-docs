@@ -22,7 +22,7 @@ body: {
 
 See a request example below:
 
-![](../.gitbook/assets/screen-shot-2021-02-25-at-16.17.02.png)
+![](../.gitbook/assets/screenshot-2021-10-03t153602.437.png)
 
 By running the request, you will get a response in JSON format and be able to operate the data.
 
