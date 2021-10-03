@@ -59,19 +59,21 @@ There are two ways to do that:
 2. Click **NEW TEST SUITE**, give it a name. ****
 3. You can notice that there is one test flow already created in it and you just need to fill it out. The first request will be to get our login page, enter its name, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/signin/`  
 
-![Load login page request](../.gitbook/assets/login_get_1.png)
+![](../.gitbook/assets/screenshot-2021-10-03t115831.748.png)
 
 4. Click **ADD REQUEST**. This will be an authentication request that will dynamically extract an access token and will allow the user to log in to the app by using his username and password. Find more information about dynamic parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/parameters). 
 
 5. Enter request name - **Authentication request - extract token using JSONPath from the response**, select "POST" as Method, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token`    
 
-6. Press **Advanced**. This is a place where we set the request body, headers, [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). Enter Content type - `application/x-www-form-urlencoded`  , body - `grant_type=password&username=${username}&password=${password}&client_id=ghost-admin&client_secret=${client_secret}`              
+6. Press **Advanced**. This is a place where we set the request body, headers, [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). Select Content type - `application/x-www-form-urlencoded`  , put body - grant\_type=password&username=${username}&password=${password}&client\_id=ghost-admin&client\_secret=${client\_secret}              
 
-![](../.gitbook/assets/params_set_2.png)
+![](../.gitbook/assets/screenshot-2021-10-03t115940.240.png)
 
 7. The warning you've got means that the parameters we set in the body as **username, password, client\_secret** are not defined yet. Go to [the Parameters tab](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters) and add them as shown below:
 
-![The Test Suite Parameters](../.gitbook/assets/test_suite_params.png)
+![](../.gitbook/assets/screenshot-2021-10-03t122501.243.png)
+
+username - a%40b.com, password - Test1234, client\_secret - 8c93bf1bb580.
 
 8. Now go back to the "Flows" tab and run your first API Test Suite by pressing the "RUN SUITE" button. That's it, you can see your results live in Loadmill.
 
