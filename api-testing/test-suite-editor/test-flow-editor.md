@@ -5,7 +5,7 @@ API Test flow is a series of API calls \(HTTP requests\) that represent **a sing
 ![](../../.gitbook/assets/screenshot-2021-10-03t132024.726.png)
 
 {% hint style="info" %}
-🧠 Control visibility of the flows' list area by clicking on Flows in the Test Suite navigation panel. This way, you can better focus on the flow you are currently working on. 
+🧠 Control visibility of the flows' list area by clicking on Flows in the Test Suite navigation panel. This way you can better focus on the flow you are currently working on. 
 {% endhint %}
 
 ## The Test Flow toolbar
