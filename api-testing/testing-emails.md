@@ -18,11 +18,11 @@ Create a dynamic UUID parameter in the parameters section. Set its value to be t
 
 Use the UUID parameter to construct a dynamic email address and use it as the user registration email address:
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](../.gitbook/assets/screenshot-2021-10-03t154124.228.png)
 
 In the following request, use the open email API and the UUID parameter to retrieve the signup verification email:
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../.gitbook/assets/screenshot-2021-10-03t154409.021.png)
 
 The last email sent to a specific UUID address will be available in text/html format and stored for 24-48 hours. \([example](https://www.loadmill.com/open-api/emails/ca691a76-24b4-457d-a2cc-446ef86f3dff)\) 
 
@@ -30,7 +30,7 @@ The last email sent to a specific UUID address will be available in text/html fo
 
 Use the jQuery extractor to extract values from the email content. This extractor example will extract the link from the "Verify Address" button:
 
-![](../.gitbook/assets/image%20%2842%29.png)
+![](../.gitbook/assets/screenshot-2021-10-03t154452.442.png)
 
 {% hint style="info" %}
 Note: when using the extracted `${link}`parameter as the base URL for the following request, give it a default value in the parameters section, in case that no valid URL will be extracted from the email.
