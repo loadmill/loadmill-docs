@@ -16,7 +16,7 @@ Once the CSV file has been uploaded, you will be able to go over the different p
 
 When a flow is using a CSV file, there will be an indication "Using CSV".
 
-![Import CSV button](https://lh4.googleusercontent.com/ifbiZuH0JsNIb5aN6HRoBD1jY5IcyLAMc1Ji5vAK86hVCmkwnHnx-iHWd3vCX-kP2ZJOgxBAtTK94zZKjRz6YPCQ6o3jtDbsAO0YwldrnSpuxcJ03kKrDdfvxZpKyDEMC-jNlgeJ)
+![](../../.gitbook/assets/screenshot-2021-10-03t152608.146.png)
 
 In order to remove a CSV file from the test, simply click on the "Using CSV" button, and click on the "Delete" button.
 
@@ -44,7 +44,7 @@ The order of parameter value assignment is:
 
      3. Value as defined in the **Extractions - Set Parameters** section of specific request \(This will override all of the above\). For example:
 
-![](../../.gitbook/assets/pasted-image-0-2-.png)
+![](../../.gitbook/assets/screen-shot-2021-10-03-at-15.27.27.png)
 
 
 
