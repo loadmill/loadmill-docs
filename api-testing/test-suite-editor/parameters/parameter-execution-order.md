@@ -4,7 +4,7 @@ When using parameters in Loadmill tests, it is important to understand their hie
 
 The user has a test flow with a GET request to his application home page. 
 
-![](../../../.gitbook/assets/screen-shot-2021-04-27-at-14.59.18.png)
+![](../../../.gitbook/assets/screenshot-2021-10-03t143415.191.png)
 
 The "base\_url" parameter is used to store URLs and choose them depending on which environment the user would like to run tests against. This parameter can be defined by several ways, let's review them:
 
