@@ -24,7 +24,7 @@ To sync your Test Suite data with your GitHub repository, follow the steps below
 
 ![](../../.gitbook/assets/screen-shot-2021-07-01-at-11.27.37.png)
 
-**What happens next?** Loadmill creates the **loadmill-suites** folder in the branch you have selected/created. ****In addition, a new file with the Test Suite data is created in the **loadmill-suites** folder. Its name matches the Test Suite ID. 
+**What happens next?** Loadmill creates the **loadmill-suites** folder in the branch you have selected/created. ****In addition, a new file with the Test Suite data is created in the **loadmill-suites** folder. Its name matches the Test Suite description and ID. 
 
 Easily navigate to the commit by clicking on **GO TO COMMIT** at the bottom left corner of the screen.
 
@@ -32,13 +32,11 @@ Easily navigate to the commit by clicking on **GO TO COMMIT** at the bottom left
 
 The commit message in GitHub includes your Loadmill username and the commit message you entered in Loadmill. 
 
-![](../../.gitbook/assets/screenshot-2021-04-22t162124.802.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t101237.441.png)
 
 **Another great thing about this feature** is that, over time, you can always track changes made to Test Suites. Just remember to enter commit messages to sync the Test Suite changes to GitHub.
 
-![](../../.gitbook/assets/screenshot-2021-04-22t162420.410.png)
-
-
+![](../../.gitbook/assets/screenshot-2021-10-03t101759.565.png)
 
 Moreover, **you can always revert the Test Suite data to the state of any commit you wish**. Just select it within the Branch history section and click **CHECKOUT**.
 
