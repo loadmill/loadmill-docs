@@ -21,11 +21,11 @@ First, I need to create a new user and login. Then, my test flow/s should run bu
 
 Navigate to/create a Test Suite containing relevant tests -&gt; Before/After tab.
 
-![Before &amp; After tab within a Test Suite](../../.gitbook/assets/screenshot-2021-06-07t140937.766.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t151916.022.png)
 
 On this page, you can create before & after hooks from scratch or use pre-defined [shared flows](https://docs.loadmill.com/collaboration/shared-flows).
 
-![](../../.gitbook/assets/screen-shot-2021-06-07-at-14.14.29.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t152224.421.png)
 
 {% hint style="info" %}
 🧠 Make sure all test flows residing in the Test Suite are aligned with the Before & After logic. You may configure all hooks or just one depending on your use case.
