@@ -2,11 +2,11 @@
 
 API Test flow is a series of API calls \(HTTP requests\) that represent **a single "user" flow you would like to test**. These requests will be executed sequentially until completion or until the first failure.
 
-![](../../.gitbook/assets/screenshot-2021-07-05t104211.315.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t132024.726.png)
 
 ## The Test Flow toolbar
 
-![](../../.gitbook/assets/screenshot-2021-07-05t104625.174.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t132126.564.png)
 
 | Option | Description |
 | :--- | :--- |
@@ -39,9 +39,11 @@ Easily convert an API flow to Load test by clicking on the Flow options menu ![]
 
 ### Skip and Stop Condition
 
-Set a skip or stop condition between requests. Let's say you would like to skip "Purchase" Request if the preceding "Get Price" Request response returns a price above the current budget. This could be accomplished by extracting price and budget to parameters and setting the Purchase Request skip condition to ${budget &lt;= price}.
+Set a skip or stop condition between requests. Let's say you would like to skip "Purchase" Request if the preceding "Get Price" Request response returns a price above the current budget. This could be accomplished by extracting price and budget to [parameters](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and setting the Purchase Request skip condition to ${budget &lt;= price}.
 
-![Setting up a skip condition](../../.gitbook/assets/price_budget.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t132644.977.png)
+
+![](../../.gitbook/assets/screenshot-2021-10-03t132710.663.png)
 
 
 
