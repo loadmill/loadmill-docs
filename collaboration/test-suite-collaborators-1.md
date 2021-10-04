@@ -2,7 +2,7 @@
 
 The **Collaborators** tab within the Test Suite allows users to protect the Test Suite so that **only** team members who are set as collaborators and team admins will be able to edit it. 
 
-![](../.gitbook/assets/screenshot-30-.png)
+![](../.gitbook/assets/screenshot-2021-10-04t094943.355.png)
 
 The meaning behind this feature is to make sure only relevant team members are able to modify the Test Suite, prevent working on the same Test Suite and running over each-other's work.
 
