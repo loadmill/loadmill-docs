@@ -24,7 +24,7 @@ We recommend using our [**Loadmill Agent**](https://www.npmjs.com/package/@loadm
 
 ### Setup
 
-In order to use the Loadmill Agent you will need to generate an [API Token](https://docs.loadmill.com/integrations/api-tokens).
+In order to use the Loadmill Agent you will need to generate an [API Token](https://docs.loadmill.com/integrations/api-tokens) and have node.js version 14 or higher installed on your machine.
 
 ### Installation
 
