@@ -2,7 +2,7 @@
 
 Use the **Extractions - Set Parameters** section of the request to extract values from the responses. These extracted values can be use in any of the following requests or to assert and verify your success criteria. 
 
-![](../../.gitbook/assets/screenshot-2021-10-03t142851.572-1-1-.png)
+![The request Extractions - Set Parameters section](../../.gitbook/assets/screenshot-2021-10-03t142851.572-1-1-.png)
 
 ## Extraction Types
 
