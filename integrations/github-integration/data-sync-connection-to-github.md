@@ -18,7 +18,7 @@ To sync your Test Suite data with your GitHub repository, follow the steps below
 
 1. Navigate to a relevant Test Suite and click on the **Github sync** tab. 
 
-![](../../.gitbook/assets/screenshot-2021-07-01t105219.234.png)
+![](../../.gitbook/assets/screenshot-2021-10-04t111550.674.png)
 
   2. Choose or create a branch where you would like to sync the Test Suite data to. Then, enter an initial ****commit message and click **COMMIT** to sync the Test Suite data. 
 
