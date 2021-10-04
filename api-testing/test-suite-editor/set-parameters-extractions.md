@@ -68,5 +68,5 @@ By default, there are a few common extraction and assertion examples in the repo
 🧙♂ Use the autocomplete option to see a list of existing parameters. To see it, press Shift + Cmd \(Ctrl for Windows\) + Space. See how it works below.
 {% endhint %}
 
-![The Autocomplete feature](../../.gitbook/assets/ezgif.com-gif-maker-5-.gif)
+![](../../.gitbook/assets/zoom-0-online-video-cuttercom-3.gif)
 
