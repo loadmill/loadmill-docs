@@ -10,7 +10,7 @@ You may have an arbitrary number of assertions executed after each successful re
 
 The target of an assertion is always a parameter value. You may use built-in parameters, default parameters or any parameter extracted from the current or previous requests in the **current scenario** as the target.
 
-![](../../.gitbook/assets/screenshot-2021-10-03t144851.572.png)
+![The request Assertions - Verify Response section](../../.gitbook/assets/screenshot-2021-10-03t144851.572.png)
 
 There are several types of assertions:
 
