@@ -6,6 +6,8 @@ It's great that you are using [our labels feature](https://docs.loadmill.com/col
 
 ![](../.gitbook/assets/screenshot-2021-10-04t111930.646.png)
 
-  
+You can easily batch edit flows and check the CI checkbox in them by using this option:  
 
+
+![](../.gitbook/assets/screenshot-2021-10-04t113147.198-1-.png)
 
