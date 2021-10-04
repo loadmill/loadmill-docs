@@ -12,7 +12,7 @@ The common use case for Shared Flows is when you have one or several login test 
 * We recommend using the "DRY RUN" option first to test your flow and then Publish it. 
 * Now you can go to the Test Suite where you would like to use it =&gt; the Login tab =&gt; click CHANGE LOGIN FLOW SOURCE and select your shared flow. 
 
-![](../.gitbook/assets/screenshot-50-.png)
+![](../.gitbook/assets/screenshot-2021-10-04t095542.752.png)
 
 Thus, the shared flow will run before every test flow where the Login checkbox is checked. 
 
