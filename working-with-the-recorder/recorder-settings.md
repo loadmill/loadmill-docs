@@ -66,9 +66,11 @@ Configure which JSON keys should be extracted into parameters and which assertio
 
 ![](../.gitbook/assets/screen-shot-2021-05-05-at-16.26.27.png)
 
-Thus, when uploading the recording, Loadmill will automatically create the extraction and assertion in the test flow.
+Thus, when uploading a recording, Loadmill will automatically create the extraction and assertion in the test flow in case there is such a JSON key.
 
-![The automatic extraction and assertion in the test flow](../.gitbook/assets/screenshot-2021-04-11t174906.956.png)
+![The automatic extraction in the flow](../.gitbook/assets/screenshot-2021-10-04t093950.301.png)
+
+![The automatic assertion in the flow](../.gitbook/assets/screenshot-2021-10-04t094016.981.png)
 
 
 
