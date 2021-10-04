@@ -32,7 +32,7 @@ You can easily paste a cURL command as a request to Loadmill.
 🧠 Make sure you have given permissions to your browser to copy and paste text and images to [the clipboard](https://docs.loadmill.com/general-troubleshooting#it-seems-like-i-cant-paste-requests-within-a-flow). 
 {% endhint %}
 
-![](.gitbook/assets/ezgif.com-gif-maker-16-.gif)
+![](.gitbook/assets/zoom-0-online-video-cuttercom-2.gif)
 
 ### Importing Load Tests and CSV files
 
