@@ -1,97 +1,60 @@
 ---
-description: >-
-  Loadmill's API is an interface for interacting with Loadmill’s servers. Use it
-  to create and launch your tests.
+description: Loadmill's API is an interface for interacting with Loadmill’s servers. Use it to create and launch your tests.
 ---
-
 # REST API
 
 Before getting started you’ll need to generate an API token, take a look how to generate it [here](https://docs.loadmill.com/integrations/api-tokens).
 
-{% api-method method="post" host="https://app.loadmill.com/api" path="/v1/test-suites/:id/run" %}
-{% api-method-summary %}
-Run Test Suite
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com/api" path="/v1/test-suites/:id/run" method="post" summary="Run Test Suite" %}
+{% swagger-description %}
 Run a predefined test suite
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 UUID of the Test Suite to run. 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token -  you can generate it in the "User menu"&gt; "Settings" &gt; "Security".
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token -  you can generate it in the "User menu"> "Settings" > "Security".
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="forceAllFlows" type="boolean" %}
+{% swagger-parameter in="query" name="forceAllFlows" type="boolean" %}
 Default = false - running only flows marked for execution with CI toggle. If true - executing all flows.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="additionalDescription" type="string" required=false %}
+{% swagger-parameter in="body" name="additionalDescription" type="string" %}
 Add an additional description at the end of the current suite's description
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="overrideParameters" type="object" required=false %}
-`name: value` pairs to override the default parameters values of this specific run. i.e. `{{"paramName1":"paramVal1"}, ...}`
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="overrideParameters" type="object" %}
+`name: value `
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Test suite has launched successfully.
-{% endapi-method-response-example-description %}
+pairs to override the default parameters values of this specific run. i.e. 
 
+`{{"paramName1":"paramVal1"}, ...}`
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Test suite has launched successfully." %}
 ```
 {testSuiteRunId: "running-uuid"}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://app.loadmill.com" path="/api/v1/test-suites-runs/:id" %}
-{% api-method-summary %}
-Get Test Suite Run \(Test Suite results\)
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com" path="/api/v1/test-suites-runs/:id" method="get" summary="Get Test Suite Run (Test Suite results)" %}
+{% swagger-description %}
 Get a launched Test Suite results 
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 The running uuid. You get this ID in the response when launching a Test Suite
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security"
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "id": "test suite run uuid,
@@ -122,41 +85,23 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
   "avgResTime": "422 ms"
 } 
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://app.loadmill.com" path="/api/v1/test-suites-runs/flows/:id" %}
-{% api-method-summary %}
-Get Test Suite Flow Run
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com" path="/api/v1/test-suites-runs/flows/:id" method="get" summary="Get Test Suite Flow Run" %}
+{% swagger-description %}
 Get Test Suite Flow results
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 The flow running uuid. You get this ID when fetching the Test Suite Run entity
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security"
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "id": "test suite flow run uuid",
@@ -168,219 +113,125 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
   "testSuiteId": "origin test suite uuid" | null (if deleted)
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="put" host="https://app.loadmill.com" path="/api/v1/test-suites-runs/:id" %}
-{% api-method-summary %}
-Stop Test Suite Run
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com" path="/api/v1/test-suites-runs/:id" method="put" summary="Stop Test Suite Run" %}
+{% swagger-description %}
 Stop a launched Test Suite  
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
-The Test Suite Run uuid. You can get this ID in the response when getting the Test Suite Run \(https://docs.loadmill.com/integrations/rest-api\#get-test-suite-run-test-suite-results\).  
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% swagger-parameter in="path" name="id" type="string" %}
+The Test Suite Run uuid. You can get this ID in the response when getting the Test Suite Run (https://docs.loadmill.com/integrations/rest-api#get-test-suite-run-test-suite-results).
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+\
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="forceFail=true" type="string" required=false %}
+
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security"
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="forceFail=true" type="string" %}
 Using this filter option the user can stop the Test Suite Run and put its status to FAILED
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Test Suite Run has been successfully stopped.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Test Suite Run has been successfully stopped." %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="post" host="https://app.loadmill.com" path="/api/v1/tests" %}
-{% api-method-summary %}
-Create Load Test
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com" path="/api/v1/tests" method="post" summary="Create Load Test" %}
+{% swagger-description %}
 Create a load test from load test configuration
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security" 
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security" 
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="config" type="object" required=true %}
+{% swagger-parameter in="body" name="config" type="object" %}
 A load test configuration. The JSON test configuration may be exported from the Loadmill test editor or from an old test run. See a config example here - https://docs.loadmill.com/load-testing/configuration-files
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 { testId: "load test id" }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="patch" host="https://app.loadmill.com" path="/api/v1/test-suites/:suiteId/flows/:flowId/pools" %}
-{% api-method-summary %}
-Set Flow's Parameter Pool
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com" path="/api/v1/test-suites/:suiteId/flows/:flowId/pools" method="patch" summary="Set Flow's Parameter Pool" %}
+{% swagger-description %}
 Create a parameter pool and attach it to a flow
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="suiteId" type="string" required=true %}
+{% swagger-parameter in="path" name="suiteId" type="string" %}
 The suite UUID in which the flow resides 
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="flowId" type="string" required=true %}
+{% swagger-parameter in="path" name="flowId" type="string" %}
 The flow UUID. The parameter pool will be attached to this flow
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="content-type" type="string" required=true %}
+{% swagger-parameter in="header" name="content-type" type="string" %}
 must be text/csv
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security"
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="name" type="string" required=false %}
+{% swagger-parameter in="query" name="name" type="string" %}
 name of the parameter pool data
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="string" required=true %}
+{% swagger-parameter in="body" name="body" type="string" %}
 The CSV data in CSV format. 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="put" host="https://app.loadmill.com" path="/api/v1/tests/:id/load" %}
-{% api-method-summary %}
-Run Load Test
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com" path="/api/v1/tests/:id/load" method="put" summary="Run Load Test" %}
+{% swagger-description %}
 Run an existing load test. Be aware that a given load test can be run only once. In order to rerun it you will have to recreate it.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 Load test ID
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security" 
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security" 
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://app.loadmill.com" path="/api/v1/tests/:id" %}
-{% api-method-summary %}
-Get Load Test
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com" path="/api/v1/tests/:id" method="get" summary="Get Load Test" %}
+{% swagger-description %}
 Returns the Load Test data. If the Load Test has ended it would contain its result.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 Load test ID
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security"
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security"
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "id": "load test id",
@@ -394,41 +245,23 @@ Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt
   "successfulIterations": number
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://app.loadmill.com/api" path="/v1/labels" %}
-{% api-method-summary %}
-Team's labels
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://app.loadmill.com/api" path="/v1/labels" method="get" summary="Team's labels" %}
+{% swagger-description %}
 Returns all user's team's labels
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Authentication token - you can generate it in the "User menu"&gt; "Settings" &gt; "Security".
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security".
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="filter=CI\_enabled" type="string" required=false %}
+{% swagger-parameter in="query" name="filter=CI_enabled" type="string" %}
 Using this filter option the user can get only the labels who are attached to flows with the CI toggle on
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
   "teamLabels": [
@@ -443,8 +276,5 @@ Using this filter option the user can get only the labels who are attached to fl
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

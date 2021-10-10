@@ -8,7 +8,6 @@ Once you've created a team and run [API tests](https://docs.loadmill.com/api-tes
 
 The next feature covers use cases when you have a "prerequisite" test flow that should run before the Test Suite's test flows. You can easily do that by using the [**Shared Flows**](https://docs.loadmill.com/collaboration/shared-flows) feature.
 
-After all, every team would like to organize their tests and navigate through them. We've got this covered as well, via the [**Labels**](https://docs.loadmill.com/collaboration/labels-and-filters) ****feature.
+After all, every team would like to organize their tests and navigate through them. We've got this covered as well, via the [**Labels**](https://docs.loadmill.com/collaboration/labels-and-filters)** **feature.
 
-Stay tuned for more great features coming soon! 🎉 
-
+Stay tuned for more great features coming soon! :tada: 

@@ -28,19 +28,19 @@ Also find helpful JSON Path expressions [here](https://goessner.net/articles/Jso
 
 ### Clojure
 
-Use this extractor to extract values from Clojure \(EDN content type\) responses. You need to enter JSONPath Query, Clojure queried as JSON.
+Use this extractor to extract values from Clojure (EDN content type) responses. You need to enter JSONPath Query, Clojure queried as JSON.
 
 ![](../../.gitbook/assets/screenshot-2021-10-03t144320.465.png)
 
 ### jQuery
 
-Use this extractor to extract values from HTML or XML responses. jQuery extraction syntax is very similar to XPath and may be very useful to extract values from HTML pages \(such as [security tokens](https://portswigger.net/web-security/csrf/tokens)\).
+Use this extractor to extract values from HTML or XML responses. jQuery extraction syntax is very similar to XPath and may be very useful to extract values from HTML pages (such as [security tokens](https://portswigger.net/web-security/csrf/tokens)).
 
 ![](../../.gitbook/assets/screenshot-2021-10-03t144436.879.png)
 
 ### RegExp
 
-Use this extractor to extract values from any type of response using RegExp. The first value captured by the regex \(in parentheses\) will be set as  the parameter's value. You can test your regex expressions using this useful online tool - [link](https://regex101.com/).
+Use this extractor to extract values from any type of response using RegExp. The first value captured by the regex (in parentheses) will be set as  the parameter's value. You can test your regex expressions using this useful online tool - [link](https://regex101.com).
 
 ![](../../.gitbook/assets/screenshot-2021-10-03t144547.122.png)
 
@@ -65,8 +65,7 @@ By default, there are a few common extraction and assertion examples in the repo
 ## Autocomplete
 
 {% hint style="info" %}
-🧙♂ Use the autocomplete option to see a list of existing parameters. To see it, press Shift + Cmd \(Ctrl for Windows\) + Space. See how it works below.
+:man_mage: Use the autocomplete option to see a list of existing parameters. To see it, press Shift + Cmd (Ctrl for Windows) + Space. See how it works below.
 {% endhint %}
 
 ![](../../.gitbook/assets/zoom-0-online-video-cuttercom-3.gif)
-

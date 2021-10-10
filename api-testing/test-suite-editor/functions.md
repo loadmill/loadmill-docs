@@ -1,4 +1,4 @@
-# ⨍\(⨯\) FUNCTIONS
+# ⨍(⨯) FUNCTIONS
 
 Loadmill has builtin functions available to use while creating a test. These functions will be evaluated in run time as part of the test.
 
@@ -68,11 +68,11 @@ Always returns `false`.
 * `${__and()} // returns true`
 * `${__and('-42')} // returns true`
 
-Logical AND \(same as the `&` operator\), applied to any number of arguments.
+Logical AND (same as the `&` operator), applied to any number of arguments.
 
 ### `__or(p1,[p2,[...]])`
 
-Logical OR \(same as the `|` operator\), applied to any number of arguments.
+Logical OR (same as the `|` operator), applied to any number of arguments.
 
 * `${__or('true','true')} // returns true`
 * `${__or('true','false')} // returns true`
@@ -139,7 +139,7 @@ Same as the `<` operator.
 * `${__lt('42','3')} //returns false`
 * `${__lt('3','42')} //returns true`
 * `${__lt('42','42')} //returns false`
-* `${__lt(p1,p2)} //returns true, assuming p1 is 3 and p2 is 42` 
+* `${__lt(p1,p2)} //returns true, assuming p1 is 3 and p2 is 42 `
 
 ### `__lte(p1,p2)`
 
@@ -148,7 +148,7 @@ Same as the `<=` operator.
 * `${__lte('42','3')} //returns false`
 * `${__lte('3','42')} //returns true`
 * `${__lte('42','42')} //returns true`
-* `${__lte(p1,p2)} //returns true, assuming p1 is 3 and p2 is 42` 
+* `${__lte(p1,p2)} //returns true, assuming p1 is 3 and p2 is 42 `
 
 ### `__gt(p1,p2)`
 
@@ -157,7 +157,7 @@ Same as the `>` operator.
 * `${__gt('42','3')} //returns true`
 * `${__gt('3','42')} //returns false`
 * `${__gt('42','42')} //returns false`
-* `${__gt(p1,p2)} //returns true, assuming p1 is 42 and p2 is 3` 
+* `${__gt(p1,p2)} //returns true, assuming p1 is 42 and p2 is 3 `
 
 ### `__gte(p1,p2)`
 
@@ -166,7 +166,7 @@ Same as the `>=` operator.
 * `${__gte('42','3')} //returns true`
 * `${__gte('3','42')} //returns false`
 * `${__gte('42','42')} //returns true`
-* `${__gte(p1,p2)} //returns true, assuming p1 is 42 and p2 is 3` 
+* `${__gte(p1,p2)} //returns true, assuming p1 is 42 and p2 is 3 `
 
 ### `__matches(target,regex)`
 
@@ -229,7 +229,7 @@ Same as `__switch` but case-insensitive.
 
 ### `__pick(selection,p1,[p2,[...]])`
 
-Returns one of `p1` or `p2` or `p3`, etc. according to the `selection` - either a zero-based index \(e.g. `2` picks `p3`\) or the word `random` in order to pick a random value.
+Returns one of `p1` or `p2` or `p3`, etc. according to the `selection` - either a zero-based index (e.g. `2` picks `p3`) or the word `random` in order to pick a random value.
 
 * `${__pick('0','A','B','C')} // returns 'A'`
 * `${__pick('1','A','B','C')} // returns 'B'`
@@ -293,7 +293,7 @@ Returns the value of `target` after [Base64](https://en.wikipedia.org/wiki/Base6
 
 ### `__escape_quotes(target)`
 
-Returns the value of `target` after escaping special characters. This function is like escape quotes in JavaScript and will escape characters like \n \r \t and \".
+Returns the value of `target` after escaping special characters. This function is like escape quotes in JavaScript and will escape characters like \n \r \t and \\".
 
 * `${__escape_quotes('"escapeMe"')} // returns \"escapeMe\"`
 * `${__escape_quotes(P1)} // returns \"escapeMe\", assuming p is "escapeMe"`
@@ -312,7 +312,7 @@ Returns the value of `target` after converting all characters to upper case.
 
 ### `__slice(target,[begin=0,[end]])`
 
-Returns a sub-string of `target` which starts at `begin` index \(inclusive\) and ends at `end` index \(exclusive\). Both indexes are zero-based.
+Returns a sub-string of `target` which starts at `begin` index (inclusive) and ends at `end` index (exclusive). Both indexes are zero-based.
 
 * `${__slice('Loadmill')} // returns 'Loadmill'`
 * `${__slice('Loadmill','0')} // returns 'Loadmill'`
@@ -523,7 +523,7 @@ Returns a random string of `length` characters present in `chars`. For example, 
 
 ### `__random_seeded_number([seed='',length=10])`
 
-Returns a random string of up to `length` \(but no more than 10\) decimal digits based on a given seed. Same seed will return the same number.
+Returns a random string of up to `length` (but no more than 10) decimal digits based on a given seed. Same seed will return the same number.
 
 * `__random_seeded_number() // returns 994027583`
 * `__random_seeded_number('0123456789ABCDEF') // returns 2082602645`
@@ -533,7 +533,7 @@ Returns a random string of up to `length` \(but no more than 10\) decimal digits
 
 ### `__now([length=13])`
 
-Returns the current time \(of evaluation\) given as UTC milliseconds  of `length` digits. Alias: `_now_ms`.
+Returns the current time (of evaluation) given as UTC milliseconds  of `length` digits. Alias: `_now_ms`.
 
 * `${__now()} // returns 1604422320167`
 * `${__now('5')} // returns 16044`
@@ -554,4 +554,3 @@ The same as `__now_iso` but given in a "date only" format - i.e. `2020-03-03`
 * `${__date_iso()} // returns 2020-11-03`
 * `${__date_iso('15')} // returns 2020-11-18`
 * `${__date_iso('-15')} // returns 2020-10-19`
-

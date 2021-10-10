@@ -4,11 +4,11 @@ In order to use the [Loadmill npm module](https://www.npmjs.com/package/loadmill
 
 ## Generating a Token
 
-1. Navigate to **the user's Avatar** &gt; **Settings** &gt; [**Security**](https://www.loadmill.com/app/user/settings/security)**.**
+1. Navigate to **the user's Avatar** > **Settings** > [**Security**](https://www.loadmill.com/app/user/settings/security)**.**
 
 ![](../.gitbook/assets/screenshot-2021-06-13t094954.242.png)
 
-    2. Enter a description for the token's intended usage and click **GENERATE**.
+    2\. Enter a description for the token's intended usage and click **GENERATE**.
 
 You will be given an arbitrary string of characters that will be shown to you ONLY ONCE - this is your API token, make sure to copy and store it in a safe place.
 
@@ -24,5 +24,4 @@ Tokens may be used in one of three ways:
 
 An API token enables its bearer to create and run load tests within your account. You can do almost anything you can do in our web interface using tokens, except changing your password, making payments and generating more tokens.
 
-Therefore, you should keep your token as safe as you can from untrusted third parties. If you suspect it may have been compromised, you may revoke the token via **Settings** &gt; [**Security**](https://www.loadmill.com/app/user/settings/security) and generate a new one.
-
+Therefore, you should keep your token as safe as you can from untrusted third parties. If you suspect it may have been compromised, you may revoke the token via **Settings** > [**Security**](https://www.loadmill.com/app/user/settings/security) and generate a new one.

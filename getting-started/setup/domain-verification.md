@@ -6,7 +6,7 @@ For example, if you have an app hosted on `myapp.com` you would like test reques
 
 The way this problem is solved is by using **domain verification**, a simple process in which you are asked to:
 
-1. Go to **Settings &gt; Domains**.
+1. Go to **Settings > Domains**.
 2. Enter the hostname or sub-domain you would like to test in the text area at the top of the page and click **Verify**.
 3. You will be prompted and asked to host a small text file, containing a **Verification Token**, on your server in order to prove you own your domain, e.g.  `myapp.com/loadmill-challenge/aSnd5K8L86Pggg1rGLPgLlf6guK.txt`.
 4. Once the file is hosted on your server, click **Verify** to complete the process.
@@ -14,7 +14,7 @@ The way this problem is solved is by using **domain verification**, a simple pro
 If you have access to your site's **DNS configuration**, you can [prove ownership without changing code on your server](domain-verification.md#dns-verification).
 
 {% hint style="warning" %}
-🧠 **Note:** There is no need to prove ownership of a sub-domain once its parent is verified. For example, if you have already completed the verification process for `myapp.com` you can load-test `www.myapp.com` or `blog.myapp.com` as well.
+:brain: **Note:** There is no need to prove ownership of a sub-domain once its parent is verified. For example, if you have already completed the verification process for `myapp.com` you can load-test `www.myapp.com` or `blog.myapp.com` as well.
 {% endhint %}
 
 ## Express Middleware
@@ -38,6 +38,5 @@ You can make sure that the text record was properly added by looking it up using
 Once the DNS record is set, click **Verify** to complete the process.
 
 {% hint style="info" %}
-🧙♂ **Note:** DNS records may take a while to be propagated, so if the verification initially fails, try again after a few minutes.
+:man_mage: **Note:** DNS records may take a while to be propagated, so if the verification initially fails, try again after a few minutes.
 {% endhint %}
-

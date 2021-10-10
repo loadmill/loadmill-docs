@@ -1,4 +1,4 @@
-# 🗄DB Testing using Queries
+# 🗄 DB Testing using Queries
 
 Loadmill provides a service that allows users to execute various queries directly to their DB in order to validate data.
 
@@ -13,7 +13,7 @@ To execute a query:
 3. Choose "application/json" as Content-type.
 4. Put the request body with the following structure:
 
-```text
+```
 body: {
   "connectionString": "postgres://...",
   "query": "SELECT * FROM USERS"
@@ -32,7 +32,7 @@ Execute queries directly to MongoDB:
 
 `https://db-relay-service.loadmill.com/api/mongo`
 
-```text
+```
 body: {
   connectionString: 'mongodb://...',
   collection: 'bios',
@@ -47,7 +47,7 @@ Execute queries directly to Redis:
 
 `https://db-relay-service.loadmill.com/api/redis`
 
-```text
+```
 body: {
   {
     connectionString: "redis://...", 
@@ -60,9 +60,8 @@ body: {
 
 ## DB relay service static IPs
 
-Sometimes, executing queries to your env DB may require VPN. You can easily avoid this by whitelisting the DB relay service static IPs: \[52.42.51.230, 54.190.108.53\] in your firewall.
+Sometimes, executing queries to your env DB may require VPN. You can easily avoid this by whitelisting the DB relay service static IPs: \[52.42.51.230, 54.190.108.53] in your firewall.
 
 ## Docker image
 
 You can also use a docker image for DB relay service to deploy it in a specific environment of yours, find more information [here](https://hub.docker.com/r/loadmill/db-relay-service).
-

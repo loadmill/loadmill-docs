@@ -15,7 +15,7 @@
     * [Request editor](api-testing/test-suite-editor/request-editor.md)
     * [Parameters](api-testing/test-suite-editor/parameters/README.md)
       * [Parameter Execution Order](api-testing/test-suite-editor/parameters/parameter-execution-order.md)
-    * [⨍\(⨯\) FUNCTIONS](api-testing/test-suite-editor/functions.md)
+    * [⨍(⨯) FUNCTIONS](api-testing/test-suite-editor/functions.md)
     * [Extractions - Set Parameters](api-testing/test-suite-editor/set-parameters-extractions.md)
     * [Assertions - Verify Response](api-testing/test-suite-editor/assertions.md)
     * [🧑‍💻 Postscript - run code](api-testing/test-suite-editor/postscript-run-code.md)
@@ -26,7 +26,7 @@
   * [Running a Test Suite](api-testing/analyzing-an-api-test-results.md)
   * [Test Plan](api-testing/test-plan.md)
   * [🕵🏻  Loadmill Agent](api-testing/testing-localhost-application.md)
-  * [🗄DB Testing using Queries](api-testing/loadmill-db-relay-service.md)
+  * [🗄 DB Testing using Queries](api-testing/loadmill-db-relay-service.md)
   * [✉️ Automated Email Testing](api-testing/testing-emails.md)
   * [API Testing FAQs](api-testing/api-testing-faqs.md)
   * [API Testing troubleshooting](api-testing/api-testing-troubleshooting.md)
@@ -63,4 +63,3 @@
 * [🧳 Import & Export](import-and-export.md)
 * [General FAQs](faq.md)
 * [General troubleshooting](general-troubleshooting.md)
-

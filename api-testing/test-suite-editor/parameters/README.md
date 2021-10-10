@@ -1,6 +1,6 @@
 # Parameters
 
-Working with [Loadmill](https://www.loadmill.com) makes it very easy to convert recorded browser/network sessions \(via HAR files\) into test scenarios. But once a scenario has been created, it often needs to be **parameterized** in order to denote the dynamic parts of your API.
+Working with [Loadmill](https://www.loadmill.com) makes it very easy to convert recorded browser/network sessions (via HAR files) into test scenarios. But once a scenario has been created, it often needs to be **parameterized** in order to denote the dynamic parts of your API.
 
 This is best explained by example, so let's have a look at the following test scenario:
 
@@ -53,11 +53,11 @@ There are several **extraction query types** that may be used:
 
 ![](../../../.gitbook/assets/screenshot-2021-10-03t143158.042.png)
 
-* **JQuery \(Cheerio\)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional \(but very useful\) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
+* **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional (but very useful) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
 * **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
 * **Header** - used for extracting response header values via header names.
 * **Assignment** - used for assigning an explicit value to a parameter or [a function](https://docs.loadmill.com/api-testing/test-suite-editor/functions) to an existing parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
-* **Clojure** - used for extracting values from Clojure \(EDN content type\) responses. Querying the data is done using JSONPath. For example, the query `$[":user"][":id"]` will extract the value `56` from this EDN response: 
+* **Clojure** - used for extracting values from Clojure (EDN content type) responses. Querying the data is done using JSONPath. For example, the query`  $[":user"][":id"]  `will extract the value `56` from this EDN response: 
 
 ```
  {:user {:role :viewer, :name "Rivi", :teams nil, :id "56"}}
@@ -72,9 +72,9 @@ There are several **built-in** parameters that you can use in your test scenario
 
 * `__status` The status code of the last HTTP response.
 * `__statusText` The status text of the last HTTP response.
-* `__responseTime` The total response time \(in milliseconds\) of the last HTTP response.
-* `__testRunId` - The test run id: \(Suite / Flow / Load\)
-* `__testStartTime` - The test run start time \(UTC in milliseconds\)
+* `__responseTime` The total response time (in milliseconds) of the last HTTP response.
+* `__testRunId` - The test run id: (Suite / Flow / Load)
+* `__testStartTime` - The test run start time (UTC in milliseconds)
 * `__launchedBy` - The name of the user running the test.
 
 **Note:** some previous built-in parameters are now defined as no-argument [parameter functions](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions) and can still be used in the same way.
@@ -97,19 +97,19 @@ See below the full list of supported [operators](./#operators) and [functions](h
 
 Current syntax has some limitations. Syntax errors are easy to spot in the GUI - a malformed expression will simply not be highlighted.
 
-If an expression is invalid due to its syntax it will simply remain as-is and will not be computed nor replaced at run-time. If, however, an operator or a function receives invalid input \(e.g. division by zero or any of the parameter arguments not having a value\) the test will fail with an error.
+If an expression is invalid due to its syntax it will simply remain as-is and will not be computed nor replaced at run-time. If, however, an operator or a function receives invalid input (e.g. division by zero or any of the parameter arguments not having a value) the test will fail with an error.
 
-Note that predefined parameter values \(AKA [Parameter Defaults](./#default-parameters)\) are computed whenever a test configuration is validated - thus computation related errors will render the test configuration invalid.
+Note that predefined parameter values (AKA [Parameter Defaults](./#default-parameters)) are computed whenever a test configuration is validated - thus computation related errors will render the test configuration invalid.
 
 Current syntax limitations are:
 
 * Operators _**must**_ be separated from their arguments by spaces, e.g. `${x + y}` is fine but `${x+y}` will not be computed.
 * Spaces are _**not allowed**_ anywhere else within an expression, e.g. both `${__add(x, y)}` and `${fullName == 'John Doe'}` will not be computed.
-* **Literal values** may not contain whitespace characters, commas \(`,`\) or single quotes \(`'`\). These cannot be escaped - simply define a previous parameter with the desired value when the need arises. Note that numeric literal values need to be quoted the same as any other value, e.g. `${x > '0'}` is OK but `${x > 0}` will not be computed.
+* **Literal values** may not contain whitespace characters, commas (`,`) or single quotes (`'`). These cannot be escaped - simply define a previous parameter with the desired value when the need arises. Note that numeric literal values need to be quoted the same as any other value, e.g. `${x > '0'}` is OK but `${x > 0}` will not be computed.
 * You may chain multiple operations together, e.g. `${x * y + z}` but you may _**not**_ use parentheses to set precedence, e.g. `${(x * y) + z}` will not be computed. This can usually be worked around using functions though, e.g. `${__mult(x,y) + z}`
 * All operators have the _**same precedence**_ - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
 * Computations may _**not be nested**_, i.e. you may not pass a computed value as an argument to function, e.g. `${__mult(x,y) + z}` is OK but neither `${__mult(x + y,z)}` nor `${__mult(__add(x,y),z)}` will be computed.
-* Unary operators, e.g. `${-x}` are _**not**_ supported. This can be overcome using functions such as [\_\_neg](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions#__neg-p-1) or [\_\_not](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions#__not-p-1).
+* Unary operators, e.g. `${-x}` are _**not**_ supported. This can be overcome using functions such as [\__neg](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions#\__neg-p-1) or [\__not](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions#\__not-p-1).
 
 ### Operators
 
@@ -152,5 +152,4 @@ The computed value of a valid boolean operation is either exactly `true` or exac
 
 May be applied to any two parameters which have values that translate to _**finite numbers**_. Computed values are _**not**_ rounded to integers.
 
-### 
-
+###

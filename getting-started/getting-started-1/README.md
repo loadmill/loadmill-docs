@@ -1,7 +1,6 @@
 ---
 description: Running your first load test.
 ---
-
 # Load Testing Guide
 
 The Loadmill's Load Testing module allows users **to replay their API tests at scale** and use real traffic with the ability to target specific countries or go global.
@@ -16,9 +15,9 @@ In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn
 
 ## **Before you start**
 
-**Signup to Loadmill** at this [link](https://www.loadmill.com/app/signup). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account. ****
+**Signup to Loadmill** at this [link](https://www.loadmill.com/app/signup). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account.** **
 
-In order to use Loadmill effectively, we highly recommend to read [Core definitions](https://docs.loadmill.com/core-definitions), don't worry, it is only a 2 min read. 😉 
+In order to use Loadmill effectively, we highly recommend to read [Core definitions](https://docs.loadmill.com/core-definitions), don't worry, it is only a 2 min read. :wink: 
 
 ## Let's create and run your first Load test together. 
 
@@ -29,12 +28,12 @@ There are two ways to do that:
 
 ### Creating and running a load test from scratch in Loadmill:
 
-{% embed url="https://www.youtube.com/embed/7Y13BkbNLpo" caption="" %}
+{% embed url="https://www.youtube.com/embed/7Y13BkbNLpo" %}
 
 The simplest load test you can create is an HTTP GET request to your web server. 
 
 {% hint style="warning" %}
-🧠 Load test may include **100 requests maximum**.
+:brain: Load test may include **100 requests maximum**.
 {% endhint %}
 
 All you need to do is:
@@ -70,28 +69,28 @@ To start a trial run, click the **DRY RUN** button at the bottom of the editor.
 Now that we know that our test is configured correctly, we can run it at scale. To do that:
 
 1. Click the **RUN TEST** button at the bottom of the test editor.
-2. Set Test Duration \(minutes\) and **Maximum Concurrent Sessions** OR **Maximum Requests Per Second** you would like this test flow to run.
-3. Click on **Advanced** to set additional parameters. For example, you can set **Ramp-up** **Duration** \(1 minute by default\) hence a number of concurrent sessions will increase linearly during the ramp-up.  
+2. Set Test Duration (minutes) and **Maximum Concurrent Sessions **OR** Maximum Requests Per Second** you would like this test flow to run.
+3. Click on **Advanced** to set additional parameters. For example, you can set **Ramp-up** **Duration** (1 minute by default) hence a number of concurrent sessions will increase linearly during the ramp-up.  
 4. Click **RUN**.
 
 ![](../../.gitbook/assets/ezgif.com-gif-maker-19-.gif)
 
 {% hint style="info" %}
-🧙♂ **Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can learn how to do that [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) \(it's actually pretty easy\).
+:man_mage:** Note:** At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can learn how to do that [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) (it's actually pretty easy).
 {% endhint %}
 
 As the test progresses we can see the amount of concurrent sessions **ramping up** linearly and see how **response time metrics** change over time.
 
-![](../../.gitbook/assets/image%20%2838%29.png)
+![](<../../.gitbook/assets/image (38).png>)
 
 In addition, you can **adjust concurrency** **during a test run**. This is a very powerful feature that allows to see how the test performs with dynamic concurrency changes in real time.
 
 ![](../../.gitbook/assets/screenshot-33-.png)
 
-Loadmill keeps track of the request **error rate** and fails the test if it passes a certain threshold \(%50 by default\). We can see the response time for each request and are able to drill down and see the error statistics for each one.
+Loadmill keeps track of the request **error rate** and fails the test if it passes a certain threshold (%50 by default). We can see the response time for each request and are able to drill down and see the error statistics for each one.
 
 {% hint style="info" %}
-🧠 You can easily run your API Test Suite as load tests by clicking on the drop-down icon within the **RUN SUITE** button - **Run as load test**.
+:brain: You can easily run your API Test Suite as load tests by clicking on the drop-down icon within the **RUN SUITE** button - **Run as load test**.
 {% endhint %}
 
 ![Running the Test Suite as load tests ](../../.gitbook/assets/ezgif.com-gif-maker-2-.gif)
@@ -101,6 +100,4 @@ Keep exploring the guides to learn how to analyze load test results, set thresho
 ### Support
 
 We are always here if you need any help! Click on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).  
-
-
 
