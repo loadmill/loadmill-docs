@@ -2,6 +2,8 @@
 
 Let's take a look at the Load Test Editor.
 
+![](broken-reference)
+
 | Option                                  | Description                                                                                                                                                                 |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1.The Autosave status of your load test | You don't need to save your test, we do that for you, unless the test configuration is invalid.                                                                             |
