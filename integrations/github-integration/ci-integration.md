@@ -1,20 +1,20 @@
 # CI integration
 
-Loadmill allows users to connect tests to a GitHub repository so that the tests will run per each successful release of the application associated with the repository. 
+Loadmill allows users to connect tests to a GitHub repository so that the tests will run per each successful release of the application associated with the repository.
 
 Configure the integration by following the steps below:
 
-1. Navigate to **Settings - Integrations - CONNECT TO GITHUB. **Note: only team admins can perform this action.
+1. Navigate to **Settings** - **Integrations** - CONNECT TO GITHUB. Note: only team admins can perform this action.
 
 ![GitHub Integration Settings page](../../.gitbook/assets/screenshot-2021-03-01t123334.606.png)
 
-    2\. You will promptly be redirected to GitHub and then back to Loadmill, select a relevant repository and click **CONFIGURE**.
+   2\. You will promptly be redirected to GitHub and then back to Loadmill, select a relevant repository and click **CONFIGURE**. 
 
-     3\. Choose a relevant Test Plan and click **SAVE CONFIGURATION**. Find more information about Test Plans [here](https://docs.loadmill.com/api-testing/test-plan).
+   3\. Choose a relevant Test Plan and click **SAVE CONFIGURATION**. Find more information about Test Plans [here](https://docs.loadmill.com/api-testing/test-plan).
 
 ![Selecting Test Plan](../../.gitbook/assets/screenshot-2021-03-01t154532.233.png)
 
-From now on, the chosen Test Plan will run upon a successful release to the application associated with the repository with the application url as the target url. 
+From now on, the chosen Test Plan will run upon a successful release to the application associated with the repository with the application url as the target url.
 
 Watch your tests update in real time on commits and the pull request screen in GitHub as shown below. Click on **Details** to navigate to the Test Plan run.
 
