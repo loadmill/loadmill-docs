@@ -12,7 +12,7 @@ Sure, create a parameter with using the `__random_letters([length=10])` function
 
 ![](../.gitbook/assets/screenshot-2021-04-01t155426.154.png)
 
-Find more great functions on [this page](https://docs.loadmill.com/api-testing/test-suite-editor/functions#randomization-functions) and more information about default parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters). 
+Find more great functions on [this page](https://docs.loadmill.com/api-testing/test-suite-editor/functions#randomization-functions) and more information about default parameters [here](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters).
 
 ### **I'm getting ID of my resource and I want to make sure it is in the format of UUID. How can I do that?**
 
@@ -23,7 +23,7 @@ You can easily achieve that:
 
 ![](../.gitbook/assets/screenshot-2021-10-03t155017.448.png)
 
-   3\. Now, assert the second parameter you've created earlier.
+3\. Now, assert the second parameter you've created earlier.
 
 ![](../.gitbook/assets/screenshot-2021-10-03t155243.087.png)
 
@@ -37,18 +37,6 @@ Then, go to Loadmill, upload the file by using the "Import CSV" button within a 
 
 ![](../.gitbook/assets/screenshot-2021-10-03t155529.122.png)
 
-Thus, when running the Test Suite, each test iteration will get a relevant ticket type from the CSV file. Find more information about using CSV files in API tests [here](https://docs.loadmill.com/api-testing/test-suite-editor/api-tests-data-from-csv-files). 
+Thus, when running the Test Suite, each test iteration will get a relevant ticket type from the CSV file. Find more information about using CSV files in API tests [here](https://docs.loadmill.com/api-testing/test-suite-editor/api-tests-data-from-csv-files).
 
-
-
-
-
-### ****
-
-\
-
-
-\
-
-
-\
+###
