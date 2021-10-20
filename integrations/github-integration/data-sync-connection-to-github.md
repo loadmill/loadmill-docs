@@ -1,6 +1,8 @@
-# Data sync connection to GitHub
+# Data sync
 
-Loadmill provides the ability to store the Test Suite data in your GitHub repository so you always have a backup when needed. In addition, the data sync connection to GitHub enables you to always track changes made to Test Suites.
+Loadmill provides the ability to store the Test Suite data in your GitHub repository so you always have a backup when needed.&#x20;
+
+In addition, the data sync connection to GitHub enables you to always track changes made to Test Suites and take the data from the repo for test runs.
 
 ### Setup
 
@@ -10,9 +12,7 @@ Loadmill provides the ability to store the Test Suite data in your GitHub reposi
 
 ![The GitHub data sync integration setup page](../../.gitbook/assets/screen-shot-2021-03-04-at-12.07.23.png)
 
-```
-4\. Click on **CONNECT TO REPO. **Now it's time to fill it in with your Test Suite data. :partying_face: 
-```
+&#x20; 4\. Click on **CONNECT TO REPO**. Now it's time to fill it in with your Test Suite data. :partying\_face:
 
 ### **Usage**
 
