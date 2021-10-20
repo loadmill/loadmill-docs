@@ -53,7 +53,7 @@
   * [CI integration](integrations/npm-modal.md)
   * [GitHub integration](integrations/github-integration/README.md)
     * [CI integration](integrations/github-integration/ci-integration.md)
-    * [Data sync connection to GitHub](integrations/github-integration/data-sync-connection-to-github.md)
+    * [Data sync](integrations/github-integration/data-sync-connection-to-github.md)
   * [Slack integration](integrations/slack-integration.md)
   * [TestRail integration](integrations/testrail-integration.md)
   * [REST API](integrations/rest-api.md)
