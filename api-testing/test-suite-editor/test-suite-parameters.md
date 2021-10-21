@@ -1,8 +1,8 @@
 # Test Suite Parameters
 
-The Test Suite Parameters tab allows to configure default parameters which are relevant to the execution context. e.g. target host, login credentials, and user input. 
+The Test Suite Parameters tab allows to configure default parameters which are relevant to the execution context. e.g. target host, login credentials, and user input.
 
-Default parameters can be used in requests using the template strings notation: `${parameter_name}`. 
+Default parameters can be used in requests using the template strings notation: `${parameter_name}`.
 
 ![](../../.gitbook/assets/screenshot-2021-10-03t151141.671.png)
 
@@ -10,7 +10,7 @@ Default parameters can be used in requests using the template strings notation: 
 
 ### Parameters scope
 
-By default, Test Suite parameters have the **Single Flow Run** execution scope. The alternative option is to select the **Entire Test Suite Run **scope. 
+By default, Test Suite parameters have the **Single Flow Run** execution scope. The alternative option is to select the **Entire Test Suite Run** scope.
 
 ![](../../.gitbook/assets/screenshot-2021-03-22t142256.813.png)
 
@@ -22,9 +22,4 @@ Let's say, I have a test flow where I test creating and editing a blog post. I'v
 
 ### Support
 
-We are always here if you need any help! Click on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).  
-
-
-
-
-
+We are always here if you need any help! Click on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).
