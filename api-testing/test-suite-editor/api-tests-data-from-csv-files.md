@@ -1,6 +1,9 @@
 ---
-description: Re-run the Test Suite’s flow for a number of iterations while using each of the CSV rows as parameter values.
+description: >-
+  Re-run the Test Suite’s flow for a number of iterations while using each of
+  the CSV rows as parameter values.
 ---
+
 # API Tests - Data from CSV files
 
 When you wish to run a flow several times using different parameters values for each run - just use a CSV file to list the parameters values and on run time the flow will run as the number of rows in the CSV, each run will get it’s own row values from the CSV file.
@@ -17,7 +20,7 @@ When a flow is using a CSV file, there will be an indication "Using CSV".
 
 In order to remove a CSV file from the test, simply click on the "Using CSV" button, and click on the "Delete" button.
 
-![](https://lh6.googleusercontent.com/r6nNQ0ReXJEtZ6M7yzVm1p0wCOXflhs68gni7r0phAfLe7KpXEQKJ8QMgzmbBSAxcUM4inb5LrnwCZa6FR4jxhf2vErU_suQt3i39HdRSn_RJ0M24QnWV3XMpuTJuA6oVPc-w4DH)
+![](https://lh6.googleusercontent.com/r6nNQ0ReXJEtZ6M7yzVm1p0wCOXflhs68gni7r0phAfLe7KpXEQKJ8QMgzmbBSAxcUM4inb5LrnwCZa6FR4jxhf2vErU\_suQt3i39HdRSn\_RJ0M24QnWV3XMpuTJuA6oVPc-w4DH)
 
 **Iteration for each CSV value**
 
@@ -35,11 +38,10 @@ The order of parameter value assignment is:
 
 ![](../../.gitbook/assets/pasted-image-0.png)
 
-   2\. Value as they appear in the **CSV** file. For example:
+&#x20; 2\. Value as they appear in the **CSV** file. For example:
 
 ![](../../.gitbook/assets/pasted-image-0-1-.png)
 
-     3\. Value as defined in the **Extractions - Set Parameters **section of specific request (This will override all of the above). For example:
+&#x20;  3\. Value as defined in the **Extractions - Set Parameters** section of specific request (This will override all of the above). For example:&#x20;
 
 ![](../../.gitbook/assets/screen-shot-2021-10-03-at-15.27.27.png)
-
