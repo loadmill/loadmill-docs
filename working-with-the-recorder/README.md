@@ -26,18 +26,18 @@ Note, you can also configure URL Filters within [the Recordings Settings](https:
 
 6\. To make sure your recorded session includes only relevant requests, you can click on the expanding arrow within requests to see their request and response body.
 
-7\. When you are done recording your session, click the "Upload" button at the bottom. 
+7\. When you are done recording your session, click the "Upload" button at the bottom.&#x20;
 
 8\. Click on the small box next to the Test Suite name to open the recorded test in your Test Suite.
 
 {% hint style="info" %}
-:mage: For each test flow Loadmill automatically creates [**extractions**](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions)\*\* **and** \*\*[**assertions**](https://docs.loadmill.com/api-testing/test-suite-editor/assertions):
+:mage: For each test flow Loadmill automatically creates [**extractions**](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions)** **and [**assertions**](https://docs.loadmill.com/api-testing/test-suite-editor/assertions):
 
 1. Default assertions - for any extraction we find in the recorded test, we add a default assertion to it (example: "id" exists).
 2. Specific assertions - for any parameter with given user key (for example, "success") we extract it and assign to it an assertion (example: "success" equals "true").
 {% endhint %}
 
-9\. Run the Test Suite by pressing the "RUN SUITE" button and see [your results](https://docs.loadmill.com/api-testing/analyzing-an-api-test-results). 🥳 
+9\. Run the Test Suite by pressing the "RUN SUITE" button and see [your results](https://docs.loadmill.com/api-testing/analyzing-an-api-test-results). 🥳&#x20;
 
 ## Loadmill node recorder
 
