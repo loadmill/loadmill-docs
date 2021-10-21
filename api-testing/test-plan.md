@@ -4,7 +4,7 @@ A Test Plan is a collection of Test Suites that belong to specific tasks or feat
 
 ![](../.gitbook/assets/screenshot-83-.png)
 
-The image below shows the Test Plan hierarchy in Loadmill. 
+The image below shows the Test Plan hierarchy in Loadmill.
 
 ![](../.gitbook/assets/screen-shot-2021-01-19-at-17.26.24.png)
 
@@ -12,27 +12,27 @@ The image below shows the Test Plan hierarchy in Loadmill.
 
 Let's create and run your first Test Plan together:
 
-1. Navigate to the Test Plans tab and click on the "NEW TEST PLAN" button.
+1. Navigate to the Test Plans tab and click on the NEW TEST PLAN button.
 2. Let's look at the Test Plan editor page.
 
 ![](../.gitbook/assets/screenshot-2021-08-25t163236.521.png)
 
-   3\. Click on "MANAGE SUITES" to add Test Suites to the Test Plan. You can pick specific Test Suites or all by clicking "ALL SUITES". Once the Test Suites are selected, click "CLOSE".
+3\. Click on MANAGE SUITES to add Test Suites to the Test Plan. You can pick specific Test Suites or all by clicking ALL SUITES. Once the Test Suites are selected, click CLOSE.
 
 {% hint style="warning" %}
-:brain: Make sure the Test Suites you would like to run within the Test Plan have test flows with CI toggle on. Otherwise, the Test Suites will be grayed out and won't run. 
+:brain: Make sure the Test Suites you would like to run within the Test Plan have test flows with CI toggle on. Otherwise, the Test Suites will be grayed out and won't run.
 {% endhint %}
 
 ![](../.gitbook/assets/screenshot-2021-04-05t112455.593.png)
 
- 4\. Now you have two options:
+4\. Now you have two options:
 
-* Run the Test Plan by clicking “RUN TEST PLAN”  
-* Use the "RUN BY LABELS" option to select relevant labels and then click “RUN TEST PLAN” so that only Test Suites whose test flows have specific labels will run.
+* Run the Test Plan by clicking RUN TEST PLAN.
+* Use the RUN BY LABELS option to select relevant labels and then click RUN TEST PLAN so that only Test Suites whose test flows have specific labels will run.
 
 ![](../.gitbook/assets/ezgif.com-gif-maker-26-.gif)
 
-### Test Plan navigation panel 
+### Test Plan navigation panel
 
 The panel allows:
 
@@ -41,15 +41,15 @@ The panel allows:
 
 ![](../.gitbook/assets/screenshot-2021-08-25t163456.565.png)
 
-    3\. To define a **Setup Flow** that will run before all suites of the Test Plan. The Setup Flow common use cases: creation of an account, user, env cleanup and any other action/s you need to perform before running the Test Plan suites. You can either create the flow from scratch in the Setup Flow tab or use a [shared flow](https://docs.loadmill.com/collaboration/shared-flows) by clicking on CHANGE SOURCE. 
+&#x20; 3\. To define a **Setup Flow** that will run before all suites of the Test Plan. The Setup Flow common use cases: creation of an account, user, env cleanup and any other action/s you need to perform before running the Test Plan suites. You can either create the flow from scratch in the Setup Flow tab or use a [shared flow](https://docs.loadmill.com/collaboration/shared-flows) by clicking on CHANGE SOURCE.
 
 ![](../.gitbook/assets/screenshot-2021-08-25t164426.809.png)
 
-    4\. Set Test Plan E-mail or Slack notifications so that you will get one email/slack notification with all the Test Suites' information.
+&#x20; 4\. Set Test Plan E-mail or Slack notifications so that you will get one email/slack notification with all the Test Suites' information.
 
 ![](../.gitbook/assets/screenshot-2021-09-01t123447.655.png)
 
-    5\. To schedule the Test Plan to run periodically to constantly validate your application status.
+&#x20; 5\. To schedule the Test Plan to run periodically to constantly validate your application status.
 
 ![](../.gitbook/assets/screenshot-2021-08-25t165201.397.png)
 
@@ -69,4 +69,4 @@ After running the Test Plan, you will be redirected to the Test Plan Run page. T
 
 ![](../.gitbook/assets/screenshot-2021-03-10t095854.448.png)
 
-You can easily re-run Test Plan by clicking **RE-RUN** or **Run only Failed Suites**. 
+You can easily re-run Test Plan by clicking **RE-RUN** or **Run only Failed Suites**.
