@@ -6,7 +6,7 @@ description: Running your first API test.
 
 The Loadmill's API testing module allows users to easily create automated API tests taken from real user sessions.
 
-![](../.gitbook/assets/screenshot-78-.png)
+![](<../.gitbook/assets/Screenshot (17).png>)
 
 In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
 
@@ -42,7 +42,7 @@ Recording and running an API Test
 6. Use the filter and the request's delete buttons to filter out irrelevant requests. You can also see the request and response body by clicking on the expanding arrow within requests.
 7. When you are done recording your session, click the "Upload" button at the bottom.
 8. Go to Loadmill and open the recorded test in your Test Suite.
-9. Run the Test Suite by pressing the "RUN SUITE" button and see your results. :partying_face: Visit [this page](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) to learn more about the Loadmill Chrome recorder extension.
+9. Run the Test Suite by pressing the "RUN SUITE" button and see your results. :partying\_face: Visit [this page](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) to learn more about the Loadmill Chrome recorder extension.
 
 {% hint style="warning" %}
 :brain: Loadmill creates **two automatic assertion types** for you:
@@ -54,7 +54,7 @@ Recording and running an API Test
 ### Creating and running an API test from scratch in Loadmill:
 
 {% hint style="info" %}
-:man_mage: Let's create an API test that validates user login to our [demo testing app](https://loadmill-test-blog.herokuapp.com). API test may include **200 requests maximum**.
+:man\_mage: Let's create an API test that validates user login to our [demo testing app](https://loadmill-test-blog.herokuapp.com). API test may include **200 requests maximum**.
 {% endhint %}
 
 1. Go to the API Tests tab.
@@ -67,20 +67,20 @@ Recording and running an API Test
 
 5\. Enter request name - **Authentication request - extract token using JSONPath from the response**, select "POST" as Method, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token`
 
-6\. Press **Advanced**. This is a place where we set the request body, headers, [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). Select Content type - `application/x-www-form-urlencoded `, put body - grant_type=password\&username=${username}\&password=${password}\&client_id=ghost-admin\&client_secret=${client_secret}
+6\. Press **Advanced**. This is a place where we set the request body, headers, [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). Select Content type - `application/x-www-form-urlencoded `, put body - grant\_type=password\&username=${username}\&password=${password}\&client\_id=ghost-admin\&client\_secret=${client\_secret}
 
 ![](../.gitbook/assets/screenshot-2021-10-03t115940.240.png)
 
-7\. The warning you've got means that the parameters we set in the body as **username, password, client_secret** are not defined yet. Go to [the Parameters tab](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters) and add them as shown below:
+7\. The warning you've got means that the parameters we set in the body as **username, password, client\_secret** are not defined yet. Go to [the PARAMETERS tab](https://docs.loadmill.com/api-testing/test-suite-editor/test-suite-parameters) and add them as shown below:
 
 ![](../.gitbook/assets/screenshot-2021-10-03t122501.243.png)
 
-username - a%40b.com, password - Test1234, client_secret - 8c93bf1bb580.
+username - a%40b.com, password - Test1234, client\_secret - 8c93bf1bb580.
 
 8\. Now go back to the "Flows" tab and run your first API Test Suite by pressing the "RUN SUITE" button. That's it, you can see your results live in Loadmill.
 
 {% hint style="info" %}
-:man_mage: You can set this test flow [**as Login Flow**](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) so that it will run before each flow within the Test Suite. To do that, click on three dots within the test flow (next to the run icon) and press "Set As Login Flow".
+:man\_mage: You can set this test flow [**as Login Flow**](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) so that it will run before each flow within the Test Suite. To do that, click on three dots within the test flow (next to the run icon) and press "Set As Login Flow".
 {% endhint %}
 
 :tada: This is only the beginning, continue exploring our guides to master your **Loadmill skills**!
