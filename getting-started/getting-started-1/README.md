@@ -6,7 +6,7 @@ description: Running your first load test.
 
 The Loadmill's Load Testing module allows users **to replay their API tests at scale** and use real traffic with the ability to target specific countries or go global.
 
-![The Load Tests tab](../../.gitbook/assets/load_tests_tab.png)
+![](<../../.gitbook/assets/Screenshot (26).png>)
 
 In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
 
@@ -46,9 +46,9 @@ All you need to do is:
 
 ![Running a Load Test as Dry Ru ](../../.gitbook/assets/ezgif.com-gif-maker-18-.gif)
 
- That's it! You have just created and run your first load test in under a minute 🎉   
+&#x20;That's it! You have just created and run your first load test in under a minute 🎉  &#x20;
 
-See how to run it at scale [here](https://docs.loadmill.com/getting-started/getting-started-1#running-a-load-test-at-scale). 
+See how to run it at scale [here](https://docs.loadmill.com/getting-started/getting-started-1#running-a-load-test-at-scale).&#x20;
 
 ### Recording an API test by using [our Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en) and running it as a load test in Loadmill:
 
@@ -79,7 +79,7 @@ Now that we know that our test is configured correctly, we can run it at scale. 
 ![](../../.gitbook/assets/ezgif.com-gif-maker-19-.gif)
 
 {% hint style="info" %}
-:man_mage: **Note**: At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can learn how to do that [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) (it's actually pretty easy).
+:man\_mage: **Note**: At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can learn how to do that [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) (it's actually pretty easy).
 {% endhint %}
 
 As the test progresses we can see the amount of concurrent sessions **ramping up** linearly and see how **response time metrics** change over time.
