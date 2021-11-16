@@ -2,9 +2,11 @@
 
 A Test Plan is a collection of Test Suites that belong to specific tasks or features or have another reason to be run together. In general, the primary use of Test Plans is running several Test Suites integrated into your Continuous Delivery pipeline, although you may still run it manually in the UI.
 
-![](../.gitbook/assets/screenshot-83-.png)
-
 The image below shows the Test Plan hierarchy in Loadmill.
+
+![](<../.gitbook/assets/Screenshot (27).png>)
+
+![](<../.gitbook/assets/Screenshot (28).png>)
 
 ![](../.gitbook/assets/screen-shot-2021-01-19-at-17.26.24.png)
 
@@ -15,7 +17,7 @@ Let's create and run your first Test Plan together:
 1. Navigate to the Test Plans tab and click on the NEW TEST PLAN button.
 2. Let's look at the Test Plan editor page.
 
-![](../.gitbook/assets/screenshot-2021-08-25t163236.521.png)
+![](<../.gitbook/assets/Screenshot (29).png>)
 
 3\. Click on MANAGE SUITES to add Test Suites to the Test Plan. You can pick specific Test Suites or all by clicking ALL SUITES. Once the Test Suites are selected, click CLOSE.
 
@@ -32,9 +34,9 @@ Let's create and run your first Test Plan together:
 
 ![](../.gitbook/assets/ezgif.com-gif-maker-26-.gif)
 
-### Test Plan navigation panel
+### Test Plan navigation bar
 
-The panel allows:
+The navigation bar allows:
 
 1. To configure Test Plan parameters values so that the Test Plan run will include these values in **all the Test Suites using the parameters**.
 2. To set Test Suites to run in parallel (up to 12) hence you will be able to significantly save running time.
