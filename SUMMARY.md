@@ -43,6 +43,7 @@
   * [How to work with Recordings](working-with-the-recorder/working-with-the-recorder.md)
   * [Recording settings](working-with-the-recorder/recorder-settings.md)
   * [Additional recording methods](working-with-the-recorder/additional-recording-methods.md)
+  * [Recording troubleshooting](working-with-the-recorder/recording-troubleshooting.md)
 * [🤝 Collaboration](collaboration/README.md)
   * [Teams](collaboration/teams.md)
   * [Test Suite Collaborators](collaboration/test-suite-collaborators-1.md)
