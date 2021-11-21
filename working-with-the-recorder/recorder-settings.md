@@ -2,7 +2,7 @@
 
 Use the advanced Recording Settings to create meaningful replay-able tests that are easy to configure. Team Admins can control these settings [on this page](https://www.loadmill.com/app/user/settings/recordings).
 
-![](../.gitbook/assets/screenshot-2021-04-19t121902.035.png)
+![](<../.gitbook/assets/Screenshot (37).png>)
 
 {% hint style="info" %}
 **Reduce Global Parameters** is the only setting enabled by default that makes sure only relevant parameters will be created during the recording import.
