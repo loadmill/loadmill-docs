@@ -4,9 +4,9 @@ In order to use the [Loadmill npm module](https://www.npmjs.com/package/loadmill
 
 ## Generating a Token
 
-1. Navigate to **the user's Avatar** > **Settings** > [**Security**](https://www.loadmill.com/app/user/settings/security)**.**
+1. Navigate to **Settings** > [**Security**](https://www.loadmill.com/app/user/settings/security)**.**
 
-![](../.gitbook/assets/screenshot-2021-06-13t094954.242.png)
+![](<../.gitbook/assets/Screenshot (43).png>)
 
 &#x20; 2\. Enter description for the token's intended usage and click **GENERATE**.
 
