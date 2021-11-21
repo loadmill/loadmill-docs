@@ -38,22 +38,23 @@ Let's create and run your first Test Plan together:
 
 The navigation bar allows:
 
-1. To configure Test Plan parameters values so that the Test Plan run will include these values in **all the Test Suites using the parameters**.
-2. To set Test Suites to run in parallel (up to 12) hence you will be able to significantly save running time.
+1. To set Test Suites to run in parallel (up to 12) so you will be able to significantly save running time.
+2. To select a GitHub repository branch to take Test Suite data from while using [the GitHub integration](https://docs.loadmill.com/integrations/github-integration/data-sync-connection-to-github#running-test-plan-with-the-data-committed-to-github).
+3. To configure Test Plan parameters values so that the Test Plan run will take these values in **all the Test Suites using the parameters**.
 
-![](../.gitbook/assets/screenshot-2021-08-25t163456.565.png)
+![](<../.gitbook/assets/Screenshot (30).png>)
 
 &#x20; 3\. To define a **Setup Flow** that will run before all suites of the Test Plan. The Setup Flow common use cases: creation of an account, user, env cleanup and any other action/s you need to perform before running the Test Plan suites. You can either create the flow from scratch in the Setup Flow tab or use a [shared flow](https://docs.loadmill.com/collaboration/shared-flows) by clicking on CHANGE SOURCE.
 
-![](../.gitbook/assets/screenshot-2021-08-25t164426.809.png)
+![](<../.gitbook/assets/Screenshot (31).png>)
 
 &#x20; 4\. Set Test Plan E-mail or Slack notifications so that you will get one email/slack notification with all the Test Suites' information.
 
-![](../.gitbook/assets/screenshot-2021-09-01t123447.655.png)
+![](<../.gitbook/assets/Screenshot (32).png>)
 
 &#x20; 5\. To schedule the Test Plan to run periodically to constantly validate your application status.
 
-![](../.gitbook/assets/screenshot-2021-08-25t165201.397.png)
+![](<../.gitbook/assets/Screenshot (33).png>)
 
 ### Integrating Test Plan into CI/CD
 
