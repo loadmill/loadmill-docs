@@ -10,9 +10,9 @@ When you wish to run a flow several times using different parameters values for 
 
 Find the "Import CSV" in the flow upper toolbar:
 
-![Loadmill API tests - load CSV file](../../.gitbook/assets/csv.gif)
-
 Once the CSV file has been uploaded, you will be able to go over the different parameters and their values in a preview window, when you're done, just click "Upload". (Attention: in cases where the CSV file contains empty cells, Loadmill will not prevent its uploading).
+
+![](../../.gitbook/assets/video1550703363-online-video-cut.gif)
 
 When a flow is using a CSV file, there will be an indication "Using CSV".
 
