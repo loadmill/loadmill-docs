@@ -44,7 +44,7 @@ All you need to do is:
 3. Copy and paste the website URL into the **URL** text box. In our case, it's going to be `https://loadmill-test-blog.herokuapp.com`. This is a ghost blogging server we are using for testing and demos, so you can use it for tests.
 4. Click the **DRY RUN** button as we recommend running your load test for the first time as a [trial test](https://docs.loadmill.com/getting-started/getting-started-1#running-a-trial-test).
 
-![Running a Load Test as Dry Ru ](../../.gitbook/assets/ezgif.com-gif-maker-18-.gif)
+![](../../.gitbook/assets/video1807115540-online-video-cut.gif)
 
 &#x20;That's it! You have just created and run your first load test in under a minute 🎉  &#x20;
 
@@ -76,7 +76,7 @@ Now that we know that our test is configured correctly, we can run it at scale. 
 3. Click on **Advanced** to set additional parameters. For example, you can set **Ramp-up** **Duration** (1 minute by default) hence a number of concurrent sessions will increase linearly during the ramp-up.
 4. Click **RUN**.
 
-![](../../.gitbook/assets/ezgif.com-gif-maker-19-.gif)
+![](../../.gitbook/assets/video1399332329-online-video-cut.gif)
 
 {% hint style="info" %}
 :man\_mage: **Note**: At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can learn how to do that [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) (it's actually pretty easy).
@@ -96,7 +96,7 @@ Loadmill keeps track of the request **error rate** and fails the test if it pass
 :brain: You can easily run your API Test Suite as load tests by clicking on the drop-down icon within the **RUN SUITE** button - **Run as load test**.
 {% endhint %}
 
-![Running the Test Suite as load tests](../../.gitbook/assets/ezgif.com-gif-maker-2-.gif)
+![](<../../.gitbook/assets/video1977598869-online-video-cut (1) (2).gif>)
 
 Keep exploring the guides to learn how to analyze load test results, set thresholds and more.
 
