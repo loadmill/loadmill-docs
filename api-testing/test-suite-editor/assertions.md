@@ -27,12 +27,12 @@ There are several types of assertions:
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
-See **an example of the assertion** that validates the generated ID is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#\__is_uuid-target) below:
+See **an example of the assertion** that validates the generated ID is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#\_\_is\_uuid-target) below:
 
-![The Assertion example](../../.gitbook/assets/ezgif.com-gif-maker-24-.gif)
+![](../../.gitbook/assets/video1582528102-online-video-cut.gif)
 
 {% hint style="info" %}
-:man_mage: When creating tests via our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder), Loadmill will create **two automatic assertion types** for you:
+:man\_mage: When creating tests via our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder), Loadmill will create **two automatic assertion types** for you:
 
 1. Default assertions - for any extraction we find in the recorded test, we add a default assertion to it (example: "id" exists).
 2. Specific assertions - for any parameter with given user key (for example, "success") we extract it and assign to it an assertion (example: "success" equals "true").
