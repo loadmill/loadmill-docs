@@ -39,6 +39,4 @@ Easily convert an API flow to Load test by clicking on the Flow options menu ![]
 
 ![](../../.gitbook/assets/screenshot-2021-07-05t104357.068.png)
 
-![](../../.gitbook/assets/screenshot-2021-07-05t104522.112.png)
-
 ###
