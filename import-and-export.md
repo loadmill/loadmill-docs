@@ -56,6 +56,6 @@ You can export Test Suites, Test Flows, Load Tests, Test Suite/Test Plan/Load Te
 
 Let's say you ran a test and one of the requests has failed and now you would like to run it separately in the CLI. To do that, just click **Copy as cURL** within the failed request.
 
-![](.gitbook/assets/video1061454160-online-video-cut.gif)
+![](.gitbook/assets/video1964871818-online-video-cut.gif)
 
 You can use this option in Test Suite and Load Test Runs as well.
