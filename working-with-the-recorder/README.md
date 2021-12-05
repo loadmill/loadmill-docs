@@ -7,7 +7,7 @@ Loadmill provides two main options to record real user sessions: **Loadmill Chro
 ## Loadmill Chrome recorder extension
 
 1. Download the extension [here](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en).
-2. Go to [API Tests](https://www.loadmill.com/app/api-tests/test-suites) in Loadmill and create a Test Suite.
+2. Go to [Test Suites](https://app.loadmill.com/app/api-tests/test-suites) in Loadmill and create a Test Suite.
 3. Open the Chrome Developer Tools => switch to the **Loadmill Rec** tab and select name of the created Test Suite in the extension.
 
 ![The Test Suite field within the extension](../.gitbook/assets/screen-shot-2021-06-23-at-15.40.55.png)
@@ -43,11 +43,11 @@ Note, you can also configure URL Filters within [the Recordings Settings](https:
 
 We've developed **a smart recorder** that allows users to capture traffic in the QA or Production environment and replay it as API tests.
 
-![The Recordings tab](../.gitbook/assets/screenshot-36-.png)
+![The Recordings tabs](<../.gitbook/assets/Screenshot (60).png>)
 
 ![](<../.gitbook/assets/image (19).png>)
 
-1. Create a new recording from the [Recordings tab in Loadmill.](https://www.loadmill.com/app/recordings/my-recordings)
+1. Create a new recording from the [Recordings tab](https://app.loadmill.com/app/recordings/my-recordings) in Loadmill.
 2. Play your test scenarios in the recorded app. By default, the traffic is split to different sessions by its source (different IPs) and intermissions between user actions. (If you wish to manually split a recorded session in your test environment, use the [Loadmill session splitter](https://chrome.google.com/webstore/detail/loadmill-session-splitter/beknfelcpakgnojjfcdpjddhnckekhni), else you can use our [advanced Recordings settings](https://docs.loadmill.com/working-with-the-recorder/recorder-settings))
 3. When you're ready, stop the recording and [generate a Test Suite from it](https://docs.loadmill.com/working-with-the-recorder/working-with-the-recorder).
 
