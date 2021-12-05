@@ -44,15 +44,15 @@ The navigation bar allows:
 
 ![](<../.gitbook/assets/Screenshot (30).png>)
 
-&#x20; 3\. To define a **Setup Flow** that will run before all suites of the Test Plan. The Setup Flow common use cases: creation of an account, user, env cleanup and any other action/s you need to perform before running the Test Plan suites. You can either create the flow from scratch in the Setup Flow tab or use a [shared flow](https://docs.loadmill.com/collaboration/shared-flows) by clicking on CHANGE SOURCE.
+&#x20;    4\. To define a **Setup Flow** that will run before all suites of the Test Plan. The Setup Flow common use cases: creation of an account, user, env cleanup and any other action/s you need to perform before running the Test Plan suites. You can either create the flow from scratch in the Setup Flow tab or use a [shared flow](https://docs.loadmill.com/collaboration/shared-flows) by clicking on CHANGE SOURCE.
 
 ![](<../.gitbook/assets/Screenshot (31).png>)
 
-&#x20; 4\. Set Test Plan E-mail or Slack notifications so that you will get one email/slack notification with all the Test Suites' information.
+&#x20;   5\. Set Test Plan E-mail or Slack notifications so that you will get one email/slack notification with all the Test Suites' information.
 
 ![](<../.gitbook/assets/Screenshot (32).png>)
 
-&#x20; 5\. To schedule the Test Plan to run periodically to constantly validate your application status.
+&#x20;   6\. To schedule the Test Plan to run periodically to constantly validate your application status.
 
 ![](<../.gitbook/assets/Screenshot (33).png>)
 
