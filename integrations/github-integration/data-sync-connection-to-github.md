@@ -18,9 +18,9 @@ In addition, the data sync connection to GitHub enables you to always track chan
 
 To sync your Test Suite data with your GitHub repository, follow the steps below:
 
-1. Navigate to a relevant Test Suite and click on the **Github sync** tab.
+1. Navigate to a relevant Test Suite and click on the **GITHUB SYNC** tab.
 
-![](../../.gitbook/assets/screenshot-2021-10-04t111550.674.png)
+![](<../../.gitbook/assets/Screenshot (61).png>)
 
 2\. Choose or create a branch where you would like to sync the Test Suite data to. Then, enter an initial commit message and click COMMIT to sync the Test Suite data.
 
@@ -50,7 +50,7 @@ Once you have Test Suite data committed to your GitHub repository, you can selec
 
 Navigate to the **Test Plan** - **Run Settings** - **Versioned Test Configuration (Recommended)** and select the branch where you committed test suite changes to.
 
-![](../../.gitbook/assets/screenshot-2021-09-26t161339.565.png)
+![](<../../.gitbook/assets/Screenshot (62).png>)
 
 Selecting the branch means that the latest version of it with committed changes will be taken as the Test Plan configuration and any other uncommitted test suite changes won't be taken into account.
 
