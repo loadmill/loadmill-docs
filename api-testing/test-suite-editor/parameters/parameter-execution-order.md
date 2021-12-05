@@ -18,7 +18,7 @@ The "base\_url" parameter is used to store URLs and choose them depending on whi
 
 ![](<../../../.gitbook/assets/Screenshot (54).png>)
 
-&#x20; 3\. **npm module parameter value** - when running tests in CI/CD, the user initiates their execution by using [our npm module](https://www.npmjs.com/package/loadmill) and he can add a relevant "base\_url" parameter value to the command and **this value will **be taken for the run and **override the parameter value set in #2 and #1 above **(if there is any)**.**
+&#x20; 3\. **npm module parameter value** - when running tests in CI/CD, the user initiates their execution by using [our npm module](https://www.npmjs.com/package/loadmill) and he can add a relevant "base\_url" parameter value to the command and **this value will** be taken for the run and **override the parameter value set in #2 and #1 above** (if there is any)**.**
 
 ```
 loadmill  <test-plan-id> --test-plan -w -v -t <token> --report base_url=your_current_url
@@ -28,6 +28,6 @@ loadmill  <test-plan-id> --test-plan -w -v -t <token> --report base_url=your_cur
 
 ![](../../../.gitbook/assets/screen-shot-2021-04-27-at-15.24.26.png)
 
-**The value from the CSV file will **be taken during the test run and **override the parameter value from sections above **(if there is any).
+**The value from the CSV file will** be taken during the test run and **override the parameter value from sections above** (if there is any).
 
 &#x20;  5\. **Extraction parameter value** - when the user extracts value into a parameter within the request's [Extractions - Set parameters](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) section, **this value will override the parameter value from all sections above during the test run**.&#x20;

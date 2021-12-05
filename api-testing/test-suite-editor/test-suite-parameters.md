@@ -10,7 +10,7 @@ Default parameters can be used in requests using the template strings notation: 
 
 ### Parameters scope
 
-By default, Test Suite parameters have the **Entire Test Suite Run **execution scope. The alternative option is to select the **Single Flow Run **scope.
+By default, Test Suite parameters have the **Entire Test Suite Run** execution scope. The alternative option is to select the **Single Flow Run** scope.
 
 ![](<../../.gitbook/assets/Screenshot (24).png>)
 

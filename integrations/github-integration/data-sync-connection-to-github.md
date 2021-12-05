@@ -48,7 +48,7 @@ Moreover, **you can always revert the Test Suite data to the state of any commit
 
 Once you have Test Suite data committed to your GitHub repository, you can select it when running your Test Plan.
 
-Navigate to the **Test Plan** - **Run Settings** - **Versioned Test Configuration (Recommended) **and select the branch where you committed test suite changes to.
+Navigate to the **Test Plan** - **Run Settings** - **Versioned Test Configuration (Recommended)** and select the branch where you committed test suite changes to.
 
 ![](../../.gitbook/assets/screenshot-2021-09-26t161339.565.png)
 

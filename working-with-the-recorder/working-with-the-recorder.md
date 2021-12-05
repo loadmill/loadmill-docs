@@ -1,6 +1,6 @@
 # How to work with Recordings
 
-## Start Recording 
+## Start Recording
 
 After you're all set with your application, it's time to start recording your users session:
 
@@ -13,13 +13,12 @@ After you're all set with your application, it's time to start recording your us
 
 ## Awesome! I've recorded my application, now what?
 
-![](../.gitbook/assets/recording-generate.gif)
+![](../.gitbook/assets/part-one-SparkVideo.gif)
 
-When you stop the recording process, you can review its list of tracked API's \(method, path, Avg response time & Throughput\).
+When you stop the recording process, you can review its list of tracked API's (method, path, Avg response time & Throughput).
 
 The next step will be Generating a repayable Test Suite containing your test flows:
 
-Click "GENERATE TEST SUITE". 
+Click "GENERATE TEST SUITE".
 
 Check out more cool things you can do with recordings in the [Recordings Settings](https://docs.loadmill.com/working-with-the-recorder/recorder-settings) guide.
-
