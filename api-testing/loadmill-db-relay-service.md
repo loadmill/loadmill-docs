@@ -58,6 +58,19 @@ body: {
 }
 ```
 
+### MySQL&#x20;
+
+Execute queries directly to MySQL 5.7:
+
+`https://loadmill-db-relay-service.herokuapp.com/api/mysql`
+
+```
+body: {  
+  "connectionString": "mysql://...",
+  "query": "SELECT * FROM TASKS"
+}
+```
+
 ## DB relay service static IPs
 
 Sometimes, executing queries to your env DB may require VPN. You can easily avoid this by whitelisting the DB relay service static IPs: \[52.42.51.230, 54.190.108.53] in your firewall.
