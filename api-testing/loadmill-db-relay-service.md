@@ -62,7 +62,7 @@ body: {
 
 Execute queries directly to MySQL 5.7:
 
-`https://loadmill-db-relay-service.herokuapp.com/api/mysql`
+`https://db-relay-service.loadmill.com/api/mysql`
 
 ```
 body: {  
