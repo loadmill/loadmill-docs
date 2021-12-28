@@ -40,6 +40,10 @@ The commit message in GitHub includes your Loadmill username and the commit mess
 
 ![](../../.gitbook/assets/screenshot-2021-10-03t101759.565.png)
 
+In addition, you can also see the difference aka DIFF between the last committed version and the "working copy" version with the changes that weren't committed to GitHub yet.
+
+![](<../../.gitbook/assets/Screenshot (86).png>)
+
 Moreover, **you can always revert the Test Suite data to the state of any commit you wish**. Just select it within the Branch history section and click **CHECKOUT**.
 
 ![](../../.gitbook/assets/screenshot-2021-07-01t114156.102.png)
