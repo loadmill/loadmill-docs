@@ -139,7 +139,7 @@ Same as the `<` operator.
 * `${__lt('42','3')} //returns false`
 * `${__lt('3','42')} //returns true`
 * `${__lt('42','42')} //returns false`
-* `${__lt(p1,p2)} //returns true, assuming p1 is 3 and p2 is 42 `
+* `${__lt(p1,p2)} //returns true, assuming p1 is 3 and p2 is 42`
 
 ### `__lte(p1,p2)`
 
@@ -148,7 +148,7 @@ Same as the `<=` operator.
 * `${__lte('42','3')} //returns false`
 * `${__lte('3','42')} //returns true`
 * `${__lte('42','42')} //returns true`
-* `${__lte(p1,p2)} //returns true, assuming p1 is 3 and p2 is 42 `
+* `${__lte(p1,p2)} //returns true, assuming p1 is 3 and p2 is 42`
 
 ### `__gt(p1,p2)`
 
@@ -157,7 +157,7 @@ Same as the `>` operator.
 * `${__gt('42','3')} //returns true`
 * `${__gt('3','42')} //returns false`
 * `${__gt('42','42')} //returns false`
-* `${__gt(p1,p2)} //returns true, assuming p1 is 42 and p2 is 3 `
+* `${__gt(p1,p2)} //returns true, assuming p1 is 42 and p2 is 3`
 
 ### `__gte(p1,p2)`
 
@@ -166,36 +166,36 @@ Same as the `>=` operator.
 * `${__gte('42','3')} //returns true`
 * `${__gte('3','42')} //returns false`
 * `${__gte('42','42')} //returns true`
-* `${__gte(p1,p2)} //returns true, assuming p1 is 42 and p2 is 3 `
+* `${__gte(p1,p2)} //returns true, assuming p1 is 42 and p2 is 3`
 
 ### `__matches(target,regex)`
 
 Returns `true` if and only if the `target` matches the `regex`.
 
-* `${__matches(target,'.*search.*')} // returns true, assuming target is  'A text to search in'`
+* `${__matches(target,'.*search.*')} // returns true, assuming target is 'A text to search in'`
 
 ### `__contains(target,search)`
 
 Returns `true` if and only if the `target` contains the string `search`.
 
-* `${__contains(target,'search')} // returns true, assuming target is  'A text to search in'`
-* `${__contains(target,'SEARCH')} // returns false, assuming target is  'A text to search in'`
-* `${__contains(target,'.*search.*')} // returns false, assuming target is  'A text to search in'`
+* `${__contains(target,'search')} // returns true, assuming target is 'A text to search in'`
+* `${__contains(target,'SEARCH')} // returns false, assuming target is 'A text to search in'`
+* `${__contains(target,'.*search.*')} // returns false, assuming target is 'A text to search in'`
 
 ### `__containsi(target,search)`
 
 Same as `__contains` but case-insensitive.
 
-* `${__containsi(target,'search')} // returns true, assuming target is  'A text to search in'`
-* `${__containsi(target,'SEARCH')} // returns true, assuming target is  'A text to search in'`
-* `${__containsi(target,'.*search.*')} // returns false, assuming target is  'A text to search in'`
+* `${__containsi(target,'search')} // returns true, assuming target is 'A text to search in'`
+* `${__containsi(target,'SEARCH')} // returns true, assuming target is 'A text to search in'`
+* `${__containsi(target,'.*search.*')} // returns false, assuming target is 'A text to search in'`
 
 ### `__if_then_else(condition,then,else)`
 
 Returns `then` if `condition` is [semantically true](parameters/#true-semantics), otherwise returns `else`.
 
 * `${__if_then_else(p1,'good','bad')} // returns 'good', assuming p1 is true or has a value`
-* `${__if_then_else(p1,'good','bad')} // returns 'bad', assuming p1 is false or  ''`
+* `${__if_then_else(p1,'good','bad')} // returns 'bad', assuming p1 is false or ''`
 
 ### `__is_number(target)`
 
@@ -348,8 +348,8 @@ Returns a boolean string of whether all the elements in the target array match t
 
 Returns a boolean string of whether each element in the target array is also in the src array.
 
-* `${__array_includes(srcArray,targetArray)} // returns true, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana"]`
-* `${__array_includes(srcArray,targetArray)} // returns false, assuming srcArray is  ["apple","banana","orange"] and targetArray is ["apple","banana","lemon"]`
+* `${__array_includes(srcArray,targetArray)} // returns true, assuming srcArray is ["apple","banana","orange"] and targetArray is ["apple","banana"]`
+* `${__array_includes(srcArray,targetArray)} // returns false, assuming srcArray is ["apple","banana","orange"] and targetArray is ["apple","banana","lemon"]`
 
 ### `__array_sum(target)`
 
@@ -399,7 +399,7 @@ Extracts a value from `target` using `regexp` as a JS RegExp. If there is no mat
 
 ### `__json_keys(target,[default])`
 
-Returns the keys of target object in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). If `target` is empty, an empty array will be returned or, if present, the given `default` value.
+Returns the keys of target object in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/keys). If `target` is empty, an empty array will be returned or, if present, the given `default` value.
 
 * `${__json_keys('{"key1":"val1"}')}// returns ["key1"]`
 * `${__json_keys(target)} // returns ["key1","key2"] assuming target is {"key1":"val1","key2":"val2"}`
@@ -418,7 +418,7 @@ Similar to `__jsonpath` but returns **all results from the JSONPath** and not on
 
 ### `__jsonpath_keys(target,jsonpath)`
 
-Returns the keys of the extracted value from `target` queried by `jsonpath` in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). 
+Returns the keys of the extracted value from `target` queried by `jsonpath` in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/keys).
 
 * `${__jsonpath_keys('{"key1":"val1"}','$')}// returns ["key1"]`
 * `${__jsonpath_keys(target,jsonpath)} // returns ["key1","key2"] assuming target is {"data": {"key1":"val1","key2":"val2"}} and jsonpath is '$.data'`
@@ -529,11 +529,29 @@ Returns a random string of up to `length` (but no more than 10) decimal digits b
 * `__random_seeded_number('0123456789ABCDEF') // returns 2082602645`
 * `__random_seeded_number('0123456789ABCDEF','5') // returns 20826`
 
+## Hash Functions
+
+### `__sha1(secret,[secretFormat='utf-8'])`
+
+Creating hash digests of data using an algorithm of `sha1`. The function returns a hash in hexadecimal digits. Supported secretFormats are `utf-8` and `hex`.
+
+* `${__sha1('mySecret')} alias ${__sha1('mySecret','utf-8')}`&#x20;
+* `${__sha1('mySecret','hex')}`
+* `${__sha1(p1,p2) assuming p1 contains your secret and p2 - your secretFormat.`
+
+### `__sha256(secret,[secretFormat='utf-8'])`
+
+Creating hash digests of data using an algorithm of `sha256`. The function returns a hash in a hexadecimal digits. Supported secretFormats are `utf-8` and `hex`.
+
+* `${__sha256('mySecret')} alias ${__sha256('mySecret','utf-8')}`&#x20;
+* `${__sha256('mySecret','hex')}`
+* `${__sha256(p1,p2) assuming p1 contains your secret and p2 - your secretFormat.`
+
 ## Time Functions
 
 ### `__now([length=13])`
 
-Returns the current time (of evaluation) given as UTC milliseconds  of `length` digits. Alias: `_now_ms`.
+Returns the current time (of evaluation) given as UTC milliseconds of `length` digits. Alias: `_now_ms`.
 
 * `${__now()} // returns 1604422320167`
 * `${__now('5')} // returns 16044`
@@ -541,7 +559,7 @@ Returns the current time (of evaluation) given as UTC milliseconds  of `length` 
 
 ### `__now_iso([addedMinutes=0])`
 
-The same as `__now` but given in ISO-8601 format while adding `addedMinutes` . For example,  you may generate the current time + 15 minutes using `__now_iso('15')`.
+The same as `__now` but given in ISO-8601 format while adding `addedMinutes` . For example, you may generate the current time + 15 minutes using `__now_iso('15')`.
 
 * `${__now_iso()} // returns 2020-11-03T16:54:24.526Z`
 * `${__now_iso('15')} // returns 2020-11-03T17:09:24.526Z`
