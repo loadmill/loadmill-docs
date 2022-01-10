@@ -32,6 +32,8 @@ Using npm:
 
 `npm i @loadmill/agent -g`
 
+`npm i @loadmill/agent` // in case you can't install it globally.
+
 Using yarn:
 
 `yarn add @loadmill/agent -g`
@@ -43,6 +45,8 @@ Using yarn:
 Note that this requires the package in a .js file. To start running the agent:
 
 `loadmill-agent start -t INSERT_TOKEN_HERE`
+
+`./node_modules/@loadmill/agent/bin/loadmill-agent start -t INSERT_TOKEN_HERE // in case you installed it this way: npm i @loadmill/agent`
 
 The start command accepts the following options:
 
@@ -86,4 +90,4 @@ See agent/s running within the **Private Agents** tab in Loadmill:
 
 #### Working with insecure certificates
 
-In case you are testing a system that uses https but has a self-signed or invalid SSL certificate, you need to set env var - `NODE_TLS_REJECT_UNAUTHORIZED=0 `at the beginning of the start command to run your tests via the Loadmill Agent. It should look like this: `NODE_TLS_REJECT_UNAUTHORIZED=0 loadmill-agent start -t INSERT_TOKEN_HERE` **IMPORTANT:** The Loadmill agent won’t be able to verify that it is talking to the right website in this case.
+In case you are testing a system that uses https but has a self-signed or invalid SSL certificate, you need to set env var - `NODE_TLS_REJECT_UNAUTHORIZED=0` at the beginning of the start command to run your tests via the Loadmill Agent. It should look like this: `NODE_TLS_REJECT_UNAUTHORIZED=0 loadmill-agent start -t INSERT_TOKEN_HERE` **IMPORTANT:** The Loadmill agent won’t be able to verify that it is talking to the right website in this case.
