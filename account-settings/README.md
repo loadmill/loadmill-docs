@@ -2,7 +2,7 @@
 description: Control numerous options through Settings.
 ---
 
-# ⚙️ Settings
+# ⚙ Settings
 
 You may find Settings by clicking on ![](<../.gitbook/assets/Screenshot (46).png>) at the left panel of the app:
 

@@ -61,7 +61,7 @@
   * [SSO integration](integrations/sso-integration/README.md)
     * [Okta SSO integration](integrations/sso-integration/okta-sso-integration.md)
   * [Integrations FAQs](integrations/integrations-faqs-1.md)
-* [⚙️ Settings](account-settings/README.md)
+* [⚙ Settings](account-settings/README.md)
   * [Billing](account-settings/billing/README.md)
     * [Usage report](account-settings/billing/usage-report.md)
 * [🧳 Import & Export](import-and-export.md)
