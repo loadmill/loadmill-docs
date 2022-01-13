@@ -64,6 +64,8 @@
 * [⚙ Settings](account-settings/README.md)
   * [Billing](account-settings/billing/README.md)
     * [Usage report](account-settings/billing/usage-report.md)
+* [📈 Analytics](analytics/README.md)
+  * [Flow Run History](analytics/flow-run-history.md)
 * [🧳 Import & Export](import-and-export.md)
 * [General FAQs](faq.md)
 * [General troubleshooting](general-troubleshooting.md)
