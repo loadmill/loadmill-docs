@@ -1,8 +1,8 @@
 # Table of contents
 
 * [What is Loadmill?](README.md)
-* [Core definitions](core-definitions.md)
 * [🚀 Getting Started](getting-started/README.md)
+  * [Core definitions](getting-started/core-definitions.md)
   * [API Testing Guide](getting-started/getting-started.md)
   * [Load Testing Setup](getting-started/setup/README.md)
     * [Domain Verification](getting-started/setup/domain-verification.md)

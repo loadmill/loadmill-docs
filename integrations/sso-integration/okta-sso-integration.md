@@ -2,7 +2,7 @@
 
 Okta is an identity and access management service platform that allows to secure every identity, from customers to the workforce with Single Sign-On (SSO), Multi-factor Authentication and more.&#x20;
 
-The Okta SSO integration with Loadmill enables Okta users to authenticate in Okta and then log into Loadmill without authenticating again.
+The Okta SSO integration with Loadmill enables Okta users to authenticate through Okta and then log into Loadmill without authenticating again.
 
 Once you've configured the integration with Okta, follow steps below to log into Loadmill:
 
@@ -14,7 +14,7 @@ Once you've configured the integration with Okta, follow steps below to log into
 
 ![](<../../.gitbook/assets/Screenshot (92).png>)
 
-&#x20;   3\. In case, you are using Multi-Factor authentication, enter the code you got and click **Verify**.
+&#x20;   3\. In case, you are using Multi-Factor authentication, put the code you've got and click **Verify**.
 
 ![](<../../.gitbook/assets/Screen Shot 2022-01-03 at 14.48.52.png>)
 
