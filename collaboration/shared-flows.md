@@ -2,9 +2,9 @@
 
 The **Shared Flows** feature allows users to re-use test flows in different Test Suites and Test Plans.
 
-The common use case for Shared Flows is when you have one or several login test flows. For example, the email/password login that should be used in some Test Suites and the login via a social media platform that should be used in others. To configure this in Loadmill:
+The common use case for Shared Flows is when you have several login test flows. For example, the email/password login that should be used in some Test Suites and the login via a social media platform that should be used in others. To configure this in Loadmill:
 
-* Navigate to **Shared Flows (visible to Team Admins only)**
+* Navigate to **Shared Flows.**
 
 ![](<../.gitbook/assets/Screenshot (39).png>)
 
@@ -19,5 +19,9 @@ Thus, the shared flow will run before every test flow where the Login checkbox i
 Then, you can always track which Test Suites using your Shared Flows.
 
 ![](<../.gitbook/assets/Screenshot (40).png>)
+
+The COLLABORATORS tab allows to manage access to the shared flow so that only specific team members will be able to edit it.
+
+![](<../.gitbook/assets/Screenshot (100).png>)
 
 By the way, you can also use shared flows to define [Before & After](https://docs.loadmill.com/api-testing/test-suite-editor/before-and-after-hooks) hooks and [Setup Flow](https://docs.loadmill.com/api-testing/test-plan#test-plan-navigation-panel).
