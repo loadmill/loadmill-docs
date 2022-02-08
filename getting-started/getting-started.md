@@ -39,7 +39,7 @@ Recording and running an API Test
 3. If you are not logged in to Loadmill, you will be prompted to the login page.
 4. Create a Test Suite in Loadmill that will hold recorded flows, and select it in the extension.
 5. Clear the captured requests list and navigate to the tested website.
-6. Use the filter and the request's delete buttons to filter out irrelevant requests. You can also see the request and response body by clicking on the expanding arrow within requests.
+6. Use the FILTER SETTINGS and the request's delete buttons to filter out irrelevant requests/strings/add more domains to record your tests against. You can also see the request and response body by clicking on the expanding arrow within requests.
 7. When you are done recording your session, click the "Upload" button at the bottom.
 8. Go to Loadmill and open the recorded test in your Test Suite.
 9. Run the Test Suite by pressing the "RUN SUITE" button and see your results. :partying\_face: Visit [this page](https://docs.loadmill.com/working-with-the-recorder#loadmill-chrome-recorder-extension) to learn more about the Loadmill Chrome recorder extension.
@@ -67,7 +67,7 @@ Recording and running an API Test
 
 5\. Enter request name - **Authentication request - extract token using JSONPath from the response**, select "POST" as Method, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/api/v0.1/authentication/token`
 
-6\. Press **Advanced**. This is a place where we set the request body, headers, [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). Select Content type - `application/x-www-form-urlencoded `, put body - grant\_type=password\&username=${username}\&password=${password}\&client\_id=ghost-admin\&client\_secret=${client\_secret}
+6\. Press **Advanced**. This is a place where we set the request body, headers, [extractions](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions) and [assertions](https://docs.loadmill.com/api-testing/test-suite-editor/assertions). Select Content type - `application/x-www-form-urlencoded` , put body - grant\_type=password\&username=${username}\&password=${password}\&client\_id=ghost-admin\&client\_secret=${client\_secret}
 
 ![](../.gitbook/assets/screenshot-2021-10-03t115940.240.png)
 
