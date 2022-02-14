@@ -27,3 +27,5 @@ To build it use this command : `docker build -t loadmill-runner .`
 
 To run it use this command: `docker run -it --env TP_ID=3085de2f-bc42-4727-9c4b-ab649ca4a285 --env TOKEN=<api token> --env BUILD_NUMBER=<the build number> loadmill-runner`
 
+In case you like short cuts, you can go ahead and use the npm package [docker wrapper](https://hub.docker.com/r/loadmill/runner) instead :)&#x20;
+
