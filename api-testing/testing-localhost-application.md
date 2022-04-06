@@ -20,13 +20,23 @@ You can think of it this way: imagine you are on a vacation abroad, and you want
 
 ## The solution
 
-We recommend using our [**Loadmill Agent**](https://www.npmjs.com/package/@loadmill/agent) that allows you to run API and Load tests locally or even on your servers if you wish.
+We recommend using our **Loadmill Agent (**either by [npm](https://www.npmjs.com/package/@loadmill/agent) or [Docker](https://hub.docker.com/r/loadmill/agent)) that allows you to run API and Load tests locally or even on your servers if you wish.
 
-### Setup
+### Docker image
+
+In case you have Docker installed on your machine all you need to do is to run the following command:
+
+`docker run -it --rm -e LOADMILL_AGENT_TOKEN=<your-api-token> loadmill/agent`
+
+More info regarding the Docker image and available options can be found [here](https://hub.docker.com/r/loadmill/agent).
+
+### npm package
+
+#### Setup
 
 In order to use the Loadmill Agent you will need to have node.js version 14 or higher installed on your machine and generate an [API Token](https://docs.loadmill.com/integrations/api-tokens).
 
-### Installation
+#### Installation
 
 Using npm:
 
@@ -38,15 +48,15 @@ Using yarn:
 
 `yarn add @loadmill/agent -g`
 
-### Running the agent
+#### Running the agent
 
-#### CLI
-
-Note that this requires the package in a .js file. To start running the agent:
+If you use the `-g` option while installing run it like this:
 
 `loadmill-agent start -t INSERT_TOKEN_HERE`
 
-`./node_modules/@loadmill/agent/bin/loadmill-agent start -t INSERT_TOKEN_HERE // in case you installed it this way: npm i @loadmill/agent`
+In case you installed the package locally (without the `-g` flag) run it like this:
+
+`./node_modules/@loadmill/agent/bin/loadmill-agent start -t INSERT_TOKEN_HERE`&#x20;
 
 The start command accepts the following options:
 
@@ -64,21 +74,7 @@ The start command accepts the following options:
 
 `loadmill-agent start --config /path/to/config.yml`
 
-#### Programmatically
-
-Start running the agent:
-
-```
-// Start the agent 
-const {start} = require('@loadmill/agent');
-const stop = start({
-  token: 'INSERT_TOKEN_HERE',
-  // loadsCapacity: 80,
-  // api: false
-});
-// Stop the agent by calling the stop function
-stop();
-```
+####
 
 ![](<../.gitbook/assets/Screenshot (34).png>)
 
