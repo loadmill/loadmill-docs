@@ -47,7 +47,7 @@ Same as the `*` operator, applied to any number of arguments.
 Same as the `/` operator.
 
 * `${__div('6','3')} // returns 2`
-* `${__div(p1,p2} // returns 4 assuming p1 is 24 and p2 is 6`
+* `${__div(p1,p2)} // returns 4 assuming p1 is 24 and p2 is 6`
 
 ## Conditional Functions
 
