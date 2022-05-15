@@ -28,7 +28,7 @@ By default, the matching is based on the Test Suite and Flow (Test Case) names. 
 
 Then, when you run test flows in Loadmill, we will automatically create runs in two systems: Loadmill and TestRail hence the two systems will be in a constant sync-state.&#x20;
 
-In case, you are going to change names in TestRail or Loadmill so would like to do matching per id, you can enter test flows - click on ![](<../.gitbook/assets/Screenshot (69).png>) and choose the test case you would like to always be attached to this test flow.&#x20;
+In case, you are going to change names in TestRail or Loadmill so would like to do matching per id, you can enter test flows - click on <img src="../.gitbook/assets/Screenshot (69).png" alt="" data-size="line"> and choose the test case you would like to always be attached to this test flow.&#x20;
 
 ![](<../.gitbook/assets/Screenshot (70).png>)
 

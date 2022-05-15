@@ -11,7 +11,7 @@ description: >-
 
 Before you'll start recording users flows, you'll need to set up an application to record from:
 
-1. Go to the **Recordings** tab ![](<../.gitbook/assets/Screenshot (55).png>), located in the navigation area at the left, and click on the **App Setup** tab.
+1. Go to the **Recordings** tab <img src="../.gitbook/assets/Screenshot (55).png" alt="" data-size="line">, located in the navigation area at the left, and click on the **App Setup** tab.
 2. In the "Setup" tab, click on + "ADD APPLICATION" button.
 3. Name the application in the description and fill in its URL.
 

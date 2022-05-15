@@ -6,7 +6,7 @@ Request is the most basic building block of tests. It represents a single API ca
 
 ## Request sections
 
-When we expand the request editor by clicking![](../../.gitbook/assets/screen-shot-2021-10-03-at-13.37.48.png) at the top-right of the request, we can see that a test request includes two main sections - **Request and Response Handling sections**.
+When we expand the request editor by clicking<img src="../../.gitbook/assets/screen-shot-2021-10-03-at-13.37.48.png" alt="" data-size="line"> at the top-right of the request, we can see that a test request includes two main sections - **Request and Response Handling sections**.
 
 ![](../../.gitbook/assets/screenshot-2021-10-03t134902.806.png)
 

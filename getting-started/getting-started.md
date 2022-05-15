@@ -57,7 +57,7 @@ Recording and running an API Test
 :man\_mage: Let's create an API test that validates user login to our [demo testing app](https://loadmill-test-blog.herokuapp.com). API test may include **200 requests maximum**.
 {% endhint %}
 
-1. Click on the ![](<../.gitbook/assets/Screenshot (42).png>) icon at the left panel => Test Suites.
+1. Click on the <img src="../.gitbook/assets/Screenshot (42).png" alt="" data-size="line"> icon at the left panel => Test Suites.
 2. Click **NEW TEST SUITE**, give it a name.
 3. You can notice that there is one test flow already created in it and you just need to fill it out. The first request will be to get our login page, enter its name, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/signin/`
 
