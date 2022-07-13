@@ -139,7 +139,7 @@ Using this filter option the user can stop the Test Suite Run and put its status
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="additionalDescription" type="string" %}
-Will be added at the end of the test suite description
+Will be added at the end of the Test Suite Run description
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Test Suite Run has been successfully stopped." %}
