@@ -1,6 +1,12 @@
 # Table of contents
 
-* [What is Loadmill?](README.md)
+* [Overview](README.md)
+  * [Introduction to APIs](overview/introduction-to-apis.md)
+  * [What is an API](overview/what-is-an-api.md)
+  * [What is an API endpoint?](overview/what-is-an-api-endpoint.md)
+  * [API data](overview/api-data.md)
+  * [Quick examples of API requests](overview/quick-examples-of-api-requests.md)
+* [What is Loadmill?](<README (1).md>)
 * [🚀 Getting Started](getting-started/README.md)
   * [Core definitions](getting-started/core-definitions.md)
   * [API Testing Guide](getting-started/getting-started.md)
@@ -69,3 +75,5 @@
 * [🧳 Import & Export](import-and-export.md)
 * [General FAQs](faq.md)
 * [General troubleshooting](general-troubleshooting.md)
+
+## Group 1
