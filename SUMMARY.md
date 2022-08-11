@@ -8,6 +8,7 @@
   * [Quick examples of API requests](overview/quick-examples-of-api-requests.md)
 * [Loadmill Test Composer](loadmill-test-composer/README.md)
   * [Quickstart](loadmill-test-composer/quickstart.md)
+  * [Composer Layout](loadmill-test-composer/composer-layout.md)
   * [Filter Settings](loadmill-test-composer/filter-settings.md)
 * [What is Loadmill?](<README (1).md>)
 * [🚀 Getting Started](getting-started/README.md)

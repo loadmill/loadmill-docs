@@ -1,19 +1,15 @@
 # Quickstart
 
-The composer detects all API calls sent by your application as you navigate the platform. Each API is registered with its method, URL, request body, and response.
 
-You can click on any API to view the contents of the request registered.
 
-#### Analyzing Requests
+Loadmill has several ways to compose full API scenarios - the most common is Loadmill Composer Chrome Extension. This extension allows you to compose your API test scenario while browsing your application. It can register any type of incoming and ongoing API calls from the server.&#x20;
 
-What makes the Loadmill Composer unique is the “Analyze Requests” feature. It allows the AI to process and analyze how each request will affect your API test and what kind of parameters you need in order to make it dynamic, allowing the test to be ready for any environment.
-
-To start correlating your flow, click “Analyze Requests”.
-
-{% hint style="info" %}
-**After creating a flow, hit “Pause”, so it does not register any incoming API calls. This will keep your API resources from being used unnecessarily.**
+{% hint style="warning" %}
+Make sure to create an account if you want to use it.
 {% endhint %}
 
-#### Creating Tests
+Once installed, you can locate the Loadmill Composer as part of the dev tools tab. Click Command+Option+J (Mac)/ Ctr+Shift+J (Windows) to open your dev tools and select the Loadmill Composer tab.
 
-Hit the “Create Test” button to upload a scenario. Loadmill generates the code for that uploaded scenario, parameterizing the correlated values in the corresponding flow.
+{% hint style="info" %}
+**You can drag the Loadmill Composer tab for it to be more visible for you every time you open your dev tools.**
+{% endhint %}
