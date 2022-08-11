@@ -6,6 +6,11 @@
   * [What is an API endpoint?](overview/what-is-an-api-endpoint.md)
   * [API data](overview/api-data.md)
   * [Quick examples of API requests](overview/quick-examples-of-api-requests.md)
+* [Loadmill Composer](loadmill-composer/README.md)
+  * [Registered APIs](loadmill-composer/registered-apis.md)
+  * [Analyzing Requests](loadmill-composer/analyzing-requests.md)
+  * [Creating Tests](loadmill-composer/creating-tests.md)
+  * [Filter Settings](loadmill-composer/filter-settings.md)
 * [What is Loadmill?](<README (1).md>)
 * [🚀 Getting Started](getting-started/README.md)
   * [Core definitions](getting-started/core-definitions.md)
@@ -75,5 +80,3 @@
 * [🧳 Import & Export](import-and-export.md)
 * [General FAQs](faq.md)
 * [General troubleshooting](general-troubleshooting.md)
-
-## Group 1
