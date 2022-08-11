@@ -1,4 +1,4 @@
-# Loadmill Composer
+# Loadmill Test Composer
 
 Loadmill has several ways to compose full API scenarios - the most common is Loadmill Composer Chrome Extension. This extension allows you to compose your API test scenario while browsing your application. It can register any type of incoming and ongoing API calls from the server.&#x20;
 
