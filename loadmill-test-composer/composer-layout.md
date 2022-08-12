@@ -4,6 +4,8 @@ The composer detects all API calls sent by your application as you navigate the 
 
 You can click on any API to view the contents of the request registered.
 
+{% file src="../.gitbook/assets/part_1 (1).mp4" %}
+
 #### Analyzing Requests
 
 What makes the Loadmill Composer unique is the “Analyze Requests” feature. It allows the AI to process and analyze how each request will affect your API test and what kind of parameters you need in order to make it dynamic, allowing the test to be ready for any environment.
