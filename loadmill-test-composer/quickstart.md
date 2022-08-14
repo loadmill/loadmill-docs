@@ -13,3 +13,5 @@ Once installed, you can locate the Loadmill Composer as part of the dev tools ta
 {% hint style="info" %}
 **You can drag the Loadmill Composer tab for it to be more visible for you every time you open your dev tools.**
 {% endhint %}
+
+[![](<../.gitbook/assets/Download Chrome Extention.png>)](https://chrome.google.com/webstore/detail/loadmill-test-composer/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en)
