@@ -24,5 +24,4 @@ The filter will remove strings containing any input given (such as ".js", “.im
 
 The `.har` registered scenario/flow file can be downloaded by clicking on the bottom-left icon. <img src="../.gitbook/assets/Screen Shot 2022-08-14 at 4.31.20 PM.png" alt="" data-size="line">
 
-
-
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2F1ikLWzhsEgA8KGjkgXSo%2Fpart_7.mp4?alt=media&token=2f2cd86e-5612-4b69-b0cd-0633298c8d12" %}
