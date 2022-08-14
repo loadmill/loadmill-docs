@@ -15,9 +15,3 @@ Once installed, you can locate the Loadmill Composer as part of the dev tools ta
 {% endhint %}
 
 [![](<../.gitbook/assets/Download Chrome Extention.png>)](https://chrome.google.com/webstore/detail/loadmill-test-composer/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en)
-
-{% code overflow="wrap" %}
-```html
-<a href="https://chrome.google.com/webstore/detail/loadmill-test-composer/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en">Chrome Extension</a>
-```
-{% endcode %}
