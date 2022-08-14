@@ -10,7 +10,7 @@ Here's a quick walkthrough of the Loadmill Composer:
 6. Input for creating a new Loadmill suite.
 7. Downloads scenario as a `.har` file.
 
-![](<../.gitbook/assets/image (51).png>)
+![](<../.gitbook/assets/image (37).png>)
 
 The composer detects all API calls sent by your application as you navigate the platform. Each API is registered with its method, URL, request body, and response.
 

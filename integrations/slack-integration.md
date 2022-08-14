@@ -18,7 +18,7 @@ Slack has more than 12 million daily active users and 156,000 organizations subs
 
 &#x20;🧠 Tip: the most popular notifications are about Failed Test Plan Runs :)&#x20;
 
-![](<../.gitbook/assets/image (51) (1).png>)
+![](<../.gitbook/assets/image (51).png>)
 
 That's it, you did it! 🎉 From now on, you won't miss any important Loadmill event.
 
