@@ -4,7 +4,7 @@ The composer detects all API calls sent by your application as you navigate the 
 
 You can click on any API to view the contents of the request registered.
 
-{% embed url="https://2287563058-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2Fqux7lZzNy8I0kmHurQxT%2Fpart_1.mp4?alt=media&token=ce65679d-0340-49a8-b642-8e7ceed2dbf5" %}
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FR5sLG61rPIWURKROGZgl%2Fpart_1.mp4?alt=media&token=05b05c2c-3da1-4fb6-92b5-40f4aa2f6392" %}
 
 #### Analyzing Requests
 
