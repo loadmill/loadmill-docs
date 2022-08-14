@@ -1,5 +1,17 @@
 # Composer Layout
 
+Here's a quick walkthrough of the Loadmill Composer:
+
+1. "Record" to start composing your test.
+2. API registered in your flow. Click to expand the API to see request/response data.
+3. "Analyze Test" for the AI to analyze and correlate your flow.
+4. "Create Test" registers the flow in your Loadmill suite.
+5. "Filter Settings" set specific URL filters.
+6. Input for creating a new Loadmill suite.
+7. Downloads scenario as a `.har` file.
+
+![](<../.gitbook/assets/image (51).png>)
+
 The composer detects all API calls sent by your application as you navigate the platform. Each API is registered with its method, URL, request body, and response.
 
 You can click on any API to view the contents of the request registered.
