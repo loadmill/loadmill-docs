@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Overview](README.md)
-  * [Introduction to APIs](overview/introduction-to-apis.md)
   * [What is an API](overview/what-is-an-api.md)
   * [What is an API endpoint?](overview/what-is-an-api-endpoint.md)
   * [API data](overview/api-data.md)
