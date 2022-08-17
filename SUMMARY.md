@@ -12,7 +12,7 @@
 * [API Testing](api-testing/README.md)
   * [Testing Your Server](api-testing/testing-your-server.md)
   * [Regression Testing](api-testing/regression-testing.md)
-  * [Loadmill - All time solution](api-testing/loadmill-all-time-solution.md)
+  * [Loadmill - AI-Powered Solution](api-testing/loadmill-ai-powered-solution.md)
 * [What is Loadmill?](<README (1).md>)
 * [🚀 Getting Started](getting-started/README.md)
   * [Core definitions](getting-started/core-definitions.md)
