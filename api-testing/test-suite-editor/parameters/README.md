@@ -34,7 +34,7 @@ Using parameter defaults is especially useful for automated testing and CI where
 
 ## Parameter Extraction
 
-Parameters can be defined and populated with values dynamically after each request in your test scenario. 
+Parameters can be defined and populated with values dynamically after each request in your test scenario.
 
 ![](../../../.gitbook/assets/screenshot-2021-10-03t143044.215.png)
 
@@ -57,7 +57,7 @@ There are several **extraction query types** that may be used:
 * **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
 * **Header** - used for extracting response header values via header names.
 * **Assignment** - used for assigning an explicit value to a parameter or [a function](https://docs.loadmill.com/api-testing/test-suite-editor/functions) to an existing parameter. Previously defined or built-in parameters may be embedded within the string, e.g. `https://${host}/path/to/glory` or `The time is ${__now}`.
-* **Clojure** - used for extracting values from Clojure (EDN content type) responses. Querying the data is done using JSONPath. For example, the query`  $[":user"][":id"]  `will extract the value `56` from this EDN response: 
+* **Clojure** - used for extracting values from Clojure (EDN content type) responses. Querying the data is done using JSONPath. For example, the query `$[":user"][":id"]` will extract the value `56` from this EDN response:
 
 ```
  {:user {:role :viewer, :name "Rivi", :teams nil, :id "56"}}
@@ -109,7 +109,7 @@ Current syntax limitations are:
 * You may chain multiple operations together, e.g. `${x * y + z}` but you may _**not**_ use parentheses to set precedence, e.g. `${(x * y) + z}` will not be computed. This can usually be worked around using functions though, e.g. `${__mult(x,y) + z}`
 * All operators have the _**same precedence**_ - computations always conform to right-associativity, i.e. `${x * y + z - j + k}` will be computed as `x * (y + (z - (j + k)))`.
 * Computations may _**not be nested**_, i.e. you may not pass a computed value as an argument to function, e.g. `${__mult(x,y) + z}` is OK but neither `${__mult(x + y,z)}` nor `${__mult(__add(x,y),z)}` will be computed.
-* Unary operators, e.g. `${-x}` are _**not**_ supported. This can be overcome using functions such as [\__neg](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions#\__neg-p-1) or [\__not](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions#\__not-p-1).
+* Unary operators, e.g. `${-x}` are _**not**_ supported. This can be overcome using functions such as [\_\_neg](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions#\_\_neg-p-1) or [\_\_not](https://docs.loadmill.com/api-testing/test-suite-editor/parameters/functions#\_\_not-p-1).
 
 ### Operators
 

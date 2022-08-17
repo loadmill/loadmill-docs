@@ -7,6 +7,3 @@
 That happens due to the underscore in the JSON Path expression, change it to be like shown below and it will work:
 
 ![](../.gitbook/assets/screenshot-2021-10-03t155758.489.png)
-
-
-

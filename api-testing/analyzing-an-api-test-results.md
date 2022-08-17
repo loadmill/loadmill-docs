@@ -12,12 +12,9 @@ Once you've run the Test Suite, you can re-run it by pressing the "RE-RUN" butto
 
 ## Flow Status
 
-A flow run can have the following statuses : _Pending_, _Running_, _Passed_ or _Failed_.   
+A flow run can have the following statuses : _Pending_, _Running_, _Passed_ or _Failed_.\
 NOTE: In cases where a flow fails - the whole Test Suite Run will fail.
 
-You can drill down to a specific flow and review its requests report by clicking on the relevant flow name in the table. Once clicked, you'll be directed to the Flow Report Page. 
+You can drill down to a specific flow and review its requests report by clicking on the relevant flow name in the table. Once clicked, you'll be directed to the Flow Report Page.
 
 ![Test Suite Flow run report page](../.gitbook/assets/screen-shot-2019-09-23-at-12.05.58-pm.png)
-
-
-

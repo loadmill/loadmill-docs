@@ -2,7 +2,7 @@
 
 ### I've got a JSON response where I want to extract all book titles from the array by using JSON Path expression - $.store.book\[\*].title but I'm getting only the first title. WHY?
 
-Loadmill uses a framework where only the first value gets retrieved in case you are using the \* sign. Use the [`__jsonpath_all`](https://docs.loadmill.com/api-testing/test-suite-editor/functions#\__jsonpath_all-target-jsonpath-default) function instead so your extractions will look this way:
+Loadmill uses a framework where only the first value gets retrieved in case you are using the \* sign. Use the [`__jsonpath_all`](https://docs.loadmill.com/api-testing/test-suite-editor/functions#\_\_jsonpath\_all-target-jsonpath-default) function instead so your extractions will look this way:
 
 ![](../.gitbook/assets/screenshot-2021-10-03t154715.913.png)
 
@@ -19,7 +19,7 @@ Find more great functions on [this page](https://docs.loadmill.com/api-testing/t
 You can easily achieve that:
 
 1. Extract the ID into a parameter by using JSONPath.
-2. Create another parameter by using the extracted ID and [function `__random_uuid()`](https://docs.loadmill.com/api-testing/test-suite-editor/functions#\__random_uuid). The output would be "true" if the ID is in the format of UUID. Else, it would be "false".
+2. Create another parameter by using the extracted ID and [function `__random_uuid()`](https://docs.loadmill.com/api-testing/test-suite-editor/functions#\_\_random\_uuid). The output would be "true" if the ID is in the format of UUID. Else, it would be "false".
 
 ![](../.gitbook/assets/screenshot-2021-10-03t155017.448.png)
 
@@ -33,7 +33,7 @@ There is a feature in Loadmill that allows to do that. First, create a CSV file 
 
 ![CSV file](../.gitbook/assets/screen-shot-2021-04-06-at-17.36.38.png)
 
-Then, go to Loadmill, upload the file by using the "Import CSV" button within a test flow and use the "ticket_type" parameter in your request body:
+Then, go to Loadmill, upload the file by using the "Import CSV" button within a test flow and use the "ticket\_type" parameter in your request body:
 
 ![](../.gitbook/assets/screenshot-2021-10-03t155529.122.png)
 
