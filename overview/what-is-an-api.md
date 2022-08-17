@@ -6,4 +6,4 @@ An API is an interface that allows two pieces of software to communicate with ea
 
 An API can be thought of as a set of rules that govern how two pieces of software interact with each other. When one piece of software wants to request data from another piece of software, it does so by following the API's rules. The API then tells the second piece of software how to respond to the request.
 
-![](<../.gitbook/assets/image (40).png>)
+![](<../.gitbook/assets/image (1).png>)
