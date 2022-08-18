@@ -14,5 +14,5 @@ If the user has been successfully added, the server sends back the `status 200` 
 
 You'll then make a `GET` request to the server by passing in that response `id` from the previous `POST` request (either inside of the body or in your URL). If everything went right and you're successful, you'll get a response back from your server saying whether or not the user's `id` expired.
 
-![](<../.gitbook/assets/image (1) (2).png>)
+![](<../.gitbook/assets/image (1).png>)
 
