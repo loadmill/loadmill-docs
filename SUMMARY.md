@@ -3,7 +3,7 @@
 * [Overview](README.md)
   * [What is an API](overview/what-is-an-api.md)
   * [What is an API endpoint?](overview/what-is-an-api-endpoint.md)
-  * [API data](overview/api-data.md)
+  * [API - Data Fetching](overview/api-data-fetching.md)
   * [Quick examples of API requests](overview/quick-examples-of-api-requests.md)
 * [Loadmill Test Composer](loadmill-test-composer/README.md)
   * [Quickstart](loadmill-test-composer/quickstart.md)
