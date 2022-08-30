@@ -19,6 +19,13 @@
 * [Composer Layout](loadmill-test-composer/composer-layout.md)
 * [Filter Settings](loadmill-test-composer/filter-settings.md)
 
+## Quick Guide
+
+* [Create Account](quick-guide/create-account.md)
+* [Download Test Composer](quick-guide/download-test-composer.md)
+* [Register your first API flow](quick-guide/register-your-first-api-flow.md)
+* [Running Your API Test](quick-guide/running-your-api-test.md)
+
 ## Loadmill
 
 * [🚀 Getting Started](loadmill/getting-started/README.md)
@@ -29,6 +36,10 @@
     * [Testing with CORS](loadmill/getting-started/setup/testing-with-cors.md)
   * [Load Testing Guide](loadmill/getting-started/getting-started-1/README.md)
     * [Creating a parameterized load test](loadmill/getting-started/getting-started-1/creating-a-parameterized-load-test.md)
+* [Postscript](loadmill/postscript/README.md)
+  * [Run code from your API](loadmill/postscript/postscript-run-code.md)
+  * [Postscript Validation](loadmill/postscript/postscript-validation.md)
+  * [Asserting Postscript](loadmill/postscript/asserting-postscript.md)
 * [API Testing](loadmill/api-testing1/README.md)
   * [Test Suite editor](loadmill/api-testing1/test-suite-editor/README.md)
     * [Test Flow editor](loadmill/api-testing1/test-suite-editor/test-flow-editor.md)
@@ -38,7 +49,6 @@
     * [⨍(⨯) FUNCTIONS](loadmill/api-testing1/test-suite-editor/functions.md)
     * [Extractions - Set Parameters](loadmill/api-testing1/test-suite-editor/set-parameters-extractions.md)
     * [Assertions - Verify Response](loadmill/api-testing1/test-suite-editor/assertions.md)
-    * [🧑‍💻 Postscript - run code](loadmill/api-testing1/test-suite-editor/postscript-run-code.md)
     * [Global Login flow and authentication headers](loadmill/api-testing1/test-suite-editor/global-login-flow.md)
     * [Test Suite Parameters](loadmill/api-testing1/test-suite-editor/test-suite-parameters.md)
     * [Before & After Hooks](loadmill/api-testing1/test-suite-editor/before-and-after-hooks.md)
@@ -89,3 +99,5 @@
   * [🧳 Import & Export](loadmill/account-settings/import-and-export.md)
 * [General FAQs](loadmill/faq.md)
 * [General troubleshooting](loadmill/general-troubleshooting.md)
+
+## Group 1
