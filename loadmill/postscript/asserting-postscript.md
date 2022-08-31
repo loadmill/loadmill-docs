@@ -24,6 +24,12 @@ In order to validate the API based on the value of orangeOnList we would add the
 assert.equal(orangeOnList, true)
 ```
 
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FHSbvZpdTtrrz4qwgRSAn%2Fpostscript_4.mp4?alt=media&token=ba7c5d7d-bebc-48bb-aa2e-0cfbe8bdc04d" %}
+
+Furthermore, a validation error would result the test to fail providing a comprehensive error message:
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FJ7TYidCCgU73P7X5IXV1%2Fpostscript_5.mp4?alt=media&token=77bd5a81-a64d-4d55-870f-bda0000f43eb" %}
+
 You can reference yourself with the Mocha documentation for more useful functions to better test your API flows at [https://mochajs.org/](https://mochajs.org/)
 
 
@@ -52,3 +58,5 @@ To validate your API based on orangeOnList:
 3. Select “Equals” from the Values dropdown.
 4. Type `true` on the field.
 5. Run your API test.
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FJ7TYidCCgU73P7X5IXV1%2Fpostscript_5.mp4?alt=media&token=77bd5a81-a64d-4d55-870f-bda0000f43eb" %}
