@@ -14,7 +14,7 @@ Please make sure your tests are not using other domains like facebook, salesforc
 
 ### **Error message: domain name \[domain] is not on white list**
 
-As mentioned in the [domain verification ](../setup/domain-verification.md)page, you are only allowed to test websites that you own. Before your test starts, the list of participating domains (white list) is calculated based on all of the test requests. In case one of your request uses a dynamic parameter to generate one of the test request's URL, we might miss this domain, and not add it to the test's white list.
+As mentioned in the [domain verification ](../getting-started/setup/domain-verification.md)page, you are only allowed to test websites that you own. Before your test starts, the list of participating domains (white list) is calculated based on all of the test requests. In case one of your request uses a dynamic parameter to generate one of the test request's URL, we might miss this domain, and not add it to the test's white list.
 
 ![HTTP request domain name \[random-website-name.com\] is not on white list](<../../.gitbook/assets/image (17).png>)
 

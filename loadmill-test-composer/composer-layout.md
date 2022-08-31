@@ -2,9 +2,9 @@
 
 Here's a quick walkthrough of the Loadmill Composer:
 
-1. "Record" to start composing your test.
+1. "Start" to start composing your test.
 2. API registered in your flow. Click to expand the API to see request/response data.
-3. "Analyze Test" for the AI to analyze and correlate your flow.
+3. "Analyze Request" for the AI to analyze and correlate your flow.
 4. "Create Test" registers the flow in your Loadmill suite.
 5. "Filter Settings" set specific URL filters.
 6. Input for creating a new Loadmill suite.

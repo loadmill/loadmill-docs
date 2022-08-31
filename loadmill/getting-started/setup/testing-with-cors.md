@@ -2,7 +2,7 @@
 
 ## Testing with CORS
 
-For high volume load tests, [Loadmill](https://www.loadmill.com) uses real browser sessions to test your application/web server. This requires that you allow [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) in your server code \(just for us - no third parties need to be allowed\).
+For high volume load tests, [Loadmill](https://www.loadmill.com) uses real browser sessions to test your application/web server. This requires that you allow [CORS](https://en.wikipedia.org/wiki/Cross-origin\_resource\_sharing) in your server code (just for us - no third parties need to be allowed).
 
 [Enabling CORS](https://enable-cors.org/server.html) mainly involves reading request headers and writing response headers accordingly on your server. The following example code shows exactly how to enable CORS for Loadmill tests in an [express.js](http://expressjs.com) application.
 
@@ -69,4 +69,3 @@ If you are not sure how to enable CORS in your application or would like to see 
 If you _are_ using [node.js](https://nodejs.org) and [express](https://expressjs.com) you can simply use our npm module: [express-loadmill](https://www.npmjs.com/package/express-loadmill).
 
 It may also be used for quick and easy [domain verification](domain-verification.md).
-

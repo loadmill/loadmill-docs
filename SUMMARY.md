@@ -1,11 +1,11 @@
 # Table of contents
 
-## Overview
+## Introduction
 
 * [What is an API](README.md)
-* [What is an API endpoint?](overview/what-is-an-api-endpoint.md)
-* [API - Data Fetching](overview/api-data.md)
-* [Quick examples of API requests](overview/quick-examples-of-api-requests.md)
+* [What is an API endpoint?](introduction/what-is-an-api-endpoint.md)
+* [API - Data Fetching](introduction/api-data-fetching.md)
+* [Quick examples of API requests](introduction/quick-examples-of-api-requests.md)
 
 ## API Testing
 
@@ -35,11 +35,11 @@
   * [Run code from your API](loadmill/postscript/postscript-run-code.md)
   * [Postscript Validation](loadmill/postscript/postscript-validation.md)
   * [Asserting Postscript](loadmill/postscript/asserting-postscript.md)
-* [Load Testing Setup](loadmill/setup/README.md)
-  * [Load Testing Guide](loadmill/setup/getting-started-1.md)
-  * [Domain Verification](loadmill/setup/domain-verification.md)
-  * [Testing with CORS](loadmill/setup/testing-with-cors.md)
-  * [Creating a parameterized load test](loadmill/setup/creating-a-parameterized-load-test.md)
+* [Load Testing Setup](loadmill/getting-started/setup/README.md)
+  * [Load Testing Guide](loadmill/getting-started/getting-started-1/README.md)
+  * [Domain Verification](loadmill/getting-started/setup/domain-verification.md)
+  * [Testing with CORS](loadmill/getting-started/setup/testing-with-cors.md)
+  * [Creating a parameterized load test](loadmill/getting-started/getting-started-1/creating-a-parameterized-load-test.md)
 * [API Testing](loadmill/api-testing1/README.md)
   * [Test Suite editor](loadmill/api-testing1/test-suite-editor/README.md)
     * [Test Flow editor](loadmill/api-testing1/test-suite-editor/test-flow-editor.md)
@@ -100,4 +100,4 @@
 * [General FAQs](loadmill/faq.md)
 * [General troubleshooting](loadmill/general-troubleshooting.md)
 
-## Group 1
+## Loadmill Walkthrough
