@@ -26,15 +26,24 @@
 * [Register your first API flow](quick-guide/register-your-first-api-flow.md)
 * [Running Your API Test](quick-guide/running-your-api-test.md)
 
+## Test Editor
+
+* [Layout](test-editor/layout/README.md)
+  * [Flows](test-editor/layout/flows/README.md)
+    * [Generated Flow Code](test-editor/layout/flows/generated-flow-code.md)
+    * [Flow Controls](test-editor/layout/flows/flow-controls.md)
+    * [Add CSV to Flow](test-editor/layout/flows/add-csv-to-flow.md)
+    * [Flow Execution](test-editor/layout/flows/flow-execution.md)
+  * [Postscript](test-editor/layout/postscript/README.md)
+    * [Running Postscript](test-editor/layout/postscript/running-postscript.md)
+    * [Accessing w/ Postscript](test-editor/layout/postscript/accessing-w-postscript.md)
+    * [Validating Postscript](test-editor/layout/postscript/validating-postscript.md)
+
 ## Loadmill
 
 * [🚀 Getting Started](loadmill/getting-started/README.md)
   * [Core definitions](loadmill/getting-started/core-definitions.md)
   * [API Testing Guide](loadmill/getting-started/getting-started.md)
-* [Postscript](loadmill/postscript/README.md)
-  * [Run code from your API](loadmill/postscript/postscript-run-code.md)
-  * [Postscript Validation](loadmill/postscript/postscript-validation.md)
-  * [Asserting Postscript](loadmill/postscript/asserting-postscript.md)
 * [Load Testing Setup](loadmill/getting-started/setup/README.md)
   * [Load Testing Guide](loadmill/getting-started/getting-started-1/README.md)
   * [Domain Verification](loadmill/getting-started/setup/domain-verification.md)
@@ -97,6 +106,7 @@
   * [📈 Analytics](loadmill/account-settings/analytics/README.md)
     * [Flow Run History](loadmill/account-settings/analytics/flow-run-history.md)
   * [🧳 Import & Export](loadmill/account-settings/import-and-export.md)
+* [Run code from your API](loadmill/postscript-run-code.md)
 * [General FAQs](loadmill/faq.md)
 * [General troubleshooting](loadmill/general-troubleshooting.md)
 
