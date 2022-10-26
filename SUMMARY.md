@@ -3,15 +3,12 @@
 ## Introduction
 
 * [What is an API](README.md)
-* [What is an API endpoint?](introduction/what-is-an-api-endpoint.md)
-* [API - Data Fetching](introduction/api-data-fetching.md)
-* [Quick examples of API requests](introduction/quick-examples-of-api-requests.md)
-
-## API Testing
-
-* [Testing Your Server](api-testing/testing-your-server.md)
-* [Regression Testing](api-testing/regression-testing.md)
-* [Loadmill - AI-Powered Solution](api-testing/loadmill-ai-powered-solution.md)
+  * [What is an API endpoint?](introduction/what-is-an-api/what-is-an-api-endpoint.md)
+  * [API - Data Fetching](introduction/what-is-an-api/api-data-fetching.md)
+  * [Quick examples of API requests](introduction/what-is-an-api/quick-examples-of-api-requests.md)
+* [API Server Testing](introduction/api-server-testing/README.md)
+  * [Regression Testing](introduction/api-server-testing/regression-testing.md)
+  * [Loadmill - AI-Powered Solution](introduction/api-server-testing/loadmill-ai-powered-solution.md)
 
 ## Loadmill Test Composer
 
@@ -38,6 +35,10 @@
     * [Running Postscript](test-editor/layout/postscript/running-postscript.md)
     * [Accessing w/ Postscript](test-editor/layout/postscript/accessing-w-postscript.md)
     * [Validating Postscript](test-editor/layout/postscript/validating-postscript.md)
+
+## Integrations
+
+* [Jira](integrations/jira.md)
 
 ## Loadmill
 
@@ -109,5 +110,3 @@
 * [Run code from your API](loadmill/postscript-run-code.md)
 * [General FAQs](loadmill/faq.md)
 * [General troubleshooting](loadmill/general-troubleshooting.md)
-
-## Loadmill Walkthrough
