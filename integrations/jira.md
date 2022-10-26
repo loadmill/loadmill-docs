@@ -1,6 +1,6 @@
 # Jira
 
-Loadmill Jira integration allows you to automatically create Jira tickets when tests fail or that the expected outcome is not what was planned. You can set your own automatic ticket information streight from the Loadmill platform.
+Loadmill's Jira integration is a great way to automatically create tickets when tests fail or the expected outcome is not what was planned. You can set your own automatic ticket information directly from the Loadmill platform, making it easy to keep track of your testing progress. This integration is a great way to improve your workflow and ensure that your testing is always on track.
 
 ### Prerequisites&#x20;
 
@@ -12,31 +12,32 @@ Loadmill supports Jira version 5 and later versions.
 
 **Project Key**
 
-1. Login to your Jira account and create a new project or use an existing project.
-2. Chose any type of project or project templates.
-3. Name your project.
-4. Navigate to Projects > View all projects
+1. Login to your Jira account.
+2. Navigate to Projects > View all projects
 
 You can see the project key on the second column after the project name.
+
+{% hint style="info" %}
+You can also create a new project and gather the project key by following the same steps above.
+{% endhint %}
 
 /video
 
 **Jira Server URL**
 
-The Jira server url is the origin url of your Jira account: https://companyname.atlassian.net
+The Jira server url is the origin url of your Jira account: _**https://companyname.atlassian.net**_
 
 **API Token**
 
-1. Navigate to Settings > Atlassian account settings
-2. Select Security on the left menu
-3. Click on "Create and manage API tokens"
-4. Create an API token.
+1. Navigate to Settings > Atlassian account settings.
+2. Select Security on the left menu.
+3. Click on <mark style="color:blue;">"Create and manage API tokens"</mark>.
 
 /video
 
 **Email**
 
-The email is the account email used to create/login your Jira account.
+The email is the account email used for your Jira account.
 
 **Setting up Issue Types**
 
@@ -45,10 +46,11 @@ Many projects have their own default issue types. Make sure the issue type of yo
 You can verify this by going through the following steps:
 
 1. Navigate to Projects > View all projects.
-2. Select the "Project Settings" by clicking on the 3 dots of the project.
+2. Select the "Project Settings" by clicking on the 3 dots \[•••] of the project.
 3. Select "Issue Types" from the left menu.
 
-Make sure the issue type of your choice is present. You can create a new issue type by clicking on the "Add issue type" button at the end of the issue types menu.
+Make sure the issue type is present. You can create a new issue type by clicking on the \
+"+ Add issue type" button at the end of the issue types menu.
 
 /video
 
@@ -56,9 +58,9 @@ Make sure the issue type of your choice is present. You can create a new issue t
 
 1. Login to your Loadmill Account
 2. Navigate to Settings > Integration.
-3. Select the "CONNECT TO JIRA" integration. A window will pop up.
+3. Select the <img src="../.gitbook/assets/connect-to-jira.png" alt="CONNECT TO JIRA" data-size="line"> integration. A window will pop up.
 4. Paste all the credentials copied from Step 1.
-5. Click "CONNECT"
+5. Click <img src="../.gitbook/assets/connect.png" alt="connect" data-size="line">
 
 #### Setting up Fields
 
@@ -102,5 +104,13 @@ description: `${test_description}`
 
 </details>
 
-Once thats complete any failed test will have the "Report To Jira" button next to the failed API request. Clicking the button will open a new Create Ticket Jira tab with all it's dynamic values from the test run assigned. You can manually add more information if you see fit and when ready, click on the "Create" button to create your Jira ticket.
+#### Creating the ticket
+
+Once your integration is complete you can now run your test cases (or use the current test runs) and open a Jira ticket based on fail criteria.
+
+1. Select and run your test case/flow.
+2. Select the failed API requests of your failed test.
+3. Click on the "REPORT TO JIRA" <img src="../.gitbook/assets/report-to-jira.png" alt="report to jira" data-size="line"> button.
+
+This will open a new tab with the ticket information with the dynamic values already set on the ticket description. You can add more information if and when you see fit and when ready click on the "Create" button at the bottom of the Jira ticket to create your ticket issue.
 
