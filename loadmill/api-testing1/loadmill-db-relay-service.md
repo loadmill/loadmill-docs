@@ -1,6 +1,8 @@
 # DB Testing using Queries
 
-Loadmill provides a service that allows users to execute various queries directly to their DB in order to validate data.
+Loadmill allows users to execute various queries directly to their DB in order to validate data. This is a very powerful feature as it allows users to check data integrity and accuracy.
+
+
 
 ## Usage
 
@@ -32,14 +34,63 @@ Execute queries directly to MongoDB:
 
 `https://db-relay-service.loadmill.com/api/mongo`
 
+For example: search for a user with the name Moses:
+
 ```
 body: {
   connectionString: 'mongodb://...',
-  collection: 'bios',
+  collection: 'users',
   command: 'find',
-  query: { "awards.award": "Turing Award" }
+  query: { "name":"Moses" }
 }
 ```
+
+By default, using the this service is meant to be for read only proposes (i.e. find). However, while using the Docker image privately in your system you can use the environment variable `ALLOW_ALTERING=true` by doing so the following options will be available:
+
+* insertOne
+* insertMany
+* updateOne
+* updateMany
+* deleteOne
+* deleteMany
+
+Examples:
+
+#### InsertOne:
+
+```
+body: {
+  connectionString: 'mongodb://...',
+  collection: 'users',
+  command: 'insertOne',
+  query: { "name": "Moses", "age": "56" }
+}
+```
+
+#### updateOne:
+
+```
+body: {
+  connectionString: 'mongodb://...',
+  collection: 'users',
+  command: 'updateOne',
+  query: { "name":"Moses" },
+  update: { "$set": { "age": "67" } }
+}
+```
+
+#### deleteOne:
+
+```
+body: {
+  connectionString: 'mongodb://...',
+  collection: 'users',
+  command: 'deleteOne',
+  query: { "name":"Moses" }
+}
+```
+
+Additional help regarding using update operators can be found [here](https://www.mongodb.com/docs/manual/reference/operator/update).
 
 ### Redis
 
@@ -47,16 +98,14 @@ Execute queries directly to Redis:
 
 `https://db-relay-service.loadmill.com/api/redis`
 
-```
-body: {
-  {
+<pre><code><strong>body: {
+</strong>  {
     connectionString: "redis://...", 
     command:"get | hget | hgetall",
     key:"any-key",
     field: "any-field"
    }
-}
-```
+}</code></pre>
 
 ### MySQL&#x20;
 
