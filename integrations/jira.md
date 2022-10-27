@@ -21,7 +21,7 @@ You can see the project key on the second column after the project name.
 You can also create a new project and gather the project key by following the same steps above.
 {% endhint %}
 
-/video
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FeLLeji5HBIepZgvWCMxu%2Fjira-integration-1.mp4?alt=media&token=a38f5d0e-1ed2-495c-85af-6666deb31ac3" %}
 
 **Jira Server URL**
 
@@ -33,7 +33,7 @@ The Jira server url is the origin url of your Jira account: _**https://companyna
 2. Select Security on the left menu.
 3. Click on <mark style="color:blue;">"Create and manage API tokens"</mark>.
 
-/video
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FUqinWLtXo3O3qeBiCNkN%2Fjira-integration-2.mp4?alt=media&token=86098cc8-7de2-4f0a-8001-eb8dc1e1a28e" %}
 
 **Email**
 
@@ -52,7 +52,7 @@ You can verify this by going through the following steps:
 Make sure the issue type is present. You can create a new issue type by clicking on the \
 "+ Add issue type" button at the end of the issue types menu.
 
-/video
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2F0nJajRB3SnQKfkL9fj1i%2Fjira-integration-3.mp4?alt=media&token=d3b5137a-fc45-4632-bbac-b5ad908be083" %}
 
 #### Step 2 - Configuring Jira on Loadmill
 
@@ -61,6 +61,8 @@ Make sure the issue type is present. You can create a new issue type by clicking
 3. Select the <img src="../.gitbook/assets/connect-to-jira.png" alt="CONNECT TO JIRA" data-size="line"> integration. A window will pop up.
 4. Paste all the credentials copied from Step 1.
 5. Click <img src="../.gitbook/assets/connect.png" alt="connect" data-size="line">
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FNeoAFifDmpaNZag6bYUM%2Fjira-integration-4.mp4?alt=media&token=75bb88ea-ecf1-417e-a9de-93a733bec35f" %}
 
 #### Setting up Fields
 
@@ -104,6 +106,8 @@ description: `${test_description}`
 
 </details>
 
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2F0gsKon7q8ci3dGcy8Jlg%2Fjira-integration-6.mp4?alt=media&token=3522bb5c-c4a5-4295-8931-0b13d35e0c7a" %}
+
 #### Creating the ticket
 
 Once your integration is complete you can now run your test cases (or use the current test runs) and open a Jira ticket based on fail criteria.
@@ -113,4 +117,6 @@ Once your integration is complete you can now run your test cases (or use the cu
 3. Click on the "REPORT TO JIRA" <img src="../.gitbook/assets/report-to-jira.png" alt="report to jira" data-size="line"> button.
 
 This will open a new tab with the ticket information with the dynamic values already set on the ticket description. You can add more information if and when you see fit and when ready click on the "Create" button at the bottom of the Jira ticket to create your ticket issue.
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2F4PSTKDrpTdLgFqodYnqM%2Fjira-integration-7.mp4?alt=media&token=f99e6fb4-eed6-47b0-9f79-b7c4be17d5e3" %}
 
