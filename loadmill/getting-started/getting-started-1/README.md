@@ -84,7 +84,7 @@ Now that we know that our test is configured correctly, we can run it at scale. 
 
 As the test progresses we can see the amount of concurrent sessions **ramping up** linearly and see how **response time metrics** change over time.
 
-![](<../../../.gitbook/assets/image (38) (1).png>)
+![](<../../../.gitbook/assets/image (38).png>)
 
 In addition, you can **adjust concurrency** **during a test run**. This is a very powerful feature that allows to see how the test performs with dynamic concurrency changes in real time.
 
