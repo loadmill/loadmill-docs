@@ -17,6 +17,8 @@ Make sure to have an Atlassian account to connect to Bitbucket.
 You might be redirected to the Atlassian login page when connecting Loadmill to Bitbucket. Login using your Atlassian credentials and set up a Bitbucket username to complete the registration.
 {% endhint %}
 
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FMxs4VbGA570CeZrxXJjo%2Fbitbucket-integration_setup.mp4?alt=media&token=a48633f0-d02b-407a-bf5b-e0c976f927f8" %}
+
 ### Syncing your Test Suite
 
 Now that your Bitbucket integration is all set up head over and sync your Test Suite to your repository.
@@ -28,6 +30,8 @@ Now that your Bitbucket integration is all set up head over and sync your Test S
 3. Select or create a new branch from the Sync Actions section.
 4. Enter a commit message (example: my first commit).
 5. Click on <img src="../.gitbook/assets/bitbucket-commit.png" alt="commit" data-size="line">.
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FK9u9JP9huaXUypuo1EB7%2Fbitbucket-integration_commit.mp4?alt=media&token=709b5619-b5c8-4a42-8b75-3de0cac630f9" %}
 
 ### Running Test Plans with Bitbucket
 
@@ -45,6 +49,8 @@ Your Test Plan will now run on the latest committed version of the Test Suites.
 Changing your Test Suites locally will not affect the Test Plan run until you commit your changes to Bitbucket.
 {% endhint %}
 
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FRXLm6IUBG19fm9ecyUuc%2Fbitbucket-integration_test-plan.mp4?alt=media&token=fbeabdd3-9244-4c30-8ddb-4c6db50df89d" %}
+
 ### Syncing from your Bitbucket Repository
 
 Loadmill can similarly track syncs made directly through Bitbucket. Simply commit a new change from your repository and you'll be able to see the commit change under the Bitbucket Sync tab of your Test Suite.
@@ -60,6 +66,8 @@ To do that:
 7. Click on "Checkout".
 8. See the changes on your Test Suite.
 
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FAjTuQPBwPL9MEQDTSr7s%2Fbitbucket-integration_commit-back.mp4?alt=media&token=7ac1656c-cbe1-4f53-ae0b-257354d040a2" %}
+
 ### Creating/Updating Branch
 
 To create a new branch (or update an existing one) from the Loadmill app:
@@ -72,3 +80,5 @@ To create a new branch (or update an existing one) from the Loadmill app:
 6. Click on "Create Pull Request"
 
 Clicking "Create Pull Request" enables you to view the changes in the Test Suite and create a pull request for your synced Bitbucket branch. There, you'll be able to manage and merge when ready.
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FpiyA0h5OL6WetHjQKI9q%2Fbitbucket-integration_new-branch.mp4?alt=media&token=5c400fc9-0e1e-46da-8377-a9418a156b63" %}
