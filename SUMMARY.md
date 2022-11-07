@@ -31,19 +31,19 @@
   * [Flow Controls](test-editor/flows/flow-controls.md)
   * [Add CSV to Flow](test-editor/flows/add-csv-to-flow.md)
   * [Flow Execution](test-editor/flows/flow-execution.md)
-* [Request Editor](test-editor/request-editor.md)
-* [Parameters](test-editor/parameters/README.md)
-  * [Parameter Execution Order](test-editor/parameters/parameter-execution-order.md)
-  * [Test Suite Parameters](test-editor/parameters/test-suite-parameters.md)
-* [⨍(⨯) FUNCTIONS](test-editor/functions.md)
-* [Extractions - Set Parameters](test-editor/set-parameters-extractions.md)
-* [Assertions - Verify Response](test-editor/assertions.md)
+* [Request Editor](general/api-testing1/test-suite-editor/request-editor.md)
+* [Parameters](general/api-testing1/test-suite-editor/parameters/README.md)
+  * [Parameter Execution Order](general/api-testing1/test-suite-editor/parameters/parameter-execution-order.md)
+  * [Test Suite Parameters](general/api-testing1/test-suite-editor/test-suite-parameters.md)
+* [⨍(⨯) FUNCTIONS](general/api-testing1/test-suite-editor/functions.md)
+* [Extractions - Set Parameters](general/api-testing1/test-suite-editor/set-parameters-extractions.md)
+* [Assertions - Verify Response](general/api-testing1/test-suite-editor/assertions.md)
 * [Postscript](test-editor/postscript/README.md)
   * [Running Postscript](test-editor/postscript/running-postscript.md)
   * [Accessing w/ Postscript](test-editor/postscript/accessing-w-postscript.md)
   * [Validating Postscript](test-editor/postscript/validating-postscript.md)
-* [Login/Authentication Flow](test-editor/global-login-flow.md)
-* [Before & After Hooks](test-editor/before-and-after-hooks.md)
+* [Login/Authentication Flow](general/api-testing1/test-suite-editor/global-login-flow.md)
+* [Before & After Hooks](general/api-testing1/test-suite-editor/before-and-after-hooks.md)
 
 ## Load Testing
 
@@ -74,7 +74,7 @@
 
 ## Integrations
 
-* [🕵🏻 Loadmill Agent](integrations/testing-localhost-application.md)
+* [🕵🏻 Loadmill Agent](general/api-testing1/testing-localhost-application.md)
 * [CI integration](integrations/npm-modal.md)
 * [GitHub](integrations/github-integration/README.md)
   * [CI integration](integrations/github-integration/ci-integration.md)
@@ -83,8 +83,8 @@
 * [Jira](integrations/jira.md)
 * [Slack integration](integrations/slack-integration.md)
 * [TestRail integration](integrations/testrail-integration.md)
-* [Database Testing](integrations/database-testing.md)
-* [✉️ Email Testing](integrations/testing-emails.md)
+* [Database Testing](general/api-testing1/db-testing-using-queries.md)
+* [✉️ Email Testing](general/api-testing1/testing-emails.md)
 * [Integrations FAQs](integrations/integrations-faqs-1.md)
 
 ## Collaboration

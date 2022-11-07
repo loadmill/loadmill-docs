@@ -10,16 +10,16 @@ Make sure to have an Atlassian account to connect to Bitbucket.
 
 1. Go to **Settings** > **Integrations**.
 2. Click on the <img src="../.gitbook/assets/connect-bitbucket.png" alt="connect to bitbucket" data-size="line"> button.
-3. Grand Loadmill access to your Bitbucket account.
+3. Grant Loadmill access to your Bitbucket account.
 4. Select your repository.
 
 {% hint style="info" %}
 You might be redirected to the Atlassian login page when connecting Loadmill to Bitbucket. Login using your Atlassian credentials and set up a Bitbucket username to complete the registration.
 {% endhint %}
 
-### Syncing your Test Suite/Plan
+### Syncing your Test Suite
 
-Now that your Bitbucket integration is all set up head over and sync your Test Suites/Plans to your repositories.
+Now that your Bitbucket integration is all set up head over and sync your Test Suite to your repository.
 
 #### To sync your Test Suite to your Bitbucket repository:
 
@@ -29,17 +29,21 @@ Now that your Bitbucket integration is all set up head over and sync your Test S
 4. Enter a commit message (example: my first commit).
 5. Click on <img src="../.gitbook/assets/bitbucket-commit.png" alt="commit" data-size="line">.
 
-#### To sync your Test Plan to your Bitbucket repository:
+### Running Test Plans with Bitbucket
 
 You can configure your Test Plan to run with the latest syncs of your test suites repositories. That means that if one of your Test Suites is running with a previous configuration from a previous commit your Test Plan will run with the latest commit regardless.
 
 **To configure this option:**
 
-1. Head over to any Test Suite you wish to connect your repository to.
+1. Head over to any Test Plan you wish to connect your repository to.
 2. Select the "Run Settings" tab of the Test Plan.
-3. Select the branch containing the Test Suite repositories.
+3. Select the branch containing the synced Test Suite.
 
-Your Test Plan will now run on the latest commits of its Test Suites.
+Your Test Plan will now run on the latest committed version of the Test Suites.
+
+{% hint style="warning" %}
+Changing your Test Suites locally will not affect the Test Plan run until you commit your changes to Bitbucket.
+{% endhint %}
 
 ### Syncing from your Bitbucket Repository
 
@@ -67,4 +71,4 @@ To create a new branch (or update an existing one) from the Loadmill app:
 5. Commit the changes done on your test suite.
 6. Click on "Create Pull Request"
 
-Once you click on the "Create Pull Request" button, your Test Suite changes will immediately be pushed to the Bitbucket branch repository. There you'll be able to manage it and merge it when ready.
+Clicking "Create Pull Request" enables you to view the changes in the Test Suite and create a pull request for your synced Bitbucket branch. There, you'll be able to manage and merge when ready.

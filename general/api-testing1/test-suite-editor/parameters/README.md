@@ -36,7 +36,7 @@ Using parameter defaults is especially useful for automated testing and CI where
 
 Parameters can be defined and populated with values dynamically after each request in your test scenario.
 
-![](../../.gitbook/assets/screenshot-2021-10-03t143044.215.png)
+![](../../../../.gitbook/assets/screenshot-2021-10-03t143044.215.png)
 
 There are several **extraction query types** that may be used:
 
@@ -51,7 +51,7 @@ There are several **extraction query types** that may be used:
  }
 ```
 
-![](../../.gitbook/assets/screenshot-2021-10-03t143158.042.png)
+![](../../../../.gitbook/assets/screenshot-2021-10-03t143158.042.png)
 
 * **JQuery (Cheerio)** - used for extracting values from XML/HTML responses. We use a subset of the JQuery selector syntax called [Cheerio](https://cheerio.js.org). You may add an optional (but very useful) **attribute** input to your query that selects an attribute value from the first element found by the jQuery. If you do not provide an attribute to select, the query will simply output the inner content of said element.
 * **JS RegExp** - used for extracting arbitrary values from any kind of textual response via regular expressions with capture groups. For example, we can extract the `id` field from the same JSON response we've seen above using a regular expression: `.*"id":\s*([0-9]*)`.
@@ -85,7 +85,7 @@ So far, we've only seen how to inject a simple parameter value into an arbitrary
 
 Computed values can be extremely useful when you need to introduce conditional behavior to your test. Say you want to skip **Purchase Request** if the preceding **Get Price Request** response returns a price above the current budget. This could be accomplished by extracting the price to a parameter and setting the **Purchase Request** skip condition to `${budget <= price}`.
 
-![](../../.gitbook/assets/screen-shot-2021-10-05-at-16.45.21.png)
+![](../../../../.gitbook/assets/screen-shot-2021-10-05-at-16.45.21.png)
 
 You may also use _**literal values**_ within expressions, e.g. `${__if_then_else(is_good,'Success!',':_(')}` - but be aware there are some [syntactic limitations](./#notes-and-limitations).
 

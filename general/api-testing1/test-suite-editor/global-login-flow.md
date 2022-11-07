@@ -6,8 +6,8 @@ Cookies received and parameters extracted by the login flow requests will be acc
 
 Global authentication headers configured below can use parameters extracted by the login flow requests (In a `${param}` syntax), and will override any matching headers in the test flow requests of that suite.
 
-![](<../.gitbook/assets/Screenshot (20).png>)
+![](<../../../.gitbook/assets/Screenshot (20).png>)
 
-![](<../.gitbook/assets/Screenshot (21).png>)
+![](<../../../.gitbook/assets/Screenshot (21).png>)
 
 You can create your login flow from scratch within the Login tab OR use a better way - create it as a [shared flow](https://docs.loadmill.com/collaboration/shared-flows) so you can re-use it in other test suites.
