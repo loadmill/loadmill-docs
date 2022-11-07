@@ -10,7 +10,7 @@ Testing your local environment before publishing the changes helps identifying b
 
 I want to test my app locally but getting a warning when trying to create a request:
 
-![](../../.gitbook/assets/screenshot-2021-10-03t152909.361.png)
+![](../.gitbook/assets/screenshot-2021-10-03t152909.361.png)
 
 When you try to reach localhost on your browser, you are actually trying to connect to your local computer’s ip address, 127.0.0.1. This local IP address is the same for every computer.
 
@@ -76,7 +76,7 @@ The start command accepts the following options:
 
 ####
 
-![](<../../.gitbook/assets/Screenshot (34).png>)
+![](<../.gitbook/assets/Screenshot (34).png>)
 
 That's it! :tada: From now on, tests you are running in Loadmill will run locally or on your server (depends on where you configured them to be run) as long as our Loadmill Agent is running.
 

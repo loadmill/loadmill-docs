@@ -78,6 +78,4 @@ By running the suite, we see the 5 iterations of the flow we created, each sendi
 
 We notice that the last two test iterations have passed when the expected outcome would have been to fail. That is a crucial part in testing your server as it allows you to understand how your API behaves in those scenarios.
 
-\------------------
-
 Overall, creating multiple variations of your API tests is important because it helps to ensure that the API is functioning correctly and that it meets all expectations. By doing so, you can avoid potential issues and ensure that your API is ready for production.

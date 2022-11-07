@@ -10,7 +10,7 @@ You may have an arbitrary number of assertions executed after each successful re
 
 The target of an assertion is always a parameter value. You may use built-in parameters, default parameters or any parameter extracted from the current or previous requests in the **current scenario** as the target.
 
-![The request Assertions - Verify Response section](../../../.gitbook/assets/screenshot-2021-10-03t144851.572.png)
+![The request Assertions - Verify Response section](../.gitbook/assets/screenshot-2021-10-03t144851.572.png)
 
 There are several types of assertions:
 
@@ -29,7 +29,7 @@ You may embed parameters in any assertion expression. These parameters will be e
 
 See **an example of the assertion** that validates the generated ID is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#\_\_is\_uuid-target) below:
 
-![](../../../.gitbook/assets/video1582528102-online-video-cut.gif)
+![](../.gitbook/assets/video1582528102-online-video-cut.gif)
 
 {% hint style="info" %}
 :man\_mage: When creating tests via our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder), Loadmill will create **two automatic assertion types** for you:
@@ -46,11 +46,11 @@ In many cases Loadmill users use the same or similar extractions and assertions.
 
 Then, each user can add the assertions from the repository by clicking on **+ SUGGESTIONS**.
 
-![](../../../.gitbook/assets/screenshot-2021-10-03t145350.482.png)
+![](../.gitbook/assets/screenshot-2021-10-03t145350.482.png)
 
 By default, there are a few common extraction and assertion examples in the repository. Team admins can also navigate to the Suggestions Settings directly from within the suggestion dialog window.
 
-![](../../../.gitbook/assets/screen-shot-2021-05-09-at-15.40.18.png)
+![](../.gitbook/assets/screen-shot-2021-05-09-at-15.40.18.png)
 
 ## Caveats
 

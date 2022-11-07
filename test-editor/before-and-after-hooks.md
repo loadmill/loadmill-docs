@@ -21,7 +21,7 @@ First, I need to create a new user and login. Then, my test flow/s should run bu
 
 Navigate to/create a Test Suite containing relevant tests -> BEFORE/AFTER tab. On this page, you can create before & after hooks from scratch or use pre-defined [shared flows](https://docs.loadmill.com/collaboration/shared-flows).
 
-![](<../../../.gitbook/assets/Screenshot (25).png>)
+![](<../.gitbook/assets/Screenshot (25).png>)
 
 {% hint style="info" %}
 :brain: Make sure all test flows residing in the Test Suite are aligned with the Before & After logic. You may configure all hooks or just one depending on your use case.
@@ -29,8 +29,8 @@ Navigate to/create a Test Suite containing relevant tests -> BEFORE/AFTER tab. O
 
 In our case, we will create the "Before All" flow that will include requests to create a new user. Then, we will use our well-known [Login tab](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow) to create a login flow. The "Before Each" flow will include a request to get the user data. After that, our test flow/s run and eventually, we delete the created user within the "After All" flow. Let's run the test flow and see results.
 
-![](../../../.gitbook/assets/screenshot-2021-06-08t114153.914.png)
+![](../.gitbook/assets/screenshot-2021-06-08t114153.914.png)
 
 If we enter the test flow itself, we will see our Login and Before Each flows as well.
 
-![](../../../.gitbook/assets/screenshot-2021-06-08t114412.807.png)
+![](../.gitbook/assets/screenshot-2021-06-08t114412.807.png)

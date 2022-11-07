@@ -4,15 +4,15 @@ The Test Suite Parameters tab allows to configure default parameters which are r
 
 Default parameters can be used in requests using the template strings notation: `${parameter_name}`.
 
-![](<../../../.gitbook/assets/Screenshot (22).png>)
+![](<../../.gitbook/assets/Screenshot (22).png>)
 
-![](<../../../.gitbook/assets/Screenshot (23).png>)
+![](<../../.gitbook/assets/Screenshot (23).png>)
 
 ### Parameters scope
 
 By default, Test Suite parameters have the **Entire Test Suite Run** execution scope. The alternative option is to select the **Single Flow Run** scope.
 
-![](<../../../.gitbook/assets/Screenshot (24).png>)
+![](<../../.gitbook/assets/Screenshot (24).png>)
 
 Look at the example below to better understand what execution scopes mean.
 
