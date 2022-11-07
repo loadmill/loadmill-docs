@@ -2,7 +2,7 @@
 description: Control numerous options through Settings.
 ---
 
-# ⚙ Settings
+# Settings
 
 You may find Settings by clicking on <img src="../../.gitbook/assets/Screenshot (46).png" alt="" data-size="line"> at the left panel of the app:
 
