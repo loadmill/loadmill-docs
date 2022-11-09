@@ -291,10 +291,9 @@ Returns the value of `target` after [Base64](https://en.wikipedia.org/wiki/Base6
 
 * `${__decode_base64(p1)} // returns 'example' assuming p1 is 'ZXhhbXBsZQ=='`
 
-### `__decode_base64(target)`
+### `__hex_to_base64(target)`
 
-Accepts a string representation of a hexadecimal number. \
-Returns the value of target after Base64 encoding.
+Accepts a string representation of a hexadecimal number and returns its value in its Base64 representation.
 
 * `${__hex_to_base64(p1)} // returns 'q83vmHZUMg==' assuming p1 is 'abcdef987654321'`
 
