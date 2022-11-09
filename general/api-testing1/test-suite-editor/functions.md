@@ -291,6 +291,13 @@ Returns the value of `target` after [Base64](https://en.wikipedia.org/wiki/Base6
 
 * `${__decode_base64(p1)} // returns 'example' assuming p1 is 'ZXhhbXBsZQ=='`
 
+### `__decode_base64(target)`
+
+Accepts a string representation of a hexadecimal number. \
+Returns the value of target after Base64 encoding.
+
+* `${__hex_to_base64(p1)} // returns 'q83vmHZUMg==' assuming p1 is 'abcdef987654321'`
+
 ### `__escape_quotes(target)`
 
 Returns the value of `target` after escaping special characters. This function is like escape quotes in JavaScript and will escape characters like \n \r \t and \\".
@@ -320,6 +327,23 @@ Returns a sub-string of `target` which starts at `begin` index (inclusive) and e
 * `${__slice('Loadmill','2','4')} // returns 'ad'`
 * `${__slice('Loadmill',p1,p2)} // returns 'mill', assuming p1 is 4 and p2 is 8`
 * `${__slice(p1,'0','2')} // returns 'Lo', assuming p1 is Loadmill`
+
+### `__slice(target,[begin=0,[end]])`
+
+Returns a new string with one, some, or all matches of a `searchValue` replaced by a `replaceValue`. `searchValue` can be either a string or a regex. If it's a regex, then the `options` argument can be used as the regex options.
+
+{% hint style="info" %}
+Regex tokens must be escaped in `searchValue`. (`searchValue='+'` is bad, `searchValue='\+'` is good)
+{% endhint %}
+
+* `${__replace(p1,'a','x')} // returns 'xaa' assuming p1 is 'aaa'`
+* `${__replace('AAA','a','x','i')} // returns 'xAA' (here we used the i = case insensitive option)`
+
+### `__replace_all(target, searchValue, replaceValue)`
+
+Returns a new string with all matches of a `searchValue` replaced by a `replaceValue` (Same as `__replace`, but the g \[= global] option is always on).
+
+* `${__replace_all(p1,'a','x')} // returns 'xxx' assuming p1 is 'aaa'`
 
 ## Array functions
 
