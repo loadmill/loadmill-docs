@@ -86,6 +86,7 @@
 * [Database Testing](general/api-testing1/db-testing-using-queries.md)
 * [✉️ Email Testing](general/api-testing1/testing-emails.md)
 * [Integrations FAQs](integrations/integrations-faqs-1.md)
+* [GitLab](integrations/gitlab.md)
 
 ## Collaboration
 
