@@ -35,7 +35,7 @@ Now that your Bitbucket integration is all set up head over and sync your Test S
 
 ### Running Test Plans with Bitbucket
 
-You can configure your Test Plan to run with the latest syncs of your test suites repositories. That means that if one of your Test Suites is running with a previous configuration from a previous commit your Test Plan will run with the latest commit regardless.
+You can configure your Test Plan to run with the latest syncs of your test suites repositories. That means your Test Plan will run with the latest Test Suite synced commits.
 
 **To configure this option:**
 
