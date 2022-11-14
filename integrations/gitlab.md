@@ -7,7 +7,7 @@ You can easily set up Loadmill to automatically run your tests as part of your c
 1. Go to **Settings** > **Integrations**.
 2. Click on the <img src="../.gitbook/assets/connect-to-gitlab.png" alt="connect to gitlab" data-size="line"> button.
 3. Authorize Loadmill to use your account.
-4. Select the repository to enable data sync to and click on <img src="../.gitbook/assets/connect-to-project.png" alt="connect to project" data-size="line">.
+4. Select the project to enable data sync to and click on <img src="../.gitbook/assets/connect-to-project.png" alt="connect to project" data-size="line">.
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FZmOShciaVeCXCJMwCgGs%2Fgitlab-integration-setup.mp4?alt=media&token=315d1500-8a53-44fb-b941-627edbd840cd" %}
 
@@ -25,7 +25,7 @@ Now that your GitLab integration is all set up head over and sync your Test Suit
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2Fg73Y2LbPirzzylUfbvok%2Fgitlab-integration-commit.mp4?alt=media&token=8747b986-c060-4059-8b7a-97409379b1f5" %}
 
-### Merging Repositories
+### Merging Branches
 
 Loadmill makes it easy to merge your commits directly through its interface. Simply select the commits you want to merge, and Loadmill will handle the rest.
 
@@ -33,7 +33,7 @@ Loadmill makes it easy to merge your commits directly through its interface. Sim
 
 ### Running Test Plans with GitLab
 
-You can configure your Test Plan to run with the latest syncs of your test suites repositories. That means that if one of your Test Suites is running with a previous configuration from a previous commit your Test Plan will run with the latest commit regardless.
+You can configure your Test Plan to run with the latest syncs of your test suites repositories. That means your Test Plan will run with the latest Test Suite synced commits.
 
 **To configure this option:**
 

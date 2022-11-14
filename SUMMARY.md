@@ -79,6 +79,7 @@
 * [GitHub](integrations/github-integration/README.md)
   * [CI integration](integrations/github-integration/ci-integration.md)
   * [Data sync](integrations/github-integration/data-sync-connection-to-github.md)
+* [GitLab](integrations/gitlab.md)
 * [Bitbucket](integrations/bitbucket.md)
 * [Jira](integrations/jira.md)
 * [Slack integration](integrations/slack-integration.md)
@@ -86,7 +87,6 @@
 * [Database Testing](general/api-testing1/db-testing-using-queries.md)
 * [✉️ Email Testing](general/api-testing1/testing-emails.md)
 * [Integrations FAQs](integrations/integrations-faqs-1.md)
-* [GitLab](integrations/gitlab.md)
 
 ## Collaboration
 
