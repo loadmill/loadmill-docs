@@ -38,13 +38,25 @@ With this integration, users will be able to:
 
 ### Pairing to Xray
 
-You can pair each Loadmill test flow individually with Xray. Each paired flow updates Xray tests upon each Test Suite run. You can pair the entire Test Suite with Xray which allows Loadmill to create new Xray tests upon each Test Suite runs.
+You can pair your entire Test Suite with Xray. Pairing your Test Suite sets up a new "Test" ticket for each flow and connects to it accordingly. Running the paired Test Suite creates a "Test Execution" ticket with reported flow statuses and updates each connected "Test" flow ticket with its flow status.&#x20;
+
+{% hint style="warning" %}
+To enable Test Suite Pairing you need to enable CI for the desired flow. This is an essential step as it automates Xray reports on run.
+{% endhint %}
+
+You can pair each Loadmill test flow individually with Xray. Each paired flow updates Xray tests upon each Test Suite run.&#x20;
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FmGCMWjY4N1Ck6CoEHLEN%2Fxray-integration-pairing.mp4?alt=media&token=ebbe5f7d-d256-485b-9724-ff327c44ecd0" %}
 
 {% hint style="info" %}
 Having your CI connected to Loadmill allows you to automate your workflow lets you focus on your products infrastructure while your tests are ran and reported for each push requests created.
 {% endhint %}
+
+### Running Test Plan with Xray
+
+To run your Test Plan with Xray simply click on the "Run with Xray Test Execution" from the "Run Test Plan" dropdown and select. Running your Test Plan updates the connected flow to the Xray test results accordingly.
+
+
 
 ### Xray Test Results
 
