@@ -20,6 +20,10 @@ With this integration, users will be able to:
 2. Go to **Apps > Manage your apps > under the Xray section > API Keys** to create an API key.
 {% endhint %}
 
+{% hint style="warning" %}
+Make sure that your ticket layout has no custom mandatory fields.
+{% endhint %}
+
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FFFvp5o0RB1CDM6BLlgwm%2Fxray-integration-prerequisites.mp4?alt=media&token=75afff93-772b-445f-9ddf-4688d6122097" %}
 
 ### Xray Integration Setup
