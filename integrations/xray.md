@@ -56,7 +56,7 @@ Having your CI connected to Loadmill allows you to automate your workflow lets y
 
 To run your Test Plan with Xray simply click on the "Run with Xray Test Execution" from the "Run Test Plan" dropdown and select. Running your Test Plan updates the connected flow to the Xray test results accordingly.
 
-
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2F344mDNzlfGVohezt7vni%2Fxray-integration-test-plan.mp4?alt=media&token=81c16109-2ac6-4290-ac11-ab9a83caf9e0" %}
 
 ### Xray Test Results
 
