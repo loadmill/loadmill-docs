@@ -79,6 +79,8 @@ Those variables are:
 3. Test URL: `${test_url}`
 4. Run URL: `${run_url}`
 5. Failed Assertion: `${failed_assertions}`
+6. HTTP Status: `${http_status}`
+7. Error Message: `${error_message}`
 
 **Quick Example**
 
@@ -102,11 +104,15 @@ test url: `${test_url}`
 
 test run: `${run_url}`
 
+http status: `${http_status}`
+
 description: `${test_description}`
+
+error message: `${error_message}`
 
 </details>
 
-{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2F0gsKon7q8ci3dGcy8Jlg%2Fjira-integration-6.mp4?alt=media&token=3522bb5c-c4a5-4295-8931-0b13d35e0c7a" %}
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F2vjiLjsWmvQaVMxaG2Eb%2Fuploads%2Fe0GBrZWdbQWm7yJV1SAi%2Fjira-integration-variables.mp4?alt=media&token=1131a8d9-8e53-40d3-860d-63dd2ed60316" %}
 
 #### Creating the ticket
 
@@ -114,9 +120,9 @@ Once your integration is complete you can now run your test cases (or use the cu
 
 1. Select and run your test case/flow.
 2. Select the failed API requests of your failed test.
-3. Click on the "REPORT TO JIRA" <img src="../.gitbook/assets/report-to-jira.png" alt="report to jira" data-size="line"> button.
+3. Click on the  <img src="../.gitbook/assets/report-to-jira.png" alt="report to jira" data-size="line"> button.
 
 This will open a new tab with the ticket information with the dynamic values already set on the ticket description. You can add more information if and when you see fit and when ready click on the "Create" button at the bottom of the Jira ticket to create your ticket issue.
 
-{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2F4PSTKDrpTdLgFqodYnqM%2Fjira-integration-7.mp4?alt=media&token=f99e6fb4-eed6-47b0-9f79-b7c4be17d5e3" %}
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F2vjiLjsWmvQaVMxaG2Eb%2Fuploads%2FBlIlHZYnZc5zVY2sDryM%2Fjira-integration-create-ticket.mp4?alt=media&token=71570c0c-9611-4221-971d-9fffe0aceabb" %}
 
