@@ -88,6 +88,7 @@
 * [✉️ Email Testing](general/api-testing1/testing-emails.md)
 * [Integrations FAQs](integrations/integrations-faqs-1.md)
 * [XRay](integrations/xray.md)
+* [TestRail](integrations/testrail.md)
 
 ## Collaboration
 
