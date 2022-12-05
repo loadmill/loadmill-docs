@@ -106,14 +106,15 @@ To execute Redis queries:
     key:"any-key",
     field: "any-field"
    }
-}</code></pre>
+}
+</code></pre>
 
 #### MySQL
 
 To execute queries directly to MySQL 5.7:
 
 1. Apply the same steps above.
-2. Request URL: `https://db-relay-service.loadmill.com/api/redis`
+2. Request URL: `https://db-relay-service.loadmill.com/api/mysql`
 3. Request Body:&#x20;
 
 ```json
