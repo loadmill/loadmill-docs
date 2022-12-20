@@ -49,7 +49,7 @@ body: {
 ```
 
 {% hint style="info" %}
-The MongoDB service is initially meant for "read-only" puposes (i.e. find). However, using a Docker image privately allows you to use the environment variable `ALLOW_ALTERING=true` and by doing so the following options are available:\
+The MongoDB service is initially meant for "read-only" purposes (i.e. find). However, using a Docker image privately allows you to use the environment variable `ALLOW_ALTERING=true` and by doing so the following options are available:\
 `insertOne`, `insertMany`, `updateOne`, `updateMany`, `deleteOne` and `deleteMany`.
 {% endhint %}
 

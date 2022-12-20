@@ -74,7 +74,7 @@
 
 ## Integrations
 
-* [🕵🏻 Loadmill Agent](general/api-testing1/testing-localhost-application.md)
+* [Loadmill Agent](general/api-testing1/testing-localhost-application.md)
 * [CI integration](integrations/npm-modal.md)
 * [GitHub](integrations/github-integration/README.md)
   * [CI integration](integrations/github-integration/ci-integration.md)

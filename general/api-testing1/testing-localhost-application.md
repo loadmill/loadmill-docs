@@ -2,61 +2,64 @@
 description: Running API and Load tests locally or on your servers.
 ---
 
-# 🕵🏻 Loadmill Agent
+# Loadmill Agent
 
-Testing your local environment before publishing the changes helps identifying bugs earlier and speeds up development cycle.
+Running API and load tests locally on your own servers can offer several benefits, including faster test execution, greater control over the testing environment, improved isolation of issues, and enhanced security.&#x20;
 
-## The problem
+By running tests locally, you can avoid the latency and potential security risks associated with sending requests over the internet, and have more control over the testing environment to simulate different conditions and more effectively identify and fix issues with your API or application.
 
-I want to test my app locally but getting a warning when trying to create a request:
+The Loadmill Agent is a tool that enables you to run load and performance tests on your servers or local environment. It acts as a proxy, intercepting requests made to your API or application and forwarding them to the Loadmill testing platform. The Loadmill Agent can be installed on your servers or locally on your development machine and configured to intercept requests made to specific endpoints or domains.
 
-![](../../.gitbook/assets/screenshot-2021-10-03t152909.361.png)
+You can download the Loadmill agent via npm package or use our newly release desktop app for macOS.
 
-When you try to reach localhost on your browser, you are actually trying to connect to your local computer’s ip address, 127.0.0.1. This local IP address is the same for every computer.
+### MacOS Desktop App
 
-However, Loadmill is a SaaS (software as a service) company. That means that Loadmill’s web server runs on another computer somewhere in the world. Therefore, Loadmill.com will send an HTTP request to its own machine’s localhost ip address and not to your server, resulting in an error response.
+Loadmill has recently released a new desktop app for macOS that allows users to perform regular and local testing using a private agent. The app is designed to be easy to use and provides a convenient way to access Loadmill's powerful testing capabilities from a Mac computer.
 
-You can think of it this way: imagine you are on a vacation abroad, and you want to write a letter to your relatives back home. After you finished writing the letter, you would write on the envelope, “my home” as the target address. The mailman will not understand where to send the letter, of course. The mailman has his own idea of “my home”, but it is not your home, but rather, it’s his home. He will need your public home address in order to send the letter to your relatives. This scenario is equivalent to asking Loadmill (the mailman) to send an HTTP request (the letter) to localhost (“my home”).
+One of the key features of the app is the private agent, which allows users to conduct testing on their own devices without having to rely on external servers. This is particularly useful for local testing, as it allows users to test their applications in a controlled environment without having to worry about network connectivity or other external factors.
 
-## The solution
+To use the private agent, users will need to generate a Loadmill [security token](https://app.loadmill.com/app/user/settings/security). Once the token has been generated, it can be used to authenticate the private agent and begin testing.
 
-We recommend using our **Loadmill Agent (**either by [npm](https://www.npmjs.com/package/@loadmill/agent) or [Docker](https://hub.docker.com/r/loadmill/agent)) that allows you to run API and Load tests locally or even on your servers if you wish.
+{% tabs %}
+{% tab title="Agent Installation" %}
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F2vjiLjsWmvQaVMxaG2Eb%2Fuploads%2FQDUMs5rV3mIhpyZXbbnJ%2Fmacos-agent-installation.mp4?alt=media&token=ba4a835c-5379-40b5-b28a-21e6b35886e7" %}
+{% endtab %}
 
-### Docker image
+{% tab title="Agent Run" %}
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F2vjiLjsWmvQaVMxaG2Eb%2Fuploads%2FmL4BekLzpYnjwNrHKlXf%2Fmacos-agent-run.mp4?alt=media&token=552931e4-1a8c-4ace-b18e-311012ef9fb3" %}
+{% endtab %}
+{% endtabs %}
 
-In case you have Docker installed on your machine all you need to do is to run the following command:
+### NPM Package/Docker Installation
+
+Run the following command if you have Docker installed on your machine:
 
 `docker run -it --rm -e LOADMILL_AGENT_TOKEN=<your-api-token> loadmill/agent`
 
-More info regarding the Docker image and available options can be found [here](https://hub.docker.com/r/loadmill/agent).
+For more information, please [click here](https://hub.docker.com/r/loadmill/agent)
 
-### npm package
+#### NPM Package
 
-#### Setup
+**Prerequisites**
 
-In order to use the Loadmill Agent you will need to have node.js version 14 or higher installed on your machine and generate an [API Token](https://docs.loadmill.com/integrations/api-tokens).
+1. Node version 14 or higher installed.
+2. [Generated Token](https://docs.loadmill.com/integrations/api-tokens)
 
-#### Installation
+**Installation**
 
-Using npm:
+| using npm                                                                                                                        | using yarn                    |
+| -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| <p><code>npm i @loadmill/agent -g</code></p><p><code>npm i @loadmill/agent // in case you can't install it globally.</code> </p> | `yarn add @loadmill/agent -g` |
 
-`npm i @loadmill/agent -g`
+#### Running the Agent
 
-`npm i @loadmill/agent` // in case you can't install it globally.
+| installed globally (-g)           | installed locally                                                    |
+| --------------------------------- | -------------------------------------------------------------------- |
+| `loadmill-agent start -t <token>` | `./node_modules/@loadmill/agent/bin/loadmill-agent start -t <token>` |
 
-Using yarn:
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F2vjiLjsWmvQaVMxaG2Eb%2Fuploads%2FDkvD3iwOZNnJvVb6QMBd%2Fterminal-agent-run.mp4?alt=media&token=9bdb391f-c155-4190-93a1-ffacb87430cd" %}
 
-`yarn add @loadmill/agent -g`
-
-#### Running the agent
-
-If you use the `-g` option while installing run it like this:
-
-`loadmill-agent start -t INSERT_TOKEN_HERE`
-
-In case you installed the package locally (without the `-g` flag) run it like this:
-
-`./node_modules/@loadmill/agent/bin/loadmill-agent start -t INSERT_TOKEN_HERE`&#x20;
+#### Commands
 
 The start command accepts the following options:
 
@@ -66,24 +69,10 @@ The start command accepts the following options:
 * `--pool` - can be supplied in order to set the agent pool (the limit is 256 characters). When using multiple Loadmill Agents, this parameter helps you distinguish between running agents. Then, use [our npm module](https://www.npmjs.com/package/loadmill) with supplying the `--pool <pool>` parameter to assign test runs to a specific agent.
 * `--config` - alternatively, you can supply a path to a yaml file that will contain all the options above.
 
-**Extended Example**
+### Insecure Certificates
 
-`loadmill-agent start -t INSERT_TOKEN_HERE --no-api --loads-capacity 80`
+You can set the env var `NODE_TLS_REJECT_UNAUTHORIZED=0` at the beginning of the start command when you're testing a system that uses https but has a self-signed or invalid SSL certificate. Just type this: `NODE_TLS_REJECT_UNAUTHORIZED=0 loadmill-agent start -t <INSERT_TOKEN_HERE>`&#x20;
 
-`loadmill-agent start -t INSERT_TOKEN_HERE --pool myPoolID`
+IMPORTANT: The Loadmill agent won't be able to verify that it's talking to the right website in this case.
 
-`loadmill-agent start --config /path/to/config.yml`
-
-####
-
-![](<../../.gitbook/assets/Screenshot (34).png>)
-
-That's it! :tada: From now on, tests you are running in Loadmill will run locally or on your server (depends on where you configured them to be run) as long as our Loadmill Agent is running.
-
-You can also use the Loadmill agent docker wrapper, find more information [here](https://hub.docker.com/r/loadmill/agent).
-
-See agent/s running within the **Private Agents** tab in Loadmill:
-
-#### Working with insecure certificates
-
-In case you are testing a system that uses https but has a self-signed or invalid SSL certificate, you need to set env var - `NODE_TLS_REJECT_UNAUTHORIZED=0` at the beginning of the start command to run your tests via the Loadmill Agent. It should look like this: `NODE_TLS_REJECT_UNAUTHORIZED=0 loadmill-agent start -t INSERT_TOKEN_HERE` **IMPORTANT:** The Loadmill agent won’t be able to verify that it is talking to the right website in this case.
+\
