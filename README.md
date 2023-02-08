@@ -1,9 +1,18 @@
-# What is an API
+# Loadmill - AI - Powered Solution
 
-Application Programming Interfaces (APIs) have completely overtaken how we use mobile and web applications by allowing software to interact with other software. Today, we use APIs as a key entry point for any data, service, and integration access.&#x20;
+Loadmill automates testing by replaying and analyzing real user behavior, helping developers easily create the tests required for continuous delivery. Loadmill creates and replays thousands of tests based on user flows within minutes.
 
-An API is an interface that allows two pieces of software to communicate with each other. It provides a way for one program to request data from another program, and for the other program to respond to that request.&#x20;
+Loadmill's AI-powered test case generator can help you create comprehensive, reliable test cases for your APIs in minutes. By composing API requests and correlating them with Loadmill's algorithms, you can generate dynamic, automated test cases that are ready to use. With Loadmill, you can quickly and easily create comprehensive test suites for your APIs that will ensure their reliability and performance.
 
-An API can be thought of as a set of rules that govern how two pieces of software interact with each other. When one piece of software wants to request data from another piece of software, it does so by following the API's rules. The API then tells the second piece of software how to respond to the request.
+Imagine a scenario where you need to add a user to your company’s database by submitting a form and then verifying that a user exists by validating its id provided when it's added to the database.
 
-![](<.gitbook/assets/image (54).png>)
+This is a common process where the form will make a `POST` request to the server. The `POST` request connects to the server location through the server's URL path and passes in the user information inside the body of the request.
+
+If the user has been successfully added, the server sends back the `status 200` of the request notifying the request has been successful and the id of the user that has been added to the database.
+
+![](<.gitbook/assets/image (2) (2).png>)
+
+You'll then make a `GET` request to the server by passing in that response `id` from the previous `POST` request (either inside of the body or in your URL). If everything went right and you're successful, you'll get a response back from your server saying whether or not the user's `id` expired.
+
+![](<.gitbook/assets/image (1) (1) (4).png>)
+

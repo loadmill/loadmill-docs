@@ -2,13 +2,13 @@
 
 ## Introduction
 
-* [What is an API](README.md)
-  * [What is an API endpoint?](introduction/what-is-an-api/what-is-an-api-endpoint.md)
+* [Loadmill - AI - Powered Solution](README.md)
+* [What is an API](<README (1).md>)
   * [API - Data Fetching](introduction/what-is-an-api/api-data-fetching.md)
   * [Quick examples of API requests](introduction/what-is-an-api/quick-examples-of-api-requests.md)
+  * [What is an API endpoint?](introduction/what-is-an-api/what-is-an-api-endpoint.md)
 * [API Server Testing](introduction/api-server-testing/README.md)
   * [Regression Testing](introduction/api-server-testing/regression-testing.md)
-  * [Loadmill - AI-Powered Solution](introduction/api-server-testing/loadmill-ai-powered-solution.md)
 
 ## Quick Guide
 
