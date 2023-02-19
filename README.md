@@ -1,6 +1,8 @@
 # Loadmill - AI - Powered Solution
 
-Loadmill automates testing by replaying and analyzing real user behavior, helping developers easily create the tests required for continuous delivery. Loadmill creates and replays thousands of tests based on user flows within minutes.
+Loadmill automates testing across multiple devices and platforms by replaying and analyzing real user behavior, helping engineers to easily create the tests required for continuous delivery. Loadmill creates and replays thousands of tests based on user flows within minutes.
+
+<figure><img src=".gitbook/assets/Mobile testing diagrams_v03b.jpg" alt=""><figcaption></figcaption></figure>
 
 Loadmill's AI-powered test case generator can help you create comprehensive, reliable test cases for your APIs in minutes. By composing API requests and correlating them with Loadmill's algorithms, you can generate dynamic, automated test cases that are ready to use. With Loadmill, you can quickly and easily create comprehensive test suites for your APIs that will ensure their reliability and performance.
 
