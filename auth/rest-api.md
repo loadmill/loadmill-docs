@@ -261,8 +261,8 @@ Returns all user's team's labels
 Authentication token - you can generate it in the "User menu"> "Settings" > "Security".
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="filter=CI_enabled" type="string" required="false" %}
-Using this filter option the user can get only the labels who are attached to flows with the CI toggle on
+{% swagger-parameter in="query" name="filter=active&filter=evaluating" type="string" required="false" %}
+Using this filter option the user can get only the labels who are attached to flows with a specific status. 
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
