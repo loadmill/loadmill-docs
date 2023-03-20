@@ -28,6 +28,7 @@ In the Okta admin page, click on the Loadmill application and then navigate to t
 Once you have all the information (summarized below), email it to support@loadmill.com **:**
 
 * Client Id
+* Client Name (how you wish this team to be called - i.e. 'The Rebel Alliance')
 * Client secret (click the eye button to toggle the visibility)
 * Okta domain
 * Company email suffix (i.e. my-comany.com)
@@ -44,23 +45,23 @@ Once you've configured the integration with Okta, follow steps below to log into
 
 Navigate to the [Login](https://app.loadmill.com/app/login) page => Click **SSO Log In**.
 
-![](<../../../.gitbook/assets/Screenshot (91).png>)
+![](<../.gitbook/assets/Screenshot (91).png>)
 
 &#x20;Enter your email and click on the "SSO LOG IN"
 
-![](<../../../.gitbook/assets/image (50).png>)
+![](<../.gitbook/assets/image (50).png>)
 
 Choose the relevant account to login to
 
-![](<../../../.gitbook/assets/Screen Shot 2022-04-06 at 12.16.01.png>)
+![](<../.gitbook/assets/Screen Shot 2022-04-06 at 12.16.01.png>)
 
 Enter your Okta credentials in the page you were redirected too.
 
-![](<../../../.gitbook/assets/image (52).png>)
+![](<../.gitbook/assets/image (52).png>)
 
 In case, you are using Multi-Factor authentication, put the code you've got and click **Verify**.
 
-![](<../../../.gitbook/assets/Screen Shot 2022-01-03 at 14.48.52.png>)
+![](<../.gitbook/assets/Screen Shot 2022-01-03 at 14.48.52.png>)
 
 That's it, you're in! 🎉&#x20;
 
