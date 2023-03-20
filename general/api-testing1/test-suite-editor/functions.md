@@ -8,8 +8,19 @@ Loadmill has builtin functions available to use while creating a test. These fun
 
 Returns the absolute value of `p1`.
 
-* `${__abs('-42')} // returns 42`
-* `${__abs(p1)} // returns 42, assuming parameter p1 equals 42`
+
+* 
+    {% code title="index.js" overflow="wrap" lineNumbers="true" %}
+    ```
+    ${__abs('-42')} // returns 42
+    ```
+    {% endcode %}
+* 
+    {% code title="index.js" overflow="wrap" lineNumbers="true" %}
+    ```
+    `${__abs(p1)} // returns 42, assuming parameter p1 equals 42`
+    ```
+    {% endcode %}
 
 ### `__add(p1,[p2,[...]])`
 
