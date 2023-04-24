@@ -1,6 +1,6 @@
 # CI integration
 
-The easiest way to integrate your API tests into your CI/CD pipeline is by using **** [**our npm module**](https://www.npmjs.com/package/loadmill).&#x20;
+The easiest way to integrate your API tests into your CI/CD pipeline is by using [**our npm module**](https://www.npmjs.com/package/loadmill).&#x20;
 
 ### How it works
 

@@ -24,7 +24,8 @@ In this example, we're using REST API to demonstrate how API calls are being acc
 {% endswagger-response %}
 {% endswagger %}
 
-<mark style="color:red;">**method**</mark>    <mark style="color:blue;">**URL**</mark>\ <mark style="color:blue;">****</mark>GET          /users
+<mark style="color:red;">**method**</mark>    <mark style="color:blue;">**URL**</mark>\
+GET          /users
 
 This will return a JSON object containing information about the latest users.
 
@@ -63,7 +64,8 @@ This will return a JSON object containing information about the latest users.
 
 Now let's say we want to get information about a specific user. We can do this by making a GET request to the /users/{id} endpoint, where {id} is the id of the user we want to retrieve:
 
-<mark style="color:red;">**method**</mark>    <mark style="color:blue;">**URL**</mark>\ <mark style="color:blue;">****</mark>GET          /users/123
+<mark style="color:red;">**method**</mark>    <mark style="color:blue;">**URL**</mark>\
+GET          /users/123
 
 ```
 {
@@ -86,7 +88,8 @@ This will return a JSON object containing information about the user with id 123
 
 We can also create new users by making a POST request to the /users endpoint. For example, to create a new user with the name "John Doe" and has filled all the required parameters for the server to accept your request, we would make the following request:
 
-<mark style="color:red;">**method**</mark>    <mark style="color:blue;">**URL**</mark>\ <mark style="color:blue;">****</mark>POST          /users
+<mark style="color:red;">**method**</mark>    <mark style="color:blue;">**URL**</mark>\
+POST          /users
 
 ```
 //Request Body 

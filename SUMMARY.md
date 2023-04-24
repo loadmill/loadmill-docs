@@ -8,6 +8,7 @@
   * [Quick examples of API requests](introduction/what-is-an-api/quick-examples-of-api-requests.md)
   * [What is an API endpoint?](introduction/what-is-an-api/what-is-an-api-endpoint.md)
 * [API Server Testing](introduction/api-server-testing/README.md)
+  * [Contract testing](introduction/api-server-testing/contract-testing.md)
   * [Regression Testing](introduction/api-server-testing/regression-testing.md)
 
 ## Quick Guide

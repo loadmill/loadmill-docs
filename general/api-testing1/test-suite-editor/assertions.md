@@ -26,10 +26,10 @@ There are several types of assertions:
 * **Exists** - Validates that a parameter exists and not null.
   * Example 1:\
     Assigning empty term to `param1` will result in assertion failure\
-    ![Click to enlarge the image](<../../../.gitbook/assets/image (100).png>)![](<../../../.gitbook/assets/image (64).png>)
+    ![Click to enlarge the image](<../../../.gitbook/assets/image (100).png>)![](<../../../.gitbook/assets/image (64) (1).png>)
   * Example 2:\
     Assigning any value to `param1` will result in passed assertion\
-    ![Click to enlarge the image](<../../../.gitbook/assets/image (69).png>)![](<../../../.gitbook/assets/image (103).png>)****
+    ![Click to enlarge the image](<../../../.gitbook/assets/image (69).png>)![](<../../../.gitbook/assets/image (103).png>)
 * **Doesn't exist** - Validates that a parameter doesn't exists or null.
   * Example 1:\
     Assigning any value to `param1` will result in assertion failure\
@@ -44,7 +44,7 @@ There are several types of assertions:
   * Example 2:\
     Extracting `$.args.app` json path field to `param1`(from the result that is not displayed) should be equal to "Demo" and will result the assertion to pass\
     Assigning numeric value to `param2` of 11.0 in postscript should be equal to "11", and the assertion will pass.\
-    ![Click to enlarge the image](<../../../.gitbook/assets/image (58).png>)![](<../../../.gitbook/assets/image (73).png>)\
+    ![Click to enlarge the image](<../../../.gitbook/assets/image (58).png>)![](<../../../.gitbook/assets/image (73) (1).png>)\
     _**Note** that all values are implicitly compared as strings._
 * **Doesn't equal** - Validates that a parameter is NOT equal to the given expression. The equality check is **case sensitive**.
   * Example 1:\
@@ -66,7 +66,7 @@ There are several types of assertions:
     ![Click to enlarge the image](<../../../.gitbook/assets/image (113).png>)![](<../../../.gitbook/assets/image (62).png>)
   * Example 2:\
     When `param1` set with the value 'loadmill-demo' and doesn't contain the string 'example', the assertion will pass.\
-    ![Click to enlarge the image](<../../../.gitbook/assets/image (57).png>)![](<../../../.gitbook/assets/image (89).png>)
+    ![Click to enlarge the image](<../../../.gitbook/assets/image (57) (1).png>)![](<../../../.gitbook/assets/image (89).png>)
 * **Matches** - Validates that a parameter matches the given regular expression.
   * Example 1:\
     The assigned epoch representation of the current time to `param1` will contain 13 digits would not match the regex (`^\d{10}$`), hence the assertion will fail\
@@ -84,17 +84,17 @@ There are several types of assertions:
 * **Less than** - Validates that a parameter is less than the given expression.
   * Example 1:\
     `param1` is assigned with the value 30 that is not less than 31 hence the assertion will fail.\
-    ![Click to enlarge the image](<../../../.gitbook/assets/image (59).png>)![](<../../../.gitbook/assets/image (99).png>)
+    ![Click to enlarge the image](<../../../.gitbook/assets/image (59) (1).png>)![](<../../../.gitbook/assets/image (99).png>)
   * Example 2:\
     `param1` is assigned with the value 31 which is less than 40 will make the assertion to pass\
-    ![Click to enlarge the image](<../../../.gitbook/assets/image (84).png>)![](<../../../.gitbook/assets/image (55).png>)
+    ![Click to enlarge the image](<../../../.gitbook/assets/image (84).png>)![](<../../../.gitbook/assets/image (55) (1).png>)
 * **JSON Schema** - Validate that a parameter comply with given [JSON Schema](https://json-schema.org/).
   * Example 1:\
-    Given `param1` **** was set with a json as below, opposed to the expected schema the field "name" is not numeric hence the assertion will fail.\
-    ![Click to enlarge the image](<../../../.gitbook/assets/image (109).png>)![](<../../../.gitbook/assets/image (56).png>)\
+    Given `param1` was set with a json as below, opposed to the expected schema the field "name" is not numeric hence the assertion will fail.\
+    ![Click to enlarge the image](<../../../.gitbook/assets/image (109).png>)![](<../../../.gitbook/assets/image (56) (1).png>)\
     Note, the assertion will suggests to exclude the failing field from the validation schema.
   * Example 2:\
-    Given `param1` **** was set with a json as below and the expected schema describes it correctly, the assertion will pass.\
+    Given `param1` was set with a json as below and the expected schema describes it correctly, the assertion will pass.\
     ![Click to enlarge the image](<../../../.gitbook/assets/image (92).png>)![](<../../../.gitbook/assets/image (72).png>)
 
 {% hint style="info" %}
@@ -105,12 +105,12 @@ There are several types of assertions:
   \- Accepting any value for individual field will accept "\*" notation\
   Note, the subset json object should preserve the same hierarchal structure as the containing object while fields can be omitted.&#x20;
   * Example 1:\
-    Given `param1` **** was set with a json as below, any mismatch\
+    Given `param1` was set with a json as below, any mismatch\
     &#x20;in a key or value on same hierarchy will result in assertion error:\
     ![Click to enlarge the image](<../../../.gitbook/assets/image (82).png>)![](<../../../.gitbook/assets/image (71).png>)\
     Note to the "Exclude ..." notations, clicking on them will adjust the value of the assertion to exclude the failing field.
   * Example 2:\
-    Given `param1` **** was set with a json as below, any partial subset in json-contains validation value with same structure will result pass in assertion:\
+    Given `param1` was set with a json as below, any partial subset in json-contains validation value with same structure will result pass in assertion:\
     ![Click to enlarge the image](<../../../.gitbook/assets/image (102).png>)![](<../../../.gitbook/assets/image (77).png>)\
     \- Using star notation to accept any value for `latitude` and `country` fields.\
     ![Click to enlarge the image](<../../../.gitbook/assets/image (114).png>)\
