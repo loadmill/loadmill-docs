@@ -12,7 +12,7 @@ Overall, contract testing helps improve the reliability, stability, and resilien
 
 #### Contract testing with Loadmill
 
-Contract testing with Loadmill is easy. To create contract validation of an API call, use  [JSON schema](https://docs.loadmill.com/test-editor/assertions#assertion-types) or [JSON contains](https://docs.loadmill.com/test-editor/assertions#assertion-types) as following:
+Contract testing with Loadmill is easy. To create contract validation of an API call, use [JSON schema](../../general/api-testing1/test-suite-editor/assertions.md#json-schema-validate-that-a-parameter-comply-with-given-json-schema.) or [JSON contains](../../general/api-testing1/test-suite-editor/assertions.md#json-contains-validates-that-a-json-contains-a-subset-json-in-such-way-dynamic-fields-can-be-omitted) as following:
 
 *   **Enforcing JSON Schema of an API:** \
     With 'JSON Schema' you can explicitly enforce multiple of aspects of your json data.\
