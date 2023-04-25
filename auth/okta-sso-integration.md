@@ -49,7 +49,7 @@ Navigate to the [Login](https://app.loadmill.com/app/login) page => Click **SSO 
 
 &#x20;Enter your email and click on the "SSO LOG IN"
 
-![](<../.gitbook/assets/image (50).png>)
+![](<../.gitbook/assets/image (50) (1).png>)
 
 Choose the relevant account to login to
 
@@ -57,7 +57,7 @@ Choose the relevant account to login to
 
 Enter your Okta credentials in the page you were redirected too.
 
-![](<../.gitbook/assets/image (52).png>)
+![](<../.gitbook/assets/image (52) (1).png>)
 
 In case, you are using Multi-Factor authentication, put the code you've got and click **Verify**.
 

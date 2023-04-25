@@ -175,14 +175,14 @@ Loadmill can generate 'JSON schema' or 'JSON contains' assertions automatically 
 To turn automatic JSON validations.
 
 1. head to settings icon -> recordings:\
-   <img src="../../.gitbook/assets/image (56).png" alt="" data-size="original">
+   <img src="../../.gitbook/assets/image (56) (1).png" alt="" data-size="original">
 2.  Locate the 'JSON Validation section in the list', make sure the toggle turned on and adjust the type according to the needs.
 
     <figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 if 'JSON Validation' section doesn't exist, try adding it by clicking on ![](<../../.gitbook/assets/image (55).png>) at the top right corner and selecting it from the list.
 
-<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. (optional) Click on the '+' to add ignored keys.\
    &#x20;![](<../../.gitbook/assets/image (57).png>)

@@ -27,7 +27,7 @@ There are several types of assertions:
 
 * Example 1:\
   Assigning empty term to `param1` will result in assertion failure\
-  ![Click to enlarge the image](<../../../.gitbook/assets/image (100).png>)![](<../../../.gitbook/assets/image (64) (1).png>)
+  ![Click to enlarge the image](<../../../.gitbook/assets/image (100).png>)![](<../../../.gitbook/assets/image (64).png>)
 * Example 2:\
   Assigning any value to `param1` will result in passed assertion\
   ![Click to enlarge the image](<../../../.gitbook/assets/image (69).png>)![](<../../../.gitbook/assets/image (103).png>)
@@ -110,7 +110,7 @@ There are several types of assertions:
 
 * Example 1:\
   Given `param1` was set with a json as below, opposed to the expected schema the field "name" is not numeric hence the assertion will fail.\
-  ![Click to enlarge the image](<../../../.gitbook/assets/image (109).png>)![](<../../../.gitbook/assets/image (56) (1).png>)\
+  ![Click to enlarge the image](<../../../.gitbook/assets/image (109).png>)![](<../../../.gitbook/assets/image (56).png>)\
   Note, the assertion will suggests to exclude the failing field from the validation schema.
 * Example 2:\
   Given `param1` was set with a json as below and the expected schema describes it correctly, the assertion will pass.\

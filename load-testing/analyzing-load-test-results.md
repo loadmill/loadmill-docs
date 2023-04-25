@@ -1,8 +1,8 @@
-# Analyzing load test results
+# Analyzing Load Test Results
 
 Load tests results display several types of data series over the duration of the test. The data is divided into two graphs:
 
-![](<../../.gitbook/assets/image (15).png>)
+![](<../.gitbook/assets/image (15) (1).png>)
 
 ### Performance Over Time
 

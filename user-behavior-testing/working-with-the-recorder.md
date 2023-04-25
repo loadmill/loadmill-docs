@@ -45,7 +45,7 @@ We've developed **a smart recorder** that allows users to capture traffic in the
 
 ![The Recordings tabs](<../.gitbook/assets/Screenshot (60).png>)
 
-![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (19) (1).png>)
 
 1. Create a new recording from the [Recordings tab](https://app.loadmill.com/app/recordings/my-recordings) in Loadmill.
 2. Play your test scenarios in the recorded app. By default, the traffic is split to different sessions by its source (different IPs) and intermissions between user actions. (If you wish to manually split a recorded session in your test environment, use the [Loadmill session splitter](https://chrome.google.com/webstore/detail/loadmill-session-splitter/beknfelcpakgnojjfcdpjddhnckekhni), else you can use our [advanced Recordings settings](https://docs.loadmill.com/working-with-the-recorder/recorder-settings))

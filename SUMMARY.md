@@ -3,6 +3,17 @@
 ## Introduction
 
 * [Loadmill - AI - Powered Solution](README.md)
+* [Deviceless mobile testing](introduction/deviceless-mobile-testing/README.md)
+  * [Capturing traffic with Loadmill MITM Proxy](introduction/deviceless-mobile-testing/capturing-traffic-with-loadmill-mitm-proxy.md)
+  * [Loadmill desktop recorder](introduction/deviceless-mobile-testing/loadmill-desktop-recorder/README.md)
+    * [Generating test flows](introduction/deviceless-mobile-testing/loadmill-desktop-recorder/generating-test-flows.md)
+  * [Installing certificate on mobile devices](introduction/deviceless-mobile-testing/installing-certificate-on-mobile-devices/README.md)
+    * [iOS certificate installation](introduction/deviceless-mobile-testing/installing-certificate-on-mobile-devices/ios-certificate-installation.md)
+    * [Android certificate installation](introduction/deviceless-mobile-testing/installing-certificate-on-mobile-devices/android-certificate-installation.md)
+  * [Configuring proxy on mobile devices](introduction/deviceless-mobile-testing/configuring-proxy-on-mobile-devices/README.md)
+    * [iOS Wi-Fi settings](introduction/deviceless-mobile-testing/configuring-proxy-on-mobile-devices/ios-wi-fi-settings.md)
+    * [Android Wi-Fi settings](introduction/deviceless-mobile-testing/configuring-proxy-on-mobile-devices/android-wi-fi-settings.md)
+  * [Troubleshooting](introduction/deviceless-mobile-testing/troubleshooting.md)
 * [What is an API](<README (1).md>)
   * [API - Data Fetching](introduction/what-is-an-api/api-data-fetching.md)
   * [Quick examples of API requests](introduction/what-is-an-api/quick-examples-of-api-requests.md)
