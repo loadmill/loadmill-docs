@@ -79,10 +79,10 @@ Now that we know that our test is configured correctly, we can run it at scale. 
 ![](../.gitbook/assets/video1399332329-online-video-cut.gif)
 
 {% hint style="info" %}
-:man\_mage: **Note**: At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high volume tests before proving ownership of your domain/hostname. You can learn how to do that [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) (it's actually pretty easy).
+high-volume:man\_mage: **Note**: At some point you may notice a message stating that your domain is not _verified_ - this only means that you may not run high-volume tests before proving ownership of your domain/hostname. You can learn how to do that [**here**](https://docs.loadmill.com/load-testing/setup/domain-verification) (it's actually pretty easy).
 {% endhint %}
 
-As the test progresses we can see the amount of concurrent sessions **ramping up** linearly and see how **response time metrics** change over time.
+As the test progresses we can see the number of concurrent sessions **ramping up** linearly and see how **response time metrics** change over time.
 
 ![](<../.gitbook/assets/image (38) (1).png>)
 
