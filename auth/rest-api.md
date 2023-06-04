@@ -17,7 +17,7 @@ Run a predefined test suite
 UUID of the Test Suite to run.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
 Authentication token - you can generate it in the "User menu"> "Settings" > "Security".
 {% endswagger-parameter %}
 
@@ -252,7 +252,7 @@ Authentication token - you can generate it in the "User menu"> "Settings" > "Sec
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger baseUrl="https://app.loadmill.com/api" path="/v1/labels" method="get" summary="Team" %}
+{% swagger baseUrl="https://app.loadmill.com/api" path="/v1/labels" method="get" summary="Labels" %}
 {% swagger-description %}
 Returns all user's team's labels
 {% endswagger-description %}
@@ -281,4 +281,130 @@ Using this filter option the user can get only the labels who are attached to fl
 }
 ```
 {% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/test-plans/:test-plan-id/run" baseUrl="https://app.loadmill.com/api/v1" summary="Run Test Plan" expanded="false" %}
+{% swagger-description %}
+Run a predefined test plan
+{% endswagger-description %}
+
+{% swagger-parameter in="path" required="true" name="test-plan-id" %}
+UUID of the Test Plan to run
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" required="true" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security".
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="additionalDescription" %}
+Add an additional description at the end of the current plan's description
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="labels" type="Array" %}
+An array of strings representing labels to filter the test plan execution. i.e. `["label1", "label2"]`
+
+
+
+Only test flows with matching labels will be included in the execution.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="labelsExpression" %}
+String representing of labels expression to filter the test plan execution. i.e.  
+
+`(label1 | label2) & !label3`
+
+ An expression may contain the characters 
+
+`( ) & | ! (`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="overrideParameters" type="Object" %}
+`name:value`
+
+ pairs to override the default parameters values of this specific run. i.e. 
+
+`{{"paramName1":"paramVal1"}, ...}`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="pool" %}
+Execute tests from a dedicated agent's pool (when using private agent)
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="parallel" %}
+Set the concurrency of a running test suites in a test plan. Max concurrency is 10
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="maxFlakyFlowRetries" %}
+The maximum number of retries for flaky test flows. If a test flow fails due to flakiness, it will be retried up to the specified number of times
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="return the an object with testPlanRunId property in it" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="test-plans-runs/:plan-run-id" baseUrl="https://app.loadmill.com/api/v1/" summary="Get Test Plan Run" %}
+{% swagger-description %}
+Get the Test Plan Run result
+{% endswagger-description %}
+
+{% swagger-parameter in="path" required="true" name="test-plan-run-id" %}
+test plan run id - given when launching the test plan
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security".
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/test-suites" baseUrl="https://app.loadmill.com/api/v1" summary="Get test suites" %}
+{% swagger-description %}
+Returns a list of test suites
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" required="true" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security".
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="search" %}
+filter test suites by the given search phrase 
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="rowsPerPage" %}
+How many suites to return, Values might be 
+
+`10, 25, 50, 100`
+
+ default to 10
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Returns an object with an array property of testSuites" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="get" path="/test-plans" baseUrl="https://app.loadmill.com/api/v1" summary="Get Test Plans" %}
+{% swagger-description %}
+Returns a list of test plans
+{% endswagger-description %}
+
+{% swagger-parameter in="query" name="search" %}
+filter test suites by the given search phrase 
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="rowsPerPage" %}
+How many suites to return, Values might be 
+
+`10, 25, 50, 100`
+
+ default to 10
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" required="true" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security".
+{% endswagger-parameter %}
 {% endswagger %}
