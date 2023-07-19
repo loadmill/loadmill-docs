@@ -94,6 +94,7 @@
 * [GitLab](integrations/gitlab.md)
 * [Bitbucket](integrations/bitbucket.md)
 * [Jira](integrations/jira.md)
+* [New Relic](integrations/new-relic.md)
 * [Slack integration](integrations/slack-integration.md)
 * [TestRail integration](integrations/testrail-integration.md)
 * [Database Testing](general/api-testing1/db-testing-using-queries.md)

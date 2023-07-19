@@ -20,13 +20,7 @@ The following table shows the variations we want to test.
 The <mark style="background-color:yellow;">**expected\_outcome**</mark> will not be uploaded to the test. This is simply to show you the expected outcome for each variation tested.
 {% endhint %}
 
-| email                   | first\_name    | last\_name | expected\_outcome  |
-| ----------------------- | -------------- | ---------- | ------------------ |
-| variation1@loadmill.com | John           | Doe        | pass               |
-| variation2@random.com   |                | Doe2       | pass               |
-| variation3              | VariationThree |            | fail > wrong email |
-| variation4@             | John4          | Doe\_4     | fail > wrong email |
-| variation45@company     | John\_         | $          | fail > wrong email |
+<table><thead><tr><th width="244">email</th><th>first_name</th><th>last_name</th><th>expected_outcome</th></tr></thead><tbody><tr><td>variation1@loadmill.com</td><td>John</td><td>Doe</td><td>pass</td></tr><tr><td>variation2@random.com</td><td></td><td>Doe2</td><td>pass</td></tr><tr><td>variation3</td><td>VariationThree</td><td></td><td>fail > wrong email</td></tr><tr><td>variation4@</td><td>John4</td><td>Doe_4</td><td>fail > wrong email</td></tr><tr><td>variation45@company</td><td>John_</td><td>$</td><td>fail > wrong email</td></tr></tbody></table>
 
 ### Update parameter names.
 

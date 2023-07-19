@@ -15,6 +15,6 @@ To generate a test follow the following steps:
 7. Adjust the destination suite in the suite field: <img src="../../../.gitbook/assets/image (32).png" alt="" data-size="line">
 8. To generate the test, click on <img src="../../../.gitbook/assets/image (15).png" alt="" data-size="line">
 9. To review the test navigate to Loadmill section <img src="../../../.gitbook/assets/image (28).png" alt="" data-size="line">go to Test suite\
-   &#x20;<img src="../../../.gitbook/assets/image (1).png" alt="" data-size="original">\
+   &#x20;<img src="../../../.gitbook/assets/image (1) (4).png" alt="" data-size="original">\
    And select your test suite, \
    The recently created flow in the list will be marked with the recent timestamp.

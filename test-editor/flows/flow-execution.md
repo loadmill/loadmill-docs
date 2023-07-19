@@ -10,7 +10,7 @@ Testing and validation is a critical process in product and software development
 
 You may want to test multiple operations or test that your application loads correctly. Even so, every updated code to improve your application or fix a specific bug in your application passes through a categorial test scenario that doesn't include all the test cases created in your Test Suite/Plan.
 
-Creating and assigning labels to flows is a quick and easy process with Loadmill. Simply select the flow and click on the label icon ![](../../../.gitbook/assets/price-tag.png) to assign a label of your choice.
+Creating and assigning labels to flows is a quick and easy process with Loadmill. Simply select the flow and click on the label icon ![](../../.gitbook/assets/price-tag.png) to assign a label of your choice.
 
 You can assign pre-made label or create a new one yourself.
 
@@ -32,10 +32,7 @@ Now that we've labeled our flows correctly, we'll run them according to label we
 
 Let's quickly tour what values you need before running our tests.
 
-| parameter         | where to find                                                                                            |
-| ----------------- | -------------------------------------------------------------------------------------------------------- |
-| `<test-suite-id>` | Navigate to your test suite page and the suite id is located inside the url                              |
-| `<token>`         | The token is generated from the [access token page](https://app.loadmill.com/app/user/settings/security) |
+<table><thead><tr><th width="209">parameter</th><th width="507">where to find</th></tr></thead><tbody><tr><td><code>&#x3C;test-suite-id></code></td><td>Navigate to your test suite page and the suite id is located inside the url</td></tr><tr><td><code>&#x3C;token></code></td><td>The token is generated from the <a href="https://app.loadmill.com/app/user/settings/security">access token page</a></td></tr></tbody></table>
 
 Open your CLI and run the following command:&#x20;
 

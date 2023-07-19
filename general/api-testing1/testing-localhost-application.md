@@ -47,9 +47,7 @@ For more information, please [click here](https://hub.docker.com/r/loadmill/agen
 
 **Installation**
 
-| using npm                                                                                                                        | using yarn                    |
-| -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| <p><code>npm i @loadmill/agent -g</code></p><p><code>npm i @loadmill/agent // in case you can't install it globally.</code> </p> | `yarn add @loadmill/agent -g` |
+<table><thead><tr><th width="439">using npm</th><th>using yarn</th></tr></thead><tbody><tr><td><p><code>npm i @loadmill/agent -g</code></p><p><code>npm i @loadmill/agent // in case you can't install it globally.</code> </p></td><td><code>yarn add @loadmill/agent -g</code></td></tr></tbody></table>
 
 #### Running the Agent
 
