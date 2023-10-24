@@ -126,11 +126,11 @@ Same as `__eq` but case-insensitive.
 
 Same as `__neq` but case-insensitive.
 
-* `${__neq('42','3')} //returns true`
-* `${__neq('false','false')} //returns false`
-* `${__neq('FaLsE','false')} //returns false`
-* `${__neq('','')} //returns false`
-* `${__neq(p1,p2)} //returns true if both p1 and p2 have a different value`
+* `${__neqi('42','3')} //returns true`
+* `${__neqi('false','false')} //returns false`
+* `${__neqi('FaLsE','false')} //returns false`
+* `${__neqi('','')} //returns false`
+* `${__neqi(p1,p2)} //returns true if both p1 and p2 have a different value`
 
 ### `__lt(p1,p2)`
 
