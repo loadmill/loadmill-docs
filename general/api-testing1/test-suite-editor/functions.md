@@ -327,7 +327,7 @@ Returns a sub-string of `target` which starts at `begin` index (inclusive) and e
 * `${__slice('Loadmill',p1,p2)} // returns 'mill', assuming p1 is 4 and p2 is 8`
 * `${__slice(p1,'0','2')} // returns 'Lo', assuming p1 is Loadmill`
 
-### `__slice(target,[begin=0,[end]])`
+### `__replace(target,[begin=0,[end]])`
 
 Returns a new string with one, some, or all matches of a `searchValue` replaced by a `replaceValue`. `searchValue` can be either a string or a regex. If it's a regex, then the `options` argument can be used as the regex options.
 
