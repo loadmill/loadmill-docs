@@ -262,7 +262,7 @@ Authentication token - you can generate it in the "User menu"> "Settings" > "Sec
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="filter=active&filter=evaluating" type="string" required="false" %}
-Using this filter option the user can get only the labels who are attached to flows with a specific status. 
+Using this filter option the user can get only the labels who are attached to flows with a specific status.&#x20;
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
@@ -309,21 +309,11 @@ Only test flows with matching labels will be included in the execution.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="labelsExpression" %}
-String representing of labels expression to filter the test plan execution. i.e.  
-
-`(label1 | label2) & !label3`
-
- An expression may contain the characters 
-
-`( ) & | ! (`
+String representing of labels expression to filter the test plan execution. i.e.  `(label1 | label2) & !label3` An expression may contain the characters `( ) & | ! (`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="overrideParameters" type="Object" %}
-`name:value`
-
- pairs to override the default parameters values of this specific run. i.e. 
-
-`{{"paramName1":"paramVal1"}, ...}`
+`name:value` pairs to override the default parameters values of this specific run. i.e. `{{"paramName1":"paramVal1"}, ...}`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="pool" %}
@@ -371,15 +361,11 @@ Authentication token - you can generate it in the "User menu"> "Settings" > "Sec
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="search" %}
-filter test suites by the given search phrase 
+filter test suites by the given search phrase&#x20;
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="rowsPerPage" %}
-How many suites to return, Values might be 
-
-`10, 25, 50, 100`
-
- default to 10
+How many suites to return, Values might be `10, 25, 50, 100` default to 10
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns an object with an array property of testSuites" %}
@@ -393,15 +379,11 @@ Returns a list of test plans
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="search" %}
-filter test suites by the given search phrase 
+filter test suites by the given search phrase&#x20;
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="rowsPerPage" %}
-How many suites to return, Values might be 
-
-`10, 25, 50, 100`
-
- default to 10
+How many suites to return, Values might be `10, 25, 50, 100` default to 10
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" required="true" %}

@@ -137,7 +137,22 @@ Note, the subset json object should preserve the same hierarchal structure as th
   ![Click to enlarge the image](<../../../.gitbook/assets/image (114).png>)\
   Note, the "\*" notation works only on simple values (strings/numerics/booleans)
 
+#### **XML Contains -** Validates that an xml contains a subset xml, in such way dynamic fields can be omitted to avoid false negatives.
 
+Accepting any value for individual field will accept "\*" notation\
+Note, the subset xml object should preserve the same hierarchal structure as the containing object while fields can be omitted.&#x20;
+
+* Example 1:\
+  Given `param1` was set with an xml as below, any mismatch\
+  &#x20;in a key or value on same hierarchy will result in assertion error: ![](<../../../.gitbook/assets/image (125).png>) <img src="../../../.gitbook/assets/image (124).png" alt="" data-size="original">\
+
+* Example 2:\
+  Given `param1` was set with an xml as below, any partial subset in xml-contains validation value with same structure will result pass in assertion:\
+  &#x20;![](<../../../.gitbook/assets/image (127).png>)![](<../../../.gitbook/assets/image (128).png>)\
+  \
+  \- Using star notation to accept any value for `latitude` and `country` fields.\
+  ![](<../../../.gitbook/assets/Screenshot 2023-12-28 at 10.15.29.png>)\
+  Note, the "\*" notation works only on simple values (strings/numerics/booleans)
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
