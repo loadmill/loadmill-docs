@@ -420,7 +420,7 @@ Returns an array containing a sequence of numbers from 0 to `p1`.
 Returns the next suggested number from `full_array` which is not in `sub_array.`
 
 * `${__array_missing_element(sub_array,full_array) // returns 2 assuming sub_array is [0,1,3,4] and full_array is [0,1,2,3,4,5,6,7,8,9,10]`
-* `${__array_missing_element(sub_array,full_array) // returns "word", assuming sub_array is [0,1] and full_array is [0,1,"word",2]`
+* `${__array_missing_element(sub_array,full_array) // returns "banana", assuming sub_array is ["apple","mellon"] and full_array is ["apple","banana","mellon","strawberry"]`
 * `${__array_missing_element(sub_array,full_array} // returns 3 assuming sub_array is [0,1,2,4,5,6,7] and full_array is [1,2,3,4]`
 
 ## **Extraction Functions**
