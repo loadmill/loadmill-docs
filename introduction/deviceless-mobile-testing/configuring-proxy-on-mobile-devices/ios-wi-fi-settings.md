@@ -11,7 +11,7 @@ To set the proxy on your wifi connection:
 2. Tap the "i" icon next to your connected Wi-Fi network. \
    ![](<../../../.gitbook/assets/image (18).png>)
 3. Scroll down to the `HTTP Proxy` section and select "Manual." \
-   ![](../../../.gitbook/assets/image.png)
+   ![](<../../../.gitbook/assets/image (1).png>)
 4. Enter the IP address and port number provided by the Loadmill Desktop App for the MITM proxy server.\
    &#x20;![](<../../../.gitbook/assets/image (19).png>)\
 

@@ -98,6 +98,7 @@
 * [Slack integration](integrations/slack-integration.md)
 * [TestRail integration](integrations/testrail-integration.md)
 * [Database Testing](general/api-testing1/db-testing-using-queries.md)
+* [Kafka Testing](integrations/kafka-testing.md)
 * [✉️ Email Testing](general/api-testing1/testing-emails.md)
 * [Integrations FAQs](integrations/integrations-faqs-1.md)
 * [XRay](integrations/xray.md)
