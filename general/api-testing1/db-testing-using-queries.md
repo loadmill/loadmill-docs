@@ -15,7 +15,7 @@ To execute a database query:
 5. Request Body:
 
 ```json
-body: {
+{
   "connectionString": "postgres://...",
   "query": "SELECT * FROM USERS"
 }
@@ -23,9 +23,9 @@ body: {
 
 See the request example below:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
-Running this request with result with a JSON response with the required data.
+Running this request will return a JSON response with the required data.
 
 #### MongoDB
 
@@ -40,7 +40,7 @@ In this example we're searching for a user with the name "John"
 {% endhint %}
 
 ```json
-body: {
+{
   connectionString: 'mongodb://...',
   collection: 'users',
   command: 'find',
@@ -58,7 +58,7 @@ The MongoDB service is initially meant for "read-only" purposes (i.e. find). How
 **InsertOne:**
 
 ```json
-body: {
+{
   connectionString: 'mongodb://...',
   collection: 'users',
   command: 'insertOne',
@@ -69,7 +69,7 @@ body: {
 **updateOne:**
 
 ```json
-body: {
+{
   connectionString: 'mongodb://...',
   collection: 'users',
   command: 'updateOne',
@@ -81,7 +81,7 @@ body: {
 **deleteOne:**
 
 ```json
-body: {
+{
   connectionString: 'mongodb://...',
   collection: 'users',
   command: 'deleteOne',
@@ -95,30 +95,28 @@ Additional help regarding update operators can be found [here](https://www.mongo
 
 To execute Redis queries:
 
-1. Apply the same steps above.
+1. Request Method: POST.
 2. Request URL: `https://db-relay-service.loadmill.com/api/redis`
 3. Request Body:&#x20;
 
-<pre class="language-json"><code class="lang-json"><strong>body: {
-</strong>  {
-    connectionString: "redis://...", 
+<pre class="language-json"><code class="lang-json"><strong>{
+</strong>    connectionString: "redis://...", 
     command:"get | hget | hgetall",
     key:"any-key",
     field: "any-field"
    }
-}
 </code></pre>
 
 #### MySQL
 
 To execute queries directly to MySQL 5.7:
 
-1. Apply the same steps above.
+1. Request Method: POST.
 2. Request URL: `https://db-relay-service.loadmill.com/api/mysql`
 3. Request Body:&#x20;
 
 ```json
-body: {  
+{  
   "connectionString": "mysql://...",
   "query": "SELECT * FROM TASKS"
 }
