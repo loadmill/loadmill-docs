@@ -351,6 +351,28 @@ Authentication token - you can generate it in the "User menu"> "Settings" > "Sec
 {% endswagger-response %}
 {% endswagger %}
 
+{% swagger method="post" path="/test-plans-runs/:test-plan-run-id/re-run" baseUrl="https://app.loadmill.com/api/v1" summary="Re-run Test Plan" expanded="false" %}
+{% swagger-description %}
+Re-run a test plan run
+{% endswagger-description %}
+
+{% swagger-parameter in="path" required="true" name="test-run-plan-id" %}
+UUID of the Test Plan Run to re-run
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" required="true" %}
+Authentication token - you can generate it in the "User menu"> "Settings" > "Security".
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="onlyFailed" type="boolean" required="false" %}
+Default = false. When set to true only failed or stopped suites will re-run
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="return an object with testPlanRunId property in it" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
 {% swagger method="get" path="/test-suites" baseUrl="https://app.loadmill.com/api/v1" summary="Get test suites" %}
 {% swagger-description %}
 Returns a list of test suites
