@@ -18,7 +18,7 @@ The agent is controlled by the play/stop button integrated to the top right corn
 
 **General controls:**&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 At the top, you can find controls for:&#x20;
 
@@ -32,7 +32,7 @@ At the top, you can find controls for:&#x20;
 
 **Proxy entries area:**
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 Once started and configured, the proxied requests will be collected in the list.\
 The controls in the list allow:\
@@ -41,11 +41,11 @@ The controls in the list allow:\
 &#x20;\- Exporting har file
 
 **Test creation controls:**\
-![](<../../../.gitbook/assets/image (14).png>)\
+![](<../../../.gitbook/assets/image (14) (2).png>)\
 
 
 Bottom right area
 
 * Analyze button - will mark out irrelevant requests, the user can revert this decision by clicking the <img src="../../../.gitbook/assets/image (30).png" alt="" data-size="line"> button at the top of the entries area.
 * Create test button - will process the requests and generate parameterized test in loadmill.\
-  (The test will be found according to the suite selector by switching to loadmill <img src="../../../.gitbook/assets/image (12).png" alt="" data-size="line"> area)
+  (The test will be found according to the suite selector by switching to loadmill <img src="../../../.gitbook/assets/image (12) (2).png" alt="" data-size="line"> area)

@@ -26,5 +26,5 @@ From that point on, Loadmill will start streaming events into your New Relic acc
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Loadmill's predefined dashboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>Loadmill's predefined dashboard</p></figcaption></figure>
 

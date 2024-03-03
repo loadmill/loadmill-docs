@@ -112,6 +112,11 @@
 * [Shared Flows](collaboration/shared-flows.md)
 * [Labels](collaboration/labels-and-filters.md)
 
+## Reporting
+
+* [Test Coverage](reporting/test-coverage.md)
+* [API Catalog](reporting/api-catalog.md)
+
 ## General
 
 * [Billing](general/billing/README.md)
