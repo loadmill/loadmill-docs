@@ -16,6 +16,6 @@ Please make sure your tests are not using other domains like facebook, salesforc
 
 As mentioned in the [domain verification ](domain-verification.md)page, you are only allowed to test websites that you own. Before your test starts, the list of participating domains (white list) is calculated based on all of the test requests. In case one of your request uses a dynamic parameter to generate one of the test request's URL, we might miss this domain, and not add it to the test's white list.
 
-![HTTP request domain name \[random-website-name.com\] is not on white list](<../.gitbook/assets/image (17) (1).png>)
+![HTTP request domain name \[random-website-name.com\] is not on white list](<../.gitbook/assets/image (17) (1) (1).png>)
 
 A simple workaround would be to add at least one request for the dynamic domain in one of the other requests. (If you want you can even use a skip condition to disable this request from actually running).

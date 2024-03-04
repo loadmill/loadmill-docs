@@ -114,8 +114,14 @@
 
 ## Reporting
 
-* [Test Coverage](reporting/test-coverage.md)
-* [API Catalog](reporting/api-catalog.md)
+* [API Catalog & Coverage](reporting/api-catalog-and-coverage/README.md)
+  * [API Catalog](reporting/api-catalog-and-coverage/api-catalog/README.md)
+    * [Unique Entity ID's Mapping](reporting/api-catalog-and-coverage/api-catalog/unique-entity-ids-mapping.md)
+    * [Domain Mapping and grouping](reporting/api-catalog-and-coverage/api-catalog/domain-mapping-and-grouping.md)
+    * [Endpoints grouping](reporting/api-catalog-and-coverage/api-catalog/endpoints-grouping.md)
+    * [OpenAPI upload](reporting/api-catalog-and-coverage/api-catalog/openapi-upload.md)
+  * [Test Coverage](reporting/api-catalog-and-coverage/test-coverage/README.md)
+    * [Generating API test coverage report](reporting/api-catalog-and-coverage/test-coverage/generating-api-test-coverage-report.md)
 
 ## General
 
