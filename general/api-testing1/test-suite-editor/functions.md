@@ -615,7 +615,7 @@ The same as `__now_iso` but given in a "date only" format - i.e. `2020-03-03`
 
 Formatted date according to the supplied format while adding `addedMinutes`.&#x20;
 
-* `${__formatted_date()} returns // 2024-03-12T13:41:29+00:00`
+* `${__formatted_date()} // returns 2024-03-12T13:41:29+00:00`
 * `${__formatted_date('DD/MM/YYYY')} // returns 12/03/2024`
 * `${__formatted_date('DD/MM/YY','60000')} // returns 13/3/24`
 
