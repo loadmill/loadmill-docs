@@ -22,6 +22,35 @@ When we expand the request editor by clicking<img src="../../../.gitbook/assets/
 * Some requests require a **body**. Selecting the right **content-type** for your request will help us highlight the syntax of your request body (i.e. JSON or XML).
 * The **Headers** section allows to see and set the request headers. You can add header to all requests or as a Global Header so that it will be added to all of the test flow requests and appear in [the Global Login tab](https://docs.loadmill.com/api-testing/test-suite-editor/global-login-flow).
 
+#### GraphQL requests
+
+A standard GraphQL POST request should use the `application/json` content type, and include a JSON-encoded body of the following form:
+
+```json
+{
+    "query": "...",
+    "operationName": "...",
+    "variables": {
+        "var1": "value",
+    }
+}
+```
+
+`operationName` and `variables` are optional fields. `operationName` is only required if multiple operations are present in the query.&#x20;
+
+The response should return the queried data in a JSON. i.e.,
+
+```json
+{
+  "data": { ... },
+  "errors": [ ... ]
+}
+```
+
+Based on ([graphql.org](https://graphql.org/learn/serving-over-http/)).
+
+
+
 ### The Response Handling section
 
 ![](../../../.gitbook/assets/screenshot-2021-10-03t135800.939.png)
