@@ -13,6 +13,24 @@ Assertions editor can be found in loadmill under each request cubical on it's ex
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Assertion section in request editor</p></figcaption></figure>
 
+## Assertions Creation from Response
+
+It is also possible to create assertions directly from the response panel from the 'JSONPATH' window (only when the response is a JSON). After executing the test, click on one of the responses to expand it, which will open the response panel, as follows:
+
+<figure><img src="../../../.gitbook/assets/image.jpg" alt=""><figcaption></figcaption></figure>
+
+Click on ![](<../../../.gitbook/assets/image (131).png>), then navigate to the desired parameter. For example, let's find the 'content-length':
+
+<figure><img src="../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+
+Now, simply click on the plus sign located in the top right corner, set the extraction, and add the desired assertion right from there!
+
+<figure><img src="../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+
+You can then see both the extraction and the assertion in the request editor panel:
+
+<figure><img src="../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+
 ## Assertion Types
 
 The target of an assertion is always a parameter value. You may use built-in parameters, default parameters or any parameter extracted from the current or previous requests in the **current scenario** as the target.
