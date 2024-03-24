@@ -13,6 +13,12 @@ Assertions editor can be found in loadmill under each request cubical on it's ex
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Assertion section in request editor</p></figcaption></figure>
 
+Furthermore, there is an option to disable an assertion by clicking the three dots (![](../../../.gitbook/assets/image.png)) in the assertion line. A disabled assertion will still be evaluated, but it won't cause the test to fail.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 ## Assertions Creation from Response
 
 It is also possible to create assertions directly from the response panel from the 'JSONPATH' window (only when the response is a JSON). After executing the test, click on one of the responses to expand it, which will open the response panel, as follows:

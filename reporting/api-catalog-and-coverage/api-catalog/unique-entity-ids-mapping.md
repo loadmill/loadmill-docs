@@ -2,12 +2,12 @@
 
 Custom id patterns, such as prefixed/suffixed IDs may be not recognized automatically during the mapping stage. Use entity IDs mapping settings to prevent duplicate APIs, to streamline catalog organization and when you recognize static IDs in the api-catalog.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Policy id wasn't automatically mapped as it is custom prefixed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Policy id wasn't automatically mapped as it is custom prefixed</p></figcaption></figure>
 
 Here are the steps to map the ID:
 
 1. Head to settings, in the dotted menu at the top-right corner of the screen\
-   &#x20;![](<../../../.gitbook/assets/image (4).png>)
+   &#x20;![](<../../../.gitbook/assets/image (4) (1).png>)
 2. Select 'PER-SERVICE' tab and insert a unique regular-expression into 'Ids Path Regexes'.
 
 <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>In our case, the id prefixed with 'cust' followed with four digits (<code>cust\d{4}</code>)</p></figcaption></figure>
