@@ -4,6 +4,14 @@ Flows provides additional features and functions that can be found in the top ri
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FtSJjFr25aVO9W1xVNVVA%2Fflow-controls.mp4?alt=media&token=2e0abaf7-47e9-4144-abb4-745523fd5893" %}
 
+### Debug Mode&#x20;
+
+Working on a flow often requires checking or verifying certain things during execution. For example, if the flow involves adding then removing an item from an online shopping cart, we might want to verify that the item was indeed added to the cart during the execution.
+
+Loadmill provides the functionality to execute tests in debug mode. When the debug toggle (![](<../../.gitbook/assets/image (158).png>)) is turned on (![](<../../.gitbook/assets/image (159).png>)), a small checkbox will appear next to each request in the flow, allowing you to set a request as the breakpoint for debugging. Once the flow is executed, the test will be paused right before the checked request is made. The results window will already show the statuses of completed requests, with a 'pending' status indicating the upcoming request, which serves as the breakpoint.
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FKJGDDVETqcroDrTyyKBP%2FDebug-flow-example.mp4?alt=media&token=d26e6839-7669-4878-b55e-1d8ac83b6220" %}
+
 #### Export Flow
 
 Exports the current flow you're viewing (in `.yaml`).

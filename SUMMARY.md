@@ -40,6 +40,7 @@
 * [Layout](test-editor/layout.md)
 * [Flows](test-editor/flows/README.md)
   * [Generated Flow Code](test-editor/flows/generated-flow-code.md)
+  * [Test Flow editor](test-editor/flows/test-flow-editor.md)
   * [Flow Controls](test-editor/flows/flow-controls.md)
   * [Add CSV to Flow](test-editor/flows/add-csv-to-flow.md)
   * [Flow Execution](test-editor/flows/flow-execution.md)
@@ -141,4 +142,3 @@
   * [API Testing FAQs](general/api-testing1/api-testing-faqs.md)
   * [Test Editor](general/api-testing1/test-suite-editor/README.md)
     * [API Tests - Data from CSV files](general/api-testing1/test-suite-editor/api-tests-data-from-csv-files.md)
-    * [Test Flow editor](general/api-testing1/test-suite-editor/test-flow-editor.md)
