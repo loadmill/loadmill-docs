@@ -1,3 +1,7 @@
+---
+description: Streamline Your CI Testing With Loadmill's Datadog Integration
+---
+
 # Datadog Integration
 
 Datadog is a rich analysis and observability platform for engineering stakeholders. Its capabilities include performing BI analysis, custom slicing and graphing on logs and test data, monitoring, and more. Loadmill users can report their test executions to [Datadog's CI visibility product](https://www.datadoghq.com/dg/software-delivery/ci-test-visibility/) and offer a single pane of glass for all of their test results within Dadadog.
