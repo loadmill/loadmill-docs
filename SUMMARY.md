@@ -111,6 +111,7 @@
 
 * [Collaboration](collaboration/collaboration.md)
 * [Teams](collaboration/teams.md)
+* [Groups](collaboration/groups.md)
 * [Test Suite Collaborators](collaboration/test-suite-collaborators-1.md)
 * [Shared Flows](collaboration/shared-flows.md)
 * [Labels](collaboration/labels-and-filters.md)
