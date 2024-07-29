@@ -54,15 +54,15 @@ Copies the current flow to the chosen suite.
 
 #### Suggest Failure
 
-Once a flow is executed and fails, this button will appear ![](<../../.gitbook/assets/image (1).png>) which, using AI, provides you with a possible reason and solution for the test, according to the tests agenda. For example:
+Once a flow is executed and fails, this button will appear ![](<../../.gitbook/assets/image (1) (5).png>) which, using AI, provides you with a possible reason and solution for the test, according to the tests agenda. For example:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>In this example, it seems like one of the request used the wrong method</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>In this example, it seems like one of the request used the wrong method</p></figcaption></figure>
 
 #### Fix It For Me
 
 As AI suggests whats wrong with the test, and gives a possible way to solve it, why wouldn't it just solve it by itself?\
 The 'FIX IT FOR ME' button, leads to the edit-using-AI panel prompt prefilled with the suggestion AI provided before.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
 Then it acts like the regular 'Edit Using AI' feature explained [here](https://docs.loadmill.com/test-editor/flows/test-flow-editor#the-test-flow-toolbar).

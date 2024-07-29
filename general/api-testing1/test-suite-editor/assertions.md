@@ -13,7 +13,7 @@ Assertions editor can be found in loadmill under each request cubical on it's ex
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Assertion section in request editor</p></figcaption></figure>
 
-Furthermore, there is an option to disable an assertion by clicking the three dots (![](<../../../.gitbook/assets/image (4).png>)) in the assertion line. A disabled assertion will still be evaluated, but it won't cause the test to fail.
+Furthermore, there is an option to disable an assertion by clicking the three dots (![](<../../../.gitbook/assets/image (4) (1).png>)) in the assertion line. A disabled assertion will still be evaluated, but it won't cause the test to fail.
 
 <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 

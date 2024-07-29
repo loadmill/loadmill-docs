@@ -48,6 +48,7 @@
 * [Parameters](general/api-testing1/test-suite-editor/parameters/README.md)
   * [Parameter Execution Order](general/api-testing1/test-suite-editor/parameters/parameter-execution-order.md)
   * [Test Suite Parameters](general/api-testing1/test-suite-editor/test-suite-parameters.md)
+  * [Parameters Sets](test-editor/parameters/parameters-sets.md)
 * [⨍(⨯) FUNCTIONS](general/api-testing1/test-suite-editor/functions.md)
 * [Extractions - Set Parameters](general/api-testing1/test-suite-editor/set-parameters-extractions.md)
 * [Assertions - Verify Response](general/api-testing1/test-suite-editor/assertions.md)
