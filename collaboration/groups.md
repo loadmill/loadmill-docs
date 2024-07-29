@@ -19,3 +19,5 @@ Viewing group-filtered reports is convenient. Simply navigate to Reports -&#x20;
 <figure><img src="../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
 Where you can filter the displayed statistics for a specific group within the available options.
+
+{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FzRvJp9OiZS2HRguqIyf6%2FDashboards.mp4?alt=media&token=77ad0012-fdb1-417b-9019-b409b7c121fe" %}
