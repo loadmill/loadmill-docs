@@ -4,7 +4,7 @@
 
 Loadmill seamlessly identifies and tracks tested system APIs throughout the test creation and execution phases. Our platform maintains an API Catalog, serving as a centralized repository for all tracked APIs across all tested services. Users can upload OpenAPI specification files to enrich API tracking, providing a complete picture of the system's API landscape.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Features and capabilities:
 
