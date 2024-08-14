@@ -1,4 +1,4 @@
-# Groups
+# Groups & Reports
 
 Loadmill provides functionality for creating logical groups. Groups serve as a mechanism for teams to take ownership of test suites and flows. They allow for the segmentation of reports based on performance and facilitate understanding of ownership within different groups. Being part of a group makes it easier to avoid confusion about test responsibilities and enables better focus on owned areas.
 
@@ -12,7 +12,7 @@ You can assign your Flows/Suites to groups. To do so, navigate to the desired fl
 
 > Assigning a suite to a group takes precedence over assigning a group to a flow. For example, if group X is assigned to a suite, and group Y to a flow inside the suite, the test will be counted as belonging to group X.
 
-### Dashboards
+### Reports Dashboards
 
 Viewing group-filtered reports is convenient. Simply navigate to Reports -&#x20;
 

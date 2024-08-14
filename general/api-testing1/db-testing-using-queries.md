@@ -122,6 +122,23 @@ To execute queries directly to MySQL 5.7:
 }
 ```
 
+#### Oracle
+
+1. Request Method: POST.
+2. Request URL: `https://db-relay-service.loadmill.com/api/oracle`
+3. Request Body:&#x20;
+
+`https://<www.your-domain.com>/api/oracle`
+
+```
+body: {
+  connectionString: 'host[:port][/service_name]'
+  user: 'database-user'
+  password: 'mypw'
+  query: 'SELECT * FROM table_name'
+}
+```
+
 ### DB relay service static IPs
 
 Executing queries to your environment DB may require VPN. You can easily overcome this by whitelisting the DB relay service static IPs: `[52.42.51.230, 54.190.108.53]` in your firewall.

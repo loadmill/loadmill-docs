@@ -112,7 +112,7 @@
 
 * [Collaboration](collaboration/collaboration.md)
 * [Teams](collaboration/teams.md)
-* [Groups](collaboration/groups.md)
+* [Groups & Reports](collaboration/groups-and-reports.md)
 * [Test Suite Collaboration](collaboration/test-suite-collaborators-1.md)
 * [Reviews](collaboration/reviews.md)
 * [Shared Flows](collaboration/shared-flows.md)
