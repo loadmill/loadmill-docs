@@ -10,7 +10,7 @@ Slack has more than 12 million daily active users and 156,000 organizations subs
 
 1. Navigate to Settings => Integrations. Click CONNECT TO SLACK.
 
-![](<../../.gitbook/assets/Screenshot (45).png>)
+![](<../.gitbook/assets/Screenshot (45).png>)
 
 &#x20;2\. You will be redirected to the page where you need to click **Allow** in order to give relevant permissions to the Loadmill app.
 
@@ -18,10 +18,27 @@ Slack has more than 12 million daily active users and 156,000 organizations subs
 
 &#x20;🧠 Tip: the most popular notifications are about Failed Test Plan Runs :)&#x20;
 
-![](<../../.gitbook/assets/image (51).png>)
+![](<../.gitbook/assets/Screenshot 2024-09-23 at 13.12.03.png>)
 
 That's it, you did it! 🎉 From now on, you won't miss any important Loadmill event.
 
-![Loadmill notification in Slack](../../.gitbook/assets/screen-shot-2021-07-14-at-12.16.21.png)
+![Loadmill notification in Slack](../.gitbook/assets/screen-shot-2021-07-14-at-12.16.21.png)
+
+### Retrieving a Slack Channel ID
+
+Occasionally, due to limitations with the Slack API, Loadmill may be unable to automatically retrieve the Slack channel ID. When this occurs, we will need the user  to provide the channel ID manually.
+
+To find the channel ID:
+
+1. Open the Slack channel where you would like Loadmill to send notifications.
+2. Click on the channel name to open the **channel details**.
+3. Scroll down and click the copy icon next to the channel ID.
+
+<figure><img src="../.gitbook/assets/channel-id-explanation.gif" alt=""><figcaption></figcaption></figure>
+
+3. Once copied, paste the channel ID into the Channel ID field in Loadmill.
+
+<figure><img src="../.gitbook/assets/Screen Recording 2024-09-23 at 11.44.28.gif" alt="" width="563"><figcaption></figcaption></figure>
 
 More about our privacy policy can be found [here](https://app.loadmill.com/assets/privacy-policy.pdf)
+
