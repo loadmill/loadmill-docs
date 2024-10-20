@@ -107,6 +107,7 @@
 * [Integrations FAQs](integrations/integrations-faqs-1.md)
 * [XRay](integrations/xray.md)
 * [TestRail](integrations/testrail.md)
+* [gRPC Support](integrations/grpc-support.md)
 
 ## Collaboration
 
