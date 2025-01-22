@@ -6,7 +6,7 @@ Inside the Parameters page, there is an option to insert a parameters set. This 
 
 The page is located under TEST DESIGN -> Parameters Sets.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Creation of a new set:
 
@@ -14,9 +14,9 @@ Creation of a new set:
 
 A set that hasn't been published even once will be saved as a 'draft':
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-Changed but unpublished sets will be saved as 'modified' (<img src="../../.gitbook/assets/image (6).png" alt="" data-size="original">).
+Changed but unpublished sets will be saved as 'modified' (<img src="../../.gitbook/assets/image (6) (1).png" alt="" data-size="original">).
 
 ### Importing/Exporting Parameters Sets
 
@@ -30,7 +30,7 @@ parameters:
   - name2: "Bar"
 ```
 
-An example use case is to duplicate a set and modify it (![](<../../.gitbook/assets/image (8).png>), ![](<../../.gitbook/assets/image (9).png>)).
+An example use case is to duplicate a set and modify it (![](<../../.gitbook/assets/image (8) (1).png>), ![](<../../.gitbook/assets/image (9) (1).png>)).
 
 ### Exporting as a key-value file
 
@@ -43,5 +43,5 @@ name2=Bar
 
 It is good for Loadmill's CI integration, where inline parameters can be overridden or added by providing a key-value file instead (See "Parameters" in [Loadmill's NPM README](https://www.npmjs.com/package/loadmill?activeTab=readme)).
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 

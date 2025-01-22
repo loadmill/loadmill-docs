@@ -13,11 +13,11 @@ Assertions editor can be found in loadmill under each request cubical on it's ex
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Assertion section in request editor</p></figcaption></figure>
 
-Furthermore, there is an option to disable an assertion by clicking the three dots (![](<../../../.gitbook/assets/image (4) (1).png>)) in the assertion line. A disabled assertion will still be evaluated, but it won't cause the test to fail.
+Furthermore, there is an option to disable an assertion by clicking the three dots (![](<../../../.gitbook/assets/image (4) (1) (1).png>)) in the assertion line. A disabled assertion will still be evaluated, but it won't cause the test to fail.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Assertions Creation from Response
 
@@ -74,7 +74,7 @@ There are several types of assertions:
   Extracting `$.args.app` json path field to `param1`(from the result that is not displayed) should be equal to "Demo" and will result the assertion to pass\
   Assigning numeric value to `param2` of 11.0 in postscript should be equal to "11", and the assertion will pass.\
   ![Click to enlarge the image](<../../../.gitbook/assets/image (58).png>)![](<../../../.gitbook/assets/image (73) (1).png>)\
-  _**Note** that all values are implicitly compared as strings._
+  &#xNAN;_**Note** that all values are implicitly compared as strings._
 
 #### **Doesn't equal** - Validates that a parameter is NOT equal to the given expression. The equality check is **case sensitive**.
 
@@ -180,7 +180,7 @@ Note, the subset xml object should preserve the same hierarchal structure as the
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
-See **an example of the assertion** that validates the generated ID is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#\_\_is\_uuid-target) below:
+See **an example of the assertion** that validates the generated ID is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#__is_uuid-target) below:
 
 ![](../../../.gitbook/assets/video1582528102-online-video-cut.gif)
 

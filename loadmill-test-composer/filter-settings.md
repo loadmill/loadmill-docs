@@ -4,7 +4,7 @@ You can adjust your filter settings to allow you to personalize the API test.
 
 #### **Include Domains**
 
-"Include Domains" lets you register API calls from outside of the current domain. You'll find it useful when registering API flows that require external domains for authentication, purchase flows**,** etc.
+"Include Domains" lets you register API calls from outside of the current domain. You'll find it useful when registering API flows that require external domains for authentication, purchase flow&#x73;**,** etc.
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FsZ8DBJdvwHOEPj5d4wCF%2Fpart_4.mp4?alt=media&token=596521be-c1d3-4e09-bf26-3ef08badfe7b" %}
 

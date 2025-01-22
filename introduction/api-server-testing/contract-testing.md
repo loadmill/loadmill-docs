@@ -118,7 +118,7 @@ In the following table you can see an example of the schema and a typical respon
 </code></pre> |
 
 *   **Enforcing JSON structure using JSON-Contains:**\
-    **'**Json-contains' is a lightweight capability in Loadmill to enforce JSON data. \
+    **'**&#x4A;son-contains' is a lightweight capability in Loadmill to enforce JSON data. \
     In the request editor assertions insert new entry, use '\_\_responseBody' built-in parameter and ensure the values are of the type "JSON Contains", then insert an expected json or a subset that can contain less fields.\
     Note, to ensure existence of a field ignoring it's value use `"*"` notation.
 

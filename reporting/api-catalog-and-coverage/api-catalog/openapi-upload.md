@@ -5,7 +5,7 @@ Uploading OpenAPI specification file will allow the mapping of all the APIs at o
 To upload a swagger file, follow the next steps:
 
 1. From the dotted menu at the top-right corner of the screen, select "Import from OpenAPI"\
-   ![](<../../../.gitbook/assets/image (19).png>)
+   ![](<../../../.gitbook/assets/image (19) (3).png>)
 2. Select the file and proceed with the upload
 
 {% hint style="info" %}
