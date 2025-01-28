@@ -8,17 +8,11 @@ The Loadmill's Load Testing module allows users **to replay their API tests at s
 
 ![](<../.gitbook/assets/Screenshot (26).png>)
 
-In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn how to:
+In this quick guide to Loadmill we will learn how to:
 
 1. Create and run a very simple load test in just a few seconds.
 2. Create an API test by using our [Chrome recorder extension](https://docs.loadmill.com/working-with-the-recorder) and run it as a load test in Loadmill.
 3. Run load tests as DRY RUN or at scale.
-
-## **Before you start**
-
-**Signup to Loadmill** at this [link](https://www.loadmill.com/app/signup). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account.
-
-In order to use Loadmill effectively, we highly recommend to read [Core definitions](https://docs.loadmill.com/core-definitions), don't worry, it is only a 2 min read. :wink:
 
 ## Let's create and run your first Load test together.
 
