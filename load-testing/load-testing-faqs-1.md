@@ -19,7 +19,7 @@ Yes, you can combine multiple conditions by using an **assignment extraction** i
 Use the following syntax when assigning a value to a parameter:
 
 ```
-bashCopyEdit${condition1 && condition2}
+${condition1 && condition2}
 ```
 
 This ensures that the combined condition is evaluated before being used in the flow control step. Do not place this expression directly in the loop input parameter itself.
