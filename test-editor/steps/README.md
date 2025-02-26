@@ -31,7 +31,7 @@ Click on the dotted menu (![](<../../.gitbook/assets/image (3).png>)) located in
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-Select the `+ option`Then click on the desired step type  ![](<../../.gitbook/assets/image (6).png>)
+Select the `+ option`Then click on the desired step type  ![](<../../.gitbook/assets/add-step.png>)
 
 A new empty step will be added.
 
