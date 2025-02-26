@@ -62,13 +62,13 @@ Let's look at a simple WebSocket test flow in action:
 
 This example demonstrates a complete WebSocket interaction:
 
-### 1. Connect to WebSocket
-* Establishes connection to our WebSocket server
+#### 1. Connect to WebSocket:
+* Establishes connection to a WebSocket server
 
-### 2. Send Some Data
+#### 2. Send Some Data:
 * Sends a message on the connection
 
-### 3. Assert message received
+#### 3. Assert message received:
 * Waits for all extractions to be resolved
 * Once resolved, validates that the extracted `${message}` exists
 * Received messages are displayed for easy debugging
