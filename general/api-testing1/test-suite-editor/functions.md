@@ -437,7 +437,7 @@ Extracts a value from `target` using `regexp` as a JS RegExp. If there is no mat
 
 ### `__json_keys(target,[default])`
 
-Returns the keys of target object in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/keys). If `target` is empty, an empty array will be returned or, if present, the given `default` value.
+Returns the keys of target object in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys). If `target` is empty, an empty array will be returned or, if present, the given `default` value.
 
 * `${__json_keys('{"key1":"val1"}')}// returns ["key1"]`
 * `${__json_keys(target)} // returns ["key1","key2"] assuming target is {"key1":"val1","key2":"val2"}`
@@ -456,7 +456,7 @@ Similar to `__jsonpath` but returns **all results from the JSONPath** and not on
 
 ### `__jsonpath_keys(target,jsonpath)`
 
-Returns the keys of the extracted value from `target` queried by `jsonpath` in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/keys).
+Returns the keys of the extracted value from `target` queried by `jsonpath` in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
 
 * `${__jsonpath_keys('{"key1":"val1"}','$')}// returns ["key1"]`
 * `${__jsonpath_keys(target,jsonpath)} // returns ["key1","key2"] assuming target is {"data": {"key1":"val1","key2":"val2"}} and jsonpath is '$.data'`
@@ -617,6 +617,13 @@ Formatted date according to the supplied format while adding `addedMinutes`.&#x2
 
 * `${__formatted_date()} // returns 2024-03-12T13:41:29+00:00`
 * `${__formatted_date('DD/MM/YYYY')} // returns 12/03/2024`
-* `${__formatted_date('DD/MM/YY','60000')} // returns 13/3/24`
+* `${__formatted_date('DD/MM/YY','60000')} // returns 13/3/24`&#x20;
 
-For more format option you can have a look [here](https://day.js.org/docs/en/display/format)
+### **`__format_unit_date(unixTimestamp, [format])`**
+
+Formats a given UNIX timestamp according to the supplied format.
+
+* `${__format_unix_date('1741534304753','DD/MM/YYYY')} // returns 09/03/2025`
+* `${__format_unix_date('1741534962788')} // returns 2025-03-09T15:42:42+00:00`
+
+For more formatting options, have a look [here](https://day.js.org/docs/en/display/format)
