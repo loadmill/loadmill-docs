@@ -33,12 +33,16 @@ test('Login test', async ({ page }) => {
 
 In the Playwright step, **all suite and flow parameters** are available directly as variables — no need to use `${param}` syntax like in other inputs.
 
-✅ Example:
+✅ **Correct:**
 
 ```ts
 await page.getByRole('textbox', { name: 'Email' }).fill(email);
 ```
 
+❌ **Incorrect:**
+```ts
+await page.getByRole('textbox', { name: 'Email' }).fill(${email});
+```
 
 ## Cookies
 
@@ -90,7 +94,7 @@ You can enable UI testing using one of the following options:
   docker run -it --rm -e LOADMILL_AGENT_TOKEN=<your-api-token> -e UI_TESTS_ENABLED=true loadmill/agent
   ```
 
-- **NPM Package** (not recommended)- Run the agent with the `--ui-tests` flag:
+- **NPM Package**- Run the agent with the `--ui-tests` flag:
 
   ```bash
   loadmill-agent start -t INSERT_TOKEN_HERE --ui-tests
