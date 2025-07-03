@@ -49,6 +49,7 @@
   * [Code step](test-editor/steps/code-step.md)
   * [Extraction & Assertion step](test-editor/steps/extraction-and-assertion-step.md)
   * [Web Socket step](test-editor/steps/web-socket-step.md)
+  * [Playwright step](test-editor/steps/playwright-step.md)
 * [Extractions - Set Parameters](general/api-testing1/test-suite-editor/set-parameters-extractions.md)
 * [Assertions - Verify Response](general/api-testing1/test-suite-editor/assertions.md)
 * [Parameters](general/api-testing1/test-suite-editor/parameters/README.md)
