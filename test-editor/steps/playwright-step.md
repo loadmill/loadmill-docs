@@ -16,7 +16,8 @@ The Playwright step contains a single **code editor** where you write your Playw
 ✅ **Correct:**
 
 ```ts
-await page.goto('https://example.com');
+await page.goto('https://www.loadmill.com');
+await expect(page).toHaveTitle(/Loadmill/);
 await page.getByRole('textbox', { name: 'Email' }).fill(email);
 ```
 
@@ -24,7 +25,8 @@ await page.getByRole('textbox', { name: 'Email' }).fill(email);
 
 ```ts
 test('Login test', async ({ page }) => {
-  await page.goto('https://example.com');
+  await page.goto('https://www.loadmill.com');
+  await expect(page).toHaveTitle(/Loadmill/);
   await page.getByRole('textbox', { name: 'Email' }).fill(email);
 });
 ```
@@ -86,15 +88,15 @@ To use Playwright steps, a [private agent](https://docs.loadmill.com/integration
 
 You can enable UI testing using one of the following options:
 
-- **Desktop App**- UI testing is supported out of the box with no additional configuration required.
+- **Desktop App** - UI testing is supported out of the box with no additional configuration required.
 
-- **Docker**- Set the following environment variable when running the container:
+- **Docker** - Set the following environment variable when running the container:
 
   ```bash
   docker run -it --rm -e LOADMILL_AGENT_TOKEN=<your-api-token> -e UI_TESTS_ENABLED=true loadmill/agent
   ```
 
-- **NPM Package**- Run the agent with the `--ui-tests` flag:
+- **NPM Package** - Run the agent with the `--ui-tests` flag:
 
   ```bash
   loadmill-agent start -t INSERT_TOKEN_HERE --ui-tests
