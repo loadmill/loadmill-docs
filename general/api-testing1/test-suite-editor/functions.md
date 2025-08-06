@@ -592,14 +592,14 @@ Creating hash digests of data using an algorithm of `sha256`. The function retur
 Converts an XML string to its JSON representation. By default, normalization is enabled unless `normalize` is explicitly set to `'false'`.
 *normalize*: Trims whitespace at the beginning and end of text nodes, and also inside text nodes.
 
-* `${__xml_to_json('<root><item>value</item></root>')}` // returns '{"root":{"item":"value"}}'
-* `${__xml_to_json(xml, 'false')}` // disables normalization
+* `${__xml_to_json('<root><item>value</item></root>')} // returns {"root":{"item":"value"}}`
+* `${__xml_to_json(xml,'false')} // disables normalization`
 
 ### `__json_to_xml(json)`
 
 Converts a JSON string to its XML representation. The output is headless (no XML declaration).
 
-* `${__json_to_xml('{"root":{"item":"value"}}')}` // returns '<root><item>value</item></root>'
+* `${__json_to_xml('{"root":{"item":"value"}}')} // returns <root><item>value</item></root>`
 
 ## Time Functions
 
