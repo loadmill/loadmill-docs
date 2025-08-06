@@ -98,3 +98,16 @@ console.log(fruitsFamily) //
 ```
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LHDbUNdi3wPd9vSolzU%2Fuploads%2FXWFRRTwLmRmFro0YEhFT%2Fpostscript-log.mp4?alt=media&token=e7787aea-5e72-465f-b16e-892f56fd1915" %}
+
+## Using Built-in Functions
+
+You can use Loadmill's built-in utility functions in your Postscript code exactly as you would in regular extractions or assertions.
+
+Example:
+
+```javascript
+const result = __add(1, 2);
+console.log(result); // 3
+```
+
+See [Using Built-in Functions in Postscript](./built-in-functions.md) for more examples and details.

@@ -61,6 +61,8 @@
   * [Running Postscript](test-editor/postscript/running-postscript.md)
   * [Accessing w/ Postscript](test-editor/postscript/accessing-w-postscript.md)
   * [Validating Postscript](test-editor/postscript/validating-postscript.md)
+  * [Using Built-in Functions in Postscript](test-editor/postscript/built-in-functions.md)
+
 * [Login/Authentication Flow](general/api-testing1/test-suite-editor/global-login-flow.md)
 * [Before & After Hooks](general/api-testing1/test-suite-editor/before-and-after-hooks.md)
 
