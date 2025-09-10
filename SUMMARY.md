@@ -28,11 +28,12 @@
 * [Download Test Composer](quick-guide/download-test-composer.md)
 * [Register your first API flow](quick-guide/register-your-first-api-flow.md)
 * [Running Your API Test](quick-guide/running-your-api-test.md)
+* [Quick Start Guide](quick-guide/quick-start-guide.md)
 
 ## Loadmill Test Composer
 
-* [Quickstart](loadmill-test-composer/quickstart.md)
-* [Composer Layout](loadmill-test-composer/composer-layout.md)
+* [Test Composer Setup](loadmill-test-composer/quickstart.md)
+* [Test Composer Layout](loadmill-test-composer/composer-layout.md)
 * [Filter Settings](loadmill-test-composer/filter-settings.md)
 
 ## Test Editor
@@ -62,7 +63,6 @@
   * [Accessing w/ Postscript](test-editor/postscript/accessing-w-postscript.md)
   * [Validating Postscript](test-editor/postscript/validating-postscript.md)
   * [Using Built-in Functions in Postscript](test-editor/postscript/built-in-functions.md)
-
 * [Login/Authentication Flow](general/api-testing1/test-suite-editor/global-login-flow.md)
 * [Before & After Hooks](general/api-testing1/test-suite-editor/before-and-after-hooks.md)
 
