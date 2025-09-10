@@ -141,8 +141,7 @@ The demo application is a simple **bank transfer system** showing the classic _M
 
 👉 This shows how the **same flow** doubles as both a functional and performance test.
 
-_\[screenshot: Run Suite dropdown → Run as Load Test]_\
-&#xNAN;_\[screenshot: Load test settings (2 min, 5 users)]_
+<figure><img src="../.gitbook/assets/image (200).png" alt="" width="263"><figcaption></figcaption></figure>
 
 ***
 
@@ -159,8 +158,6 @@ Want to make Loadmill’s AI match your team’s language?
 👉 Tailoring AI output makes results clearer, saves triage time, and fits better into your workflow.
 
 **Explore here:** [AI Prompts Settings](https://app.loadmill.com/app/user/settings/algorithm?tab=ai-prompts)
-
-_\[screenshot: AI Prompts settings page]_
 
 ***
 
