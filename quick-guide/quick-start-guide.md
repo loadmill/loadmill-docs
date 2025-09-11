@@ -29,10 +29,11 @@ Time needed: **10–15 minutes**
 
 ### Step 2 — Verify the Recorder
 
-1. Open Chrome DevTools (**⌘⌥J** on macOS / **Ctrl+Shift+J** on Windows/Linux).
-2. Select the **Loadmill Composer** tab.
-3. Make sure the **Record** button is available.
-4. Set **Filter Settings** to the demo AUT domain.
+1. Start by navigating to [https://bank-demo.loadmill.com/](https://bank-demo.loadmill.com/)
+2. Open Chrome DevTools (**⌘⌥J** on macOS / **Ctrl+Shift+J** on Windows/Linux).
+3. Select the **Loadmill Composer** tab.
+4. Make sure the **Record** button is available.
+5. Set **Filter Settings** to the demo AUT domain.
 
 👉 Only after this step should you continue to the demo AUT.
 
@@ -50,7 +51,7 @@ The demo application is a simple **bank transfer system** showing the classic _M
 
 **Demo URL & Credentials**
 
-* URL: [https://maker-checker-036efc6aec77.herokuapp.com/](https://maker-checker-036efc6aec77.herokuapp.com/)
+* URL: [https://bank-demo.loadmill.com/](https://bank-demo.loadmill.com/)
 * Maker: `maker / maker1234!`
 * Checker: `checker / checker1234!`
 
