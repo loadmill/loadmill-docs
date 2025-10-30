@@ -88,7 +88,7 @@
 
 ## Hybrid Testing
 
-* [Hybrid Testing Overview](hybrid-testing/overview.md)
+* [Overview](hybrid-testing/overview.md)
 * [Playwright Integration Capabilities](hybrid-testing/capabilities.md)
 
 ## Auth

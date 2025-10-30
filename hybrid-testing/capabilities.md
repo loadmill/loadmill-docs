@@ -1,6 +1,6 @@
 # Playwright Integration Capabilities
 
-## 1. Record Playwright Tests
+## Record Playwright Tests
 Easily create Playwright tests by recording your actions in the browser. This feature makes test creation accessible to everyone, even those without coding experience, and speeds up the process for QA and product teams. 
 
 **Note:** To record Playwright tests, you must have the Loadmill Desktop App installed.
@@ -14,7 +14,7 @@ Easily create Playwright tests by recording your actions in the browser. This fe
 
 **Tip:** You can edit the generated script for advanced scenarios.
 
-## 2. Cross-Browser Testing
+## Cross-Browser Testing
 Run your Playwright tests across multiple browsers and devices directly in Loadmill. This ensures your application works as expected for all users, regardless of their browser or device. By automating cross-browser validation, you save time and catch compatibility issues early.
 
 **How to use:**
@@ -26,7 +26,7 @@ Run your Playwright tests across multiple browsers and devices directly in Loadm
 3. Save and run your test suite. Loadmill will automatically provision and execute tests across the selected browsers.
 	![Select Browsers](../assets/playwright-devices-run.png)
 
-## 3. Debugging & Reporting
+## Debugging
 Run your Playwright tests in debug mode and step through the Playwright script inside the flow context in Loadmill. This lets you view exactly what's happening in the test, analyze issues, and recreate bugs more effectively. Debug mode provides a step-by-step view, making it easier to write, troubleshoot, and refine your Playwright scripts.
 
 **Note:** To debug Playwright steps, you must have the Loadmill Desktop App installed.
@@ -39,7 +39,7 @@ Run your Playwright tests in debug mode and step through the Playwright script i
 	![View Playwright Step Logs](../assets/hybrid-testing-debug.gif)
 4. Use this interactive view to analyze issues, recreate bugs, and improve your test scripts.
 
-## 4. Automated Orchestration & Infrastructure
+## Automated Orchestration & Infrastructure
 Loadmill automatically provisions browsers, executes tests in parallel, and scales your test runs. You don’t need to manage infrastructure or runners, making your testing pipeline faster, more reliable, and maintenance-free.
 **How to use:**
 Simply run your test suite with Playwright steps. Loadmill automatically manages browser provisioning, parallel execution, and scaling. No additional setup or runners required.
