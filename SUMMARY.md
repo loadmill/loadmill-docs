@@ -86,6 +86,11 @@
 * [Recording settings](user-behavior-testing/recorder-settings.md)
 * [How to work with Recordings](user-behavior-testing/working-with-the-recorder-1.md)
 
+## Hybrid Testing
+
+* [Overview](hybrid-testing/overview.md)
+* [Playwright Integration Capabilities](hybrid-testing/capabilities.md)
+
 ## Auth
 
 * [Okta SSO integration](auth/okta-sso-integration.md)
