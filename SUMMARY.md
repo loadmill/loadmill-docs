@@ -5,6 +5,8 @@
 * [Loadmill - AI - Powered Solution](README.md)
 * [Deviceless mobile testing](introduction/deviceless-mobile-testing/README.md)
   * [Capturing traffic with Loadmill MITM Proxy](introduction/deviceless-mobile-testing/capturing-traffic-with-loadmill-mitm-proxy.md)
+  * [Installing Loadmill desktop app](introduction/deviceless-mobile-testing/installing-loadmill-desktop-app/README.md)
+    * [Install Windows desktop app](introduction/deviceless-mobile-testing/installing-loadmill-desktop-app/install-windows-desktop-app.md)
   * [Loadmill desktop recorder](introduction/deviceless-mobile-testing/loadmill-desktop-recorder/README.md)
     * [Generating test flows](introduction/deviceless-mobile-testing/loadmill-desktop-recorder/generating-test-flows.md)
   * [Installing certificate on mobile devices](introduction/deviceless-mobile-testing/installing-certificate-on-mobile-devices/README.md)
