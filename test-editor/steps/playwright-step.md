@@ -82,6 +82,21 @@ testInfo.attach('Loadmill Page', {
 });
 ```
 
+## Changing timeout
+
+You can change the default timeout for Playwright actions using the [`setDefaultTimeout`](https://playwright.dev/docs/api/class-page#page-set-default-timeout) method:
+
+```ts
+page.setDefaultTimeout(10000); // 10 seconds
+```
+
+## Changing view resolution
+
+To set the browser viewport size, use the [`setViewportSize`](https://playwright.dev/docs/api/class-page#page-set-viewport-size) method:
+
+```ts
+await page.setViewportSize({ width: 1280, height: 720 });
+```
 ## Requirements
 
 To use Playwright steps, a [private agent](https://docs.loadmill.com/integrations/testing-localhost-application) with UI tests enabled is required.
