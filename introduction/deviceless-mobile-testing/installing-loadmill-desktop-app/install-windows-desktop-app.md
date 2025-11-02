@@ -29,6 +29,7 @@ This document outlines the required prerequisites and setup steps before install
    `C:\Users\<username>\AppData\Local\desktop_app`
 
 ![Loadmill Desktop App](../../../assets/windows-desktop-app-home.png)
+
 ---
 
 ## 🔐 Certificate Installation (for HTTPS Traffic Capture)
@@ -58,6 +59,7 @@ This document outlines the required prerequisites and setup steps before install
   Stored under the app’s user data directory in `AppData\Roaming\Loadmill`  
 
 ![Download Logs](../../../assets/windows-desktop-app-download-logs.png)
+
 ---
 
 ## 📞 Support
