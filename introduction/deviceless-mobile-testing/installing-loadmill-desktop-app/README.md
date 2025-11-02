@@ -1,4 +1,4 @@
-# Installing Loadmill Desktop App
+# Installing the Loadmill Desktop App
 
 The Loadmill Desktop App is our official application, available for Windows and macOS.
 It bundles almost everything that Loadmill has to offer, the testing platform UI, the MITM proxy for capturing application traffic, a dedicated private Loadmill Agent for running tests locally, Hybrid test support, and more.
