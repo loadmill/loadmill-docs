@@ -144,6 +144,11 @@
   * [Test Coverage](reporting/api-catalog-and-coverage/test-coverage/README.md)
     * [Generating API test coverage report](reporting/api-catalog-and-coverage/test-coverage/generating-api-test-coverage-report.md)
 
+## POC Guides
+
+* [Loadmill POC Setup](poc-guides/Loadmill-POC-Setup.md)
+* [Loadmill Installation & Deployment Runbook](poc-guides/Loadmill-Installation-Runbook.md)
+
 ## General
 
 * [Billing](general/billing/README.md)
