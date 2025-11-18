@@ -93,6 +93,10 @@
 * [Overview](hybrid-testing/overview.md)
 * [Playwright Integration Capabilities](hybrid-testing/capabilities.md)
 
+## Loadmill MCP
+
+* [AI-Native E2E Testing](loadmill-mcp.md)
+
 ## Auth
 
 * [Okta SSO integration](auth/okta-sso-integration.md)
