@@ -28,6 +28,7 @@ And then edit or add the relevant rule in the correct JSON property
 - [Ignored Keys](#ignored-keys)
 - [Ignored Values](#ignored-values)
 - [Session Cut URLs](#session-cut-urls)
+- [Irrelevant GraphQL Operations](#irrelevant-graphql-operations)
 - [Irrelevant Soap Actions](#irrelevant-soap-actions)
 
 #### 3. Data-cleanup
@@ -426,7 +427,27 @@ Example:
 ]
 ```
 ---
+### Irrelevant GraphQL Operations
+Filters out irrelevant GraphQL operations that should not be included in the generated test.
 
+###### When to use:
+- When your HAR contains GraphQL requests with operations that are not relevant to your test scenario.
+- To remove noise and focus on business-critical GraphQL operations.
+
+###### Structure:
+
+*`irrelevantGraphQLOperations`*  
+**Type:** string [ ]  
+**Description:** Array of GraphQL operation names to exclude from extraction and test generation.
+
+Example:
+```json
+"irrelevantGraphQLOperations": [
+  "IntrospectionQuery",
+  "TelemetryEvent"
+]
+```
+---
 ### Irrelevant SOAP Actions
 
 Filters out SOAP actions that should not be included in the generated test.
