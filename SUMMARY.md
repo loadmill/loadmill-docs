@@ -37,6 +37,7 @@
 * [Test Composer Setup](loadmill-test-composer/quickstart.md)
 * [Test Composer Layout](loadmill-test-composer/composer-layout.md)
 * [Filter Settings](loadmill-test-composer/filter-settings.md)
+* [Algorithm Configuration Guide](loadmill-test-composer/algorithm-settings.md)
 
 ## Test Editor
 
