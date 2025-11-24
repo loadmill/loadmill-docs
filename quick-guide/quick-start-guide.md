@@ -11,7 +11,7 @@ Time needed: **10–15 minutes**
 
 * A Loadmill trial account (logged in)
 * Google Chrome (latest version)
-* [Loadmill Test Composer Chrome Extension](https://chatgpt.com/c/68c130ea-057c-8333-8052-0baf9ef9a30e) installed and visible in DevTools
+* [Loadmill Test Composer Chrome Extension](https://chromewebstore.google.com/detail/gdkmnfehipofdefhpegbgkkocinlaofd) installed and visible in DevTools
 * 10–15 minutes of focus
 
 ***
