@@ -3,106 +3,104 @@
 When creating a test in Loadmill, you can configure a rich set of rules that determine how your test scenario is analyzed, interpreted, and converted into an executable flow.
 These settings control assertions, filtering, data cleanup, parameter extraction, uniqueness detection, and various advanced behaviors of the test-generation algorithm.
 
-This guide explains every configuration option—what it does, when to use it, and how it affects the resulting test.
+This guide explains every configuration option, what it does, when to use it, and how it affects the resulting test.
 
-To apply or modify these configurations, go to the Algorithm page in Loadmill and click `Edit Algorithm Settings`
+To apply or modify these configurations, go to the Algorithm page in Loadmill and make changes through the UI or click `Edit Algorithm Settings` to edit the JSON directly.
 
 ![](./../assets/algorithm-settings-ui.png)
 
-And then edit or add the relevant rule in the correct JSON property
+Then, edit or add the relevant rules in the appropriate JSON properties.
 
 ## Table of Contents
-#### 1. Assertion Configuration
-- [Assertions](#assertions)
-- [Auto Assertions by URL](#auto-assertions-by-url)
-- [Strict Response Validation](#strict-response-validation)
+#### 1. [Assertions](#assertions)
+- [Automatic Assertions](#automatic-assertions)
+- [Automatic Assertions by URL](#automatic-assertions-by-url)
 - [Automatic Polling by URL](#automatic-polling-by-url)
+- [Strict Response Validation](#strict-response-validation)
 
-#### 2. Filtering & Control
-- [Keep All MIME Types](#keep-all-mime-types)
+#### 2. [Filtering & Control](#filtering-and-control)
 - [Filter Irrelevant Requests](#filter-irrelevant-requests)
 - [Filter Request by Body](#filter-request-by-body)
-- [URL Blacklist](#url-blacklist)
-- [Relevant URLs](#relevant-urls)
 - [Headers Filters](#headers-filters)
 - [Ignored Keys](#ignored-keys)
 - [Ignored Values](#ignored-values)
-- [Session Cut URLs](#session-cut-urls)
 - [Irrelevant GraphQL Operations](#irrelevant-graphql-operations)
 - [Irrelevant Soap Actions](#irrelevant-soap-actions)
+- [Keep All MIME Types](#keep-all-mime-types)
+- [Relevant URLs](#relevant-urls)
+- [Session Cut URLs](#session-cut-urls)
+- [URL Blacklist](#url-blacklist)
 
-#### 3. Data-cleanup
-- [Reduce Global Parameters](#reduce-global-parameters)
-- [Keep Original Values](#keep-original-values)
+#### 3. [Data-cleanup](#data-cleanup)
 - [Don't Extract From Response by URL Regex](#dont-extract-from-response-by-url-regex)
+- [Keep Original Values](#keep-original-values)
 - [Max Entities of Same Type](#max-entities-of-same-type)
+- [Reduce Global Parameters](#reduce-global-parameters)
 
-#### 4. Structure & Semantics
+#### 4. [Structure & Semantics](#structure-and-semantics)
 - [Fields Hierarchy](#fields-hierarchy)
-- [JSONPath Ignored Keys](#jsonpath-ignored-keys)
 - [JQuery Ignored Elements](#jquery-ignored-elements)
+- [JSONPath Ignored Keys](#jsonpath-ignored-keys)
 
-#### 5. Parameter Detection
-- [Search Unique Values](#search-unique-values)
+#### 5. [Parameter Detection](#parameter-detection)
+- [Custom Identifiers](#custom-identifiers)
 - [Custom Uniqueness](#custom-uniqueness)
-- [Non Secret Keys](#non-secret-keys)
 - [Default Values](#default-values)
-- [Value Holder Key Map](#value-holder-key-map)
-- [Synonyms](#synonyms)
-- [Special Keys](#special-keys)
+- [Include Failed Requests](#include-failed-requests)
 - [Keys Value as Key](#keys-value-as-key)
 - [Max Response Content Byte Size](#max-response-content-byte-size)
-- [ResponseRegexExtractors](#response-regex-extractors)
 - [Nested Value Decoding](#nested-value-decoding)
-- [Custom Identifiers](#custom-identifiers)
-- [Include Failed Requests](#include-failed-requests)
+- [Non Secret Keys](#non-secret-keys)
+- [ResponseRegexExtractors](#response-regex-extractors)
+- [Search Unique Values](#search-unique-values)
+- [Special Keys](#special-keys)
+- [Synonyms](#synonyms)
+- [Value Holder Key Map](#value-holder-key-map)
 
-#### 6. Advanced & Serialization Settings
+#### 6. [Advanced & Serialization Settings](#advanced-and-serialization-settings)
 
-- [Array Format](#array-format)
-- [Split Origin](#split-origin)
 - [Allow Dots](#allow-dots)
-- [Prettify Request Body](#prettify-request-body)
+- [Array Format](#array-format)
 - [Decode URL Encoded Body](#decode-url-encoded-body)
+- [Prettify Request Body](#prettify-request-body)
+- [Split Origin](#split-origin)
 - [Xml Decode](#xml-decode)
 
-#### 7. Uniqueness & Extraction Controls
+#### 7. [Uniqueness & Extraction Controls](#uniqueness-and-extraction-controls)
 - [ID Prioritization](#id-prioritization)
 - [Max Uniqueness Length](#max-uniqueness-length)
 
-#### 8. Post Processing Editing
+#### 8. [Post Processing Editing](#post-processing-editing)
 - [Yaml Regex Replacers](#yaml-regex-replacers)
 - [Regex Replacers](#regex-replacers)
 ___
-
-### Assertions
+## Assertions
+### Automatic Assertions
 Defines **automatic assertions** that Loadmill applies to extracted parameters.
-###### When to use:
+##### When to use:
 - When your API contains stable response fields that should always be validated.
 - When you want to detect silent failures (`200 OK` but the operation logically failed).
 
-###### Structure:
-*`assertions`* 
-**Type:** array
-**Description:**  A collection that defines how to generate assertions for extracted parameters
+##### Structure:
+**`assertions`** *object* 
+
+An object that defines how to generate assertions for extracted parameters.
 
 The object includes the following properties:
-- *`isDefaultAssertion`*  
-**Type:** boolean 
-**Default:**  true
-**Description:** Defines basic automatic assertions of *Exists* applied to all extracted parameters.
+- **`isDefaultAssertion`** *boolean, Defaults to `true`*
 
-- *`specificAssertions`*
-**Type:** array
-**Default:** [ ]
-**Description:** Define specific assertion applied to parameters with defined keys
+    Defines basic automatic assertions of *Exists* applied to all extracted parameters.
+
+- **`specificAssertions`** *array, Defaults to [ ]*
+
+    Define specific assertion applied to parameters with defined keys.
 Each item in the array contains:
-  - *`key`*: 
-      **Type:** string
-      **Description:**  The key that, when encountered, should create the automatic assertion
-  - *`assertion`*:  
-      **Type:** `{ [assertionType: string]: string }`
-      **Description:** Defines the assertion to apply.
+  - **`key`** *string* 
+      
+      The key that, when encountered, should create the automatic assertion.
+  - **`assertion`** *{ [assertionType: string]: string }* 
+      
+      Defines the assertion to apply.
       The object must contain a single assertion operator (e.g., equals, matches, contains) and its expected value.
 
 Example:
@@ -119,27 +117,27 @@ Example:
 ```
 
 ---
-### Auto Assertions by URL 
-Extracts a value from responses whose URL matches a pattern, then asserts it
+### Automatic Assertions by URL 
+Extracts a value from responses whose URL matches a pattern, then asserts it.
 ###### When to use:
 * When a specific endpoint always returns a value you want to verify.
 ###### Structure:
-*`autoAssertionsByUrl`*
-  **Type:** array
-  **Description:** Defines automatic assertions for specific endpoints. Each item specifies a URL pattern, a JSONPath to extract the value, and the assertion to apply. 
+**`autoAssertionsByUrl`** *array*
+  
+  Defines automatic assertions for specific endpoints. Each item specifies a URL pattern, a JSONPath to extract the value, and the assertion to apply. 
 
 Each item in the array contains:
-  - *`url`*:  
-    **Type:** string  
-    **Description:** Regex pattern to match the request URL.
+  - **`url`** *string*
+    
+    Regex pattern to match the request URL.
 
-  - *`jsonpath`*:  
-    **Type:** string  
-    **Description:** JSONPath expression to extract the value from the response.
+  - **`jsonpath`** *string*
+    
+    JSONPath expression to extract the value from the response.
 
-  - *`assertion`*:  
-    **Type:** `{ [assertionType: string]: string }`  
-    **Description:** Assertion operator and expected value (e.g., `{ "equals": "processed" }`).
+  - **`assertion`** *{ [assertionType: string]: string }*
+    
+    Assertion operator and expected value (e.g., `{ "equals": "processed" }`).
 
 Example:
 ```json
@@ -152,55 +150,6 @@ Example:
 ]
 ```
 ---
-### Strict Response Validation
-Defines **strict validation** rules for API responses using JSON Schema or "JSON contains" logic.
-
-###### When to use:
-- When your API response structure must be validated (schema-based testing).
-- When responses contain dynamic values that shouldn't break validation (use `ignoreKeys`).
-
-###### Structure:
-*`strictResponseValidation`*
-**Type:** object
-**Description:** Controls whether Loadmill should automatically generate strict validation rules (JSON Schema or JSON Contains) for each API response.
-
-The object includes the following properties:
-- *`jsonSchema`*  
-**Type:** boolean
-**Default:** false
-**Description:** Enables strict validation of the response against an auto-generated JSON Schema. Ensures the structure, types, and required fields match the expected schema.
-
-- *`jsonContains`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** Enables validation that the response contains specific fields/values.
-
-- *`ignoreKeys`*  
-**Type:** array  
-**Default:** [ ]
-**Description:** A list of keys to exclude from validation. Useful for dynamic fields (e.g., id, timestamp, uuid) that change between runs.
-
-- *`shouldValidateArrayItems`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** If true, validates each item in arrays individually.
-
-Example:
-```json
-"strictResponseValidation": {
-  "jsonSchema": true,
-  "ignoreKeys": ["id"]
-}
-```
-
-```json
-"strictResponseValidation": {
-  "jsonContains": true,
-  "ignoreKeys": ["teamLabelsToIgnore", "name"],
-  "shouldValidateArrayItems": true
-}
-```
----
 ### Automatic Polling by URL
 Defines **automatic polling loops** for endpoints matching specific URL patterns.
 
@@ -211,31 +160,31 @@ Defines **automatic polling loops** for endpoints matching specific URL patterns
 
 ###### Structure:
 
-*`automaticLoops`*
-**Type:** array
-**Description:**  An array where each item defines the conditions under which an automatic loop should be added 
+**`automaticLoops`** *array*
+
+An array where each item defines the conditions under which an automatic loop should be added.
 
 Each item in the array contains:
-- *`url`*:  
-  **Type:** string
-  **Description:** Regex pattern to match the request URL.
+- **`url`** *string*
 
-- *`loop`*:  
-  **Type:** object
-  **Description:** Loop configuration.
-    - *`iterations`*:  
-      **Type:** number  
-      **Description:** Number of polling attempts.
-    - *`assert`*:  
-      **Type:** `{ [assertionType: string]: string }`  
-      **Description:** Assertion to apply on each polling response.
-    - *`wait`*:  
-      **Type:** number  
-      **Description:** Wait time (ms) between iterations.
+  Regex pattern to match the request URL.
 
-- *`expectedStatus`*:  
-  **Type:** string  
-  **Description:** Expected HTTP status code (e.g., `"ANY"`).
+- **`loop`** *object*
+
+  The loop includes the following properties:
+    - **`iterations`** *number*
+
+      Number of polling attempts.
+    - **`assert`** *{ [assertionType: string]: string }*
+
+      Assertion to apply on each polling response.
+    - **`wait`** *number*
+
+      Wait time (ms) between iterations.
+
+- **`expectedStatus`** *string, Optional*
+  
+  Expected HTTP status code (e.g., `"ANY"`).
 
 Example:
 ```json
@@ -252,28 +201,56 @@ Example:
 ]
 ```
 ---
-### Keep All MIME Types
-
-Controls whether all MIME types are preserved during extraction.
+### Strict Response Validation
+Defines **strict validation** rules for API responses using JSON Schema or "JSON contains" logic.
 
 ###### When to use:
-- When you need to extract parameters from non-standard or binary MIME types.
-- To ensure no data is filtered out based on MIME type.
+- When your API response structure must be validated (schema-based testing).
+- When responses contain dynamic values that shouldn't break validation (use `ignoreKeys`).
 
 ###### Structure:
+**`strictResponseValidation`** *object*
 
-*`keepAllMimeTypes`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** If true, all MIME types are kept during extraction, including binary and custom types.
+Controls whether Loadmill should automatically generate strict validation rules (JSON Schema or JSON Contains) for each API response.
 
-Example:
+The object includes the following properties:
+- **`jsonSchema`** *boolean*
+
+  Enables strict validation of the response against an auto-generated JSON Schema. Ensures the structure, types, and required fields match the expected schema.
+
+- **`jsonContains`** *boolean*
+
+  Enables validation that the response contains specific fields/values.
+
+- **`ignoreKeys`** *array*
+
+  A list of keys to exclude from validation. Useful for dynamic fields (e.g., id, timestamp, uuid) that change between runs.
+
+- **`shouldValidateArrayItems`** *boolean*
+
+If true, validates each item in arrays individually.
+
+Examples:
 ```json
-"keepAllMimeTypes": true
+"strictResponseValidation": {
+  "jsonSchema": true,
+  "ignoreKeys": ["id"]
+}
+```
+
+```json
+"strictResponseValidation": {
+  "jsonContains": true,
+  "ignoreKeys": ["teamLabelsToIgnore", "name"],
+  "shouldValidateArrayItems": true
+}
 ```
 ---
+## Filtering and Control
+
 ### Filter Irrelevant Requests
- Controls whether to automatically remove requests that don’t impact the outcome of the test, such as telemetry, health checks, and other noise.
+
+Controls whether to automatically remove requests that don’t impact the outcome of the test, such as telemetry, health checks, and other noise.
 
 ###### When to use:
 - When HAR contains a lot of browser noise (Mixpanel, GA, LinkedIn, etc.).
@@ -281,10 +258,9 @@ Example:
 - When focusing only on business logic requests.
 
 ###### Structure:
-*`filterIrrelevantRequests`*
-**Type:** boolean  
-**Default:** true  
-**Description:** When enabled, the generated test is cleaner, more stable, and easier to debug.
+**`filterIrrelevantRequests`** *boolean, Defaults to true*  
+
+When enabled, the generated test is cleaner, more stable, and easier to debug.
 
 Example:
 ```json
@@ -292,25 +268,26 @@ Example:
 ```
 
 ---
+
 ### Filter Request by Body
+
 Filters requests according to JSONPath rules.
 
 ###### When to use:
 - When URL-based filtering is insufficient.
 - When the request body is JSON.
-- When the only reliable way to identify irrelevant requests is by inspecting the request body—for example, in GraphQL requests.
+- When the only reliable way to identify irrelevant requests is by inspecting the request body, for example, in GraphQL requests.
 
 ###### Structure:
-*`filterRequestByBody`*
-**Type:** array
-**Description:** An array of filtering rules
+**`filterRequestByBody`** *array*
+
 Each item in the array contains:
-- *`query`*:  
-  **Type:** string  
-  **Description:** JSONPath expression to match a value in the request body.
-- *`equals`*:  
-  **Type:** string  
-  **Description:** Value to compare against the result of the JSONPath query.
+- **`query`** *string*
+  
+  JSONPath expression to match a value in the request body.
+- **`equals`** *string*
+  
+  Value to compare against the result of the JSONPath query.
 
 Example:
 ```json
@@ -322,43 +299,7 @@ Example:
 ]
 ```
 ---
-### URL Blacklist
 
-Removes requests containing any of the specified substrings.
-###### When to use
-- To filter out entire domains.
-- To eliminate 3rd-party scripts (CDN, tracking, ads).
-
-###### Structure
-
-*`urlBlackList`*
-**Type:** string [ ]
-**Description:** an array of substrings. Any request URL containing one of these substrings will be excluded from the generated test.
-
-
-```json
-{
-  "urlBlackList": ["your-domain.com", "another-domain"]
-}
-```
-### Relevant URLs
-Forces these URLs not to be filtered.
-###### When to use
-* When your flow depends on URLs that look noisy but are actually important.
-* To override aggressive filtering and ensure specific endpoints are always included.
-###### Structure
-*`relevantUrls`*
-**Type:** string [ ]
-**Description:** An array of URL substrings or patterns. Any request URL containing one of these will be included in the generated test, even if it would otherwise be filtered out.
-
-Example:
-```json
-"relevantUrls": [
-  "banking/sessions/create",
-  "v1/cities"
-]
-```
----
 ### Headers Filters
 
 Removes specific headers during processing.
@@ -370,9 +311,9 @@ Removes specific headers during processing.
 
 ###### Structure:
 
-*`headersFilters`*  
-**Type:** string [ ]  
-**Description:** An array of header names or prefixes to exclude from extraction.
+**`headersFilters`** *string [ ]*
+
+An array of header names or prefixes to exclude from extraction.
 
 Example:
 ```json
@@ -386,6 +327,25 @@ Example:
 ```
 ---
 
+### Ignored Keys
+
+Skips extraction for specific keys during parameter extraction.
+
+###### When to use:
+- When certain keys are known to be irrelevant or noisy.
+
+###### Structure:
+
+**`ignoredKeys`** *string [ ]*
+
+Array of key names to ignore during extraction.
+
+Example:
+```json
+"ignoredKeys": ["irrelevantKey", "unusedField"]
+```
+---
+
 ### Ignored Values
 
 Skips extraction of trivial or unhelpful values.
@@ -395,16 +355,104 @@ Skips extraction of trivial or unhelpful values.
 
 ###### Structure:
 
-*`ignoredValues`*  
-**Type:** array  
-**Default:** `["undefined", null, "null", true, "true", false, "false"]`  
-**Description:** List of values to ignore during parameter extraction.
+**`ignoredValues`** *array, Defaults to `["undefined", null, "null", true, "true", false, "false"]`*
+
+List of values to ignore during parameter extraction.
 
 Example:
 ```json
 "ignoredValues": ["undefined", null, "null", true, "true", false, "false"]
 ```
 ---
+
+### Irrelevant GraphQL Operations
+
+Filters out irrelevant GraphQL operations that should not be included in the generated test.
+
+###### When to use:
+- When your HAR contains GraphQL requests with operations that are not relevant to your test scenario.
+- To remove noise and focus on business-critical GraphQL operations.
+
+###### Structure:
+
+**`irrelevantGraphQLOperations`** *string [ ]*
+
+Array of GraphQL operation names to exclude from extraction and test generation.
+
+Example:
+```json
+"irrelevantGraphQLOperations": [
+  "IntrospectionQuery",
+  "TelemetryEvent"
+]
+```
+---
+
+### Irrelevant Soap Actions
+
+Filters out SOAP actions that should not be included in the generated test.
+
+###### When to use:
+- When your HAR contains SOAP requests with actions that are not relevant to your test scenario.
+- To remove noise and focus on business-critical SOAP actions.
+
+###### Structure:
+
+**`irrelevantSoapActions`** *string [ ]*
+
+Array of SOAP action names to exclude from extraction and test generation.
+
+Example:
+```json
+"irrelevantSoapActions": [
+  "GetServerTime",
+  "Ping"
+]
+```
+---
+
+### Keep All MIME Types
+
+Controls whether all MIME types are preserved during extraction.
+
+###### When to use:
+- When you need to extract parameters from non-standard or binary MIME types.
+- To ensure no data is filtered out based on MIME type.
+
+###### Structure:
+
+**`keepAllMimeTypes`** *boolean*
+
+If true, all MIME types are kept during extraction, including binary and custom types.
+
+Example:
+```json
+"keepAllMimeTypes": true
+```
+---
+
+### Relevant URLs
+
+Forces these URLs not to be filtered.
+
+###### When to use
+* When your flow depends on URLs that look noisy but are actually important.
+* To override aggressive filtering and ensure specific endpoints are always included.
+
+###### Structure
+**`relevantUrls`** *string [ ]*
+
+An array of URL substrings or patterns. Any request URL containing one of these will be included in the generated test, even if it would otherwise be filtered out.
+
+Example:
+```json
+"relevantUrls": [
+  "banking/sessions/create",
+  "v1/cities"
+]
+```
+---
+
 ### Session Cut URLs
 
 Defines URL patterns where a new session should be started during test generation.
@@ -415,9 +463,9 @@ Defines URL patterns where a new session should be started during test generatio
 
 ###### Structure:
 
-*`sessionCutUrls`*  
-**Type:** string [ ]  
-**Description:** Array of URL substrings or regex patterns. When a request matches any of these, a new session is started.
+**`sessionCutUrls`** *string [ ]*
+
+Array of URL substrings or regex patterns. When a request matches any of these, a new session is started.
 
 Example:
 ```json
@@ -427,47 +475,72 @@ Example:
 ]
 ```
 ---
-### Irrelevant GraphQL Operations
-Filters out irrelevant GraphQL operations that should not be included in the generated test.
 
-###### When to use:
-- When your HAR contains GraphQL requests with operations that are not relevant to your test scenario.
-- To remove noise and focus on business-critical GraphQL operations.
+### URL Blacklist
 
-###### Structure:
+Removes requests containing any of the specified substrings.
 
-*`irrelevantGraphQLOperations`*  
-**Type:** string [ ]  
-**Description:** Array of GraphQL operation names to exclude from extraction and test generation.
+###### When to use
+- To filter out entire domains.
+- To eliminate 3rd-party scripts (CDN, tracking, ads).
+
+###### Structure
+
+**`urlBlackList`** *string [ ]*
+
+an array of substrings. Any request URL containing one of these substrings will be excluded from the generated test.
 
 Example:
 ```json
-"irrelevantGraphQLOperations": [
-  "IntrospectionQuery",
-  "TelemetryEvent"
-]
+{
+  "urlBlackList": ["your-domain.com", "another-domain"]
+}
 ```
 ---
-### Irrelevant SOAP Actions
-
-Filters out SOAP actions that should not be included in the generated test.
-
+## Data-Cleanup
+### Don't Extract From Response by URL Regex
+Skips extraction for responses whose request URL matches a pattern.
 ###### When to use:
-- When your HAR contains SOAP requests with actions that are not relevant to your test scenario.
-- To remove noise and focus on business-critical SOAP actions.
+- When some endpoints return noisy or irrelevant payloads.
 
 ###### Structure:
+**`dontExtractFromResponseByURLRegex`** *string [ ]*
 
-*`irrelevantSoapActions`*  
-**Type:** string [ ]  
-**Description:** Array of SOAP action names to exclude from extraction and test generation.
+Array of regex patterns. Extraction is skipped for responses matching these patterns.
 
 Example:
 ```json
-"irrelevantSoapActions": [
-  "GetServerTime",
-  "Ping"
-]
+"dontExtractFromResponseByURLRegex": ["pattern1", "pattern2"]
+```
+---
+### Keep Original Values
+Prevents extraction for matching URLs.
+###### When to use:
+- When there are fixed values that you don't want to replace with parameters.
+
+###### Structure:
+**`keepOriginalValues`** *string [ ]*
+
+Array of URL patterns for which values should not be replaced with parameters.
+
+Example:
+```json
+"keepOriginalValues": ["/internal/status"]
+```
+---
+### Max Entities of Same Type
+Limits how many identical keys are extracted from a single request.
+###### When to use
+- When responses include many repetitive objects.
+
+###### Structure:
+**`maxEntitiesOfSameType`** *number, Defaults to 15*
+
+Maximum number of identical keys to extract per request.
+
+Example:
+```json
+"maxEntitiesOfSameType": 15
 ```
 ---
 ### Reduce Global Parameters
@@ -480,63 +553,16 @@ Controls extraction of global parameters to prevent excessive or irrelevant para
 
 ###### Structure:
 
-*`reduceGlobalParameters`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** When enabled, limits extraction of global parameters to only those that are relevant.
+**`reduceGlobalParameters`** *boolean, Defaults to false*
+
+When enabled, limits extraction of global parameters to only those that are relevant.
 
 Example:
 ```json
 "reduceGlobalParameters": true
 ```
 ---
-#### Keep Original Values
-Prevents extraction for matching URLs.
-###### When to use:
-- When there are fixed values that you don't want to replace with parameters.
-
-###### Structure:
-*`keepOriginalValues`*
-**Type:** string [ ]  
-**Description:** Array of URL patterns for which values should not be replaced with parameters.
-
-Example:
-```json
-"keepOriginalValues": ["/internal/status"]
-```
----
-
-### Don\'t Extract From Response by URL Regex
-Skips extraction for responses whose request URL matches a pattern.
-###### When to use:
-- When some endpoints return noisy or irrelevant payloads.
-
-###### Structure:
-*`dontExtractFromResponseByURLRegex`*
-**Type:** string [ ]  
-**Description:** Array of regex patterns. Extraction is skipped for responses matching these patterns.
-
-Example:
-```json
-"dontExtractFromResponseByURLRegex": ["pattern1", "pattern2"]
-```
----
-### Max Entities of Same Type
-Limits how many identical keys are extracted from a single request.
-###### When to use
-- When responses include many repetitive objects.
-
-###### Structure:
-*`maxEntitiesOfSameType`*
-**Type:** number  
-**Default:** 15
-**Description:** Maximum number of identical keys to extract per request.
-
-Example:
-```json
-"maxEntitiesOfSameType": 15
-```
----
+# Structure and Semantics
 ### Fields Hierarchy
 
 Defines how extracted JSONPaths use attribute-based selectors instead of index-based selectors for improved stability.
@@ -547,34 +573,13 @@ Defines how extracted JSONPaths use attribute-based selectors instead of index-b
 
 ###### Structure:
 
-*`fieldsHierarchy`*  
-**Type:** string [ ]  
-**Description:** Array of field names. When present, extraction paths will use attribute-based selectors for these fields.
+**`fieldsHierarchy`** *string [ ]*
+
+Array of field names. When present, extraction paths will use attribute-based selectors for these fields.
 
 Example:
 ```json
 "fieldsHierarchy": ["name", "title"]
-```
----
-### JSONPath Ignored Keys
-
-Defines patterns for dynamic key segments (such as UUIDs or timestamps) that should be replaced with recursive descent (`..`) in generated JSONPath expressions, improving stability.
-
-###### When to use:
-- When dynamic map keys (such as UUIDs or timestamps) make JSONPath expressions unstable.
-- To simplify extraction paths and avoid brittle selectors.
-
-###### Structure:
-
-*`jsonpathIgnoredKeys`*  
-**Type:** string [ ]  
-**Description:** Array of regex patterns. Any key matching a pattern will be replaced with recursive descent in JSONPath.
-
-Example:
-```json
-"jsonpathIgnoredKeys": [
-  "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
-]
 ```
 ---
 ### jQuery Ignored Elements
@@ -587,32 +592,53 @@ Skips extraction for specific HTML elements when generating jQuery selectors.
 
 ###### Structure:
 
-*`jqueryIgnoredElements`*  
-**Type:** string [ ]  
-**Description:** Array of HTML element names to ignore during jQuery selector generation.
+**`jqueryIgnoredElements`** *string [ ]*
+
+Array of HTML element names to ignore during jQuery selector generation.
 
 Example:
 ```json
 "jqueryIgnoredElements": ["tbody"]
 ```
 ---
-### Search Unique Values
+### JSONPath Ignored Keys
 
-Detects unique values and their reoccurrences based on their values, not just their keys or context.
+Skips extraction for specific HTML elements when generating jQuery selectors.
 
 ###### When to use:
-- When you want to identify unique values according to their actual content, regardless of their field names or context.
+- When invalid HTML causes Loadmill to fix the markup and generate selectors on the corrected structure.
+- When you want to avoid extracting or interacting with certain elements, even after HTML correction.
 
 ###### Structure:
 
-*`searchUniqValues`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** When enabled, the algorithm will detect and correlate unique values wherever they appear.
+**`jqueryIgnoredElements`** *string [ ]*
+
+Array of HTML element names to ignore during jQuery selector generation.
 
 Example:
 ```json
-"searchUniqValues": true
+"jqueryIgnoredElements": ["tbody"]
+```
+---
+## Parameter Detection
+
+### Custom Identifiers
+
+Adds custom identifier field names (case-insensitive) for parameter extraction.
+
+###### When to use:
+- When your system uses nonstandard naming for ID fields.
+- To ensure custom identifier fields are prioritized during extraction and correlation.
+
+###### Structure:
+
+**`customIdentifiers`** *string [ ]*
+
+Array of field names (case-insensitive) to treat as identifiers during extraction.
+
+Example:
+```json
+"customIdentifiers": ["testSuiteCard", "orderNumber"]
 ```
 ---
 ### Custom Uniqueness
@@ -623,17 +649,17 @@ Detects unique values and their reoccurrences by specifying keys and regex patte
 - When a key contains a unique and important value that should be replaced everywhere it appears.
 
 ###### Structure:
-*`customUniqueness`*
-**Type:** array
-**Description:** An array where each item contains rules that define unique values
+**`customUniqueness`** *array*
+
+An array where each item contains rules that define unique values.
 
 Each item in the array contains:
-- *`key`*:  
-  **Type:** string  
-  **Description:** The key whose value should be detected as unique.
-- *`regex`*:  
-  **Type:** string  
-  **Description:** Regex pattern to match the unique value.
+- **`key`** *string, Optional*
+  
+  The key whose value should be detected as unique.
+- **`regex`** *string*
+  
+  Regex pattern to match the unique value.
 
 Example:
 ```json
@@ -645,26 +671,6 @@ Example:
 ]
 ```
 ---
-### Non-Secret Keys
-
-Defines keys whose values are considered non-sensitive and will be extracted and recorded even when operating in secure mode.
-
-###### When to use:
-- When using a backend recordings.
-- When you want to ensure certain values are always extracted, even in secure recording.
-- When specific keys do not contain secrets and should be included for correlation or debugging.
-
-###### Structure:
-
-*`nonSecretKeys`*  
-**Type:** string [ ]  
-**Description:** Array of key names whose values are safe to extract and record.
-
-Example:
-```json
-"nonSecretKeys": ["sessionId", "userId"]
-```
----
 ### Default Values
 
 Assigns fallback values to specific fields during test generation.
@@ -674,20 +680,20 @@ Assigns fallback values to specific fields during test generation.
 - When fixed values must be replaced with dynamic ones (e.g., timestamps, dates, random IDs).
 
 ###### Structure:
-*`defaultValues`*
-**Type:** array
-**Description:** an array where each item contains rules that define how to extract parameters and assign them a default value.
+**`defaultValues`** *array*
+
+an array where each item contains rules that define how to extract parameters and assign them a default value.
 
 Each item in the array contains:
-- *`selector`*:  
-  **Type:** string  
-  **Description:** The key to identify the field.
-- *`value`*:  
-  **Type:** string  
-  **Description:** The fallback value to assign.
-- *`name`*:  
-  **Type:** string  
-  **Description:** The parameter name to use for correlation.
+- **`selector`** *string*
+  
+  The key to identify the field.
+- **`value`** *string*
+  
+  The fallback value to assign.
+- **`name`** *string*
+  
+  The parameter name to use for correlation.
 
 Example:
 ```json
@@ -700,76 +706,23 @@ Example:
 ]
 ```  
 ---
-### Value Holder Key Map
+### Include Failed Requests
 
-Extracts nested values when a key contains an object instead of a primitive.
-
-###### When to use:
-- When a field stores a nested object instead of a primitive.
-
-###### Structure:
-*`valueHolderKeyMap`*
-**Type:** array 
-**Description:** an array where each item contains rules for extracting parameters whose value is located inside one of their nested fields.
-
-Each item in the array contains:
-- *`containerKey`*:  
-  **Type:** string  
-  **Description:** The key whose value is an object containing the actual value.
-- *`valueKey`*:  
-  **Type:** string  
-  **Description:** The key inside the object that holds the value to extract.
-
-Example:
-```json
-"valueHolderKeyMap": [
-  { "containerKey": "password", "valueKey": "text" },
-  { "containerKey": "id", "valueKey": "value" }
-]
-```
----
-### Synonyms
-
-Maps different key names to unify correlation and extraction.
+Includes failed HTTP requests in the generated test.
 
 ###### When to use:
-- When different endpoints use different naming conventions for the same logical identifier.
-- To unify extraction and correlation of values across APIs with inconsistent field names.
+- For debugging flows where failures are expected or important.
+- When you want to analyze and reproduce error scenarios.
 
 ###### Structure:
 
-*`synonyms`*  
-**Type:** array  
-**Default:** [ ]  
-**Description:** Each item is an array of key names that should be treated as synonyms for correlation and extraction.
+**`includeFailedRequests`** *boolean, Defaults to false*
+
+When enabled, failed HTTP requests (non-2xx responses) are included in the generated test.
 
 Example:
 ```json
-"synonyms": [
-  ["sku", "product"],
-  ["amountPaid", "totalAmountPaid", "totalAmount"],
-  ["customerQuoteTime", "delivery"]
-]
-```
----
-### Special Keys
-
-Always extracts these keys from the request body, regardless of other extraction settings.
-
-###### When to use:
-- When `reduceGlobalParameters` is off and you still want to extract certain keys from the request body.
-
-###### Structure:
-
-*`specialKeys`*  
-**Type:** string [ ]  
-**Description:** Array of key names to always extract from the request body.
-
-Example:
-```json
-"specialKeys": [
-  "totalAmount", "delivery", "customerQuoteTime", "subtotalAmount"
-]
+"includeFailedRequests": true
 ```
 ---
 ### Keys Value as Key
@@ -781,9 +734,9 @@ Treats the value of a key as a parameter.
 
 ###### Structure:
 
-*`keysValueAsKey`*  
-**Type:** string [ ]  
-**Description:** Array of key names whose values should be treated as parameters.
+**`keysValueAsKey`** *string [ ]*
+
+Array of key names whose values should be treated as parameters.
 
 Example:
 ```json
@@ -799,48 +752,13 @@ Controls the maximum response size (in bytes) that the system will process for p
 
 ###### Structure:
 
-*`maxResponseContentByteSize`*  
-**Type:** number  
-**Default:** 250000
-**Description:** Maximum response size (in bytes) that will be processed for extraction.
+**`maxReponseContentByteSize`** *number, Default: 3000000*
+
+Maximum response size (in bytes) that will be processed for extraction.
 
 Example:
 ```json
-"maxResponseContentByteSize": 250000
-```
----
-### Response Regex Extractors
-
-Extracts values from response bodies using regex capturing groups.
-
-###### When to use:
-- When you need to extract and correlate a value from the response body that cannot be accessed using standard extraction methods (e.g., not available via JSONPath).
-
-###### Structure:
-*`responseRegexExtractors`*
-**Type:** array  
-**Description:** an array where each item contains rules for extracting parameters from the response body using regex.
-
-Each item in the array contains:
-- *`regex`*:  
-  **Type:** string  
-  **Description:** Regex pattern with capturing groups to extract the desired value from the response body.
-- *`name`*:  
-  **Type:** string  
-  **Description:** The parameter name to assign to the extracted value.
-- *`forceExtract`*:  
-  **Type:** boolean  
-  **Default:** false  
-  **Description:** If true, always extract the value even if it only appears once and has no correlations.
-
-Example:
-```json
-"responseRegexExtractors": [
-  {
-    "name": "refresh_token_id",
-    "forceExtract": false
-  }
-]
+"maxReponseContentByteSize": 3000000
 ```
 ---
 ### Nested Value Decoding
@@ -851,17 +769,17 @@ Parses and extracts parameters from fields containing stringified JSON objects.
 - When a field contains a stringified JSON object that needs to be parsed for parameter extraction and correlation.
 
 ###### Structure:
-*`nestedValueDecoding`*
-**Type:** array
-**Description:** an array where each item contains rules specifying which keys in the response body should undergo additional parsing.
+**`nestedValueDecoding`** *array*
+
+an array where each item contains rules specifying which keys in the response body should undergo additional parsing.
 
 Each item in the array contains:
-- *`key`*:  
-  **Type:** string  
-  **Description:** The key whose value is a stringified JSON object.
-- *`type`*:  
-  **Type:** string  
-  **Description:** The format of the nested value (e.g., `"JSON"`).
+- **`key`** *string*
+  
+  The key whose value is a stringified JSON object.
+- **`type`** *string*
+  
+  The format of the nested value (e.g., `"JSON"`).
 
 Example:
 ```json
@@ -873,44 +791,168 @@ Example:
 ]
 ```
 ---
-### Custom Identifiers
+### Non-Secret Keys
 
-Adds custom identifier field names (case-insensitive) for parameter extraction.
+Defines keys whose values are considered non-sensitive and will be extracted and recorded even when operating in secure mode.
 
 ###### When to use:
-- When your system uses nonstandard naming for ID fields.
-- To ensure custom identifier fields are prioritized during extraction and correlation.
+- When using a backend recordings.
+- When you want to ensure certain values are always extracted, even in secure recording.
+- When specific keys do not contain secrets and should be included for correlation or debugging.
 
 ###### Structure:
 
-*`customIdentifiers`*  
-**Type:** string [ ]  
-**Description:** Array of field names (case-insensitive) to treat as identifiers during extraction.
+**`nonSecretKeys`** *string [ ]*
+
+Array of key names whose values are safe to extract and record.
 
 Example:
 ```json
-"customIdentifiers": ["testSuiteCard", "orderNumber"]
+"nonSecretKeys": ["sessionId", "userId"]
 ```
 ---
-### Include Failed Requests
+### Response Regex Extractors
 
-Includes failed HTTP requests in the generated test.
+Extracts values from response bodies using regex capturing groups.
 
 ###### When to use:
-- For debugging flows where failures are expected or important.
-- When you want to analyze and reproduce error scenarios.
+- When you need to extract and correlate a value from the response body that cannot be accessed using standard extraction methods (e.g., not available via JSONPath).
 
 ###### Structure:
+**`responseRegexExtractors`** *array*
 
-*`includeFailedRequests`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** When enabled, failed HTTP requests (non-2xx responses) are included in the generated test.
+an array where each item contains rules for extracting parameters from the response body using regex.
+
+Each item in the array contains:
+- **`regex`** *string*
+  
+  Regex pattern with capturing groups to extract the desired value from the response body.
+- **`name`** *string*
+  
+  The parameter name to assign to the extracted value.
+- **`forceExtract`** *boolean, Optional, Defaults to false*
+  
+  If true, always extract the value even if it only appears once and has no correlations.
 
 Example:
 ```json
-"includeFailedRequests": true
+"responseRegexExtractors": [
+  {
+    "name": "refresh_token_id",
+    "forceExtract": false
+  }
+]
 ```
+---
+### Search Unique Values
+
+Detects unique values and their reoccurrences based on their values, not just their keys or context.
+
+###### When to use:
+- When you want to identify unique values according to their actual content, regardless of their field names or context.
+
+###### Structure:
+
+**`searchUniqValues`** *boolean, Defaults to false*
+
+When enabled, the algorithm will detect and correlate unique values wherever they appear.
+
+Example:
+```json
+"searchUniqValues": true
+```
+---
+### Special Keys
+
+Always extracts these keys from the request body, regardless of other extraction settings.
+
+###### When to use:
+- When `reduceGlobalParameters` is off and you still want to extract certain keys from the request body.
+
+###### Structure:
+
+**`specialKeys`** *string [ ]*
+
+Array of key names to always extract from the request body.
+
+Example:
+```json
+"specialKeys": [
+  "totalAmount", "delivery", "customerQuoteTime", "subtotalAmount"
+]
+```
+---
+### Synonyms
+
+Maps different key names to unify correlation and extraction.
+
+###### When to use:
+- When different endpoints use different naming conventions for the same logical identifier.
+- To unify extraction and correlation of values across APIs with inconsistent field names.
+
+###### Structure:
+
+**`synonyms`** *array*
+
+Each item is an array of key names that should be treated as synonyms for correlation and extraction.
+
+Example:
+```json
+"synonyms": [
+  ["sku", "product"],
+  ["amountPaid", "totalAmountPaid", "totalAmount"],
+  ["customerQuoteTime", "delivery"]
+]
+```
+---
+### Value Holder Key Map
+
+Extracts nested values when a key contains an object instead of a primitive.
+
+###### When to use:
+- When a field stores a nested object instead of a primitive.
+
+###### Structure:
+**`valueHolderKeyMap`** *array*
+
+an array where each item contains rules for extracting parameters whose value is located inside one of their nested fields.
+
+Each item in the array contains:
+- **`containerKey`** *string*
+  
+  The key whose value is an object containing the actual value.
+- **`valueKey`** *string*
+  
+  The key inside the object that holds the value to extract.
+
+Example:
+```json
+"valueHolderKeyMap": [
+  { "containerKey": "password", "valueKey": "text" },
+  { "containerKey": "id", "valueKey": "value" }
+]
+```
+---
+## Advanced and Serialization Settings
+
+### Allow Dots
+
+Controls whether dots (`.`) are allowed in parameter names.
+
+###### When to use:
+- When parameter names may safely contain dots (e.g., `user.name`).
+- To support APIs or systems that use dotted notation for keys.
+
+###### Structure:
+
+**`allowDots`** *boolean, Defaults to false*
+
+If true, allows dots in parameter names during extraction and correlation.
+
+Example:
+```json
+"allowDots": false
+```  
 ---
 ### Array Format
 
@@ -922,75 +964,14 @@ Controls how arrays are serialized in URL-encoded form.
 
 ###### Structure:
 
-*`arrayFormat`*  
-**Type:** string  
+**`arrayFormat`** *string, Defaults to "indices"*
 **Allowed values:** "indices" | "brackets" | "repeat"
-**Default:** "indices"
-**Description:** Specifies the serialization format for arrays in URL-encoded bodies.
+
+Specifies the serialization format for arrays in URL-encoded bodies.
 
 Example:
 ```json
 "arrayFormat": "indices"
-```
----
-### Split Origin
-
-Separates origins into host and protocol components.
-
-###### When to use:
-- When combining HAR files from backend recordings.
-- To ensure requests are grouped and processed by their actual origin.
-
-###### Structure:
-
-*`splitOrigin`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** If enabled, splits the origin into host and protocol for more granular processing.
-
-Example:
-```json
-"splitOrigin": false
-```
----
-### Allow Dots
-
-Controls whether dots (`.`) are allowed in parameter names.
-
-###### When to use:
-- When parameter names may safely contain dots (e.g., `user.name`).
-- To support APIs or systems that use dotted notation for keys.
-
-###### Structure:
-
-*`allowDots`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** If true, allows dots in parameter names during extraction and correlation.
-
-Example:
-```json
-"allowDots": false
-```  
----
-### Prettify Request Body
-
-Controls formatting of request bodies in the generated YAML output.
-
-###### When to use:
-- When you want readable, formatted JSON bodies in your test output.
-- When performance snapshots require compact bodies (disable prettification).
-
-###### Structure:
-
-*`prettifyRequestBody`*  
-**Type:** boolean  
-**Default:** true  
-**Description:** If true, pretty-prints large JSON bodies in output YAML for readability. If false, leaves request bodies compact (not formatted).
-
-Example:
-```json
-"prettifyRequestBody": true
 ```
 ---
 ### Decode URL-Encoded Body
@@ -1003,14 +984,51 @@ Enables decoding of request bodies with `application/x-www-form-urlencoded` cont
 
 ###### Structure:
 
-*`decodeUrlEncodedBody`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** If true, decodes URL-encoded request bodies for parameter extraction.
+**`decodeUrlEncodedBody`** *boolean, Defaults to false* 
+
+If true, decodes URL-encoded request bodies for parameter extraction.
 
 Example:
 ```json
 "decodeUrlEncodedBody": true
+```
+---
+### Prettify Request Body
+
+Controls formatting of request bodies in the generated YAML output.
+
+###### When to use:
+- When you want readable, formatted JSON bodies in your test output.
+- When performance snapshots require compact bodies (disable prettification).
+
+###### Structure:
+
+**`prettifyRequestBody`** *boolean, Defaults to true*
+
+If true, pretty-prints large JSON bodies in output YAML for readability. If false, leaves request bodies compact (not formatted).
+
+Example:
+```json
+"prettifyRequestBody": true
+```
+---
+### Split Origin
+
+Separates origins into host and protocol components.
+
+###### When to use:
+- When combining HAR files from backend recordings.
+- To ensure requests are grouped and processed by their actual origin.
+
+###### Structure:
+
+**`splitOrigin`** *boolean, Defaults to false*
+
+If enabled, splits the origin into host and protocol for more granular processing.
+
+Example:
+```json
+"splitOrigin": false
 ```
 ---
 ### XML Decode
@@ -1022,16 +1040,16 @@ Enables decoding of special formats from systems like Priority ERP (not standard
 
 ###### Structure:
 
-*`xmlDecode`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** If true, enables decoding and extraction from non-standard XML formats.
+**`xmlDecode`** *boolean, Defaults to false*
+
+If true, enables decoding and extraction from non-standard XML formats.
 
 Example:
 ```json
 "xmlDecode": true
 ```
 ---
+## Uniqueness and Extraction Controls
 ### ID Prioritization
 
 Prioritizes extraction of parameters whose keys match known or custom identifier fields (such as `id`, `uuid`, or those defined in `customIdentifiers`) when multiple candidates exist in an object or array.
@@ -1042,10 +1060,9 @@ Prioritizes extraction of parameters whose keys match known or custom identifier
 
 ###### Structure:
 
-*`idPrioritization`*  
-**Type:** boolean  
-**Default:** false  
-**Description:** If true, extraction will prioritize keys matching identifier fields (e.g., `id`, `uuid`, or those in `customIdentifiers`) over other candidates.
+**`idPrioritization`** *boolean, Defaults to false*
+
+If true, extraction will prioritize keys matching identifier fields (e.g., `id`, `uuid`, or those in `customIdentifiers`) over other candidates.
 
 Example:
 ```json
@@ -1062,14 +1079,49 @@ Limits the maximum length of a value considered for uniqueness detection.
 
 ###### Structure:
 
-*`maxUniquenessLength`*  
-**Type:** number  
-**Default:**  40
-**Description:** Maximum length (in characters) of a value to be considered for uniqueness detection. Values longer than this will be ignored.
+**`maxUniquenessLength`** *number, Defaults to 40*
+
+Maximum length (in characters) of a value to be considered for uniqueness detection. Values longer than this will be ignored.
 
 Example:
 ```json
 "maxUniquenessLength": 40
+```
+---
+## Post Processing Editing
+### Regex Replacers
+
+Extracts values from requests using regex capturing groups.
+
+###### When to use:
+- When values do not appear in JSON at all (e.g., tokens inside headers or raw bodies).
+- When there is a repeated value that was not extracted into a parameter.
+
+###### Structure:
+
+**`regexReplacers`** *array*
+
+an array where each item contains a regex that, if matched, should create a parameter for it.
+Each item in the array contains:
+- **`name`** *string*
+  
+  The parameter name to assign to the extracted value.
+- **`regex`** *string*
+  
+  Regex pattern with capturing groups to extract the desired value from the request.
+- **`reuse`** *boolean, Optional, Defaults to false*  
+  
+  If true, reuses an existing parameter even when the values are different.
+
+Example:
+```json
+"regexReplacers": [
+  {
+    "name": "auth_token",
+    "regex": "eyJhbGciOi.*",
+    "reuse": true
+  }
+]
 ```
 ---
 ### YAML Regex Replacers
@@ -1081,21 +1133,20 @@ post-processing regex replacements on the generated YAML output.
 
 ###### Structure:
 
-*`yamlRegexReplacers`*
-**Type:** array
-**Description:** an array where each item contains rules specifying which changes should be applied to the generated YAML.
+**`yamlRegexReplacers`** *array*
+
+an array where each item contains rules specifying which changes should be applied to the generated YAML.
 
 Each item in the array contains:
-- *`regex`*:  
-  **Type:** string  
-  **Description:** Regex pattern to match in the YAML output.
-- *`replace`*:  
-  **Type:** string  
-  **Description:** Replacement string to substitute for matches.
-- *`flags`*:  
-  **Type:** string  
-  **Default:** ""
-  **Description:** Regex flags (e.g., `"g"` for global, `"i"` for case-insensitive).
+- **`regex`** *string*
+  
+  Regex pattern to match in the YAML output.
+- **`replace`** *string*
+  
+  Replacement string to substitute for matches.
+- **`flags`** *string, Defaults to ""*
+  
+  Regex flags (e.g., `"g"` for global, `"i"` for case-insensitive).
 
 Example:
 ```json
@@ -1104,42 +1155,6 @@ Example:
     "regex": "password: \".*\"",
     "replace": "password: \"***\"",
     "flags": "g"
-  }
-]
-```
----
-### Regex Replacers
-
-Extracts values from requests using regex capturing groups.
-
-###### When to use:
-- When values do not appear in JSON at all (e.g., tokens inside headers or raw bodies).
-- When there is a repeated value that was not extracted into a parameter.
-
-###### Structure:
-
-*`regexReplacers`*
-**Type:** array
-**Description:** an array where each item contains a regex that, if matched, should create a parameter for it.
-Each item in the array contains:
-- *`name`*:  
-  **Type:** string  
-  **Description:** The parameter name to assign to the extracted value.
-- *`regex`*:  
-  **Type:** string  
-  **Description:** Regex pattern with capturing groups to extract the desired value from the request.
-- *`reuse`*:  
-  **Type:** boolean  
-  **Default:** false  
-  **Description:** If true, reuses an existing parameter even when the values are different.
-
-Example:
-```json
-"regexReplacers": [
-  {
-    "name": "auth_token",
-    "regex": "eyJhbGciOi.*",
-    "reuse": true
   }
 ]
 ```
