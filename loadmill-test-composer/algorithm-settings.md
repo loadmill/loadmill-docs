@@ -18,7 +18,7 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 - [Automatic Polling by URL](#automatic-polling-by-url)
 - [Strict Response Validation](#strict-response-validation)
 
-#### 2. [Filtering & Control](#filtering--control)
+#### 2. [Filtering & Control](#filtering-and-control)
 - [Filter Irrelevant Requests](#filter-irrelevant-requests)
 - [Filter Request by Body](#filter-request-by-body)
 - [Headers Filters](#headers-filters)
@@ -37,7 +37,7 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 - [Max Entities of Same Type](#max-entities-of-same-type)
 - [Reduce Global Parameters](#reduce-global-parameters)
 
-#### 4. [Structure & Semantics](#structure--semantics)
+#### 4. [Structure & Semantics](#structure-and-semantics)
 - [Fields Hierarchy](#fields-hierarchy)
 - [JQuery Ignored Elements](#jquery-ignored-elements)
 - [JSONPath Ignored Keys](#jsonpath-ignored-keys)
@@ -57,7 +57,7 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 - [Synonyms](#synonyms)
 - [Value Holder Key Map](#value-holder-key-map)
 
-#### 6. [Advanced & Serialization Settings](#advanced--serialization-settings)
+#### 6. [Advanced & Serialization Settings](#advanced-and-serialization-settings)
 
 - [Allow Dots](#allow-dots)
 - [Array Format](#array-format)
@@ -66,7 +66,7 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 - [Split Origin](#split-origin)
 - [Xml Decode](#xml-decode)
 
-#### 7. [Uniqueness & Extraction Controls](#uniqueness--extraction-controls)
+#### 7. [Uniqueness & Extraction Controls](#uniqueness-and-extraction-controls)
 - [ID Prioritization](#id-prioritization)
 - [Max Uniqueness Length](#max-uniqueness-length)
 
