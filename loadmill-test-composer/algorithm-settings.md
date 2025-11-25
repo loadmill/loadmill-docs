@@ -11,7 +11,7 @@ To apply or modify these configurations, go to the Algorithm page in Loadmill an
 
 Then, edit or add the relevant rules in the appropriate JSON properties.
 
-## Table of Contents
+## [Table of Contents](#table-of-contents)
 #### 1. [Assertions](#assertions)
 - [Automatic Assertions](#automatic-assertions)
 - [Automatic Assertions by URL](#automatic-assertions-by-url)
