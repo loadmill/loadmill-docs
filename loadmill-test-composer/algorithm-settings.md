@@ -11,7 +11,7 @@ To apply or modify these configurations, go to the Algorithm page in Loadmill an
 
 Then, edit or add the relevant rules in the appropriate JSON properties.
 
-## Table of Contents
+## Table of Contents {#toc}
 #### 1. [Assertions](#assertions)
 - [Automatic Assertions](#automatic-assertions)
 - [Automatic Assertions by URL](#automatic-assertions-by-url)
@@ -246,7 +246,7 @@ Examples:
 }
 ```
 ---
-## Filtering and Control
+## Filtering & Control
 
 ### Filter Irrelevant Requests
 
@@ -562,7 +562,7 @@ Example:
 "reduceGlobalParameters": true
 ```
 ---
-# Structure and Semantics
+## Structure & Semantics
 ### Fields Hierarchy
 
 Defines how extracted JSONPaths use attribute-based selectors instead of index-based selectors for improved stability.
@@ -752,13 +752,13 @@ Controls the maximum response size (in bytes) that the system will process for p
 
 ###### Structure:
 
-**`maxReponseContentByteSize`** *number, Default: 3000000*
+**`maxResponseContentByteSize`** *number, Defaults of 3000000*
 
 Maximum response size (in bytes) that will be processed for extraction.
 
 Example:
 ```json
-"maxReponseContentByteSize": 3000000
+"maxResponseContentByteSize": 3000000
 ```
 ---
 ### Nested Value Decoding
@@ -933,7 +933,7 @@ Example:
 ]
 ```
 ---
-## Advanced and Serialization Settings
+## Advanced & Serialization Settings
 
 ### Allow Dots
 
@@ -1049,7 +1049,7 @@ Example:
 "xmlDecode": true
 ```
 ---
-## Uniqueness and Extraction Controls
+## Uniqueness & Extraction Controls
 ### ID Prioritization
 
 Prioritizes extraction of parameters whose keys match known or custom identifier fields (such as `id`, `uuid`, or those defined in `customIdentifiers`) when multiple candidates exist in an object or array.
