@@ -11,14 +11,14 @@ To apply or modify these configurations, go to the Algorithm page in Loadmill an
 
 Then, edit or add the relevant rules in the appropriate JSON properties.
 
-## [Table of Contents](#table-of-contents)
+## Table of Contents {#toc}
 #### 1. [Assertions](#assertions)
 - [Automatic Assertions](#automatic-assertions)
 - [Automatic Assertions by URL](#automatic-assertions-by-url)
 - [Automatic Polling by URL](#automatic-polling-by-url)
 - [Strict Response Validation](#strict-response-validation)
 
-#### 2. [Filtering & Control](#filtering-and-control)
+#### 2. [Filtering & Control](#filtering--control)
 - [Filter Irrelevant Requests](#filter-irrelevant-requests)
 - [Filter Request by Body](#filter-request-by-body)
 - [Headers Filters](#headers-filters)
@@ -37,7 +37,7 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 - [Max Entities of Same Type](#max-entities-of-same-type)
 - [Reduce Global Parameters](#reduce-global-parameters)
 
-#### 4. [Structure & Semantics](#structure-and-semantics)
+#### 4. [Structure & Semantics](#structure--semantics)
 - [Fields Hierarchy](#fields-hierarchy)
 - [JQuery Ignored Elements](#jquery-ignored-elements)
 - [JSONPath Ignored Keys](#jsonpath-ignored-keys)
@@ -57,7 +57,7 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 - [Synonyms](#synonyms)
 - [Value Holder Key Map](#value-holder-key-map)
 
-#### 6. [Advanced & Serialization Settings](#advanced-and-serialization-settings)
+#### 6. [Advanced & Serialization Settings](#advanced--serialization-settings)
 
 - [Allow Dots](#allow-dots)
 - [Array Format](#array-format)
@@ -66,7 +66,7 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 - [Split Origin](#split-origin)
 - [Xml Decode](#xml-decode)
 
-#### 7. [Uniqueness & Extraction Controls](#uniqueness-and-extraction-controls)
+#### 7. [Uniqueness & Extraction Controls](#uniqueness--extraction-controls)
 - [ID Prioritization](#id-prioritization)
 - [Max Uniqueness Length](#max-uniqueness-length)
 
@@ -246,7 +246,7 @@ Examples:
 }
 ```
 ---
-## Filtering and Control
+## Filtering & Control
 
 ### Filter Irrelevant Requests
 
@@ -562,7 +562,7 @@ Example:
 "reduceGlobalParameters": true
 ```
 ---
-## Structure and Semantics
+## Structure & Semantics
 ### Fields Hierarchy
 
 Defines how extracted JSONPaths use attribute-based selectors instead of index-based selectors for improved stability.
@@ -933,7 +933,7 @@ Example:
 ]
 ```
 ---
-## Advanced and Serialization Settings
+## Advanced & Serialization Settings
 
 ### Allow Dots
 
@@ -1049,7 +1049,7 @@ Example:
 "xmlDecode": true
 ```
 ---
-## Uniqueness and Extraction Controls
+## Uniqueness & Extraction Controls
 ### ID Prioritization
 
 Prioritizes extraction of parameters whose keys match known or custom identifier fields (such as `id`, `uuid`, or those defined in `customIdentifiers`) when multiple candidates exist in an object or array.
