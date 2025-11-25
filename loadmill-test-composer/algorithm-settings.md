@@ -562,7 +562,7 @@ Example:
 "reduceGlobalParameters": true
 ```
 ---
-# Structure and Semantics
+## Structure and Semantics
 ### Fields Hierarchy
 
 Defines how extracted JSONPaths use attribute-based selectors instead of index-based selectors for improved stability.
@@ -752,13 +752,13 @@ Controls the maximum response size (in bytes) that the system will process for p
 
 ###### Structure:
 
-**`maxReponseContentByteSize`** *number, Default: 3000000*
+**`maxResponseContentByteSize`** *number, Defaults of 3000000*
 
 Maximum response size (in bytes) that will be processed for extraction.
 
 Example:
 ```json
-"maxReponseContentByteSize": 3000000
+"maxResponseContentByteSize": 3000000
 ```
 ---
 ### Nested Value Decoding
