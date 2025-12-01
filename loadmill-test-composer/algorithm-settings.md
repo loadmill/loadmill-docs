@@ -603,21 +603,23 @@ Example:
 ---
 ### JSONPath Ignored Keys
 
-Skips extraction for specific HTML elements when generating jQuery selectors.
+Defines patterns for dynamic key segments (such as UUIDs or timestamps) that should be replaced with recursive descent (`..`) in generated JSONPath expressions.
 
 ###### When to use:
-- When invalid HTML causes Loadmill to fix the markup and generate selectors on the corrected structure.
-- When you want to avoid extracting or interacting with certain elements, even after HTML correction.
+- When dynamic map keys (such as UUIDs or timestamps) make JSONPath expressions unstable.
+- To simplify extraction paths and avoid brittle selectors.
 
 ###### Structure:
 
-**`jqueryIgnoredElements`** *string [ ]*
+**`jsonpathIgnoredKeys`**  *string [ ]*
 
-Array of HTML element names to ignore during jQuery selector generation.
+Array of regex patterns. Any key matching a pattern will be replaced with recursive descent in JSONPath.
 
 Example:
 ```json
-"jqueryIgnoredElements": ["tbody"]
+"jsonpathIgnoredKeys": [
+  "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+]
 ```
 ---
 ## Parameter Detection
