@@ -24,8 +24,9 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 - [Headers Filters](#headers-filters)
 - [Ignored Keys](#ignored-keys)
 - [Ignored Values](#ignored-values)
+- [Irrelevant Aura Actions](#irrelevant-aura-actions)
 - [Irrelevant GraphQL Operations](#irrelevant-graphql-operations)
-- [Irrelevant Soap Actions](#irrelevant-soap-actions)
+- [Irrelevant SOAP Actions](#irrelevant-soap-actions)
 - [Keep All MIME Types](#keep-all-mime-types)
 - [Relevant URLs](#relevant-urls)
 - [Session Cut URLs](#session-cut-urls)
@@ -364,6 +365,24 @@ Example:
 "ignoredValues": ["undefined", null, "null", true, "true", false, "false"]
 ```
 ---
+### Irrelevant Aura Actions
+Filters out Aura actions that are not relevant to the generated test. An Aura action is a request in the Salesforce Lightning framework that performs a specific operation.
+
+###### When to use:
+- When your HAR contains Aura requests with actions that are not relevant to your test scenario.
+- To remove noise and focus on business-critical Aura actions.
+
+###### Structure:
+
+**`irrelevantAuraActions`** *string [ ]*
+
+Array of regex patterns. Any Aura action that matches a pattern in this array and has no extracted values will be excluded from the generated test.
+
+```json
+"irrelevantAuraActions": ["^get"]
+```
+
+---
 
 ### Irrelevant GraphQL Operations
 
@@ -377,7 +396,7 @@ Filters out irrelevant GraphQL operations that should not be included in the gen
 
 **`irrelevantGraphQLOperations`** *string [ ]*
 
-Array of GraphQL operation names to exclude from extraction and test generation.
+Array of GraphQL operation names. Any operation that matches a name in this array and has no extracted values will be excluded from the generated test.
 
 Example:
 ```json
@@ -388,7 +407,7 @@ Example:
 ```
 ---
 
-### Irrelevant Soap Actions
+### Irrelevant SOAP Actions
 
 Filters out SOAP actions that should not be included in the generated test.
 
@@ -400,7 +419,7 @@ Filters out SOAP actions that should not be included in the generated test.
 
 **`irrelevantSoapActions`** *string [ ]*
 
-Array of SOAP action names to exclude from extraction and test generation.
+Array of SOAP action names. Any action that matches a name in this array and has no extracted values will be excluded from the generated test.
 
 Example:
 ```json
@@ -603,21 +622,23 @@ Example:
 ---
 ### JSONPath Ignored Keys
 
-Skips extraction for specific HTML elements when generating jQuery selectors.
+Defines patterns for dynamic key segments (such as UUIDs or timestamps) that should be replaced with recursive descent (`..`) in generated JSONPath expressions.
 
 ###### When to use:
-- When invalid HTML causes Loadmill to fix the markup and generate selectors on the corrected structure.
-- When you want to avoid extracting or interacting with certain elements, even after HTML correction.
+- When dynamic map keys (such as UUIDs or timestamps) make JSONPath expressions unstable.
+- To simplify extraction paths and avoid brittle selectors.
 
 ###### Structure:
 
-**`jqueryIgnoredElements`** *string [ ]*
+**`jsonpathIgnoredKeys`**  *string [ ]*
 
-Array of HTML element names to ignore during jQuery selector generation.
+Array of regex patterns. Any key matching a pattern will be replaced with recursive descent in JSONPath.
 
 Example:
 ```json
-"jqueryIgnoredElements": ["tbody"]
+"jsonpathIgnoredKeys": [
+  "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+]
 ```
 ---
 ## Parameter Detection
