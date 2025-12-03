@@ -1,6 +1,6 @@
 # Mocking
 
-## Mocking services from API specs
+## Mocking services from API specs (Beta)
 
 Easily turn your API specs and Loadmill tests into a fully working mock server based on [Mountebank](https://www.mbtest.org/).\
 You can generate mocks from Swagger or OpenAPI files, run them locally, and connect your Loadmill flows to them.
