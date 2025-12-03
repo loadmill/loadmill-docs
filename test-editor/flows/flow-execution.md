@@ -4,9 +4,9 @@
 
 When running a flow within the flow editor for debugging purposes, it can be very convenient to replace certain parameters for a single run. Instead of changing the parameter value in the global parameters window, you can simply click the 'run with overrides' button (![](<../../.gitbook/assets/image (148).png>)), and then set values for a specific execution. This won't affect the global parameters, providing a quick and simple way to debug your flows. i.e.:
 
-This is the global parameter: ![](<../../.gitbook/assets/image (151).png>), and we want to check something specific and change the value of `email` for only one run. We'll use the 'run with overrides' button to execute it and reset its value. For example:
+This is the global parameter: ![](<../../.gitbook/assets/image (150) (1).png>), and we want to check something specific and change the value of `email` for only one run. We'll use the 'run with overrides' button to execute it and reset its value. For example:
 
-<figure><img src="../../.gitbook/assets/image (155).png" alt=""><figcaption><p>Good to know: the override parameters in this window are saved for subsequent 'runs with overrides' as well.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (154) (1).png" alt=""><figcaption><p>Good to know: the override parameters in this window are saved for subsequent 'runs with overrides' as well.</p></figcaption></figure>
 
 ### Assigning Labels
 
@@ -40,7 +40,7 @@ Let's quickly tour what values you need before running our tests.
 
 <table><thead><tr><th width="209">parameter</th><th width="507">where to find</th></tr></thead><tbody><tr><td><code>&#x3C;test-suite-id></code></td><td>Navigate to your test suite page and the suite id is located inside the url</td></tr><tr><td><code>&#x3C;token></code></td><td>The token is generated from the <a href="https://app.loadmill.com/app/user/settings/security">access token page</a></td></tr></tbody></table>
 
-Open your CLI and run the following command:&#x20;
+Open your CLI and run the following command:
 
 ```
 loadmill <test-suite-id> --test-suite -w -t <token> --labels --report "label1,label2"

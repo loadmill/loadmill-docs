@@ -40,9 +40,9 @@ All you need to do is:
 
 ![](../.gitbook/assets/video1807115540-online-video-cut.gif)
 
-&#x20;That's it! You have just created and run your first load test in under a minute 🎉  &#x20;
+That's it! You have just created and run your first load test in under a minute 🎉
 
-See how to run it at scale [here](https://docs.loadmill.com/getting-started/getting-started-1#running-a-load-test-at-scale).&#x20;
+See how to run it at scale [here](https://docs.loadmill.com/getting-started/getting-started-1#running-a-load-test-at-scale).
 
 ### Recording an API test by using [our Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en) and running it as a load test in Loadmill:
 
@@ -90,7 +90,7 @@ Loadmill keeps track of the request **error rate** and fails the test if it pass
 :brain: You can easily run your API Test Suite as load tests by clicking on the drop-down icon within the **RUN SUITE** button - **Run as load test**.
 {% endhint %}
 
-![](<../.gitbook/assets/video1977598869-online-video-cut (1) (2).gif>)
+![](<../.gitbook/assets/video1977598869-online-video-cut (1) (1).gif>)
 
 Keep exploring the guides to learn how to analyze load test results, set thresholds and more.
 

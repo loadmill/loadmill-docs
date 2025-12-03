@@ -14,14 +14,11 @@ Overall, contract testing helps improve the reliability, stability, and resilien
 
 Contract testing with Loadmill is easy. To create contract validation of an API call, use [JSON schema](../../general/api-testing1/test-suite-editor/assertions.md#json-schema-validate-that-a-parameter-comply-with-given-json-schema.) or [JSON contains](../../general/api-testing1/test-suite-editor/assertions.md#json-contains-validates-that-a-json-contains-a-subset-json-in-such-way-dynamic-fields-can-be-omitted) as following:
 
-*   **Enforcing JSON Schema of an API:** \
+*   **Enforcing JSON Schema of an API:**\
     With 'JSON Schema' you can explicitly enforce multiple of aspects of your json data.\
-    In the request editor assertions insert new entry, use '\_\_responseBody' built-in parameter and ensure the values are of the type "JSON Schema", then insert a valid json-schema.\
-
+    In the request editor assertions insert new entry, use '\_\_responseBody' built-in parameter and ensure the values are of the type "JSON Schema", then insert a valid json-schema.\\
 
     <figure><img src="../../.gitbook/assets/image (73).png" alt=""><figcaption><p>An example of schema validation request in loadmill</p></figcaption></figure>
-
-
 
 In the following table you can see an example of the schema and a typical response that comply with the schema.
 
@@ -116,7 +113,7 @@ In the following table you can see an example of the schema and a typical respon
 </code></pre></td></tr></tbody></table>
 
 *   **Enforcing JSON structure using JSON-Contains:**\
-    **'**&#x4A;son-contains' is a lightweight capability in Loadmill to enforce JSON data. \
+    &#xNAN;**'**&#x4A;son-contains' is a lightweight capability in Loadmill to enforce JSON data.\
     In the request editor assertions insert new entry, use '\_\_responseBody' built-in parameter and ensure the values are of the type "JSON Contains", then insert an expected json or a subset that can contain less fields.\
     Note, to ensure existence of a field ignoring it's value use `"*"` notation.
 
@@ -181,6 +178,5 @@ if 'JSON Validation' section doesn't exist, try adding it by clicking on ![](<..
 <figure><img src="../../.gitbook/assets/image (64) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. (optional) Click on the '+' to add ignored keys.\
-   &#x20;![](<../../.gitbook/assets/image (57).png>)
+   ![](<../../.gitbook/assets/image (57).png>)
 5. From now on, every generated test with loadmill composers will cary json validation assertions.
-

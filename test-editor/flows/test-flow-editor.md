@@ -44,4 +44,4 @@ API Test flow is a series of API calls (HTTP requests) that represent **a single
 
 ### **Converting API flow to Load Test**
 
-Easily convert an API flow to Load test by clicking on the Flow options and select "Convert to Load Test". Once you've selected ![](<../../.gitbook/assets/image (143).png>), a new Load test will open containing all the requests and properties taken from the original API test.
+Easily convert an API flow to Load test by clicking on the Flow options and select "Convert to Load Test". Once you've selected ![](<../../.gitbook/assets/image (142) (1).png>), a new Load test will open containing all the requests and properties taken from the original API test.

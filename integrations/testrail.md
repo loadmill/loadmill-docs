@@ -10,7 +10,7 @@ Loadmill now integrates with TestRail, a comprehensive, test management product 
 2. Create a new project. _`ex: loadmilldocs`_
 3. Make sure you select "Use multiple test suites to manage cases" when creating your project.
 
-You can also change your current project settings by going to \
+You can also change your current project settings by going to\
 Administration > Project > Select your project > Edit
 
 {% hint style="info" %}
@@ -34,7 +34,7 @@ Selecting "Use multiple test suites to manage cases" when creating your project 
 
 ### Integration Setup
 
-1. Navigate to your Loadmill account > Settings > Inetgrations > Click on <img src="broken-reference" alt="connect to testrail" data-size="line">.
+1. Navigate to your Loadmill account > Settings > Inetgrations > Click on .
 2. _Description_ (optional) - you can name it loadmill-integration.
 3. _Domain_ - domain of the account (_`ex: https://organization.testrail.io`_).
 4. _Username_ - same as your email used to sign up to TestRail with.
@@ -79,4 +79,3 @@ You can also connect a Loadmill Test Plan with a TestRail Test Plan:
 {% hint style="info" %}
 You can skip steps from 1 to 3 if you already have a Test Plan configured on TestRail
 {% endhint %}
-

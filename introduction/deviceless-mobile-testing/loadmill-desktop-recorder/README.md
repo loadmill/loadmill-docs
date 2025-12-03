@@ -1,12 +1,12 @@
 # Loadmill desktop recorder
 
-Loadmill Desktop Recorder is a powerful tool designed to simplify and enhance your deviceless testing experience. By capturing user interactions with your application at the API level, the Desktop Recorder allows you to quickly and efficiently create end-to-end API-driven test flows.&#x20;
+Loadmill Desktop Recorder is a powerful tool designed to simplify and enhance your deviceless testing experience. By capturing user interactions with your application at the API level, the Desktop Recorder allows you to quickly and efficiently create end-to-end API-driven test flows.
 
 There are three main components that work together to provide a powerful and efficient testing solution:
 
 1. **Loadmill UI**: Same as the web interface for managing your testing process. With the Loadmill UI, you can edit and execute test flows, and access reporting and run results.\
    ![](<../../../.gitbook/assets/image (29) (2).png>)
-2. **MITM Proxy**: The integrated Man-in-the-Middle (MITM) proxy allows you to capture API traffic from your mobile device by intercepting the communication between the device and the backend servers. \
+2. **MITM Proxy**: The integrated Man-in-the-Middle (MITM) proxy allows you to capture API traffic from your mobile device by intercepting the communication between the device and the backend servers.\
    ![](<../../../.gitbook/assets/image (25) (2).png>)
 3. **Loadmill Agent**: The Loadmill Agent enables local execution of test scenarios, allowing you to run tests directly from your computer within your network. This feature simplifies the testing process and makes it more accessible, allowing you to quickly and easily debug tests and obtain results.
 
@@ -16,11 +16,11 @@ The agent is controlled by the play/stop button integrated to the top right corn
 
 ## **Proxy area (Recorder section)**
 
-**General controls:**&#x20;
+**General controls:**
 
 <figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
-At the top, you can find controls for:&#x20;
+At the top, you can find controls for:
 
 * starting/pausing the proxy
 * Importing har file, to continue the work
@@ -36,13 +36,12 @@ At the top, you can find controls for:&#x20;
 
 Once started and configured, the proxied requests will be collected in the list.\
 The controls in the list allow:\
-&#x20;\- Viewing a request details by clicking on it\
-&#x20;\- Deleting requests by selecting them\
-&#x20;\- Exporting har file
+\- Viewing a request details by clicking on it\
+\- Deleting requests by selecting them\
+\- Exporting har file
 
 **Test creation controls:**\
-![](<../../../.gitbook/assets/image (14) (2).png>)\
-
+![](<../../../.gitbook/assets/image (31) (2).png>)\\
 
 Bottom right area
 

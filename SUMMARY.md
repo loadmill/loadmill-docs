@@ -127,6 +127,7 @@
 * [XRay](integrations/xray.md)
 * [TestRail](integrations/testrail.md)
 * [gRPC Support](integrations/grpc-support.md)
+* [Mocking](integrations/mocking.md)
 
 ## Collaboration
 

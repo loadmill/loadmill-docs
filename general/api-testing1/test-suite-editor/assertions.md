@@ -8,10 +8,9 @@ You may have an arbitrary number of assertions executed after each successful re
 
 ## Assertions editor
 
-Assertions editor can be found in loadmill under each request cubical on it's expanded form.\
+Assertions editor can be found in loadmill under each request cubical on it's expanded form.\\
 
-
-<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Assertion section in request editor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (66) (1).png" alt=""><figcaption><p>Assertion section in request editor</p></figcaption></figure>
 
 Furthermore, there is an option to disable an assertion by clicking the three dots (![](<../../../.gitbook/assets/image (4) (1) (1).png>)) in the assertion line. A disabled assertion will still be evaluated, but it won't cause the test to fail.
 
@@ -60,7 +59,7 @@ There are several types of assertions:
 
 * Example 1:\
   Assigning any value to `param1` will result in assertion failure\
-  ![Click to enlarge the image](<../../../.gitbook/assets/image (108).png>)![](<../../../.gitbook/assets/image (74).png>)
+  ![Click to enlarge the image](<../../../.gitbook/assets/image (80) (1).png>)![](<../../../.gitbook/assets/image (74).png>)
 * Example 2:\
   Not setting `param1` entirely will result in passed assetion\
   ![Click to enlarge the image](<../../../.gitbook/assets/image (60).png>)![](<../../../.gitbook/assets/image (94).png>)
@@ -74,7 +73,7 @@ There are several types of assertions:
   Extracting `$.args.app` json path field to `param1`(from the result that is not displayed) should be equal to "Demo" and will result the assertion to pass\
   Assigning numeric value to `param2` of 11.0 in postscript should be equal to "11", and the assertion will pass.\
   ![Click to enlarge the image](<../../../.gitbook/assets/image (58).png>)![](<../../../.gitbook/assets/image (73) (1).png>)\
-  &#xNAN;_**Note** that all values are implicitly compared as strings._
+  \&#xNAN;_**Note** that all values are implicitly compared as strings._
 
 #### **Doesn't equal** - Validates that a parameter is NOT equal to the given expression. The equality check is **case sensitive**.
 
@@ -110,13 +109,13 @@ There are several types of assertions:
   ![Click to enlarge the image](<../../../.gitbook/assets/image (61).png>)![](<../../../.gitbook/assets/image (86).png>)
 * Example 2:\
   The assigned epoch representation of the current time to `param1` will contain 13 digits and would match the regex (`^\d{13}$`), hence the assertion will pass\
-  ![Click to enlarge the image](<../../../.gitbook/assets/image (91).png>)![](<../../../.gitbook/assets/image (67).png>)
+  ![Click to enlarge the image](<../../../.gitbook/assets/image (85) (1).png>)![](<../../../.gitbook/assets/image (67).png>)
 
 #### **Greater than** - Validates that a parameter is greater than the given expression.
 
 * Example 1:\
   `param1` is assigned with the value 31 that is not greater than 40 hence the assertion will fail.\
-  ![Click to enlarge the image](<../../../.gitbook/assets/image (110).png>)![](<../../../.gitbook/assets/image (90).png>)
+  ![Click to enlarge the image](<../../../.gitbook/assets/image (68) (1).png>)![](<../../../.gitbook/assets/image (81) (1).png>)
 * Example 2:\
   `param1` is assigned with the value 31 which is greater than 30 will make the assertion to pass\
   ![Click to enlarge the image](<../../../.gitbook/assets/image (97).png>)![](<../../../.gitbook/assets/image (95).png>)
@@ -141,17 +140,17 @@ There are several types of assertions:
   ![Click to enlarge the image](<../../../.gitbook/assets/image (92).png>)![](<../../../.gitbook/assets/image (72).png>)
 
 {% hint style="info" %}
-&#x20;To prepare initial JSON schema out of a JSON you can search for 'from json to schema' in google or use a [tool like this](https://transform.tools/json-to-json-schema).
+To prepare initial JSON schema out of a JSON you can search for 'from json to schema' in google or use a [tool like this](https://transform.tools/json-to-json-schema).
 {% endhint %}
 
 #### **JSON Contains -** Validates that a json contains a subset json, in such way dynamic fields can be omitted to avoid false negatives.
 
 Accepting any value for individual field will accept "\*" notation\
-Note, the subset json object should preserve the same hierarchal structure as the containing object while fields can be omitted.&#x20;
+Note, the subset json object should preserve the same hierarchal structure as the containing object while fields can be omitted.
 
 * Example 1:\
   Given `param1` was set with a json as below, any mismatch\
-  &#x20;in a key or value on same hierarchy will result in assertion error:\
+  in a key or value on same hierarchy will result in assertion error:\
   ![Click to enlarge the image](<../../../.gitbook/assets/image (82).png>)![](<../../../.gitbook/assets/image (71).png>)\
   Note to the "Exclude ..." notations, clicking on them will adjust the value of the assertion to exclude the failing field.
 * Example 2:\
@@ -164,15 +163,14 @@ Note, the subset json object should preserve the same hierarchal structure as th
 #### **XML Contains -** Validates that an xml contains a subset xml, in such way dynamic fields can be omitted to avoid false negatives.
 
 Accepting any value for individual field will accept "\*" notation\
-Note, the subset xml object should preserve the same hierarchal structure as the containing object while fields can be omitted.&#x20;
+Note, the subset xml object should preserve the same hierarchal structure as the containing object while fields can be omitted.
 
 * Example 1:\
   Given `param1` was set with an xml as below, any mismatch\
-  &#x20;in a key or value on same hierarchy will result in assertion error: ![](<../../../.gitbook/assets/image (125).png>) <img src="../../../.gitbook/assets/image (124).png" alt="" data-size="original">\
-
+  in a key or value on same hierarchy will result in assertion error: ![](<../../../.gitbook/assets/image (125).png>) <img src="../../../.gitbook/assets/image (124).png" alt="" data-size="original">\\
 * Example 2:\
   Given `param1` was set with an xml as below, any partial subset in xml-contains validation value with same structure will result pass in assertion:\
-  &#x20;![](<../../../.gitbook/assets/image (127).png>)![](<../../../.gitbook/assets/image (128).png>)\
+  ![](<../../../.gitbook/assets/image (126) (1).png>)![](<../../../.gitbook/assets/image (128).png>)\
   \
   \- Using star notation to accept any value for `latitude` and `country` fields.\
   ![](<../../../.gitbook/assets/Screenshot 2023-12-28 at 10.15.29.png>)\

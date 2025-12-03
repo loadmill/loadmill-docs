@@ -23,8 +23,6 @@ Time needed: **10–15 minutes**
 
 <figure><img src="../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ***
 
 ### Step 2 — Verify the Recorder
@@ -37,7 +35,7 @@ Time needed: **10–15 minutes**
 
 👉 Only after this step should you continue to the demo AUT.
 
-<figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (192) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -120,8 +118,6 @@ The demo application is a simple **bank transfer system** showing the classic _M
 3. Run the test and watch it stop at the breakpoint.
 
 👉 Debugging lets you inspect intermediate results and quickly validate logic.
-
-
 
 ***
 
