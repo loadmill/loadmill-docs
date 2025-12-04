@@ -67,7 +67,8 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 
 * [Allow Dots](algorithm-settings.md#allow-dots)
 * [Array Format](algorithm-settings.md#array-format)
-* [Decode URL Encoded Body](algorithm-settings.md#decode-url-encoded-body)
+* [Decode URL-Encoded Body](algorithm-settings.md#decode-url-encoded-body)
+* [Decode URL-Encoded Query](algorithm-settings.md#decode-url-encoded-query)
 * [Prettify Request Body](algorithm-settings.md#prettify-request-body)
 * [Split Origin](algorithm-settings.md#split-origin)
 * [Xml Decode](algorithm-settings.md#xml-decode)
@@ -1196,7 +1197,25 @@ Example:
 ```
 
 ***
+### Decode URL-Encoded Query
 
+Enables decoding of URL query strings to improve readability in the generated test.
+
+###### When to use:
+- When your server does not require query parameters to remain encoded.
+- When you want URL query parameters to appear in a human-readable format for easier review and debugging.
+
+###### Structure:
+
+**`decodeUrlEncodedQuery`** *boolean, Defaults to true*
+
+If true, decodes URL-encoded query strings for better readability in the output.
+
+Example:
+```json
+"decodeUrlEncodedQuery": true
+```
+***
 ### Prettify Request Body
 
 Controls formatting of request bodies in the generated YAML output.
