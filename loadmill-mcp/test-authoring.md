@@ -11,7 +11,7 @@ With the MCP workflow you can:
 - Run tests to ensure they work as expected
 - Integrate new tests into your pipeline
 
-> Before you get started, make sure you meet the [Prerequisites](#📘-prerequisites) below for this workflow.
+> Before you get started, make sure you meet the [Prerequisites](#prerequisites) below for this workflow.
 
 ## 📦 Where the Work Happens
 
