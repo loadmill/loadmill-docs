@@ -69,6 +69,9 @@
 * [Login/Authentication Flow](general/api-testing1/test-suite-editor/global-login-flow.md)
 * [Before & After Hooks](general/api-testing1/test-suite-editor/before-and-after-hooks.md)
 
+## Run Settings
+* [Suite Execution Mode](run-settings/suite-execution-mode.md)
+
 ## Load Testing
 
 * [Load Test Editor](load-testing/working-with-the-test-editor.md)
