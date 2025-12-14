@@ -15,7 +15,7 @@ You can configure Execution Mode from the suite’s **Run Settings**:
 3. Scroll to the **Execution Mode** section.
 4. Select either **Dependent** or **Independent**.
 
-![](<../assets/suite-run-settings.png>)
+![](<../../../assets/suite-run-settings.png>)
 ---
 
 ## **Modes**

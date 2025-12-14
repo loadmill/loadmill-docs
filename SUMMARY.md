@@ -59,6 +59,7 @@
 * [Parameters](general/api-testing1/test-suite-editor/parameters/README.md)
   * [Parameter Execution Order](general/api-testing1/test-suite-editor/parameters/parameter-execution-order.md)
   * [Test Suite Parameters](general/api-testing1/test-suite-editor/test-suite-parameters.md)
+  * [Suite Execution Mode](general/api-testing1/test-suite-editor/suite-execution-mode.md)
   * [Parameters Sets](test-editor/parameters/parameters-sets.md)
 * [⨍(⨯) FUNCTIONS](general/api-testing1/test-suite-editor/functions.md)
 * [Postscript](test-editor/postscript/README.md)
@@ -68,9 +69,6 @@
   * [Using Built-in Functions in Postscript](test-editor/postscript/built-in-functions.md)
 * [Login/Authentication Flow](general/api-testing1/test-suite-editor/global-login-flow.md)
 * [Before & After Hooks](general/api-testing1/test-suite-editor/before-and-after-hooks.md)
-
-## Run Settings
-* [Suite Execution Mode](run-settings/suite-execution-mode.md)
 
 ## Load Testing
 

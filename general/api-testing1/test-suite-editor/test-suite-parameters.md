@@ -8,7 +8,9 @@ Default parameters can be used in requests using the template strings notation: 
 
 ![](<../../../.gitbook/assets/Screenshot (23).png>)
 
-### Parameters scope
+### Parameters scope - *DEPRECATED* 
+
+⚠️ Note: This feature is deprecated. Use [Suite Execution Mode](./suite-execution-mode.md) instead.
 
 By default, Test Suite parameters have the **Entire Test Suite Run** execution scope. The alternative option is to select the **Single Flow Run** scope.
 
