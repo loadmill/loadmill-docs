@@ -8,7 +8,7 @@ Loadmill MCP brings the power of AI-native workflows to E2E and behavioral testi
 * **Run tests as you develop, with instant feedback and AI-powered insights.**
 * **Automate repetitive QA tasks and empower your team to ship with confidence.**
 
-Test generation is also supported for hybrid testing (combining API and UI steps). [Learn more in the Hybrid Testing section.](hybrid-testing/overview.md)
+Test generation is also supported for hybrid testing (combining API and UI steps). [Learn more in the Hybrid Testing section.](../hybrid-testing/overview.md)
 
 ***
 
@@ -33,19 +33,19 @@ This example shows how you can use Loadmill MCP to quickly validate your changes
 
 After updating your code (for example, changing a function or fixing a bug), trigger all relevant E2E tests. Test results appear instantly—if there are failures, you’ll see them right away.
 
-![Run tests and see failures](.gitbook/assets/mcp-run-tests-fail.png)
+![Run tests and see failures](../assets/mcp-run-tests-fail.png)
 
 **Step 2: Analyze failures and fix the issue**
 
 Use Loadmill MCP to get and analyze the failures, leveraging its insights and suggestions to help you find a solution. Update your code to address the issues.
 
-![Analyze failures and fix code](.gitbook/assets/mcp-run-tests-fix.png)
+![Analyze failures and fix code](../assets/mcp-run-tests-fix.png)
 
 **Step 3: Re-run tests and confirm success**
 
 Re-run the tests. This time, all tests pass, giving you confidence to continue development.
 
-![All tests pass](.gitbook/assets/mcp-run-tests-pass.png)
+![All tests pass](../assets/mcp-run-tests-pass.png)
 
 ***
 
@@ -53,7 +53,7 @@ Re-run the tests. This time, all tests pass, giving you confidence to continue d
 
 With Loadmill MCP, creating new tests is as simple as describing what you want to check. Just type your scenario in plain text and let the AI instantly generate a ready-to-run E2E test flow or suite for you.
 
-![Generating a test from free text](.gitbook/assets/mcp-test-generation.png)
+![Generating a test from free text](../assets/mcp-test-generation.png)
 
 This workflow is designed for speed and flexibility:
 
