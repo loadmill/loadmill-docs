@@ -1,10 +1,9 @@
-# Loadmill Test Authoring Workflow (IDE + MCP)
+# Loadmill Test Authoring Workflow
 
-This guide explains how to create and update Loadmill test suites directly in your IDE (Cursor, VSCode, or any other editor) using the Loadmill MCP.
 
 ## 🚀 Overview
 
-With the MCP workflow you can:
+This guide explains how to create and update Loadmill test suites directly in your IDE (Cursor, VSCode, or any other editor) using the Loadmill MCP. With the MCP workflow you can:
 
 - Create and update Loadmill tests directly from your IDE  
 - Validate changes instantly
@@ -17,12 +16,6 @@ With the MCP workflow you can:
 
 Watch this demo to see how to create a new test suite using the Loadmill MCP:
 
-
-## 🎥 Video Guide
-
-Watch this demo to see how to create a new test suite using the Loadmill MCP:
-
-[📹 Watch the video demo](../assets/mcp-test-authoring.mp4)
 
 
 ## 📦 Where the Work Happens
