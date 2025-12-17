@@ -1,10 +1,10 @@
-# **Suite Execution Mode**
+# Suite Execution Mode
 
 Loadmill lets you control how flows inside a test suite interact with each other and how failures are handled.
 
-The *Execution Mode* determines whether flows share state, how retries behave, and whether the suite stops on the first failed flow.
+The _Execution Mode_ determines whether flows share state, how retries behave, and whether the suite stops on the first failed flow.
 
----
+***
 
 ## **Where to configure Execution Mode**
 
@@ -15,8 +15,7 @@ You can configure Execution Mode from the suite’s **Run Settings**:
 3. Scroll to the **Execution Mode** section.
 4. Select either **Dependent** or **Independent**.
 
-![](<../../../assets/suite-run-settings.png>)
----
+## ![](../../../.gitbook/assets/suite-run-settings.png)
 
 ## **Modes**
 
@@ -31,11 +30,11 @@ Flows run sequentially and share execution state.
 * **Retry reruns the entire suite** — to rebuild all shared context correctly.
 
 **Best for:**
- 
+
 * Multi-step flows where later tests rely on earlier outputs.
 * Ensuring consistent global state.
 
----
+***
 
 ### **Independent Mode**
 
@@ -53,7 +52,7 @@ Each flow runs in complete isolation (except `Before All`).
 * Wide coverage testing where independence improves stability.
 * Re-tring specific failures without rerunning everything.
 
----
+***
 
 ## **How Execution Mode Works**
 
@@ -62,4 +61,4 @@ Each flow runs in complete isolation (except `Before All`).
 * In **Independent mode**, each flow gets its own isolated environment (cookies, parameters, and context are not reused).
 * Retries follow the selected mode to ensure deterministic behavior.
 
----
+***
