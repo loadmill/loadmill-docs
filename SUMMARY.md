@@ -97,7 +97,8 @@
 
 ## Loadmill MCP
 
-* [AI-Native E2E Testing](loadmill-mcp.md)
+* [AI-Native E2E Testing](loadmill-mcp/loadmill-mcp.md)
+* [Loadmill Test Authoring Workflow](loadmill-mcp/test-authoring.md)
 
 ## Auth
 
