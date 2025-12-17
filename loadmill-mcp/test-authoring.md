@@ -11,7 +11,12 @@ With the MCP workflow you can:
 - Run tests to ensure they work as expected
 - Integrate new tests into your pipeline
 
-> Before you get started, make sure you meet the [Prerequisites](#prerequisites) below for this workflow.
+> ⚠️ Before you get started, make sure you meet the [Prerequisites](#prerequisites) below for this workflow.
+
+## 🎥 Video Guide
+
+Watch this demo to see how to create a new test suite using the Loadmill MCP:
+
 
 ## 🎥 Video Guide
 
@@ -80,8 +85,6 @@ Use this process when adding flows or modifying existing test logic.
 ## Creating a New Test Suite
 
 Use this workflow when introducing a new suite for a feature or area.
-
-> 💡 **Watch the demo**: See this workflow in action in the [Video Guide](#-video-guide) above.
 
 ### High-Level Steps
 
