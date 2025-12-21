@@ -124,7 +124,7 @@ Example Cursor config:
       "command": "npx",
       "args": ["@loadmill/mcp"],
       "env": {
-        "LOADMILL_API_TOKEN": "<YOUR_LOADMILL_API_TOKEN>"
+        "LOADMILL_API_TOKEN": "REPLACE_WITH_YOUR_LOADMILL_API_TOKEN"
       }
     },
     "loadmill-docs": {
@@ -133,7 +133,7 @@ Example Cursor config:
     "github": {
       "url": "https://api.githubcopilot.com/mcp/",
       "headers": {
-        "Authorization": "Bearer <YOUR_GITHUB_TOKEN>"
+        "Authorization": "Bearer REPLACE_WITH_YOUR_GITHUB_TOKEN"
       }
     }
   }
