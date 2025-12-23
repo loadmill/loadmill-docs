@@ -142,9 +142,9 @@ Stop a launched Test Suite
 
 #### Path Parameters
 
-| Name | Type   | Description                                                                                                                                                                                          |
-| ---- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id   | string | <p>The Test Suite Run uuid. You can get this ID in the response when getting the Test Suite Run (https://docs.loadmill.com/integrations/rest-api#get-test-suite-run-test-suite-results).</p><p>\</p> |
+| Name | Type   | Description                                                                                                                                                                                                  |
+| ---- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| id   | string | <p>The Test Suite Run uuid. You can get this ID in the response when getting the Test Suite Run (https://docs.loadmill.com/integrations/rest-api#get-test-suite-run-test-suite-results).</p><p>&#x3C;/p></p> |
 
 #### Query Parameters
 
@@ -196,6 +196,55 @@ Create a load test from load test configuration
 ```
 {% endtab %}
 {% endtabs %}
+
+## Create Load from Test Suite Flow
+
+<mark style="color:green;">`POST`</mark> `https://app.loadmill.com/api/v1/test-suites/:suiteId/flows/:flowId/loads`
+
+Create a draft load test from a test suite flow
+
+#### Path Parameters
+
+| Name    | Type   | Description                                            |
+| ------- | ------ | ------------------------------------------------------ |
+| suiteId | string | The suite UUID in which the flow resides               |
+| flowId  | string | The flow UUID. The load will be created from this flow |
+
+#### Headers
+
+| Name          | Type   | Description                                                                            |
+| ------------- | ------ | -------------------------------------------------------------------------------------- |
+| Authorization | string | Authentication token - you can generate it in the "User menu"> "Settings" > "Security" |
+
+#### Request Body
+
+| Name            | Type   | Description                                                                                                                        |
+| --------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| loadTestOptions | object | Optional load test configuration options. If not provided, default values will be used. See the table below for available options. |
+
+#### Load Test Option
+
+| Name              | Type    | Description                                                        |
+| ----------------- | ------- | ------------------------------------------------------------------ |
+| targetedCountries | array   | Array of country codes for targeted geographic distribution.       |
+| monitoredEnv      | string  | Environment identifier for monitoring purposes                     |
+| rampUp            | number  | Ramp-up time in seconds. Default value is used if not specified    |
+| alwaysDistributed | boolean | Whether to always use distributed load testing. Default: `false`   |
+| useStaticIp       | boolean | Whether to use static IP addresses. Default: `false`               |
+| sensitiveData     | boolean | Whether the test contains sensitive data. Default: `false`         |
+| duration          | number  | Test duration in seconds. Default value is used if not specified   |
+| concurrency       | number  | Number of concurrent users. Default value is used if not specified |
+| rps               | number  | Requests per second. Default value is used if not specified        |
+
+{% tabs %}
+{% tab title="200 " %}
+```
+{ testId: "load test id" }
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 ## Set Flow
 
