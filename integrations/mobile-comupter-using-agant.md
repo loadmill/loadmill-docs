@@ -23,6 +23,8 @@
 
 ### 🛠 Setup
 
+**First,** clone this project - [link](https://github.com/loadmill/droid-cua)
+
 1.  Install dependencies:
 
     ```sh
