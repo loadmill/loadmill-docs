@@ -130,6 +130,7 @@
 * [TestRail](integrations/testrail.md)
 * [gRPC Support](integrations/grpc-support.md)
 * [Mocking](integrations/mocking.md)
+* [Mobile Comupter-using Agant](integrations/mobile-comupter-using-agant.md)
 
 ## Collaboration
 
