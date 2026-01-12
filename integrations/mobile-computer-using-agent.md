@@ -1,4 +1,4 @@
-# Mobile Comupter-using Agant
+# Mobile Computer-Using Agent
 
 ## droid-cua
 
@@ -62,7 +62,6 @@
 * Maps model-generated actions (click, scroll, drag, type, keypress, wait) back to real device coordinates.
 * Connects automatically to a running emulator or launches it if needed.
 * Pretends the device screen is embedded inside a browser page for environment compatibility.
-* **Coming next:** Asserions and test reports
 
 ***
 
@@ -96,13 +95,31 @@ Run with an instructions file:
 node index.js --avd=Pixel_5_API_34 --instructions=example.txt
 ```
 
-Example `example.txt`:
+***
+
+### ✅ Assertions
+
+Assertions allow you to validate the state of the device during script execution. If an assertion fails, the script stops and reports the failure.
+
+#### Syntax
+
+Add assertions to your script using the `assert` keyword (case-insensitive, colon optional):
+
+```
+assert: <condition to validate>
+```
+
+### Example Script
 
 ```
 Open Chrome
-Search for "Loadmill"
-Scroll down
-Go back to the home screen
+Open a new tab
+Open the Google built-in Calculator by searching "calculator"
+Type "5"
+Click the plus button
+Type "3"
+Click the equals button
+assert: the result shows 8
 exit
 ```
 
@@ -115,20 +132,10 @@ exit
 * Android Debug Bridge (ADB) installed and available in system PATH
 * OpenAI Tier 3 access for the computer-use-preview model
 
-> \[!NOTE]\
 > Your OpenAI account must be **Tier 3** to access the computer-use-preview model.\
-> Learn more: [OpenAI Computer Use Preview](https://platform.openai.com/docs/models/computer-use-preview)
-
-***
-
-### 📁 Project Structure
-
-| File         | Responsibility                                                           |
-| ------------ | ------------------------------------------------------------------------ |
-| `index.js`   | Manages user input, OpenAI conversation, and main loop.                  |
-| `device.js`  | ADB device connection, screenshot capture, screen size management.       |
-| `actions.js` | Executes model actions on the device (tap, swipe, drag, type, keypress). |
-| `openai.js`  | Sends requests to OpenAI and manages API responses.                      |
+> Learn more: [OpenAI Computer Use Preview](https://platform.openai.com/docs/models/computer-use-preview).
+>
+> If you do not have access to a Tier 3 OpenAI API key, please reach out to your Loadmill contact.
 
 ***
 
