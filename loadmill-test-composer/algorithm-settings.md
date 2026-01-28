@@ -52,6 +52,7 @@ Then, edit or add the relevant rules in the appropriate JSON properties.
 * [Custom Identifiers](algorithm-settings.md#custom-identifiers)
 * [Custom Uniqueness](algorithm-settings.md#custom-uniqueness)
 * [Default Values](algorithm-settings.md#default-values)
+* [Aggregate Request Body Parameters](algorithm-settings.md#aggregate-request-body-parameters)
 * [Include Failed Requests](algorithm-settings.md#include-failed-requests)
 * [Keys Value as Key](algorithm-settings.md#keys-value-as-key)
 * [Max Response Content Byte Size](algorithm-settings.md#max-response-content-byte-size)
@@ -156,9 +157,22 @@ Each item in the array contains:
 *   **`jsonpath`** _string_
 
     JSONPath expression to extract the value from the response.
-*   **`assertion`** _{ \[assertionType: string]: string }_
+*   **`assertion`** _{ \[assertionType: string]: string }, Optional_
 
     Assertion operator and expected value (e.g., `{ "equals": "processed" }`).
+*   **`loop`** _object, Optional_
+
+    Adds a polling loop for the matched URL. The loop includes:
+
+    *   **`iterations`** _number_
+
+        Number of polling attempts.
+    *   **`assert`** _{ \[assertionType: string]: string }_
+
+        Assertion to apply on each polling response.
+    *   **`wait`** _number_
+
+        Wait time (ms) between iterations.
 
 Example:
 
@@ -168,6 +182,15 @@ Example:
     "url": "/api/orders/[0-9]{8}$",
     "jsonpath": "$.data.status",
     "assertion": { "equals": "processed" }
+  },
+  {
+    "url": "/api/orders/[0-9]{8}/status$",
+    "jsonpath": "$.data.status",
+    "loop": {
+      "iterations": 5,
+      "assert": { "equals": "completed" },
+      "wait": 1000
+    }
   }
 ]
 ```
@@ -850,6 +873,29 @@ Example:
     "name": "userId"
   }
 ]
+```
+
+***
+
+### Aggregate Request Body Parameters
+
+Aggregates matched request-body objects into a single parameter for correlation instead of extracting only primitive values.
+
+**When to use:**
+
+* When you want to correlate request-body objects (not just primitive values).
+* To reduce the number of generated parameters by treating an object as one correlated value.
+
+**Structure:**
+
+**`aggregateRequestBodyParameters`** _boolean, Defaults to false_
+
+When enabled, if a match is found in the request body and the value is an object, the algorithm extracts the object as a single parameter and correlates it across requests, which reduces the number of generated parameters.
+
+Example:
+
+```json
+"aggregateRequestBodyParameters": true
 ```
 
 ***
