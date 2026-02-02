@@ -157,6 +157,7 @@
 
 * [Loadmill POC Setup](poc-guides/Loadmill-POC-Setup.md)
 * [Loadmill Installation & Deployment Runbook](poc-guides/Loadmill-Installation-Runbook.md)
+* [Loadmill On-Prem Setup](poc-guides/loadmill-on-prem-setup.md)
 
 ## General
 
