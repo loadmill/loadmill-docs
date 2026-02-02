@@ -5,7 +5,10 @@ This guide explains the basic requirements and setup for running Loadmill on-pre
 ## Requirements
 
 - A Linux machine that can run three containers on the same Docker network.
+AWS EC2 t3.medium-t3.large or equivalent
+(2 vCPUs, 4/8 GB RAM)
 - Docker and Docker Compose installed.
+- Port 8090 availble for use. If not available, you can change it in the Docker Compose file.
 - Container images:
   - Redis **7+** (downloaded from the internet).
   - Postgres **15+** (downloaded from the internet).
