@@ -1,6 +1,6 @@
 # Recording settings
 
-Use the advanced Recording Settings to create meaningful replay-able tests that are easy to configure. Team Admins can control these settings [on this page](https://www.loadmill.com/app/user/settings/recordings).
+Use the advanced Recording Settings to create meaningful replay-able tests that are easy to configure. Team Admins can control these settings [on this page](https://app.loadmill.com/app/user/settings/recordings).
 
 ![](<../../.gitbook/assets/Screenshot (37).png>)
 
