@@ -19,8 +19,8 @@ app.use(function (req, res, next) {
     // This request header contains the HTTP request method: 
     var requestMethod = req.header("Access-Control-Request-Method");
 
-    if (origin === "http://www.loadmill.com"
-        || origin === "https://www.loadmill.com") {
+    if (origin === "http://app.loadmill.com"
+        || origin === "https://app.loadmill.com") {
 
         // This response header allows CORS from loadmill.com:
         res.header("Access-Control-Allow-Origin", origin);

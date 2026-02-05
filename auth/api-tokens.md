@@ -4,7 +4,7 @@ In order to use the [Loadmill npm module](https://www.npmjs.com/package/loadmill
 
 ## Generating a Token
 
-1. Navigate to **Settings** > [**Security**](https://www.loadmill.com/app/user/settings/security)**.**
+1. Navigate to **Settings** > [**Security**](https://app.loadmill.com/app/user/settings/security)**.**
 
 ![](<../../.gitbook/assets/Screenshot (43).png>)
 
@@ -17,11 +17,11 @@ You will be given an arbitrary string of characters that will be shown to you ON
 Tokens may be used in one of three ways:
 
 1. Passed in the options object to the [Loadmill npm module](https://www.npmjs.com/package/loadmill), e.g. `require('loadmill')({token: "ewszIIzEDIeORLwTSrcEvrKKEWQeR9yzQqyCCKlK"})`
-2. Given as a **basic authentication** username with a blank password, e.g. `https://ewszIIzEDIeORLwTSrcEvrKKEWQeR9yzQqyCCKlK@www.loadmill.com/api/tests`
+2. Given as a **basic authentication** username with a blank password, e.g. `https://ewszIIzEDIeORLwTSrcEvrKKEWQeR9yzQqyCCKlK@app.loadmill.com/api/tests`
 3. Given in an **Authorization** HTTP header as a bearer token, e.g. `Authorization: Bearer ewszIIzEDIeORLwTSrcEvrKKEWQeR9yzQqyCCKlK`
 
 ## Protecting Tokens
 
 An API token enables its bearer to create and run load tests within your account. You can do almost anything you can do in our web interface using tokens, except changing your password, making payments and generating more tokens.
 
-Therefore, you should keep your token as safe as you can from untrusted third parties. If you suspect it may have been compromised, you may revoke the token via **Settings** > [**Security**](https://www.loadmill.com/app/user/settings/security) and generate a new one.
+Therefore, you should keep your token as safe as you can from untrusted third parties. If you suspect it may have been compromised, you may revoke the token via **Settings** > [**Security**](https://app.loadmill.com/app/user/settings/security) and generate a new one.
