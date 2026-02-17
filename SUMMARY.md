@@ -46,6 +46,7 @@
   * [Generated Flow Code](test-editor/flows/generated-flow-code.md)
   * [Test Flow editor](test-editor/flows/test-flow-editor.md)
   * [Flow Controls](test-editor/flows/flow-controls.md)
+  * [Groups](test-editor/flows/groups.md)
   * [Add CSV to Flow](test-editor/flows/add-csv-to-flow.md)
   * [Flow Execution](test-editor/flows/flow-execution.md)
 * [Steps](test-editor/steps/README.md)
