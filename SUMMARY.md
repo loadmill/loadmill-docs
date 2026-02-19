@@ -100,6 +100,7 @@
 
 * [AI-Native E2E Testing](loadmill-mcp/loadmill-mcp.md)
 * [Loadmill Test Authoring Workflow](loadmill-mcp/test-authoring.md)
+* [Loadmill Agent Skill](loadmill-mcp/skills.md)
 
 ## Auth
 
