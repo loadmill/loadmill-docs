@@ -48,13 +48,34 @@ The navigation bar allows:
 
 ![](<../../.gitbook/assets/Screenshot - 2022-02-08T150241.243.png>)
 
-&#x20;   5\. Set Test Plan E-mail or Slack notifications so that you will get one email/slack notification with all the Test Suites' information.
+&#x20;   5\. Set Test Plan [notifications](#notifications) so that you will get email/slack notifications with all the Test Suites' information.
 
 ![](<../../.gitbook/assets/Screenshot (32).png>)
 
 &#x20;   6\. To schedule the Test Plan to run periodically to constantly validate your application status.
 
 ![](<../../.gitbook/assets/Screenshot (33).png>)
+
+### Notifications
+
+You can configure Test Plan notifications to get a summary with all the Test Suites' information once a Test Plan run is complete. Notifications can be set from the Test Plan navigation bar.
+
+#### Email
+
+Enter one or more email addresses to receive a notification email after each Test Plan run. The email includes the overall run status and a breakdown of each Test Suite's result, making it easy to review failures without opening the Loadmill UI.
+
+#### Slack
+
+Select a Slack channel (or enter a channel ID) to receive notifications when a Test Plan run ends. For each channel you can configure:
+
+- **For** — which runs trigger a notification (e.g. all runs, failures only).
+- **Notification content** — a standard report with options to set how failures are reported (by flows or suites), the detail level, users to tag, and an optional custom message.
+
+**AI-powered failure analysis**
+
+Instead of a standard report, you can opt for an AI summary. Loadmill will analyze all failures in the run and send a single Slack message explaining the root cause, giving your team an instant, actionable diagnosis without having to dig through individual flow results.
+
+![](../../assets/ai-tpr-ef.png)
 
 ### Integrating Test Plan into CI/CD
 
