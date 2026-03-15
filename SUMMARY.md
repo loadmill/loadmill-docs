@@ -31,6 +31,7 @@
 * [Register your first API flow](quick-guide/register-your-first-api-flow.md)
 * [Running Your API Test](quick-guide/running-your-api-test.md)
 * [Quick Start Guide](quick-guide/quick-start-guide.md)
+* [Agent Testing Quick Guide](quick-guide/agent-testing-quick-guide.md)
 
 ## Loadmill Test Composer
 
@@ -160,7 +161,6 @@
 * [Loadmill POC Setup](poc-guides/Loadmill-POC-Setup.md)
 * [Loadmill Installation & Deployment Runbook](poc-guides/Loadmill-Installation-Runbook.md)
 * [Loadmill On-Prem Setup](poc-guides/loadmill-on-prem-setup.md)
-* [AI Test Agents Quickstart](webinar-guides/agent-step-webinar-quickstart.md)
 
 ## General
 
