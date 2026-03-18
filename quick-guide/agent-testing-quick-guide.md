@@ -65,6 +65,14 @@ Keep the first run simple. Start with one short path on your site so you can wat
 
 ***
 
+## Learn more about creating tests in Loadmill
+
+Agent Testing is a fast way to validate real user flows, but it works best as part of Loadmill's broader API-first testing approach.
+
+If you are new to Loadmill, you can also learn how to create tests with the Loadmill Composer and generate API tests from real user activity. See the [Quick Start Guide](quick-start-guide.md) for a step-by-step walkthrough.
+
+***
+
 ## Need help?
 
 If you have any questions or need help, contact us at [support@loadmill.com](mailto:support@loadmill.com).
