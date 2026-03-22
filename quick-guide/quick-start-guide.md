@@ -149,6 +149,7 @@ Want to make Loadmill’s AI match your team’s language?
 1. Go to **Settings → Algorithm → AI Prompts**.
 2. Customize how Loadmill:
    * Describes steps (tone, style, emojis, business terms)
+   * Groups related steps using AI
    * Explains failures (e.g., known API errors)
    * Suggests next steps in a flow
 
