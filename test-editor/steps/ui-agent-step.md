@@ -2,7 +2,11 @@
 
 The **UI Agent step** allows you to automate UI interactions using natural language prompts. Instead of writing code, you describe what you want the agent to do, and it autonomously navigates your application, performs actions, and validates results.
 
-This is especially useful for quickly creating end-to-end tests, validating user flows, and testing complex UI interactions without writing any automation code.
+This step is especially useful for:
+
+- **Hybrid testing** — If most of your test logic is in API steps but you need to validate something in the UI, you can add a UI Agent step to open the app and verify a specific element or state without building a full end-to-end UI test.
+- **Hard-to-automate actions** — When certain actions are difficult to replicate via API (e.g., complex UI interactions, OAuth flows, or third-party widgets), you can use the UI Agent step to perform those actions and then continue with your API-based test approach.
+- **End-to-end UI testing** — Quickly create full UI tests by describing user flows in natural language.
 
 ![UI Agent step editor](<../../assets/ui-agent-step-example.png>)
 
@@ -19,9 +23,11 @@ The starting point for the agent. This is the URL the browser navigates to when 
 https://example.com/login
 ```
 
-### 2. Actions (optional)
+### 2. Agent Instructions (optional)
 
 Instructions describing the actions the agent should perform before reaching the UI state you want to validate. This field is optional — if you only need to validate something on the page without performing any actions, you can leave it empty.
+
+Each action should be written on a separate line.
 
 Use this to describe interactions such as:
 - Clicking buttons or links
@@ -31,10 +37,12 @@ Use this to describe interactions such as:
 
 **Example:**
 ```
-Enter "user@example.com" in the email field and "password123" in the password field, then click the Login button.
+Enter "user@example.com" in the email field.
+Enter "password123" in the password field.
+Click the Login button.
 ```
 
-### 3. Validation
+### 3. AI-Driven UI Validation
 
 Describe what you want to verify on the UI state after the actions are complete. This is where you specify the expected outcome of the test.
 
@@ -64,7 +72,8 @@ You can use parameters in any of the UI Agent step fields. Parameters work the s
 
 **Example:**
 ```
-Enter "${userEmail}" in the email field and "${userPassword}" in the password field.
+Enter "${userEmail}" in the email field.
+Enter "${userPassword}" in the password field.
 ```
 
 This allows you to:
@@ -76,12 +85,21 @@ This allows you to:
 
 After running a test with UI Agent steps, you can view:
 
+- **Validated screenshot** — A screenshot of the UI state that was validated
 - **Step-by-step actions** the agent performed
-- **Screenshots** captured during execution
 - **Validation results** showing what passed or failed
-- **Error details** if something went wrong
+
+If the test failed, a **session recording** is also provided. This allows you to watch exactly what the agent did during execution and identify where it went wrong, making it easy to debug and tweak your prompts to improve stability.
 
 ![UI Agent step run result](<../../assets/ui-agent-step-example-run.png>)
+
+## Best practices
+
+- **Be specific in your instructions** — The more precise your prompts, the more reliable the test. Instead of "click the button", say "click the Submit button" or "click the blue button labeled Continue".
+- **One action per line** — Write each instruction on a separate line for clarity and consistency.
+- **Keep validations focused** — Use a single, clear validation statement. Avoid combining multiple unrelated checks in one validation.
+- **Start simple** — Begin with short, focused flows and expand as you gain confidence in the agent's behavior.
+- **Use parameters for variable data** — Avoid hardcoding values that may change; use parameters instead to make tests reusable.
 
 ## Requirements
 
