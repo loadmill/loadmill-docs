@@ -53,6 +53,8 @@ Download the desktop app here: [Loadmill desktop app](https://app.loadmill.com/a
 
 ![Example of a UI Agent step configured in a test](<../assets/ui-agent-step-example.png>)
 
+For more details on configuring the UI Agent step, including the Navigate to URL, Agent Instructions, and AI-Driven UI Validation fields, see the [UI Agent step documentation](../test-editor/steps/ui-agent-step.md).
+
 4. Run the test you created.
 
 ![Example of a UI Agent step run result](<../assets/ui-agent-step-example-run.png>)
