@@ -454,6 +454,14 @@ Extracts a value from `target` using `jsonpath` as a JSONPath query. If there is
 
 Similar to `__jsonpath` but returns **all results from the JSONPath** and not only one as happens when using `__jsonpath.`
 
+### `__xpath(target,xpath)`
+
+Extracts a value from `target` using `xpath` as an XPath query. If there is no match, an empty string will be returned.
+
+* `${__xpath('<root><key>val</key></root>','//key/text()')} // returns 'val'`
+* `${__xpath(target,xpath)} // returns 'val' assuming target is '<root><key>val</key></root>' and xpath is '//key/text()'`
+* `${__xpath('<root><key>val</key></root>','//missing/text()')} // returns ''`
+
 ### `__jsonpath_keys(target,jsonpath)`
 
 Returns the keys of the extracted value from `target` queried by `jsonpath` in an array. Works similar to [Object.keys](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys).
