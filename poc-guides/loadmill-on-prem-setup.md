@@ -4,15 +4,13 @@ This guide explains the basic requirements and setup for running Loadmill on-pre
 
 ## Requirements
 
-- A Linux machine that can run three containers on the same Docker network.
-AWS EC2 t3.medium-t3.large or equivalent
-(2 vCPUs, 4/8 GB RAM)
-- Docker and Docker Compose installed.
-- Port 8090 availble for use. If not available, you can change it in the Docker Compose file.
-- Container images:
-  - Redis **7+** (downloaded from the internet).
-  - Postgres **15+** (downloaded from the internet).
-  - Loadmill on-prem container image (provided by Loadmill upon request).
+* A Linux machine that can run three containers on the same Docker network. AWS EC2 t3.medium-t3.large or equivalent (2 vCPUs, 4/8 GB RAM)
+* Docker and Docker Compose installed.
+* Port 8090 availble for use. If not available, you can change it in the Docker Compose file.
+* Container images:
+  * Redis **7+** (downloaded from the internet).
+  * Postgres **15+** (downloaded from the internet).
+  * Loadmill on-prem container image (provided by Loadmill upon request).
 
 Once getting the Loadmill on-prem container image, load it into your Docker environment using:
 
@@ -24,11 +22,11 @@ docker load -i loadmill-on-prem.tar
 
 Loadmill on-prem requires the following containers running on a shared Docker network ( the network is created automatically by Docker Compose):
 
-- **Redis (7+)**
-- **Postgres (15+)**
-- **Loadmill on-prem**
+* **Redis (7+)**
+* **Postgres (15+)**
+* **Loadmill on-prem**
 
-![On-prem network topology](../assets/loadmill-on-prem-topology.png)
+![On-prem network topology](../.gitbook/assets/loadmill-on-prem-topology.png)
 
 ## Desktop Application
 
@@ -38,10 +36,10 @@ Users can also download the Loadmill desktop application and configure it to wor
 
 Loadmill supports the following AI providers:
 
-- OpenAI
-- Azure OpenAI
-- AWS Bedrock (using an OpenAI OSS model)
-- Llama 3
+* OpenAI
+* Azure OpenAI
+* AWS Bedrock (using an OpenAI OSS model)
+* Llama 3
 
 You must have one of the providers running (hosted or SaaS) and supply the API token and base URL when running the Loadmill app.
 
@@ -52,10 +50,10 @@ Before running the stack, create the Postgres data directory on the host:
 ```bash
 sudo mkdir -p /var/lib/postgresql16/data
 ```
+
 Add your Docker Compose configurations here:
 
 ### 1) Basic example (Using OpenAI)
-
 
 Save the following to `docker-compose-on-prem.yml`, then run:
 

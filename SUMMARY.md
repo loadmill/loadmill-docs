@@ -179,6 +179,7 @@
   * [Loadmill vs. Blazemeter](general/comparisons/loadmill-vs.-blazemeter.md)
   * [Loadmill vs. WebdriverIO](general/comparisons/loadmill-vs.-webdriverio.md)
   * [Loadmill vs. Potato](general/comparisons/loadmill-vs.-potato.md)
+* [Migration Guide](general/migration-guide.md)
 * [Miscellaneous](general/api-testing1/README.md)
   * [Running a Test Suite](general/api-testing1/analyzing-an-api-test-results.md)
   * [Test Plan](general/api-testing1/test-plan.md)

@@ -2,7 +2,7 @@
 
 A Group lets you bundle multiple steps together under a shared label. This keeps your flow organized and makes it easier to understand at a glance what a set of steps is doing. Groups also unlock features like **Repeat Group**, which lets you run the same set of steps multiple times automatically.
 
-![Steps group in the flow editor](../../assets/steps-group-editor.png)
+![Steps group in the flow editor](../../.gitbook/assets/steps-group-editor.png)
 
 ## Creating a Group
 
@@ -14,10 +14,9 @@ To create a group:
 
 The grouped steps will now appear together under a collapsible section with your description.
 
-![Group steps in the flow editor](../../assets/steps-group-create.png)
+![Group steps in the flow editor](../../.gitbook/assets/steps-group-create.png)
 
 ## Repeat Group
-
 
 Repeat Group lets you run the same group of steps once for each item in an array.
 
@@ -32,7 +31,7 @@ On each iteration, Loadmill takes the next item from the array and assigns it to
 
 You can also set an optional **delay** (in milliseconds) between iterations if needed.
 
-![Repeat group configuration in the flow editor](../../assets/repeat-group-conf.png)
+![Repeat group configuration in the flow editor](../../.gitbook/assets/repeat-group-conf.png)
 
 ### Example: Adding Users to a Team
 
@@ -68,4 +67,4 @@ Each iteration, the group's steps execute using the current `${user_id}` value. 
 
 On the first iteration, `${user_id}` will be `user_1`. On the second, `user_2`. And so on until all items in the list have been processed.
 
-![Repeat group report](../../assets/repeat-group-report.png)
+![Repeat group report](../../.gitbook/assets/repeat-group-report.png)

@@ -18,17 +18,17 @@ You will need:
 
 Create your account here: [Sign up to Loadmill](https://app.loadmill.com/app/signup)
 
-*If you already have a Loadmill account, you can skip the sign-up part of this step.*
+_If you already have a Loadmill account, you can skip the sign-up part of this step._
 
 If you received a promo code by email, open [Billing](https://app.loadmill.com/app/user/settings/billing) after signing in and apply the code there. This enables access to the Agent step for eligible accounts.
 
 Open the Billing page from your account settings.
 
-![Billing page showing the subscription plan section](<../assets/billing-page.png>)
+![Billing page showing the subscription plan section](../.gitbook/assets/billing-page.png)
 
 Enter the promo code and activate it.
 
-![Billing page showing the subscription code activation field](<../assets/promo-code.png>)
+![Billing page showing the subscription code activation field](../.gitbook/assets/promo-code.png)
 
 ***
 
@@ -38,7 +38,7 @@ Download the desktop app here: [Loadmill desktop app](https://app.loadmill.com/a
 
 **Important:** The desktop app is required to run Agent steps.
 
-*If you already have the desktop app installed, you can skip this step.*
+_If you already have the desktop app installed, you can skip this step._
 
 ***
 
@@ -47,17 +47,17 @@ Download the desktop app here: [Loadmill desktop app](https://app.loadmill.com/a
 1. Open the Loadmill desktop app and create a new test suite.
 2. Add a new step and choose **UI Agent**.
 
-![Add a new UI Agent step](<../assets/add-ui-agent-step.png>)
+![Add a new UI Agent step](../.gitbook/assets/add-ui-agent-step.png)
 
 3. Enter a short prompt that describes the user flow you want the agent to perform on your site and what it should validate.
 
-![Example of a UI Agent step configured in a test](<../assets/ui-agent-step-example.png>)
+![Example of a UI Agent step configured in a test](../.gitbook/assets/ui-agent-step-example.png)
 
 For more details on configuring the UI Agent step, including the Navigate to URL, Agent Instructions, and AI-Driven UI Validation fields, see the [UI Agent step documentation](../test-editor/steps/ui-agent-step.md).
 
 4. Run the test you created.
 
-![Example of a UI Agent step run result](<../assets/ui-agent-step-example-run.png>)
+![Example of a UI Agent step run result](../.gitbook/assets/ui-agent-step-example-run.png)
 
 This is the fastest way to get started: give the agent a short, real UI task and validate that it can complete it reliably.
 

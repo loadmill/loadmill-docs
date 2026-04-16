@@ -44,15 +44,15 @@ The navigation bar allows:
 
 ![](<../../.gitbook/assets/Screenshot (30).png>)
 
-&#x20;    4\. To define a **Setup Flow** that will run before all suites of the Test Plan. The Setup Flow common use cases: creation of an account, user, env cleanup and any other action/s you need to perform before running the Test Plan suites. You can either create the flow from scratch in the Setup Flow tab or use a [shared flow](https://docs.loadmill.com/collaboration/shared-flows) by clicking on USE A SHARED FLOW.
+4\. To define a **Setup Flow** that will run before all suites of the Test Plan. The Setup Flow common use cases: creation of an account, user, env cleanup and any other action/s you need to perform before running the Test Plan suites. You can either create the flow from scratch in the Setup Flow tab or use a [shared flow](https://docs.loadmill.com/collaboration/shared-flows) by clicking on USE A SHARED FLOW.
 
 ![](<../../.gitbook/assets/Screenshot - 2022-02-08T150241.243.png>)
 
-&#x20;   5\. Set Test Plan [notifications](#notifications) so that you will get email/slack notifications with all the Test Suites' information.
+5\. Set Test Plan [notifications](test-plan.md#notifications) so that you will get email/slack notifications with all the Test Suites' information.
 
 ![](<../../.gitbook/assets/Screenshot (32).png>)
 
-&#x20;   6\. To schedule the Test Plan to run periodically to constantly validate your application status.
+6\. To schedule the Test Plan to run periodically to constantly validate your application status.
 
 ![](<../../.gitbook/assets/Screenshot (33).png>)
 
@@ -68,14 +68,14 @@ Enter one or more email addresses to receive a notification email after each Tes
 
 Select a Slack channel (or enter a channel ID) to receive notifications when a Test Plan run ends. For each channel you can configure:
 
-- **For** — which runs trigger a notification (e.g. all runs, failures only).
-- **Notification content** — a standard report with options to set how failures are reported (by flows or suites), the detail level, users to tag, and an optional custom message.
+* **For** — which runs trigger a notification (e.g. all runs, failures only).
+* **Notification content** — a standard report with options to set how failures are reported (by flows or suites), the detail level, users to tag, and an optional custom message.
 
 **AI-powered failure analysis**
 
 Instead of a standard report, you can opt for an AI summary. Loadmill will analyze all failures in the run and send a single Slack message explaining the root cause, giving your team an instant, actionable diagnosis without having to dig through individual flow results.
 
-![](../../assets/ai-tpr-ef.png)
+![](../../.gitbook/assets/ai-tpr-ef.png)
 
 ### Integrating Test Plan into CI/CD
 
