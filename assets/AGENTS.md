@@ -62,16 +62,17 @@ You should use Loadmill MCP for:
 
 7. Once the user confirms everything is working, suggest to create a pull request to merge the changes into the main branch.
 8. Once the pull request is approved and merged, delete the feature branch.
-9. In order to see the new or updated flow(s) in Loadmill UI, guide the user to do the following:
+9. In order to see the new or updated flow(s) in Loadmill UI, sync the suite back from Git to Loadmill using the loadmill MCP:
 
-   a. Open Loadmill UI.
+   a. Check if the suite have pending changes that are not synced to git using the relevant suite ID, git platform, and branch (main if merged, or the feature branch if not merged yet).
 
-   b. Navigate to the relevant suite.
+   b. If pending changes are detected in Loadmill
+      
+      i. Inform the user that syncing will overwrite those changes.
+  
+      ii. Ask for explicit confirmation before proceeding.
 
-   c. Go to the "Github Sync" tab.
-
-   d. Select the main branch (or the feature branch if not merged yet) and under "Branch history", checkout the latest 
-   commit that includes the new or updated flow(s). **Note**: This action will overwrite any unsynced changes in Loadmill UI. Make sure no changes in this suite are not yet synced to Github.
+   c. If there are no conflicting changes, or if the user confirmed despite the warning, apply the sync using the same suite ID, git platform, and branch to update Loadmill with the latest changes from Git.
 
 **Important**: After each step in the workflow, confirm with the user before proceeding to the next step.
 
@@ -108,15 +109,7 @@ You should use Loadmill MCP for:
 
 6. Once the user confirms everything is working, suggest to create a pull request to merge the changes into the main branch.
 7. Once the pull request is approved and merged, delete the feature branch.
-8. In order to see the new suite in Loadmill UI, guide the user to do the following:
-
-   a. Open Loadmill UI.
-
-   b. Navigate to the new suite.
-
-   c. Go to the "Github Sync" tab.
-
-   d. Select the main branch (or the feature branch if not merged yet) and under "Branch history", checkout the latest commit that includes the new suite.
+8. In order to see the new suite in Loadmill UI, sync the suite back from Git to Loadmill using the loadmill MCP, no need to check if the suite has pending changes.
 
 **Important**: After each step in the workflow, confirm with the user before proceeding to the next step.
 
