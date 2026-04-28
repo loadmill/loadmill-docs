@@ -4,9 +4,9 @@
 
 When running a flow within the flow editor for debugging purposes, it can be very convenient to replace certain parameters for a single run. Instead of changing the parameter value in the global parameters window, you can simply click the 'run with overrides' button (![](<../../.gitbook/assets/image (148).png>)), and then set values for a specific execution. This won't affect the global parameters, providing a quick and simple way to debug your flows. i.e.:
 
-This is the global parameter: ![](<../../.gitbook/assets/image (150) (1).png>), and we want to check something specific and change the value of `email` for only one run. We'll use the 'run with overrides' button to execute it and reset its value. For example:
+This is the global parameter: ![](<../../.gitbook/assets/image (150).png>), and we want to check something specific and change the value of `email` for only one run. We'll use the 'run with overrides' button to execute it and reset its value. For example:
 
-<figure><img src="../../.gitbook/assets/image (154) (1).png" alt=""><figcaption><p>Good to know: the override parameters in this window are saved for subsequent 'runs with overrides' as well.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (154).png" alt=""><figcaption><p>Good to know: the override parameters in this window are saved for subsequent 'runs with overrides' as well.</p></figcaption></figure>
 
 ### Assigning Labels
 

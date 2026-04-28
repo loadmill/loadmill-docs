@@ -10,8 +10,8 @@ Loadmill’s Test Editor brings ease of access and customization to API testing.
 
 Here’s a tour of the Test Editor to guide you to all its functionalities:
 
-<figure><img src="../../.gitbook/assets/editor-sections (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/editor-sections.png" alt=""><figcaption></figcaption></figure>
 
 * In the Flows section on the left column, you can rename or delete your flows.
-* The API editor in the center are all the expandable API components. &#x20;
+* The API editor in the center are all the expandable API components.
 * On the Flow Runs (or Trial Runs) in the right column, you can see a single test run per flow that includes all its activity logs.

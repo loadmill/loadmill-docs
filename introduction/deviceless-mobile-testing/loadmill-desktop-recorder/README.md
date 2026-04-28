@@ -41,7 +41,7 @@ The controls in the list allow:\
 \- Exporting har file
 
 **Test creation controls:**\
-![](<../../../.gitbook/assets/image (31) (2).png>)\\
+![](<../../../.gitbook/assets/image (31).png>)\\
 
 Bottom right area
 

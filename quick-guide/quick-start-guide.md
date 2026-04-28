@@ -35,7 +35,7 @@ Time needed: **10–15 minutes**
 
 👉 Only after this step should you continue to the demo AUT.
 
-<figure><img src="../.gitbook/assets/image (192) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

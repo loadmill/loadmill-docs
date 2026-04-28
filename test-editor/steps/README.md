@@ -40,13 +40,13 @@ A new empty step will be added.
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-To paste the step in the desired place, locate the divider between any two requests or at the beginning or the end of the flow and click on the dotted menu (![](<../../.gitbook/assets/image (11).png>)) then on the paste button ![](<../../.gitbook/assets/image (12) (3).png>)
+To paste the step in the desired place, locate the divider between any two requests or at the beginning or the end of the flow and click on the dotted menu (![](<../../.gitbook/assets/image (11).png>)) then on the paste button ![](<../../.gitbook/assets/image (12).png>)
 
 * To copy multiple steps, use the checkboxes located left to the description of each step then click on the copy button located at the top.
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-to paste the copied steps, locate the divider between any two requests or at the beginning or the end of the flow and click on the dotted menu (![](<../../.gitbook/assets/image (11).png>)) then on the paste button ![](<../../.gitbook/assets/image (12) (3).png>) same as individual flow.
+to paste the copied steps, locate the divider between any two requests or at the beginning or the end of the flow and click on the dotted menu (![](<../../.gitbook/assets/image (11).png>)) then on the paste button ![](<../../.gitbook/assets/image (12).png>) same as individual flow.
 
 {% hint style="info" %}
 Tip1: To copy all the requests click on the checkbox at the top then use copy/paste as already demonstrated.\

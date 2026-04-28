@@ -21,6 +21,6 @@ Note! The plan should pass in order to generate the "Coverage report". In a fail
 
 Loadmill will calculate and show the percentage of the coverage for each service
 
-<figure><img src="../../../.gitbook/assets/image (25) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 Note, the report is also available to download as a csv file.

@@ -10,7 +10,7 @@ You may have an arbitrary number of assertions executed after each successful re
 
 Assertions editor can be found in loadmill under each request cubical on it's expanded form.\\
 
-<figure><img src="../../../.gitbook/assets/image (66) (1).png" alt=""><figcaption><p>Assertion section in request editor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption><p>Assertion section in request editor</p></figcaption></figure>
 
 Furthermore, there is an option to disable an assertion by clicking the three dots (![](<../../../.gitbook/assets/image (4) (1) (1).png>)) in the assertion line. A disabled assertion will still be evaluated, but it won't cause the test to fail.
 
@@ -40,7 +40,7 @@ You can then see both the extraction and the assertion in the request editor pan
 
 The target of an assertion is always a parameter value. You may use built-in parameters, default parameters or any parameter extracted from the current or previous requests in the **current scenario** as the target.
 
-![The request Assertions - Verify Response section](<../../../.gitbook/assets/Screenshot 2023-03-21 at 15.12.24 (1).png>)
+![The request Assertions - Verify Response section](<../../../.gitbook/assets/Screenshot 2023-03-21 at 15.12.24.png>)
 
 When using assertions, it will usually require to use [extractions](set-parameters-extractions.md) first to set the parameter with proper data and only then to attempt to validate it's form.
 
@@ -59,7 +59,7 @@ There are several types of assertions:
 
 * Example 1:\
   Assigning any value to `param1` will result in assertion failure\
-  ![Click to enlarge the image](<../../../.gitbook/assets/image (80) (1).png>)![](<../../../.gitbook/assets/image (74).png>)
+  ![Click to enlarge the image](<../../../.gitbook/assets/image (80).png>)![](<../../../.gitbook/assets/image (74).png>)
 * Example 2:\
   Not setting `param1` entirely will result in passed assetion\
   ![Click to enlarge the image](<../../../.gitbook/assets/image (60).png>)![](<../../../.gitbook/assets/image (94).png>)
@@ -109,13 +109,13 @@ There are several types of assertions:
   ![Click to enlarge the image](<../../../.gitbook/assets/image (61).png>)![](<../../../.gitbook/assets/image (86).png>)
 * Example 2:\
   The assigned epoch representation of the current time to `param1` will contain 13 digits and would match the regex (`^\d{13}$`), hence the assertion will pass\
-  ![Click to enlarge the image](<../../../.gitbook/assets/image (85) (1).png>)![](<../../../.gitbook/assets/image (67).png>)
+  ![Click to enlarge the image](<../../../.gitbook/assets/image (85).png>)![](<../../../.gitbook/assets/image (67).png>)
 
 #### **Greater than** - Validates that a parameter is greater than the given expression.
 
 * Example 1:\
   `param1` is assigned with the value 31 that is not greater than 40 hence the assertion will fail.\
-  ![Click to enlarge the image](<../../../.gitbook/assets/image (68) (1).png>)![](<../../../.gitbook/assets/image (81) (1).png>)
+  ![Click to enlarge the image](<../../../.gitbook/assets/image (68).png>)![](<../../../.gitbook/assets/image (81).png>)
 * Example 2:\
   `param1` is assigned with the value 31 which is greater than 30 will make the assertion to pass\
   ![Click to enlarge the image](<../../../.gitbook/assets/image (97).png>)![](<../../../.gitbook/assets/image (95).png>)
@@ -170,7 +170,7 @@ Note, the subset xml object should preserve the same hierarchal structure as the
   in a key or value on same hierarchy will result in assertion error: ![](<../../../.gitbook/assets/image (125).png>) <img src="../../../.gitbook/assets/image (124).png" alt="" data-size="original">\\
 * Example 2:\
   Given `param1` was set with an xml as below, any partial subset in xml-contains validation value with same structure will result pass in assertion:\
-  ![](<../../../.gitbook/assets/image (126) (1).png>)![](<../../../.gitbook/assets/image (128).png>)\
+  ![](<../../../.gitbook/assets/image (126).png>)![](<../../../.gitbook/assets/image (128).png>)\
   \
   \- Using star notation to accept any value for `latitude` and `country` fields.\
   ![](<../../../.gitbook/assets/Screenshot 2023-12-28 at 10.15.29.png>)\

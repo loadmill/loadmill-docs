@@ -90,7 +90,7 @@ Loadmill keeps track of the request **error rate** and fails the test if it pass
 :brain: You can easily run your API Test Suite as load tests by clicking on the drop-down icon within the **RUN SUITE** button - **Run as load test**.
 {% endhint %}
 
-![](<../.gitbook/assets/video1977598869-online-video-cut (1) (1).gif>)
+![](<../.gitbook/assets/video1977598869-online-video-cut (1).gif>)
 
 Keep exploring the guides to learn how to analyze load test results, set thresholds and more.
 

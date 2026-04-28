@@ -144,4 +144,6 @@ Example Cursor config:
 
 Your Loadmill tests repository should include an `AGENTS.md` file at the root level to guide the IDE agent. This file defines conventions, structure, and automation rules for your Loadmill suites and can be customized to fit your project's needs. Download the file and add it to your repository to get started:
 
+{% file src="/broken/files/L5KbBN9Ja3kG5ah5vwFA" %}
+
 {% file src="../.gitbook/assets/AGENTS.md" %}
