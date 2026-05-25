@@ -1,16 +1,13 @@
 # Table of contents
 
-## Droid CUA
-
-* [Overview](droid-cua/README.md)
-* [Getting Started](droid-cua/getting-started.md)
-* [Setup](droid-cua/setup.md)
-  * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
-* [CLI Basics](droid-cua/cli.md)
-
 ## Introduction
 
 * [Loadmill - AI - Powered Solution](README.md)
+* [Droid CUA](droid-cua/README.md)
+  * [Getting Started](droid-cua/getting-started.md)
+  * [Setup](droid-cua/setup.md)
+    * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
+  * [CLI](droid-cua/cli.md)
 * [Deviceless mobile testing](introduction/deviceless-mobile-testing/README.md)
   * [Capturing traffic with Loadmill MITM Proxy](introduction/deviceless-mobile-testing/capturing-traffic-with-loadmill-mitm-proxy.md)
   * [Installing Loadmill desktop app](introduction/deviceless-mobile-testing/installing-loadmill-desktop-app/README.md)
