@@ -1,5 +1,13 @@
 # Table of contents
 
+## Droid CUA
+
+* [Overview](droid-cua/README.md)
+* [Getting Started](droid-cua/getting-started.md)
+* [Setup](droid-cua/setup.md)
+  * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
+* [CLI Basics](droid-cua/cli.md)
+
 ## Introduction
 
 * [Loadmill - AI - Powered Solution](README.md)
@@ -103,14 +111,6 @@
 * [AI-Native E2E Testing](loadmill-mcp/loadmill-mcp.md)
 * [Loadmill Test Authoring Workflow](loadmill-mcp/test-authoring.md)
 * [Loadmill Agent Skill](loadmill-mcp/skills.md)
-
-## Droid CUA
-
-* [Overview](droid-cua/README.md)
-* [Getting Started](droid-cua/getting-started.md)
-* [Setup](droid-cua/setup.md)
-  * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
-* [CLI Basics](droid-cua/cli.md)
 
 ## Auth
 
