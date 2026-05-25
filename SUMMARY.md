@@ -3,6 +3,11 @@
 ## Introduction
 
 * [Loadmill - AI - Powered Solution](README.md)
+* [Droid CUA](droid-cua/README.md)
+  * [Getting Started](droid-cua/getting-started.md)
+  * [Setup](droid-cua/setup.md)
+    * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
+  * [CLI](droid-cua/cli.md)
 * [Deviceless mobile testing](introduction/deviceless-mobile-testing/README.md)
   * [Capturing traffic with Loadmill MITM Proxy](introduction/deviceless-mobile-testing/capturing-traffic-with-loadmill-mitm-proxy.md)
   * [Installing Loadmill desktop app](introduction/deviceless-mobile-testing/installing-loadmill-desktop-app/README.md)
@@ -134,7 +139,6 @@
 * [TestRail](integrations/testrail.md)
 * [gRPC Support](integrations/grpc-support.md)
 * [Mocking](integrations/mocking.md)
-* [Mobile Computer-Using Agent](integrations/mobile-computer-using-agent.md)
 
 ## Collaboration
 
