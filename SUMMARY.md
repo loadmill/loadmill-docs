@@ -142,7 +142,6 @@
 * [TestRail](integrations/testrail.md)
 * [gRPC Support](integrations/grpc-support.md)
 * [Mocking](integrations/mocking.md)
-* [Mobile Computer-Using Agent](integrations/mobile-computer-using-agent.md)
 
 ## Collaboration
 
