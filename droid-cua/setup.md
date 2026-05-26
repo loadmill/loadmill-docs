@@ -1,6 +1,6 @@
 # Setup
 
-This page covers the basic setup required before running Droid CUA tests.
+This page covers the basic setup required before running Droid CUA tests on mobile devices, cloud devices, and browsers.
 
 ***
 
@@ -12,7 +12,7 @@ Download and install the Droid CUA desktop app:
 * [Mac Intel](https://github.com/loadmill/droid-cua-release/releases/latest/download/Loadmill-Droid-CUA-intel.dmg)
 * [Windows](https://github.com/loadmill/droid-cua-release/releases/latest/download/Loadmill-Droid-CUA-Setup.exe)
 
-After installation, launch Droid CUA and sign in with your Loadmill account or add your OpenAI API key in **Settings**.
+After installation, launch Droid CUA and sign in with your Loadmill account.
 
 When you open Droid CUA for the first time, the setup wizard helps you choose a platform and run the required checks.
 
@@ -64,6 +64,46 @@ Install and configure:
 After setup, open Droid CUA and choose an installed simulator from the device picker.
 
 Use the platform selector on the **Devices** page to switch between Android, iOS, and web targets.
+
+***
+
+## Web setup
+
+To test web flows, install a supported browser:
+
+* Google Chrome
+* Microsoft Edge
+
+Droid CUA uses Playwright with the installed browser for web execution. In the CLI, use `--target web` with `--instructions`.
+
+```sh
+droid-cua --target web --browser chrome --instructions tests/search.dcua
+```
+
+Use `--browser edge` to run against Microsoft Edge.
+
+***
+
+## Cloud device setup
+
+Droid CUA supports cloud mobile runs on LambdaTest from the CLI.
+
+You will need:
+
+* `LAMBDATEST_USERNAME`
+* `LAMBDATEST_ACCESS_KEY`
+* A target platform, such as `android` or `ios`
+* A cloud device name and OS version
+* An app build: `.apk` for Android or `.ipa` for iOS
+
+Set the credentials in your shell or CI environment:
+
+```sh
+export LAMBDATEST_USERNAME=your-username
+export LAMBDATEST_ACCESS_KEY=your-access-key
+```
+
+Then run Droid CUA with `--device-source lambdatest`.
 
 ***
 

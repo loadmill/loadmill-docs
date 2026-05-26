@@ -9,10 +9,11 @@ This guide shows the basic path for running your first Droid CUA test.
 You will need:
 
 * The Droid CUA desktop app installed.
-* A Loadmill account or an OpenAI API key.
-* A target device or simulator.
+* A Loadmill account.
+* A target device, simulator, cloud device, or browser.
 * Android Debug Bridge (ADB) for Android testing.
 * Xcode, Appium, and the XCUITest driver for iOS simulator testing on macOS.
+* Chrome or Edge installed for web testing.
 
 For a fuller checklist, see [Setup](setup.md).
 
@@ -30,21 +31,25 @@ After the download finishes, install and launch Droid CUA.
 
 ***
 
-## Step 2: Sign in or add your API key
+## Step 2: Sign in
 
-When the app opens, sign in with your Loadmill account or open **Settings** and add your OpenAI API key.
+When the app opens, sign in with your Loadmill account.
 
 If the setup wizard appears, follow the checks it shows. It helps confirm that the required tools for Android or iOS testing are installed.
 
 ***
 
-## Step 3: Connect a device
+## Step 3: Choose a target
 
 Choose the platform you want to test.
 
 For Android, connect a physical device with USB debugging enabled, or choose an available emulator.
 
 For iOS, choose an installed iOS simulator. iOS simulator testing is available on macOS only.
+
+For web testing, choose the web platform and use an installed Chrome or Edge browser.
+
+For cloud mobile testing, use the CLI with LambdaTest credentials and a mobile app build.
 
 ![Droid CUA device selection screen](../assets/devices-page.png)
 
