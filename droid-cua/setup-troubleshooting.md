@@ -60,17 +60,34 @@ After installing missing tools, restart Droid CUA and open the device picker aga
 
 ***
 
-## OpenAI API key is missing or rejected
+## Web browser is not found
 
-Open **Settings** in Droid CUA and confirm that your API key is set correctly.
+For web tests, install Google Chrome or Microsoft Edge and restart Droid CUA.
 
-For CLI runs, make sure `OPENAI_API_KEY` is available in the shell or CI environment.
+For CLI runs, confirm the selected browser is supported:
 
 ```sh
-export OPENAI_API_KEY=your-api-key
+droid-cua --target web --browser chrome --instructions tests/search.dcua
 ```
 
-Then run the test again.
+Use `--browser edge` if you want to run against Microsoft Edge.
+
+***
+
+## LambdaTest cloud device run fails before connecting
+
+Check that the required LambdaTest inputs are set:
+
+* `LAMBDATEST_USERNAME`
+* `LAMBDATEST_ACCESS_KEY`
+* `--device-source lambdatest`
+* `--platform android` or `--platform ios`
+* `--device-name`
+* `--os-version`
+* `--app`
+* `--instructions`
+
+Android cloud runs require an `.apk` file. iOS cloud runs require an `.ipa` file.
 
 ***
 
@@ -93,8 +110,8 @@ Check the most common inputs:
 * `--instructions` points to an existing `.dcua` file or folder.
 * `--avd` matches the selected Android device, emulator, or iOS simulator.
 * `--platform ios` is used for iOS simulator runs.
+* `--target web` is used for browser runs.
 * `--config` points to valid JSON.
-* `OPENAI_API_KEY` is available in the environment.
 
 Run with `--debug` to create detailed artifacts for troubleshooting:
 

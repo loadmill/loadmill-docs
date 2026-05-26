@@ -1,15 +1,13 @@
 # Droid CUA
 
-Droid CUA is Loadmill's AI-powered desktop app for mobile testing.
+Droid CUA is Loadmill's AI-powered desktop app for mobile and web testing.
 
-It helps you create, run, and manage tests for Android devices and emulators, and for iOS simulators on macOS. Instead of writing traditional mobile automation code with selectors and locators, you describe the user flow in natural language and let the agent operate the app from the screen, the same way a person would.
-
-<video controls width="100%" src="../assets/cua-demo.mov" title="Droid CUA demo"></video>
+It helps you create, run, and manage tests for Android devices and emulators, iOS simulators on macOS, cloud mobile devices, and browser flows. Instead of writing traditional automation code with selectors and locators, you describe the user flow in natural language and let the agent operate the app from the screen, the same way a person would.
 
 With Droid CUA you can:
 
-* Connect to a real Android device, Android emulator, or iOS simulator.
-* Create mobile tests from plain-English instructions.
+* Connect to a real Android device, Android emulator, iOS simulator, cloud mobile device, or browser.
+* Create mobile and web tests from plain-English instructions.
 * Watch the agent execute each action with live logs.
 * Save reusable `.dcua` test scripts.
 * Run saved tests again from the desktop app or the CLI.
@@ -27,7 +25,7 @@ The result is a test workflow that is easier to draft, easier to understand, and
 
 ***
 
-## What you can test
+## Platforms
 
 ### Android
 
@@ -37,14 +35,22 @@ Droid CUA supports physical Android devices and Android emulators.
 
 Droid CUA supports iOS simulators on macOS.
 
+### Web
+
+Droid CUA supports browser testing with installed Chrome or Edge.
+
+### Cloud devices
+
+Droid CUA supports cloud mobile runs on LambdaTest from the CLI. Cloud runs use real Android or iOS devices and require your LambdaTest credentials plus an app build.
+
 ### Desktop support
 
-* macOS: Android and iOS simulator workflows
-* Windows: Android workflows
+* macOS: Android, iOS simulator, and web workflows
+* Windows: Android and web workflows
 
 ***
 
 ## Learn more
 
 * [Getting started](getting-started.md)
-* [CLI basics](cli.md)
+* [CLI](cli.md)
