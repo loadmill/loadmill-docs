@@ -6,7 +6,7 @@ Agent Skills are a new open standard for giving AI coding agents specialized cap
 
 The **Loadmill Agent Skill** gives your IDE agent everything it needs to create, maintain, and run Loadmill E2E tests as a natural part of your development workflow. Instead of context-switching to a separate testing tool, you describe what you need and the agent handles the rest—authoring YAML test files, validating them, running them via Loadmill MCP, and managing the Git workflow around them.
 
-> **Prerequisite:** The Loadmill Agent Skill requires the **Loadmill MCP** server to be installed and configured in your IDE. See the [Installation guide](../loadmill-mcp/loadmill-mcp#installation) for setup instructions.
+> **Prerequisite:** The Loadmill Agent Skill requires the **Loadmill MCP** server to be installed and configured in your IDE. See the [Installation guide](loadmill-mcp/#installation) for setup instructions.
 
 ***
 
@@ -53,14 +53,16 @@ Follow the [Installation guide](https://docs.loadmill.com/loadmill-mcp/loadmill-
 
 Download the skill package below and extract it into your project's skills directory:
 
-| IDE / Agent | Directory |
-| --- | --- |
-| Cursor | `.cursor/skills/loadmill` |
-| Claude Code | `.claude/skills/loadmill` |
+| IDE / Agent  | Directory                 |
+| ------------ | ------------------------- |
+| Cursor       | `.cursor/skills/loadmill` |
+| Claude Code  | `.claude/skills/loadmill` |
 | OpenAI Codex | `.agents/skills/loadmill` |
-| Goose | `.goose/skills/loadmill` |
+| Goose        | `.goose/skills/loadmill`  |
 
-{% file src="../.gitbook/assets/loadmill.zip" %}
+###
+
+{% file src="../.gitbook/assets/loadmill (1).zip" %}
 
 ### 3. Start Using It
 

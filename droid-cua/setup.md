@@ -16,7 +16,7 @@ After installation, launch Droid CUA and sign in with your Loadmill account.
 
 When you open Droid CUA for the first time, the setup wizard helps you choose a platform and run the required checks.
 
-![Droid CUA setup wizard welcome screen](../assets/setup-welcome.png)
+![Droid CUA setup wizard welcome screen](../.gitbook/assets/setup-welcome.png)
 
 ***
 
@@ -46,7 +46,7 @@ If the device appears in the list, Droid CUA should be able to connect to it fro
 
 Use the **Devices** page to choose the device source, platform, and target device.
 
-![Droid CUA devices page with a connected Android emulator](../assets/devices-page.png)
+![Droid CUA devices page with a connected Android emulator](../.gitbook/assets/devices-page.png)
 
 ***
 

@@ -1,4 +1,4 @@
-# Getting Started With Droid CUA
+# Getting Started
 
 This guide shows the basic path for running your first Droid CUA test.
 
@@ -51,7 +51,7 @@ For web testing, choose the web platform and use an installed Chrome or Edge bro
 
 For cloud mobile testing, use the CLI with LambdaTest credentials and a mobile app build.
 
-![Droid CUA device selection screen](../assets/devices-page.png)
+![Droid CUA device selection screen](../.gitbook/assets/devices-page.png)
 
 ***
 
@@ -71,7 +71,7 @@ Start with a short flow that is easy to verify.
 
 For example:
 
-```text
+```
 Open the app.
 Sign in with the standard test account.
 Verify that the Home screen is visible.
@@ -81,11 +81,11 @@ Good Droid CUA instructions describe the user's goal and the visible result. Use
 
 You can write a test directly, or use Design Mode to describe what you want to test and let the agent create a first draft.
 
-![Droid CUA Design Mode screen](../assets/design-mode.png)
+![Droid CUA Design Mode screen](../.gitbook/assets/design-mode.png)
 
 Saved tests are plain `.dcua` files. They are easy to read, review, and run again later.
 
-![Example Droid CUA test file](../assets/example-test.png)
+![Example Droid CUA test file](../.gitbook/assets/example-test.png)
 
 ***
 
