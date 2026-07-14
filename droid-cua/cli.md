@@ -20,6 +20,48 @@ droid-cua
 
 ***
 
+## Choose an LLM provider and CUA model
+
+### Use Loadmill (default)
+
+The CLI uses Loadmill by default, with `loadmill-smart` as the recommended, most robust model. You do not need to pass `--llm-provider` or `--cua-model` for a standard Loadmill run.
+
+```sh
+droid-cua \
+  --avd adb:emulator-5554 \
+  --instructions tests/login.dcua
+```
+
+### Use Loadmill Beacon for faster execution
+
+For a faster, lower-cost Loadmill run, use `loadmill-beacon`. Loadmill is already the default provider, so you only need to set the model:
+
+```sh
+droid-cua \
+  --cua-model loadmill-beacon \
+  --avd adb:emulator-5554 \
+  --instructions tests/login.dcua
+```
+
+### Use your own OpenAI API key
+
+To use OpenAI instead of Loadmill, set `OPENAI_API_KEY` and explicitly pass `--llm-provider openai`. Passing an OpenAI model to `--cua-model` alone does not change the provider.
+
+Choose `gpt-5.4` for the full model or `gpt-5.4-mini` for a faster OpenAI option.
+
+```sh
+OPENAI_API_KEY=your-openai-api-key \
+droid-cua \
+  --llm-provider openai \
+  --cua-model gpt-5.4 \
+  --avd adb:emulator-5554 \
+  --instructions tests/login.dcua
+```
+
+For CI or a config file, use `"llmProviderMode": "openai"` to select OpenAI. You can also set `DROID_CUA_LLM_PROVIDER=openai` as the default provider for a shell environment.
+
+***
+
 ## Run a saved Android test
 
 Use `--instructions` to point at a `.dcua` file and `--avd` to select the target device or emulator.
@@ -99,7 +141,8 @@ Example config:
 
 ```json
 {
-  "cuaModel": "gpt-5.4",
+  "llmProviderMode": "loadmill",
+  "cuaModel": "loadmill-smart",
   "promptCustomizations": {
     "basePromptInstructions": "",
     "designModeInstructions": "",
@@ -130,7 +173,8 @@ The config file keeps prompt settings and app context consistent between local r
 | `--os-version` | LambdaTest cloud device OS version. |
 | `--app` | App build path for LambdaTest runs. Use `.apk` for Android or `.ipa` for iOS. |
 | `--config` | Path to a Droid CUA headless config file. |
-| `--cua-model` | Model to use for the run. |
+| `--llm-provider` | AI provider for the run: `loadmill` (default) or `openai`. Set this to `openai` when using your own OpenAI API key. |
+| `--cua-model` | Model to use for the run. With Loadmill, use `loadmill-smart` (recommended and most robust) or `loadmill-beacon` (faster and lower cost). With OpenAI, use `gpt-5.4` or `gpt-5.4-mini`. |
 | `--context` | Path to an app context file. |
 | `--no-context` | Disable app context for the run. |
 | `--record` | Save screenshots from the run. |
