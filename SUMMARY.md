@@ -31,6 +31,7 @@
 * [Setup](droid-cua/setup.md)
   * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
 * [CLI](droid-cua/cli.md)
+* [Agent Skill](droid-cua/skill.md)
 
 ## Quick Guide
 

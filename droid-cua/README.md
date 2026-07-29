@@ -41,7 +41,7 @@ Droid CUA supports browser testing with installed Chrome or Edge.
 
 ### Cloud devices
 
-Droid CUA supports cloud mobile runs on LambdaTest from the CLI. Cloud runs use real Android or iOS devices and require your LambdaTest credentials plus an app build.
+Droid CUA supports cloud mobile runs from the CLI, including Loadmill Cloud and LambdaTest. Cloud runs use real Android or iOS devices and require the provider credentials plus an app build.
 
 ### Desktop support
 
@@ -54,3 +54,4 @@ Droid CUA supports cloud mobile runs on LambdaTest from the CLI. Cloud runs use 
 
 * [Getting started](getting-started.md)
 * [CLI](cli.md)
+* [Agent Skill](skill.md)

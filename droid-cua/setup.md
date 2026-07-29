@@ -86,7 +86,30 @@ Use `--browser edge` to run against Microsoft Edge.
 
 ## Cloud device setup
 
-Droid CUA supports cloud mobile runs on LambdaTest from the CLI.
+Droid CUA supports cloud mobile runs from the CLI.
+
+### Loadmill Cloud
+
+Loadmill Cloud is a paid feature. Contact [Loadmill Support](mailto:support@loadmill.com) to discuss access and have it enabled for your account before using it.
+
+After access is enabled, you need:
+
+* A Loadmill API token.
+* A target platform: `android` or `ios`.
+* The cloud device name and OS version.
+* An app build: `.apk` for Android or `.ipa` for iOS.
+
+Set your API token in your shell or CI environment:
+
+```sh
+export LOADMILL_API_TOKEN=your-loadmill-api-token
+```
+
+Use `--device-source loadmill-cloud` with the platform, device, app, and saved test when you run the CLI. See [CLI](cli.md) for an example.
+
+### LambdaTest
+
+LambdaTest is another cloud-device option available from the CLI.
 
 You will need:
 

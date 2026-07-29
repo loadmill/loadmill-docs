@@ -32,22 +32,24 @@ droid-cua \
   --instructions tests/login.dcua
 ```
 
-### Use Loadmill Beacon for faster execution
+### Use Loadmill Pulse for faster execution
 
-For a faster, lower-cost Loadmill run, use `loadmill-beacon`. Loadmill is already the default provider, so you only need to set the model:
+For a faster, lower-cost Loadmill run, use `loadmill-pulse`. Loadmill is already the default provider, so you only need to set the model:
 
 ```sh
 droid-cua \
-  --cua-model loadmill-beacon \
+  --cua-model loadmill-pulse \
   --avd adb:emulator-5554 \
   --instructions tests/login.dcua
 ```
+
+`loadmill-beacon` is also available as an experimental Loadmill model.
 
 ### Use your own OpenAI API key
 
 To use OpenAI instead of Loadmill, set `OPENAI_API_KEY` and explicitly pass `--llm-provider openai`. Passing an OpenAI model to `--cua-model` alone does not change the provider.
 
-Choose `gpt-5.4` for the full model or `gpt-5.4-mini` for a faster OpenAI option.
+Choose `gpt-5.6-terra`, `gpt-5.6-luna`, or `gpt-5.4`.
 
 ```sh
 OPENAI_API_KEY=your-openai-api-key \
@@ -125,6 +127,32 @@ Android cloud runs require an `.apk` file. iOS cloud runs require an `.ipa` file
 
 ***
 
+## Run on Loadmill Cloud
+
+Loadmill Cloud lets you run saved Droid CUA tests on cloud-hosted Android or iOS devices. It is a paid feature; contact [Loadmill Support](mailto:support@loadmill.com) to enable it for your account before setting it up.
+
+After Loadmill Cloud is enabled, create a Loadmill API token and make it available to your local shell or CI environment:
+
+```sh
+export LOADMILL_API_TOKEN=your-loadmill-api-token
+```
+
+Start a run with `--device-source loadmill-cloud`, the target platform, device name, OS version, app build, and a saved test:
+
+```sh
+droid-cua \
+  --device-source loadmill-cloud \
+  --platform android \
+  --device-name "Galaxy S24" \
+  --os-version "14" \
+  --app ./app-debug.apk \
+  --instructions tests/login.dcua
+```
+
+Use an `.apk` app build for Android or an `.ipa` app build for iOS.
+
+***
+
 ## Use a config file
 
 For CI, it is recommended to keep a small JSON config file in the repository and run tests with `--config`.
@@ -168,13 +196,13 @@ The config file keeps prompt settings and app context consistent between local r
 | `--avd` | Android device, Android emulator, or iOS simulator name. |
 | `--platform` | Target platform, such as `android` or `ios`. |
 | `--browser` | Browser for web runs, such as `chrome` or `edge`. |
-| `--device-source` | Mobile device source, such as `local` or `lambdatest`. |
-| `--device-name` | LambdaTest cloud device name. |
-| `--os-version` | LambdaTest cloud device OS version. |
-| `--app` | App build path for LambdaTest runs. Use `.apk` for Android or `.ipa` for iOS. |
+| `--device-source` | Mobile device source, such as `local`, `lambdatest`, or `loadmill-cloud`. |
+| `--device-name` | Cloud device name for LambdaTest or Loadmill Cloud. |
+| `--os-version` | Cloud device OS version for LambdaTest or Loadmill Cloud. |
+| `--app` | App build path for cloud runs. Use `.apk` for Android or `.ipa` for iOS. |
 | `--config` | Path to a Droid CUA headless config file. |
 | `--llm-provider` | AI provider for the run: `loadmill` (default) or `openai`. Set this to `openai` when using your own OpenAI API key. |
-| `--cua-model` | Model to use for the run. With Loadmill, use `loadmill-smart` (recommended and most robust) or `loadmill-beacon` (faster and lower cost). With OpenAI, use `gpt-5.4` or `gpt-5.4-mini`. |
+| `--cua-model` | Model to use for the run. With Loadmill, use `loadmill-smart` (recommended and most robust), `loadmill-pulse` (faster and lower cost), or experimental `loadmill-beacon`. With OpenAI, use `gpt-5.6-terra`, `gpt-5.6-luna`, or `gpt-5.4`. |
 | `--context` | Path to an app context file. |
 | `--no-context` | Disable app context for the run. |
 | `--record` | Save screenshots from the run. |
