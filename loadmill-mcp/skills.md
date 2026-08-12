@@ -51,7 +51,7 @@ Follow the [Installation guide](https://docs.loadmill.com/loadmill-mcp/loadmill-
 
 ### 2. Download the Skill
 
-Download the skill package below and extract it into your project's skills directory:
+[Download the latest Loadmill Agent Skill](https://github.com/loadmill/loadmill-agent-skill/releases/latest/download/loadmill.zip) and extract it into your project's skills directory:
 
 | IDE / Agent  | Directory                 |
 | ------------ | ------------------------- |
@@ -60,9 +60,9 @@ Download the skill package below and extract it into your project's skills direc
 | OpenAI Codex | `.agents/skills/loadmill` |
 | Goose        | `.goose/skills/loadmill`  |
 
-###
+The download is updated automatically whenever a new skill version is published. Download `loadmill.zip` using the link above rather than GitHub's generic **Source code** archives, which are not packaged for installation.
 
-{% file src="../.gitbook/assets/loadmill (1).zip" %}
+To inspect the skill before installing it, visit the [Loadmill Agent Skill source repository](https://github.com/loadmill/loadmill-agent-skill).
 
 ### 3. Start Using It
 
