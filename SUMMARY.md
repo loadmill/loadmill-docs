@@ -103,7 +103,7 @@
   * [Test Suite Parameters](general/api-testing1/test-suite-editor/test-suite-parameters.md)
   * [Suite Execution Mode](general/api-testing1/test-suite-editor/suite-execution-mode.md)
   * [Parameter Sets](test-editor/parameters/parameters-sets.md)
-* [Functions](general/api-testing1/test-suite-editor/functions.md)
+* [Built-in Functions](general/api-testing1/test-suite-editor/functions.md)
 * [Postscript](test-editor/postscript/README.md)
   * [Running Postscript](test-editor/postscript/running-postscript.md)
   * [Accessing with Postscript](test-editor/postscript/accessing-w-postscript.md)
