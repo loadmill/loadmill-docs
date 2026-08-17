@@ -18,3 +18,5 @@ It shows that:
 {% endhint %}
 
 Keep track of your monthly usage by using [this report](https://docs.loadmill.com/account-settings/billing/usage-report) and if you need more credit, easily upgrade your subscription plan by clicking **Change Plan**.
+
+For plan options or a customized quote based on your company's requirements, [contact the Loadmill sales team](https://www.loadmill.com/contact-sales).
