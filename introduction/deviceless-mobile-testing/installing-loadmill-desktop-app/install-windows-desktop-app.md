@@ -23,7 +23,7 @@ This document outlines the required prerequisites and setup steps before install
 
 ## 🖥 Installation on Windows
 
-1. Download the latest version of Loadmill desktop app for Windows from [here](https://github.com/loadmill/desktop-app/releases/download/v3.7.8/Loadmill-desktop-app-3.7.8-Setup.exe)
+1. Download the latest version of Loadmill desktop app for Windows from the [latest release page](https://github.com/loadmill/desktop-app/releases/latest)
 2. Double-click to run the setup
 3. App will get installed in the following folder:\
    `C:\Users\<username>\AppData\Local\desktop_app`
