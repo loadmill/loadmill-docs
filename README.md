@@ -6,6 +6,8 @@ Loadmill helps teams create, run, and manage automated tests across mobile apps,
 
 Droid is Loadmill's AI-powered mobile testing agent. Describe a user journey in natural language and Droid operates the app from the visible screen, producing reusable tests that can run from the desktop app, CLI, or CI.
 
+{% embed url="https://www.youtube.com/watch?v=RKyfF-IxF64" %}
+
 [Run your first Droid test](droid-cua/getting-started.md)
 
 ## API-first end-to-end testing
