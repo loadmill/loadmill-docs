@@ -10,7 +10,7 @@ In addition, the data sync connection to GitHub enables you to always track chan
 2. You will promptly be redirected to GitHub and then back to Loadmill, scroll down to the **Setup data sync connection to GitHub** section.
 3. Choose a repository to enable data sync to.
 
-![The GitHub data sync integration setup page](../../../.gitbook/assets/screen-shot-2021-03-04-at-12.07.23.png)
+![The GitHub data sync integration setup page](../../.gitbook/assets/screen-shot-2021-03-04-at-12.07.23.png)
 
 &#x20; 4\. Click on **CONNECT TO REPO**. Now it's time to fill it in with your Test Suite data. :partying\_face:
 
@@ -20,33 +20,33 @@ To sync your Test Suite data with your GitHub repository, follow the steps below
 
 1. Navigate to a relevant Test Suite and click on the **GITHUB SYNC** tab.
 
-![](<../../../.gitbook/assets/Screenshot (61).png>)
+![](<../../.gitbook/assets/Screenshot (61).png>)
 
 2\. Choose or create a branch where you would like to sync the Test Suite data to. Then, enter an initial commit message and click COMMIT to sync the Test Suite data.
 
-![](../../../.gitbook/assets/screen-shot-2021-07-01-at-11.27.37.png)
+![](../../.gitbook/assets/screen-shot-2021-07-01-at-11.27.37.png)
 
 **What happens next?** Loadmill creates the **loadmill-suites** folder in the branch you have selected/created. In addition, a new file with the Test Suite data is created in the loadmill-suites folder. Its name matches the Test Suite description and ID.
 
 Easily navigate to the commit by clicking on **GO TO COMMIT** at the bottom left corner of the screen.
 
-![](../../../.gitbook/assets/screen-shot-2021-03-03-at-13.34.26.png)
+![](../../.gitbook/assets/screen-shot-2021-03-03-at-13.34.26.png)
 
 The commit message in GitHub includes your Loadmill username and the commit message you entered in Loadmill.
 
-![](../../../.gitbook/assets/screenshot-2021-10-03t101237.441.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t101237.441.png)
 
 **Another great thing about this feature** is that, over time, you can always track changes made to Test Suites. Just remember to enter commit messages to sync the Test Suite changes to GitHub.
 
-![](../../../.gitbook/assets/screenshot-2021-10-03t101759.565.png)
+![](../../.gitbook/assets/screenshot-2021-10-03t101759.565.png)
 
 In addition, you can also see the difference aka DIFF between the last committed version and the "working copy" version with the changes that weren't committed to GitHub yet.
 
-![](<../../../.gitbook/assets/Screenshot (86).png>)
+![](<../../.gitbook/assets/Screenshot (86).png>)
 
 Moreover, **you can always revert the Test Suite data to the state of any commit you wish**. Just select it within the Branch history section and click **CHECKOUT**.
 
-![](../../../.gitbook/assets/screenshot-2021-07-01t114156.102.png)
+![](../../.gitbook/assets/screenshot-2021-07-01t114156.102.png)
 
 ### Running Test Plan with the data committed to GitHub
 
@@ -54,7 +54,7 @@ Once you have Test Suite data committed to your GitHub repository, you can selec
 
 Navigate to the **Test Plan** - **Run Settings** - **Versioned Test Configuration (Recommended)** and select the branch where you committed test suite changes to.
 
-![](<../../../.gitbook/assets/Screenshot (62).png>)
+![](<../../.gitbook/assets/Screenshot (62).png>)
 
 Selecting the branch means that the latest version of it with committed changes will be taken as the Test Plan configuration and any other uncommitted test suite changes won't be taken into account.
 

@@ -2,7 +2,7 @@
 
 Use the advanced Recording Settings to create meaningful replay-able tests that are easy to configure. Team Admins can control these settings [on this page](https://app.loadmill.com/app/user/settings/recordings).
 
-![](<../../.gitbook/assets/Screenshot (37).png>)
+![](<../.gitbook/assets/Screenshot (37).png>)
 
 {% hint style="info" %}
 **Reduce Global Parameters** is the only setting enabled by default that makes sure only relevant parameters will be created during the recording import.
@@ -64,10 +64,10 @@ When enabled, this option will add JSON Schema assertion to every recorded JSON 
 
 Configure which JSON keys should be extracted into parameters and which assertions should be created for them. For example, I've recorded a test flow that includes the "total\_score" JSON key and it should be equal to 100 at the beginning of the test flow, so I can add an automatic extraction and assertion for it:
 
-![](../../.gitbook/assets/screen-shot-2021-05-05-at-16.26.27.png)
+![](../.gitbook/assets/screen-shot-2021-05-05-at-16.26.27.png)
 
 Thus, when uploading a recording, Loadmill will automatically create the extraction and assertion in the test flow in case there is such a JSON key.
 
-![The automatic extraction in the flow](../../.gitbook/assets/screenshot-2021-10-04t093950.301.png)
+![The automatic extraction in the flow](../.gitbook/assets/screenshot-2021-10-04t093950.301.png)
 
-![The automatic assertion in the flow](../../.gitbook/assets/screenshot-2021-10-04t094016.981.png)
+![The automatic assertion in the flow](../.gitbook/assets/screenshot-2021-10-04t094016.981.png)

@@ -19,7 +19,7 @@ In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn
 
 **Signup to Loadmill** at this [link](https://app.loadmill.com/app/signup). If you need a demo application for testing you can use [this one](https://loadmill-test-blog.herokuapp.com). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account. ****
 
-In order to use Loadmill effectively, we highly recommend to read [Core definitions](https://docs.loadmill.com/core-definitions), don't worry, it is only a 2 min read. 😉 
+In order to use Loadmill effectively, we highly recommend reviewing the [Loadmill overview](../README.md), don't worry, it is only a 2 min read. 😉
 
 ## Let's create and run your first API test together. 
 
@@ -50,7 +50,7 @@ There are two ways to do that:
 
 1. Go to the API Tests tab.
 2. Click the "NEW TEST SUITE" button, give it a name. ****
-3. You can notice that there is one [Test flow](https://docs.loadmill.com/core-definitions) already created in it and you just need to fill it out. The first request will be to get our login page, enter its name, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/signin/`  
+3. You can notice that there is one [Test flow](../test-editor/flows/README.md) already created in it and you just need to fill it out. The first request will be to get our login page, enter its name, put URL - `https://loadmill-test-blog.herokuapp.com/ghost/signin/`
 
 ![Load login page request](../.gitbook/assets/login_get_1.png)
 
@@ -71,8 +71,6 @@ There are two ways to do that:
 ### Support
 
 We are always here if you need any help! Click on the bubble chat button in the lower-right corner of the screen or drop us a line at [support@loadmill.com](mailto:support@loadmill.com).  
-
-
 
 
 

@@ -1,6 +1,6 @@
-# Capturing traffic with Loadmill MITM Proxy
+# Capturing Mobile API Traffic
 
-Loadmill's Desktop App utilizes a MITM (Man-in-the-Middle) proxy to capture API traffic from your mobile device. This enables you to record user interactions at the API level, providing valuable data for generating dynamic flows and executing deviceless tests.
+Loadmill's Desktop App uses a MITM (Man-in-the-Middle) proxy to capture API traffic from your mobile device. This records the requests and responses produced by a real mobile journey so Loadmill can generate a reusable API test flow.
 
 {% hint style="info" %}
 It is also possible to use 3rd party MITM proxies as well (ie. Charles proxy and proxyman) and export the captured traffic into loadmill.

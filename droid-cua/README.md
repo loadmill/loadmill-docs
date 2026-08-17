@@ -1,4 +1,4 @@
-# Droid CUA
+# Droid Mobile Testing
 
 Droid CUA is Loadmill's AI-powered desktop app for mobile and web testing.
 

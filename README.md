@@ -1,20 +1,33 @@
-# Loadmill - AI - Powered Solution
+# Loadmill Documentation
 
-Loadmill automates testing across multiple devices and platforms by replaying and analyzing real user behavior, helping engineers to easily create the tests required for continuous delivery. Loadmill creates and replays thousands of tests based on user flows within minutes.
+Loadmill helps teams create, run, and manage automated tests across mobile apps, web interfaces, APIs, and performance scenarios. Start with the testing approach that matches the behavior you need to validate; the different approaches can be used independently or combined as your coverage grows.
 
-<figure><img src=".gitbook/assets/Mobile testing diagrams_v03b.png" alt=""><figcaption></figcaption></figure>
+## Droid mobile testing
 
-Loadmill's AI-powered test case generator can help you create comprehensive, reliable test cases for your APIs in minutes. By composing API requests and correlating them with Loadmill's algorithms, you can generate dynamic, automated test cases that are ready to use. With Loadmill, you can quickly and easily create comprehensive test suites for your APIs that will ensure their reliability and performance.
+Droid is Loadmill's AI-powered mobile testing agent. Describe a user journey in natural language and Droid operates the app from the visible screen, producing reusable tests that can run from the desktop app, CLI, or CI.
 
-Imagine a scenario where you need to add a user to your company’s database by submitting a form and then verifying that a user exists by validating its id provided when it's added to the database.
+{% embed url="https://www.youtube.com/watch?v=RKyfF-IxF64" %}
 
-This is a common process where the form will make a `POST` request to the server. The `POST` request connects to the server location through the server's URL path and passes in the user information inside the body of the request.
+[Run your first Droid test](droid-cua/getting-started.md)
 
-If the user has been successfully added, the server sends back the `status 200` of the request notifying the request has been successful and the id of the user that has been added to the database.
+## API-first end-to-end testing
 
-![](<.gitbook/assets/image (2) (2).png>)
+Capture the API traffic created by real user behavior and turn it into stable end-to-end test flows. API-first tests are useful for validating business processes quickly and repeatedly without relying on the UI for every run.
 
-You'll then make a `GET` request to the server by passing in that response `id` from the previous `POST` request (either inside of the body or in your URL). If everything went right and you're successful, you'll get a response back from your server saying whether or not the user's `id` expired.
+[Start API-first end-to-end testing](quick-guide/quick-start-guide.md)
 
-![](<.gitbook/assets/image (1) (1) (4).png>)
+## Web UI and hybrid testing
 
+Use Playwright or the UI Agent to validate browser behavior. Combine UI steps with API requests in the same flow when you want realistic browser coverage with faster, more deterministic setup and validation.
+
+[Create your first web UI test](hybrid-testing/quickstart.md)
+
+## Performance testing
+
+Reuse API scenarios as performance tests to validate throughput, concurrency, response times, and system behavior under load.
+
+[Run your first performance test](load-testing/getting-started-1.md)
+
+## Not sure where to begin?
+
+[Choose how you want to test](getting-started/choose-testing-approach.md), or review the [Loadmill POC setup](poc-guides/Loadmill-POC-Setup.md) when planning an evaluation.

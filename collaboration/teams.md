@@ -6,10 +6,10 @@ Navigate to **Settings => Account => Teams** to create a new team.
 
 Once you've created a team, click the "ADD MEMBER" button to add more team members.
 
-![](<../../.gitbook/assets/Screen Shot 2021-11-21 at 12.13.37.png>)
+![](<../.gitbook/assets/Screen Shot 2021-11-21 at 12.13.37.png>)
 
 {% hint style="info" %}
-:man\_mage: Adding more team members is available on [paid plans](https://www.loadmill.com/#pricing).
+:man\_mage: Adding more team members is available on [paid plans](https://www.loadmill.com/request-pricing).
 {% endhint %}
 
 There are **two user roles** in Loadmill: **admin and member**. All members of the team can run tests on the same domains and see each other's tests. Only the team admins can make changes to the subscription plan, payment method, [Recordings settings](https://docs.loadmill.com/working-with-the-recorder/recorder-settings) and configure Integrations.

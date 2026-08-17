@@ -1,8 +1,8 @@
-# Overview
+# Capture API Traffic
 
-Loadmill users can easily record real user sessions as Loadmill test flows, then integrate the flows into their Continuous Delivery pipeline and run them per each code-change.
+Loadmill can capture the API traffic produced by real user sessions and turn it into reusable test flows. The generated flows can be reviewed in the Test Editor, run repeatedly, and integrated into a continuous delivery pipeline.
 
-Loadmill provides two main options to record real user sessions: **Loadmill Chrome recorder extension** and **Loadmill node recorder**.
+For web applications, use the **Loadmill Test Composer** in Chrome or Edge. For mobile applications, use [Mobile API Testing](../introduction/deviceless-mobile-testing/README.md) with the proxy in the Loadmill Desktop App. Loadmill also provides a node recorder for capturing traffic in a test or production environment.
 
 ## Loadmill Chrome recorder extension
 

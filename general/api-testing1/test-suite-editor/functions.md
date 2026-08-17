@@ -1,4 +1,4 @@
-# ⨍(⨯) FUNCTIONS
+# Built-in Functions
 
 Loadmill has builtin functions available to use while creating a test. These functions will be evaluated in run time as part of the test.
 

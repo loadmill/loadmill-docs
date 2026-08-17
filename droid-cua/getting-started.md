@@ -8,8 +8,8 @@ This guide shows the basic path for running your first Droid CUA test.
 
 You will need:
 
-* The Droid CUA desktop app installed.
-* A Loadmill account.
+* A [Loadmill account](https://app.loadmill.com/app/signup).
+* The [Droid CUA desktop app](https://www.loadmill.com/mobile-testing-agent) installed.
 * A target device, simulator, cloud device, or browser.
 * Android Debug Bridge (ADB) for Android testing.
 * Xcode, Appium, and the XCUITest driver for iOS simulator testing on macOS.
@@ -21,7 +21,7 @@ For a fuller checklist, see [Setup](setup.md).
 
 ## Step 1: Download the desktop app
 
-Download the latest desktop app release:
+Download the desktop app from the [Loadmill Mobile Testing Agent page](https://www.loadmill.com/mobile-testing-agent), or use one of the direct installer links below:
 
 * [Mac](https://github.com/loadmill/droid-cua-release/releases/latest/download/Loadmill-Droid-CUA.dmg)
 * [Mac Intel](https://github.com/loadmill/droid-cua-release/releases/latest/download/Loadmill-Droid-CUA-intel.dmg)

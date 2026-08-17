@@ -2,7 +2,7 @@
 
 ## Mocking services from API specs (Beta)
 
-Easily turn your API specs and Loadmill tests into a fully working mock server based on [Mountebank](https://www.mbtest.org/).\
+Easily turn your API specs and Loadmill tests into a fully working mock server based on [Mountebank](https://www.mbtest.dev/).\
 You can generate mocks from Swagger or OpenAPI files, run them locally, and connect your Loadmill flows to them.
 
 ***
@@ -30,7 +30,7 @@ Before you start, you need:
   * Import a Swagger file as a suite.
   * Export suites as YAML.
 * Node.js installed on your machine.
-* [Mountebank](https://www.mbtest.org/) (installed through `npm` or `npx`).
+* [Mountebank](https://www.mbtest.dev/) (installed through `npm` or `npx`).
 * Optional: Loadmill private agent or Desktop App if you want to run flows against `localhost`.
 
 ***

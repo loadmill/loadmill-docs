@@ -57,7 +57,7 @@ Based on ([graphql.org](https://graphql.org/learn/serving-over-http/)).
 
 ![The response handling section](../../.gitbook/assets/screenshot-2021-10-03t135823.525.png)
 
-The response handling section includes 3 sections: [**Extractions - Set Parameters**](https://docs.loadmill.com/api-testing/test-suite-editor/set-parameters-extractions), [**Postscript - run code**](https://docs.loadmill.com/api-testing/test-suite-editor/postscript-run-code) (disabled by default), [**Assertions - Verify Response**](https://docs.loadmill.com/api-testing/test-suite-editor/assertions) and Flow control.&#x20;
+The response handling section includes 3 sections: [**Extractions - Set Parameters**](../../general/api-testing1/test-suite-editor/set-parameters-extractions.md), [**Postscript - run code**](../postscript/README.md) (disabled by default), [**Assertions - Verify Response**](../../general/api-testing1/test-suite-editor/assertions.md) and Flow control.&#x20;
 
 #### The **Extractions - Set Parameters** section allows you:
 

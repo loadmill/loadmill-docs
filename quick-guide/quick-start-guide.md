@@ -1,6 +1,6 @@
-# Quick Start Guide
+# API-First End-to-End Quickstart
 
-## Quick Start — Demo AUT (Record & Run Your First Test)
+## Record and Run Your First Test
 
 This guide will help you record and run your **first end-to-end test in Loadmill** using the Maker–Checker demo app.\
 Time needed: **10–15 minutes**

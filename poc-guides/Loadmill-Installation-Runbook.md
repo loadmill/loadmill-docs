@@ -29,7 +29,7 @@ If your environment uses a corporate proxy or SSL inspection:
 - When recording with the Chrome Extension, no SSL certificate configuration is needed.
 
 ## 5. CI/CD Integration
-Loadmill integrates with CI/CD platforms like Jenkins, GitHub Actions, and Azure DevOps. You can trigger Loadmill tests via API, npm, or Docker ([read more here](/integrations/npm-modal)).
+Loadmill integrates with CI/CD platforms like Jenkins, GitHub Actions, and Azure DevOps. You can trigger Loadmill tests via API, npm, or Docker ([read more here](../integrations/npm-modal.md)).
 
 **Example using npm:**
 ```bash
