@@ -6,7 +6,7 @@ In order to use the [Loadmill npm module](https://www.npmjs.com/package/loadmill
 
 1. Navigate to **Settings** > [**Security**](https://app.loadmill.com/app/user/settings/security)**.**
 
-![](<../../.gitbook/assets/Screenshot (43).png>)
+![](<../.gitbook/assets/Screenshot (43).png>)
 
 &#x20; 2\. Enter description for the token's intended usage and click **GENERATE**.
 

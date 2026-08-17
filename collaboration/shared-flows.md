@@ -6,22 +6,22 @@ The common use case for Shared Flows is when you have several login test flows. 
 
 * Navigate to **Shared Flows.**
 
-![](<../../.gitbook/assets/Screenshot (39).png>)
+![](<../.gitbook/assets/Screenshot (39).png>)
 
 * Click on the "+ NEW SHARED FLOW" button if you would like to create a login flow from scratch OR "IMPORT SHARED FLOW" in case you already have it in JSON format.
 * We recommend using the "DRY RUN" option first to test your flow and then Publish it.
 * Now you can go to the Test Suite where you would like to use it => the Login tab => click CHANGE LOGIN FLOW SOURCE and select your shared flow.
 
-![](<../../.gitbook/assets/Screenshot (41).png>)
+![](<../.gitbook/assets/Screenshot (41).png>)
 
 Thus, the shared flow will run before every test flow where the Login checkbox is checked.
 
 Then, you can always track which Test Suites using your Shared Flows.
 
-![](<../../.gitbook/assets/Screenshot (40).png>)
+![](<../.gitbook/assets/Screenshot (40).png>)
 
 The COLLABORATORS tab allows to manage access to the shared flow so that only specific team members will be able to edit it.
 
-![](<../../.gitbook/assets/Screenshot (100).png>)
+![](<../.gitbook/assets/Screenshot (100).png>)
 
-By the way, you can also use shared flows to define [Before & After](https://docs.loadmill.com/api-testing/test-suite-editor/before-and-after-hooks) hooks and [Setup Flow](https://docs.loadmill.com/api-testing/test-plan#test-plan-navigation-panel).
+By the way, you can also use shared flows to define [Before & After](../general/api-testing1/test-suite-editor/before-and-after-hooks.md) hooks and [Setup Flow](../general/api-testing1/test-plan.md#test-plan-navigation-bar).

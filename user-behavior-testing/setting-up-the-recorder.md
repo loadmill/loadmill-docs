@@ -11,15 +11,15 @@ description: >-
 
 Before you'll start recording users flows, you'll need to set up an application to record from:
 
-1. Go to the **Recordings** tab <img src="../../.gitbook/assets/Screenshot (55).png" alt="" data-size="line">, located in the navigation area at the left, and click on the **App Setup** tab.
+1. Go to the **Recordings** tab <img src="../.gitbook/assets/Screenshot (55).png" alt="" data-size="line">, located in the navigation area at the left, and click on the **App Setup** tab.
 2. In the "Setup" tab, click on + "ADD APPLICATION" button.
 3. Name the application in the description and fill in its URL.
 
-![](../../.gitbook/assets/screen-shot-2020-12-02-at-17.11.34.png)
+![](../.gitbook/assets/screen-shot-2020-12-02-at-17.11.34.png)
 
 4\. Click on "GET TRACKING ID" button.
 
-![](../../.gitbook/assets/screen-shot-2020-12-02-at-17.19.03.png)
+![](../.gitbook/assets/screen-shot-2020-12-02-at-17.19.03.png)
 
 5\. There are three options how to install the recorder:
 
@@ -29,6 +29,6 @@ Before you'll start recording users flows, you'll need to set up an application 
 
 Choose a relevant option for you and right after you've installed the recorder - the application will appear in the applications table.
 
-![](../../.gitbook/assets/screenshot-37-.png)
+![](../.gitbook/assets/screenshot-37-.png)
 
 ##

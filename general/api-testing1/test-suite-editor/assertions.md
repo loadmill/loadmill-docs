@@ -178,7 +178,7 @@ Note, the subset xml object should preserve the same hierarchal structure as the
 
 You may embed parameters in any assertion expression. These parameters will be evaluated right before the assertion is executed.
 
-See **an example of the assertion** that validates the generated ID is in [the format of UUID](https://docs.loadmill.com/api-testing/test-suite-editor/functions#__is_uuid-target) below:
+See **an example of the assertion** that validates the generated ID is in [the format of UUID](functions.md#is_uuid-target) below:
 
 ![](../../../.gitbook/assets/video1582528102-online-video-cut.gif)
 

@@ -5,6 +5,6 @@ Welcome to the Hybrid Testing section! Here you'll find everything you need to g
 - [Overview](overview.md): What hybrid testing is and why it matters
 - [Add Playwright Steps](../test-editor/steps/playwright-step.md): How to add and configure Playwright steps in your tests
 - [Playwright Integration Capabilities](capabilities.md): Feature details and how to use them
-- [Example Use Cases](examples.md): Practical scenarios for hybrid testing
+- [Hybrid API and UI Tutorial](hybrid-api-ui-tutorial.md): A practical hybrid testing scenario
 
 ![Hybrid Testing](../.gitbook/assets/playwright-step-main.png)

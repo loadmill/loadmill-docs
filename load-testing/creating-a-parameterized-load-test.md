@@ -16,7 +16,7 @@ In our [first simple test](https://docs.loadmill.com/load-testing/getting-starte
 * Expand the “Extractions - Set Parameters” card and set a value to a parameter named `access_token` using a `JSONPath` extractor querying for `access_token`. This will create a value extractor that will execute a [JSONPath query](http://goessner.net/articles/JsonPath/) against the JSON response of the request and extract the authentication token into a parameter named `access_token`.
 * Verify that a value was set to the parameter `access_token` by the `JSONPath` extractor by expanding the ‘Verify Response’ card of the request and creating an assertion. Add an assertion that states that the `access_token` parameter `Is True` (Use the "Exists" assertion type).
 
-![](../../../.gitbook/assets/screen-shot-2020-12-01-at-11.52.39.png)
+![](../.gitbook/assets/screen-shot-2020-12-01-at-11.52.39.png)
 
 * Click **DRY RUN** and execute a trial run to make sure it is working.
 *   Now that we have the authentication token stored in `access_token` we can use it to publish on our blog

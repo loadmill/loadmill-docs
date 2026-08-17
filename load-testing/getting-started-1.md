@@ -46,7 +46,7 @@ See how to run it at scale [here](https://docs.loadmill.com/getting-started/gett
 
 ### Recording an API test by using [our Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en) and running it as a load test in Loadmill:
 
-1. Create an API test as explained [here](https://docs.loadmill.com/api-testing/getting-started#creating-and-running-an-api-test-by-using-our-chrome-recorder-extension).
+1. Create an API test as explained in the [API-First End-to-End Quickstart](../quick-guide/quick-start-guide.md).
 2. Go to Loadmill and open the recorded test in your Test Suite.
 3. Click on three dots next to the run icon - Click **Convert To Load Test**.
 4. To run the load test for the first time, we recommend running it as a trial test. See how to do that below.

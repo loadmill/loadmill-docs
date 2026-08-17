@@ -1,6 +1,6 @@
 # GitHub integration
 
-![](../../../.gitbook/assets/screen-shot-2021-03-04-at-15.16.56.png)
+![](../../.gitbook/assets/screen-shot-2021-03-04-at-15.16.56.png)
 
 **GitHub** is a code hosting platform for version control and collaboration. It lets users work together on projects from anywhere.
 

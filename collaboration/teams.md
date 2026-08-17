@@ -6,7 +6,7 @@ Navigate to **Settings => Account => Teams** to create a new team.
 
 Once you've created a team, click the "ADD MEMBER" button to add more team members.
 
-![](<../../.gitbook/assets/Screen Shot 2021-11-21 at 12.13.37.png>)
+![](<../.gitbook/assets/Screen Shot 2021-11-21 at 12.13.37.png>)
 
 {% hint style="info" %}
 :man\_mage: Adding more team members is available on [paid plans](https://www.loadmill.com/request-pricing).

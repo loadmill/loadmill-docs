@@ -2,11 +2,11 @@
 
 Team admins can navigate to **Settings => Billing** to manage the account subscription plan, payment method and download Usage Report.
 
-![](<../../../.gitbook/assets/Screen Shot 2021-11-21 at 12.43.52.png>)
+![](<../../.gitbook/assets/Screen Shot 2021-11-21 at 12.43.52.png>)
 
 Subscription Plan shows your current plan, what your maximum allowed concurrency is, how many test minutes you have used this month and how many test flows you've run. See an example below:
 
-![](../../../.gitbook/assets/screen-shot-2021-01-06-at-9.14.07.png)
+![](../../.gitbook/assets/screen-shot-2021-01-06-at-9.14.07.png)
 
 It shows that:
 

@@ -18,7 +18,7 @@ In this quick guide to [Loadmill](https://loadmill.com/app/signup) we will learn
 
 **Signup to Loadmill** at this [link](https://app.loadmill.com/app/signup). We do not ask for any credit card or personal information other than your name and email so it only takes about five seconds. You can also login using your Google or GitHub account. ****
 
-In order to use Loadmill effectively, we highly recommend to read [Core definitions](https://docs.loadmill.com/core-definitions), don't worry, it is only a 2 min read. 😉 
+In order to use Loadmill effectively, we highly recommend reviewing the [Loadmill overview](../README.md), don't worry, it is only a 2 min read. 😉
 
 ## Let's create and run your first Load test together. 
 
@@ -48,7 +48,7 @@ That's it! You have just created and run your first load test in under a minute 
 
 ### Recording an API test by using [our Chrome recorder extension](https://chrome.google.com/webstore/detail/loadmill-recorder/gdkmnfehipofdefhpegbgkkocinlaofd?hl=en) and running it as a load test in Loadmill:
 
-1. Create an API test as explained [here](https://docs.loadmill.com/api-testing/getting-started#creating-and-running-an-api-test-by-using-our-chrome-recorder-extension).
+1. Create an API test as explained in the [API-First End-to-End Quickstart](../quick-guide/quick-start-guide.md).
 2. Go to Loadmill and open the recorded test in your Test Suite.
 3. Click on three dots next to the run icon - Click **Convert To Load Test**.
 4. To run the load test for the first time, we recommend running it as a trial test. See how to do that below.
@@ -87,6 +87,4 @@ Loadmill keeps track of the request **error rate** and fails the test if it pass
 ![Running the Test Suite as load tests ](../.gitbook/assets/ezgif.com-gif-maker-2-.gif)
 
 Keep exploring the guides to learn how to analyze load test results, set thresholds and more.
-
-
 

@@ -40,7 +40,7 @@ Navigate to Load Tests and click IMPORT TEST. Loadmill allows to import load tes
 
 ![](<../../.gitbook/assets/Screenshot (50).png>)
 
-You can also import CSV files into load tests, see how to do that [here](https://docs.loadmill.com/load-testing/working-with-the-test-editor/data-from-csv-files).
+You can also import CSV files into load tests, see how to do that [here](../../load-testing/creating-a-parameterized-load-test.md).
 
 ### Importing Recordings
 
