@@ -78,7 +78,7 @@ To begin recording:
 
 The Desktop Agent acts as a Test Runner for web applications and also supports test creation for mobile and desktop applications.
 
-* [Introduction to Deviceless Mobile Testing](introduction/deviceless-mobile-testing/)
+* [Introduction to Deviceless Mobile Testing](../introduction/deviceless-mobile-testing/README.md)
 * Download links are available [here](https://app.loadmill.com/app/user/settings/desktop-app) or directly [download from GitHub](https://github.com/loadmill/desktop-app)
 
 ![Download page placeholder](../.gitbook/assets/download-da-page.png)
