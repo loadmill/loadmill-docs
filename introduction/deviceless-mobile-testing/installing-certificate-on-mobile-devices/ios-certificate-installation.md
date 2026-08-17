@@ -14,4 +14,4 @@ To deploy a certificate into an iOS device, follow these steps:
 5. **Trust the certificate**: After the certificate is installed, you need to manually trust it. To do this, go to `Settings` > `General` > `About` > `Certificate Trust Settings`. Under the "Enable full trust for root certificates" section, find the Loadmill certificate you just installed and toggle the switch to enable trust for the certificate.\
    ![](<../../../.gitbook/assets/image (20) (2).png>)
 
-By following these steps, you can successfully deploy a certificate into your iOS device and configure it to work with the Loadmill MITM proxy for deviceless testing. This will enable you to capture and analyze encrypted API traffic from your iOS device, allowing for more comprehensive and accurate test scenarios.
+After completing these steps, the iOS device can work with the Loadmill MITM proxy. This enables Loadmill to capture and analyze encrypted API traffic from the device for mobile API testing.

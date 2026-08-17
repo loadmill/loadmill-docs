@@ -1,4 +1,4 @@
-# Load Testing FAQs
+# Performance Testing FAQs
 
 ### **Is there a way to run a load test by throughput instead of setting the maximum number of concurrent sessions?**
 

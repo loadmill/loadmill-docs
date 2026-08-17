@@ -1,6 +1,6 @@
 # Loadmill desktop recorder
 
-Loadmill Desktop Recorder is a powerful tool designed to simplify and enhance your deviceless testing experience. By capturing user interactions with your application at the API level, the Desktop Recorder allows you to quickly and efficiently create end-to-end API-driven test flows.
+Loadmill Desktop Recorder captures mobile application interactions at the API level and turns them into end-to-end API test flows.
 
 There are three main components that work together to provide a powerful and efficient testing solution:
 

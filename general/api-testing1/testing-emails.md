@@ -1,4 +1,4 @@
-# ✉️ Email Testing
+# Email Testing
 
 Automated emails are a common component in many web applications. Since they serve an important role in many critical user-flows such as registration, authentication, and system notifications, they should be tested carefully for any breaking changes.
 

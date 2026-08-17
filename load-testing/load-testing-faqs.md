@@ -2,7 +2,7 @@
 description: Debugging some common issues with load tests
 ---
 
-# Load Testing Troubleshooting
+# Performance Testing Troubleshooting
 
 ### Load test does not start
 

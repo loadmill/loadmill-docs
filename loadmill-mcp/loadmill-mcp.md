@@ -1,4 +1,4 @@
-# AI-Native E2E Testing
+# Loadmill MCP Overview
 
 ## Why Loadmill MCP?
 

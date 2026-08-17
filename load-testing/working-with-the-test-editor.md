@@ -1,10 +1,10 @@
-# Load Test Editor
+# Configure a Load Test
 
-![](<../../../.gitbook/assets/Screenshot (35).png>)
+![](<../.gitbook/assets/Screenshot (35).png>)
 
 Let's take a look at the Load Test Editor.
 
-![](<../../../.gitbook/assets/Screenshot (36).png>)
+![](<../.gitbook/assets/Screenshot (36).png>)
 
 | Option               | Description                                                                                                                                                                                    |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

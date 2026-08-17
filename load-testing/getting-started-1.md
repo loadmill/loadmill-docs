@@ -2,7 +2,7 @@
 description: Running your first load test.
 ---
 
-# Load Testing Guide
+# Performance Testing Quickstart
 
 The Loadmill's Load Testing module allows users **to replay their API tests at scale** and use real traffic with the ability to target specific countries or go global.
 
