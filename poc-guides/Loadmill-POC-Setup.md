@@ -1,6 +1,12 @@
 # Loadmill POC Setup
 
-## Step 1: AAA (Access, Authentication, Algorithm) Test
+## Droid Mobile Testing POC
+
+To run a Droid mobile testing POC, you need a mobile app that can be tested, a Mac or Windows computer capable of running the [Droid CUA desktop app](../droid-cua/getting-started.md), and a reliable internet connection. Droid connects to Loadmill's cloud services during the POC, so the computer must be able to reach Loadmill over the internet.
+
+## Classic End-to-End Loadmill POC
+
+### Step 1: AAA (Access, Authentication, Algorithm) Test
 
 In this step, we will test the Algorithm component. Open your web application in Google Chrome.
 
@@ -18,7 +24,7 @@ If you’re unable to email the HAR file, please create a user account at https:
 
 ![Share in chat box](../.gitbook/assets/upload-har-via-chat.png)
 
-## Step 2: IP Whitelisting
+### Step 2: IP Whitelisting
 
 If your test environment is not publicly accessible, please whitelist the following Loadmill IP addresses for the POC:
 
@@ -26,11 +32,11 @@ If your test environment is not publicly accessible, please whitelist the follow
 * 54.190.108.53
 * 193.189.107.30
 
-## Step 3: Install Required Agents
+### Step 3: Install Required Agents
 
 Loadmill requires two agents to be installed for the POC:
 
-### 1. Browser Extension (Chrome or Edge)
+#### 1. Browser Extension (Chrome or Edge)
 
 Used for test creation on web applications.
 
@@ -41,7 +47,7 @@ If you are unable to install the extension from the browser store, manually inst
 
 * [Manual Download](https://drive.google.com/file/u/1/d/1pbTjrdvfTwJw2ynG4jUOjHC1vBNie7kT/view?usp=sharing)
 
-#### Manual Installation on Microsoft Edge:
+##### Manual Installation on Microsoft Edge:
 
 1. Open **Microsoft Edge** and click the **three dots** (⋯) in the top-right corner.
 2. Go to **Extensions** → **Manage Extensions**.
@@ -56,7 +62,7 @@ To begin recording:
 * In the **Developer Tools**, click the “+” icon, find **Loadmill Composer**, and drag it to the left pane.
 * You can now start recording user steps directly in Loadmill Composer.
 
-### 2. Loadmill Desktop Agent
+#### 2. Loadmill Desktop Agent
 
 The Desktop Agent acts as a Test Runner for web applications and also supports test creation for mobile and desktop applications.
 
