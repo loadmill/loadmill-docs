@@ -28,6 +28,7 @@
 
 * [Overview](droid-cua/README.md)
 * [Getting Started](droid-cua/getting-started.md)
+* [Best Practices](droid-cua/best-practices.md)
 * [Setup](droid-cua/setup.md)
   * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
 * [CLI](droid-cua/cli.md)
