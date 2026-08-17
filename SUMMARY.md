@@ -9,7 +9,6 @@
 * [API-First E2E Quickstart](quick-guide/quick-start-guide.md)
 * [Web UI and Playwright Quickstart](hybrid-testing/quickstart.md)
 * [Performance Testing Quickstart](load-testing/getting-started-1.md)
-* [Loadmill POC Setup](poc-guides/Loadmill-POC-Setup.md)
 
 ## Droid Mobile Testing
 
@@ -174,6 +173,10 @@
   * [Usage Report](general/billing/usage-report.md)
 * [API Tokens](auth/api-tokens.md)
 * [Okta SSO Integration](auth/okta-sso-integration.md)
+
+## POC Guides
+
+* [Loadmill POC Setup](poc-guides/Loadmill-POC-Setup.md)
 * [Installation and Deployment Runbook](poc-guides/Loadmill-Installation-Runbook.md)
 * [On-Premises Setup](poc-guides/loadmill-on-prem-setup.md)
 
