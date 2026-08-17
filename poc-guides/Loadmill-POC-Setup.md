@@ -1,10 +1,22 @@
 # Loadmill POC Setup
 
+Loadmill offers two solutions that can be evaluated separately during a proof of concept (POC): Droid for mobile testing and the classic Loadmill platform for end-to-end web and API testing. Choose the section that matches the solution you want to evaluate—you do not need to complete both setup processes.
+
 ## Droid Mobile Testing POC
 
-To run a Droid mobile testing POC, you need a mobile app that can be tested, a Mac or Windows computer capable of running the [Droid CUA desktop app](../droid-cua/getting-started.md), and a reliable internet connection. Droid connects to Loadmill's cloud services during the POC, so the computer must be able to reach Loadmill over the internet.
+Droid has a lightweight POC setup and can be evaluated independently from the classic Loadmill platform.
+
+### Minimum Requirements
+
+* A mobile app that you can use for testing.
+* A Mac or Windows computer capable of running the [Droid CUA desktop app](../droid-cua/getting-started.md).
+* A reliable internet connection. Droid connects to Loadmill's cloud services during the POC.
+
+Once these requirements are in place, follow the [Droid CUA Getting Started guide](../droid-cua/getting-started.md) to install the desktop app and prepare your first test.
 
 ## Classic End-to-End Loadmill POC
+
+Use this setup to evaluate the classic Loadmill workflow for creating and running end-to-end web and API tests.
 
 ### Step 1: AAA (Access, Authentication, Algorithm) Test
 
