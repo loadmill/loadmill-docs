@@ -88,6 +88,16 @@ Keep journey-specific instructions in the `.dcua` test, reusable non-secret vari
 
 ***
 
+## Overloading context with irrelevant information
+
+More context does not automatically make a test more effective. Unrelated details, exhaustive screen descriptions, implementation history, and stale workarounds make it harder for Droid to identify the information that matters.
+
+Aim for the minimum context that produces the maximum efficiency. Include stable product terminology, important navigation conventions, non-obvious interactions, and reusable constraints that help Droid make better decisions. Leave out anything that does not affect how the current tests should understand or use the product.
+
+Build context as you create and refine tests. Add a detail when a run shows that Droid needs it, then keep it only if it is likely to help again.
+
+***
+
 ## Rerunning without learning from the failure
 
 An unchanged rerun is reasonable for a clearly temporary device, provider, or network problem. Repeated retries are not a substitute for diagnosing an ambiguous instruction, stale context, unavailable target, or product regression.
@@ -112,5 +122,5 @@ Before calling a test ready, check that:
 * Assertions name visible evidence.
 * The test covers one coherent, independently runnable journey.
 * Backend setup and large data matrices are not being forced through the UI.
-* Shared product knowledge, run data, and secrets are stored in the right files.
+* Shared product knowledge, run data, and secrets are stored in the right files, without irrelevant context.
 * A representative run completed without unexplained recovery.
