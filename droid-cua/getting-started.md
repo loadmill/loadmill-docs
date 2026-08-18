@@ -1,6 +1,6 @@
-# Getting Started
+# Getting Started: Your First Droid Test
 
-This guide shows the basic path for running your first Droid CUA test.
+This guide takes you from installing Droid CUA to saving and reviewing your first test. By the end, you will have a connected target, a project with shared app context, a focused `.dcua` test, and a result you can review in the desktop app and Loadmill.
 
 ***
 
@@ -9,92 +9,173 @@ This guide shows the basic path for running your first Droid CUA test.
 You will need:
 
 * A [Loadmill account](https://app.loadmill.com/app/signup).
-* The [Droid CUA desktop app](https://www.loadmill.com/mobile-testing-agent) installed.
-* A target device, simulator, cloud device, or browser.
-* Android Debug Bridge (ADB) for Android testing.
-* Xcode, Appium, and the XCUITest driver for iOS simulator testing on macOS.
-* Chrome or Edge installed for web testing.
+* The [Droid CUA desktop app](https://www.loadmill.com/mobile-testing-agent).
+* An app or website you are allowed to test.
+* A target: an Android device or emulator, an iOS simulator on macOS, or Chrome or Edge for web testing.
+* A stable internet connection. Droid uses Loadmill's cloud service while it runs.
+* The platform tools required for your target. The setup wizard will check these for you.
 
-For a fuller checklist, see [Setup](setup.md).
+For the complete platform requirements, see [Setup](setup.md).
 
 ***
 
-## Step 1: Download the desktop app
+## Install Droid CUA and sign in
 
-Download the desktop app from the [Loadmill Mobile Testing Agent page](https://www.loadmill.com/mobile-testing-agent), or use one of the direct installer links below:
+Download the desktop app from the [Loadmill Mobile Testing Agent page](https://www.loadmill.com/mobile-testing-agent), or use a direct installer:
 
 * [Mac](https://github.com/loadmill/droid-cua-release/releases/latest/download/Loadmill-Droid-CUA.dmg)
 * [Mac Intel](https://github.com/loadmill/droid-cua-release/releases/latest/download/Loadmill-Droid-CUA-intel.dmg)
 * [Windows](https://github.com/loadmill/droid-cua-release/releases/latest/download/Loadmill-Droid-CUA-Setup.exe)
 
-After the download finishes, install and launch Droid CUA.
+Install and open Droid CUA, then sign in with your Loadmill account.
 
 ***
 
-## Step 2: Sign in
+## Complete the setup wizard
 
-When the app opens, sign in with your Loadmill account.
+The first time you open Droid CUA, the setup wizard prepares the computer and target. It has four stages:
 
-If the setup wizard appears, follow the checks it shows. It helps confirm that the required tools for Android or iOS testing are installed.
+1. **Welcome** — choose Android, iOS, or Web.
+2. **Checks** — verify the tools Droid needs. Resolve any required check that fails, then retry it.
+3. **Connect** — select a device, simulator, or browser and run the setup probe.
+4. **Success** — continue to the app after Droid confirms the target is ready.
+
+![Droid CUA setup wizard welcome screen](../.gitbook/assets/setup-welcome.png)
+
+You can run the wizard again later from **Help**. For manual setup and troubleshooting, see [Setup](setup.md) and [Setup troubleshooting](setup-troubleshooting.md).
 
 ***
 
-## Step 3: Choose a target
+## Create your first project
 
-Choose the platform you want to test.
+Open **Projects**, select **New project**, and choose a folder in the application repository. A Droid project keeps the tests and shared product knowledge for one application together.
 
-For Android, connect a physical device with USB debugging enabled, or choose an available emulator.
+A simple project can look like this:
 
-For iOS, choose an installed iOS simulator. iOS simulator testing is available on macOS only.
+```text
+tests/droid/
+├── context.md
+├── login.dcua
+├── test-data.md
+└── .secrets
+```
 
-For web testing, choose the web platform and use an installed Chrome or Edge browser.
+Only `context.md` and the `.dcua` test are needed for a basic first run. Add `test-data.md` when the same journey needs reusable non-secret data, and add `.secrets` when it needs credentials. Keep `.secrets` out of version control.
 
-For cloud mobile testing, use the CLI with LambdaTest credentials and a mobile app build.
+***
+
+## Start `context.md` while you create the test
+
+You do not need to document the entire app before writing a test. Begin with the first journey and add shared knowledge as you discover what the agent needs.
+
+From the project, select **Open app context**. If `context.md` does not exist, Droid can create a starter file with sections for the app overview, screens, actions, and business entities.
+
+For a first login test, the context might begin with:
+
+```md
+# Overview
+
+This is a mobile banking app. The main navigation appears at the bottom after sign-in.
+
+# Screens
+
+The home screen is titled "Accounts" and shows the signed-in user's account cards.
+
+# Actions
+
+After a successful sign-in, wait for the loading indicator to disappear before using the bottom navigation.
+```
+
+Keep information in the place where it will be most useful:
+
+* Put steps for this journey in the `.dcua` test.
+* Put reusable product knowledge in `context.md`.
+* Put non-secret values that vary between runs in `test-data.md`.
+* Put credentials and sensitive values in `.secrets`.
+
+Continue refining the context as you build and run the test. See [Writing Reliable Droid CUA Tests](best-practices.md#build-context-alongside-the-test) for the full approach.
+
+***
+
+## Confirm the target
+
+Open **Devices** and select the target prepared by the wizard.
+
+* For Android, choose a connected physical device or emulator.
+* For iOS, choose an installed simulator. iOS simulator testing is available on macOS only.
+* For web, choose Chrome or Edge and select a persistent or fresh browser session.
 
 ![Droid CUA device selection screen](../.gitbook/assets/devices-page.png)
 
-***
-
-## Step 4: Create a project
-
-Create or open a Droid CUA project and choose where to store your test files.
-
-Droid CUA tests are saved as `.dcua` files. Keeping them in your project repository makes it easy to review, edit, and run them later in CI.
-
-You can also choose a results folder. This is where Droid CUA stores run reports and execution history.
+If you are testing a mobile build that is not already installed, add the `.apk`, `.ipa`, or `.app` from the **Apps** page before starting the run.
 
 ***
 
-## Step 5: Write a simple first test
+## Create your first test
 
-Start with a short flow that is easy to verify.
+Choose a short, stable flow with an obvious result. Signing in and verifying the first screen is a good starting point.
 
-For example:
+The easiest way to draft the journey is **Design Mode**. Select the project so the agent can use its context, then describe the result you want:
 
+```text
+Sign in with the standard test account and verify that the Accounts screen is visible.
 ```
-Open the app.
-Sign in with the standard test account.
-Verify that the Home screen is visible.
-```
-
-Good Droid CUA instructions describe the user's goal and the visible result. Use the exact button names, screen names, and messages that appear in your app when possible.
-
-You can write a test directly, or use Design Mode to describe what you want to test and let the agent create a first draft.
 
 ![Droid CUA Design Mode screen](../.gitbook/assets/design-mode.png)
 
-Saved tests are plain `.dcua` files. They are easy to read, review, and run again later.
+Design Mode explores the app and creates a draft `.dcua` file. Review the draft before saving it. A useful first test might read:
+
+```text
+Open the app and sign in with the standard test account.
+Verify that the "Accounts" screen is visible.
+```
+
+For a web test, begin with a known page:
+
+```text
+navigate: https://example.test/login
+Sign in with the standard test account.
+Verify that the dashboard is visible.
+```
+
+You can also create and edit `.dcua` files directly. Each non-empty line is an instruction or assertion, and `//` starts a comment for human readers.
 
 ![Example Droid CUA test file](../.gitbook/assets/example-test.png)
 
 ***
 
-## Step 6: Run and review
+## Run the test and watch what happens
 
-Run the test from the desktop app and watch the live execution log.
+Start the test from the desktop app and follow the live execution log. Droid sees the current screen, chooses an action, executes it, and checks the updated screen before continuing.
 
-If the test fails, look for the first place where the agent did something different from what you expected. Then update the instruction, add clearer app context, or split the flow into a smaller test.
+If the run diverges from your intent, find the first meaningful difference:
 
-For the first few tests, keep each flow small. Once the device connection, credentials, and app context are working, you can add broader scenarios.
+* Clarify the instruction when more than one route is reasonable.
+* Add reusable, non-obvious product knowledge to `context.md`.
+* Fix the target or setup when the run never reaches the app.
+* Stop and report a product regression instead of teaching Droid to work around it.
 
-If the problem happens before the test starts, see [Setup troubleshooting](setup-troubleshooting.md).
+Do not rely on repeated retries. One unchanged rerun can confirm a temporary device or network problem, but ambiguous tests should be improved using the evidence from the run.
+
+***
+
+## Review the result
+
+Open the completed run and review its screenshots and instruction timeline. A passing verdict is a starting point: also look for repeated typing, reopened screens, resubmitted actions, or other unexplained recovery.
+
+Team members can review uploaded desktop and CI results from the [Droid Runs dashboard](runs-dashboard.md). It provides shared filters, trends, statuses, and links to detailed run reports.
+
+***
+
+## Save a reliable baseline
+
+Keep the first version focused on one coherent journey. Start with Loadmill Smart while you refine it. Once the same test follows a clean, repeatable route, compare it with Loadmill Pulse for faster routine execution.
+
+Commit the `.dcua` file and `context.md` with the application code, but never commit `.secrets` or private environment credentials.
+
+When the first test is stable, continue with:
+
+* [Writing Reliable Droid CUA Tests](best-practices.md)
+* [Common Droid Testing Mistakes](common-mistakes.md)
+* [Testing Web Applications with Droid](web-testing.md)
+* [CLI](cli.md) and [Running Droid Tests in CI](ci.md)

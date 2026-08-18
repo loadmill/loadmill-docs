@@ -11,7 +11,7 @@ With Droid CUA you can:
 * Watch the agent execute each action with live logs.
 * Save reusable `.dcua` test scripts.
 * Run saved tests again from the desktop app or the CLI.
-* Use run history and reports to review what happened.
+* Use local reports and the shared Droid Runs dashboard to review what happened.
 
 ***
 
@@ -52,6 +52,12 @@ Droid CUA supports cloud mobile runs from the CLI, including Loadmill Cloud and 
 
 ## Learn more
 
-* [Getting started](getting-started.md)
+* [Getting Started: Your First Droid Test](getting-started.md)
+* [Writing Reliable Droid CUA Tests](best-practices.md)
+* [Common Droid Testing Mistakes](common-mistakes.md)
+* [Testing Web Applications with Droid](web-testing.md)
+* [Reviewing Droid Runs in Loadmill](runs-dashboard.md)
+* [Setup](setup.md)
 * [CLI](cli.md)
+* [Running Droid Tests in CI](ci.md)
 * [Agent Skill](skill.md)

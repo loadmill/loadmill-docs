@@ -5,7 +5,7 @@
 * [Loadmill Overview](README.md)
 * [Choose How You Want to Test](getting-started/choose-testing-approach.md)
 * [Create Account](quick-guide/create-account.md)
-* [Droid Mobile Testing Quickstart](droid-cua/getting-started.md)
+* [Droid Mobile Testing: A-to-Z](droid-cua/getting-started.md)
 * [API-First E2E Quickstart](quick-guide/quick-start-guide.md)
 * [Web UI and Playwright Quickstart](hybrid-testing/quickstart.md)
 * [Performance Testing Quickstart](load-testing/getting-started-1.md)
@@ -13,9 +13,12 @@
 ## Droid Mobile Testing
 
 * [Droid Mobile Testing Overview](droid-cua/README.md)
-* [Best Practices](droid-cua/best-practices.md)
 * [Setup](droid-cua/setup.md)
   * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
+* [Writing Reliable Droid Tests](droid-cua/best-practices.md)
+* [Common Testing Mistakes](droid-cua/common-mistakes.md)
+* [Testing Web Applications with Droid](droid-cua/web-testing.md)
+* [Reviewing Droid Runs in Loadmill](droid-cua/runs-dashboard.md)
 * [CLI](droid-cua/cli.md)
 * [Running Droid Tests in CI](droid-cua/ci.md)
 * [Agent Skill](droid-cua/skill.md)

@@ -61,3 +61,5 @@ Loadmill Cloud must be enabled for the account. You can also use a configured La
 A successful Droid run exits with code `0`. A failed run exits with code `1`, allowing the CI job to fail when the test does not complete successfully.
 
 Keep detailed artifacts for failed runs by using `--debug`. Use `--record` when screenshots from the complete run are useful for investigation.
+
+Uploaded CI results also appear in the shared [Droid Runs dashboard](runs-dashboard.md), where the team can filter by project, source, and platform and open the detailed report.

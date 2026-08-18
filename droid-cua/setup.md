@@ -82,6 +82,8 @@ droid-cua --target web --browser chrome --instructions tests/search.dcua
 
 Use `--browser edge` to run against Microsoft Edge.
 
+For browser session modes, the page-frame boundary, cloud browsers, and guidance on choosing Droid Web, Playwright, or API testing, see [Testing Web Applications with Droid](web-testing.md).
+
 ***
 
 ## Cloud device setup
@@ -145,7 +147,7 @@ If your test needs a mobile app build, add it from the **Apps** page. Droid CUA 
 
 ## App context
 
-For real app testing, create a short `context.md` file next to your tests.
+For real app testing, create a short `context.md` file next to your tests. You do not need to complete it before creating the first test; build it alongside the journey as you discover reusable product knowledge.
 
 Use it to explain details the agent cannot infer from the screen alone, such as:
 
@@ -156,6 +158,8 @@ Use it to explain details the agent cannot infer from the screen alone, such as:
 * Any confusing or similar-looking buttons.
 
 Good context makes tests more reliable because the agent has the same product knowledge a teammate would need before testing the app.
+
+See [Getting Started](getting-started.md#start-contextmd-while-you-create-the-test) for a first-project example and [Writing Reliable Droid CUA Tests](best-practices.md#build-context-alongside-the-test) for guidance on what belongs in each project file.
 
 ***
 
