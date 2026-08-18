@@ -13,9 +13,12 @@
 ## Droid Mobile Testing
 
 * [Droid Mobile Testing Overview](droid-cua/README.md)
-* [Best Practices](droid-cua/best-practices.md)
 * [Setup](droid-cua/setup.md)
   * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
+* [Best Practices](droid-cua/best-practices.md)
+* [Common Testing Mistakes](droid-cua/common-mistakes.md)
+* [Web Testing with Droid](droid-cua/web-testing.md)
+* [Droid Runs Dashboard](droid-cua/runs-dashboard.md)
 * [CLI](droid-cua/cli.md)
 * [Running Droid Tests in CI](droid-cua/ci.md)
 * [Agent Skill](droid-cua/skill.md)

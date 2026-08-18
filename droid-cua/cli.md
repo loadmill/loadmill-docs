@@ -100,6 +100,18 @@ droid-cua --target web --browser chrome --instructions tests/search.dcua
 
 Supported browser values are `chrome` and `edge`.
 
+Local web runs use a persistent browser profile by default. Pass `--session-mode fresh` for an independent temporary profile:
+
+```sh
+droid-cua \
+  --target web \
+  --browser chrome \
+  --session-mode fresh \
+  --instructions tests/search.dcua
+```
+
+See [Web Testing with Droid](web-testing.md) for browser setup, saved-test examples, and the boundary between the web page and browser controls.
+
 ***
 
 ## Run on a LambdaTest cloud device
@@ -196,6 +208,7 @@ The config file keeps prompt settings and app context consistent between local r
 | `--avd` | Android device, Android emulator, or iOS simulator name. |
 | `--platform` | Target platform, such as `android` or `ios`. |
 | `--browser` | Browser for web runs, such as `chrome` or `edge`. |
+| `--session-mode` | Local web session mode: `persistent` (default) or `fresh`. |
 | `--device-source` | Mobile device source, such as `local`, `lambdatest`, or `loadmill-cloud`. |
 | `--device-name` | Cloud device name for LambdaTest or Loadmill Cloud. |
 | `--os-version` | Cloud device OS version for LambdaTest or Loadmill Cloud. |

@@ -92,6 +92,21 @@ Visual cues deserve their own line. If new items appear at the bottom of a separ
 
 Context is not a copy of the test. Avoid scenario-specific steps, values that belong in `test-data.md`, UI text the agent can already see, speculative workarounds, and stale information. A context file that silently lies about the product is worse than no context file at all.
 
+### Build context alongside the test
+
+You do not need to describe the entire application before writing the first test. Start with a focused journey, create the test and `context.md` together, and add knowledge when the work reveals that the agent needs it.
+
+When you encounter a missing detail, decide where it belongs:
+
+* If it is part of only this journey, add it to the `.dcua` test.
+* If it is stable product knowledge that other tests or a new teammate would reuse, add it to `context.md`.
+* If it changes between runs, add it to `test-data.md`.
+* If it is sensitive, add it to `.secrets` and refer to the secret by name.
+
+For example, the test can say _create a transfer as maker and approve it as checker_. The context can explain what the maker and checker roles mean, where pending transfers appear, and that an approved transfer disappears from the pending list. Those facts are useful beyond one scenario; the exact transfer journey is not.
+
+After a failure, add context only when the missing knowledge is true, stable, and reusable. Do not encode a product bug, temporary state, or one-off workaround as if it were normal application behavior. This iterative approach keeps context useful without turning it into another test script.
+
 ***
 
 ## Design once, then make the journey repeatable
@@ -143,6 +158,8 @@ Droid can connect to a locally installed Chrome or Edge browser. The same instru
 It can interact with the site and navigate as part of the test. It cannot use the browser's address bar, settings, bookmarks, extensions, or other browser chrome. Write web tests as journeys through the application, not as instructions for operating the browser itself.
 
 For setup and execution commands, see [Setup](setup.md#web-setup) and [CLI](cli.md#run-a-saved-web-test).
+
+For a complete local and cloud browser workflow, see [Web Testing with Droid](web-testing.md).
 
 ***
 
@@ -198,4 +215,4 @@ Teams that adopt these practices stop writing scripts and start briefing a teamm
 
 Most importantly, they treat reports and recovery behavior as evidence rather than stopping at a green verdict. Reliability comes from the quality of the brief, the clarity of its assertions, and the discipline to examine what actually happened.
 
-When you are ready to put these practices into use, continue with [Getting Started](getting-started.md), [Setup](setup.md), or the [CLI reference](cli.md).
+When you are ready to put these practices into use, continue with the [Droid Mobile Testing Quickstart](getting-started.md), review the [Common Droid Testing Mistakes](common-mistakes.md), or move on to [Setup](setup.md) and the [CLI reference](cli.md).
