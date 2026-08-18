@@ -110,7 +110,7 @@ droid-cua \
   --instructions tests/search.dcua
 ```
 
-See [Testing Web Applications with Droid](web-testing.md) for browser setup, saved-test examples, and the boundary between the web page and browser controls.
+See [Set Up and Run Droid Web Tests](web-testing.md) for browser setup, saved-test examples, and the boundary between the web page and browser controls.
 
 ***
 

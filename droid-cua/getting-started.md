@@ -173,5 +173,5 @@ Keep the first version focused on one coherent journey. Once it completes cleanl
 
 * [Writing Reliable Droid CUA Tests](best-practices.md)
 * [Common Droid Testing Mistakes](common-mistakes.md)
-* [Testing Web Applications with Droid](web-testing.md)
+* [Set Up and Run Droid Web Tests](web-testing.md)
 * [CLI](cli.md) and [Running Droid Tests in CI](ci.md)

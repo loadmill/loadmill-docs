@@ -1,4 +1,4 @@
-# Reviewing Droid Runs in Loadmill
+# Track Droid Test Results in the Loadmill Dashboard
 
 The Droid Runs dashboard brings desktop and CI execution results into the Loadmill web application. Use it to review activity across projects, understand pass rates, find a particular run, and open the detailed report without access to the computer that launched the test.
 

@@ -1,4 +1,4 @@
-# Testing Web Applications with Droid
+# Set Up and Run Droid Web Tests
 
 Droid is primarily designed for mobile testing, but the same goal-oriented approach can operate a web application in Chrome or Edge. Web testing is useful when you want the agent to follow a realistic browser journey without maintaining selectors for every interaction.
 

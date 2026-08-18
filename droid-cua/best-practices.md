@@ -159,7 +159,7 @@ It can interact with the site and navigate as part of the test. It cannot use th
 
 For setup and execution commands, see [Setup](setup.md#web-setup) and [CLI](cli.md#run-a-saved-web-test).
 
-For a complete local and cloud browser workflow, see [Testing Web Applications with Droid](web-testing.md).
+For a complete local and cloud browser workflow, see [Set Up and Run Droid Web Tests](web-testing.md).
 
 ***
 

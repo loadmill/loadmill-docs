@@ -82,7 +82,7 @@ droid-cua --target web --browser chrome --instructions tests/search.dcua
 
 Use `--browser edge` to run against Microsoft Edge.
 
-For browser session modes, the page-frame boundary, cloud browsers, and guidance on choosing Droid Web, Playwright, or API testing, see [Testing Web Applications with Droid](web-testing.md).
+For browser session modes, the page-frame boundary, cloud browsers, and guidance on choosing Droid Web, Playwright, or API testing, see [Set Up and Run Droid Web Tests](web-testing.md).
 
 ***
 
