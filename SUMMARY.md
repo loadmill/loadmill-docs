@@ -5,7 +5,7 @@
 * [Loadmill Overview](README.md)
 * [Choose How You Want to Test](getting-started/choose-testing-approach.md)
 * [Create Account](quick-guide/create-account.md)
-* [Droid Mobile Testing: A-to-Z](droid-cua/getting-started.md)
+* [Droid Mobile Testing Quickstart](droid-cua/getting-started.md)
 * [API-First E2E Quickstart](quick-guide/quick-start-guide.md)
 * [Web UI and Playwright Quickstart](hybrid-testing/quickstart.md)
 * [Performance Testing Quickstart](load-testing/getting-started-1.md)

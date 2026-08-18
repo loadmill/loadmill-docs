@@ -215,4 +215,4 @@ Teams that adopt these practices stop writing scripts and start briefing a teamm
 
 Most importantly, they treat reports and recovery behavior as evidence rather than stopping at a green verdict. Reliability comes from the quality of the brief, the clarity of its assertions, and the discipline to examine what actually happened.
 
-When you are ready to put these practices into use, continue with [Getting Started](getting-started.md), review the [Common Droid Testing Mistakes](common-mistakes.md), or move on to [Setup](setup.md) and the [CLI reference](cli.md).
+When you are ready to put these practices into use, continue with the [Droid Mobile Testing Quickstart](getting-started.md), review the [Common Droid Testing Mistakes](common-mistakes.md), or move on to [Setup](setup.md) and the [CLI reference](cli.md).

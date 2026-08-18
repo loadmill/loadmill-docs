@@ -159,7 +159,7 @@ Use it to explain details the agent cannot infer from the screen alone, such as:
 
 Good context makes tests more reliable because the agent has the same product knowledge a teammate would need before testing the app.
 
-See [Getting Started](getting-started.md#start-contextmd-while-you-create-the-test) for a first-project example and [Writing Reliable Droid CUA Tests](best-practices.md#build-context-alongside-the-test) for guidance on what belongs in each project file.
+See the [Droid Mobile Testing Quickstart](getting-started.md#start-contextmd-while-you-create-the-test) for a first-project example and [Writing Reliable Droid CUA Tests](best-practices.md#build-context-alongside-the-test) for guidance on what belongs in each project file.
 
 ***
 

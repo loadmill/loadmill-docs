@@ -1,6 +1,6 @@
-# Getting Started: Your First Droid Test
+# Droid Mobile Testing Quickstart
 
-This guide takes you from installing Droid CUA to saving and reviewing your first test. By the end, you will have a connected target, a project with shared app context, a focused `.dcua` test, and a result you can review in the desktop app and Loadmill.
+This is the A-to-Z guide for running your first Droid test. It takes you from installing Droid CUA to saving and reviewing the result. By the end, you will have a connected target, a project with shared app context, a focused `.dcua` test, and a result you can review in the desktop app and Loadmill.
 
 ***
 
@@ -167,13 +167,9 @@ Team members can review uploaded desktop and CI results from the [Droid Runs das
 
 ***
 
-## Save a reliable baseline
+## Next steps
 
-Keep the first version focused on one coherent journey. Start with Loadmill Smart while you refine it. Once the same test follows a clean, repeatable route, compare it with Loadmill Pulse for faster routine execution.
-
-Commit the `.dcua` file and `context.md` with the application code, but never commit `.secrets` or private environment credentials.
-
-When the first test is stable, continue with:
+Keep the first version focused on one coherent journey. Once it completes cleanly and its assertions prove the expected result, continue with:
 
 * [Writing Reliable Droid CUA Tests](best-practices.md)
 * [Common Droid Testing Mistakes](common-mistakes.md)

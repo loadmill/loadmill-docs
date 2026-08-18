@@ -16,7 +16,7 @@ For local execution you need:
 
 The setup wizard can verify that Droid detects the browser and can launch it through Playwright. Select **Web** on the wizard's Welcome step, complete the system checks, and run the browser setup probe.
 
-For more information about the wizard, see [Getting Started](getting-started.md#complete-the-setup-wizard).
+For more information about the wizard, see the [Droid Mobile Testing Quickstart](getting-started.md#complete-the-setup-wizard).
 
 ***
 
