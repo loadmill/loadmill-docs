@@ -168,6 +168,7 @@
 
 ## Administration and Deployment
 
+* [Loadmill Deployment Options and Requirements](administration/deployment-options.md)
 * [Settings](general/account-settings/README.md)
   * [Analytics](general/account-settings/analytics/README.md)
     * [Flow Run History](general/account-settings/analytics/flow-run-history.md)
