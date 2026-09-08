@@ -32,6 +32,20 @@ Private execution is useful when the application under test is available only in
 
 Requests between a private runner and the application under test remain inside the customer environment. Loadmill Cloud still manages the test definitions, orchestration, and results. For Droid, screenshots, context, prompts, and report artifacts may also be processed or stored in the cloud. Organizations with strict data-residency requirements should review these data flows before choosing this option.
 
+### Network allowlisting
+
+For Droid and customer-hosted runners, allow outbound HTTPS on TCP port 443 to `app.loadmill.com` and `pylon.loadmill.com`. Organizations that maintain a domain-level allowlist can allow `*.loadmill.com`. File and Droid report uploads may also require outbound HTTPS to the Loadmill-provided Amazon S3 endpoints.
+
+The desktop application uses GitHub release services to download updates. These endpoints can be allowed separately, or the application can be distributed and updated through the organization's software-management process. If a corporate proxy or TLS inspection is in use, configure it for the desktop application and test runners.
+
+No inbound firewall rule is required for private execution. If Loadmill cloud runners must reach an application inside the customer environment instead, make the target accessible through a gateway or allow connections from the current Loadmill runner IP addresses:
+
+* `52.42.51.230`
+* `54.190.108.53`
+* `193.189.107.30`
+
+Confirm the applicable region and production IP addresses with Loadmill before updating firewall rules.
+
 ## Loadmill On-Prem
 
 Loadmill On-Prem is a self-hosted deployment for organizations that need to operate the Loadmill Server and its data within their own environment. Loadmill provides the platform as a convenient Docker-based deployment package, together with configuration and upgrade guidance.
