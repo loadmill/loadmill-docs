@@ -2,6 +2,8 @@
 
 Loadmill offers two solutions that can be evaluated separately during a proof of concept (POC): Droid for mobile testing and the classic Loadmill platform for end-to-end web and API testing. Choose the section that matches the solution you want to evaluate—you do not need to complete both setup processes.
 
+For production architecture and infrastructure planning, compare [Loadmill Cloud and Loadmill On-Prem](../administration/deployment-options.md).
+
 ## Droid Mobile Testing POC
 
 Droid has a lightweight POC setup and can be evaluated independently from the classic Loadmill platform.

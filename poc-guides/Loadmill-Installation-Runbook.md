@@ -1,5 +1,7 @@
 # Loadmill Installation & Deployment Runbook
 
+This runbook covers the available test runners. To compare Loadmill Cloud with a full on-prem deployment, see [Loadmill Deployment Options and Requirements](../administration/deployment-options.md).
+
 ## 1. Deployment Options
 Loadmill supports multiple deployment approaches depending on your organization’s environment:
 - **Desktop Runner (POC Setup):** Ideal for proof-of-concept or local execution. Installed on a user machine to run tests inside a VPN.

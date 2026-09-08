@@ -2,6 +2,8 @@
 
 This guide explains the basic requirements and setup for running Loadmill on-prem with Docker.
 
+For help choosing between Loadmill Cloud and Loadmill On-Prem, start with [Loadmill Deployment Options and Requirements](../administration/deployment-options.md).
+
 ## Requirements
 
 * A Linux machine that can run three containers on the same Docker network. AWS EC2 t3.medium-t3.large or equivalent (2 vCPUs, 4/8 GB RAM)
