@@ -124,6 +124,7 @@
 
 * [Database Testing](general/api-testing1/db-testing-using-queries.md)
 * [Email Testing](general/api-testing1/testing-emails.md)
+* [SMS and OTP Testing with iOS](integrations/sms-otp-ios-shortcuts.md)
 * [Kafka Testing](integrations/kafka-testing.md)
 * [Webhook Testing](integrations/webhook-testing.md)
 * [gRPC Support](integrations/grpc-support.md)

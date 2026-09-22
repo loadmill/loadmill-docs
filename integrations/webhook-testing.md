@@ -18,6 +18,10 @@ For instance, the webhook request should be an `HTTP POST` request to `https://e
 
 Querying a webhook from the service can also include filters to specify the desired webhook. For instance, if multiple webhooks were sent to the service, each with a different value for the header "unique\_id," we can easily locate a specific webhook by applying the header filter to the request. This would look like `https://wh.loadmill.com/requests/${UUID}?headers.unique_id=<ID>`.
 
+### Receive SMS and OTP codes
+
+You can also use the webhook service with the built-in Shortcuts app on a real iPhone to make SMS messages and OTP codes available to Loadmill and Droid tests. See [Receive SMS and OTP Codes in Loadmill Using iOS Shortcuts](sms-otp-ios-shortcuts.md) for the complete setup.
+
 ### Webhook service in Docker
 
 It is possible to run Loadmill's webhook service from Docker as well. This option is useful, for example, if you want to run it within your test environment. You can learn more about the webhook-service docker [here](https://hub.docker.com/r/loadmill/webhook-service).
