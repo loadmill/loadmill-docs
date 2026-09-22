@@ -4,10 +4,7 @@ Use a real iPhone and SIM as an SMS bridge for tests that need a one-time passwo
 
 Nothing extra needs to be installed on the iPhone.
 
-```text
-App under test → iPhone receives SMS → iOS Shortcuts → Loadmill webhook
-→ Loadmill flow retrieves SMS → Droid continues with the code
-```
+![The app requests an OTP, an iPhone receives the SMS, iOS Shortcuts forwards it to a Loadmill webhook, a Loadmill flow retrieves it, and Droid continues with the code.](../.gitbook/assets/sms-otp-flow.svg)
 
 ***
 
