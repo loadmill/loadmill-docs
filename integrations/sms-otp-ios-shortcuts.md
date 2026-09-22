@@ -127,6 +127,8 @@ Verify that login succeeds.
 
 The `loadmill:` instruction tells Droid to find and run the matching saved flow. Droid waits for the flow to finish and makes the relevant returned information available to later instructions. Refer to the result by meaning, as shown above, rather than inventing placeholder syntax for `sms_response`.
 
+<figure><img src="../.gitbook/assets/droid-get-last-sms-run.png" alt="A Droid run showing the Get last SMS Loadmill flow passing and adding sms_response to agent context"><figcaption><p>The Loadmill flow passes the SMS response into Droid's context, ready for the next instruction.</p></figcaption></figure>
+
 > Droid can use a real SMS sent to a real phone as context for the rest of the test.
 
 For the broader pattern, see [Prepare state through APIs](../droid-cua/best-practices.md#prepare-state-through-apis).
