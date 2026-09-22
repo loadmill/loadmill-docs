@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="345" viewBox="0 0 1080 345" role="img" aria-labelledby="title description">
+  <title id="title">SMS and OTP testing flow</title>
+  <desc id="description">The app requests an OTP. A real iPhone receives the SMS. iOS Shortcuts forwards it to a Loadmill webhook. A Loadmill flow retrieves the message, and Droid uses the code to continue the test.</desc>
+  <g fill="#6E92C2">
+    <rect x="326" y="73" width="58" height="4" rx="2" />
+    <polygon points="375,65 385,75 375,85" />
+    <rect x="701" y="73" width="58" height="4" rx="2" />
+    <polygon points="750,65 760,75 750,85" />
+    <rect x="913" y="140" width="4" height="64" rx="2" />
+    <polygon points="905,195 925,195 915,207" />
+    <rect x="701" y="268" width="63" height="4" rx="2" />
+    <polygon points="710,260 700,270 710,280" />
+    <rect x="326" y="268" width="63" height="4" rx="2" />
+    <polygon points="335,260 325,270 335,280" />
+  </g>
+
+  <g fill="#F7FAFF" stroke="#C9DBF2" stroke-width="2">
+    <rect x="20" y="20" width="300" height="110" rx="16" />
+    <rect x="395" y="20" width="300" height="110" rx="16" />
+    <rect x="770" y="20" width="290" height="110" rx="16" />
+    <rect x="770" y="215" width="290" height="110" rx="16" />
+    <rect x="395" y="215" width="300" height="110" rx="16" />
+    <rect x="20" y="215" width="300" height="110" rx="16" />
+  </g>
+
+  <g fill="#2C6ECF">
+    <circle cx="52" cy="57" r="18" />
+    <circle cx="427" cy="57" r="18" />
+    <circle cx="802" cy="57" r="18" />
+    <circle cx="802" cy="252" r="18" />
+    <circle cx="427" cy="252" r="18" />
+    <circle cx="52" cy="252" r="18" />
+  </g>
+
+  <g fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="52" y="63">1</text>
+    <text x="427" y="63">2</text>
+    <text x="802" y="63">3</text>
+    <text x="802" y="258">4</text>
+    <text x="427" y="258">5</text>
+    <text x="52" y="258">6</text>
+  </g>
+
+  <g fill="#182844" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">
+    <text x="80" y="62">App under test</text>
+    <text x="455" y="62">iPhone + real SIM</text>
+    <text x="830" y="62">iOS Shortcuts</text>
+    <text x="830" y="257">Loadmill webhook</text>
+    <text x="455" y="257">Loadmill flow</text>
+    <text x="80" y="257">Droid</text>
+  </g>
+
+  <g fill="#536987" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="80" y="94">Requests an OTP</text>
+    <text x="455" y="94">Receives the SMS</text>
+    <text x="830" y="94">Forwards the message</text>
+    <text x="830" y="289">Stores the request</text>
+    <text x="455" y="289">Retrieves the SMS</text>
+    <text x="80" y="289">Continues with the code</text>
+  </g>
+</svg>
