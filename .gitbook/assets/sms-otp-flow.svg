@@ -32,7 +32,7 @@
     <circle cx="52" cy="252" r="18" />
   </g>
 
-  <g fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+  <g fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
     <text x="52" y="63">1</text>
     <text x="427" y="63">2</text>
     <text x="802" y="63">3</text>
@@ -41,7 +41,7 @@
     <text x="52" y="258">6</text>
   </g>
 
-  <g fill="#182844" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">
+  <g fill="#182844" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">
     <text x="80" y="62">App under test</text>
     <text x="455" y="62">iPhone + real SIM</text>
     <text x="830" y="62">iOS Shortcuts</text>
@@ -50,12 +50,12 @@
     <text x="80" y="257">Droid</text>
   </g>
 
-  <g fill="#536987" font-family="Arial, Helvetica, sans-serif" font-size="17">
+  <g fill="#536987" font-family="Arial, Helvetica, sans-serif" font-size="20">
     <text x="80" y="94">Requests an OTP</text>
     <text x="455" y="94">Receives the SMS</text>
     <text x="830" y="94">Forwards the message</text>
     <text x="830" y="289">Stores the request</text>
     <text x="455" y="289">Retrieves the SMS</text>
-    <text x="80" y="289">Uses the code to continue</text>
+    <text x="80" y="289">Continues with the code</text>
   </g>
 </svg>
