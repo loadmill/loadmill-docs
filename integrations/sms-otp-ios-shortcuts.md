@@ -98,7 +98,7 @@ requests:
     url: https://wh.loadmill.com/requests/${SMS_UUID}
     extract:
       - sms_response:
-          jsonPath: $["body"]["body"]
+          jsonPath: $["body"]["message"]
     type: Request
     id: 9dadf72e-f63e-4aff-b4ff-086feb20c80b
 
