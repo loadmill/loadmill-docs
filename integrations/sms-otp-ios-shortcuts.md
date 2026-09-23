@@ -90,7 +90,6 @@ meta:
 requests:
   - description: wait for 5 seconds
     type: Wait
-    id: f839aa32-321c-4d9c-80b9-07ccefcb6dd8
     wait: 5
 
   - description: get last sms from webhook
@@ -98,9 +97,8 @@ requests:
     url: https://wh.loadmill.com/requests/${SMS_UUID}
     extract:
       - sms_response:
-          jsonPath: $["body"]["body"]
+          jsonPath: $["body"]["message"]
     type: Request
-    id: 9dadf72e-f63e-4aff-b4ff-086feb20c80b
 
 scopeParameters: []
 ```
