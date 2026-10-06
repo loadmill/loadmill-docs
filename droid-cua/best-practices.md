@@ -78,7 +78,7 @@ Think of the `.dcua` test as the assignment you hand to a teammate. `context.md`
 
 Each non-empty line in a `.dcua` file is one instruction or assertion, and `//` starts a comment for human readers. One instruction is not the same as one tap. Keep the journey readable from top to bottom, state the starting condition when the environment does not guarantee it, and keep secret values out of the file.
 
-Use the names of keys from `.secrets`, such as `USER_EMAIL` and `USER_PASSWORD`, so the agent can request those values without placing them in its prompt or the run log. Keep both `.secrets` and `.env` out of version control.
+Use the names of keys from `.secrets`, such as `USER_EMAIL` and `USER_PASSWORD`, so the agent can request those values without placing them in its prompt or the run log. Keep both `.secrets` and `.env` out of version control. See [Using Secrets](using-secrets.md) for setup, examples, and the limits of screenshot privacy.
 
 A project should normally have one shared context file and one shared Droid config. Reuse them across the project's tests instead of creating a special context or config for every scenario.
 

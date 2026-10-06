@@ -15,6 +15,7 @@
 * [Droid Mobile Testing Overview](droid-cua/README.md)
 * [Setup](droid-cua/setup.md)
   * [Setup Troubleshooting](droid-cua/setup-troubleshooting.md)
+* [Using Secrets](droid-cua/using-secrets.md)
 * [Best Practices](droid-cua/best-practices.md)
 * [Common Testing Mistakes](droid-cua/common-mistakes.md)
 * [Web Testing with Droid](droid-cua/web-testing.md)

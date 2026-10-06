@@ -214,6 +214,7 @@ The config file keeps prompt settings and app context consistent between local r
 | `--os-version` | Cloud device OS version for LambdaTest or Loadmill Cloud. |
 | `--app` | App build path for cloud runs. Use `.apk` for Android or `.ipa` for iOS. |
 | `--config` | Path to a Droid CUA headless config file. |
+| `--secrets` | Comma-separated `KEY=value` typing secrets that override `.secrets` for the run. See [Using Secrets](using-secrets.md). |
 | `--llm-provider` | AI provider for the run: `loadmill` (default) or `openai`. Set this to `openai` when using your own OpenAI API key. |
 | `--cua-model` | Model to use for the run. With Loadmill, use `loadmill-smart` (recommended and most robust), `loadmill-pulse` (faster and lower cost), or experimental `loadmill-beacon`. With OpenAI, use `gpt-5.6-terra`, `gpt-5.6-luna`, or `gpt-5.4`. |
 | `--context` | Path to an app context file. |

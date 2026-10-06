@@ -60,7 +60,7 @@ tests/droid/
 └── .secrets
 ```
 
-Only `context.md` and the `.dcua` test are needed for a basic first run. Add `test-data.md` when the same journey needs reusable non-secret data, and add `.secrets` when it needs credentials. Keep `.secrets` out of version control.
+Only `context.md` and the `.dcua` test are needed for a basic first run. Add `test-data.md` when the same journey needs reusable non-secret data, and add `.secrets` when it needs credentials. Keep `.secrets` out of version control. See [Using Secrets](using-secrets.md) for the file format and a login example.
 
 ***
 
