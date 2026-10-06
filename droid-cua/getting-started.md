@@ -93,7 +93,7 @@ Keep information in the place where it will be most useful:
 * Put non-secret values that vary between runs in `test-data.md`.
 * Put credentials and sensitive values in `.secrets`.
 
-Continue refining the context as you build and run the test. See [Writing Reliable Droid CUA Tests](best-practices.md#build-context-alongside-the-test) for the full approach.
+Continue refining the context as you build and run the test. See [Project Context](project-context.md) for file setup and [Writing Reliable Droid CUA Tests](best-practices.md#build-context-alongside-the-test) for the full approach. When you are ready to run a journey with different inputs, see [Data-Driven Tests and Scenarios](data-driven-tests.md).
 
 ***
 

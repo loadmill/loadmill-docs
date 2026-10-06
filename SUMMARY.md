@@ -19,6 +19,8 @@
 * [Common Testing Mistakes](droid-cua/common-mistakes.md)
 * [Web Testing with Droid](droid-cua/web-testing.md)
 * [Droid Runs Dashboard](droid-cua/runs-dashboard.md)
+* [Project Context](droid-cua/project-context.md)
+* [Data-Driven Tests and Scenarios](droid-cua/data-driven-tests.md)
 * [Using Secrets](droid-cua/using-secrets.md)
 * [CLI](droid-cua/cli.md)
 * [Running Droid Tests in CI](droid-cua/ci.md)

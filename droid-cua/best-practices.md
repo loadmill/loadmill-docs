@@ -107,6 +107,8 @@ For example, the test can say _create a transfer as maker and approve it as chec
 
 After a failure, add context only when the missing knowledge is true, stable, and reusable. Do not encode a product bug, temporary state, or one-off workaround as if it were normal application behavior. This iterative approach keeps context useful without turning it into another test script.
 
+See [Project Context](project-context.md) for creating, editing, and loading `context.md`.
+
 ***
 
 ## Design once, then make the journey repeatable
@@ -138,6 +140,8 @@ Data-driven testing in Droid does not require turning a readable journey into a 
 Reusable, non-secret accounts, products, roles, regions, and scenario combinations can live in `test-data.md`. Droid previews the cases it plans to run so you can check that it understood the request and notice an unexpectedly large fan-out. Each case receives only the relevant data for that run.
 
 The generated cases are execution results, not new test files, and the original journey stays free of `{email}` or `{{product}}` placeholders. Use a normal run when you want one known journey. Use a Scenario Run when the variation is the point of the exercise.
+
+See [Data-Driven Tests and Scenarios](data-driven-tests.md) for importing data, previewing cases, and requesting combinations.
 
 ***
 
