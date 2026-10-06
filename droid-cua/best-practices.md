@@ -78,7 +78,7 @@ Think of the `.dcua` test as the assignment you hand to a teammate. `context.md`
 
 Each non-empty line in a `.dcua` file is one instruction or assertion, and `//` starts a comment for human readers. One instruction is not the same as one tap. Keep the journey readable from top to bottom, state the starting condition when the environment does not guarantee it, and keep secret values out of the file.
 
-Use the names of keys from `.secrets`, such as `USER_EMAIL` and `USER_PASSWORD`, so the agent can request those values without placing them in its prompt or the run log. Keep both `.secrets` and `.env` out of version control.
+Use the names of keys from `.secrets`, such as `USER_EMAIL` and `USER_PASSWORD`, so the agent can request those values without placing them in its prompt or the run log. Keep both `.secrets` and `.env` out of version control. See [Using Secrets](using-secrets.md) for setup, examples, and the limits of screenshot privacy.
 
 A project should normally have one shared context file and one shared Droid config. Reuse them across the project's tests instead of creating a special context or config for every scenario.
 
@@ -106,6 +106,8 @@ When you encounter a missing detail, decide where it belongs:
 For example, the test can say _create a transfer as maker and approve it as checker_. The context can explain what the maker and checker roles mean, where pending transfers appear, and that an approved transfer disappears from the pending list. Those facts are useful beyond one scenario; the exact transfer journey is not.
 
 After a failure, add context only when the missing knowledge is true, stable, and reusable. Do not encode a product bug, temporary state, or one-off workaround as if it were normal application behavior. This iterative approach keeps context useful without turning it into another test script.
+
+See [Project Context](project-context.md) for creating, editing, and loading `context.md`.
 
 ***
 
@@ -138,6 +140,8 @@ Data-driven testing in Droid does not require turning a readable journey into a 
 Reusable, non-secret accounts, products, roles, regions, and scenario combinations can live in `test-data.md`. Droid previews the cases it plans to run so you can check that it understood the request and notice an unexpectedly large fan-out. Each case receives only the relevant data for that run.
 
 The generated cases are execution results, not new test files, and the original journey stays free of `{email}` or `{{product}}` placeholders. Use a normal run when you want one known journey. Use a Scenario Run when the variation is the point of the exercise.
+
+See [Data-Driven Tests and Scenarios](data-driven-tests.md) for importing data, previewing cases, and requesting combinations.
 
 ***
 
