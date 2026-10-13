@@ -87,6 +87,10 @@ Assert using captured network traffic that the POST to /pageview after opening H
 
 In the desktop run details or HTML report, expand the **Network query** card to see the question and answer.
 
+![Expanded network query showing search filters, three matching requests, and a passed assertion in a Duolingo test](../.gitbook/assets/droid-network-query.png)
+
+In this demo, Droid searches the captured traffic for the `show_shop` event and confirms that the matching request received HTTP 200.
+
 ***
 
 ## Run from the CLI
