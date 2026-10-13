@@ -68,6 +68,8 @@ You can write an explicit `assert:` line or simply say _verify that..._ in natur
 
 Add assertions after important state changes, at the end of a business flow, at meaningful checkpoints in a longer journey, and after expected error paths.
 
+When the screen cannot confirm what the app sent or received, add a [network assertion](network-capture.md) with network capture enabled. Name the request and expected values, and keep a visible assertion too when the user-facing result matters.
+
 ***
 
 ## Give project knowledge a clear home

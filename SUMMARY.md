@@ -18,6 +18,7 @@
 * [Best Practices](droid-cua/best-practices.md)
 * [Common Testing Mistakes](droid-cua/common-mistakes.md)
 * [Web Testing with Droid](droid-cua/web-testing.md)
+* [Network Capture and Assertions](droid-cua/network-capture.md)
 * [Droid Runs Dashboard](droid-cua/runs-dashboard.md)
 * [Project Context](droid-cua/project-context.md)
 * [Data-Driven Tests and Scenarios](droid-cua/data-driven-tests.md)
