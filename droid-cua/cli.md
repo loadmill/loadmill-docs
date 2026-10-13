@@ -221,6 +221,7 @@ The config file keeps prompt settings and app context consistent between local r
 | `--no-context` | Disable app context for the run. |
 | `--scenario` | Request in plain language that plans cases from the selected tests. See [Data-Driven Tests and Scenarios](data-driven-tests.md). |
 | `--test-data` | Path to a test-data file, used with `--scenario`. |
+| `--capture-network` | Capture HTTP traffic for network assertions on supported local targets. See [Network Capture and Assertions](network-capture.md). |
 | `--record` | Save screenshots from the run. |
 | `--debug` | Write detailed debug artifacts for troubleshooting. |
 
