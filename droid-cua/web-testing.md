@@ -60,6 +60,10 @@ The agent is active within the web page frame. It can interact with the site, fo
 
 Use `navigate:` for a known starting URL and write the rest of the test as a journey through the application itself.
 
+### Check network behavior
+
+Enable **Settings → Network Capture** to add assertions about HTTP requests and responses during local Chrome or Edge tests. Browser capture needs no certificate or proxy setup. See [Network Capture and Assertions](network-capture.md) for examples.
+
 ***
 
 ## Add web-specific context

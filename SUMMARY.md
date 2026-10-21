@@ -22,6 +22,7 @@
 * [Project Context](droid-cua/project-context.md)
 * [Data-Driven Tests and Scenarios](droid-cua/data-driven-tests.md)
 * [Using Secrets](droid-cua/using-secrets.md)
+* [Network Capture and Assertions](droid-cua/network-capture.md)
 * [CLI](droid-cua/cli.md)
 * [Running Droid Tests in CI](droid-cua/ci.md)
 * [Agent Skill](droid-cua/skill.md)

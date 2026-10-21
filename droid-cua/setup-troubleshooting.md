@@ -60,6 +60,20 @@ After installing missing tools, restart Droid CUA and open the device picker aga
 
 ***
 
+## Physical iPhone is not ready
+
+On a Mac, open **Help → Run Setup Wizard → iPhone (USB)** and follow the first failed check. You can also run `droid-cua ios-device check` from the terminal.
+
+* **Phone missing or untrusted:** reconnect the USB cable, unlock the phone, and approve **Trust**. Enable **Developer Mode** and confirm it after the phone restarts.
+* **Xcode or iOS platform missing:** open the full Xcode app once and install the iOS platform under **Xcode → Settings → Components**. Command Line Tools alone are not enough.
+* **Apple team or signing unavailable:** sign into Xcode with an account in a paid Apple Developer team. Confirm your Developer role and access to Certificates, Identifiers & Profiles, then choose a team if you have more than one.
+* **Helper app needs setup:** use **Set up signing** or **Install helper app** in the wizard, or run `droid-cua ios-device check --fix`. If the phone asks you to trust the helper app's developer, do so under **Settings → General → VPN & Device Management**.
+* **Waiting for automation or unlock:** enter the passcode on the phone when prompted. If it locks during execution, unlock it so Droid can continue.
+
+These checks prepare UI execution. Network certificate trust is a separate setup; see [Network Capture and Assertions](network-capture.md#physical-android-or-iphone).
+
+***
+
 ## Web browser is not found
 
 For web tests, install Google Chrome or Microsoft Edge and restart Droid CUA.
@@ -108,7 +122,7 @@ This is usually not a setup problem. Improve the test input instead:
 Check the most common inputs:
 
 * `--instructions` points to an existing `.dcua` file or folder.
-* `--avd` matches the selected Android device, emulator, or iOS simulator.
+* `--avd` matches the selected Android device, emulator, iOS simulator, or `ios-device:<udid>` / `ios-device:auto` for a physical iPhone.
 * `--platform ios` is used for iOS simulator runs.
 * `--target web` is used for browser runs.
 * `--config` points to valid JSON.
