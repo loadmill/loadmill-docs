@@ -11,7 +11,7 @@ You will need:
 * A [Loadmill account](https://app.loadmill.com/app/signup).
 * The [Droid CUA desktop app](https://www.loadmill.com/mobile-testing-agent).
 * An app or website you are allowed to test.
-* A target: an Android device or emulator, an iOS simulator on macOS, or Chrome or Edge for web testing.
+* A target: an Android device or emulator, an iOS simulator or USB-connected iPhone on macOS, or Chrome or Edge for web testing.
 * A stable internet connection. Droid uses Loadmill's cloud service while it runs.
 * The platform tools required for your target. The setup wizard will check these for you.
 
@@ -35,7 +35,7 @@ Install and open Droid CUA, then sign in with your Loadmill account.
 
 The first time you open Droid CUA, the setup wizard prepares the computer and target. It has four stages:
 
-1. **Welcome** — choose Android, iOS, or Web.
+1. **Welcome** — choose Android, iOS, iPhone (USB), or Web.
 2. **Checks** — verify the tools Droid needs. Resolve any required check that fails, then retry it.
 3. **Connect** — select a device, simulator, or browser and run the setup probe.
 4. **Success** — continue to the app after Droid confirms the target is ready.
@@ -43,6 +43,8 @@ The first time you open Droid CUA, the setup wizard prepares the computer and ta
 ![Droid CUA setup wizard welcome screen](../.gitbook/assets/setup-welcome.png)
 
 You can run the wizard again later from **Help**. For manual setup and troubleshooting, see [Setup](setup.md) and [Setup troubleshooting](setup-troubleshooting.md).
+
+For a physical iPhone, choose **iPhone (USB)**. This requires a paid Apple Developer team and installs a signed helper app on the phone. See [Physical iPhone setup](setup.md#physical-iphone-setup) before starting.
 
 ***
 
@@ -102,12 +104,14 @@ Continue refining the context as you build and run the test. See [Project Contex
 Open **Devices** and select the target prepared by the wizard.
 
 * For Android, choose a connected physical device or emulator.
-* For iOS, choose an installed simulator. iOS simulator testing is available on macOS only.
+* For iOS, choose an installed simulator or a USB-connected iPhone. Both local options require macOS; physical iPhones also need the one-time setup above.
 * For web, choose Chrome or Edge and select a persistent or fresh browser session.
 
 ![Droid CUA device selection screen](../.gitbook/assets/devices-page.png)
 
 If you are testing a mobile build that is not already installed, add the `.apk`, `.ipa`, or `.app` from the **Apps** page before starting the run.
+
+For a local physical iPhone, install the app separately, for example through TestFlight or the App Store. Droid tests the installed app and does not install `.ipa` files on the phone.
 
 ***
 

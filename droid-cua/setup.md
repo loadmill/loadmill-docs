@@ -67,6 +67,35 @@ Use the platform selector on the **Devices** page to switch between Android, iOS
 
 ***
 
+## Physical iPhone setup
+
+On macOS, Droid can test apps already installed on an iPhone connected by USB, including TestFlight, App Store, and your team's builds. Droid signs and installs a small helper app, **WebDriverAgent**, using your Apple Developer team. It does not install the app under test or reset the phone, so a dedicated test iPhone is recommended.
+
+### Before you start
+
+You need:
+
+* A Mac with Xcode that supports the phone's iOS version. Open Xcode once to complete its initial setup, and install the iOS platform under **Xcode → Settings → Components**.
+* An Apple ID signed into **Xcode → Settings → Apple Accounts**, belonging to a **paid Apple Developer team**. Your account needs at least the **Developer** role and **Access to Certificates, Identifiers & Profiles**. Free Apple IDs are not supported.
+* Appium and the XCUITest driver, as for simulator testing.
+* An iPhone connected by USB, with the app you want to test already installed.
+
+### Connect the phone
+
+1. Unlock the iPhone and tap **Trust** when asked to trust the Mac.
+2. Enable **Settings → Privacy & Security → Developer Mode** on the phone. Let it restart, then confirm Developer Mode and enter your passcode.
+3. In Droid, open **Help → Run Setup Wizard** and choose **iPhone (USB)**.
+4. Follow the **Connect iPhone** checklist. Use **Set up signing** and **Install helper app** when offered. If you belong to multiple paid Apple teams, choose the team Droid should use; the desktop app remembers it.
+5. Connect the iPhone and run the setup probe. For later sessions, choose **iOS → Local** on the **Devices** page and select the phone from **Simulator / iPhone**.
+
+Keep the phone unlocked while testing. Set **Settings → Display & Brightness → Auto-Lock → Never** for test sessions. After a restart or helper installation, the phone may ask for your passcode to allow automation. If it locks during a run, Droid pauses until you unlock it.
+
+Local iPhone testing supports one phone at a time and requires someone available to approve prompts. Device control is USB-only, and local `.ipa` installation is not supported. The implementation has been verified on iOS 26; iOS 17–26 are expected to work, but iOS betas and iOS 27 are not supported yet.
+
+See [CLI](cli.md#run-a-saved-iphone-test) for terminal runs. Certificates and Wi-Fi proxy setup are only needed for [Network Capture and Assertions](network-capture.md#physical-android-or-iphone), not ordinary UI tests.
+
+***
+
 ## Web setup
 
 To test web flows, install a supported browser:

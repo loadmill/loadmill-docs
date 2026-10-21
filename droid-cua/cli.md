@@ -90,6 +90,28 @@ droid-cua --platform ios --avd "iPhone 16" --instructions tests/login.dcua
 
 ***
 
+## Run a saved iPhone test
+
+Complete [Physical iPhone setup](setup.md#physical-iphone-setup) on a Mac first. To check readiness from the terminal:
+
+```sh
+droid-cua ios-device check
+```
+
+Use `droid-cua ios-device check --fix` to set up signing and install the helper app when needed. You still need to approve prompts on the phone and complete any Xcode or account requirements yourself.
+
+Run a saved test on the first iPhone connected by USB:
+
+```sh
+droid-cua --avd ios-device:auto --instructions tests/login.dcua
+```
+
+Use `ios-device:YOUR_DEVICE_UDID` to select a specific phone. The token selects iOS automatically. If you belong to multiple paid Apple teams, pass `--ios-team YOUR_TEAM_ID`, or set `DROID_CUA_IOS_TEAM_ID`. The flag takes precedence.
+
+Tests use apps already installed on the phone; `--app` does not install a local `.ipa`. Keep the phone unlocked and stay available to approve automation prompts. Add `--capture-network` only after completing the separate [network capture setup](network-capture.md#physical-android-or-iphone).
+
+***
+
 ## Run a saved web test
 
 Use `--target web` to run a `.dcua` test against an installed browser.
@@ -205,8 +227,9 @@ The config file keeps prompt settings and app context consistent between local r
 | --- | --- |
 | `--target` | Target kind, such as `mobile` or `web`. |
 | `--instructions` | Path to a `.dcua` test file or a folder of `.dcua` files. |
-| `--avd` | Android device, Android emulator, or iOS simulator name. |
+| `--avd` | Android device, Android emulator, iOS simulator name, or `ios-device:auto` / `ios-device:<udid>` for a physical iPhone. |
 | `--platform` | Target platform, such as `android` or `ios`. |
+| `--ios-team` | Paid Apple Developer team ID used to sign the local iPhone helper app. |
 | `--browser` | Browser for web runs, such as `chrome` or `edge`. |
 | `--session-mode` | Local web session mode: `persistent` (default) or `fresh`. |
 | `--device-source` | Mobile device source, such as `local`, `lambdatest`, or `loadmill-cloud`. |

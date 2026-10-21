@@ -2,11 +2,11 @@
 
 Droid CUA is Loadmill's AI-powered desktop app for mobile and web testing.
 
-It helps you create, run, and manage tests for Android devices and emulators, iOS simulators on macOS, cloud mobile devices, and browser flows. Instead of writing traditional automation code with selectors and locators, you describe the user flow in natural language and let the agent operate the app from the screen, the same way a person would.
+It helps you create, run, and manage tests for Android devices and emulators, iOS simulators and USB-connected iPhones on macOS, cloud mobile devices, and browser flows. Instead of writing traditional automation code with selectors and locators, you describe the user flow in natural language and let the agent operate the app from the screen, the same way a person would.
 
 With Droid CUA you can:
 
-* Connect to a real Android device, Android emulator, iOS simulator, cloud mobile device, or browser.
+* Connect to a real Android device, Android emulator, iOS simulator, USB-connected iPhone, cloud mobile device, or browser.
 * Create mobile and web tests from plain-English instructions.
 * Watch the agent execute each action with live logs.
 * Save reusable `.dcua` test scripts.
@@ -33,7 +33,7 @@ Droid CUA supports physical Android devices and Android emulators.
 
 ### iOS
 
-Droid CUA supports iOS simulators on macOS.
+Droid CUA supports iOS simulators and physical iPhones connected by USB on macOS. Local iPhone execution uses apps already installed on the phone and requires a paid Apple Developer team. See [Physical iPhone setup](setup.md#physical-iphone-setup).
 
 ### Web
 
@@ -45,7 +45,7 @@ Droid CUA supports cloud mobile runs from the CLI, including Loadmill Cloud and 
 
 ### Desktop support
 
-* macOS: Android, iOS simulator, and web workflows
+* macOS: Android, iOS simulator, physical iPhone, and web workflows
 * Windows: Android and web workflows
 
 ***

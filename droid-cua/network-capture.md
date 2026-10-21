@@ -36,18 +36,20 @@ Keep Droid open while the emulator uses this proxy. When finished, set the Wi-Fi
 
 ## Physical Android or iPhone
 
-Connect the phone to Droid over USB. For Android, enable USB debugging and authorize the computer. For iPhone, use a Mac and complete the device connection setup. Put the phone and computer on the same trusted Wi-Fi network; the network and computer firewall must allow the phone to reach port `8765`.
+Connect the phone to Droid over USB. For Android, enable USB debugging and authorize the computer. For iPhone, complete [Physical iPhone setup](setup.md#physical-iphone-setup) on a Mac first. Put the phone and computer on the same trusted Wi-Fi network; the network and computer firewall must allow the phone to reach port `8765`.
 
-1. Install and trust Droid's network certificate on the phone:
+1. Choose **Tools → Install Network Certificate** with the phone connected. Droid creates a network certificate if needed, then helps you transfer it to the phone:
 
-   * **iPhone:** Choose **Tools → Install Network Certificate**, then **Send to iPhone** and use AirDrop. On the phone, install the profile from **Settings → Profile Downloaded**, then enable full trust for the Droid CA under **Settings → General → About → Certificate Trust Settings**.
-   * **Android:** Generate a CA through **Tools → Manage Certificates** if needed. Transfer the public certificate, `ca.pem` from `~/.droid-cua/network/` on the computer, to the phone and install it as a CA certificate in Android's security settings. Do not transfer the private key. The app must trust this certificate; installing it in the user certificate store alone is not enough for many apps.
+   * **iPhone:** Choose **Send to iPhone** and use AirDrop. On the phone, install the profile from **Settings → Profile Downloaded**, then enable full trust for the Droid CA under **Settings → General → About → Certificate Trust Settings**.
+   * **Android:** Droid copies a `.crt` certificate to the phone's **Downloads** folder. Install it from **Settings → Security → Encryption & credentials → Install a certificate → CA certificate**. Names vary by vendor; search Settings for "CA certificate" if needed. If Droid cannot copy the file, the dialog shows the local file to transfer yourself.
 
 2. Turn on **Settings → Network Capture** in Droid and use the computer's LAN address shown in the device log.
 3. Set the phone's Wi-Fi proxy to **Manual**, using that address as the server and `8765` as the port. On iPhone this is under **Wi-Fi → your network → Configure Proxy**; on Android, edit the connected Wi-Fi network's proxy settings.
 4. Restart the app under test and run the test with a network assertion.
 
 Certificate installation, trust, and phone proxy settings are manual. USB controls the phone; Wi-Fi carries the traffic to the proxy. Use the computer's LAN address, not `127.0.0.1` or the emulator-only `10.0.2.2` address.
+
+On physical Android, the app must allow user-installed CAs in its network security configuration. Use a debug or QA build configured for this; installing the certificate alone does not make every app trust it. Droid does not root the phone or install system certificates on it. Apps with certificate pinning may also prevent HTTPS inspection.
 
 Keep Droid open while testing and turn the phone's proxy off afterward. While enabled for a physical device, the proxy is reachable by other devices on the local network, so use a trusted network.
 
@@ -95,13 +97,13 @@ In this demo, Droid searches the captured traffic for the `show_shop` event and 
 
 ## Run from the CLI
 
-For an Android emulator, complete the certificate and Wi-Fi proxy setup first. Then close the desktop app so the CLI can use the same proxy port:
+For mobile targets, complete the certificate and proxy setup first. Then close the desktop app so the CLI can use the same proxy port. For example, on an Android emulator:
 
 ```sh
 droid-cua --avd adb:emulator-5554 --instructions tests/transfer.dcua --capture-network
 ```
 
-For physical devices, complete the manual certificate setup first and use the phone's target instead: `--avd adb:YOUR_DEVICE_SERIAL` for Android or `--platform ios --avd ios-device:auto` for iPhone. Set the phone's Wi-Fi proxy to the computer's LAN address and port `8765`, and clear it when finished.
+For physical devices, use the phone's target instead: `--avd adb:YOUR_DEVICE_SERIAL` for Android or `--avd ios-device:auto` for iPhone. The iPhone token selects iOS automatically. Set the phone's Wi-Fi proxy to the computer's LAN address and port `8765`, and clear it when finished. See [Run a saved iPhone test](cli.md#run-a-saved-iphone-test) for iPhone readiness checks and Apple team selection.
 
 For a local browser, no proxy setup is needed:
 
