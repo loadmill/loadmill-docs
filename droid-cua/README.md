@@ -57,6 +57,7 @@ Droid CUA supports cloud mobile runs from the CLI, including Loadmill Cloud and 
 * [Common Droid Testing Mistakes](common-mistakes.md)
 * [Web Testing with Droid](web-testing.md)
 * [Droid Runs Dashboard](runs-dashboard.md)
+* [Sentry Integration](sentry-integration.md)
 * [Setup](setup.md)
 * [CLI](cli.md)
 * [Running Droid Tests in CI](ci.md)
