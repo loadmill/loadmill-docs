@@ -56,6 +56,22 @@ droid-cua \
 
 Loadmill Cloud must be enabled for the account. You can also use a configured LambdaTest device or a local device available to a self-hosted runner.
 
+## Include Sentry errors
+
+To include app errors in failed-test reports, create a Sentry personal token and configure `SENTRY_AUTH_TOKEN`, `SENTRY_ORG`, and `SENTRY_PROJECT_IDS`. Store the token as a CI secret and add `--sentry` to the test command. This works for Android and iOS tests on local or supported cloud devices, and for local Chrome or Edge tests. See [Sentry CLI and CI setup](sentry-integration.md#use-sentry-from-the-cli) for the required permissions and how to find the organization and project IDs.
+
+For example, on a runner with a connected Android emulator and the three variables configured:
+
+```sh
+droid-cua run tests/checkout.dcua \
+  --avd adb:emulator-5554 \
+  --config ci/droid-cua.json \
+  --sentry \
+  --report ./checkout-report.html
+```
+
+Check `droid-cua sentry status` in the job environment when diagnosing connection failures. A Sentry setup warning can appear while the test continues. Runs without `--sentry` skip Sentry collection. If Datadog RUM is also configured, add `--datadog` to collect errors from both providers.
+
 ## Use the process exit code
 
 A successful Droid run exits with code `0`. A failed run exits with code `1`, allowing the CI job to fail when the test does not complete successfully.

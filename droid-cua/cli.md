@@ -245,6 +245,10 @@ The config file keeps prompt settings and app context consistent between local r
 | `--scenario` | Request in plain language that plans cases from the selected tests. See [Data-Driven Tests and Scenarios](data-driven-tests.md). |
 | `--test-data` | Path to a test-data file, used with `--scenario`. |
 | `--capture-network` | Capture HTTP traffic for network assertions on supported local targets. See [Network Capture and Assertions](network-capture.md). |
+| `--sentry` | Include Sentry evidence for this run. Requires a configured personal token or saved connection. See [Sentry Integration](sentry-integration.md#use-sentry-from-the-cli). |
+| `--datadog` | Include errors from the configured Datadog RUM applications for this run. Can be combined with `--sentry`. |
+| `--report` | Save a local HTML report. Pass a path such as `--report ./checkout-report.html`. |
+| `--no-cloud-report` | Skip uploading the HTML report and screenshots to Loadmill. |
 | `--record` | Save screenshots from the run. |
 | `--debug` | Write detailed debug artifacts for troubleshooting. |
 
